@@ -48,6 +48,7 @@ const year = new Date().getFullYear();
                         <span class="text-lg font-semibold">Masri Programmer</span>
                     </div>
                     <p class="text-sm">{{ $t('footer.tagline') }}</p>
+                    <!-- <p class="text-xs">{{ $t('footer.germanLaw') }}</p> -->
                 </div>
 
                 <div class="space-y-4">

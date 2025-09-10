@@ -150,6 +150,8 @@
   },
   "footer": {
     "tagline": "Happy to help, happy to share",
+    "germanLaw": "I recognize the norms and standards of the <a href='https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/it-grundschutz_node.html' target='blank' rel='noopener noreferrer'>BSI IT-Grundschutz</a> ( German Federal Office for Information Security ) and comply with them.",
+    "germanPrices":"All prices plus 19% VAT. I provide my services exclusively to businesses within the meaning of  <a href='https://www.gesetze-im-internet.de/bgb/__14.html' target='blank' rel='noopener noreferrer'>Section 14 of the German Civil Code (BGB)</a>. Consumers within the meaning of  <a href='https://www.gesetze-im-internet.de/bgb/__13.html' target='blank' rel='noopener noreferrer'>Section 13 of the BGB</a> do not receive any services.",
     "headings": {
       "product": "Product",
       "community": "Community",
@@ -166,8 +168,8 @@
       "whatsapp": "Whatsapp",
       "privacyPolicy": "Privacy Policy",
       "termsOfService": "Terms of Service",
-      "imprint":"imprint",
-      "contact":"contact"
+      "imprint":"Imprint",
+      "contact":"Contact"
     },
     "copyright": "© {year} . All rights reserved.",
     "madeWith": "Made with {heartIcon} by {authorLink}.",

@@ -12,7 +12,7 @@ const testimonialDefinitions = [
   rating: 5,
  },
  {
-  name: 'Hussein Khashan',
+  name: 'Hussein Khashab',
   handle: 'https://hk-energieberatung.de',
     key: 'testimonials.list.husseinKhashab.text',
     rating: 5,
@@ -32,7 +32,7 @@ const testimonials = computed(() =>
    <div class="flex flex-col items-center text-center">
     <h3 class="text-3xl font-bold tracking-tighter sm:text-5xl text-foreground">{{ $t('testimonials.title') }}</h3>
    </div>
-   <div class="mx-auto mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+   <div class="mx-auto mt-12 flex flex-wrap flex-row gap-8">
     <div v-for="testimonial in testimonials" :key="testimonial.handle" class="rounded shadow-md ">
      <div class="flex items-center space-x-4">
       <div>
