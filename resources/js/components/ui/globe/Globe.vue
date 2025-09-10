@@ -57,8 +57,8 @@ const DEFAULT_CONFIG: COBEOptions = {
 
 const props = withDefaults(defineProps<GlobeProps>(), {
   mass: 1,
-  tension: 480,
-  friction: 300,
+  tension: 280,
+  friction: 100,
   precision: 0.001,
 });
 

@@ -1,29 +1,39 @@
 <script setup lang="ts">
 import AppearanceIcon from '@/components/AppearanceIcon.vue';
-import LanguageSwitch from '@/components/LanguageSwitch.vue'; // Assuming this component exists
+import LanguageSwitch from '@/components/LanguageSwitch.vue';
 import Button from '@/components/ui/button/Button.vue';
-import { Book, Github, Heart } from 'lucide-vue-next';
-import { shallowRef } from 'vue';
+import { Book, Github, Heart, Linkedin } from 'lucide-vue-next';
+import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 
-const links = shallowRef({
+const { t } = useI18n();
+
+const linkDefinitions = {
     product: [
-        { text: 'Features', href: '#Features' },
-        { text: 'About', href: '#About' },
-        { text: 'Statistics', href: '#Statistics' },
-        { text: 'Testimonials', href: '#Testimonials' },
-        { text: 'Faq', href: '#Faq' },
+        { key: 'footer.links.features', href: '#Features' },
+        { key: 'footer.links.about', href: '#About' },
+        { key: 'footer.links.statistics', href: '#Statistics' },
+        { key: 'footer.links.testimonials', href: '#Testimonials' },
+        { key: 'footer.links.faq', href: '#Faq' },
     ],
     community: [
-        { text: 'GitHub', href: 'https://github.com/Masri-Programmer/resumetowebsite.git' },
-        { text: 'Blog & Portfolio', href: 'https://masri.blog' },
-        { text: 'Whatsapp', href: 'https://api.whatsapp.com/send/?phone=4917631579669&text&type=phone_number&app_absent=0 ' },
-        // { text: 'Email', href: 'https://api.whatsapp.com/send/?phone=4917631579669&text&type=phone_number&app_absent=0 ' },
+        { key: 'footer.links.github', href: 'https://github.com/Masri-Programmer/resumetowebsite.git' },
+        { key: 'footer.links.blogPortfolio', href: 'https://masri.blog' },
+        { key: 'footer.links.whatsapp', href: 'https://api.whatsapp.com/send/?phone=4917631579669&text&type=phone_number&app_absent=0' },
     ],
     legal: [
-        { text: 'Privacy Policy', href: '#' },
-        { text: 'Terms of Service', href: '#' },
+        { key: 'footer.links.privacyPolicy', href: '#' },
+        { key: 'footer.links.termsOfService', href: '#' },
+        { key: 'footer.links.imprint', href: '#' },
+        { key: 'footer.links.contact', href: '#' },
     ],
-});
+};
+
+const links = computed(() => ({
+    product: linkDefinitions.product.map(link => ({ ...link, text: t(link.key) })),
+    community: linkDefinitions.community.map(link => ({ ...link, text: t(link.key) })),
+    legal: linkDefinitions.legal.map(link => ({ ...link, text: t(link.key) })),
+}));
 
 const year = new Date().getFullYear();
 </script>
@@ -37,11 +47,11 @@ const year = new Date().getFullYear();
                         <Book class="h-6 w-6" />
                         <span class="text-lg font-semibold">Masri Programmer</span>
                     </div>
-                    <p class="text-sm">Happy to help, happy to share</p>
+                    <p class="text-sm">{{ $t('footer.tagline') }}</p>
                 </div>
 
                 <div class="space-y-4">
-                    <h4 class="font-semibold">Product</h4>
+                    <h4 class="font-semibold">{{ $t('footer.headings.product') }}</h4>
                     <ul class="space-y-2">
                         <li v-for="link in links.product" :key="link.text">
                             <a :href="link.href" class="text-sm hover:text-foreground">{{ link.text }}</a>
@@ -49,7 +59,7 @@ const year = new Date().getFullYear();
                     </ul>
                 </div>
                 <div class="space-y-4">
-                    <h4 class="font-semibold">Community</h4>
+                    <h4 class="font-semibold">{{ $t('footer.headings.community') }}</h4>
                     <ul class="space-y-2">
                         <li v-for="link in links.community" :key="link.text">
                             <a :href="link.href" class="text-sm hover:text-foreground" target="_blank" rel="noopener noreferrer">{{ link.text }}</a>
@@ -57,7 +67,7 @@ const year = new Date().getFullYear();
                     </ul>
                 </div>
                 <div class="space-y-4">
-                    <h4 class="font-semibold">Legal</h4>
+                    <h4 class="font-semibold">{{ $t('footer.headings.legal') }}</h4>
                     <ul class="space-y-2">
                         <li v-for="link in links.legal" :key="link.text">
                             <a :href="link.href" class="text-sm hover:text-foreground">{{ link.text }}</a>
@@ -68,23 +78,36 @@ const year = new Date().getFullYear();
         </div>
         <div class="border-t border-border py-4">
             <div class="container mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 sm:flex-row sm:px-6 lg:px-8">
-                <p class="text-sm text-muted-foreground">&copy; {{ year }} Resume To Website. All rights reserved.</p>
+                <p class="text-sm text-muted-foreground">{{ $t('footer.copyright', { year }) }}</p>
 
-                <p class="flex items-center gap-1.5 text-center text-sm">
-                    Made with <Heart class="h-4 w-4 fill-red-500 text-red-500" /> by
-                    <a href="https://masri.blog" target="_blank" rel="noopener noreferrer" class="font-medium hover:underline">Mohamad Masri</a>.
-                </p>
+                <i18n-t keypath="footer.madeWith" tag="p" class="flex items-center gap-1.5 text-center text-sm">
+                    <template #heartIcon>
+                        <Heart class="h-4 w-4 fill-red-500 text-red-500" />
+                    </template>
+                    <template #authorLink>
+                        <a href="https://masri.blog" target="_blank" rel="noopener noreferrer" class="font-medium hover:underline">Mohamad Masri</a>
+                    </template>
+                </i18n-t>
 
-                <!-- Right: Icons -->
                 <div class="flex items-center gap-4">
                     <Button variant="ghost" size="icon">
                         <a
                             href="https://github.com/Masri-Programmer/masri-web.git"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="GitHub Repository"
+                            :aria-label="$t('footer.githubAriaLabel')"
                         >
                             <Github class="h-5 w-5 hover:text-foreground" />
+                        </a>
+                    </Button>
+                    <Button variant="ghost" size="icon">
+                         <a
+                            href="https://www.linkedin.com/in/mohamad-masri-89778915a/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            :aria-label="$t('footer.linkedinAriaLabel')"
+                        >
+                            <Linkedin class="h-5 w-5 hover:text-foreground" />
                         </a>
                     </Button>
                     <AppearanceIcon />

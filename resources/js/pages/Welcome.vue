@@ -9,6 +9,8 @@ import Hero from './Hero.vue'
 import Features from './Features.vue'
 import About from './About.vue'
 import Statistics from './Statistics.vue'
+import ScrollTop from '@/components/ScrollTop.vue'
+import RightSideNav from '@/components/RightSideNav.vue'
 
 const Testimonials = defineAsyncComponent(() => import('./Testimonials.vue'))
 const Faq = defineAsyncComponent(() => import('./Faq.vue'))
@@ -33,7 +35,7 @@ router.on('success', () => {
     </Head>
 
     <Header data-aos="fade-down" data-aos-delay="1000" />
-
+ <RightSideNav />
     <main class="grid overflow-hidden bg-background text-foreground gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12">
         <Hero data-aos="fade-down" />
 
@@ -50,9 +52,9 @@ router.on('success', () => {
         <Testimonials data-aos="fade-left" />
         <Faq data-aos="fade-up" />
         <Technologies data-aos="fade-up" />
-    </main>
-
-    <Footer />
+      </main>
+      <Footer />
+      <ScrollTop  />
 </template>
 
 <style>

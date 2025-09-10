@@ -13,7 +13,7 @@ import webmockup from './mockup.png';
 </script>
 
 <template>
-    <section class="relative flex min-h-screen w-full items-center justify-center overflow-hidden">
+    <section id="Hero" class="relative flex min-h-screen w-full items-center justify-center overflow-hidden">
         <div class="z-10 container mx-auto max-w-7xl px-4 py-12">
             <div class="z-10 grid w-full max-w-7xl grid-cols-1 items-center gap-8 lg:grid-cols-2 align-top">
                 <div class="flex flex-col items-start justify-center space-y-6">

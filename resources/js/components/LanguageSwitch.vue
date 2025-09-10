@@ -17,12 +17,13 @@
 <script setup lang="ts">
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
-import { switchMethod } from '@/routes/language';
-import { router } from '@inertiajs/vue3';
+import { useStorage } from '@vueuse/core';
 import { Check, Languages } from 'lucide-vue-next';
+import { watchEffect } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const { locale } = useI18n();
+const storedLocale = useStorage('locale', 'en');
 
 const availableLanguages = [
     { code: 'en', name: 'English' },
@@ -31,16 +32,10 @@ const availableLanguages = [
 ];
 
 const setLocale = (langCode: string) => {
-    locale.value = langCode;
-
-    router.get(
-        switchMethod.url({ locale: langCode }),
-        {},
-        {
-            preserveState: true,
-        },
-    );
+    storedLocale.value = langCode;
 };
-</script>
 
-<style scoped></style>
+watchEffect(() => {
+    locale.value = storedLocale.value;
+});
+</script>
