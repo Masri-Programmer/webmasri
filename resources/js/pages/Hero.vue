@@ -1,71 +1,57 @@
 <script setup lang="ts">
+import BlurReveal from '@/components/ui/blur-reveal/BlurReveal.vue';
 import { Button } from '@/components/ui/button';
-import { CardBody, CardContainer, CardItem } from '@/components/ui/card-3d';
+import { CardContainer } from '@/components/ui/card-3d';
+import FlipWords from '@/components/ui/flip-words/FlipWords.vue';
 import InteractiveGridPattern from '@/components/ui/interactive-grid-pattern/InteractiveGridPattern.vue';
+import SafariMockup from '@/components/ui/safari-mockup/SafariMockup.vue';
 import ShimmerButton from '@/components/ui/shimmer-button/ShimmerButton.vue';
 import TextGenerateEffect from '@/components/ui/text-generate-effect/TextGenerateEffect.vue';
-import { login } from '@/routes';
-import { Link } from '@inertiajs/vue3';
 import { Book } from 'lucide-vue-next';
+import webmockup from './mockup.png';
 // import resume from '../../images/resume.webp';
 </script>
 
 <template>
     <section class="relative flex min-h-screen w-full items-center justify-center overflow-hidden">
-        <div class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 z-10">
-            <div class="z-10 grid w-full max-w-7xl grid-cols-1 items-center gap-8 lg:grid-cols-2">
+        <div class="z-10 container mx-auto max-w-7xl px-4 py-12">
+            <div class="z-10 grid w-full max-w-7xl grid-cols-1 items-center gap-8 lg:grid-cols-2 align-top">
                 <div class="flex flex-col items-start justify-center space-y-6">
-                    <h1 class="text-5xl font-bold tracking-tighter sm:text-6xl xl:text-7xl/none text-foreground">A free and open-source resume builder.</h1>
+                    <BlurReveal :delay="0.2" :duration="0.75">
+                        <h1 class="text-5xl font-bold tracking-tighter text-foreground sm:text-6xl xl:text-7xl/none">
+                            {{ $t('hero.title') }}
+                            <FlipWords :words="[$t('hero.flipWords.craft'), $t('hero.flipWords.design'), $t('hero.flipWords.create')]" :duration="2000" class="!text-sidebar-ring" />.
+                        </h1>
+                    </BlurReveal>
 
-                    <p class="max-w-prose md:text-xl text-muted-foreground">
+                    <p class="max-w-prose text-muted-foreground md:text-xl">
                         <TextGenerateEffect
-                            words="A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume."
+                            class=""
+                            :words="$t('hero.description')"
                         />
                     </p>
 
                     <div class="flex flex-wrap gap-4">
-                        <Link :href="login().url">
+                        <a target="_blank" href="https://cal.com/mohamad-masri-jfc90n/30min">
                             <ShimmerButton class="shadow-2xl" shimmer-size="2px">
                                 <span
                                     class="text-center text-sm leading-none font-medium tracking-tight whitespace-pre-wrap text-white lg:text-lg dark:from-white dark:to-slate-900/10"
                                 >
-                                    Get Started
+                                    {{ $t('hero.cta.bookMeeting') }}
                                 </span>
                             </ShimmerButton>
-                        </Link>
-                        <Button
-                            as="a"
-                            href="https://github.com/Masri-Programmer/resumetowebsite.git"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            size="lg"
-                            class="rounded-full"
-                            variant="secondary"
-                        >
+                        </a>
+                        <Button as="a" href="#Faq" rel="noopener noreferrer" size="lg" class="rounded-full" variant="secondary">
                             <Book class="mr-2 h-4 w-4" />
-                            Learn More
+                            {{ $t('hero.cta.learnMore') }}
                         </Button>
                     </div>
                 </div>
 
                 <div class="flex items-center justify-center">
                     <CardContainer>
-                        <Link :href="login().url">
-                            <CardBody
-                                class="group/card relative size-auto rounded-xl border border-black/[0.1] bg-gray-50 p-6 sm:w-[30rem] dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]"
-                            >
-                                <CardItem :translate-z="100" class="mt-4 w-full">
-                                    <!-- <img
-                                        :src="resume"
-                                        height="1000"
-                                        width="1000"
-                                        class="h-full w-full rounded-xl object-cover group-hover/card:shadow-xl"
-                                        alt="thumbnail"
-                                    /> -->
-                                </CardItem>
-                            </CardBody>
-                        </Link>
-                    </CardContainer>
+                        <SafariMockup url="" :src="webmockup" class="size-full" />
+                        </CardContainer>
                 </div>
             </div>
         </div>

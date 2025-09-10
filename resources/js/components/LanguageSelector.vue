@@ -4,21 +4,21 @@ import { router } from '@inertiajs/vue3';
 import { Check } from 'lucide-vue-next';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { switchMethod } from '@/routes/language';
 
-// Get the current locale from vue-i18n
 const { locale } = useI18n();
 
-// Define available languages
 const availableLanguages = [
     { code: 'en', name: 'English' },
     { code: 'de', name: 'Deutsch' },
+    { code: 'fr', name: 'French' },
 ];
 
-// Function to set the locale and persist it in the backend session
 const setLocale = (langCode: string) => {
-    // This route should exist from our previous setup to make the change persistent
-    router.get(`/language/${langCode}`, {}, {
-        preserveState: true, // Prevents a full page reload
+    locale.value = langCode;
+
+    router.get(switchMethod.url({ locale: langCode }), {}, {
+        preserveState: true,
     });
 };
 </script>

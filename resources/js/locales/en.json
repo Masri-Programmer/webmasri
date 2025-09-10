@@ -1,0 +1,78 @@
+{
+    "header": {
+        "donationMessage": "If this project has helped you, please consider {link} to Resume to Website...",
+        "donationLink": "donating"
+    },
+    "hero": {
+        "title": "Web Design, Online Shops, and Branding",
+        "flipWords": {
+            "craft": "Craft",
+            "create": "Create",
+            "design": "Design"
+        },
+        "description": "I set everything in motion for you: From comprehensive consulting and the development of tailor-made websites and online shops with the latest technology, to unique branding that makes your advertising measures and campaigns maximally effective. To ensure your success is sustainable, I offer continuous support, maintenance, ongoing optimization, and meaningful marketing. And all this with minimal effort for you – for your maximum benefit!",
+        "cta": {
+            "bookMeeting": "Book a Meeting",
+            "learnMore": "Learn More"
+        }
+    },
+    "features": {
+        "title": "Rich in features, not in pricing.",
+        "description": "Together we will turn your vision into reality – professionally, technically flawless, and with a clear focus on the needs of your customers. You will receive a shop that not only works, but also optimally showcases your brand and builds trust with your customers.",
+        "list": {
+            "saveTime": "Save Time & Money",
+            "selfHost": "Self-Host Option",
+            "noTracking": "No User Tracking or Ads",
+            "secure": "Stable & Secure",
+            "seoFriendly": "SEO Friendly",
+            "gdprCompliant": "GDPR Compliant",
+            "multipleTemplates": "Multiple Templates",
+            "figmaFiles": "Figma Design Files",
+            "customPages": "Customisable Pages",
+            "dragDrop": "Drag & Drop Editor",
+            "customLayouts": "Customisable Layouts",
+            "customSections": "Custom Resume Sections",
+            "googleFonts": "Google Fonts Integration",
+            "responsiveDesign": "Responsive Design",
+            "lightDarkTheme": "Light & Dark Theme",
+            "manageContent": "Manage Your Content",
+            "personalNotes": "Personal Notes for Resumes",
+            "pdfExport": "PDF Export",
+            "hostPublicly": "Host Publicly",
+            "customDomain": "Custom Domain Support",
+            "aiIntegration": "AI Integration",
+            "signInGithub": "Sign in with GitHub",
+            "signInGoogle": "Sign in with Google",
+            "signInEmail": "Sign in with Email",
+            "twoFactorAuth": "Two-Factor Authentication",
+            "analytics": "Built-in Analytics",
+            "speedOptimized": "Page Speed Optimized",
+            "multiLanguage": "Available in 50+ Languages",
+            "continuousImprovements": "Continuous Improvements"
+        }
+    },
+    "about": {
+        "title": "Let's Connect!",
+        "description": "Hi there! I'm a Software Developer at Meinders & Elstermann GmbH & Co. KG, and I absolutely love what I do. My days are spent crafting and refining web applications, with a real focus on making them not just powerful and reliable, but also genuinely enjoyable and intuitive for users. (P.S. - Don’t forget to check out my projects and thoughts over at {blogLink}!) There's something incredibly satisfying about transforming complex ideas into visually appealing, user-friendly experiences. I'm always eager to learn and grow, constantly exploring the latest technologies and best practices on daily.dev to ensure my work is top-notch. For me, coding isn't just a job; it's a passion that drives me to continuously improve and take on exciting new challenges. I truly believe in the power of collaboration and am always ready to contribute my skills to a dynamic team. I'm excited about what the future holds in web development and would love to connect with fellow professionals or discuss how my experience can benefit your next project. Feel free to {contactLink}!",
+        "blogLinkText": "www.masri.blog",
+        "contactLinkText": "reach out",
+        "globeTitle": "Globe"
+    },
+    "statistics": {
+        "experience": "Years of Experience",
+        "projects": "Completed Projects",
+        "clients": "Satisfied Clients",
+        "technologies": "Technologies"
+    },
+  "testimonials": {
+    "title": "What our customers are saying about us",
+    "list": {
+      "marvinPiepjack": {
+        "text": "This has been a game-changer for my business. The modern design and the speed integration are pure magic. This has completely changed my perspective."
+      },
+      "husseinKhashan": {
+        "text": "What I love most is that it's reliable. As an Engineer, features is a huge plus. The interface is incredibly intuitive, clean, and fast. Hands down, the best developer I know."
+      }
+    }
+  }
+}

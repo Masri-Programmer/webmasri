@@ -1,0 +1,78 @@
+{
+    "header": {
+        "donationMessage": "Si ce projet vous a aidé, veuillez envisager de {link} à Resume to Website...",
+        "donationLink": "faire un don"
+    },
+    "hero": {
+        "title": "Conception Web, Boutiques en Ligne et Image de Marque",
+        "flipWords": {
+            "craft": "Fabriquer",
+            "create": "Créer",
+            "design": "Concevoir"
+        },
+        "description": "Je mets tout en œuvre pour vous : du conseil complet au développement de sites web et de boutiques en ligne sur mesure avec les technologies les plus modernes, jusqu'à une image de marque unique qui rend vos mesures publicitaires et vos campagnes aussi efficaces que possible. Pour que votre succès soit durable, je propose un suivi continu, une maintenance, une optimisation constante et un marketing pertinent. Et tout cela avec un minimum d'effort pour vous – pour un bénéfice maximal !",
+        "cta": {
+            "bookMeeting": "Réserver une réunion",
+            "learnMore": "En savoir plus"
+        }
+    },
+    "features": {
+        "title": "Riche en fonctionnalités, pas en prix.",
+        "description": "Ensemble, nous concrétisons votre vision – de manière professionnelle, techniquement impeccable et avec un accent clair sur les besoins de vos clients. Vous obtiendrez une boutique qui non seulement fonctionne, mais qui met en valeur votre marque de manière optimale et inspire confiance à vos clients.",
+        "list": {
+            "saveTime": "Économisez Temps & Argent",
+            "selfHost": "Option d'auto-hébergement",
+            "noTracking": "Pas de suivi utilisateur ni de publicités",
+            "secure": "Stable & Sécurisé",
+            "seoFriendly": "Optimisé pour le SEO",
+            "gdprCompliant": "Conforme au RGPD",
+            "multipleTemplates": "Modèles multiples",
+            "figmaFiles": "Fichiers de conception Figma",
+            "customPages": "Pages personnalisables",
+            "dragDrop": "Éditeur glisser-déposer",
+            "customLayouts": "Mises en page personnalisables",
+            "customSections": "Sections de CV personnalisées",
+            "googleFonts": "Intégration de Google Fonts",
+            "responsiveDesign": "Design réactif",
+            "lightDarkTheme": "Thème Clair & Sombre",
+            "manageContent": "Gérez votre contenu",
+            "personalNotes": "Notes personnelles pour les CV",
+            "pdfExport": "Exportation PDF",
+            "hostPublicly": "Héberger publiquement",
+            "customDomain": "Support de domaine personnalisé",
+            "aiIntegration": "Intégration IA",
+            "signInGithub": "Connexion avec GitHub",
+            "signInGoogle": "Connexion avec Google",
+            "signInEmail": "Connexion par e-mail",
+            "twoFactorAuth": "Authentification à deux facteurs",
+            "analytics": "Analytique intégrée",
+            "speedOptimized": "Vitesse de page optimisée",
+            "multiLanguage": "Disponible en 50+ langues",
+            "continuousImprovements": "Améliorations continues"
+        }
+    },
+    "about": {
+        "title": "Connectons-nous !",
+        "description": "Bonjour ! Je suis développeur de logiciels chez Meinders & Elstermann GmbH & Co. KG, et j'adore ce que je fais. Je passe mes journées à créer et peaufiner des applications web, en veillant tout particulièrement à ce qu'elles soient non seulement puissantes et fiables, mais aussi véritablement agréables et intuitives pour les utilisateurs. (P.S. - N'oubliez pas de jeter un œil à mes projets et réflexions sur {blogLink} !) Il y a quelque chose d'incroyablement satisfaisant à transformer des idées complexes en expériences visuellement attrayantes et conviviales. Je suis toujours désireux d'apprendre et de grandir, explorant constamment les dernières technologies et les meilleures pratiques sur daily.dev pour garantir que mon travail est de première qualité. Pour moi, le codage n'est pas seulement un travail ; c'est une passion qui me pousse à m'améliorer continuellement et à relever de nouveaux défis passionnants. Je crois sincèrement au pouvoir de la collaboration et suis toujours prêt à apporter mes compétences à une équipe dynamique. Je suis enthousiaste quant à l'avenir du développement web et j'aimerais beaucoup entrer en contact avec d'autres professionnels ou discuter de la manière dont mon expérience peut bénéficier à votre prochain projet. N'hésitez pas à {contactLink} !",
+        "blogLinkText": "www.masri.blog",
+        "contactLinkText": "me contacter",
+        "globeTitle": "Globe"
+    },
+    "statistics": {
+        "experience": "Années d'expérience",
+        "projects": "Projets réalisés",
+        "clients": "Clients satisfaits",
+        "technologies": "Technologies"
+    },
+  "testimonials": {
+    "title": "Ce que nos clients disent de nous",
+    "list": {
+      "marvinPiepjack": {
+        "text": "Cela a changé la donne pour mon entreprise. Le design moderne et l'intégration de la vitesse sont de la pure magie. Cela a complètement changé ma perspective."
+      },
+      "husseinKhashan": {
+        "text": "Ce que j'aime le plus, c'est sa fiabilité. En tant qu'ingénieur, les fonctionnalités sont un énorme avantage. L'interface est incroyablement intuitive, propre et rapide. Sans conteste, le meilleur développeur que je connaisse."
+      }
+    }
+  }
+}

@@ -7,23 +7,34 @@
             </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end">
-            <DropdownMenuItem @click="setLocale('en')"> English </DropdownMenuItem>
-            <DropdownMenuItem @click="setLocale('de')"> Deutsch </DropdownMenuItem>
+            <DropdownMenuItem v-for="lang in availableLanguages" :key="lang.code" class="w-full justify-between" @click="setLocale(lang.code)">
+                {{ lang.name }} <Check v-if="locale === lang.code" class="h-4 w-4" />
+            </DropdownMenuItem>
         </DropdownMenuContent>
     </DropdownMenu>
 </template>
 
 <script setup lang="ts">
 import { Button } from '@/components/ui/button';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { switchMethod } from '@/routes/language';
 import { router } from '@inertiajs/vue3';
-import { Languages } from 'lucide-vue-next';
+import { Check, Languages } from 'lucide-vue-next';
+import { useI18n } from 'vue-i18n';
 
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+const { locale } = useI18n();
 
-const setLocale = (lang: 'en' | 'de') => {
+const availableLanguages = [
+    { code: 'en', name: 'English' },
+    { code: 'de', name: 'Deutsch' },
+    { code: 'fr', name: 'French' },
+];
+
+const setLocale = (langCode: string) => {
+    locale.value = langCode;
+
     router.get(
-        switchMethod.url({ locale: lang }),
+        switchMethod.url({ locale: langCode }),
         {},
         {
             preserveState: true,

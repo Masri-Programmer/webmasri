@@ -1,0 +1,78 @@
+{
+    "header": {
+        "donationMessage": "Wenn dir dieses Projekt geholfen hat, unterstütze Resume to Website bitte mit einer {link}.",
+        "donationLink": "Spende"
+    },
+    "hero": {
+        "title": "Webdesign, Onlineshops und Brand",
+        "flipWords": {
+            "craft": "Gestalten",
+            "create": "Erschaffen",
+            "design": "Entwerfen"
+        },
+        "description": "»Für Sie setze ich alles in Bewegung: Von umfassender Beratung über die Entwicklung maßgeschneiderter Websites und Onlineshops mit modernster Technologie bis hin zum einzigartigen Branding, das Ihre Werbemaßnahmen und Kampagnen maximal wirksam macht. Damit Ihr Erfolg nachhaltig bleibt, biete ich kontinuierliche Betreuung, Wartung, laufende Optimierung und sinnvolles Marketing. Und das alles mit minimalem Aufwand für Sie – für Ihren maximalen Nutzen!«",
+        "cta": {
+            "bookMeeting": "Termin buchen",
+            "learnMore": "Mehr erfahren"
+        }
+    },
+    "features": {
+        "title": "Reich an Funktionen, nicht am Preis.",
+        "description": "»Gemeinsam setzen wir Ihre Vision um – professionell, technisch einwandfrei und mit einem klaren Fokus auf die Bedürfnisse Ihrer Kunden. Sie erhalten einen Shop, der nicht nur funktioniert, sondern Ihre Marke optimal in Szene setzt und Vertrauen bei Ihren Kunden schafft.«",
+        "list": {
+            "saveTime": "Spart Zeit & Geld",
+            "selfHost": "Selbst-Hosting Option",
+            "noTracking": "Kein User-Tracking oder Werbung",
+            "secure": "Stabil & Sicher",
+            "seoFriendly": "SEO-freundlich",
+            "gdprCompliant": "DSGVO-konform",
+            "multipleTemplates": "Mehrere Vorlagen",
+            "figmaFiles": "Figma-Designdateien",
+            "customPages": "Anpassbare Seiten",
+            "dragDrop": "Drag & Drop-Editor",
+            "customLayouts": "Anpassbare Layouts",
+            "customSections": "Eigene Lebenslauf-Abschnitte",
+            "googleFonts": "Google Fonts-Integration",
+            "responsiveDesign": "Responsives Design",
+            "lightDarkTheme": "Helles & Dunkles Thema",
+            "manageContent": "Inhalte verwalten",
+            "personalNotes": "Persönliche Notizen für Lebensläufe",
+            "pdfExport": "PDF-Export",
+            "hostPublicly": "Öffentlich hosten",
+            "customDomain": "Eigene Domain-Unterstützung",
+            "aiIntegration": "KI-Integration",
+            "signInGithub": "Anmelden mit GitHub",
+            "signInGoogle": "Anmelden mit Google",
+            "signInEmail": "Anmelden mit E-Mail",
+            "twoFactorAuth": "Zwei-Faktor-Authentisierung",
+            "analytics": "Integrierte Analytik",
+            "speedOptimized": "Seitengeschwindigkeit optimiert",
+            "multiLanguage": "Verfügbar in 50+ Sprachen",
+            "continuousImprovements": "Kontinuierliche Verbesserungen"
+        }
+    },
+    "about": {
+        "title": "Vernetzen wir uns!",
+        "description": "Hallo! Ich bin Softwareentwickler bei Meinders & Elstermann GmbH & Co. KG und liebe meine Arbeit. Meine Tage verbringe ich damit, Webanwendungen zu entwickeln und zu verfeinern, wobei ich besonderen Wert darauf lege, sie nicht nur leistungsstark und zuverlässig, sondern auch wirklich angenehm und intuitiv für die Benutzer zu gestalten. (P.S. - Vergessen Sie nicht, meine Projekte und Gedanken auf {blogLink} anzusehen!) Es ist unglaublich befriedigend, komplexe Ideen in visuell ansprechende, benutzerfreundliche Erlebnisse zu verwandeln. Ich bin stets bestrebt zu lernen und zu wachsen und erkunde ständig die neuesten Technologien und Best Practices auf daily.dev, um sicherzustellen, dass meine Arbeit erstklassig ist. Für mich ist Programmieren nicht nur ein Job; es ist eine Leidenschaft, die mich antreibt, mich kontinuierlich zu verbessern und neue spannende Herausforderungen anzunehmen. Ich glaube fest an die Kraft der Zusammenarbeit und bin immer bereit, meine Fähigkeiten in ein dynamisches Team einzubringen. Ich bin gespannt auf die Zukunft der Webentwicklung und würde mich freuen, mit anderen Fachleuten in Kontakt zu treten oder zu besprechen, wie meine Erfahrung Ihrem nächsten Projekt zugutekommen kann. Zögern Sie nicht, {contactLink}!",
+        "blogLinkText": "www.masri.blog",
+        "contactLinkText": "Kontakt aufzunehmen",
+        "globeTitle": "Globus"
+    },
+    "statistics": {
+        "experience": "Jahre Erfahrung",
+        "projects": "Realisierte Projekte",
+        "clients": "Zufriedene Kunden",
+        "technologies": "Technologien"
+    },
+  "testimonials": {
+    "title": "Was unsere Kunden über uns sagen",
+    "list": {
+      "marvinPiepjack": {
+        "text": "Das hat mein Geschäft grundlegend verändert. Das moderne Design und die schnelle Integration sind pure Magie. Das hat meine Perspektive komplett verändert."
+      },
+      "husseinKhashan": {
+        "text": "Was ich am meisten liebe, ist die Zuverlässigkeit. Als Ingenieur sind die Funktionen ein riesiges Plus. Die Benutzeroberfläche ist unglaublich intuitiv, sauber und schnell. Zweifellos der beste Entwickler, den ich kenne."
+      }
+    }
+  }
+}

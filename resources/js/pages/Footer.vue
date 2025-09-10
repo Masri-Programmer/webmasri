@@ -8,10 +8,17 @@ import { shallowRef } from 'vue';
 const links = shallowRef({
     product: [
         { text: 'Features', href: '#Features' },
+        { text: 'About', href: '#About' },
+        { text: 'Statistics', href: '#Statistics' },
         { text: 'Testimonials', href: '#Testimonials' },
         { text: 'Faq', href: '#Faq' },
     ],
-    community: [{ text: 'GitHub', href: 'https://github.com/Masri-Programmer/resumetowebsite.git' }],
+    community: [
+        { text: 'GitHub', href: 'https://github.com/Masri-Programmer/resumetowebsite.git' },
+        { text: 'Blog & Portfolio', href: 'https://masri.blog' },
+        { text: 'Whatsapp', href: 'https://api.whatsapp.com/send/?phone=4917631579669&text&type=phone_number&app_absent=0 ' },
+        // { text: 'Email', href: 'https://api.whatsapp.com/send/?phone=4917631579669&text&type=phone_number&app_absent=0 ' },
+    ],
     legal: [
         { text: 'Privacy Policy', href: '#' },
         { text: 'Terms of Service', href: '#' },
@@ -28,9 +35,9 @@ const year = new Date().getFullYear();
                 <div class="col-span-2 flex flex-col items-start gap-4 md:col-span-1">
                     <div class="flex items-center gap-2">
                         <Book class="h-6 w-6" />
-                        <span class="text-lg font-semibold">Resume To Website</span>
+                        <span class="text-lg font-semibold">Masri Programmer</span>
                     </div>
-                    <p class="text-sm">A free and open-source resume builder.</p>
+                    <p class="text-sm">Happy to help, happy to share</p>
                 </div>
 
                 <div class="space-y-4">
@@ -72,7 +79,7 @@ const year = new Date().getFullYear();
                 <div class="flex items-center gap-4">
                     <Button variant="ghost" size="icon">
                         <a
-                            href="https://github.com/Masri-Programmer/resumetowebsite.git"
+                            href="https://github.com/Masri-Programmer/masri-web.git"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="GitHub Repository"
