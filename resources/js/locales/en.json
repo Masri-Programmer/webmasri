@@ -1,9 +1,9 @@
 {
-     "scrollToTop": {
-    "label": "Scroll to Top"
-  },
+    "scrollToTop": {
+        "label": "Scroll to Top"
+    },
     "header": {
-        "donationMessage": "If this project has helped you, please consider {link} to Resume to Website...",
+        "donationMessage": "If this project has helped you, please consider {link} to Masri Programmer...",
         "donationLink": "donating"
     },
     "hero": {
@@ -67,122 +67,143 @@
         "clients": "Satisfied Clients",
         "technologies": "Technologies"
     },
-  "testimonials": {
-    "title": "What our customers are saying about us",
-    "list": {
-      "marvinPiepjack": {
-        "text": "This has been a game-changer for my business. The modern design and the speed integration are pure magic. This has completely changed my perspective."
-      },
-      "husseinKhashab": {
-        "text": "What I love most is that it's reliable. As an Engineer, features is a huge plus. The interface is incredibly intuitive, clean, and fast. Hands down, the best developer I know."
-      }
-    }
-  },
-  "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Have questions? We've got answers. Here are some of the most common things people ask.",
-    "list": {
-      "projectFlow": {
-        "question": "What is the typical project workflow for a website or an online shop?",
-        "answer": "<ul><li>Initial meeting and description of your project via phone or Zoom, determination of the scope of services</li><li>You will receive a written offer from me</li><li>If necessary, brand workshop</li><li>If necessary, brand / logo design</li><li>Conceptualization as a basis and definition of all necessary parameters</li><li>Detailed planning of design, content, technology, and timeline</li><li>Technical adaptation and setup of the Content Management System (CMS) or online shop</li><li>Creation of screen design based on corporate design, specifications, and examples</li><li>Review and approval of the screen design</li><li>Responsive optimization to ensure optimal display on all devices</li><li>Creation / data migration of content in the CMS or online shop as agreed</li><li>Project acceptance</li><li>Launch — Your project goes online</li><li>Support and maintenance such as updates, adjustments, and <a href='https://www.michael-hoemke.de/webdesign/angebote/lokales_marketing.php' target='_blank' rel='noopener noreferrer'>promotional activities</a></li></ul><p>We will outline which services are relevant for you in our first conversation, which also serves as the basis for a proper offer.</p>"
-      },
-      "selfMaintenance": {
-        "question": "Can you maintain and expand your website or online shop yourself?",
-        "answer": "<p>You can maintain and expand all content yourself. You will receive a thorough introduction from me beforehand. For websites, I use Weblication © WordPress as a CMS, and for online shops, Shopware, WooCommerce, or Gambio as the shop system, depending on the task. If you do not want to handle the maintenance yourself, I can optionally take over this partially or completely for you.</p><p>Backups and updates require additional technical effort. This requires a certain level of expertise for most systems and should therefore preferably not be carried out independently. I am also happy to take on this task for you regularly and promptly as an option.</p>"
-      },
-      "costs": {
-        "question": "What does a website or an online shop cost?",
-        "answer": "<p>The cost of a website or an online shop naturally depends on the scope of the project. To give you a meaningful overview, you can use the following empirical values as a guide:</p><ul><li>Landing page (Onepager) with Weblication: 200 Euro - 2,800 Euro</li><li>Website: 600 Euro to 5,000 Euro</li><li>Online shop: 2,200 Euro to 4,000 Euro</li><li>Online shop with CMS: 2,200 Euro to 4,000 Euro (incl. website and blog)</li></ul>"
-      },
-      "newWebsiteNeeded": {
-        "question": "Do you need a new website or a new online shop?",
-        "answer": "<p>If your website or online shop is no longer technically and/or visually up to date, this question is usually easy to answer. But even a new website or online shop can be realized 'missing the point'. The classic weaknesses are outdated design, coding that no longer works on different devices, missing functionality or compatibility, and outdated, insecure software. If your business depends on your online presence and you make a living from it, there is no question that you should do everything possible to ensure that this important part works optimally for you!</p>"
-      },
-      "ownershipWebsite": {
-        "question": "Is the website or online shop your property?",
-        "answer": "<p>Websites and online shops developed by me belong to you. If, for whatever reason, necessary, you can easily move to another provider. With other providers or inflexible modular systems, you are often dependent on the respective provider and may have to have a completely new website or online shop created in the event of a change. All graphics will be made available to you upon request, provided the rights allow it, and any necessary domains and software will be acquired in your name.</p>"
-      },
-      "ownershipPrint": {
-        "question": "Is the created print advertising your property?",
-        "answer": "<p>For all final artwork / print templates created by me, you will receive a spatially and temporally unlimited right of use for your company from me.</p>"
-      },
-      "duration": {
-        "question": "How long does it take until everything is finished?",
-        "answer": "<p>You can probably already guess the answer: It depends on the scope and my workload. To still offer you a few milestones, here is a rough estimate:</p><ul><li>Small website: approx. 1 month</li><li>Classic website for a company: approx. 2 months</li><li>Small online shop: approx. 2 months</li><li>Extensive online shop: approx. 6 months</li><li>A brand design / logo: approx. 1 month</li></ul><p>From many years of experience, I can say that delays will almost always occur, and very often this is due to the delayed delivery of content or late feedback. As your project manager, I try to avoid this and am happy to serve as a 'reminder'. For large projects, it can help to bring in other service providers, such as a copywriter.</p>"
-      },
-      "brandWorkshop": {
-        "question": "Why is a brand workshop useful?",
-        "answer": "<p>The brand workshop is for customers who do not yet have a concrete distinction for their brand and/or products or who want to optimize an existing brand design. Your success lies in the communication of your advantages, which is why we work together to develop your brand concept as the basis for all further solutions.</p>"
-      },
-      "whatSetsMeApart": {
-        "question": "What distinguishes my work?",
-        "answer": "<p>There are many offers on the market — why might you choose me? I have over 25 years of experience from many different projects and offer my customers a choice of 2 CMS and 3 online shops. The benefit for you is comprehensive knowledge and a high problem-solving ability. I have experienced every conceivable situation in projects, have seen many trends come and go, and know what works and what doesn't. This makes one very adaptable, also for future requirements.</p><p>To find out if we are a good match, you can get a first impression through my offer, my references, and my blog, which we can then refine in a personal conversation – I would be pleased.</p>"
-      },
-      "clientContribution": {
-        "question": "What should you as a client provide?",
-        "answer": "<p>It is primarily your project, which has a major impact on the future of your company. So plan enough time for it. Your cooperation is needed for feedback, content, and further collaboration and is often underestimated. For example, with online shops with Wawi/ERP, a considerable amount of time can arise from coordination and data collection.</p>"
-      },
-      "imageFormats": {
-        "question": "In what formats should images for the website and online shop be delivered?",
-        "answer": "<p>Photo motifs (landscapes, people, etc.) please as .jpg, isolated motifs please as .png, and motifs with a lot of text or lines please as .gif or .png. Logos if possible please as .svg or .eps. All image motifs preferably in wide format with a width of approx. 1800px.</p>"
-      },
-      "hostingProvider": {
-        "question": "How do you find a suitable hosting provider?",
-        "answer": "<p>I do not offer <a href='https://www.michael-hoemke.de/webdesign/aktuelles/meldungen/suche_hostingprovider.php' target='_blank' rel='noopener noreferrer'>hosting services</a> for my clients; specialized providers do that better, and for you as a customer, it is also more advantageous to separate hosting and online services. But of course, I am very happy to advise you and select a suitable hosting offer for you and support you, if necessary, with the booking.</p>"
-      },
-      "seoToDo": {
-        "question": "What should you do for SEO?",
-        "answer": "<p>Websites and online shops for my clients are fundamentally SEO optimized. With sufficiently well-written and structured content, you can continuously optimize your SEO. At any time, you can receive help and valuable tips from me if needed or take advantage of further services.</p>"
-      },
-      "metaKeywords": {
-        "question": "Do I need to maintain <meta keywords>?",
-        "answer": "<p>Because it is asked from time to time: No! The meta tag 'keywords' has not been relevant for ranking in Google search since 2009.</p>"
-      },
-      "accessibility": {
-        "question": "What should you consider regarding accessibility?",
-        "answer": "<p>The <a href='https://www.barrierefreiheit-dienstekonsolidierung.bund.de/Webs/PB/DE/gesetze-und-richtlinien/barrierefreiheitsstaerkungsgesetz/barrierefreiheitsstaerkungsgesetz-node.html' target='_blank' rel='noopener noreferrer'>European Accessibility Act (EAA)</a> requires many companies to be digitally accessible by 2025. But does this specifically apply to your company?</p><p>*The legislation states that companies that offer goods or services to consumers and end-users, have a total turnover of more than 2 million / year and at least 10 employees, must definitely align their websites for accessibility from June 28, 2025.</p><p>*The reverse conclusion is: Companies that offer their goods or services exclusively B2B or have a maximum total turnover of 2 million / year and fewer than 10 employees are exempt from the new regulations.</p><p>In principle, however, websites and online shops should be designed to be as accessible or low-barrier as possible. This makes sense for economic reasons alone. An accessible website goes hand in hand with a better user experience and can thus increase the conversion rate. I would be happy to advise you on this topic in more detail.</p><p><small>*All statements without legal guarantee.</small></p>"
-      },
-      "responsiveDesign": {
-        "question": "Do my websites and online shops also work on mobile devices (responsive)?",
-        "answer": "<p>Actually, it has long been self-evident that websites and online shops function just as well on mobile devices as on stationary devices (desktops) or laptops with larger screens, and of course, this is also the case with the projects I manage.</p><p>Here too, there are differences in quality: An automatic adjustment to the device used can be designed using 'breakpoints', then it switches to a different view exactly from this point and for this device class, or it can be designed to be 'fluid'. 'Fluid' here means that device-independent adjustments are also taken into account, for example for different window sizes on a desktop. This results in fewer unsightly display errors even on larger screens, because no one knows how large or how small the browser window is used there.</p>"
-      }
-    }
-  },
-  "footer": {
-    "tagline": "Happy to help, happy to share",
-    "germanLaw": "I recognize the norms and standards of the <a href='https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/it-grundschutz_node.html' target='blank' rel='noopener noreferrer'>BSI IT-Grundschutz</a> ( German Federal Office for Information Security ) and comply with them.",
-    "germanPrices":"All prices plus 19% VAT. I provide my services exclusively to businesses within the meaning of  <a href='https://www.gesetze-im-internet.de/bgb/__14.html' target='blank' rel='noopener noreferrer'>Section 14 of the German Civil Code (BGB)</a>. Consumers within the meaning of  <a href='https://www.gesetze-im-internet.de/bgb/__13.html' target='blank' rel='noopener noreferrer'>Section 13 of the BGB</a> do not receive any services.",
-    "headings": {
-      "product": "Product",
-      "community": "Community",
-      "legal": "Legal"
+    "testimonials": {
+        "title": "What our customers are saying about us",
+        "list": {
+            "marvinPiepjack": {
+                "text": "This has been a game-changer for my business. The modern design and the speed integration are pure magic. This has completely changed my perspective."
+            },
+            "husseinKhashab": {
+                "text": "What I love most is that it's reliable. As an Engineer, features is a huge plus. The interface is incredibly intuitive, clean, and fast. Hands down, the best developer I know."
+            }
+        }
     },
-    "links": {
-      "features": "Features",
-      "about": "About",
-      "statistics": "Statistics",
-      "testimonials": "Testimonials",
-      "faq": "FAQ",
-      "github": "GitHub",
-      "blogPortfolio": "Blog & Portfolio",
-      "whatsapp": "Whatsapp",
-      "privacyPolicy": "Privacy Policy",
-      "termsOfService": "Terms of Service",
-      "imprint":"Imprint",
-      "contact":"Contact"
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Have questions? We've got answers. Here are some of the most common things people ask.",
+        "list": {
+            "projectFlow": {
+                "question": "What is the typical project workflow for a website or an online shop?",
+                "answer": "<ul><li>Initial meeting and description of your project via phone or Zoom, determination of the scope of services</li><li>You will receive a written offer from me</li><li>If necessary, brand workshop</li><li>If necessary, brand / logo design</li><li>Conceptualization as a basis and definition of all necessary parameters</li><li>Detailed planning of design, content, technology, and timeline</li><li>Technical adaptation and setup of the Content Management System (CMS) or online shop</li><li>Creation of screen design based on corporate design, specifications, and examples</li><li>Review and approval of the screen design</li><li>Responsive optimization to ensure optimal display on all devices</li><li>Creation / data migration of content in the CMS or online shop as agreed</li><li>Project acceptance</li><li>Launch — Your project goes online</li><li>Support and maintenance such as updates, adjustments, and <a href='https://www.michael-hoemke.de/webdesign/angebote/lokales_marketing.php' target='_blank' rel='noopener noreferrer'>promotional activities</a></li></ul><p>We will outline which services are relevant for you in our first conversation, which also serves as the basis for a proper offer.</p>"
+            },
+            "selfMaintenance": {
+                "question": "Can you maintain and expand your website or online shop yourself?",
+                "answer": "<p>You can maintain and expand all content yourself. You will receive a thorough introduction from me beforehand. For websites, I use Weblication © WordPress as a CMS, and for online shops, Shopware, WooCommerce, or Gambio as the shop system, depending on the task. If you do not want to handle the maintenance yourself, I can optionally take over this partially or completely for you.</p><p>Backups and updates require additional technical effort. This requires a certain level of expertise for most systems and should therefore preferably not be carried out independently. I am also happy to take on this task for you regularly and promptly as an option.</p>"
+            },
+            "costs": {
+                "question": "What does a website or an online shop cost?",
+                "answer": "<p>The cost of a website or an online shop naturally depends on the scope of the project. To give you a meaningful overview, you can use the following empirical values as a guide:</p><ul><li>Landing page (Onepager) with Weblication: 200 Euro - 2,800 Euro</li><li>Website: 600 Euro to 5,000 Euro</li><li>Online shop: 2,200 Euro to 4,000 Euro</li><li>Online shop with CMS: 2,200 Euro to 4,000 Euro (incl. website and blog)</li></ul>"
+            },
+            "newWebsiteNeeded": {
+                "question": "Do you need a new website or a new online shop?",
+                "answer": "<p>If your website or online shop is no longer technically and/or visually up to date, this question is usually easy to answer. But even a new website or online shop can be realized 'missing the point'. The classic weaknesses are outdated design, coding that no longer works on different devices, missing functionality or compatibility, and outdated, insecure software. If your business depends on your online presence and you make a living from it, there is no question that you should do everything possible to ensure that this important part works optimally for you!</p>"
+            },
+            "ownershipWebsite": {
+                "question": "Is the website or online shop your property?",
+                "answer": "<p>Websites and online shops developed by me belong to you. If, for whatever reason, necessary, you can easily move to another provider. With other providers or inflexible modular systems, you are often dependent on the respective provider and may have to have a completely new website or online shop created in the event of a change. All graphics will be made available to you upon request, provided the rights allow it, and any necessary domains and software will be acquired in your name.</p>"
+            },
+            "ownershipPrint": {
+                "question": "Is the created print advertising your property?",
+                "answer": "<p>For all final artwork / print templates created by me, you will receive a spatially and temporally unlimited right of use for your company from me.</p>"
+            },
+            "duration": {
+                "question": "How long does it take until everything is finished?",
+                "answer": "<p>You can probably already guess the answer: It depends on the scope and my workload. To still offer you a few milestones, here is a rough estimate:</p><ul><li>Small website: approx. 1 month</li><li>Classic website for a company: approx. 2 months</li><li>Small online shop: approx. 2 months</li><li>Extensive online shop: approx. 6 months</li><li>A brand design / logo: approx. 1 month</li></ul><p>From many years of experience, I can say that delays will almost always occur, and very often this is due to the delayed delivery of content or late feedback. As your project manager, I try to avoid this and am happy to serve as a 'reminder'. For large projects, it can help to bring in other service providers, such as a copywriter.</p>"
+            },
+            "brandWorkshop": {
+                "question": "Why is a brand workshop useful?",
+                "answer": "<p>The brand workshop is for customers who do not yet have a concrete distinction for their brand and/or products or who want to optimize an existing brand design. Your success lies in the communication of your advantages, which is why we work together to develop your brand concept as the basis for all further solutions.</p>"
+            },
+            "whatSetsMeApart": {
+                "question": "What distinguishes my work?",
+                "answer": "<p>There are many offers on the market — why might you choose me? I have over 25 years of experience from many different projects and offer my customers a choice of 2 CMS and 3 online shops. The benefit for you is comprehensive knowledge and a high problem-solving ability. I have experienced every conceivable situation in projects, have seen many trends come and go, and know what works and what doesn't. This makes one very adaptable, also for future requirements.</p><p>To find out if we are a good match, you can get a first impression through my offer, my references, and my blog, which we can then refine in a personal conversation – I would be pleased.</p>"
+            },
+            "clientContribution": {
+                "question": "What should you as a client provide?",
+                "answer": "<p>It is primarily your project, which has a major impact on the future of your company. So plan enough time for it. Your cooperation is needed for feedback, content, and further collaboration and is often underestimated. For example, with online shops with Wawi/ERP, a considerable amount of time can arise from coordination and data collection.</p>"
+            },
+            "imageFormats": {
+                "question": "In what formats should images for the website and online shop be delivered?",
+                "answer": "<p>Photo motifs (landscapes, people, etc.) please as .jpg, isolated motifs please as .png, and motifs with a lot of text or lines please as .gif or .png. Logos if possible please as .svg or .eps. All image motifs preferably in wide format with a width of approx. 1800px.</p>"
+            },
+            "hostingProvider": {
+                "question": "How do you find a suitable hosting provider?",
+                "answer": "<p>I do not offer <a href='https://www.michael-hoemke.de/webdesign/aktuelles/meldungen/suche_hostingprovider.php' target='_blank' rel='noopener noreferrer'>hosting services</a> for my clients; specialized providers do that better, and for you as a customer, it is also more advantageous to separate hosting and online services. But of course, I am very happy to advise you and select a suitable hosting offer for you and support you, if necessary, with the booking.</p>"
+            },
+            "seoToDo": {
+                "question": "What should you do for SEO?",
+                "answer": "<p>Websites and online shops for my clients are fundamentally SEO optimized. With sufficiently well-written and structured content, you can continuously optimize your SEO. At any time, you can receive help and valuable tips from me if needed or take advantage of further services.</p>"
+            },
+            "metaKeywords": {
+                "question": "Do I need to maintain <meta keywords>?",
+                "answer": "<p>Because it is asked from time to time: No! The meta tag 'keywords' has not been relevant for ranking in Google search since 2009.</p>"
+            },
+            "accessibility": {
+                "question": "What should you consider regarding accessibility?",
+                "answer": "<p>The <a href='https://www.barrierefreiheit-dienstekonsolidierung.bund.de/Webs/PB/DE/gesetze-und-richtlinien/barrierefreiheitsstaerkungsgesetz/barrierefreiheitsstaerkungsgesetz-node.html' target='_blank' rel='noopener noreferrer'>European Accessibility Act (EAA)</a> requires many companies to be digitally accessible by 2025. But does this specifically apply to your company?</p><p>*The legislation states that companies that offer goods or services to consumers and end-users, have a total turnover of more than 2 million / year and at least 10 employees, must definitely align their websites for accessibility from June 28, 2025.</p><p>*The reverse conclusion is: Companies that offer their goods or services exclusively B2B or have a maximum total turnover of 2 million / year and fewer than 10 employees are exempt from the new regulations.</p><p>In principle, however, websites and online shops should be designed to be as accessible or low-barrier as possible. This makes sense for economic reasons alone. An accessible website goes hand in hand with a better user experience and can thus increase the conversion rate. I would be happy to advise you on this topic in more detail.</p><p><small>*All statements without legal guarantee.</small></p>"
+            },
+            "responsiveDesign": {
+                "question": "Do my websites and online shops also work on mobile devices (responsive)?",
+                "answer": "<p>Actually, it has long been self-evident that websites and online shops function just as well on mobile devices as on stationary devices (desktops) or laptops with larger screens, and of course, this is also the case with the projects I manage.</p><p>Here too, there are differences in quality: An automatic adjustment to the device used can be designed using 'breakpoints', then it switches to a different view exactly from this point and for this device class, or it can be designed to be 'fluid'. 'Fluid' here means that device-independent adjustments are also taken into account, for example for different window sizes on a desktop. This results in fewer unsightly display errors even on larger screens, because no one knows how large or how small the browser window is used there.</p>"
+            }
+        }
     },
-    "copyright": "© {year} . All rights reserved.",
-    "madeWith": "Made with {heartIcon} by {authorLink}.",
-    "githubAriaLabel": "GitHub Repository",
-    "linkedinAriaLabel": "LinkedIn Profile"
-  },
-  "navigation": {
-    "hero": "Home",
-    "features": "Features",
-    "about": "About",
-    "statistics": "Statistics",
-    "testimonials": "Testimonials",
-    "faq": "FAQ",
-    "technologies": "Technologies"
-}
+    "footer": {
+        "tagline": "Happy to help, happy to share",
+        "germanLaw": "I recognize the norms and standards of the <a href='https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/it-grundschutz_node.html' target='blank' rel='noopener noreferrer'>BSI IT-Grundschutz</a> ( German Federal Office for Information Security ) and comply with them.",
+        "germanPrices": "All prices plus 19% VAT. I provide my services exclusively to businesses within the meaning of  <a href='https://www.gesetze-im-internet.de/bgb/__14.html' target='blank' rel='noopener noreferrer'>Section 14 of the German Civil Code (BGB)</a>. Consumers within the meaning of  <a href='https://www.gesetze-im-internet.de/bgb/__13.html' target='blank' rel='noopener noreferrer'>Section 13 of the BGB</a> do not receive any services.",
+        "headings": {
+            "product": "Product",
+            "community": "Community",
+            "legal": "Legal"
+        },
+        "links": {
+            "features": "Features",
+            "about": "About",
+            "statistics": "Statistics",
+            "testimonials": "Testimonials",
+            "faq": "FAQ",
+            "github": "GitHub",
+            "blogPortfolio": "Blog & Portfolio",
+            "whatsapp": "Whatsapp",
+            "privacyPolicy": "Privacy Policy",
+            "termsOfService": "Terms of Service",
+            "imprint": "Imprint",
+            "contact": "Contact"
+        },
+        "copyright": "© {year} . All rights reserved.",
+        "madeWith": "Made with {heartIcon} by {authorLink}.",
+        "githubAriaLabel": "GitHub Repository",
+        "linkedinAriaLabel": "LinkedIn Profile"
+    },
+    "navigation": {
+         "home": {
+            "title": "Home",
+            "hero": "Hero",
+            "hero_desc": "The main introduction section.",
+            "features": "Features",
+            "features_desc": "Discover the powerful features we offer.",
+            "about": "About",
+            "about_desc": "Learn more about our mission and team.",
+            "statistics": "Statistics",
+            "statistics_desc": "View key metrics and data.",
+            "testimonials": "Testimonials",
+            "testimonials_desc": "See what our clients are saying.",
+            "faq": "FAQ",
+            "faq_desc": "Find answers to common questions.",
+            "technologies": "Technologies",
+            "technologies_desc": "Explore the stack we use to build."
+        },
+        "legal": {
+            "title": "Legal",
+            "privacy": "Privacy Policy",
+            "privacy_desc": "How we handle your data.",
+            "terms": "Terms of Service",
+            "terms_desc": "Our rules and guidelines.",
+            "imprint": "Imprint",
+            "imprint_desc": "Legal disclosure information."
+        },
+        "contact": "Contact",
+        "references": "References"
+    }
 }

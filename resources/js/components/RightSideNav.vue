@@ -1,27 +1,19 @@
 <script setup lang="ts">
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
-import { useIntersectionObserver, useTimeoutFn } from '@vueuse/core';
-import { BarChart3, HelpCircle, Home, MessageSquareQuote, Sparkles, UserCircle } from 'lucide-vue-next';
+import { useIntersectionObserver,  } from '@vueuse/core';
 import { onMounted, ref } from 'vue';
+import { navigationLinks } from '@/lib/navigation';
 import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n();
 
-const navItems = [
-    { id: 'Hero', i18nKey: 'navigation.hero', icon: Home },
-    { id: 'Features', i18nKey: 'navigation.features', icon: Sparkles },
-    { id: 'About', i18nKey: 'navigation.about', icon: UserCircle },
-    { id: 'Statistics', i18nKey: 'navigation.statistics', icon: BarChart3 },
-    { id: 'Testimonials', i18nKey: 'navigation.testimonials', icon: MessageSquareQuote },
-    { id: 'Faq', i18nKey: 'navigation.faq', icon: HelpCircle },
-];
+const activeSection = ref('hero');
 
-const activeSection = ref('Hero');
-
-const { isPending: isScrollingProgrammatically, start: startScrollLock } = useTimeoutFn(() => {}, 800, { immediate: false });
+const isScrollingProgrammatically = ref(false);
+const targetSectionId = ref<string | null>(null);
 
 onMounted(() => {
-    const elements = navItems.map(({ id }) => document.getElementById(id)).filter((el): el is HTMLElement => el !== null);
+    const elements = navigationLinks.map(({ id }) => document.getElementById(id)).filter((el): el is HTMLElement => el !== null);
 
     elements.forEach((el) => {
         useIntersectionObserver(
@@ -37,42 +29,42 @@ onMounted(() => {
             },
         );
     });
-});
 
+});
 const handleScroll = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-        activeSection.value = id;
+        isScrollingProgrammatically.value = true;
+        targetSectionId.value = id;
+        activeSection.value = '';
         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-        startScrollLock();
     }
 };
 </script>
 
 <template>
     <Transition name="nav-fade">
-        <nav v-if="activeSection !== 'Hero'" class="fixed top-1/2 right-8 z-50 -translate-y-1/2 transform">
+        <nav v-if="activeSection !== 'hero'" class="hidden md:block fixed top-1/2 right-8 z-50 -translate-y-1/2 transform">
             <TooltipProvider :delay-duration="100">
                 <ul class="flex flex-col items-center gap-3">
-                    <li v-for="item in navItems" :key="item.id">
+                    <li v-for="item in navigationLinks" :key="item.id">
                         <Tooltip>
                             <TooltipTrigger as-child>
                                 <a
                                     :href="`#${item.id}`"
                                     :aria-label="t(item.i18nKey)"
                                     class="relative flex h-8 w-8 items-center justify-center rounded-full transition-all duration-300 ease-in-out"
-                                    :class="activeSection === item.id ? 'bg-primary' : 'bg-card/80 backdrop-blur-sm hover:bg-muted'"
+                                    :class="'bg-primary'"
                                     @click.prevent="handleScroll(item.id)"
                                 >
                                     <div
-                                        :class="activeSection === item.id ? 'scale-0' : 'scale-100'"
+                                        :class="'scale-0'"
                                         class="h-1.5 w-1.5 rounded-full bg-muted-foreground transition-transform duration-300"
                                     ></div>
                                     <component
                                         :is="item.icon"
-                                        :class="activeSection === item.id ? 'scale-100 opacity-100' : 'scale-0 opacity-0'"
-                                        class="absolute h-5 w-5 text-primary-foreground transition-all duration-300"
+                                        :class="'scale-100 opacity-100'"
+                                        class="absolute h-5 w-5 text-secondary transition-all duration-300"
                                     />
                                 </a>
                             </TooltipTrigger>

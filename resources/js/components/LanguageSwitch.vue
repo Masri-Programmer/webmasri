@@ -23,7 +23,7 @@ import { watchEffect } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const { locale } = useI18n();
-const storedLocale = useStorage('locale', 'en');
+const storedLocale = useStorage('locale', 'de');
 
 const availableLanguages = [
     { code: 'en', name: 'English' },

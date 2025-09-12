@@ -1,1 +1,0 @@
-import{c as t}from"./Presence-CGVmByTl.js";import{g as e,c as i}from"./app-DeYAeaZl.js";const[n,s]=t("ConfigProvider");function d(o){const r=n({dir:e("ltr")});return i(()=>o?.value||r.dir?.value||"ltr")}export{n as i,d as u};

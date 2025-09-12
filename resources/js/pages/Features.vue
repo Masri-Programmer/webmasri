@@ -64,7 +64,7 @@ const thirdThird = computed(() => features.value.slice(third.value * 2));
 </script>
 
 <template>
-    <section id="Features" class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <section id="features" class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
             <div class="space-y-4 text-left">
                 <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-foreground">

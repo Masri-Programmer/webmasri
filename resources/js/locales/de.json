@@ -3,7 +3,7 @@
         "label": "Nach oben scrollen"
     },
     "header": {
-        "donationMessage": "Wenn dir dieses Projekt geholfen hat, unterstütze Resume to Website bitte mit einer {link}.",
+        "donationMessage": "Wenn dir dieses Projekt geholfen hat, unterstütze Masri Programmer bitte mit einer {link}.",
         "donationLink": "Spende"
     },
     "hero": {
@@ -173,12 +173,33 @@
         "madeWith": "Erstellt mit {heartIcon} von {authorLink}."
     },
     "navigation": {
-        "hero": "Startseite",
-        "features": "Funktionen",
-        "about": "Über uns",
-        "statistics": "Statistiken",
-        "testimonials": "Erfahrungsberichte",
-        "faq": "FAQ",
-        "technologies": "Technologien"
+       "home": {
+      "title": "Startseite",
+      "hero": "Hero",
+      "hero_desc": "Der Haupteinführungsbereich.",
+      "features": "Funktionen",
+      "features_desc": "Entdecken Sie die leistungsstarken Funktionen, die wir bieten.",
+      "about": "Über uns",
+      "about_desc": "Erfahren Sie mehr über unsere Mission und unser Team.",
+      "statistics": "Statistiken",
+      "statistics_desc": "Sehen Sie sich wichtige Kennzahlen und Daten an.",
+      "testimonials": "Kundenstimmen",
+      "testimonials_desc": "Lesen Sie, was unsere Kunden sagen.",
+      "faq": "FAQ",
+      "faq_desc": "Finden Sie Antworten auf häufig gestellte Fragen.",
+      "technologies": "Technologien",
+      "technologies_desc": "Entdecken Sie den Tech-Stack, den wir verwenden."
+    },
+    "legal": {
+      "title": "Rechtliches",
+      "privacy": "Datenschutzerklärung",
+      "privacy_desc": "Wie wir mit Ihren Daten umgehen.",
+      "terms": "Nutzungsbedingungen",
+      "terms_desc": "Unsere Regeln und Richtlinien.",
+      "imprint": "Impressum",
+      "imprint_desc": "Gesetzliche Offenlegungsinformationen."
+    },
+    "contact": "Kontakt",
+    "references": "Referenzen"
     }
 }

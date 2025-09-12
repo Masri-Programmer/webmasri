@@ -33,7 +33,7 @@ const faqs = computed(() =>
 </script>
 
 <template>
-  <section id="Faq" class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+  <section id="faq" class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10">
       <div class="space-y-4 text-left">
         <h4 class="text-3xl font-bold tracking-tighter sm:text-5xl text-foreground">{{ $t('faq.title') }}</h4>

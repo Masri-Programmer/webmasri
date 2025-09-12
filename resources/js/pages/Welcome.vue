@@ -11,6 +11,7 @@ import About from './About.vue'
 import Statistics from './Statistics.vue'
 import ScrollTop from '@/components/ScrollTop.vue'
 import RightSideNav from '@/components/RightSideNav.vue'
+import Projects from './Projects.vue'
 
 const Testimonials = defineAsyncComponent(() => import('./Testimonials.vue'))
 const Faq = defineAsyncComponent(() => import('./Faq.vue'))
@@ -19,8 +20,10 @@ const Footer = defineAsyncComponent(() => import('./Footer.vue'))
 
 onMounted(() => {
     AOS.init({
-        duration: 800,
-        once: true,
+        duration: 600,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false,
     })
 })
 
@@ -33,8 +36,8 @@ router.on('success', () => {
     <Head title="Welcome">
         <link rel="preconnect" href="https://masri.blog/" />
     </Head>
-
-    <Header data-aos="fade-down" data-aos-delay="1000" />
+    
+    <Header data-aos="fade-down" data-aos-delay="500" />
  <RightSideNav />
     <main class="grid overflow-hidden bg-background text-foreground gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12">
         <Hero data-aos="fade-down" />
@@ -44,6 +47,7 @@ router.on('success', () => {
         </div>
 
         <About data-aos="fade-right" />
+        <Projects data-aos="fade-right" />
 
         <div class="parallax-section bg-parallax-2">
             <Statistics data-aos="fade-left" />

@@ -22,7 +22,7 @@ const stats = computed(() =>
 </script>
 
 <template>
-  <section id="Statistics" class="w-full py-16 px-4">
+  <section id="statistics" class="w-full py-16 px-4">
     <div class="container mx-auto grid max-w-4xl grid-cols-2 gap-8 md:grid-cols-4">
       <Card
         v-for="stat in stats"

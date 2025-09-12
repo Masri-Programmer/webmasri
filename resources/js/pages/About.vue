@@ -1,5 +1,5 @@
 <template>
-    <section id="About" class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <section id="about" class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
             <div class="space-y-4 text-left">
                 <h2
@@ -14,7 +14,7 @@
                         </a>
                     </template>
                     <template #contactLink>
-                        <a href="mailto:masri_mohamad@protonmail.com" class="underline">
+                        <a href="mailto:info@masri.blog" class="underline">
                             {{ $t('about.contactLinkText') }}
                         </a>
                     </template>

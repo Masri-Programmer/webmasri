@@ -10,11 +10,11 @@ const { t } = useI18n();
 
 const linkDefinitions = {
     product: [
-        { key: 'footer.links.features', href: '#Features' },
-        { key: 'footer.links.about', href: '#About' },
-        { key: 'footer.links.statistics', href: '#Statistics' },
-        { key: 'footer.links.testimonials', href: '#Testimonials' },
-        { key: 'footer.links.faq', href: '#Faq' },
+        { key: 'footer.links.features', href: '#features' },
+        { key: 'footer.links.about', href: '#about' },
+        { key: 'footer.links.statistics', href: '#statistics' },
+        { key: 'footer.links.testimonials', href: '#testimonials' },
+        { key: 'footer.links.faq', href: '#faq' },
     ],
     community: [
         { key: 'footer.links.github', href: 'https://github.com/Masri-Programmer/resumetowebsite.git' },
