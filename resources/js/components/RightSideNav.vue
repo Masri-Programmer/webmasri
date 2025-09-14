@@ -4,7 +4,12 @@ import { useIntersectionObserver,  } from '@vueuse/core';
 import { onMounted, ref } from 'vue';
 import { navigationLinks } from '@/lib/navigation';
 import { useI18n } from 'vue-i18n';
+import { usePage } from '@inertiajs/vue3';
+import { AppPageProps } from '@/types'; 
 
+
+const page = usePage();
+const customProps = page.props as AppPageProps;
 const { t } = useI18n();
 
 const activeSection = ref('hero');
@@ -51,7 +56,7 @@ const handleScroll = (id: string) => {
                         <Tooltip>
                             <TooltipTrigger as-child>
                                 <a
-                                    :href="`#${item.id}`"
+                                    :href="`${customProps.app.url}/#${item.id}`"
                                     :aria-label="t(item.i18nKey)"
                                     class="relative flex h-8 w-8 items-center justify-center rounded-full transition-all duration-300 ease-in-out"
                                     :class="'bg-primary'"
