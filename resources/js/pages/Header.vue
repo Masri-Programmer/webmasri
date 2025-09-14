@@ -48,13 +48,13 @@
                                         <AccordionTrigger>{{ t('navigation.legal.title') }}</AccordionTrigger>
                                         <AccordionContent class="pl-4">
                                             <div class="flex flex-col space-y-2">
-                                                <Link :href="privacyPolicy.url()" @click="isSheetOpen = false" class="hover:underline">{{
+                                                <Link :href="customProps.app.url + privacyPolicy.url()" @click="isSheetOpen = false" class="hover:underline">{{
                                                     t('navigation.legal.privacy')
                                                 }}</Link>
-                                                <Link :href="termsConditions.url()" @click="isSheetOpen = false" class="hover:underline">{{
+                                                <Link :href="customProps.app.url + termsConditions.url()" @click="isSheetOpen = false" class="hover:underline">{{
                                                     t('navigation.legal.terms')
                                                 }}</Link>
-                                                <Link :href="imprint.url()" @click="isSheetOpen = false" class="hover:underline">{{
+                                                <Link :href="customProps.app.url + imprint.url()" @click="isSheetOpen = false" class="hover:underline">{{
                                                     t('navigation.legal.imprint')
                                                 }}</Link>
                                             </div>
@@ -87,7 +87,6 @@ import { Link, router, usePage } from '@inertiajs/vue3';
 import { HandHeart, Menu } from 'lucide-vue-next';
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
-console.log(privacyPolicy.url());
 const page = usePage();
 const customProps = page.props as AppPageProps;
 const { t } = useI18n();

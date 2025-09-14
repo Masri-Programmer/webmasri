@@ -27,5 +27,8 @@ import Header from '@/pages/Header.vue';
 import { defineAsyncComponent } from 'vue';
 
 const Footer = defineAsyncComponent(() => import('@/pages/Footer.vue'));
-defineProps({ head: String, link: String });
+defineProps<{
+    head?: string;
+    link: boolean;
+}>();
 </script>
