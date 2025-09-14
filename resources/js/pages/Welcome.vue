@@ -1,45 +1,37 @@
 <script setup lang="ts">
-import { Head, router } from '@inertiajs/vue3'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import { defineAsyncComponent, onMounted } from 'vue'
+import { Head, router } from '@inertiajs/vue3';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { defineAsyncComponent, onMounted } from 'vue';
 
-import Header from './Header.vue'
-import Hero from './Hero.vue'
-import Features from './Features.vue'
-import About from './About.vue'
-import Statistics from './Statistics.vue'
-import ScrollTop from '@/components/ScrollTop.vue'
-import RightSideNav from '@/components/RightSideNav.vue'
-import Projects from './Projects.vue'
+import About from './About.vue';
+import Features from './Features.vue';
+import Hero from './Hero.vue';
+import Projects from './Projects.vue';
+import Statistics from './Statistics.vue';
+import Layout from '@/layouts/Layout.vue';
 
-const Testimonials = defineAsyncComponent(() => import('./Testimonials.vue'))
-const Faq = defineAsyncComponent(() => import('./Faq.vue'))
-const Technologies = defineAsyncComponent(() => import('./Technologies.vue'))
-const Footer = defineAsyncComponent(() => import('./Footer.vue'))
+const Testimonials = defineAsyncComponent(() => import('./Testimonials.vue'));
+const Faq = defineAsyncComponent(() => import('./Faq.vue'));
+const Technologies = defineAsyncComponent(() => import('./Technologies.vue'));
 
 onMounted(() => {
     AOS.init({
         duration: 600,
-            easing: 'ease-in-out',
-            once: true,
-            mirror: false,
-    })
-})
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false,
+    });
+});
 
 router.on('success', () => {
-    AOS.refresh()
-})
+    AOS.refresh();
+});
 </script>
 
 <template>
-    <Head title="Welcome">
-        <link rel="preconnect" href="https://masri.blog/" />
-    </Head>
-    
-    <Header data-aos="fade-down" data-aos-delay="500" />
- <RightSideNav />
-    <main class="grid overflow-hidden bg-background text-foreground gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12">
+    <Layout head="Welcome" link="/" >
+    <main class="grid gap-4 overflow-hidden bg-background text-foreground sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12">
         <Hero data-aos="fade-down" />
 
         <div class="parallax-section bg-parallax-1">
@@ -56,9 +48,8 @@ router.on('success', () => {
         <Testimonials data-aos="fade-left" />
         <Faq data-aos="fade-up" />
         <Technologies data-aos="fade-up" />
-      </main>
-      <Footer />
-      <ScrollTop  />
+    </main>
+</Layout>
 </template>
 
 <style>
@@ -85,10 +76,10 @@ router.on('success', () => {
 }
 
 .bg-parallax-1 {
-    background-image: url('./iphonemockup.webp');
+    background-image: url('../images/iphonemockup.webp');
 }
 
 .bg-parallax-2 {
-    background-image: url('./iphonemockup2.webp');
+    background-image: url('../images/iphonemockup2.webp');
 }
 </style>

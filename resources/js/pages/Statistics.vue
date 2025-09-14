@@ -7,7 +7,7 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 
 const statDefinitions = [
-    { value: 25.00, key: 'statistics.experience' },
+    { value: 5, key: 'statistics.experience' },
     { value: 40, key: 'statistics.projects' },
     { value: 25, key: 'statistics.clients' },
     { value: 10, key: 'statistics.technologies' },

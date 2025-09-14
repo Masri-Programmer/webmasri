@@ -1,4 +1,4 @@
-import { BarChart3, HelpCircle, Home, MessageSquareQuote, Sparkles, UserCircle } from 'lucide-vue-next';
+import { BarChart3, HelpCircle, Home, MessageSquareQuote, Sparkles, UserCircle, Folder  } from 'lucide-vue-next';
 
 export const navigationLinks = [
     {
@@ -18,6 +18,12 @@ export const navigationLinks = [
         href: '/#about',
         i18nKey: 'navigation.home.about',
         icon: UserCircle,
+    },
+    {
+        id: 'projects',
+        href: '/#projects',
+        i18nKey: 'navigation.home.projects',
+        icon: Folder,
     },
     {
         id: 'statistics',

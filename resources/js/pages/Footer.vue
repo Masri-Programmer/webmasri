@@ -86,7 +86,7 @@ const year = new Date().getFullYear();
                         <Heart class="h-4 w-4 fill-red-500 text-red-500" />
                     </template>
                     <template #authorLink>
-                        <a href="https://masri.blog" target="_blank" rel="noopener noreferrer" class="font-medium hover:underline">Mohamad Masri</a>
+                        <a href="https://masri.blog" target="_blank" rel="noopener noreferrer" class="font-medium hover:underline">Masri Programmer</a>
                     </template>
                 </i18n-t>
 
