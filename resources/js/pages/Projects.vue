@@ -61,7 +61,7 @@ import hk from '@/images/hk-energieberatung.de.png'
 import flyerheaven from '@/images/www.flyerheaven.de_deine-bueroartikel.html.png'
 
 const cardData = [
-  {
+    {
         title: 'HK Energieberatung',
         badge: 'Consulting',
         image: hk,
@@ -77,7 +77,7 @@ const cardData = [
         description: 'A dynamic platform for providing digital services.',
         tags: ['Digital', 'Media', 'Services'],
         date: '2024',
-        link: 'Meo.md',
+        link: 'https://meo-media.de/'
     },
     {
         title: 'Flyerheaven',
@@ -86,16 +86,16 @@ const cardData = [
         description: 'Hub for digital services and professional flyer designs.',
         tags: ['Design', 'Digital', 'Marketing'],
         date: '2024',
-        link: 'Projects/Flyerheaven',
+        link: 'https://Flyerheaven.de',
     },
     {
         title: 'Amazon Pages',
         badge: 'Advertising',
-        image: flyerheaven,
+        image: flyerheaven, // Assuming 'flyerheaven' is a locally imported image asset
         description: 'Custom landing pages and advertisements for the Amazon platform.',
         tags: ['Amazon', 'Ads', 'E-commerce'],
         date: '2024',
-        link: 'Projects/Amazon',
+        link: 'https://www.flyerheaven.de/deine-bueroartikel.html',
     },
     {
         title: 'Gameacademy',
@@ -104,7 +104,7 @@ const cardData = [
         description: 'An NGO platform for training and blogging in the gaming sector.',
         tags: ['Gaming', 'Training', 'Blog'],
         date: '2023',
-        link: 'Projects/Gameacademy',
+        link: 'https://gameacademy.ngo/home',
     },
     {
         title: 'Propackstore',
@@ -113,7 +113,7 @@ const cardData = [
         description: 'A comprehensive sales platform for packaging solutions.',
         tags: ['Sales', 'Platform', 'Packaging'],
         date: '2023',
-        link: 'Projects/Propackstore',
+        link: 'https://propackstore.org/home',
     },
     {
         title: 'Timesquare',
@@ -122,7 +122,7 @@ const cardData = [
         description: 'A fully-featured e-commerce site for various products.',
         tags: ['Retail', 'Online Store', 'Sales'],
         date: '2023',
-        link: 'Projects/Timesquare',
+        link: 'ultrastore.me',
     },
     {
         title: 'Medeva',
@@ -131,7 +131,7 @@ const cardData = [
         description: 'A professional web presence for a medical entity.',
         tags: ['Healthcare', 'Medical', 'Professional'],
         date: '2022',
-        link: 'Projects/Medeva',
+        link: 'https://www.med-evasan.com/',
     },
     {
         title: 'Schooltube',
@@ -140,7 +140,7 @@ const cardData = [
         description: 'An innovative e-learning platform for modern education.',
         tags: ['Education', 'Video', 'Platform'],
         date: '2023',
-        link: 'Projects/Schooltube',
+        link: 'https://schooltube.online/',
     },
     {
         title: 'Hoo Modern Bank',
@@ -161,7 +161,7 @@ const cardData = [
         link: 'https://masri-programmer.github.io/slim-threads/',
     },
     {
-        title: 'OpenAI Introduction',
+        title: 'OpenAI Landing Page', 
         badge: 'Landing Page',
         image: 'https://masri-programmer.github.io/mohamad-masri/assets/openai-BUc72Muk.png',
         description: 'A modern landing page introducing AI concepts, inspired by OpenAI.',
@@ -224,13 +224,13 @@ const cardData = [
         link: 'https://masri-programmer.github.io/AGT/',
     },
     {
-        title: 'Personal Portfolio',
+        title: 'Portfolio',
         badge: 'Portfolio',
         image: 'https://masri.blog/Assets/Img/masri-programmer.github.io_mohamad-masri_-(1).png',
         description: 'A personal portfolio website to showcase projects and skills.',
         tags: ['Portfolio', 'Web Dev', 'Personal'],
         date: '2024',
-        link: 'https://masri-programmer.github.io/mohamad-masri/assets/portfolio-2-vj6l1UxO.png',
+        link: 'https://masri-programmer.github.io/mohamad-masri-portfolio/',
     },
 ];
 </script>
