@@ -11,6 +11,18 @@ Route::get('/privacy-policy', function () {
     return Inertia::render('PrivacyPolicy');
 })->name('privacy-policy');
 
+Route::get('/terms-and-conditions', function () {
+    return Inertia::render('TermsConditions');
+})->name('terms-conditions');
+
+Route::get('/imprint', function () {
+    return Inertia::render('Imprint');
+})->name('imprint');
+
+Route::get('/contact', function () {
+    return Inertia::render('Contact');
+})->name('contact');
+
 Route::get('dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

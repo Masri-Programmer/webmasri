@@ -212,73 +212,293 @@
         "contact": "Contact",
         "references": "References"
     },
-    "privacyPolicy": {
-        "title": "Privacy Policy",
-        "language": "Switch to German",
-        "sections": {
-            "introduction": {
-                "title": "1. Introduction and Contact Details of the Controller",
-                "p1": "We are pleased that you are visiting our website and thank you for your interest. Below, we inform you about how we handle your personal data when you use our website. Personal data is any data with which you can be personally identified.",
-                "p2": "The controller for data processing on this website within the meaning of the General Data Protection Regulation (GDPR) is Michael Hömke, Hauptstrasse 11, 16269 Wriezen OT Haselberg, Germany, Tel.: +49 – (0) 33456 -150010, Fax: +49 – (0) 33456 – 150011, E-Mail: info@atelier-ferox.de. The controller responsible for the processing of personal data is the natural or legal person who alone or jointly with others determines the purposes and means of the processing of personal data."
-            },
-            "dataCollection": {
-                "title": "2. Data Collection When Visiting Our Website",
-                "p1": "When you use our website for informational purposes only, i.e., if you do not register or otherwise provide us with information, we only collect data that your browser transmits to the page server (so-called \"server log files\"). When you visit our website, we collect the following data, which is technically necessary for us to display the website to you:",
-                "list": [
-                    "Our visited website",
-                    "Date and time of access",
-                    "Amount of data sent in bytes",
-                    "Source/reference from which you came to the page",
-                    "Browser used",
-                    "Operating system used",
-                    "IP address used (if applicable: in anonymized form)"
-                ],
-                "p2": "Processing is carried out in accordance with Art. 6 (1) (f) GDPR on the basis of our legitimate interest in improving the stability and functionality of our website. The data will not be passed on or used in any other way. However, we reserve the right to check the server log files subsequently if there are concrete indications of illegal use.",
-                "p3": "For security reasons and to protect the transmission of personal data and other confidential content (e.g., orders or inquiries to the controller), this website uses SSL or TLS encryption. You can recognize an encrypted connection by the string \"https://\" and the lock symbol in your browser line."
-            },
-            "hosting": {
-                "title": "3. Hosting & Content Delivery Network",
-                "p1": "For hosting our website and displaying the page content, we use a provider who provides its services either itself or through selected sub-contractors exclusively on servers within the European Union.",
-                "p2": "All data collected on our website is processed on these servers.",
-                "p3": "We have concluded a data processing agreement with the provider, which ensures the protection of our site visitors' data and prohibits unauthorized disclosure to third parties."
-            },
-            "cookies": {
-                "title": "4. Cookies",
-                "p1": "To make visiting our website attractive and to enable the use of certain functions, we use cookies, which are small text files that are stored on your device. Some of these cookies are automatically deleted after you close your browser (so-called \"session cookies\"), while others remain on your device for a longer period and allow page settings to be saved (so-called \"persistent cookies\"). In the latter case, you can find the storage duration in the overview of your web browser's cookie settings.",
-                "p2": "If personal data is also processed by individual cookies we use, the processing is carried out in accordance with Art. 6 (1) (b) GDPR for the performance of a contract, in accordance with Art. 6 (1) (a) GDPR in the case of given consent, or in accordance with Art. 6 (1) (f) GDPR to protect our legitimate interests in the best possible functionality of the website and a customer-friendly and effective design of the site visit.",
-                "p3": "You can set your browser to be informed about the setting of cookies and decide individually on their acceptance or exclude the acceptance of cookies for certain cases or in general.",
-                "p4": "Please note that if you do not accept cookies, the functionality of our website may be limited."
-            },
-            "contact": {
-                "title": "5. Contacting Us",
-                "p1": "Within the scope of contacting us (e.g., via contact form or email), personal data is collected. Which data is collected in the case of a contact form can be seen from the respective contact form. This data is stored and used exclusively for the purpose of answering your request or for establishing contact and the associated technical administration.",
-                "p2": "The legal basis for processing this data is our legitimate interest in responding to your request in accordance with Art. 6 (1) (f) GDPR. If your contact is aimed at concluding a contract, the additional legal basis for the processing is Art. 6 (1) (b) GDPR. Your data will be deleted after the final processing of your request. This is the case if it can be inferred from the circumstances that the matter in question has been finally clarified and provided that there are no statutory retention obligations to the contrary."
-            },
-            "rights": {
-                "title": "11. Rights of the Data Subject",
-                "p1": "The applicable data protection law grants you comprehensive rights as a data subject (rights of access and intervention) with regard to the processing of your personal data by the controller, about which we inform you below:",
-                "list": [
-                    "Right of access pursuant to Art. 15 GDPR;",
-                    "Right to rectification pursuant to Art. 16 GDPR;",
-                    "Right to erasure (“right to be forgotten”) pursuant to Art. 17 GDPR;",
-                    "Right to restriction of processing pursuant to Art. 18 GDPR;",
-                    "Right to notification pursuant to Art. 19 GDPR;",
-                    "Right to data portability pursuant to Art. 20 GDPR;",
-                    "Right to withdraw consent given pursuant to Art. 7 (3) GDPR;",
-                    "Right to lodge a complaint with a supervisory authority pursuant to Art. 77 GDPR."
-                ]
-            },
-            "objection": {
-                "title": "RIGHT TO OBJECT",
-                "p1": "IF, WITHIN THE FRAMEWORK OF A BALANCING OF INTERESTS, WE PROCESS YOUR PERSONAL DATA ON THE BASIS OF OUR OVERRIDING LEGITIMATE INTEREST, YOU HAVE THE RIGHT AT ANY TIME TO OBJECT TO THIS PROCESSING WITH EFFECT FOR THE FUTURE FOR REASONS ARISING FROM YOUR PARTICULAR SITUATION.",
-                "p2": "IF YOU EXERCISE YOUR RIGHT TO OBJECT, WE WILL STOP PROCESSING THE DATA CONCERNED. HOWEVER, WE RESERVE THE RIGHT TO CONTINUED PROCESSING IF WE CAN DEMONSTRATE COMPELLING LEGITIMATE GROUNDS FOR THE PROCESSING WHICH OVERRIDE YOUR INTERESTS, FUNDAMENTAL RIGHTS AND FREEDOMS, OR IF THE PROCESSING SERVES THE ESTABLISHMENT, EXERCISE OR DEFENSE OF LEGAL CLAIMS.",
-                "p3": "IF YOUR PERSONAL DATA IS PROCESSED BY US FOR THE PURPOSE OF DIRECT MARKETING, YOU HAVE THE RIGHT TO OBJECT AT ANY TIME TO THE PROCESSING OF PERSONAL DATA CONCERNING YOU FOR THE PURPOSE OF SUCH MARKETING. YOU MAY EXERCISE THE OBJECTION AS DESCRIBED ABOVE.",
-                "p4": "IF YOU EXERCISE YOUR RIGHT TO OBJECT, WE WILL STOP PROCESSING THE DATA CONCERNED FOR DIRECT MARKETING PURPOSES."
-            },
-            "duration": {
-                "title": "12. Duration of Storage of Personal Data",
-                "p1": "The duration of the storage of personal data is determined by the respective legal basis, the purpose of processing and, if relevant, additionally by the respective statutory retention period (e.g., commercial and tax retention periods)."
-            }
-        }
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "sections": {
+      "introduction": {
+        "title": "1. Introduction and Contact Details of the Controller",
+        "content": [
+          { "type": "p", "text": "We are pleased that you are visiting our website and thank you for your interest. Below, we inform you about how we handle your personal data when you use our website. Personal data is any data with which you can be personally identified." },
+          { "type": "p", "text": "The controller for data processing on this website within the meaning of the General Data Protection Regulation (GDPR) is Mohamad Masri, Nettelbeckstraße 10, 26131 Oldenburg, Germany, Tel.: +49 – (0) 1763 -1579669, E-Mail: info@masri-programmer.de . The controller responsible for the processing of personal data is the natural or legal person who alone or jointly with others determines the purposes and means of the processing of personal data." }
+        ]
+      },
+      "dataCollection": {
+        "title": "2. Data Collection When Visiting Our Website",
+        "content": [
+          { "type": "p", "text": "When you use our website for informational purposes only, i.e., if you do not register or otherwise provide us with information, we only collect data that your browser transmits to the page server (so-called \"server log files\"). When you visit our website, we collect the following data, which is technically necessary for us to display the website to you:" },
+          { "type": "list", "items": [
+              "Our visited website",
+              "Date and time of access",
+              "Amount of data sent in bytes",
+              "Source/reference from which you came to the page",
+              "Browser used",
+              "Operating system used",
+              "IP address used (if applicable: in anonymized form)"
+          ]},
+          { "type": "p", "text": "Processing is carried out in accordance with Art. 6 (1) (f) GDPR on the basis of our legitimate interest in improving the stability and functionality of our website. The data will not be passed on or used in any other way. However, we reserve the right to check the server log files subsequently if there are concrete indications of illegal use." },
+          { "type": "p", "text": "For security reasons and to protect the transmission of personal data and other confidential content (e.g., orders or inquiries to the controller), this website uses SSL or TLS encryption. You can recognize an encrypted connection by the string \"https://\" and the lock symbol in your browser line." }
+        ]
+      },
+      "hosting": {
+        "title": "3. Hosting & Content Delivery Network",
+        "content": [
+          { "type": "p", "text": "For hosting our website and displaying the page content, we use a provider who provides its services either itself or through selected sub-contractors exclusively on servers within the European Union." },
+          { "type": "p", "text": "All data collected on our website is processed on these servers." },
+          { "type": "p", "text": "We have concluded a data processing agreement with the provider, which ensures the protection of our site visitors' data and prohibits unauthorized disclosure to third parties." }
+        ]
+      },
+      "cookies": {
+        "title": "4. Cookies",
+        "content": [
+          { "type": "p", "text": "To make visiting our website attractive and to enable the use of certain functions, we use cookies, which are small text files that are stored on your device. Some of these cookies are automatically deleted after you close your browser (so-called \"session cookies\"), while others remain on your device for a longer period and allow page settings to be saved (so-called \"persistent cookies\"). In the latter case, you can find the storage duration in the overview of your web browser's cookie settings." },
+          { "type": "p", "text": "If personal data is also processed by individual cookies we use, the processing is carried out in accordance with Art. 6 (1) (b) GDPR for the performance of a contract, in accordance with Art. 6 (1) (a) GDPR in the case of given consent, or in accordance with Art. 6 (1) (f) GDPR to protect our legitimate interests in the best possible functionality of the website and a customer-friendly and effective design of the site visit." },
+          { "type": "p", "text": "You can set your browser to be informed about the setting of cookies and decide individually on their acceptance or exclude the acceptance of cookies for certain cases or in general." },
+          { "type": "p", "text": "Please note that if you do not accept cookies, the functionality of our website may be limited." }
+        ]
+      },
+      "contact": {
+        "title": "5. Contacting Us",
+        "content": [
+          { "type": "p", "text": "Within the scope of contacting us (e.g., via contact form or email), personal data is collected. Which data is collected in the case of a contact form can be seen from the respective contact form. This data is stored and used exclusively for the purpose of answering your request or for establishing contact and the associated technical administration." },
+          { "type": "p", "text": "The legal basis for processing this data is our legitimate interest in responding to your request in accordance with Art. 6 (1) (f) GDPR. If your contact is aimed at concluding a contract, the additional legal basis for the processing is Art. 6 (1) (b) GDPR. Your data will be deleted after the final processing of your request. This is the case if it can be inferred from the circumstances that the matter in question has been finally clarified and provided that there are no statutory retention obligations to the contrary." }
+        ]
+      },
+      "rights": {
+        "title": "11. Rights of the Data Subject",
+        "content": [
+          { "type": "p", "text": "The applicable data protection law grants you comprehensive rights as a data subject (rights of access and intervention) with regard to the processing of your personal data by the controller, about which we inform you below:" },
+          { "type": "list", "items": [
+            "Right of access pursuant to Art. 15 GDPR;",
+            "Right to rectification pursuant to Art. 16 GDPR;",
+            "Right to erasure (“right to be forgotten”) pursuant to Art. 17 GDPR;",
+            "Right to restriction of processing pursuant to Art. 18 GDPR;",
+            "Right to notification pursuant to Art. 19 GDPR;",
+            "Right to data portability pursuant to Art. 20 GDPR;",
+            "Right to withdraw consent given pursuant to Art. 7 (3) GDPR;",
+            "Right to lodge a complaint with a supervisory authority pursuant to Art. 77 GDPR."
+          ]}
+        ]
+      },
+      "objection": {
+        "title": "RIGHT TO OBJECT",
+        "style": "destructive",
+        "content": [
+          { "type": "p", "style": "bold", "text": "IF, WITHIN THE FRAMEWORK OF A BALANCING OF INTERESTS, WE PROCESS YOUR PERSONAL DATA ON THE BASIS OF OUR OVERRIDING LEGITIMATE INTEREST, YOU HAVE THE RIGHT AT ANY TIME TO OBJECT TO THIS PROCESSING WITH EFFECT FOR THE FUTURE FOR REASONS ARISING FROM YOUR PARTICULAR SITUATION." },
+          { "type": "p", "text": "IF YOU EXERCISE YOUR RIGHT TO OBJECT, WE WILL STOP PROCESSING THE DATA CONCERNED. HOWEVER, WE RESERVE THE RIGHT TO CONTINUED PROCESSING IF WE CAN DEMONSTRATE COMPELLING LEGITIMATE GROUNDS FOR THE PROCESSING WHICH OVERRIDE YOUR INTERESTS, FUNDAMENTAL RIGHTS AND FREEDOMS, OR IF THE PROCESSING SERVES THE ESTABLISHMENT, EXERCISE OR DEFENSE OF LEGAL CLAIMS." },
+          { "type": "p", "style": "bold", "text": "IF YOUR PERSONAL DATA IS PROCESSED BY US FOR THE PURPOSE OF DIRECT MARKETING, YOU HAVE THE RIGHT TO OBJECT AT ANY TIME TO THE PROCESSING OF PERSONAL DATA CONCERNING YOU FOR THE PURPOSE OF SUCH MARKETING. YOU MAY EXERCISE THE OBJECTION AS DESCRIBED ABOVE." },
+          { "type": "p", "text": "IF YOU EXERCISE YOUR RIGHT TO OBJECT, WE WILL STOP PROCESSING THE DATA CONCERNED FOR DIRECT MARKETING PURPOSES." }
+        ]
+      },
+      "duration": {
+        "title": "12. Duration of Storage of Personal Data",
+        "content": [
+          { "type": "p", "text": "The duration of the storage of personal data is determined by the respective legal basis, the purpose of processing and, if relevant, additionally by the respective statutory retention period (e.g., commercial and tax retention periods)." }
+        ]
+      }
     }
+  },
+  "termsConditions": {
+    "title": "Terms and Conditions",
+    "sections": {
+      "validity": {
+        "title": "1. Validity of the conditions",
+        "content": [
+          { "type": "p", "text": "The following terms and conditions apply to all services provided by me, including consultations and recommendations. They apply to subsequent contracts in their currently valid version, even if no specific reference is made to them in individual cases." },
+          { "type": "p", "text": "Any changes to the terms and conditions will be communicated to the client in writing. The new terms and conditions are deemed accepted if the client does not object to them in writing. The client must submit their objection to me within 14 days of notification of the changes." },
+          { "type": "p", "text": "The terms and conditions of my client are not valid under any circumstances, even if I do not expressly object." },
+          { "type": "p", "text": "I provide my services exclusively to businesses within the meaning of <a href='http://www.gesetze-im-internet.de/bgb/__14.html' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>Section 14 of the German Civil Code (BGB)</a>. Consumers within the meaning of <a href='http://www.gesetze-im-internet.de/bgb/__13.html' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>Section 13 of the BGB</a> do not receive any services. All prices are subject to statutory VAT." }
+        ]
+      },
+      "placingOrder": {
+        "title": "2. Placing an order",
+        "content": [
+          { "type": "p", "text": "Offers are always subject to change." },
+          { "type": "p", "text": "I reserve the right to make improvements or changes to the contractually agreed services, provided that these are reasonable for the client and do not cause any significant disadvantage to the client." }
+        ]
+      },
+      "conclusionOfContract": {
+        "title": "3. Conclusion of contract",
+        "content": [
+          { "type": "p", "text": "Orders are accepted with a written order confirmation by letter, fax or electronic order confirmation by email in accordance with the terms and conditions of these General Terms and Conditions." },
+          { "type": "p", "text": "Oral special terms and conditions require written confirmation to be effective." }
+        ]
+      },
+      "orderProcess": {
+        "title": "4. Order process",
+        "content": [
+          { "type": "p", "text": "After receiving the written order confirmation from the client, I start work and create a corresponding sample draft." },
+          { "type": "p", "text": "Websites are made available to the client for review and approval. After reviewing the draft, the client has the right to request changes or improvements, or (if the draft is absolutely not satisfactory) to request a second sample." },
+          { "type": "p", "text": "Any requests for changes beyond this will result in the additional costs being billed based on the agreed hourly or daily rate." }
+        ]
+      },
+      "deliveryTime": {
+        "title": "5. Delivery time and appointment arrangements",
+        "content": [
+          { "type": "p", "text": "Delivery dates and deadlines must be agreed upon. If the client requests changes to the order after placing the order that affect the production time, the delivery time will be extended accordingly." }
+        ]
+      },
+      "acceptance": {
+        "title": "6. Acceptance",
+        "content": [
+          { "type": "p", "text": "I will inform the client when the contractual service has been fully provided and can be accepted." },
+          { "type": "p", "text": "Upon receipt of the completion declaration, the client is obligated to accept the contractual work immediately and may not refuse it for design or artistic reasons. Within the scope of the contract, the client is free to design the work." },
+          { "type": "p", "text": "I will notify the client immediately of the completion of individual project steps (concept, design, functions). The client is obligated to respond to this notification within 48 hours. If no response is received within this time frame, the project step/result will be deemed accepted as per the contract." },
+          { "type": "p", "text": "The services provided shall be deemed to have been accepted in accordance with the contract without any express declaration and shall be invoiced if the client does not submit a declaration of acceptance within 10 working days of the completion declaration being sent (including in electronic form) and does not make any other statement." }
+        ]
+      },
+      "termination": {
+        "title": "7. Termination / Withdrawal",
+        "content": [
+          { "type": "p", "text": "I am entitled to withdraw from a contract with immediate effect if there is good cause. Termination must be in writing. Such good cause exists in particular, but not exclusively:" },
+          { "type": "list", "items": [
+            "If, for reasons for which the customer is responsible, the execution of an order is further delayed or becomes impossible despite a written warning and a grace period of 10 working days.",
+            "If the customer, despite a written warning and a grace period of 10 working days, persistently violates material contractual obligations or material provisions of these Terms and Conditions."
+          ]},
+          { "type": "p", "text": "In the event of such a justified withdrawal from the contract, I retain the right to the entire agreed fee." },
+          { "type": "p", "text": "The customer is entitled to withdraw from the contract for good cause. Withdrawal must be made in writing. Such good cause exists in particular if the customer can no longer reasonably be expected to continue the contract because I continue to violate essential contractual provisions despite a written warning and a grace period of 10 working days for remedial action." },
+          { "type": "p", "text": "The services already provided by me up to this point as well as other accrued costs must be paid in full by the customer, even in the event of a justified withdrawal." },
+          { "type": "p", "text": "If the customer terminates the contract without good cause, the customer is obligated to pay the agreed fee in full, in addition to the services already provided and the costs incurred up to that point. Due to my project-specific scheduling, the lost profit cannot be realized elsewhere in the short term." },
+          { "type": "p", "text": "If the customer terminates the contract without good cause before the start of the project, he is obligated by me, due to the project-related scheduling, to pay the profit that cannot be realized otherwise due to the short notice in the following proportions:" },
+          { "type": "list", "items": [
+            "Termination not more than 14 days before the agreed project start: 100%",
+            "Termination not more than 30 days before the agreed project start: 75%",
+            "Termination not more than 60 days before the agreed project start: 50%"
+          ]},
+          { "type": "p", "text": "The client may only offset claims that are undisputed or legally established." }
+        ]
+      },
+      "paymentTerms": {
+        "title": "8. Terms of payment",
+        "content": [
+          { "type": "p", "text": "Payment must be made in three installments: 1st installment 30% upon contract award, 2nd installment 30% upon layout and/or concept approval, 3rd installment 40% upon project handover." },
+          { "type": "p", "text": "The agreed remuneration is due without deductions within 7 days of the invoice date in accordance with the applicable price list, individual offers submitted or special written agreements made." },
+          { "type": "p", "text": "I may charge interest at a rate of 6% above the current base interest rate of the European Central Bank per annum from the due date, and from the date of default. This does not affect the assertion of proven higher damages, nor does it affect the client's right to prove a lower charge in individual cases." },
+          { "type": "p", "text": "If the client defaults on payment, I am entitled to withhold my other services, without prejudice to my contractual claims. Any other rights provided for by law in the event of default remain unaffected." },
+          { "type": "p", "text": "Set-off or the exercise of a right of retention against my claims is excluded unless the counterclaim is undisputed or has been legally established." },
+          { "type": "p", "text": "Commissioning creative services from self-employed artists or publicists generally incurs fees from the Artists' Social Insurance Fund (KSK) according to its published rates. Whether the artist or publicist is insured under the KSK is irrelevant for the contribution obligation. The fees paid must be reported to the KSK by the client." }
+        ]
+      },
+      "clientObligations": {
+        "title": "9. Obligations of the Client",
+        "content": [
+          { "type": "p", "text": "The client is obligated to provide the necessary data in a timely manner and in a format suitable for the contract. This includes, in particular, content to be entered for the websites to be created." },
+          { "type": "p", "text": "If I have provided the client with drafts and/or test versions, specifying a reasonable period of time for checking them for accuracy and completeness, the drafts and/or test versions shall be deemed approved upon expiry of the period, unless I receive a written request for correction." },
+          { "type": "p", "text": "The client is obligated to use my services exclusively for their intended purpose. They must refrain from any violation of legal regulations or any misuse." },
+          { "type": "p", "text": "The client shall indemnify me against any liability to third parties arising from the client's use of my services violating the rights of third parties or statutory provisions." },
+          { "type": "p", "text": "The client expressly guarantees that the content provided by him does not violate German law or his home law, which may differ from it, in particular copyright, data protection, and competition law. I am not obligated to review the content. The client hereby indemnifies me against any third-party claims for compensation based on the client's inadmissible content." }
+        ]
+      },
+      "copyright": {
+        "title": "10. Copyright, rights of use",
+        "content": [
+          { "type": "p", "text": "The client receives a spatially and temporally unlimited right of use for the internet for all commissioned design and development work (including graphics, photos, programming, and text), unless otherwise agreed. Rights of use for print, TV, and other media must be regulated separately." },
+          { "type": "p", "text": "I reserve the copyright as well as the rights to content, descriptions, and suggestions contained in concepts, manuscripts, source code, and presentations, regardless of their form. This applies even if a fee has been estimated and paid for them. This applies in particular if fees are charged for a non-binding presentation, training, or the like. These fees compensate for the time and expenses incurred and do not acquire the right to reproduce or use the presented content, etc." },
+          { "type": "p", "text": "All designs, implementation of the designs as HTML construct or program code, together with the granting of rights of use, constitute a single service." },
+          { "type": "p", "text": "The drafts, final artwork, source codes, and designs may not be altered, either in the original or in reproduction, without my express consent. Any imitation, even in part, is prohibited. A violation of this provision entitles me to demand a contractual penalty equal to twice the agreed remuneration. If no remuneration has been agreed upon, the usual remuneration according to the SDSt/AGD collective agreement for design services shall be deemed agreed upon." },
+          { "type": "p", "text": "The use of the work I create is exclusively for the client or their staff. Any use by third parties, especially the resale of my work, requires my written consent." },
+          { "type": "p", "text": "The client's suggestions or other collaboration have no influence on the amount of remuneration. They do not constitute co-authorship." },
+          { "type": "p", "text": "The forwarding of all documents and source codes in whole or in part as well as their publication, reproduction and distribution is prohibited without my consent." },
+          { "type": "p", "text": "All of my creative developments and design work (drafts, concepts, presentations, page design, navigation elements, source code for web design, etc.) are subject to copyright law. The provisions of copyright law apply even if the level of creativity required by Section 2 of the Copyright Act is not achieved." },
+          { "type": "p", "text": "The aforementioned rights of use shall only be transferred after full payment of the remuneration." }
+        ]
+      },
+      "scopeOfServices": {
+        "title": "11. Scope of services",
+        "content": [
+          { "type": "p", "text": "The scope of services is determined by the service descriptions applicable at the time of contract conclusion, the agreed prices or hourly rates, and the following provisions. My employees or vicarious agents are not authorized to enter into agreements that deviate from the service descriptions, the agreed prices or hourly rates, or these General Terms and Conditions, or to make any other special representations." },
+          { "type": "p", "text": "If I provide additional services (e.g., consulting or technical support), these will be invoiced based on my general hourly rates. If I provide the client with the services of a third party, e.g., a transmission provider, at cost, my obligation is limited to the fiduciary exercise of the rights and obligations arising from the contractual relationship with the third party. The client is obligated to indemnify me against all claims by the third party." },
+          { "type": "p", "text": "Within the framework of continuing obligations, I reserve the right to modify the subject matter of my services, particularly in technical terms, provided this is reasonable for the client while taking my own interests into account. I reserve the right to make other changes to the contract, including the content of my services, the applicable hourly rates, and these terms and conditions, provided that I notify the client of the change one month before it takes effect. If the client does not object to the notified change within this one-month period, the change shall be deemed approved." }
+        ]
+      },
+      "performanceObstacles": {
+        "title": "12. Obstacles to performance",
+        "content": [
+          { "type": "p", "text": "I provide my services within the scope of existing technical and operational capabilities. I am not responsible for service interruptions or delays due to force majeure or other events that temporarily or permanently make my performance impossible or unreasonably difficult, unless I am at fault. Events in this sense include strikes and lockouts, technical failures at other operators of telecommunications systems, transmission paths, or networks, power outages, natural disasters, acts of violence by third parties, and government interventions." },
+          { "type": "p", "text": "If such events lead to a permanent impossibility or a permanent significant impairment of the service, both parties are released from the obligation to continue fulfilling the contract. If the service becomes only partially impossible, the client is entitled to reduce the contractual fees in accordance with the severity of the impairment." }
+        ]
+      },
+      "warranty": {
+        "title": "13. Warranty and Defects",
+        "content": [
+          { "type": "p", "text": "I undertake to carry out the order with the greatest possible care, in particular to treat any templates, documents, samples, etc. provided with care." },
+          { "type": "p", "text": "To the extent I am obligated to provide a warranty, this will be done by repair, excluding all other warranty claims. If the repair fails (e.g., due to culpable impossibility), the client cannot assert a claim for damages, except in cases of intent or gross negligence, but can only demand a reduction in the price or, in the case of impossibility through no fault of my own, cancellation of the contract." },
+          { "type": "p", "text": "I would like to point out that third-party software products used (CMS, shop systems, plugins, etc.) may contain undetected malfunctions or security risks for which I assume no liability." },
+          { "type": "p", "text": "If I provide troubleshooting services based on a fault report and it turns out that either there was no fault or the fault was caused solely by the client, I am entitled to invoice the client for my time spent in accordance with the applicable hourly rate." },
+          { "type": "p", "text": "In principle, the display of an HTML website may vary depending on the operating system, device, resolution, browser, or settings used. Through standards-compliant programming and testing with the latest browsers, we strive to ensure correct or adapted display on most systems. Due to the multitude of variations, we cannot guarantee that a website or online shop will be displayed losslessly or exactly the same on all systems, devices, and browsers." }
+        ]
+      },
+      "liability": {
+        "title": "14. Liability",
+        "content": [
+          { "type": "p", "text": "I am only liable for damages if I or my employees or other vicarious agents are guilty of gross negligence or intent." },
+          { "type": "p", "text": "To the extent I am liable for damages, my liability is in any case limited to the damage that I foresaw as a possible consequence of the breach of contract at the time of conclusion of the contract, or that I could have foreseen, taking into account the circumstances of which I was or should have been aware. In the case of continuing obligations, my liability is limited to the simple amount of the annual fee owed for the contractual service in question, but otherwise to the amount of my invoiced claim." },
+          { "type": "p", "text": "Under no circumstances shall I be liable for lack of economic success, indirect damages, consequential damages or damages resulting from third-party claims." },
+          { "type": "p", "text": "My service includes the creation of websites for retrieval from a web server. I assume no liability for server-related disruptions or system failures." },
+          { "type": "p", "text": "If I use software systems or components from other manufacturers, I am not liable for the quality, security vulnerabilities, or errors of this third-party software. In case of doubt, troubleshooting and error correction will be subject to a fee. This applies in particular to the use of free open source software or add-on modules." },
+          { "type": "p", "text": "I am not liable for damages resulting from the use of software that was not developed by me and refer to the warranty provisions of the respective software manufacturer." },
+          { "type": "p", "text": "The above limitations of liability also apply to my employees or other vicarious agents. I undertake to carefully select and instruct my employees or other vicarious agents. Beyond this, I am not liable for my employees or other vicarious agents." }
+        ]
+      },
+      "dataProtection": {
+        "title": "15. Data protection and confidentiality",
+        "content": [
+          { "type": "p", "text": "I hereby inform the client that I may collect, process, use, and transmit their personal or company data to third parties, in accordance with the applicable legal provisions, to the extent necessary for the establishment and proper execution of the contractual relationship. [Please refer to the privacy policy](url enter here)." },
+          { "type": "p", "text": "Connection data will be collected, processed, used, and transmitted to the extent necessary for the provision of my services, their invoicing or verification, or otherwise for contract execution. The client undertakes to inform third-party users of this and, upon my request, to confirm in writing that they have fulfilled this obligation. [Please refer to the privacy policy.](url enter here)" },
+          { "type": "p", "text": "I undertake not to exploit or disclose to third parties any business and trade secrets or confidential information of the client and its clients that I learn about during my work for the client without the client's prior consent. The same applies to any documents and knowledge provided to the client." },
+          { "type": "p", "text": "Furthermore, the contracting parties agree to maintain confidentiality regarding the contents of the contract and knowledge acquired during the contract execution." },
+          { "type": "p", "text": "The obligation of confidentiality also applies beyond the termination of the contractual relationship." }
+        ]
+      },
+      "selfPromotion": {
+        "title": "16. Self-promotion",
+        "content": [
+          { "type": "p", "text": "The client agrees that I may, if necessary, display the graphics, websites, etc. created for him as references in a public gallery on my website or use them in other advertising materials as evidence of my work." },
+          { "type": "p", "text": "Publication of the URL of the client's website edited by me is permitted." },
+          { "type": "p", "text": "Unless otherwise agreed, I am entitled to place a reference on the client's website and provide a link to my website. This link will name the author/service provider 'Michael Hömke' and refer to his website (url enter here)." },
+          { "type": "p", "text": "Any violation of the right to use my work as a reference or to be named and linked in the aforementioned context entitles me to compensation. Without proof of higher damages, the compensation shall amount to 100% of the agreed remuneration or the remuneration customary under the SDSt/AGD collective agreement for design services. The right to claim higher damages upon proof remains unaffected. The right to be named does not expire upon the end of the collaboration between me and the client. Rather, the aforementioned right remains in effect for the entire duration of the contractually agreed use; at least until the end of the use of the contractual object in any position or in its entirety." }
+        ]
+      },
+      "otherProvisions": {
+        "title": "17. Other provisions",
+        "content": [
+          { "type": "p", "text": "To the extent legally permissible, the place of jurisdiction is Bad Freinwalde. This jurisdiction agreement applies only to commercial customers. This jurisdiction agreement applies equally to domestic and international customers." },
+          { "type": "p", "text": "Amendments or additions to this agreement are only valid if agreed upon in writing. This also applies to any amendment to this written form clause." },
+          { "type": "p", "text": "Should any provision of this agreement be or become invalid, or should the agreement contain a gap requiring filling, this shall not affect the validity of the remaining provisions. The invalid provision or gap shall be replaced by a provision that comes closest to the economic purpose of the agreement and that would have been agreed upon by the parties had they known of the invalidity of the provision." }
+        ]
+      },
+      "hourlyRate": {
+        "title": "18. Current hourly rate",
+        "content": [
+          { "type": "p", "text": "The current hourly rate is 95.00 EUR / hour" }
+        ]
+      }
+    }
+  },
+  "imprint": {
+    "title": "Imprint",
+    "subTitle": "Imprint and mandatory legal information",
+    "contact": {
+      "company": "Masri Programmer",
+      "nameAndAddress": "Mohamad Masri\n26131 Oldenburg\nGermany",
+      "phoneLabel": "Tel.:",
+      "phoneNumber": "+49 – (0) 1763 - 1579669",
+      "emailLabel": "Email:",
+      "emailAddress": "info@masri-programmer.de"
+    },
+    "vat": {
+      "title": "VAT identification number",
+      "subTitle": "according to Section 27a of the Sales Tax Law:",
+      "number": "64 /121/ 10813"
+    },
+    "legalSupport": {
+      "imageUrl": "",
+      "altText": "",
+      "caption": ""
+    },
+    "copyright": {
+      "title": "Copyright",
+      "p1": "The content and works on these pages created by the site operators are subject to German copyright law. Reproduction, processing, distribution, and any type of exploitation outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are permitted for private, non-commercial use only.",
+      "p2": "The copyrights of third parties are respected. In particular, third-party content is marked as such. Should you nevertheless become aware of a copyright infringement, we ask you to notify us accordingly. Upon notification of any violations, we will remove such content immediately."
+    }
+  }
 }

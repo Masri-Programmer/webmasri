@@ -33,15 +33,13 @@
                                         <AccordionContent class="pl-4">
                                             <div class="flex flex-col space-y-2">
                                                 <template v-for="item in navigationLinks" :key="item.key">
-                                                    <a
-                                                        :href="`#${item.id}`"
+                                                    <button
                                                         :aria-label="t(item.i18nKey)"
                                                         @click.prevent="handleScroll(item.id)"
-                                                        @click="isSheetOpen = false"
-                                                        class="hover:underline"
+                                                        class="text-left hover:underline"
                                                     >
                                                         {{ t(item.i18nKey) }}
-                                                    </a>
+                                                    </button>
                                                 </template>
                                             </div>
                                         </AccordionContent>
@@ -50,25 +48,25 @@
                                         <AccordionTrigger>{{ t('navigation.legal.title') }}</AccordionTrigger>
                                         <AccordionContent class="pl-4">
                                             <div class="flex flex-col space-y-2">
-                                                <Link href="/privacy-policy" @click="isSheetOpen = false" class="hover:underline">{{
+                                                <Link :href="privacyPolicy.url()" @click="isSheetOpen = false" class="hover:underline">{{
                                                     t('navigation.legal.privacy')
                                                 }}</Link>
-                                                <Link href="/terms-of-service" @click="isSheetOpen = false" class="hover:underline">{{
+                                                <Link :href="termsConditions.url()" @click="isSheetOpen = false" class="hover:underline">{{
                                                     t('navigation.legal.terms')
                                                 }}</Link>
-                                                <Link href="/imprint" @click="isSheetOpen = false" class="hover:underline">{{
+                                                <Link :href="imprint.url()" @click="isSheetOpen = false" class="hover:underline">{{
                                                     t('navigation.legal.imprint')
                                                 }}</Link>
                                             </div>
                                         </AccordionContent>
                                     </AccordionItem>
                                 </Accordion>
-                                <Link href="/contact" @click="isSheetOpen = false" class="font-medium hover:underline">{{
+                                <!-- <Link href="/contact" @click="isSheetOpen = false" class="font-medium hover:underline">{{
                                     t('navigation.contact')
-                                }}</Link>
-                                <Link href="/references" @click="isSheetOpen = false" class="font-medium hover:underline">{{
+                                }}</Link> -->
+                                <!-- <Link href="/references" @click="isSheetOpen = false" class="font-medium hover:underline">{{
                                     t('navigation.references')
-                                }}</Link>
+                                }}</Link> -->
                             </div>
                         </SheetContent>
                     </Sheet>
@@ -82,11 +80,16 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
+import { privacyPolicy, termsConditions , imprint } from '@/routes';
 import { navigationLinks } from '@/lib/navigation';
-import { Link } from '@inertiajs/vue3';
+import { AppPageProps } from '@/types';
+import { Link, router, usePage } from '@inertiajs/vue3';
 import { HandHeart, Menu } from 'lucide-vue-next';
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
+
+const page = usePage();
+const customProps = page.props as AppPageProps;
 const { t } = useI18n();
 
 const isSheetOpen = ref(false);
@@ -97,9 +100,15 @@ const redirect = (e: Event) => {
 };
 
 const handleScroll = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    isSheetOpen.value = false;
+
+    if (page.url === '/') {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    } else {
+        router.visit(`${customProps.app.url}/#${id}`);
     }
 };
 </script>

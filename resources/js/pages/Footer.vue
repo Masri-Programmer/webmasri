@@ -5,6 +5,8 @@ import Button from '@/components/ui/button/Button.vue';
 import { Book, Github, Heart, Linkedin } from 'lucide-vue-next';
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
+import { Link } from '@inertiajs/vue3';
+import { privacyPolicy, termsConditions, imprint } from '@/routes';
 
 const { t } = useI18n();
 
@@ -20,12 +22,12 @@ const linkDefinitions = {
         { key: 'footer.links.github', href: 'https://github.com/Masri-Programmer/resumetowebsite.git' },
         { key: 'footer.links.blogPortfolio', href: 'https://masri.blog' },
         { key: 'footer.links.whatsapp', href: 'https://api.whatsapp.com/send/?phone=4917631579669&text&type=phone_number&app_absent=0' },
+        { key: 'footer.links.contact', href: 'https://masri.blog/Book-a-Meeting' },
     ],
     legal: [
-        { key: 'footer.links.privacyPolicy', href: '#' },
-        { key: 'footer.links.termsOfService', href: '#' },
-        { key: 'footer.links.imprint', href: '#' },
-        { key: 'footer.links.contact', href: '#' },
+        { key: 'footer.links.privacyPolicy', href: privacyPolicy.url() },
+        { key: 'footer.links.termsOfService', href: termsConditions.url() },
+        { key: 'footer.links.imprint', href: imprint.url() },
     ],
 };
 
@@ -45,10 +47,9 @@ const year = new Date().getFullYear();
                 <div class="col-span-2 flex flex-col items-start gap-4 md:col-span-1">
                     <div class="flex items-center gap-2">
                         <Book class="h-6 w-6" />
-                        <span class="text-lg font-semibold">Masri Programmer</span>
+                        <Link href="/" class="text-lg font-semibold">Masri Programmer</Link>
                     </div>
                     <p class="text-sm">{{ $t('footer.tagline') }}</p>
-                    <!-- <p class="text-xs">{{ $t('footer.germanLaw') }}</p> -->
                 </div>
 
                 <div class="space-y-4">
@@ -71,7 +72,7 @@ const year = new Date().getFullYear();
                     <h4 class="font-semibold">{{ $t('footer.headings.legal') }}</h4>
                     <ul class="space-y-2">
                         <li v-for="link in links.legal" :key="link.text">
-                            <a :href="link.href" class="text-sm hover:text-foreground">{{ link.text }}</a>
+                            <Link :href="link.href" class="text-sm hover:text-foreground">{{ link.text }}</Link>
                         </li>
                     </ul>
                 </div>

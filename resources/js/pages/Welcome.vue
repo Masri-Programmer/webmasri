@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Head, router } from '@inertiajs/vue3';
+import { router } from '@inertiajs/vue3';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { defineAsyncComponent, onMounted } from 'vue';
@@ -31,24 +31,18 @@ router.on('success', () => {
 
 <template>
     <Layout head="Welcome" link="/" >
-    <main class="grid gap-4 overflow-hidden bg-background text-foreground sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12">
         <Hero data-aos="fade-down" />
-
         <div class="parallax-section bg-parallax-1">
             <Features data-aos="fade-right" />
         </div>
-
         <About data-aos="fade-right" />
         <Projects data-aos="fade-right" />
-
         <div class="parallax-section bg-parallax-2">
             <Statistics data-aos="fade-left" />
         </div>
-
         <Testimonials data-aos="fade-left" />
         <Faq data-aos="fade-up" />
         <Technologies data-aos="fade-up" />
-    </main>
 </Layout>
 </template>
 

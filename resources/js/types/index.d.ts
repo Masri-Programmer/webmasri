@@ -19,11 +19,17 @@ export interface NavItem {
 
 export type AppPageProps<T extends Record<string, unknown> = Record<string, unknown>> = T & {
     name: string;
-    quote: { message: string; author: string };
-    auth: Auth;
+    quote: {
+        message: string;
+        author: string;
+    };
+    locale: string;
+    auth: any;
     sidebarOpen: boolean;
+    app: {
+        url: string;
+    };
 };
-
 export interface User {
     id: number;
     name: string;
