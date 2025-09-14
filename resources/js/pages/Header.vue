@@ -87,7 +87,7 @@ import { Link, router, usePage } from '@inertiajs/vue3';
 import { HandHeart, Menu } from 'lucide-vue-next';
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
-
+console.log(privacyPolicy.url());
 const page = usePage();
 const customProps = page.props as AppPageProps;
 const { t } = useI18n();
