@@ -48,13 +48,13 @@
                                         <AccordionTrigger>{{ t('navigation.legal.title') }}</AccordionTrigger>
                                         <AccordionContent class="pl-4">
                                             <div class="flex flex-col space-y-2">
-                                                <Link :href="customProps.app.url + privacyPolicy.url()" @click="isSheetOpen = false" class="hover:underline">{{
+                                                <Link :href="privacyPolicy.url()" @click="isSheetOpen = false" class="hover:underline">{{
                                                     t('navigation.legal.privacy')
                                                 }}</Link>
-                                                <Link :href="customProps.app.url + termsConditions.url()" @click="isSheetOpen = false" class="hover:underline">{{
+                                                <Link :href="termsConditions.url()" @click="isSheetOpen = false" class="hover:underline">{{
                                                     t('navigation.legal.terms')
                                                 }}</Link>
-                                                <Link :href="customProps.app.url + imprint.url()" @click="isSheetOpen = false" class="hover:underline">{{
+                                                <Link :href="imprint.url()" @click="isSheetOpen = false" class="hover:underline">{{
                                                     t('navigation.legal.imprint')
                                                 }}</Link>
                                             </div>

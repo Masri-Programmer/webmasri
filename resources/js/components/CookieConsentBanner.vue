@@ -1,84 +1,120 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { useI18n } from 'vue-i18n'
-import { useStorage } from '@vueuse/core'
-import { Cookie } from 'lucide-vue-next'
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Checkbox } from '@/components/ui/checkbox';
+import { imprint, privacyPolicy } from '@/routes';
+import { StorageSerializers, useStorage } from '@vueuse/core';
+import { Cookie } from 'lucide-vue-next';
+import { computed, watch } from 'vue';
+import { useI18n } from 'vue-i18n';
 
-// Assuming your shadcn-vue components are in a 'components/ui' directory.
-// Please adjust the import paths according to your project structure.
-import { Button } from '@/components/ui/button'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
+const { t } = useI18n();
 
-// i18n setup
-const { t } = useI18n()
-
-// Use localStorage to remember the user's choice.
-// The banner will not show again if a value ('accepted' or 'declined') is set.
-const cookieConsent = useStorage<'accepted' | 'declined' | null>('cookie-consent', null)
-
-const showBanner = ref(!cookieConsent.value)
-
-/**
- * Sets the cookie consent to 'accepted' and hides the banner.
- */
-function acceptCookies() {
-  cookieConsent.value = 'accepted'
-  showBanner.value = false
-  // You can add logic here to initialize analytics scripts, etc.
+interface ConsentState {
+    status: 'accepted' | 'declined';
+    expires?: number;
 }
 
-/**
- * Sets the cookie consent to 'declined' and hides the banner.
- */
+const cookieConsent = useStorage<ConsentState | null>('cookie-consent', null, undefined, { serializer: StorageSerializers.object });
+const savePreference = useStorage<boolean>('cookie-consent-save-preference', false);
+
+watch(cookieConsent, (val) => {
+    if (val && val.expires && val.expires < Date.now()) {
+        cookieConsent.value = null;
+    }
+});
+
+const showBanner = computed(() => {
+    if (!cookieConsent.value) {
+        return true;
+    }
+
+    if (cookieConsent.value.expires && cookieConsent.value.expires < Date.now()) {
+        return true;
+    }
+
+    return false;
+});
+
+function acceptCookies() {
+    if (savePreference.value) {
+        const expiry = new Date();
+        expiry.setDate(expiry.getDate() + 30);
+        cookieConsent.value = {
+            status: 'accepted',
+            expires: expiry.getTime(),
+        };
+    } else {
+        cookieConsent.value = {
+            status: 'accepted',
+        };
+    }
+}
+
 function declineCookies() {
-  cookieConsent.value = 'declined'
-  showBanner.value = false
+    if (savePreference.value) {
+        const expiry = new Date();
+        expiry.setDate(expiry.getDate() + 30);
+        cookieConsent.value = {
+            status: 'declined',
+            expires: expiry.getTime(),
+        };
+    } else {
+        cookieConsent.value = {
+            status: 'declined',
+        };
+    }
 }
 </script>
 
 <template>
-  <transition
-    enter-active-class="animate-duration-500 animate-fade-in-up"
-    leave-active-class="animate-duration-300 animate-fade-out-down"
-  >
-    <div
-      v-if="showBanner"
-      class="fixed bottom-0 left-0 right-0 z-50 p-4 sm:left-auto sm:bottom-4 sm:right-4"
-      role="dialog"
-      aria-live="polite"
-      aria-label="Cookie Consent Banner"
-    >
-      <Card class="w-full max-w-md shadow-2xl">
-        <CardHeader>
-          <div class="flex items-center justify-between">
-            <CardTitle>{{ t('cookieBanner.title') }}</CardTitle>
-            <Cookie class="h-6 w-6" />
-          </div>
-        </CardHeader>
-        <CardContent>
-          <p class="text-sm text-muted-foreground">
-            {{ t('cookieBanner.description') }}
-            <a href="/cookie-policy" class="underline transition-colors hover:text-foreground">
-              {{ t('cookieBanner.learnMore') }}
-            </a>
-          </p>
-        </CardContent>
-        <CardFooter class="flex justify-end gap-x-3">
-          <Button variant="outline" @click="declineCookies">
-            {{ t('cookieBanner.decline') }}
-          </Button>
-          <Button @click="acceptCookies">
-            {{ t('cookieBanner.accept') }}
-          </Button>
-        </CardFooter>
-      </Card>
-    </div>
-  </transition>
+    <transition enter-active-class="animate-duration-500 animate-fade-in-up" leave-active-class="animate-duration-300 animate-fade-out-down">
+        <div
+            v-if="showBanner"
+            class="fixed right-0 bottom-0 left-0 z-50 p-4 sm:right-8 sm:bottom-4 sm:left-auto"
+            role="dialog"
+            aria-live="polite"
+            aria-label="Cookie Consent Banner"
+        >
+            <Card class="w-full max-w-md shadow-2xl">
+                <CardHeader>
+                    <div class="flex items-center justify-between">
+                        <CardTitle>{{ t('cookieBanner.title') }}</CardTitle>
+                        <Cookie class="h-6 w-6" />
+                    </div>
+                </CardHeader>
+                <CardContent class="space-y-4">
+                    <i18n-t keypath="cookieBanner.description" tag="p" class="text-sm text-muted-foreground">
+                        <template #privacyLink>
+                            <a :href="privacyPolicy.url()" class="underline transition-colors hover:text-foreground">
+                                {{ t('cookieBanner.privacyPolicy') }}
+                            </a>
+                        </template>
+                    </i18n-t>
+                    <div class="flex items-center space-x-2">
+                        <Checkbox id="save-preference" :checked="savePreference" @click="savePreference = !savePreference" />
+                        <label
+                            for="save-preference"
+                            class="text-sm leading-none font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        >
+                            {{ t('cookieBanner.save') }}
+                        </label>
+                    </div>
+                </CardContent>
+                <CardFooter class="flex flex-col items-stretch gap-3 sm:flex-row sm:justify-between">
+                    <Button variant="link" as-child class="h-auto p-0">
+                        <a :href="imprint.url()">{{ t('cookieBanner.imprint') }}</a>
+                    </Button>
+                    <div class="flex justify-end gap-x-3">
+                        <Button variant="outline" @click="declineCookies">
+                            {{ t('cookieBanner.decline') }}
+                        </Button>
+                        <Button @click="acceptCookies">
+                            {{ t('cookieBanner.accept') }}
+                        </Button>
+                    </div>
+                </CardFooter>
+            </Card>
+        </div>
+    </transition>
 </template>

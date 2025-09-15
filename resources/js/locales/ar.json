@@ -752,10 +752,12 @@
         "arabic": "العربية"
     },
     "cookieBanner": {
-        "title": "Wir verwenden Cookies",
-        "description": "Wir verwenden Cookies, um sicherzustellen, dass Sie die beste Erfahrung auf unserer Website machen. Weitere Informationen zur Verwendung von Cookies finden Sie in unserer Cookie-Richtlinie.",
-        "learnMore": "Mehr erfahren",
-        "decline": "Ablehnen",
-        "accept": "Akzeptieren"
+        "title":"إعدادات الخصوصية" ,
+        "description":"تستخدم هذه الصفحة ملفات تعريف الارتباط والتقنيات من الشركات الثالثة التي تحتاج إلى موافقة. إذا قمت بالنقر فوق الزر \" قبول كل شيء ، يتم تنشيط هذه الوظائف (الموافقة). بعد الموافقة ، نحن والشركات الثالثة المعنية بمعالجة بياناتك لأغراض مختلفة. يمكنك عرض مزيد من المعلومات في {privacylink}",
+        "privacyPolicy":"إعلان حماية البيانات" ,
+        "save":"تذكر هذا الاختيار لمدة 30 يومًا" ,
+        "decline":"رفض",
+        "imprint":"بصمة",
+        "accept":"اقبل كل شيء"
     }
 }

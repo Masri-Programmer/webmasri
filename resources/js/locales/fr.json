@@ -802,10 +802,12 @@
         "arabic": "arabe"
     },
     "cookieBanner": {
-        "title": "Wir verwenden Cookies",
-        "description": "Wir verwenden Cookies, um sicherzustellen, dass Sie die beste Erfahrung auf unserer Website machen. Weitere Informationen zur Verwendung von Cookies finden Sie in unserer Cookie-Richtlinie.",
-        "learnMore": "Mehr erfahren",
-        "decline": "Ablehnen",
-        "accept": "Akzeptieren"
+        "title":"Paramètres de confidentialité",
+        "description":"Cette page utilise des cookies et des technologies des entreprises de tiers qui ont besoin de consentement. Si vous cliquez sur le bouton  Acceptez tout , ces fonctions sont activées (consentement). Après le consentement, nous et les entreprises de troisième partie concernées traitent vos données à divers fins. Vous pouvez voir plus d'informations dans mon {PrivacyLink}.",
+        "privacyPolicy":"Déclaration de protection des données",
+        "save":"Rappelez-vous cette sélection pendant 30 jours",
+        "decline":"Refuser",
+        "imprint":"Imprimer",
+        "accept":"Acceptez tout"
     }
 }

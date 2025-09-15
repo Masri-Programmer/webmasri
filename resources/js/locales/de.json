@@ -802,10 +802,12 @@
         "arabic": "Arabisch"
     },
     "cookieBanner": {
-        "title": "Wir verwenden Cookies",
-        "description": "Wir verwenden Cookies, um sicherzustellen, dass Sie die beste Erfahrung auf unserer Website machen. Weitere Informationen zur Verwendung von Cookies finden Sie in unserer Cookie-Richtlinie.",
-        "learnMore": "Mehr erfahren",
+        "title": "Privatsphäre-Einstellungen",
+        "description": "Diese Seite nutzt einwilligungsbedürftige Cookies und Technologien von Drittunternehmen. Wenn Sie auf den Button \"Alles akzeptieren\" klicken, werden diese Funktionen aktiviert (Einwilligung). Nach der Einwilligung verarbeiten wir und die betroffenen Drittunternehmen Ihre Daten für verschiedene Zwecke. Weitere Informationen können Sie in meiner {privacyLink} einsehen. Sie können Ihre Einwilligung jederzeit widerrufen.",
+        "privacyPolicy": "Datenschutzerklärung",
+        "save": "Diese Auswahl 30 Tage merken",
         "decline": "Ablehnen",
-        "accept": "Akzeptieren"
+        "imprint": "Impressum",
+        "accept": "Alles akzeptieren"
     }
 }
