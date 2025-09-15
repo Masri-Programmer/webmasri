@@ -5,7 +5,8 @@
 
     RewriteEngine On
 
-    # Add this line to fix the redirect loop
+    # Set the base path to your application's root
+    # This is crucial for fixing redirect loops on many servers.
     RewriteBase /
 
     # Handle Authorization Header
