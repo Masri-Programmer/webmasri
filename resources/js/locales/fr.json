@@ -61,6 +61,10 @@
         "contactLinkText": "me contacter",
         "globeTitle": "Globe"
     },
+    "projects": {
+        "title": "Projects",
+        "description": ""
+    },
     "statistics": {
         "experience": "Années d'expérience",
         "projects": "Projets réalisés",
@@ -150,6 +154,8 @@
     },
     "footer": {
         "tagline": "Heureux d'aider, heureux de partager",
+        "germanLaw": "I recognize the norms and standards of the <a href='https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/it-grundschutz_node.html' target='blank' rel='noopener noreferrer'>BSI IT-Grundschutz</a> ( German Federal Office for Information Security ) and comply with them.",
+        "germanPrices": "All prices plus 19% VAT. I provide my services exclusively to businesses within the meaning of  <a href='https://www.gesetze-im-internet.de/bgb/__14.html' target='blank' rel='noopener noreferrer'>Section 14 of the German Civil Code (BGB)</a>. Consumers within the meaning of  <a href='https://www.gesetze-im-internet.de/bgb/__13.html' target='blank' rel='noopener noreferrer'>Section 13 of the BGB</a> do not receive any services.",
         "headings": {
             "product": "Produit",
             "community": "Communauté",
@@ -165,7 +171,9 @@
             "blogPortfolio": "Blog et Portfolio",
             "whatsapp": "Whatsapp",
             "privacyPolicy": "Politique de confidentialité",
-            "termsOfService": "Conditions d'utilisation"
+            "termsOfService": "Conditions d'utilisation",
+            "imprint": "Imprint",
+            "contact": "Contact"
         },
         "copyright": "© {year} . Tous droits réservés.",
         "madeWith": "Fait avec {heartIcon} par {authorLink}.",
@@ -173,12 +181,624 @@
         "linkedinAriaLabel": "Profil LinkedIn"
     },
     "navigation": {
-        "hero": "Page d'accueil",
-        "features": "Fonctions",
-        "about": "À propos de nous",
-        "statistics": "Les statistiques",
-        "testimonials": "Expérimenter des rapports",
-        "faq": "faq",
-        "technologies": "Technologies"
+        "home": {
+            "title": "Home",
+            "hero": "Page d'accueil",
+            "hero_desc": "The main introduction section.",
+            "features": "Fonctions",
+            "features_desc": "Discover the powerful features we offer.",
+            "about": "À propos de nous",
+            "about_desc": "Learn more about our mission and team.",
+            "projects": "Projets",
+            "projects_desc": "Vérifiez mes projets",
+            "statistics": "Les statistiques",
+            "statistics_desc": "View key metrics and data.",
+            "testimonials": "Expérimenter des rapports",
+            "testimonials_desc": "See what our clients are saying.",
+            "faq": "faq",
+            "faq_desc": "Find answers to common questions.",
+            "technologies": "Technologies",
+            "technologies_desc": "Explore the stack we use to build."
+        },
+        "legal": {
+            "title": "Légale",
+            "privacy": "Politique de confidentialité",
+            "privacy_desc": "Comment nous gérons vos données.",
+            "terms": "Conditions d'utilisation",
+            "terms_desc": "Nos règles et directives.",
+            "imprint": "Imprimer",
+            "imprint_desc": "Informations de divulgation légale."
+        },
+        "contact": "contact",
+        "references": "Références"
+    },
+    "privacyPolicy": {
+        "title": "Politique de Confidentialité",
+        "sections": {
+            "introduction": {
+                "title": "1. Introduction et Coordonnées du Responsable du Traitement",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Nous sommes heureux de votre visite sur notre site web et vous remercions de votre intérêt. Ci-dessous, nous vous informons sur la manière dont nous traitons vos données personnelles lorsque vous utilisez notre site web. Les données personnelles sont toutes les données permettant de vous identifier personnellement."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Le responsable du traitement des données sur ce site web, au sens du Règlement Général sur la Protection des Données (RGPD), est Mohamad Masri, Nettelbeckstraße 10, 26131 Oldenburg, Allemagne, Tél. : +49 – (0) 1763 -1579669, E-Mail : info@masri-programmer.de. Le responsable du traitement est la personne physique ou morale qui, seule ou conjointement avec d'autres, détermine les finalités et les moyens du traitement des données à caractère personnel."
+                    }
+                ]
+            },
+            "dataCollection": {
+                "title": "2. Collecte de Données Lors de la Visite de Notre Site Web",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Lorsque vous utilisez notre site web à des fins purement informatives, c'est-à-dire si vous ne vous inscrivez pas ou ne nous fournissez pas d'autres informations, nous ne collectons que les données que votre navigateur transmet au serveur de la page (appelées « fichiers journaux du serveur »). Lorsque vous visitez notre site web, nous collectons les données suivantes, qui sont techniquement nécessaires pour que nous puissions vous afficher le site web :"
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Notre site web visité",
+                            "Date et heure de l'accès",
+                            "Quantité de données envoyées en octets",
+                            "Source/référence depuis laquelle vous êtes arrivé sur la page",
+                            "Navigateur utilisé",
+                            "Système d'exploitation utilisé",
+                            "Adresse IP utilisée (le cas échéant : sous forme anonymisée)"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "Le traitement est effectué conformément à l'Art. 6 (1) (f) du RGPD sur la base de notre intérêt légitime à améliorer la stabilité et la fonctionnalité de notre site web. Les données ne seront ni transmises ni utilisées d'une autre manière. Cependant, nous nous réservons le droit de vérifier ultérieurement les fichiers journaux du serveur s'il existe des indications concrètes d'une utilisation illégale."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Pour des raisons de sécurité et pour protéger la transmission de données personnelles et d'autres contenus confidentiels (par exemple, les commandes ou les demandes au responsable), ce site utilise un cryptage SSL ou TLS. Vous pouvez reconnaître une connexion cryptée à la chaîne « https:// » et au symbole du cadenas dans la barre d'adresse de votre navigateur."
+                    }
+                ]
+            },
+            "hosting": {
+                "title": "3. Hébergement & Réseau de Diffusion de Contenu",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Pour l'hébergement de notre site web et l'affichage du contenu de la page, nous utilisons un fournisseur qui fournit ses services soit lui-même, soit par l'intermédiaire de sous-traitants sélectionnés exclusivement sur des serveurs au sein de l'Union Européenne."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Toutes les données collectées sur notre site web sont traitées sur ces serveurs."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Nous avons conclu un accord de traitement des données avec le fournisseur, qui garantit la protection des données de nos visiteurs et interdit toute divulgation non autorisée à des tiers."
+                    }
+                ]
+            },
+            "cookies": {
+                "title": "4. Cookies",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Pour rendre la visite de notre site web attrayante et permettre l'utilisation de certaines fonctions, nous utilisons des cookies, qui sont de petits fichiers texte stockés sur votre appareil. Certains de ces cookies sont automatiquement supprimés après la fermeture de votre navigateur (les « cookies de session »), tandis que d'autres restent sur votre appareil plus longtemps et permettent de sauvegarder les paramètres de la page (les « cookies persistants »). Dans ce dernier cas, vous pouvez trouver la durée de stockage dans l'aperçu des paramètres de cookies de votre navigateur web."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Si des données personnelles sont également traitées par des cookies individuels que nous utilisons, le traitement est effectué conformément à l'Art. 6 (1) (b) du RGPD pour l'exécution d'un contrat, conformément à l'Art. 6 (1) (a) du RGPD en cas de consentement donné, ou conformément à l'Art. 6 (1) (f) du RGPD pour protéger nos intérêts légitimes à la meilleure fonctionnalité possible du site web et à une conception conviviale et efficace de la visite du site."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Vous pouvez configurer votre navigateur pour être informé de l'installation de cookies et décider individuellement de leur acceptation ou exclure l'acceptation de cookies pour certains cas ou en général."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Veuillez noter que si vous n'acceptez pas les cookies, la fonctionnalité de notre site web peut être limitée."
+                    }
+                ]
+            },
+            "contact": {
+                "title": "5. Prise de contact",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Dans le cadre de la prise de contact avec nous (par ex. via le formulaire de contact ou par e-mail), des données personnelles sont collectées. Les données collectées dans le cas d'un formulaire de contact sont visibles sur le formulaire de contact respectif. Ces données sont stockées et utilisées exclusivement dans le but de répondre à votre demande ou pour établir le contact et l'administration technique associée."
+                    },
+                    {
+                        "type": "p",
+                        "text": "La base juridique pour le traitement de ces données est notre intérêt légitime à répondre à votre demande conformément à l'Art. 6 (1) (f) du RGPD. Si votre contact vise à conclure un contrat, la base juridique supplémentaire pour le traitement est l'Art. 6 (1) (b) du RGPD. Vos données seront supprimées après le traitement final de votre demande. C'est le cas s'il peut être déduit des circonstances que l'affaire en question a été définitivement clarifiée et à condition qu'il n'existe aucune obligation légale de conservation contraire."
+                    }
+                ]
+            },
+            "rights": {
+                "title": "11. Droits de la personne concernée",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Le droit applicable en matière de protection des données vous accorde des droits complets en tant que personne concernée (droits d'accès et d'intervention) en ce qui concerne le traitement de vos données personnelles par le responsable du traitement, dont nous vous informons ci-dessous :"
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Droit d'accès conformément à l'Art. 15 du RGPD ;",
+                            "Droit de rectification conformément à l'Art. 16 du RGPD ;",
+                            "Droit à l'effacement (« droit à l'oubli ») conformément à l'Art. 17 du RGPD ;",
+                            "Droit à la limitation du traitement conformément à l'Art. 18 du RGPD ;",
+                            "Droit de notification conformément à l'Art. 19 du RGPD ;",
+                            "Droit à la portabilité des données conformément à l'Art. 20 du RGPD ;",
+                            "Droit de retirer le consentement donné conformément à l'Art. 7 (3) du RGPD ;",
+                            "Droit d'introduire une réclamation auprès d'une autorité de contrôle conformément à l'Art. 77 du RGPD."
+                        ]
+                    }
+                ]
+            },
+            "objection": {
+                "title": "DROIT D'OPPOSITION",
+                "style": "destructive",
+                "content": [
+                    {
+                        "type": "p",
+                        "style": "bold",
+                        "text": "SI, DANS LE CADRE D'UNE MISE EN BALANCE DES INTÉRÊTS, NOUS TRAITONS VOS DONNÉES PERSONNELLES SUR LA BASE DE NOTRE INTÉRÊT LÉGITIME PRÉPONDÉRANT, VOUS AVEZ LE DROIT À TOUT MOMENT DE VOUS OPPOSER À CE TRAITEMENT AVEC EFFET POUR L'AVENIR POUR DES RAISONS TENANT À VOTRE SITUATION PARTICULIÈRE."
+                    },
+                    {
+                        "type": "p",
+                        "text": "SI VOUS EXERCEZ VOTRE DROIT D'OPPOSITION, NOUS CESSERONS LE TRAITEMENT DES DONNÉES CONCERNÉES. CEPENDANT, NOUS NOUS RÉSERVONS LE DROIT DE POURSUIVRE LE TRAITEMENT SI NOUS POUVONS DÉMONTRER DES MOTIFS LÉGITIMES ET IMPÉRIEUX POUR LE TRAITEMENT QUI PRÉVALENT SUR VOS INTÉRÊTS, DROITS ET LIBERTÉS FONDAMENTAUX, OU SI LE TRAITEMENT SERT À LA CONSTATATION, À L'EXERCICE OU À LA DÉFENSE DE DROITS EN JUSTICE."
+                    },
+                    {
+                        "type": "p",
+                        "style": "bold",
+                        "text": "SI VOS DONNÉES PERSONNELLES SONT TRAITÉES PAR NOUS À DES FINS DE MARKETING DIRECT, VOUS AVEZ LE DROIT DE VOUS OPPOSER À TOUT MOMENT AU TRAITEMENT DES DONNÉES PERSONNELLES VOUS CONCERNANT À DE TELLES FINS DE MARKETING. VOUS POUVEZ EXERCER L'OPPOSITION COMME DÉCRIT CI-DESSUS."
+                    },
+                    {
+                        "type": "p",
+                        "text": "SI VOUS EXERCEZ VOTRE DROIT D'OPPOSITION, NOUS CESSERONS LE TRAITEMENT DES DONNÉES CONCERNÉES À DES FINS DE MARKETING DIRECT."
+                    }
+                ]
+            },
+            "duration": {
+                "title": "12. Durée de conservation des données personnelles",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "La durée de conservation des données personnelles est déterminée par la base juridique respective, la finalité du traitement et, le cas échéant, en plus par la période de conservation légale respective (par exemple, les périodes de conservation commerciale et fiscale)."
+                    }
+                ]
+            }
+        }
+    },
+    "termsConditions": {
+        "title": "Conditions Générales de Vente",
+        "sections": {
+            "validity": {
+                "title": "1. Validité des conditions",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Les conditions générales suivantes s'appliquent à toutes les prestations que je fournis, y compris les consultations et les recommandations. Elles s'appliquent aux contrats ultérieurs dans leur version actuellement en vigueur, même si aucune référence spécifique n'y est faite dans des cas individuels."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Toute modification des conditions générales sera communiquée au client par écrit. Les nouvelles conditions générales sont considérées comme acceptées si le client ne s'y oppose pas par écrit. Le client doit me soumettre son opposition dans les 14 jours suivant la notification des modifications."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Les conditions générales de mon client ne sont en aucun cas valables, même si je ne m'y oppose pas expressément."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Je fournis mes services exclusivement aux entreprises au sens de l'<a href='http://www.gesetze-im-internet.de/bgb/__14.html' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>article 14 du Code civil allemand (BGB)</a>. Les consommateurs au sens de l'<a href='http://www.gesetze-im-internet.de/bgb/__13.html' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>article 13 du BGB</a> ne reçoivent aucune prestation. Tous les prix sont soumis à la TVA légale."
+                    }
+                ]
+            },
+            "placingOrder": {
+                "title": "2. Passation de commande",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Les offres sont toujours sans engagement."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Je me réserve le droit d'apporter des améliorations ou des modifications aux services convenus contractuellement, à condition que celles-ci soient raisonnables pour le client et ne lui causent aucun désavantage significatif."
+                    }
+                ]
+            },
+            "conclusionOfContract": {
+                "title": "3. Conclusion du contrat",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Les commandes sont acceptées avec une confirmation de commande écrite par lettre, fax ou confirmation de commande électronique par e-mail conformément aux termes des présentes Conditions Générales."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Les conditions spéciales orales nécessitent une confirmation écrite pour être effectives."
+                    }
+                ]
+            },
+            "orderProcess": {
+                "title": "4. Processus de commande",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Après réception de la confirmation de commande écrite du client, je commence le travail et crée une ébauche correspondante."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Les sites web sont mis à la disposition du client pour examen et approbation. Après examen de l'ébauche, le client a le droit de demander des modifications ou des améliorations, ou (si l'ébauche n'est absolument pas satisfaisante) de demander une deuxième ébauche."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Toute demande de modification au-delà de ce cadre entraînera la facturation des coûts supplémentaires sur la base du tarif horaire ou journalier convenu."
+                    }
+                ]
+            },
+            "deliveryTime": {
+                "title": "5. Délai de livraison et arrangements de rendez-vous",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Les dates et délais de livraison doivent être convenus. Si le client demande des modifications à la commande après l'avoir passée qui affectent le temps de production, le délai de livraison sera prolongé en conséquence."
+                    }
+                ]
+            },
+            "acceptance": {
+                "title": "6. Réception",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "J'informerai le client lorsque la prestation contractuelle aura été entièrement fournie et pourra être réceptionnée."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Dès réception de la déclaration d'achèvement, le client est tenu de réceptionner immédiatement le travail contractuel et ne peut le refuser pour des raisons de conception ou artistiques. Dans le cadre du contrat, le client est libre de concevoir le travail."
+                    },
+                    {
+                        "type": "p",
+                        "text": "J'informerai immédiatement le client de l'achèvement des différentes étapes du projet (concept, design, fonctions). Le client est tenu de répondre à cette notification dans les 48 heures. Si aucune réponse n'est reçue dans ce délai, l'étape/le résultat du projet sera considéré comme accepté conformément au contrat."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Les services fournis sont réputés avoir été acceptés conformément au contrat sans déclaration expresse et sont facturés si le client ne soumet pas de déclaration de réception dans les 10 jours ouvrables suivant l'envoi de la déclaration d'achèvement (y compris sous forme électronique) et ne fait aucune autre déclaration."
+                    }
+                ]
+            },
+            "termination": {
+                "title": "7. Résiliation / Rétractation",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Je suis en droit de me retirer d'un contrat avec effet immédiat s'il existe un motif valable. La résiliation doit être faite par écrit. Un tel motif valable existe en particulier, mais pas exclusivement :"
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Si, pour des raisons imputables au client, l'exécution d'une commande est encore retardée ou devient impossible malgré un avertissement écrit et un délai de grâce de 10 jours ouvrables.",
+                            "Si le client, malgré un avertissement écrit et un délai de grâce de 10 jours ouvrables, viole de manière persistante des obligations contractuelles essentielles ou des dispositions essentielles des présentes Conditions Générales."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "En cas de retrait justifié du contrat de ma part, je conserve le droit à l'intégralité des honoraires convenus."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Le client a le droit de se retirer du contrat pour un motif valable. Le retrait doit être fait par écrit. Un tel motif valable existe en particulier si l'on ne peut raisonnablement plus attendre du client qu'il poursuive le contrat parce que je continue de violer des dispositions contractuelles essentielles malgré un avertissement écrit et un délai de grâce de 10 jours ouvrables pour y remédier."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Les services déjà fournis par moi jusqu'à ce point ainsi que les autres coûts engagés doivent être payés intégralement par le client, même en cas de retrait justifié."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Si le client résilie le contrat sans motif valable, il est tenu de payer l'intégralité des honoraires convenus, en plus des services déjà fournis et des coûts engagés jusqu'à ce point. En raison de ma planification spécifique au projet, le manque à gagner ne peut être réalisé ailleurs à court terme."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Si le client résilie le contrat sans motif valable avant le début du projet, il est tenu par moi, en raison de la planification liée au projet, de payer le profit qui ne peut être réalisé autrement en raison du court préavis dans les proportions suivantes :"
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Résiliation au plus tard 14 jours avant le début convenu du projet : 100%",
+                            "Résiliation au plus tard 30 jours avant le début convenu du projet : 75%",
+                            "Résiliation au plus tard 60 jours avant le début convenu du projet : 50%"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "Le client ne peut compenser que les créances qui sont incontestées ou légalement établies."
+                    }
+                ]
+            },
+            "paymentTerms": {
+                "title": "8. Conditions de paiement",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Le paiement doit être effectué en trois versements : 1er versement de 30% à la conclusion du contrat, 2ème versement de 30% à l'approbation de la maquette et/ou du concept, 3ème versement de 40% à la livraison du projet."
+                    },
+                    {
+                        "type": "p",
+                        "text": "La rémunération convenue est due sans déduction dans les 7 jours suivant la date de la facture, conformément à la liste de prix applicable, aux offres individuelles soumises ou aux accords écrits spéciaux conclus."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Je peux facturer des intérêts à un taux de 6% au-dessus du taux d'intérêt de base actuel de la Banque Centrale Européenne par an à partir de la date d'échéance, et à partir de la date de défaut. Cela n'affecte pas la revendication de dommages plus élevés prouvés, ni le droit du client de prouver une charge inférieure dans des cas individuels."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Si le client est en défaut de paiement, je suis en droit de retenir mes autres services, sans préjudice de mes droits contractuels. Tout autre droit prévu par la loi en cas de défaut reste inchangé."
+                    },
+                    {
+                        "type": "p",
+                        "text": "La compensation ou l'exercice d'un droit de rétention contre mes créances est exclu, sauf si la demande reconventionnelle est incontestée ou a été légalement établie."
+                    },
+                    {
+                        "type": "p",
+                        "text": "La commande de services créatifs auprès d'artistes ou de publicistes indépendants entraîne généralement des frais de la Caisse Sociale des Artistes (Künstlersozialkasse - KSK) selon ses tarifs publiés. Le fait que l'artiste ou le publiciste soit assuré auprès de la KSK est sans pertinence pour l'obligation de cotisation. Les frais payés doivent être déclarés à la KSK par le client."
+                    }
+                ]
+            },
+            "clientObligations": {
+                "title": "9. Obligations du Client",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Le client est tenu de fournir les données nécessaires en temps opportun et dans un format adapté au contrat. Cela inclut, en particulier, le contenu à saisir pour les sites web à créer."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Si j'ai fourni au client des ébauches et/ou des versions de test, en spécifiant un délai raisonnable pour les vérifier quant à leur exactitude et leur exhaustivité, les ébauches et/ou les versions de test sont réputées approuvées à l'expiration du délai, sauf si je reçois une demande de correction écrite."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Le client est tenu d'utiliser mes services exclusively aux fins prévues. Il doit s'abstenir de toute violation des dispositions légales ou de tout abus."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Le client m'indemnisera de toute responsabilité envers des tiers résultant de l'utilisation par le client de mes services en violation des droits de tiers ou des dispositions légales."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Le client garantit expressément que le contenu qu'il fournit ne viole pas le droit allemand ou son droit national, qui peut en différer, en particulier le droit d'auteur, la protection des données et le droit de la concurrence. Je ne suis pas obligé d'examiner le contenu. Le client m'indemnise par la présente de toute réclamation de tiers pour compensation basée sur le contenu inadmissible du client."
+                    }
+                ]
+            },
+            "copyright": {
+                "title": "10. Droit d'auteur, droits d'utilisation",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Le client reçoit un droit d'utilisation illimité dans l'espace et dans le temps pour internet pour tous les travaux de conception et de développement commandés (y compris les graphiques, photos, programmation et textes), sauf accord contraire. Les droits d'utilisation pour l'impression, la télévision et d'autres médias doivent être réglés séparément."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Je me réserve le droit d'auteur ainsi que les droits sur le contenu, les descriptions et les suggestions contenus dans les concepts, manuscrits, codes sources et présentations, quelle que soit leur forme. Cela s'applique même si des honoraires ont été estimés et payés pour eux. Cela s'applique en particulier si des honoraires sont facturés pour une présentation non contraignante, une formation ou similaire. Ces honoraires compensent le temps et les frais engagés et n'acquièrent pas le droit de reproduire ou d'utiliser le contenu présenté, etc."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Tous les designs, la mise en œuvre des designs en tant que construction HTML ou code de programme, ainsi que l'octroi de droits d'utilisation, constituent un service unique."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Les ébauches, les illustrations finales, les codes sources et les designs ne peuvent être modifiés, ni dans l'original ni en reproduction, sans mon consentement exprès. Toute imitation, même partielle, est interdite. Une violation de cette disposition me donne le droit d'exiger une pénalité contractuelle égale au double de la rémunération convenue. Si aucune rémunération n'a été convenue, la rémunération habituelle selon la convention collective SDSt/AGD pour les services de design sera considérée comme convenue."
+                    },
+                    {
+                        "type": "p",
+                        "text": "L'utilisation du travail que je crée est exclusivement réservée au client ou à son personnel. Toute utilisation par des tiers, en particulier la revente de mon travail, nécessite mon consentement écrit."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Les suggestions du client ou toute autre collaboration n'ont aucune influence sur le montant de la rémunération. Elles ne constituent pas une co-paternité."
+                    },
+                    {
+                        "type": "p",
+                        "text": "La transmission de tous les documents et codes sources en tout ou en partie ainsi que leur publication, reproduction et distribution sont interdites sans mon consentement."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Toutes mes créations et travaux de conception (ébauches, concepts, présentations, conception de page, éléments de navigation, code source pour le web design, etc.) sont soumis à la loi sur le droit d'auteur. Les dispositions de la loi sur le droit d'auteur s'appliquent même si le niveau de créativité requis par l'article 2 de la loi sur le droit d'auteur n'est pas atteint."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Les droits d'utilisation susmentionnés ne sont transférés qu'après le paiement intégral de la rémunération."
+                    }
+                ]
+            },
+            "scopeOfServices": {
+                "title": "11. Étendue des services",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "L'étendue des services est déterminée par les descriptions de services applicables au moment de la conclusion du contrat, les prix ou tarifs horaires convenus, et les dispositions suivantes. Mes employés ou auxiliaires d'exécution ne sont pas autorisés à conclure des accords qui s'écartent des descriptions de services, des prix ou tarifs horaires convenus, ou de ces Conditions Générales, ni à faire d'autres déclarations spéciales."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Si je fournis des services supplémentaires (par exemple, conseil ou support technique), ceux-ci seront facturés sur la base de mes tarifs horaires généraux. Si je fournis au client les services d'un tiers, par exemple un fournisseur de transmission, au prix coûtant, mon obligation se limite à l'exercice fiduciaire des droits et obligations découlant de la relation contractuelle avec le tiers. Le client est tenu de m'indemniser de toutes les réclamations du tiers."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Dans le cadre d'obligations continues, je me réserve le droit de modifier l'objet de mes services, notamment sur le plan technique, à condition que cela soit raisonnable pour le client tout en tenant compte de mes propres intérêts. Je me réserve le droit d'apporter d'autres modifications au contrat, y compris le contenu de mes services, les tarifs horaires applicables et ces conditions générales, à condition que j'informe le client du changement un mois avant sa prise d'effet. Si le client ne s'oppose pas au changement notifié dans ce délai d'un mois, le changement sera considéré comme approuvé."
+                    }
+                ]
+            },
+            "performanceObstacles": {
+                "title": "12. Obstacles à l'exécution",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Je fournis mes services dans la limite des capacités techniques et opérationnelles existantes. Je ne suis pas responsable des interruptions de service ou des retards dus à un cas de force majeure ou à d'autres événements qui rendent temporairement ou définitivement mon exécution impossible ou déraisonnablement difficile, sauf si je suis en faute. Les événements dans ce sens incluent les grèves et les lock-out, les pannes techniques chez d'autres opérateurs de systèmes de télécommunication, de voies de transmission ou de réseaux, les pannes de courant, les catastrophes naturelles, les actes de violence de tiers et les interventions gouvernementales."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Si de tels événements entraînent une impossibilité permanente ou une dégradation significative et permanente du service, les deux parties sont libérées de l'obligation de continuer à exécuter le contrat. Si le service ne devient que partiellement impossible, le client a le droit de réduire les frais contractuels en fonction de la gravité de la dégradation."
+                    }
+                ]
+            },
+            "warranty": {
+                "title": "13. Garantie et Vices",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Je m'engage à exécuter la commande avec le plus grand soin possible, en particulier à traiter avec soin les modèles, documents, échantillons, etc. fournis."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Dans la mesure où je suis tenu de fournir une garantie, celle-ci se fera par réparation, à l'exclusion de toutes autres réclamations de garantie. Si la réparation échoue (par exemple, en raison d'une impossibilité fautive), le client ne peut faire valoir un droit à des dommages et intérêts, sauf en cas de dol ou de négligence grave, mais peut seulement exiger une réduction du prix ou, en cas d'impossibilité non fautive de ma part, l'annulation du contrat."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Je tiens à souligner que les produits logiciels tiers utilisés (CMS, systèmes de boutique, plugins, etc.) peuvent contenir des dysfonctionnements non détectés ou des risques de sécurité pour lesquels je n'assume aucune responsabilité."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Si je fournis des services de dépannage sur la base d'un rapport de défaut et qu'il s'avère qu'il n'y avait pas de défaut ou que le défaut a été causé uniquement par le client, je suis en droit de facturer au client le temps passé conformément au tarif horaire applicable."
+                    },
+                    {
+                        "type": "p",
+                        "text": "En principe, l'affichage d'un site web HTML peut varier en fonction du système d'exploitation, de l'appareil, de la résolution, du navigateur ou des paramètres utilisés. Grâce à une programmation conforme aux normes et à des tests avec les navigateurs les plus récents, nous nous efforçons d'assurer un affichage correct ou adapté sur la plupart des systèmes. En raison de la multitude de variations, nous ne pouvons garantir qu'un site web ou une boutique en ligne sera affiché sans perte ou exactement de la même manière sur tous les systèmes, appareils et navigateurs."
+                    }
+                ]
+            },
+            "liability": {
+                "title": "14. Responsabilité",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Je ne suis responsable des dommages que si moi-même, mes employés ou autres auxiliaires d'exécution sommes coupables de négligence grave ou de dol."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Dans la mesure où je suis responsable des dommages, ma responsabilité est en tout cas limitée aux dommages que j'ai prévus comme conséquence possible de la rupture du contrat au moment de la conclusion du contrat, ou que j'aurais pu prévoir, en tenant compte des circonstances dont j'avais ou aurais dû avoir connaissance. Dans le cas d'obligations continues, ma responsabilité est limitée au montant simple des honoraires annuels dus pour le service contractuel en question, mais sinon au montant de ma créance facturée."
+                    },
+                    {
+                        "type": "p",
+                        "text": "En aucun cas, je ne serai responsable du manque de succès économique, des dommages indirects, des dommages consécutifs ou des dommages résultant de réclamations de tiers."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Mon service inclut la création de sites web pour consultation depuis un serveur web. Je n'assume aucune responsabilité pour les perturbations liées au serveur ou les pannes de système."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Si j'utilise des systèmes logiciels ou des composants d'autres fabricants, je ne suis pas responsable de la qualité, des vulnérabilités de sécurité ou des erreurs de ce logiciel tiers. En cas de doute, le dépannage et la correction des erreurs feront l'objet d'une facturation. Cela s'applique en particulier à l'utilisation de logiciels open source gratuits ou de modules complémentaires."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Je не suis pas responsable des dommages résultant de l'utilisation de logiciels qui n'ont pas été développés par moi et je renvoie aux dispositions de garantie du fabricant de logiciel respectif."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Les limitations de responsabilité ci-dessus s'appliquent également à mes employés ou autres auxiliaires d'exécution. Je m'engage à sélectionner et à instruire soigneusement mes employés ou autres auxiliaires d'exécution. Au-delà, je ne suis pas responsable de mes employés ou autres auxiliaires d'exécution."
+                    }
+                ]
+            },
+            "dataProtection": {
+                "title": "15. Protection des données et confidentialité",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "J'informe par la présente le client que je peux collecter, traiter, utiliser et transmettre ses données personnelles ou d'entreprise à des tiers, conformément aux dispositions légales applicables, dans la mesure nécessaire à l'établissement et à la bonne exécution de la relation contractuelle. [Veuillez vous référer à la politique de confidentialité](url enter here)."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Les données de connexion seront collectées, traitées, utilisées et transmises dans la mesure nécessaire à la fourniture de mes services, à leur facturation ou vérification, ou autrement pour l'exécution du contrat. Le client s'engage à en informer les utilisateurs tiers et, sur ma demande, à confirmer par écrit qu'il a rempli cette obligation. [Veuillez vous référer à la politique de confidentialité.](url enter here)"
+                    },
+                    {
+                        "type": "p",
+                        "text": "Je m'engage à ne pas exploiter ou divulguer à des tiers les secrets commerciaux et d'affaires ou les informations confidentielles du client et de ses clients dont j'ai connaissance au cours de mon travail pour le client sans le consentement préalable du client. Il en va de même pour tous les documents et connaissances fournis au client."
+                    },
+                    {
+                        "type": "p",
+                        "text": "De plus, les parties contractantes conviennent de maintenir la confidentialité concernant le contenu du contrat et les connaissances acquises lors de l'exécution du contrat."
+                    },
+                    {
+                        "type": "p",
+                        "text": "L'obligation de confidentialité s'applique également au-delà de la résiliation de la relation contractuelle."
+                    }
+                ]
+            },
+            "selfPromotion": {
+                "title": "16. Auto-promotion",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Le client accepte que je puisse, si nécessaire, afficher les graphiques, sites web, etc. créés pour lui comme références dans une galerie publique sur mon site web ou les utiliser dans d'autres supports publicitaires comme preuve de mon travail."
+                    },
+                    {
+                        "type": "p",
+                        "text": "La publication de l'URL du site web du client édité par mes soins est autorisée."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Sauf accord contraire, je suis en droit de placer une référence sur le site web du client et de fournir un lien vers mon site web. Ce lien nommera l'auteur/prestataire de services 'Michael Hömke' et renverra à son site web (url enter here)."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Toute violation du droit d'utiliser mon travail comme référence ou d'être nommé et lié dans le contexte susmentionné me donne droit à une indemnisation. Sans preuve de dommages plus élevés, l'indemnisation s'élèvera à 100% de la rémunération convenue ou de la rémunération habituelle selon la convention collective SDSt/AGD pour les services de design. Le droit de réclamer des dommages plus élevés sur preuve reste inchangé. Le droit d'être nommé n'expire pas à la fin de la collaboration entre moi et le client. Au contraire, le droit susmentionné reste en vigueur pendant toute la durée de l'utilisation convenue contractuellement ; au moins jusqu'à la fin de l'utilisation de l'objet contractuel dans n'importe quelle position ou dans son intégralité."
+                    }
+                ]
+            },
+            "otherProvisions": {
+                "title": "17. Autres dispositions",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Dans la mesure où la loi le permet, le lieu de juridiction est Bad Freinwalde. Cet accord de juridiction s'applique uniquement aux clients commerciaux. Cet accord de juridiction s'applique également aux clients nationaux et internationaux."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Les modifications ou ajouts à cet accord ne sont valables que s'ils sont convenus par écrit. Ceci s'applique également à toute modification de cette clause de forme écrite."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Si une disposition de cet accord est ou devient invalide, ou si l'accord contient une lacune nécessitant d'être comblée, cela n'affectera pas la validité des autres dispositions. La disposition invalide ou la lacune sera remplacée par une disposition qui se rapproche le plus de l'objectif économique de l'accord et qui aurait été convenue par les parties si elles avaient eu connaissance de l'invalidité de la disposition."
+                    }
+                ]
+            },
+            "hourlyRate": {
+                "title": "18. Taux horaire actuel",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Le taux horaire actuel est de 95,00 EUR / heure"
+                    }
+                ]
+            }
+        }
+    },
+    "imprint": {
+        "title": "Mentions Légales",
+        "subTitle": "Mentions légales et informations juridiques obligatoires",
+        "contact": {
+            "company": "Masri Programmer",
+            "nameAndAddress": "Mohamad Masri\n26131 Oldenburg\nAllemagne",
+            "phoneLabel": "Tél. :",
+            "phoneNumber": "+49 – (0) 1763 - 1579669",
+            "emailLabel": "E-mail :",
+            "emailAddress": "info@masri-programmer.de"
+        },
+        "vat": {
+            "title": "Numéro d'identification TVA",
+            "subTitle": "selon l'article 27a de la loi sur la taxe sur la valeur ajoutée :",
+            "number": "64 /121/ 10813"
+        },
+        "legalSupport": {
+            "imageUrl": "",
+            "altText": "",
+            "caption": ""
+        },
+        "copyright": {
+            "title": "Droit d'auteur",
+            "p1": "Le contenu et les œuvres créés par les exploitants du site sur ces pages sont soumis au droit d'auteur allemand. La reproduction, le traitement, la distribution et tout type d'exploitation en dehors des limites du droit d'auteur nécessitent le consentement écrit de l'auteur ou du créateur respectif. Les téléchargements et copies de ce site ne sont autorisés que pour un usage privé et non commercial.",
+            "p2": "Les droits d'auteur de tiers sont respectés. En particulier, les contenus de tiers sont identifiés comme tels. Si vous deviez néanmoins constater une violation du droit d'auteur, nous vous prions de nous en informer. Dès la notification de violations, nous supprimerons immédiatement ces contenus."
+        }
+    },
+    "changeLanguage": "Changer la langue",
+    "languages": {
+        "english": "Anglaise",
+        "german": "Allemande",
+        "french": "Français",
+        "arabic": "arabe"
     }
 }

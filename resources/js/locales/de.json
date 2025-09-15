@@ -61,6 +61,10 @@
         "contactLinkText": "Kontakt aufzunehmen",
         "globeTitle": "Globus"
     },
+    "projects": {
+        "title": "Projects",
+        "description": ""
+    },
     "statistics": {
         "experience": "Jahre Erfahrung",
         "projects": "Realisierte Projekte",
@@ -150,6 +154,8 @@
     },
     "footer": {
         "tagline": "Gerne helfen, gerne teilen",
+        "germanLaw": "I recognize the norms and standards of the <a href='https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/it-grundschutz_node.html' target='blank' rel='noopener noreferrer'>BSI IT-Grundschutz</a> ( German Federal Office for Information Security ) and comply with them.",
+        "germanPrices": "All prices plus 19% VAT. I provide my services exclusively to businesses within the meaning of  <a href='https://www.gesetze-im-internet.de/bgb/__14.html' target='blank' rel='noopener noreferrer'>Section 14 of the German Civil Code (BGB)</a>. Consumers within the meaning of  <a href='https://www.gesetze-im-internet.de/bgb/__13.html' target='blank' rel='noopener noreferrer'>Section 13 of the BGB</a> do not receive any services.",
         "headings": {
             "product": "Produkt",
             "community": "Community",
@@ -166,6 +172,8 @@
             "whatsapp": "Whatsapp",
             "privacyPolicy": "Datenschutzrichtlinie",
             "termsOfService": "Nutzungsbedingungen",
+            "imprint": "Imprint",
+            "contact": "Contact",
             "githubAriaLabel": "GitHub Repository",
             "linkedinAriaLabel": "LinkedIn Profil"
         },
@@ -173,33 +181,624 @@
         "madeWith": "Erstellt mit {heartIcon} von {authorLink}."
     },
     "navigation": {
-       "home": {
-      "title": "Startseite",
-      "hero": "Hero",
-      "hero_desc": "Der Haupteinführungsbereich.",
-      "features": "Funktionen",
-      "features_desc": "Entdecken Sie die leistungsstarken Funktionen, die wir bieten.",
-      "about": "Über uns",
-      "about_desc": "Erfahren Sie mehr über unsere Mission und unser Team.",
-      "statistics": "Statistiken",
-      "statistics_desc": "Sehen Sie sich wichtige Kennzahlen und Daten an.",
-      "testimonials": "Kundenstimmen",
-      "testimonials_desc": "Lesen Sie, was unsere Kunden sagen.",
-      "faq": "FAQ",
-      "faq_desc": "Finden Sie Antworten auf häufig gestellte Fragen.",
-      "technologies": "Technologien",
-      "technologies_desc": "Entdecken Sie den Tech-Stack, den wir verwenden."
+        "home": {
+            "title": "Startseite",
+            "hero": "Hero",
+            "hero_desc": "Der Haupteinführungsbereich.",
+            "features": "Funktionen",
+            "features_desc": "Entdecken Sie die leistungsstarken Funktionen, die wir bieten.",
+            "about": "Über uns",
+            "about_desc": "Erfahren Sie mehr über unsere Mission und unser Team.",
+            "projects": "Projekte",
+            "projects_desc": "Überprüfen Sie meine Projekte",
+            "statistics": "Statistiken",
+            "statistics_desc": "Sehen Sie sich wichtige Kennzahlen und Daten an.",
+            "testimonials": "Kundenstimmen",
+            "testimonials_desc": "Lesen Sie, was unsere Kunden sagen.",
+            "faq": "FAQ",
+            "faq_desc": "Finden Sie Antworten auf häufig gestellte Fragen.",
+            "technologies": "Technologien",
+            "technologies_desc": "Entdecken Sie den Tech-Stack, den wir verwenden."
+        },
+        "legal": {
+            "title": "Rechtliches",
+            "privacy": "Datenschutzerklärung",
+            "privacy_desc": "Wie wir mit Ihren Daten umgehen.",
+            "terms": "Nutzungsbedingungen",
+            "terms_desc": "Unsere Regeln und Richtlinien.",
+            "imprint": "Impressum",
+            "imprint_desc": "Gesetzliche Offenlegungsinformationen."
+        },
+        "contact": "Kontakt",
+        "references": "Referenzen"
     },
-    "legal": {
-      "title": "Rechtliches",
-      "privacy": "Datenschutzerklärung",
-      "privacy_desc": "Wie wir mit Ihren Daten umgehen.",
-      "terms": "Nutzungsbedingungen",
-      "terms_desc": "Unsere Regeln und Richtlinien.",
-      "imprint": "Impressum",
-      "imprint_desc": "Gesetzliche Offenlegungsinformationen."
+    "privacyPolicy": {
+        "title": "Datenschutzerklärung",
+        "sections": {
+            "introduction": {
+                "title": "1. Einleitung und Kontaktdaten des Verantwortlichen",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Wir freuen uns, dass Sie unsere Website besuchen und bedanken uns für Ihr Interesse. Nachfolgend informieren wir Sie über den Umgang mit Ihren personenbezogenen Daten bei der Nutzung unserer Website. Personenbezogene Daten sind hierbei alle Daten, mit denen Sie persönlich identifiziert werden können."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Verantwortlicher für die Datenverarbeitung auf dieser Website im Sinne der Datenschutz-Grundverordnung (DSGVO) ist Mohamad Masri, Nettelbeckstraße 10, 26131 Oldenburg, Deutschland, Tel.: +49 – (0) 1763 -1579669, E-Mail: info@masri-programmer.de. Der für die Verarbeitung von personenbezogenen Daten Verantwortliche ist diejenige natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet."
+                    }
+                ]
+            },
+            "dataCollection": {
+                "title": "2. Datenerfassung beim Besuch unserer Website",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Bei der bloß informatorischen Nutzung unserer Website, also wenn Sie sich nicht registrieren oder uns anderweitig Informationen übermitteln, erheben wir nur solche Daten, die Ihr Browser an den Seitenserver übermittelt (sog. „Server-Logfiles“). Wenn Sie unsere Website besuchen, erheben wir die folgenden Daten, die für uns technisch erforderlich sind, um Ihnen die Website anzuzeigen:"
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Unsere besuchte Website",
+                            "Datum und Uhrzeit des Zugriffs",
+                            "Menge der gesendeten Daten in Byte",
+                            "Quelle/Verweis, von welchem Sie auf die Seite gelangten",
+                            "Verwendeter Browser",
+                            "Verwendetes Betriebssystem",
+                            "Verwendete IP-Adresse (ggf.: in anonymisierter Form)"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres berechtigten Interesses an der Verbesserung der Stabilität und Funktionalität unserer Website. Eine Weitergabe oder anderweitige Verwendung der Daten findet nicht statt. Wir behalten uns allerdings vor, die Server-Logfiles nachträglich zu überprüfen, sollten konkrete Anhaltspunkte auf eine rechtswidrige Nutzung hinweisen."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Aus Sicherheitsgründen und zum Schutz der Übertragung personenbezogener Daten und anderer vertraulicher Inhalte (z.B. Bestellungen oder Anfragen an den Verantwortlichen) nutzt diese Website eine SSL-bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie an der Zeichenfolge „https://“ und dem Schloss-Symbol in Ihrer Browserzeile."
+                    }
+                ]
+            },
+            "hosting": {
+                "title": "3. Hosting & Content-Delivery-Network",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Für das Hosting unserer Website und die Darstellung der Seiteninhalte nutzen wir einen Anbieter, der seine Leistungen entweder selbst oder über ausgewählte Sub-Unternehmer ausschließlich auf Servern innerhalb der Europäischen Union erbringt."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Sämtliche auf unserer Website erhobenen Daten werden auf diesen Servern verarbeitet."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Wir haben mit dem Anbieter einen Vertrag über Auftragsverarbeitung abgeschlossen, der den Schutz der Daten unserer Seitenbesucher sicherstellt und eine unberechtigte Weitergabe an Dritte untersagt."
+                    }
+                ]
+            },
+            "cookies": {
+                "title": "4. Cookies",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Um den Besuch unserer Website attraktiv zu gestalten und die Nutzung bestimmter Funktionen zu ermöglichen, verwenden wir Cookies. Hierbei handelt es sich um kleine Textdateien, die auf Ihrem Endgerät abgelegt werden. Einige dieser Cookies werden nach dem Schließen Ihres Browsers automatisch wieder gelöscht (sog. „Session-Cookies“), während andere für eine längere Dauer auf Ihrem Endgerät verbleiben und das Speichern von Seiteneinstellungen ermöglichen (sog. „persistente Cookies“). Im letzteren Fall können Sie die Speicherdauer der Übersicht der Cookie-Einstellungen Ihres Webbrowsers entnehmen."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Sofern durch einzelne von uns verwendete Cookies auch personenbezogene Daten verarbeitet werden, erfolgt die Verarbeitung gemäß Art. 6 Abs. 1 lit. b DSGVO zur Durchführung des Vertrages, gemäß Art. 6 Abs. 1 lit. a DSGVO im Falle einer erteilten Einwilligung oder gemäß Art. 6 Abs. 1 lit. f DSGVO zur Wahrung unserer berechtigten Interessen an der bestmöglichen Funktionalität der Website sowie einer kundenfreundlichen und effektiven Ausgestaltung des Seitenbesuchs."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und einzeln über deren Annahme entscheiden oder die Annahme von Cookies für bestimmte Fälle oder generell ausschließen."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Bitte beachten Sie, dass bei Nichtannahme von Cookies die Funktionalität unserer Website eingeschränkt sein kann."
+                    }
+                ]
+            },
+            "contact": {
+                "title": "5. Kontaktaufnahme",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Im Rahmen der Kontaktaufnahme mit uns (z.B. per Kontaktformular oder E-Mail) werden personenbezogene Daten erhoben. Welche Daten im Falle eines Kontaktformulars erhoben werden, ist aus dem jeweiligen Kontaktformular ersichtlich. Diese Daten werden ausschließlich zum Zweck der Beantwortung Ihres Anliegens bzw. für die Kontaktaufnahme und die damit verbundene technische Administration gespeichert und verwendet."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Rechtsgrundlage für die Verarbeitung dieser Daten ist unser berechtigtes Interesse an der Beantwortung Ihres Anliegens gemäß Art. 6 Abs. 1 lit. f DSGVO. Zielt Ihre Kontaktierung auf den Abschluss eines Vertrages ab, so ist zusätzliche Rechtsgrundlage für die Verarbeitung Art. 6 Abs. 1 lit. b DSGVO. Ihre Daten werden nach abschließender Bearbeitung Ihrer Anfrage gelöscht. Dies ist der Fall, wenn sich aus den Umständen entnehmen lässt, dass der betroffene Sachverhalt abschließend geklärt ist und sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen."
+                    }
+                ]
+            },
+            "rights": {
+                "title": "11. Rechte der betroffenen Person",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Das geltende Datenschutzrecht gewährt Ihnen als betroffene Person umfassende Rechte (Auskunfts- und Interventionsrechte) gegenüber dem Verantwortlichen hinsichtlich der Verarbeitung Ihrer personenbezogenen Daten, über die wir Sie nachstehend informieren:"
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Auskunftsrecht gemäß Art. 15 DSGVO;",
+                            "Recht auf Berichtigung gemäß Art. 16 DSGVO;",
+                            "Recht auf Löschung („Recht auf Vergessenwerden“) gemäß Art. 17 DSGVO;",
+                            "Recht auf Einschränkung der Verarbeitung gemäß Art. 18 DSGVO;",
+                            "Recht auf Unterrichtung gemäß Art. 19 DSGVO;",
+                            "Recht auf Datenübertragbarkeit gemäß Art. 20 DSGVO;",
+                            "Recht auf Widerruf erteilter Einwilligungen gemäß Art. 7 Abs. 3 DSGVO;",
+                            "Recht auf Beschwerde bei einer Aufsichtsbehörde gemäß Art. 77 DSGVO."
+                        ]
+                    }
+                ]
+            },
+            "objection": {
+                "title": "WIDERSPRUCHSRECHT",
+                "style": "destructive",
+                "content": [
+                    {
+                        "type": "p",
+                        "style": "bold",
+                        "text": "WENN WIR IM RAHMEN EINER INTERESSENABWÄGUNG IHRE PERSONENBEZOGENEN DATEN AUFGRUND UNSERES ÜBERWIEGENDEN BERECHTIGTEN INTERESSES VERARBEITEN, HABEN SIE DAS JEDERZEITIGE RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIESE VERARBEITUNG WIDERSPRUCH MIT WIRKUNG FÜR DIE ZUKUNFT EINZULEGEN."
+                    },
+                    {
+                        "type": "p",
+                        "text": "MACHEN SIE VON IHREM WIDERSPRUCHSRECHT GEBRAUCH, BEENDEN WIR DIE VERARBEITUNG DER BETROFFENEN DATEN. EINE WEITERVERARBEITUNG BLEIBT JEDOCH VORBEHALTEN, WENN WIR ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG NACHWEISEN KÖNNEN, DIE IHRE INTERESSEN, GRUNDRECHTE UND GRUNDFREIHEITEN ÜBERWIEGEN, ODER WENN DIE VERARBEITUNG DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON RECHTSANSPRÜCHEN DIENT."
+                    },
+                    {
+                        "type": "p",
+                        "style": "bold",
+                        "text": "WERDEN IHRE PERSONENBEZOGENEN DATEN VON UNS VERARBEITET, UM DIREKTWERBUNG ZU BETREIBEN, HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE DERARTIGER WERBUNG EINZULEGEN. SIE KÖNNEN DEN WIDERSPRUCH WIE OBEN BESCHRIEBEN AUSÜBEN."
+                    },
+                    {
+                        "type": "p",
+                        "text": "MACHEN SIE VON IHREM WIDERSPRUCHSRECHT GEBRAUCH, BEENDEN WIR DIE VERARBEITUNG DER BETROFFENEN DATEN ZU DIREKTWERBEZWECKEN."
+                    }
+                ]
+            },
+            "duration": {
+                "title": "12. Dauer der Speicherung personenbezogener Daten",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Die Dauer der Speicherung von personenbezogenen Daten bemisst sich anhand der jeweiligen Rechtsgrundlage, dem Verarbeitungszweck und – sofern einschlägig – zusätzlich anhand der jeweiligen gesetzlichen Aufbewahrungsfrist (z.B. handels- und steuerrechtliche Aufbewahrungsfristen)."
+                    }
+                ]
+            }
+        }
     },
-    "contact": "Kontakt",
-    "references": "Referenzen"
+    "termsConditions": {
+        "title": "Allgemeine Geschäftsbedingungen",
+        "sections": {
+            "validity": {
+                "title": "1. Geltung der Bedingungen",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Die nachfolgenden Bedingungen gelten für alle von mir erbrachten Leistungen, einschließlich Beratungen und Empfehlungen. Sie gelten für Folgeverträge in ihrer jeweils gültigen Fassung, auch wenn im Einzelfall nicht gesondert darauf Bezug genommen wird."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Änderungen der Geschäftsbedingungen werden dem Auftraggeber schriftlich mitgeteilt. Die neuen Geschäftsbedingungen gelten als angenommen, wenn der Auftraggeber ihnen nicht schriftlich widerspricht. Der Auftraggeber muss seinen Widerspruch innerhalb von 14 Tagen nach Mitteilung der Änderungen an mich richten."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Die Geschäftsbedingungen meines Auftraggebers gelten unter keinen Umständen, auch wenn ich nicht ausdrücklich widerspreche."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Ich erbringe meine Leistungen ausschließlich an Unternehmer im Sinne des <a href='http://www.gesetze-im-internet.de/bgb/__14.html' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>§ 14 des Bürgerlichen Gesetzbuches (BGB)</a>. Verbraucher im Sinne des <a href='http://www.gesetze-im-internet.de/bgb/__13.html' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>§ 13 BGB</a> erhalten keine Leistungen. Alle Preise verstehen sich zuzüglich der gesetzlichen Mehrwertsteuer."
+                    }
+                ]
+            },
+            "placingOrder": {
+                "title": "2. Auftragserteilung",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Angebote sind stets freibleibend."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Ich behalte mir das Recht vor, Verbesserungen oder Änderungen an den vertraglich vereinbarten Leistungen vorzunehmen, sofern diese für den Auftraggeber zumutbar sind und keinen wesentlichen Nachteil für den Auftraggeber verursachen."
+                    }
+                ]
+            },
+            "conclusionOfContract": {
+                "title": "3. Vertragsabschluss",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Aufträge werden mit einer schriftlichen Auftragsbestätigung per Brief, Fax oder elektronischer Auftragsbestätigung per E-Mail gemäß den Bestimmungen dieser Allgemeinen Geschäftsbedingungen angenommen."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Mündliche Sonderbedingungen bedürfen zu ihrer Wirksamkeit der schriftlichen Bestätigung."
+                    }
+                ]
+            },
+            "orderProcess": {
+                "title": "4. Auftragsabwicklung",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Nach Erhalt der schriftlichen Auftragsbestätigung des Auftraggebers beginne ich mit der Arbeit und erstelle einen entsprechenden Musterentwurf."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Websites werden dem Auftraggeber zur Prüfung und Freigabe zur Verfügung gestellt. Nach Prüfung des Entwurfs hat der Auftraggeber das Recht, Änderungen oder Verbesserungen zu verlangen oder (falls der Entwurf absolut nicht zufriedenstellend ist) ein zweites Muster anzufordern."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Alle darüber hinausgehenden Änderungswünsche führen dazu, dass die zusätzlichen Kosten auf der Grundlage des vereinbarten Stunden- oder Tagessatzes in Rechnung gestellt werden."
+                    }
+                ]
+            },
+            "deliveryTime": {
+                "title": "5. Lieferzeit und Terminabsprachen",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Liefertermine und Fristen sind zu vereinbaren. Verlangt der Auftraggeber nach Auftragserteilung Änderungen am Auftrag, die die Produktionszeit beeinflussen, verlängert sich die Lieferzeit entsprechend."
+                    }
+                ]
+            },
+            "acceptance": {
+                "title": "6. Abnahme",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Ich werde den Auftraggeber informieren, wenn die vertragliche Leistung vollständig erbracht ist und abgenommen werden kann."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Nach Erhalt der Fertigstellungsanzeige ist der Auftraggeber verpflichtet, die vertragliche Arbeit unverzüglich abzunehmen und darf sie nicht aus gestalterischen oder künstlerischen Gründen verweigern. Im Rahmen des Vertrages steht es dem Auftraggeber frei, das Werk zu gestalten."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Über die Fertigstellung einzelner Projektschritte (Konzept, Design, Funktionen) werde ich den Auftraggeber unverzüglich informieren. Der Auftraggeber ist verpflichtet, innerhalb von 48 Stunden auf diese Mitteilung zu reagieren. Erfolgt innerhalb dieser Frist keine Reaktion, gilt der Projektschritt/das Ergebnis als vertragsgemäß abgenommen."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Die erbrachten Leistungen gelten ohne ausdrückliche Erklärung als vertragsgemäß abgenommen und werden in Rechnung gestellt, wenn der Auftraggeber nicht innerhalb von 10 Werktagen nach Zusendung der Fertigstellungsanzeige (auch in elektronischer Form) eine Abnahmeerklärung abgibt und keine sonstige Erklärung abgibt."
+                    }
+                ]
+            },
+            "termination": {
+                "title": "7. Kündigung / Rücktritt",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Ich bin berechtigt, aus wichtigem Grund mit sofortiger Wirkung von einem Vertrag zurückzutreten. Die Kündigung muss schriftlich erfolgen. Ein solcher wichtiger Grund liegt insbesondere, aber nicht ausschließlich, vor:"
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Wenn aus vom Kunden zu vertretenden Gründen die Ausführung eines Auftrags trotz schriftlicher Abmahnung und einer Nachfrist von 10 Werktagen weiter verzögert oder unmöglich wird.",
+                            "Wenn der Kunde trotz schriftlicher Abmahnung und einer Nachfrist von 10 Werktagen nachhaltig gegen wesentliche Vertragspflichten oder wesentliche Bestimmungen dieser Geschäftsbedingungen verstößt."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "Im Falle eines solchen berechtigten Rücktritts vom Vertrag behalte ich den Anspruch auf das gesamte vereinbarte Honorar."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Der Kunde ist berechtigt, aus wichtigem Grund vom Vertrag zurückzutreten. Der Rücktritt hat schriftlich zu erfolgen. Ein solcher wichtiger Grund liegt insbesondere vor, wenn dem Kunden die Fortsetzung des Vertrages nicht mehr zugemutet werden kann, weil ich trotz schriftlicher Abmahnung und einer Nachfrist von 10 Werktagen zur Abhilfe weiterhin gegen wesentliche Vertragsbestimmungen verstoße."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Die bis zu diesem Zeitpunkt von mir bereits erbrachten Leistungen sowie sonstige angefallene Kosten sind vom Kunden auch im Falle eines berechtigten Rücktritts vollständig zu vergüten."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Kündigt der Kunde den Vertrag ohne wichtigen Grund, ist der Kunde verpflichtet, zusätzlich zu den bereits erbrachten Leistungen und den bis dahin entstandenen Kosten das vereinbarte Honorar in voller Höhe zu zahlen. Aufgrund meiner projektspezifischen Planung kann der entgangene Gewinn kurzfristig nicht anderweitig realisiert werden."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Kündigt der Kunde den Vertrag ohne wichtigen Grund vor Projektbeginn, ist er mir aufgrund der projektbezogenen Planung verpflichtet, den Gewinn, der aufgrund der Kurzfristigkeit nicht anderweitig realisiert werden kann, in folgenden Anteilen zu zahlen:"
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Kündigung nicht mehr als 14 Tage vor dem vereinbarten Projektstart: 100%",
+                            "Kündigung nicht mehr als 30 Tage vor dem vereinbarten Projektstart: 75%",
+                            "Kündigung nicht mehr als 60 Tage vor dem vereinbarten Projektstart: 50%"
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": "Der Auftraggeber darf nur mit unbestrittenen oder rechtskräftig festgestellten Forderungen aufrechnen."
+                    }
+                ]
+            },
+            "paymentTerms": {
+                "title": "8. Zahlungsbedingungen",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Die Zahlung hat in drei Raten zu erfolgen: 1. Rate 30% bei Vertragsabschluss, 2. Rate 30% bei Layout- und/oder Konzeptfreigabe, 3. Rate 40% bei Projektübergabe."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Die vereinbarte Vergütung ist ohne Abzüge innerhalb von 7 Tagen nach Rechnungsdatum gemäß der geltenden Preisliste, individuellen Angeboten oder getroffenen besonderen schriftlichen Vereinbarungen fällig."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Ich kann ab dem Fälligkeitsdatum Zinsen in Höhe von 6 % über dem jeweils gültigen Basiszinssatz der Europäischen Zentralbank pro Jahr und ab dem Zeitpunkt des Verzugs berechnen. Die Geltendmachung eines nachgewiesenen höheren Schadens bleibt hiervon unberührt, ebenso wie das Recht des Auftraggebers, im Einzelfall eine geringere Belastung nachzuweisen."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Gerät der Auftraggeber in Zahlungsverzug, bin ich berechtigt, meine sonstigen Leistungen unbeschadet meiner vertraglichen Ansprüche zurückzuhalten. Etwaige sonstige gesetzlich vorgesehene Rechte im Verzugsfall bleiben unberührt."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Die Aufrechnung oder die Ausübung eines Zurückbehaltungsrechts gegenüber meinen Forderungen ist ausgeschlossen, es sei denn, die Gegenforderung ist unbestritten oder rechtskräftig festgestellt."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Die Beauftragung kreativer Leistungen von selbstständigen Künstlern oder Publizisten unterliegt in der Regel den Beiträgen der Künstlersozialkasse (KSK) nach deren veröffentlichten Sätzen. Ob der Künstler oder Publizist bei der KSK versichert ist, ist für die Beitragspflicht unerheblich. Die gezahlten Honorare sind vom Auftraggeber an die KSK zu melden."
+                    }
+                ]
+            },
+            "clientObligations": {
+                "title": "9. Pflichten des Auftraggebers",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Der Auftraggeber ist verpflichtet, die erforderlichen Daten rechtzeitig und in einem für den Vertrag geeigneten Format zur Verfügung zu stellen. Dazu gehören insbesondere Inhalte, die für die zu erstellenden Websites einzugeben sind."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Habe ich dem Auftraggeber Entwürfe und/oder Testversionen unter Angabe einer angemessenen Frist zur Prüfung auf Richtigkeit und Vollständigkeit zur Verfügung gestellt, so gelten die Entwürfe und/oder Testversionen mit Ablauf der Frist als genehmigt, es sei denn, ich erhalte eine schriftliche Aufforderung zur Korrektur."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Der Auftraggeber ist verpflichtet, meine Leistungen ausschließlich für den vorgesehenen Zweck zu nutzen. Er hat jede Verletzung gesetzlicher Vorschriften oder jeden Missbrauch zu unterlassen."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Der Auftraggeber stellt mich von jeglicher Haftung gegenüber Dritten frei, die sich aus der Nutzung meiner Leistungen durch den Auftraggeber ergibt, die die Rechte Dritter oder gesetzliche Bestimmungen verletzt."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Der Auftraggeber sichert ausdrücklich zu, dass die von ihm bereitgestellten Inhalte nicht gegen deutsches Recht oder sein davon abweichendes Heimatrecht, insbesondere Urheber-, Datenschutz- und Wettbewerbsrecht, verstoßen. Ich bin nicht verpflichtet, die Inhalte zu überprüfen. Der Auftraggeber stellt mich hiermit von allen Schadensersatzansprüchen Dritter frei, die auf den unzulässigen Inhalten des Auftraggebers beruhen."
+                    }
+                ]
+            },
+            "copyright": {
+                "title": "10. Urheberrecht, Nutzungsrechte",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Der Auftraggeber erhält ein räumlich und zeitlich unbeschränktes Nutzungsrecht für das Internet für alle beauftragten Design- und Entwicklungsarbeiten (einschließlich Grafiken, Fotos, Programmierung und Text), sofern nichts anderes vereinbart ist. Nutzungsrechte für Print, TV und andere Medien sind gesondert zu regeln."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Ich behalte mir das Urheberrecht sowie die Rechte an Inhalten, Beschreibungen und Vorschlägen in Konzepten, Manuskripten, Quellcode und Präsentationen vor, unabhängig von ihrer Form. Dies gilt auch dann, wenn dafür ein Honorar veranschlagt und bezahlt wurde. Dies gilt insbesondere, wenn Honorare für eine unverbindliche Präsentation, Schulung oder Ähnliches berechnet werden. Diese Honorare kompensieren den entstandenen Zeit- und Kostenaufwand und erwerben nicht das Recht zur Vervielfältigung oder Nutzung der präsentierten Inhalte usw."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Alle Entwürfe, die Umsetzung der Entwürfe als HTML-Konstrukt oder Programmcode, bilden zusammen mit der Einräumung von Nutzungsrechten eine einheitliche Leistung."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Die Entwürfe, Reinzeichnungen, Quellcodes und Designs dürfen ohne meine ausdrückliche Zustimmung weder im Original noch in der Reproduktion verändert werden. Jede Nachahmung, auch in Teilen, ist untersagt. Ein Verstoß gegen diese Bestimmung berechtigt mich, eine Vertragsstrafe in Höhe des doppelten vereinbarten Honorars zu fordern. Ist kein Honorar vereinbart, gilt das übliche Honorar nach dem SDSt/AGD-Tarifvertrag für Designleistungen als vereinbart."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Die Nutzung der von mir geschaffenen Werke ist ausschließlich für den Auftraggeber oder dessen Mitarbeiter bestimmt. Jede Nutzung durch Dritte, insbesondere der Weiterverkauf meiner Werke, bedarf meiner schriftlichen Zustimmung."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Vorschläge des Auftraggebers oder sonstige Mitarbeit haben keinen Einfluss auf die Höhe der Vergütung. Sie begründen keine Miturheberschaft."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Die Weitergabe aller Unterlagen und Quellcodes ganz oder teilweise sowie deren Veröffentlichung, Vervielfältigung und Verbreitung ist ohne meine Zustimmung untersagt."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Alle meine kreativen Entwicklungen und Gestaltungsarbeiten (Entwürfe, Konzepte, Präsentationen, Seitengestaltung, Navigationselemente, Quellcode für Webdesign etc.) unterliegen dem Urheberrechtsgesetz. Die Bestimmungen des Urheberrechtsgesetzes gelten auch dann, wenn die nach § 2 UrhG erforderliche Schöpfungshöhe nicht erreicht ist."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Die vorgenannten Nutzungsrechte gehen erst nach vollständiger Zahlung der Vergütung über."
+                    }
+                ]
+            },
+            "scopeOfServices": {
+                "title": "11. Leistungsumfang",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Der Leistungsumfang bestimmt sich nach den bei Vertragsschluss geltenden Leistungsbeschreibungen, den vereinbarten Preisen oder Stundensätzen und den nachfolgenden Bestimmungen. Meine Mitarbeiter oder Erfüllungsgehilfen sind nicht berechtigt, von den Leistungsbeschreibungen, den vereinbarten Preisen oder Stundensätzen oder diesen Allgemeinen Geschäftsbedingungen abweichende Vereinbarungen zu treffen oder sonstige besondere Zusicherungen zu machen."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Erbringe ich zusätzliche Leistungen (z.B. Beratung oder technische Unterstützung), werden diese nach meinen allgemeinen Stundensätzen abgerechnet. Stelle ich dem Auftraggeber die Leistungen eines Dritten, z.B. eines Übertragungsanbieters, zu Selbstkosten zur Verfügung, beschränkt sich meine Verpflichtung auf die treuhänderische Ausübung der Rechte und Pflichten aus dem Vertragsverhältnis mit dem Dritten. Der Auftraggeber ist verpflichtet, mich von allen Ansprüchen des Dritten freizustellen."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Im Rahmen von Dauerschuldverhältnissen behalte ich mir vor, den Gegenstand meiner Leistungen, insbesondere in technischer Hinsicht, zu ändern, sofern dies für den Auftraggeber unter Berücksichtigung meiner eigenen Interessen zumutbar ist. Ich behalte mir vor, sonstige Änderungen des Vertrages, einschließlich des Inhalts meiner Leistungen, der geltenden Stundensätze und dieser Geschäftsbedingungen, vorzunehmen, sofern ich dem Auftraggeber die Änderung einen Monat vor ihrem Wirksamwerden mitteile. Widerspricht der Auftraggeber der mitgeteilten Änderung nicht innerhalb dieser einmonatigen Frist, gilt die Änderung als genehmigt."
+                    }
+                ]
+            },
+            "performanceObstacles": {
+                "title": "12. Leistungshindernisse",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Ich erbringe meine Leistungen im Rahmen der bestehenden technischen und betrieblichen Möglichkeiten. Ich bin nicht verantwortlich für Dienstunterbrechungen oder -verzögerungen aufgrund höherer Gewalt oder anderer Ereignisse, die meine Leistung vorübergehend oder dauerhaft unmöglich oder unzumutbar erschweren, es sei denn, ich habe sie zu vertreten. Ereignisse in diesem Sinne sind Streiks und Aussperrungen, technische Störungen bei anderen Betreibern von Telekommunikationsanlagen, Übertragungswegen oder Netzen, Stromausfälle, Naturkatastrophen, Gewalttaten Dritter und staatliche Eingriffe."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Führen solche Ereignisse zu einer dauerhaften Unmöglichkeit oder einer dauerhaften wesentlichen Beeinträchtigung der Leistung, sind beide Parteien von der Verpflichtung zur weiteren Vertragserfüllung befreit. Wird die Leistung nur teilweise unmöglich, ist der Auftraggeber berechtigt, die vertraglichen Entgelte entsprechend der Schwere der Beeinträchtigung zu mindern."
+                    }
+                ]
+            },
+            "warranty": {
+                "title": "13. Gewährleistung und Mängel",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Ich verpflichte mich, den Auftrag mit größtmöglicher Sorgfalt auszuführen, insbesondere zur Verfügung gestellte Vorlagen, Unterlagen, Muster etc. sorgfältig zu behandeln."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Soweit ich zur Gewährleistung verpflichtet bin, erfolgt diese durch Nachbesserung unter Ausschluss aller sonstigen Gewährleistungsansprüche. Schlägt die Nachbesserung fehl (z.B. wegen schuldhafter Unmöglichkeit), kann der Auftraggeber keinen Schadensersatzanspruch geltend machen, außer bei Vorsatz oder grober Fahrlässigkeit, sondern kann nur eine Minderung des Preises oder, bei von mir nicht zu vertretender Unmöglichkeit, die Aufhebung des Vertrages verlangen."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Ich weise darauf hin, dass verwendete Softwareprodukte von Drittanbietern (CMS, Shopsysteme, Plugins etc.) unentdeckte Fehlfunktionen oder Sicherheitsrisiken enthalten können, für die ich keine Haftung übernehme."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Erbringe ich aufgrund einer Fehlermeldung Fehlerbehebungsleistungen und stellt sich heraus, dass entweder kein Fehler vorlag oder der Fehler allein vom Auftraggeber verursacht wurde, bin ich berechtigt, dem Auftraggeber meinen Zeitaufwand nach dem geltenden Stundensatz in Rechnung zu stellen."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Grundsätzlich kann die Darstellung einer HTML-Website je nach verwendetem Betriebssystem, Gerät, Auflösung, Browser oder Einstellungen variieren. Durch standardkonforme Programmierung und Tests mit den neuesten Browsern bemühen wir uns, eine korrekte oder angepasste Darstellung auf den meisten Systemen zu gewährleisten. Aufgrund der Vielzahl von Variationen können wir nicht garantieren, dass eine Website oder ein Online-Shop auf allen Systemen, Geräten und Browsern verlustfrei oder exakt gleich dargestellt wird."
+                    }
+                ]
+            },
+            "liability": {
+                "title": "14. Haftung",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Ich hafte für Schäden nur, wenn mir oder meinen Mitarbeitern oder sonstigen Erfüllungsgehilfen grobe Fahrlässigkeit oder Vorsatz zur Last fällt."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Soweit ich für Schäden hafte, ist meine Haftung in jedem Fall auf den Schaden begrenzt, den ich bei Vertragsschluss als mögliche Folge der Vertragsverletzung vorausgesehen habe oder den ich unter Berücksichtigung der Umstände, die mir bekannt waren oder hätten bekannt sein müssen, hätte voraussehen können. Bei Dauerschuldverhältnissen ist meine Haftung auf den einfachen Betrag des für die betreffende vertragliche Leistung geschuldeten Jahresbeitrags, im Übrigen auf die Höhe meines in Rechnung gestellten Anspruchs begrenzt."
+                    },
+                    {
+                        "type": "p",
+                        "text": "In keinem Fall hafte ich für mangelnden wirtschaftlichen Erfolg, mittelbare Schäden, Folgeschäden oder Schäden aus Ansprüchen Dritter."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Meine Leistung umfasst die Erstellung von Websites zum Abruf von einem Webserver. Ich übernehme keine Haftung für serverbedingte Störungen oder Systemausfälle."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Setze ich Softwaresysteme oder Komponenten anderer Hersteller ein, hafte ich nicht für die Qualität, Sicherheitslücken oder Fehler dieser Drittsoftware. Im Zweifelsfall sind Fehlersuche und Fehlerbehebung kostenpflichtig. Dies gilt insbesondere für die Nutzung von kostenloser Open-Source-Software oder Zusatzmodulen."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Ich hafte nicht für Schäden, die aus der Nutzung von Software resultieren, die nicht von mir entwickelt wurde, und verweise auf die Gewährleistungsbestimmungen des jeweiligen Softwareherstellers."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Die vorstehenden Haftungsbeschränkungen gelten auch für meine Mitarbeiter oder sonstigen Erfüllungsgehilfen. Ich verpflichte mich, meine Mitarbeiter oder sonstigen Erfüllungsgehilfen sorgfältig auszuwählen und anzuweisen. Darüber hinaus hafte ich nicht für meine Mitarbeiter oder sonstigen Erfüllungsgehilfen."
+                    }
+                ]
+            },
+            "dataProtection": {
+                "title": "15. Datenschutz und Vertraulichkeit",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Ich informiere den Auftraggeber hiermit, dass ich seine personenbezogenen oder unternehmensbezogenen Daten gemäß den geltenden gesetzlichen Bestimmungen erheben, verarbeiten, nutzen und an Dritte übermitteln darf, soweit dies für die Begründung und ordnungsgemäße Durchführung des Vertragsverhältnisses erforderlich ist. [Bitte beachten Sie die Datenschutzerklärung](url hier eingeben)."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Verbindungsdaten werden erhoben, verarbeitet, genutzt und übermittelt, soweit dies zur Erbringung meiner Leistungen, deren Abrechnung oder Überprüfung oder sonst zur Vertragsdurchführung erforderlich ist. Der Auftraggeber verpflichtet sich, Drittnutzer hierüber zu informieren und auf mein Verlangen schriftlich zu bestätigen, dass er dieser Verpflichtung nachgekommen ist. [Bitte beachten Sie die Datenschutzerklärung.](url hier eingeben)"
+                    },
+                    {
+                        "type": "p",
+                        "text": "Ich verpflichte mich, Geschäfts- und Betriebsgeheimnisse oder vertrauliche Informationen des Auftraggebers und seiner Kunden, die mir während meiner Tätigkeit für den Auftraggeber bekannt werden, ohne vorherige Zustimmung des Auftraggebers nicht zu verwerten oder an Dritte weiterzugeben. Gleiches gilt für alle dem Auftraggeber zur Verfügung gestellten Unterlagen und Kenntnisse."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Darüber hinaus vereinbaren die Vertragsparteien, über den Inhalt des Vertrages und die bei der Vertragsdurchführung erlangten Kenntnisse Stillschweigen zu wahren."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Die Geheimhaltungspflicht besteht auch über die Beendigung des Vertragsverhältnisses hinaus."
+                    }
+                ]
+            },
+            "selfPromotion": {
+                "title": "16. Eigenwerbung",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Der Auftraggeber erklärt sich damit einverstanden, dass ich die für ihn erstellten Grafiken, Websites etc. bei Bedarf als Referenzen in einer öffentlichen Galerie auf meiner Website ausstellen oder in anderen Werbematerialien als Nachweis meiner Arbeit verwenden darf."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Die Veröffentlichung der URL der vom mir bearbeiteten Website des Auftraggebers ist gestattet."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Sofern nicht anders vereinbart, bin ich berechtigt, einen Hinweis auf der Website des Auftraggebers zu platzieren und einen Link zu meiner Website zu setzen. Dieser Link wird den Autor/Dienstleister 'Michael Hömke' benennen und auf seine Website verweisen (url hier eingeben)."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Jede Verletzung des Rechts, meine Arbeit als Referenz zu nutzen oder im vorgenannten Zusammenhang genannt und verlinkt zu werden, berechtigt mich zu Schadensersatz. Ohne Nachweis eines höheren Schadens beträgt der Schadensersatz 100% des vereinbarten Honorars oder des nach dem SDSt/AGD-Tarifvertrag für Designleistungen üblichen Honorars. Das Recht, bei Nachweis einen höheren Schaden geltend zu machen, bleibt unberührt. Das Recht auf Namensnennung erlischt nicht mit dem Ende der Zusammenarbeit zwischen mir und dem Auftraggeber. Vielmehr bleibt das vorgenannte Recht für die gesamte Dauer der vertraglich vereinbarten Nutzung bestehen; mindestens bis zum Ende der Nutzung des Vertragsgegenstandes in jeder Position oder in seiner Gesamtheit."
+                    }
+                ]
+            },
+            "otherProvisions": {
+                "title": "17. Sonstige Bestimmungen",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Soweit gesetzlich zulässig, ist der Gerichtsstand Bad Freienwalde. Diese Gerichtsstandsvereinbarung gilt nur für gewerbliche Kunden. Diese Gerichtsstandsvereinbarung gilt gleichermaßen für inländische und ausländische Kunden."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Änderungen oder Ergänzungen dieser Vereinbarung sind nur gültig, wenn sie schriftlich vereinbart werden. Dies gilt auch für jede Änderung dieser Schriftformklausel."
+                    },
+                    {
+                        "type": "p",
+                        "text": "Sollte eine Bestimmung dieser Vereinbarung unwirksam sein oder werden oder sollte die Vereinbarung eine ausfüllungsbedürftige Lücke enthalten, so berührt dies die Gültigkeit der übrigen Bestimmungen nicht. Die unwirksame Bestimmung oder Lücke ist durch eine Bestimmung zu ersetzen, die dem wirtschaftlichen Zweck der Vereinbarung am nächsten kommt und die die Parteien vereinbart hätten, wenn sie die Unwirksamkeit der Bestimmung gekannt hätten."
+                    }
+                ]
+            },
+            "hourlyRate": {
+                "title": "18. Aktueller Stundensatz",
+                "content": [
+                    {
+                        "type": "p",
+                        "text": "Der aktuelle Stundensatz beträgt 95,00 EUR / Stunde"
+                    }
+                ]
+            }
+        }
+    },
+    "imprint": {
+        "title": "Impressum",
+        "subTitle": "Impressum und rechtliche Pflichtangaben",
+        "contact": {
+            "company": "Masri Programmer",
+            "nameAndAddress": "Mohamad Masri\n26131 Oldenburg\nDeutschland",
+            "phoneLabel": "Tel.:",
+            "phoneNumber": "+49 – (0) 1763 - 1579669",
+            "emailLabel": "E-Mail:",
+            "emailAddress": "info@masri-programmer.de"
+        },
+        "vat": {
+            "title": "Umsatzsteuer-Identifikationsnummer",
+            "subTitle": "gemäß § 27 a Umsatzsteuergesetz:",
+            "number": "64 /121/ 10813"
+        },
+        "legalSupport": {
+            "imageUrl": "",
+            "altText": "",
+            "caption": ""
+        },
+        "copyright": {
+            "title": "Urheberrecht",
+            "p1": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.",
+            "p2": "Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen."
+        }
+    },
+    "changeLanguage": "Sprache ändern",
+    "languages": {
+        "english": "Englisch",
+        "german": "Deutsch",
+        "french": "Französisch",
+        "arabic": "Arabisch"
     }
 }
