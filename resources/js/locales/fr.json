@@ -800,5 +800,12 @@
         "german": "Allemande",
         "french": "Français",
         "arabic": "arabe"
+    },
+    "cookieBanner": {
+        "title": "Wir verwenden Cookies",
+        "description": "Wir verwenden Cookies, um sicherzustellen, dass Sie die beste Erfahrung auf unserer Website machen. Weitere Informationen zur Verwendung von Cookies finden Sie in unserer Cookie-Richtlinie.",
+        "learnMore": "Mehr erfahren",
+        "decline": "Ablehnen",
+        "accept": "Akzeptieren"
     }
 }
