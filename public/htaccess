@@ -5,6 +5,9 @@
 
     RewriteEngine On
 
+    # Add this line to fix the redirect loop
+    RewriteBase /
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
