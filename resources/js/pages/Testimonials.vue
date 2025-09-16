@@ -36,7 +36,7 @@ const testimonials = computed(() =>
 </script>
 
 <template>
-    <section id="testimonials" class="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-24">
+    <section id="testimonials" class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
         <div class="mb-12 text-center">
             <h2 class="text-3xl font-bold tracking-tighter text-foreground sm:text-4xl md:text-5xl">
                 <span class="relative">{{ $t('testimonials.title') }}</span>

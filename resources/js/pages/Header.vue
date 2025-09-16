@@ -2,7 +2,7 @@
     <div class="fixed top-0 right-0 left-0 z-50">
         <div class="bg-secondary text-xs text-secondary-foreground shadow-sm">
             <div
-                class=" container mx-auto max-w-7xl px-4 py-0 flex h-8 cursor-pointer items-center justify-center gap-6 text-primary transition-all duration-100 ease-in-out hover:font-bold"
+                class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-0 flex h-8 cursor-pointer items-center justify-center gap-6 text-primary transition-all duration-100 ease-in-out hover:font-bold"
             >
                 <div class="flex grow items-center justify-start gap-x-3 text-xs sm:text-sm"> <Link href="/" class="text-lg font-semibold">Masri Programmer</Link></div>
                 <div class="">
