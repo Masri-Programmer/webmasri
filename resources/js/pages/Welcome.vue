@@ -33,20 +33,20 @@ router.on('success', () => {
     <Layout head="Welcome" link="/" >
         <Hero data-aos="fade-down" />
         <div class="parallax-section bg-parallax-1">
-            <Features data-aos="fade-right" />
+            <Features  />
         </div>
         <About data-aos="fade-right" />
-        <Projects data-aos="fade-right" />
+        <Projects />
         <div class="parallax-section bg-parallax-2">
-            <Statistics data-aos="fade-left" />
+            <Statistics />
         </div>
         <Testimonials data-aos="fade-left" />
         <Faq data-aos="fade-up" />
-        <Technologies data-aos="fade-up" />
+        <Technologies data-aos="fade-up" data-aos-delay="500" />
 </Layout>
 </template>
 
-<style>
+<style lang="css">
 .parallax-section {
     background-attachment: fixed;
     background-position: center;
@@ -75,5 +75,14 @@ router.on('success', () => {
 
 .bg-parallax-2 {
     background-image: url('../images/iphonemockup2.webp');
+}
+
+@media (max-width: 639px) {
+  .parallax-section {
+    background-attachment: scroll;
+  }
+  .bg-parallax-1{
+    background-image:url('');
+  }
 }
 </style>

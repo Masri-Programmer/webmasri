@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import BlurReveal from '@/components/ui/blur-reveal/BlurReveal.vue';
 import { Button } from '@/components/ui/button';
 import { CardContainer } from '@/components/ui/card-3d';
 import FlipWords from '@/components/ui/flip-words/FlipWords.vue';
@@ -17,12 +16,10 @@ import webmockup from './mockup.png';
         <div class="z-10 container mx-auto max-w-7xl px-4 py-12">
             <div class="z-10 grid w-full max-w-7xl grid-cols-1 items-center gap-8 lg:grid-cols-2 align-top">
                 <div class="flex flex-col items-start justify-center space-y-6">
-                    <BlurReveal :delay="0.2" :duration="0.75">
                         <h1 class="text-5xl font-bold tracking-tighter text-foreground sm:text-6xl xl:text-7xl/none">
                             {{ $t('hero.title') }}
                             <FlipWords :words="[$t('hero.flipWords.craft'), $t('hero.flipWords.design'), $t('hero.flipWords.create')]" :duration="2000" class="!text-sidebar-ring" />.
                         </h1>
-                    </BlurReveal>
 
                     <p class="max-w-prose text-muted-foreground md:text-xl">
                         <TextGenerateEffect

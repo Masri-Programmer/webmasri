@@ -68,7 +68,8 @@ const thirdThird = computed(() => features.value.slice(third.value * 2));
         <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
             <div class="space-y-4 text-left">
                 <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-foreground">
-                    <Focus :sentence="$t('features.title')" :animationDuration="0.1" :manualMode="false" :blurAmount="2"/>
+                    <!-- <Focus :sentence="$t('features.title')" :animationDuration="0.1" :manualMode="false" :blurAmount="2"/> -->
+                    {{$t('features.title')}}
                 </h2>
                 <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                     {{ $t('features.description') }}
