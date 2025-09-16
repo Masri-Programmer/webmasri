@@ -29,6 +29,6 @@ const customProps = page.props as AppPageProps;
 const Footer = defineAsyncComponent(() => import('@/pages/Footer.vue'));
 defineProps<{
     head?: string;
-    link: boolean;
+    link: string;
 }>();
 </script>
