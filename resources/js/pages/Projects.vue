@@ -1,7 +1,7 @@
 <template>
-    <section id="projects" class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-12 overflow-hidden">
+    <section id="projects" class="container mx-auto max-w-7xl overflow-hidden px-4 py-12 sm:px-6 lg:px-12">
         <h2
-            class="pointer-events-none bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent whitespace-pre-wrap max-lg:-mt-12 dark:from-white dark:to-slate-900/10"
+            class="pointer-events-none bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent whitespace-pre-wrap max-lg:-mt-12 sm:text-6xl md:text-7xl lg:text-8xl dark:from-white dark:to-slate-900/10"
         >
             {{ $t('projects.title') }}
         </h2>
@@ -12,17 +12,21 @@
                 loop: true,
             }"
         >
-            <CarouselContent class="-ml-2 md:-ml-4 ">
-                <CarouselItem v-for="project in cardData" :key="project.title" class="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 pl-2 md:pl-4">
+            <CarouselContent class="-ml-2 md:-ml-4">
+                <CarouselItem v-for="project in cardData" :key="project.title" class="pl-2 md:basis-1/2 md:pl-4 lg:basis-1/3 xl:basis-1/4">
                     <div class="p-1">
                         <Card class="h-full">
                             <CardContent class="flex flex-col p-4">
                                 <a :href="project.link" target="_blank" rel="noopener noreferrer">
-                                    <img 
-                                        :src="project.image" 
-                                        :alt="project.title" 
-                                           class="aspect-video w-full rounded-md object-cover object-top"
-                                    >
+                                    <img
+                                        :src="project.image"
+                                        :alt="project.title"
+                                        class="aspect-video w-full rounded-md object-cover object-top bg-secondary"
+                                        loading="lazy"
+                                        decoding="async"
+                                        width="1920"
+                                        height="1080"
+                                    />
                                 </a>
 
                                 <div class="mt-4 flex-grow">
@@ -35,9 +39,9 @@
                                 </div>
 
                                 <div class="mt-4 flex flex-wrap gap-2">
-                                    <span 
-                                        v-for="tag in project.tags" 
-                                        :key="tag" 
+                                    <span
+                                        v-for="tag in project.tags"
+                                        :key="tag"
                                         class="rounded-full bg-secondary px-2.5 py-0.5 text-xs font-semibold text-secondary-foreground"
                                     >
                                         {{ tag }}
@@ -57,8 +61,8 @@
 <script setup lang="ts">
 import { Card, CardContent } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import hk from '@/images/hk-energieberatung.de.png'
-import flyerheaven from '@/images/www.flyerheaven.de_deine-bueroartikel.html.png'
+import hk from '@/images/hk-energieberatung.de.png';
+import flyerheaven from '@/images/www.flyerheaven.de_deine-bueroartikel.html.png';
 
 const cardData = [
     {
@@ -77,7 +81,7 @@ const cardData = [
         description: 'A dynamic platform for providing digital services.',
         tags: ['Digital', 'Media', 'Services'],
         date: '2024',
-        link: 'https://meo-media.de/'
+        link: 'https://meo-media.de/',
     },
     {
         title: 'Flyerheaven',
@@ -161,7 +165,7 @@ const cardData = [
         link: 'https://masri-programmer.github.io/slim-threads/',
     },
     {
-        title: 'OpenAI Landing Page', 
+        title: 'OpenAI Landing Page',
         badge: 'Landing Page',
         image: 'https://masri-programmer.github.io/mohamad-masri/assets/openai-BUc72Muk.png',
         description: 'A modern landing page introducing AI concepts, inspired by OpenAI.',
