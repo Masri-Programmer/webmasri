@@ -7,11 +7,10 @@ Route::get('/', function () {
     return Inertia::render('Welcome');
 })->name('home');
 
-// Route::get('/privacy-policy', function () {
-//     return Inertia::render('PrivacyPolicy');
-// })->name('privacy-policy');
+Route::get('/privacy-policy', function () {
+    return Inertia::render('PrivacyPolicy');
+})->name('privacy-policy');
 
-Route::inertia('/privacy-policy', 'PrivacyPolicy');
 
 Route::get('/terms-and-conditions', function () {
     return Inertia::render('TermsConditions');
