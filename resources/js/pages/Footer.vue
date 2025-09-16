@@ -2,11 +2,12 @@
 import AppearanceIcon from '@/components/AppearanceIcon.vue';
 import LanguageSwitch from '@/components/LanguageSwitch.vue';
 import Button from '@/components/ui/button/Button.vue';
-import { Book, Github, Heart, Linkedin } from 'lucide-vue-next';
+import { Book, Heart, Linkedin } from 'lucide-vue-next';
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { Link } from '@inertiajs/vue3';
 import { privacyPolicy, termsConditions, imprint } from '@/routes';
+import googleIcon from '@/images/googleIcon.svg'
 
 const { t } = useI18n();
 
@@ -95,12 +96,12 @@ const year = new Date().getFullYear();
                 <div class="flex items-center gap-4">
                     <Button variant="ghost" size="icon">
                         <a
-                            href="https://github.com/Masri-Programmer/masri-web.git"
+                            href="https://share.google/6xMW6IuA4AZ6yzrNu"
                             target="_blank"
                             rel="noopener noreferrer"
-                            :aria-label="$t('footer.githubAriaLabel')"
+                            :aria-label="$t('footer.googleAriaLabel')"
                         >
-                            <Github class="h-5 w-5 hover:text-foreground" />
+                            <img :src="googleIcon" class="h-4 w-4 hover:text-foreground" />
                         </a>
                     </Button>
                     <Button variant="ghost" size="icon">

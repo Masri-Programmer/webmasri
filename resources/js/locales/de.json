@@ -182,6 +182,7 @@
             "imprint": "Imprint",
             "contact": "Contact",
             "githubAriaLabel": "GitHub Repository",
+            "googleAriaLabel": "Google -Seite",
             "linkedinAriaLabel": "LinkedIn Profil"
         },
         "copyright": "© {year} . Alle Rechte vorbehalten.",

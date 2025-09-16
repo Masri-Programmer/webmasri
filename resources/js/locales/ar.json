@@ -185,6 +185,7 @@
         "copyright": "© {year} . كل الحقوق محفوظة.",
         "madeWith": "صُنع بـ {heartIcon} بواسطة {authorLink}.",
         "githubAriaLabel": "مستودع GitHub",
+        "googleAriaLabel": "صفحة جوجل",
         "linkedinAriaLabel": "ملف LinkedIn الشخصي"
     },
     "navigation": {

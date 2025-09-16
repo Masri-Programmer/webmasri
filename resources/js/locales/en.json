@@ -185,6 +185,7 @@
         "copyright": "© {year} . All rights reserved.",
         "madeWith": "Made with {heartIcon} by {authorLink}.",
         "githubAriaLabel": "GitHub Repository",
+        "googleAriaLabel": "Google Page",
         "linkedinAriaLabel": "LinkedIn Profile"
     },
     "navigation": {

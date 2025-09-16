@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mohamad-masri.de/sitemap.xml
+Sitemap: https://masri-programmer.de/sitemap.xml
