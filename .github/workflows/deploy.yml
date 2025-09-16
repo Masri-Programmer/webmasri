@@ -1,47 +1,60 @@
-# Name of the GitHub Action
-name: Deploy Frontend to GitHub Pages
+name: Deploy to Uberspace
 
-# Run this workflow on every push to the 'main' branch
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
 
-      # --- NEW STEP 1: Setup PHP Environment ---
-      # We need PHP because the build process runs 'php artisan'
-      - name: Setup PHP
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.2' # Specify your PHP version
-          extensions: mbstring, dom, fileinfo, xml
+          php-version: '8.2'
+          extensions: mbstring, xml, curl, zip, gd, mysql
+          ini-values: post_max_size=256M, upload_max_filesize=256M
           coverage: none
 
-      # --- NEW STEP 2: Install Composer Dependencies ---
-      # This will create the 'vendor' directory and the missing 'autoload.php' file
-      - name: Install Composer Dependencies
-        run: composer install --prefer-dist --no-progress --no-interaction --optimize-autoloader
+      - name: Install Composer dependencies
+        run: composer install --no-interaction --no-dev --prefer-dist
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: '20.4'
 
-      - name: Install Dependencies
+      - name: Install NPM dependencies
         run: npm install
 
-      # This step should now work correctly
-      - name: Build Static Files
+      - name: Build frontend assets
         run: npm run build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy to Uberspace
+        uses: easingthemes/ssh-deploy@v2.2.11
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: gh-pages
+          SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
+          ARGS: "-rltgoDzvO --delete"
+          SOURCE: "/"
+          REMOTE_HOST: ${{ secrets.UBERSPACE_HOST }}
+          REMOTE_USER: ${{ secrets.UBERSPACE_USER }}
+          TARGET: ${{ secrets.UBERSPACE_DOCUMENT_ROOT }}
+          EXCLUDE: "/.git/, /.github/, /node_modules/"
+
+      - name: Run post-deployment commands on Uberspace
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.UBERSPACE_HOST }}
+          username: ${{ secrets.UBERSPACE_USER }}
+          key: ${{ secrets.DEPLOY_KEY }}
+          script: |
+            cd ${{ secrets.UBERSPACE_DOCUMENT_ROOT }}
+            php artisan migrate --force
+            php artisan config:cache
+            php artisan route:cache
+            php artisan view:cache
