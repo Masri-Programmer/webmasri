@@ -3,7 +3,7 @@
         "label": "Faites défiler en haut"
     },
     "header": {
-        "donationMessage": "Si ce projet vous a aidé, veuillez envisager de {link} à Masri Programmer...",
+        "donationMessage": "Veuillez envisager de parrainer les projets de programmeur Masri",
         "donationLink": "faire un don"
     },
     "hero": {
@@ -72,14 +72,20 @@
         "technologies": "Technologies"
     },
     "testimonials": {
-        "title": "Ce que nos clients disent de nous",
+        "title": "Ce que disent nos clients",
+        "subtitle": "Découvrez les expériences des entreprises avec lesquelles nous avons collaboré.",
         "list": {
             "marvinPiepjack": {
-                "text": "Cela a changé la donne pour mon entreprise. Le design moderne et l'intégration de la vitesse sont de la pure magie. Cela a complètement changé ma perspective."
+                "text": "La collaboration a été incroyablement professionnelle et efficace. Notre nouvelle boutique en ligne est non seulement magnifique visuellement, mais aussi techniquement parfaite. Une recommandation absolue pour quiconque valorise la qualité et la rapidité !"
             },
             "husseinKhashab": {
-                "text": "Ce que j'aime le plus, c'est sa fiabilité. En tant qu'ingénieur, les fonctionnalités sont un énorme avantage. L'interface est incroyablement intuitive, propre et rapide. Sans conteste, le meilleur développeur que je connaisse."
+                "text": "Masri Web Components a créé un site web moderne et convivial pour mon entreprise de conseil en énergie. Le processus a été transparent et mes demandes ont été parfaitement mises en œuvre. Je suis extrêmement satisfait du résultat."
             }
+        },
+        "leaveReview": {
+            "title": "Partagez votre expérience",
+            "description": "Nous serions ravis d'avoir votre retour ! Cliquez ici pour nous laisser un avis sur Google.",
+            "button": "Laisser un avis"
         }
     },
     "faq": {
@@ -164,6 +170,7 @@
         "links": {
             "features": "Fonctionnalités",
             "about": "À propos",
+            "projects": "Projets",
             "statistics": "Statistiques",
             "testimonials": "Témoignages",
             "faq": "FAQ",
@@ -802,12 +809,12 @@
         "arabic": "arabe"
     },
     "cookieBanner": {
-        "title":"Paramètres de confidentialité",
-        "description":"Cette page utilise des cookies et des technologies des entreprises de tiers qui ont besoin de consentement. Si vous cliquez sur le bouton  Acceptez tout , ces fonctions sont activées (consentement). Après le consentement, nous et les entreprises de troisième partie concernées traitent vos données à divers fins. Vous pouvez voir plus d'informations dans mon {PrivacyLink}.",
-        "privacyPolicy":"Déclaration de protection des données",
-        "save":"Rappelez-vous cette sélection pendant 30 jours",
-        "decline":"Refuser",
-        "imprint":"Imprimer",
-        "accept":"Acceptez tout"
+        "title": "Paramètres de confidentialité",
+        "description": "Cette page utilise des cookies et des technologies des entreprises de tiers qui ont besoin de consentement. Si vous cliquez sur le bouton  Acceptez tout , ces fonctions sont activées (consentement). Après le consentement, nous et les entreprises de troisième partie concernées traitent vos données à divers fins. Vous pouvez voir plus d'informations dans mon {PrivacyLink}.",
+        "privacyPolicy": "Déclaration de protection des données",
+        "save": "Rappelez-vous cette sélection pendant 30 jours",
+        "decline": "Refuser",
+        "imprint": "Imprimer",
+        "accept": "Acceptez tout"
     }
 }

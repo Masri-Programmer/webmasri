@@ -3,7 +3,7 @@
         "label": "Scroll to Top"
     },
     "header": {
-        "donationMessage": "If this project has helped you, please consider {link} to Masri Programmer...",
+        "donationMessage": "Please consider sponsering Masri Programmer projects",
         "donationLink": "donating"
     },
     "hero": {
@@ -72,14 +72,20 @@
         "technologies": "Technologies"
     },
     "testimonials": {
-        "title": "What our customers are saying about us",
+        "title": "What Our Clients Say",
+        "subtitle": "Discover the experiences of businesses we've partnered with.",
         "list": {
             "marvinPiepjack": {
-                "text": "This has been a game-changer for my business. The modern design and the speed integration are pure magic. This has completely changed my perspective."
+                "text": "The collaboration was incredibly professional and efficient. Our new online shop is not only visually stunning but also technically flawless. An absolute recommendation for anyone who values quality and speed!"
             },
             "husseinKhashab": {
-                "text": "What I love most is that it's reliable. As an Engineer, features is a huge plus. The interface is incredibly intuitive, clean, and fast. Hands down, the best developer I know."
+                "text": "Masri Web Components created a modern and user-friendly website for my energy consulting business. The process was transparent, and my requests were implemented perfectly. I'm extremely satisfied with the result."
             }
+        },
+        "leaveReview": {
+            "title": "Share Your Experience",
+            "description": "We'd love to hear your feedback! Click here to leave us a review on Google.",
+            "button": "Leave a Review"
         }
     },
     "faq": {
@@ -164,6 +170,7 @@
         "links": {
             "features": "Features",
             "about": "About",
+            "projects": "Projects",
             "statistics": "Statistics",
             "testimonials": "Testimonials",
             "faq": "FAQ",
@@ -777,5 +784,9 @@
         "decline": "Decline",
         "imprint": "Imprint",
         "accept": "Accept All"
+    },
+    "sponsor": {
+        "google": "Review us on Google",
+        "github": "Sponsor us on Github"
     }
 }

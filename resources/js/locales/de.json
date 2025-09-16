@@ -3,7 +3,7 @@
         "label": "Nach oben scrollen"
     },
     "header": {
-        "donationMessage": "Wenn dir dieses Projekt geholfen hat, unterstütze Masri Programmer bitte mit einer {link}.",
+        "donationMessage": "Bitte erwägen Sie, Masri Programmierer projekte zu sponsern",
         "donationLink": "Spende"
     },
     "hero": {
@@ -72,14 +72,20 @@
         "technologies": "Technologien"
     },
     "testimonials": {
-        "title": "Was unsere Kunden über uns sagen",
+        "title": "Was unsere Kunden sagen",
+        "subtitle": "Entdecken Sie die Erfahrungen von Unternehmen, mit denen wir zusammengearbeitet haben.",
         "list": {
             "marvinPiepjack": {
-                "text": "Das hat mein Geschäft grundlegend verändert. Das moderne Design und die schnelle Integration sind pure Magie. Das hat meine Perspektive komplett verändert."
+                "text": "Die Zusammenarbeit war unglaublich professionell und effizient. Unser neuer Onlineshop ist nicht nur optisch ein Highlight, sondern auch technisch einwandfrei. Eine absolute Empfehlung für jeden, der Wert auf Qualität und Schnelligkeit legt!"
             },
             "husseinKhashab": {
-                "text": "Was ich am meisten liebe, ist die Zuverlässigkeit. Als Ingenieur sind die Funktionen ein riesiges Plus. Die Benutzeroberfläche ist unglaublich intuitiv, sauber und schnell. Zweifellos der beste Entwickler, den ich kenne."
+                "text": "Masri Web Components hat für meine Energieberatung eine moderne und benutzerfreundliche Webseite erstellt. Der Prozess war transparent und meine Wünsche wurden perfekt umgesetzt. Ich bin äußerst zufrieden mit dem Ergebnis."
             }
+        },
+        "leaveReview": {
+            "title": "Teilen Sie Ihre Erfahrung",
+            "description": "Wir würden uns über Ihr Feedback freuen! Klicken Sie hier, um uns eine Bewertung auf Google zu hinterlassen.",
+            "button": "Bewertung abgeben"
         }
     },
     "faq": {
@@ -164,6 +170,7 @@
         "links": {
             "features": "Funktionen",
             "about": "Über uns",
+            "projects": "Projekte",
             "statistics": "Statistiken",
             "testimonials": "Erfahrungsberichte",
             "faq": "FAQ",

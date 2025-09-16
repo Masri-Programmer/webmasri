@@ -14,12 +14,13 @@ const linkDefinitions = {
     product: [
         { key: 'footer.links.features', href: '#features' },
         { key: 'footer.links.about', href: '#about' },
+        { key: 'footer.links.projects', href: '#projects' },
         { key: 'footer.links.statistics', href: '#statistics' },
         { key: 'footer.links.testimonials', href: '#testimonials' },
         { key: 'footer.links.faq', href: '#faq' },
     ],
     community: [
-        { key: 'footer.links.github', href: 'https://github.com/Masri-Programmer/resumetowebsite.git' },
+        { key: 'footer.links.github', href: 'https://github.com/Masri-Programmer' },
         { key: 'footer.links.blogPortfolio', href: 'https://masri.blog' },
         { key: 'footer.links.whatsapp', href: 'https://api.whatsapp.com/send/?phone=4917631579669&text&type=phone_number&app_absent=0' },
         { key: 'footer.links.contact', href: 'https://masri.blog/Book-a-Meeting' },
