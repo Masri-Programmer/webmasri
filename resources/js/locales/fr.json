@@ -206,7 +206,8 @@
             "faq": "faq",
             "faq_desc": "Find answers to common questions.",
             "technologies": "Technologies",
-            "technologies_desc": "Explore the stack we use to build."
+            "technologies_desc": "Explore the stack we use to build.",
+            "pricing": "Prix"
         },
         "legal": {
             "title": "Légale",
@@ -817,5 +818,54 @@
         "decline": "Refuser",
         "imprint": "Imprimer",
         "accept": "Acceptez tout"
+    },
+        "sponsor": {
+        "google": "Review us on Google",
+        "github": "Sponsor us on Github"
+    },
+    "pricing": {
+        "title": "Tarifs",
+        "description": "Le coût d'un site web ou d'une boutique en ligne dépend naturellement de l'ampleur du projet. Pour vous donner un aperçu significatif, vous pouvez vous baser sur les valeurs empiriques suivantes :",
+        "landingPage": "Page d'atterrissage (Onepager)",
+        "website": "Site Web",
+        "onlineShop": "Boutique en ligne",
+        "onlineShopCMS": "Boutique en ligne avec CMS",
+        "packages": {
+            "structure": "Structure",
+            "onePage": "Une page, structure simple",
+            "multiplePages": "Plusieurs pages, flexible",
+            "fullyCustomizable": "Entièrement personnalisable",
+            "flexibility": "Flexibilité",
+            "infoAndBranding": "Informations, logo, images, couleurs",
+            "languages": "Langues",
+            "googleMaps": "Google Maps",
+            "emailContact": "Formulaire de contact par e-mail",
+            "whatsappContact": "Formulaire de contact WhatsApp",
+            "googleReviewsStars": "Avis Google (Étoiles)",
+            "googleReviewsIndividual": "Avis Google (Afficher les avis individuels)",
+            "liveOpeningHours": "Horaires d'ouverture en direct",
+            "onlineStore": "Boutique en ligne"
+        },
+        "hosting": {
+            "title": "Tous les forfaits nécessitent un hébergement",
+            "price": "({price} / mois ou {yearlyPrice} / an)."
+        },
+        "maintenance": {
+            "selfService": {
+                "title": "Maintenance par vous-même",
+                "description": "Vous gérez le contenu vous-même - nous vous montrons comment faire.",
+                "price": "{price} / mois ou {yearlyPrice} / an pour les pages d'atterrissage"
+            },
+            "fullService": {
+                "title": "Maintenance tout compris",
+                "description": "Nous nous occupons de tout - maintenance du contenu, mises à jour, sécurité.",
+                "price": "{price} / mois ou {yearlyPrice} / an pour les pages d'atterrissage"
+            }
+        },
+        "emailAndDomain": {
+            "title": "E-mail & Domaine",
+            "description": "Le domaine et l'adresse e-mail de votre choix - simple et professionnel.",
+            "price": "{price} / mois ou {yearlyPrice} / an"
+        }
     }
 }

@@ -206,7 +206,8 @@
             "faq": "FAQ",
             "faq_desc": "Find answers to common questions.",
             "technologies": "Technologies",
-            "technologies_desc": "Explore the stack we use to build."
+            "technologies_desc": "Explore the stack we use to build.",
+            "pricing": "Pricing"
         },
         "legal": {
             "title": "Legal",
@@ -789,5 +790,60 @@
     "sponsor": {
         "google": "Review us on Google",
         "github": "Sponsor us on Github"
+    },
+    "pricing": {
+        "title": "Professional Web Services Pricing",
+        "description": "The cost of a website or an online shop naturally depends on the scope of the project. To give you a meaningful overview, you can use the following empirical values as a guide:",
+        "monthly": "Monthly",
+        "yearly": "Yearly",
+        "getStarted": "Get Started",
+        "contactUs": "Contact Us",
+        "featured": "Most Popular",
+        "priceFrom": "From",
+
+        "landingPage": "Landing Page (Onepager)",
+        "website": "Website",
+        "onlineShop": "Online Shop",
+        "onlineShopCMS": "Online Shop with CMS",
+
+        "packages": {
+            "structure": "Structure",
+            "onePage": "One page, simple structure",
+            "multiplePages": "Multiple pages, flexible",
+            "fullyCustomizable": "Fully customizable",
+            "flexibility": "Flexibility",
+            "infoAndBranding": "Information, logo, images, colors",
+            "languages": "Languages",
+            "googleMaps": "Google Maps",
+            "emailContact": "Email Contact Form",
+            "whatsappContact": "WhatsApp Contact Form",
+            "googleReviewsStars": "Google Reviews (Star Rating)",
+            "googleReviewsIndividual": "Google Reviews (Show individual reviews)",
+            "liveOpeningHours": "Live Opening Hours",
+            "onlineStore": "Online Shop"
+        },
+
+        "additionalServices": "Additional Services",
+        "hosting": {
+            "title": "All packages require hosting",
+            "price": "(€7.95 / month or €89 / year)"
+        },
+        "maintenance": {
+            "selfService": {
+                "title": "Maintenance by you",
+                "description": "You maintain content yourself - we show you how.",
+                "price": "€20 / month or €200 / year for landing pages"
+            },
+            "fullService": {
+                "title": "All-round carefree maintenance",
+                "description": "We take care of everything - content maintenance, updates, security.",
+                "price": "€25 / month or €250 / year for landing pages"
+            }
+        },
+        "emailAndDomain": {
+            "title": "Email & Domain",
+            "description": "Your desired domain & email address - simple and professional.",
+            "price": "€3 / month or €30 / year"
+        }
     }
 }

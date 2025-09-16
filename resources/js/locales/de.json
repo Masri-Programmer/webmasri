@@ -206,7 +206,8 @@
             "faq": "FAQ",
             "faq_desc": "Finden Sie Antworten auf häufig gestellte Fragen.",
             "technologies": "Technologien",
-            "technologies_desc": "Entdecken Sie den Tech-Stack, den wir verwenden."
+            "technologies_desc": "Entdecken Sie den Tech-Stack, den wir verwenden.",
+            "pricing": "Preise"
         },
         "legal": {
             "title": "Rechtliches",
@@ -817,5 +818,64 @@
         "decline": "Ablehnen",
         "imprint": "Impressum",
         "accept": "Alles akzeptieren"
+    },
+    "sponsor": {
+        "google": "Review us on Google",
+        "github": "Sponsor us on Github"
+    },
+    "pricing": {
+        "title": "Professionelle Web-Service Preise",
+        "description": "Die Kosten für eine Website oder einen Online-Shop hängen natürlich vom Umfang des Projekts ab. Um Ihnen einen aussagekräftigen Überblick zu geben, können Sie sich an folgenden Erfahrungswerten orientieren:",
+        "monthly": "Monatlich",
+        "yearly": "Jährlich",
+        "getStarted": "Jetzt starten",
+        "contactUs": "Kontakt aufnehmen",
+        "featured": "Beliebtester",
+        "priceFrom": "Ab",
+
+        "landingPage": "Landing Page (Onepager)",
+        "website": "Website",
+        "onlineShop": "Online-Shop",
+        "onlineShopCMS": "Online-Shop mit CMS",
+
+        "packages": {
+            "structure": "Struktur",
+            "onePage": "Eine Seite, einfache Struktur",
+            "multiplePages": "Mehrere Seiten, flexibel",
+            "fullyCustomizable": "Vollständig anpassbar",
+            "flexibility": "Flexibilität",
+            "infoAndBranding": "Informationen, Logo, Bilder, Farben",
+            "languages": "Sprachen",
+            "googleMaps": "Google Maps",
+            "emailContact": "E-Mail-Kontaktformular",
+            "whatsappContact": "WhatsApp-Kontaktformular",
+            "googleReviewsStars": "Google-Bewertungen (Sterne-Rating)",
+            "googleReviewsIndividual": "Google-Bewertungen (Einzelbewertungen anzeigen)",
+            "liveOpeningHours": "Live-Öffnungszeiten",
+            "onlineStore": "Online-Shop"
+        },
+
+        "additionalServices": "Zusätzliche Services",
+        "hosting": {
+            "title": "Alle Pakete benötigen Hosting",
+            "price": "(7,95 € / Monat oder 89 € / Jahr)"
+        },
+        "maintenance": {
+            "selfService": {
+                "title": "Wartung durch Sie",
+                "description": "Sie pflegen Inhalte selbst - wir zeigen Ihnen wie.",
+                "price": "20 € / Monat oder 200 € / Jahr für Landing Pages"
+            },
+            "fullService": {
+                "title": "Rundum-Sorglos-Wartung",
+                "description": "Wir kümmern uns um alles - Inhaltspflege, Updates, Sicherheit.",
+                "price": "25 € / Monat oder 250 € / Jahr für Landing Pages"
+            }
+        },
+        "emailAndDomain": {
+            "title": "E-Mail & Domain",
+            "description": "Ihre Wunsch-Domain & E-Mail-Adresse - einfach und professionell.",
+            "price": "3 € / Monat oder 30 € / Jahr"
+        }
     }
 }

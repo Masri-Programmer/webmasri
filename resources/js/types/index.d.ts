@@ -39,5 +39,24 @@ export interface User {
     created_at: string;
     updated_at: string;
 }
+export interface ServicePackage {
+    structure: string;
+    flexibility: string;
+    languages: string;
+    googleMaps: boolean;
+    emailContact: boolean;
+    whatsappContact: boolean;
+    googleReviewsStars: boolean;
+    googleReviewsIndividual: boolean;
+    liveOpeningHours: boolean;
+    onlineStore: boolean;
+}
+
+export interface ServiceCategory {
+    title: string;
+    priceRange: string;
+    packages: ServicePackage[];
+}
+  
 
 export type BreadcrumbItemType = BreadcrumbItem;

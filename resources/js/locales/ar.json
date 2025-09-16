@@ -206,7 +206,8 @@
             "faq": "الأسئلة الشائعة",
             "faq_desc": "ابحث عن إجابات للأسئلة الشائعة.",
             "technologies": "التقنيات",
-            "technologies_desc": "استكشف حزمة التقنيات التي نستخدمها للبناء."
+            "technologies_desc": "استكشف حزمة التقنيات التي نستخدمها للبناء.",
+            "pricing": "التسعير"
         },
         "legal": {
             "title": "قانوني",
@@ -767,5 +768,54 @@
         "decline": "رفض",
         "imprint": "بصمة",
         "accept": "اقبل كل شيء"
+    },
+    "sponsor": {
+        "google": "Review us on Google",
+        "github": "Sponsor us on Github"
+    },
+    "pricing": {
+        "title": "الأسعار",
+        "description": "تعتمد تكلفة موقع الويب أو المتجر الإلكتروني بشكل طبيعي على نطاق المشروع. لإعطائك نظرة عامة مفيدة، يمكنك استخدام القيم التجريبية التالية كدليل:",
+        "landingPage": "صفحة هبوط (صفحة واحدة)",
+        "website": "موقع إلكتروني",
+        "onlineShop": "متجر إلكتروني",
+        "onlineShopCMS": "متجر إلكتروني مع نظام إدارة المحتوى",
+        "packages": {
+            "structure": "الهيكل",
+            "onePage": "صفحة واحدة، هيكل بسيط",
+            "multiplePages": "صفحات متعددة، مرن",
+            "fullyCustomizable": "قابل للتخصيص بالكامل",
+            "flexibility": "المرونة",
+            "infoAndBranding": "معلومات، شعار، صور، ألوان",
+            "languages": "اللغات",
+            "googleMaps": "خرائط جوجل",
+            "emailContact": "نموذج اتصال عبر البريد الإلكتروني",
+            "whatsappContact": "نموذج اتصال عبر واتساب",
+            "googleReviewsStars": "تقييمات جوجل (عرض النجوم)",
+            "googleReviewsIndividual": "تقييمات جوجل (عرض التقييمات الفردية)",
+            "liveOpeningHours": "ساعات العمل المباشرة",
+            "onlineStore": "متجر إلكتروني"
+        },
+        "hosting": {
+            "title": "جميع الباقات تتطلب استضافة",
+            "price": "({price} / شهريًا أو {yearlyPrice} / سنويًا)."
+        },
+        "maintenance": {
+            "selfService": {
+                "title": "الصيانة بواسطتك",
+                "description": "أنت تقوم بصيانة المحتوى بنفسك - وسنوضح لك كيفية القيام بذلك.",
+                "price": "{price} / شهريًا أو {yearlyPrice} / سنويًا لصفحات الهبوط"
+            },
+            "fullService": {
+                "title": "صيانة شاملة بدون قلق",
+                "description": "نحن نتولى كل شيء - صيانة المحتوى، التحديثات، الأمان.",
+                "price": "{price} / شهريًا أو {yearlyPrice} / سنويًا لصفحات الهبوط"
+            }
+        },
+        "emailAndDomain": {
+            "title": "البريد الإلكتروني والنطاق",
+            "description": "النطاق وعنوان البريد الإلكتروني الذي تريده - بسيط واحترافي.",
+            "price": "{price} / شهريًا أو {yearlyPrice} / سنويًا"
+        }
     }
 }
