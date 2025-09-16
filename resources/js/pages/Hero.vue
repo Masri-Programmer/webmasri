@@ -7,7 +7,7 @@ import SafariMockup from '@/components/ui/safari-mockup/SafariMockup.vue';
 import ShimmerButton from '@/components/ui/shimmer-button/ShimmerButton.vue';
 import TextGenerateEffect from '@/components/ui/text-generate-effect/TextGenerateEffect.vue';
 import { Book } from 'lucide-vue-next';
-import webmockup from './mockup.png';
+import webmockup from '@/images/mockup.png';
 // import resume from '../../images/resume.webp';
 </script>
 
