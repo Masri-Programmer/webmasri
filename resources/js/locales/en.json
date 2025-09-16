@@ -802,9 +802,13 @@
         "priceFrom": "From",
 
         "landingPage": "Landing Page (Onepager)",
+        "landingPageExamples": "Perfect for marketing campaigns, a single product/service, or a digital business card.",
         "website": "Website",
+        "websiteExamples": "Ideal for service providers, corporate sites, doctors, or restaurants needing multiple pages and a blog.",
         "onlineShop": "Online Shop",
+        "onlineShopExamples": "Designed for businesses selling products online, from small boutiques to larger retailers.",
         "onlineShopCMS": "Online Shop with CMS",
+        "onlineShopCMSExamples": "For stores that use content marketing, a blog, and informational pages to drive sales.",
 
         "packages": {
             "structure": "Structure",
@@ -820,7 +824,22 @@
             "googleReviewsStars": "Google Reviews (Star Rating)",
             "googleReviewsIndividual": "Google Reviews (Show individual reviews)",
             "liveOpeningHours": "Live Opening Hours",
-            "onlineStore": "Online Shop"
+            "onlineStore": "Online Shop",
+            "responsiveDesign": "Responsive Design",
+            "seoOptimized": "SEO Optimized",
+            "contentManagementSystem": "Content Management System (CMS)",
+            "blogSection": "Blog Section",
+            "testimonialsSection": "Testimonials Section",
+            "analyticsIntegration": "Analytics Integration",
+            "liveChat": "Live Chat Integration",
+            "userAccounts": "Customer Accounts",
+            "bookingSystem": "Booking / Appointment System",
+            "productReviews": "Product Reviews & Ratings",
+            "advancedFiltering": "Advanced Product Filtering",
+            "discountCodes": "Discount Codes & Promotions",
+            "abandonedCartRecovery": "Abandoned Cart Recovery",
+            "wishlists": "Wishlists",
+            "subscriptionModel": "Subscription Model"
         },
 
         "additionalServices": "Additional Services",

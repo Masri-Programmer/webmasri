@@ -40,16 +40,42 @@ export interface User {
     updated_at: string;
 }
 export interface ServicePackage {
+    // --- Core Properties (likely always present) ---
     structure: string;
     flexibility: string;
     languages: string;
-    googleMaps: boolean;
-    emailContact: boolean;
-    whatsappContact: boolean;
-    googleReviewsStars: boolean;
-    googleReviewsIndividual: boolean;
-    liveOpeningHours: boolean;
-    onlineStore: boolean;
+    responsiveDesign: boolean;
+
+    // --- Optional Feature Properties ---
+    seoOptimized?: boolean;
+    contentManagementSystem?: boolean;
+    onlineStore?: boolean;
+
+    // Contact & Location
+    googleMaps?: boolean;
+    emailContact?: boolean;
+    whatsappContact?: boolean;
+    liveOpeningHours?: boolean;
+
+    // Content & Engagement
+    blogSection?: boolean;
+    testimonialsSection?: boolean;
+    googleReviewsStars?: boolean;
+    googleReviewsIndividual?: boolean;
+    userAccounts?: boolean;
+    bookingSystem?: boolean;
+    liveChat?: boolean;
+
+    // E-commerce
+    productReviews?: boolean;
+    advancedFiltering?: boolean;
+    discountCodes?: boolean;
+    abandonedCartRecovery?: boolean;
+    wishlists?: boolean;
+    subscriptionModel?: boolean;
+
+    // Technical
+    analyticsIntegration?: boolean;
 }
 
 export interface ServiceCategory {
@@ -57,6 +83,6 @@ export interface ServiceCategory {
     priceRange: string;
     packages: ServicePackage[];
 }
-  
+
 
 export type BreadcrumbItemType = BreadcrumbItem;
