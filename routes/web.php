@@ -7,7 +7,7 @@ Route::get('/', function () {
     return Inertia::render('Welcome');
 })->name('home');
 
-Route::get('/privacy-policy', function () {
+Route::get('privacy-policy', function () {
     return Inertia::render('PrivacyPolicy');
 })->name('privacy-policy');
 
