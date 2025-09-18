@@ -1,4 +1,7 @@
 {
+    "welcome": {
+        "description": "Développez votre activité avec un site web ou une boutique en ligne sur mesure. Nous offrons un développement professionnel, une optimisation SEO et une maintenance fiable. Obtenez votre devis dès aujourd'hui !"
+    },
     "scrollToTop": {
         "label": "Faites défiler en haut"
     },
@@ -180,7 +183,8 @@
             "privacyPolicy": "Politique de confidentialité",
             "termsOfService": "Conditions d'utilisation",
             "imprint": "Imprint",
-            "contact": "Contact"
+            "contact": "Contact",
+            "bookMeeting": "Réserver une réunion"
         },
         "copyright": "© {year} . Tous droits réservés.",
         "madeWith": "Fait avec {heartIcon} par {authorLink}.",
@@ -223,6 +227,7 @@
     },
     "privacyPolicy": {
         "title": "Politique de Confidentialité",
+        "description":"Cette politique de confidentialité explique la nature, l'étendue et la finalité du traitement des données personnelles (ci-après dénommées « données ») au sein de notre offre en ligne et des sites web, fonctions et contenus qui y sont liés, ainsi que des présences externes en ligne, telles que notre profil de médias sociaux (ci-après dénommés collectivement « offre en ligne »). (Ci-après dénommés collectivement « offre en ligne »). En ce qui concerne les termes utilisés, tels que « traitement » ou « responsable », nous nous référons aux définitions de l'article 4 du Règlement Général sur la Protection des Données (RGPD).",
         "sections": {
             "introduction": {
                 "title": "1. Introduction et Coordonnées du Responsable du Traitement",
@@ -376,6 +381,7 @@
     },
     "termsConditions": {
         "title": "Conditions Générales de Vente",
+        "description":"Ces conditions générales de vente (ci-après dénommées « CGV ») régissent les relations contractuelles entre Mohamad Masri (ci-après dénommé « je » ou « le prestataire ») et ses clients (ci-après dénommés « le client ») pour toutes les prestations de services, notamment la conception web, le développement de boutiques en ligne, le conseil et les services connexes.",
         "sections": {
             "validity": {
                 "title": "1. Validité des conditions",
@@ -819,193 +825,193 @@
         "imprint": "Imprimer",
         "accept": "Acceptez tout"
     },
-        "sponsor": {
+    "sponsor": {
         "google": "Review us on Google",
         "github": "Sponsor us on Github"
     },
-  "pricing": {
-    "title": "Tarifs des services web professionnels",
-    "description": "Le coût d'un site web ou d'une boutique en ligne dépend naturellement de l'ampleur du projet. Pour vous donner un aperçu significatif, vous pouvez vous baser sur les valeurs empiriques suivantes :",
-    "monthly": "Mensuel",
-    "yearly": "Annuel",
-    "getStarted": "Commencer",
-    "contactUs": "Contactez-nous",
-    "featured": "Le plus populaire",
-    "priceFrom": "À partir de",
-    "availableAddOns": "Modules complémentaires disponibles",
-    "customizeYourPackage": "Personnalisez votre forfait avec ces ajouts puissants.",
-    "landingPage": "Page de destination (Onepager)",
-    "landingPageExamples": "Parfait pour les campagnes marketing, un seul produit/service ou une carte de visite numérique.",
-    "website": "Site web d'entreprise",
-    "websiteExamples": "Idéal pour les prestataires de services, les sites d'entreprise, les médecins ou les restaurants nécessitant plusieurs pages et un blog.",
-    "onlineShop": "Boutique en ligne",
-    "onlineShopExamples": "Conçu pour les entreprises vendant des produits en ligne, des petites boutiques aux grands détaillants.",
-    "featureValues": {
-      "templateBased": "Basé sur un modèle",
-      "customDesign": "Design personnalisé",
-      "strategyAndCustom": "Stratégie & Design personnalisé",
-      "upTo5Pages": "Jusqu'à 5 pages",
-      "upTo15Pages": "Jusqu'à 15 pages",
-      "unlimitedPages": "Pages illimitées",
-      "brandingAndContent": "Image de marque & Contenu",
-      "fullyCustomizable": "Entièrement personnalisable",
-      "upTo50Products": "Jusqu'à 50 produits",
-      "upTo500Products": "Jusqu'à 500 produits",
-      "unlimitedProducts": "Produits illimités",
-      "standardPayments": "Standard (Stripe, PayPal)",
-      "standardPaymentsKlarna": "Standard + Klarna",
-      "customIntegrations": "Intégrations personnalisées"
-    },
-    "packages": {
-      "landingPage": {
-        "starter": {
-          "name": "Starter",
-          "description": "Une page unique et ciblée pour capturer des prospects ou annoncer un projet."
+    "pricing": {
+        "title": "Tarifs des services web professionnels",
+        "description": "Le coût d'un site web ou d'une boutique en ligne dépend naturellement de l'ampleur du projet. Pour vous donner un aperçu significatif, vous pouvez vous baser sur les valeurs empiriques suivantes :",
+        "monthly": "Mensuel",
+        "yearly": "Annuel",
+        "getStarted": "Commencer",
+        "contactUs": "Contactez-nous",
+        "featured": "Le plus populaire",
+        "priceFrom": "À partir de",
+        "availableAddOns": "Modules complémentaires disponibles",
+        "customizeYourPackage": "Personnalisez votre forfait avec ces ajouts puissants.",
+        "landingPage": "Page de destination (Onepager)",
+        "landingPageExamples": "Parfait pour les campagnes marketing, un seul produit/service ou une carte de visite numérique.",
+        "website": "Site web d'entreprise",
+        "websiteExamples": "Idéal pour les prestataires de services, les sites d'entreprise, les médecins ou les restaurants nécessitant plusieurs pages et un blog.",
+        "onlineShop": "Boutique en ligne",
+        "onlineShopExamples": "Conçu pour les entreprises vendant des produits en ligne, des petites boutiques aux grands détaillants.",
+        "featureValues": {
+            "templateBased": "Basé sur un modèle",
+            "customDesign": "Design personnalisé",
+            "strategyAndCustom": "Stratégie & Design personnalisé",
+            "upTo5Pages": "Jusqu'à 5 pages",
+            "upTo15Pages": "Jusqu'à 15 pages",
+            "unlimitedPages": "Pages illimitées",
+            "brandingAndContent": "Image de marque & Contenu",
+            "fullyCustomizable": "Entièrement personnalisable",
+            "upTo50Products": "Jusqu'à 50 produits",
+            "upTo500Products": "Jusqu'à 500 produits",
+            "unlimitedProducts": "Produits illimités",
+            "standardPayments": "Standard (Stripe, PayPal)",
+            "standardPaymentsKlarna": "Standard + Klarna",
+            "customIntegrations": "Intégrations personnalisées"
         },
-        "business": {
-          "name": "Business",
-          "description": "Une page personnalisée conçue pour raconter votre histoire et inciter à l'action."
+        "packages": {
+            "landingPage": {
+                "starter": {
+                    "name": "Starter",
+                    "description": "Une page unique et ciblée pour capturer des prospects ou annoncer un projet."
+                },
+                "business": {
+                    "name": "Business",
+                    "description": "Une page personnalisée conçue pour raconter votre histoire et inciter à l'action."
+                },
+                "pro": {
+                    "name": "Conversion Pro",
+                    "description": "Une page de destination basée sur les données et optimisée pour un maximum de conversions."
+                }
+            },
+            "businessWebsite": {
+                "starter": {
+                    "name": "Starter",
+                    "description": "Une présence en ligne professionnelle pour établir la crédibilité de votre marque."
+                },
+                "growth": {
+                    "name": "Croissance",
+                    "description": "Un site web complet avec des fonctionnalités pour engager et développer votre audience."
+                },
+                "enterprise": {
+                    "name": "Entreprise",
+                    "description": "Une solution web puissante et évolutive avec des fonctionnalités avancées."
+                }
+            },
+            "onlineShop": {
+                "starter": {
+                    "name": "Boutique Starter",
+                    "description": "Lancez votre boutique e-commerce et commencez à vendre vos premiers produits."
+                },
+                "pro": {
+                    "name": "Pro Commerce",
+                    "description": "Une boutique en ligne riche en fonctionnalités conçue pour augmenter les ventes et la fidélité des clients."
+                },
+                "enterprise": {
+                    "name": "Entreprise Commerce",
+                    "description": "Une solution e-commerce complète pour des ventes à grand volume et des besoins complexes."
+                }
+            },
+            "abTestingSetup": "Configuration de tests A/B",
+            "abandonedCartRecovery": "Récupération de panier abandonné",
+            "accessibilityCompliance": "Conformité d'accessibilité (WCAG)",
+            "advancedFiltering": "Filtrage de produits avancé",
+            "advancedSearch": "Recherche de produits avancée",
+            "analyticsIntegration": "Intégration d'outils d'analyse",
+            "blogSection": "Section blog",
+            "bookingSystem": "Système de réservation / prise de rendez-vous",
+            "careersPage": "Page Carrières / Offres d'emploi",
+            "contentManagementSystem": "Système de gestion de contenu (CMS)",
+            "crmIntegration": "Intégration CRM",
+            "customization": "Niveau de personnalisation",
+            "customerOrderHistory": "Historique des commandes client",
+            "discountCodes": "Codes de réduction & Promotions",
+            "emailContact": "Formulaire de contact par e-mail",
+            "eventCalendar": "Calendrier des événements",
+            "faqSection": "Section FAQ",
+            "giftCardSales": "Vente de cartes-cadeaux",
+            "googleMaps": "Intégration de Google Maps",
+            "googleReviewsIndividual": "Avis Google (Individuels)",
+            "googleReviewsStars": "Avis Google (Note par étoiles)",
+            "guestCheckout": "Option de paiement en tant qu'invité",
+            "heatmapIntegration": "Intégration de cartes de chaleur",
+            "inventoryManagement": "Gestion des stocks",
+            "languages": "Langues",
+            "leadMagnet": "Aimant à prospects (ex: téléchargement gratuit)",
+            "legalPages": "Pages légales (Confidentialité, CGV)",
+            "liveChat": "Intégration de chat en direct",
+            "liveOpeningHours": "Horaires d'ouverture en direct",
+            "loyaltyProgram": "Programme de fidélité",
+            "multicurrencySupport": "Support multi-devises",
+            "newsletterSignup": "Inscription à la newsletter",
+            "onlineOrderingPickupDelivery": "Commande en ligne (Retrait/Livraison)",
+            "onlineStore": "Fonctionnalité de boutique en ligne",
+            "orderManagement": "Tableau de bord de gestion des commandes",
+            "paymentGateways": "Passerelles de paiement",
+            "portfolioGallery": "Portfolio / Galerie de projets",
+            "pricingPage": "Page de tarifs",
+            "productCapacity": "Capacité de produits",
+            "productImageGalleryVideo": "Galerie d'images & vidéo de produits",
+            "productReviews": "Avis & notes sur les produits",
+            "productVariations": "Variations de produits (ex: taille, couleur)",
+            "promotionalBannersAndPopups": "Bannières promotionnelles & Pop-ups",
+            "relatedProducts": "Produits similaires & Ventes incitatives",
+            "responsiveDesign": "Design réactif",
+            "returnsAndExchangesPortal": "Portail de retours & échanges",
+            "salesAnalytics": "Analyse des ventes & des clients",
+            "savedAddressesAndPayments": "Adresses & moyens de paiement enregistrés",
+            "secureClientPortal": "Portail client sécurisé",
+            "seoOptimized": "Optimisé pour le SEO",
+            "serviceArea": "Zone de service (Carte / Liste)",
+            "shippingOptions": "Options & tarifs de livraison",
+            "socialMediaIntegration": "Intégration des réseaux sociaux",
+            "structure": "Structure",
+            "subscriptionModel": "Modèle d'abonnement",
+            "taxCalculation": "Calcul automatique des taxes",
+            "teamPage": "Page d'équipe",
+            "testimonialsSection": "Section témoignages",
+            "userAccounts": "Comptes clients",
+            "videoGallery": "Galerie vidéo",
+            "whatsappContact": "Contact WhatsApp",
+            "wishlists": "Listes de souhaits"
         },
-        "pro": {
-          "name": "Conversion Pro",
-          "description": "Une page de destination basée sur les données et optimisée pour un maximum de conversions."
+        "addOns": {
+            "multilingualSupport": "Support multilingue",
+            "liveChat": "Intégration de chat en direct",
+            "advancedBooking": "Système de réservation avancé",
+            "secureClientPortal": "Portail client sécurisé",
+            "multiCurrency": "Support multi-devises",
+            "crmIntegration": "Intégration CRM"
+        },
+        "additionalServices": "Services supplémentaires",
+        "hosting": {
+            "title": "Tous les forfaits nécessitent un hébergement",
+            "price": "(7,95 € / mois ou 89 € / an)"
+        },
+        "maintenance": {
+            "landingPage": {
+                "title": "Maintenance pour pages de destination",
+                "description": "Nous nous occupons de tout - maintenance du contenu, mises à jour, sécurité et sauvegardes pour votre page de destination.",
+                "price": "25 € / mois ou 273 € / an (économisez 9%)"
+            },
+            "website": {
+                "title": "Maintenance pour sites web",
+                "description": "Service complet pour votre site web multi-pages. Nous gérons les mises à jour de contenu, les analyses de sécurité et les sauvegardes régulières.",
+                "price": "35 € / mois ou 357 € / an (économisez 15%)"
+            },
+            "onlineShop": {
+                "title": "Maintenance pour boutiques en ligne",
+                "description": "Support premium pour votre plateforme e-commerce. Inclut la sécurité, toutes les mises à jour, les sauvegardes et les vérifications fonctionnelles.",
+                "price": "60 € / mois ou 576 € / an (économisez 20%)"
+            },
+            "seoKickstart": {
+                "title": "Forfait SEO Kickstart",
+                "description": "Une configuration unique pour optimiser votre site, incluant la recherche de mots-clés, le SEO sur page et la configuration du profil Google Business.",
+                "price": "À partir de 350 € (frais uniques)"
+            },
+            "copywriting": {
+                "title": "Contenu professionnel & Rédaction",
+                "description": "Texte engageant et optimisé pour le SEO pour les pages principales de votre site web, conçu pour connecter avec votre audience.",
+                "price": "À partir de 80 € / page"
+            }
+        },
+        "emailAndDomain": {
+            "title": "E-mail & Domaine",
+            "description": "Le domaine et l'adresse e-mail de votre choix - simple et professionnel.",
+            "price": "3 € / mois ou 30 € / an"
         }
-      },
-      "businessWebsite": {
-        "starter": {
-          "name": "Starter",
-          "description": "Une présence en ligne professionnelle pour établir la crédibilité de votre marque."
-        },
-        "growth": {
-          "name": "Croissance",
-          "description": "Un site web complet avec des fonctionnalités pour engager et développer votre audience."
-        },
-        "enterprise": {
-          "name": "Entreprise",
-          "description": "Une solution web puissante et évolutive avec des fonctionnalités avancées."
-        }
-      },
-      "onlineShop": {
-        "starter": {
-          "name": "Boutique Starter",
-          "description": "Lancez votre boutique e-commerce et commencez à vendre vos premiers produits."
-        },
-        "pro": {
-          "name": "Pro Commerce",
-          "description": "Une boutique en ligne riche en fonctionnalités conçue pour augmenter les ventes et la fidélité des clients."
-        },
-        "enterprise": {
-          "name": "Entreprise Commerce",
-          "description": "Une solution e-commerce complète pour des ventes à grand volume et des besoins complexes."
-        }
-      },
-      "abTestingSetup": "Configuration de tests A/B",
-      "abandonedCartRecovery": "Récupération de panier abandonné",
-      "accessibilityCompliance": "Conformité d'accessibilité (WCAG)",
-      "advancedFiltering": "Filtrage de produits avancé",
-      "advancedSearch": "Recherche de produits avancée",
-      "analyticsIntegration": "Intégration d'outils d'analyse",
-      "blogSection": "Section blog",
-      "bookingSystem": "Système de réservation / prise de rendez-vous",
-      "careersPage": "Page Carrières / Offres d'emploi",
-      "contentManagementSystem": "Système de gestion de contenu (CMS)",
-      "crmIntegration": "Intégration CRM",
-      "customization": "Niveau de personnalisation",
-      "customerOrderHistory": "Historique des commandes client",
-      "discountCodes": "Codes de réduction & Promotions",
-      "emailContact": "Formulaire de contact par e-mail",
-      "eventCalendar": "Calendrier des événements",
-      "faqSection": "Section FAQ",
-      "giftCardSales": "Vente de cartes-cadeaux",
-      "googleMaps": "Intégration de Google Maps",
-      "googleReviewsIndividual": "Avis Google (Individuels)",
-      "googleReviewsStars": "Avis Google (Note par étoiles)",
-      "guestCheckout": "Option de paiement en tant qu'invité",
-      "heatmapIntegration": "Intégration de cartes de chaleur",
-      "inventoryManagement": "Gestion des stocks",
-      "languages": "Langues",
-      "leadMagnet": "Aimant à prospects (ex: téléchargement gratuit)",
-      "legalPages": "Pages légales (Confidentialité, CGV)",
-      "liveChat": "Intégration de chat en direct",
-      "liveOpeningHours": "Horaires d'ouverture en direct",
-      "loyaltyProgram": "Programme de fidélité",
-      "multicurrencySupport": "Support multi-devises",
-      "newsletterSignup": "Inscription à la newsletter",
-      "onlineOrderingPickupDelivery": "Commande en ligne (Retrait/Livraison)",
-      "onlineStore": "Fonctionnalité de boutique en ligne",
-      "orderManagement": "Tableau de bord de gestion des commandes",
-      "paymentGateways": "Passerelles de paiement",
-      "portfolioGallery": "Portfolio / Galerie de projets",
-      "pricingPage": "Page de tarifs",
-      "productCapacity": "Capacité de produits",
-      "productImageGalleryVideo": "Galerie d'images & vidéo de produits",
-      "productReviews": "Avis & notes sur les produits",
-      "productVariations": "Variations de produits (ex: taille, couleur)",
-      "promotionalBannersAndPopups": "Bannières promotionnelles & Pop-ups",
-      "relatedProducts": "Produits similaires & Ventes incitatives",
-      "responsiveDesign": "Design réactif",
-      "returnsAndExchangesPortal": "Portail de retours & échanges",
-      "salesAnalytics": "Analyse des ventes & des clients",
-      "savedAddressesAndPayments": "Adresses & moyens de paiement enregistrés",
-      "secureClientPortal": "Portail client sécurisé",
-      "seoOptimized": "Optimisé pour le SEO",
-      "serviceArea": "Zone de service (Carte / Liste)",
-      "shippingOptions": "Options & tarifs de livraison",
-      "socialMediaIntegration": "Intégration des réseaux sociaux",
-      "structure": "Structure",
-      "subscriptionModel": "Modèle d'abonnement",
-      "taxCalculation": "Calcul automatique des taxes",
-      "teamPage": "Page d'équipe",
-      "testimonialsSection": "Section témoignages",
-      "userAccounts": "Comptes clients",
-      "videoGallery": "Galerie vidéo",
-      "whatsappContact": "Contact WhatsApp",
-      "wishlists": "Listes de souhaits"
-    },
-    "addOns": {
-      "multilingualSupport": "Support multilingue",
-      "liveChat": "Intégration de chat en direct",
-      "advancedBooking": "Système de réservation avancé",
-      "secureClientPortal": "Portail client sécurisé",
-      "multiCurrency": "Support multi-devises",
-      "crmIntegration": "Intégration CRM"
-    },
-    "additionalServices": "Services supplémentaires",
-    "hosting": {
-      "title": "Tous les forfaits nécessitent un hébergement",
-      "price": "(7,95 € / mois ou 89 € / an)"
-    },
-    "maintenance": {
-      "landingPage": {
-        "title": "Maintenance pour pages de destination",
-        "description": "Nous nous occupons de tout - maintenance du contenu, mises à jour, sécurité et sauvegardes pour votre page de destination.",
-        "price": "25 € / mois ou 273 € / an (économisez 9%)"
-      },
-      "website": {
-        "title": "Maintenance pour sites web",
-        "description": "Service complet pour votre site web multi-pages. Nous gérons les mises à jour de contenu, les analyses de sécurité et les sauvegardes régulières.",
-        "price": "35 € / mois ou 357 € / an (économisez 15%)"
-      },
-      "onlineShop": {
-        "title": "Maintenance pour boutiques en ligne",
-        "description": "Support premium pour votre plateforme e-commerce. Inclut la sécurité, toutes les mises à jour, les sauvegardes et les vérifications fonctionnelles.",
-        "price": "60 € / mois ou 576 € / an (économisez 20%)"
-      },
-      "seoKickstart": {
-        "title": "Forfait SEO Kickstart",
-        "description": "Une configuration unique pour optimiser votre site, incluant la recherche de mots-clés, le SEO sur page et la configuration du profil Google Business.",
-        "price": "À partir de 350 € (frais uniques)"
-      },
-      "copywriting": {
-        "title": "Contenu professionnel & Rédaction",
-        "description": "Texte engageant et optimisé pour le SEO pour les pages principales de votre site web, conçu pour connecter avec votre audience.",
-        "price": "À partir de 80 € / page"
-      }
-    },
-    "emailAndDomain": {
-      "title": "E-mail & Domaine",
-      "description": "Le domaine et l'adresse e-mail de votre choix - simple et professionnel.",
-      "price": "3 € / mois ou 30 € / an"
     }
-  }
 }

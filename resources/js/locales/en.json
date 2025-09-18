@@ -1,4 +1,7 @@
 {
+    "welcome":{
+        "description":"Grow your business with a custom-designed website or online shop. We offer professional development, SEO optimization, and reliable maintenance. Get your quote today!"
+    },
     "scrollToTop": {
         "label": "Scroll to Top"
     },
@@ -210,7 +213,8 @@
             "privacyPolicy": "Privacy Policy",
             "termsOfService": "Terms of Service",
             "imprint": "Imprint",
-            "contact": "Contact"
+            "contact": "Contact",
+            "bookMeeting":"Book a Meeting"
         },
         "copyright": "© {year} . All rights reserved.",
         "madeWith": "Made with {heartIcon} by {authorLink}.",
@@ -255,6 +259,7 @@
     },
     "privacyPolicy": {
         "title": "Privacy Policy",
+        "description": "This Privacy Policy explains the nature, scope, and purpose of the processing of personal data (hereinafter referred to as \"data\") within our online offering and the associated websites, functions, and content, as well as external online presences, such as our social media profiles (hereinafter collectively referred to as \"online offering\"). (hereinafter collectively referred to as \"online offering\"). With regard to the terms used, such as \"processing\" or \"controller\", we refer to the definitions in Art. 4 of the General Data Protection Regulation (GDPR).",
         "sections": {
             "introduction": {
                 "title": "1. Introduction and Contact Details of the Controller",
@@ -402,6 +407,7 @@
     },
     "termsConditions": {
         "title": "Terms and Conditions",
+        "description":"These General Terms and Conditions (GTC) apply to all contracts for services between Mohamad Masri (hereinafter referred to as \"Masri Programmer\") and its clients. By placing an order, the client agrees to these GTC. Deviating terms and conditions of the client are hereby rejected, unless Masri Programmer has expressly agreed to them in writing.",
         "sections": {
             "validity": {
                 "title": "1. Validity of the conditions",

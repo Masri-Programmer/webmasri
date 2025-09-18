@@ -1,4 +1,7 @@
 {
+    "welcome": {
+        "description": "أنمِ أعمالك التجارية من خلال موقع إلكتروني أو متجر إلكتروني مصمم خصيصًا لك. نحن نقدم تطويرًا احترافيًا، وتحسينًا لمحركات البحث (SEO)، وصيانة موثوقة. احصل على عرض أسعارك اليوم!"
+    },
     "scrollToTop": {
         "label": "الانتقال إلى الأعلى"
     },
@@ -180,7 +183,8 @@
             "privacyPolicy": "سياسة الخصوصية",
             "termsOfService": "شروط الخدمة",
             "imprint": "بيانات النشر",
-            "contact": "اتصل"
+            "contact": "اتصل",
+            "bookMeeting": "حجز اجتماع"
         },
         "copyright": "© {year} . كل الحقوق محفوظة.",
         "madeWith": "صُنع بـ {heartIcon} بواسطة {authorLink}.",
@@ -223,6 +227,7 @@
     },
     "privacyPolicy": {
         "title": "سياسة الخصوصية",
+        "description": "توضح سياسة الخصوصية هذه طبيعة ونطاق والغرض من معالجة البيانات الشخصية (المشار إليها فيما يلي باسم \"البيانات\") ضمن عرضنا عبر الإنترنت والمواقع والوظائف والمحتويات المرتبطة به، بالإضافة إلى الوجود عبر الإنترنت الخارجي، مثل ملفات تعريف وسائل التواصل الاجتماعي الخاصة بنا (المشار إليها فيما يلي مجتمعة باسم \"العرض عبر الإنترنت\"). فيما يتعلق بالمصطلحات المستخدمة، مثل \"المعالجة\" أو \"المسؤول\"، نشير إلى التعريفات الواردة في المادة 4 من اللائحة العامة لحماية البيانات (GDPR).",
         "sections": {
             "introduction": {
                 "title": "1. مقدمة وتفاصيل الاتصال بالمسؤول",
@@ -367,6 +372,7 @@
     },
     "termsConditions": {
         "title": "الشروط والأحكام",
+        "description": "This Privacy Policy explains the nature, scope, and purpose of the processing of personal data (hereinafter referred to as \"data\") within our online offering and the associated websites, functions, and content, as well as external online presences, such as our social media profiles (hereinafter collectively referred to as \"online offering\"). (hereinafter collectively referred to as \"online offering\"). With regard to the terms used, such as \"processing\" or \"controller\", we refer to the definitions in Art. 4 of the General Data Protection Regulation (GDPR).",
         "sections": {
             "validity": {
                 "title": "1. صلاحية الشروط",
@@ -773,189 +779,189 @@
         "google": "Review us on Google",
         "github": "Sponsor us on Github"
     },
-  "pricing": {
-    "title": "أسعار خدمات الويب الاحترافية",
-    "description": "تعتمد تكلفة موقع الويب أو المتجر الإلكتروني بشكل طبيعي على نطاق المشروع. لكي نمنحك نظرة عامة واضحة، يمكنك استخدام القيم التجريبية التالية كدليل:",
-    "monthly": "شهريًا",
-    "yearly": "سنويًا",
-    "getStarted": "ابدأ الآن",
-    "contactUs": "اتصل بنا",
-    "featured": "الأكثر شيوعًا",
-    "priceFrom": "ابتداءً من",
-    "availableAddOns": "الإضافات المتاحة",
-    "customizeYourPackage": "خصص باقتك مع هذه الإضافات القوية.",
-    "landingPage": "صفحة هبوط (صفحة واحدة)",
-    "landingPageExamples": "مثالية للحملات التسويقية، منتج/خدمة واحدة، أو بطاقة عمل رقمية.",
-    "website": "موقع أعمال",
-    "websiteExamples": "مثالي لمقدمي الخدمات، مواقع الشركات، الأطباء، أو المطاعم التي تحتاج إلى صفحات متعددة ومدونة.",
-    "onlineShop": "متجر إلكتروني",
-    "onlineShopExamples": "مصمم للشركات التي تبيع المنتجات عبر الإنترنت، من المتاجر الصغيرة إلى تجار التجزئة الكبار.",
-    "featureValues": {
-      "templateBased": "مبني على قالب",
-      "customDesign": "تصميم مخصص",
-      "strategyAndCustom": "استراتيجية وتصميم مخصص",
-      "upTo5Pages": "حتى 5 صفحات",
-      "upTo15Pages": "حتى 15 صفحة",
-      "unlimitedPages": "صفحات غير محدودة",
-      "brandingAndContent": "علامة تجارية ومحتوى",
-      "fullyCustomizable": "قابل للتخصيص بالكامل",
-      "upTo50Products": "حتى 50 منتجًا",
-      "upTo500Products": "حتى 500 منتج",
-      "unlimitedProducts": "منتجات غير محدودة",
-      "standardPayments": "قياسي (Stripe, PayPal)",
-      "standardPaymentsKlarna": "قياسي + Klarna",
-      "customIntegrations": "تكاملات مخصصة"
-    },
-    "packages": {
-      "landingPage": {
-        "starter": {
-          "name": "المبتدئة",
-          "description": "صفحة واحدة مركزة لجذب العملاء المحتملين أو الإعلان عن مشروع."
+    "pricing": {
+        "title": "أسعار خدمات الويب الاحترافية",
+        "description": "تعتمد تكلفة موقع الويب أو المتجر الإلكتروني بشكل طبيعي على نطاق المشروع. لكي نمنحك نظرة عامة واضحة، يمكنك استخدام القيم التجريبية التالية كدليل:",
+        "monthly": "شهريًا",
+        "yearly": "سنويًا",
+        "getStarted": "ابدأ الآن",
+        "contactUs": "اتصل بنا",
+        "featured": "الأكثر شيوعًا",
+        "priceFrom": "ابتداءً من",
+        "availableAddOns": "الإضافات المتاحة",
+        "customizeYourPackage": "خصص باقتك مع هذه الإضافات القوية.",
+        "landingPage": "صفحة هبوط (صفحة واحدة)",
+        "landingPageExamples": "مثالية للحملات التسويقية، منتج/خدمة واحدة، أو بطاقة عمل رقمية.",
+        "website": "موقع أعمال",
+        "websiteExamples": "مثالي لمقدمي الخدمات، مواقع الشركات، الأطباء، أو المطاعم التي تحتاج إلى صفحات متعددة ومدونة.",
+        "onlineShop": "متجر إلكتروني",
+        "onlineShopExamples": "مصمم للشركات التي تبيع المنتجات عبر الإنترنت، من المتاجر الصغيرة إلى تجار التجزئة الكبار.",
+        "featureValues": {
+            "templateBased": "مبني على قالب",
+            "customDesign": "تصميم مخصص",
+            "strategyAndCustom": "استراتيجية وتصميم مخصص",
+            "upTo5Pages": "حتى 5 صفحات",
+            "upTo15Pages": "حتى 15 صفحة",
+            "unlimitedPages": "صفحات غير محدودة",
+            "brandingAndContent": "علامة تجارية ومحتوى",
+            "fullyCustomizable": "قابل للتخصيص بالكامل",
+            "upTo50Products": "حتى 50 منتجًا",
+            "upTo500Products": "حتى 500 منتج",
+            "unlimitedProducts": "منتجات غير محدودة",
+            "standardPayments": "قياسي (Stripe, PayPal)",
+            "standardPaymentsKlarna": "قياسي + Klarna",
+            "customIntegrations": "تكاملات مخصصة"
         },
-        "business": {
-          "name": "الأعمال",
-          "description": "صفحة مصممة خصيصًا لسرد قصتك وتحفيز الإجراءات."
+        "packages": {
+            "landingPage": {
+                "starter": {
+                    "name": "المبتدئة",
+                    "description": "صفحة واحدة مركزة لجذب العملاء المحتملين أو الإعلان عن مشروع."
+                },
+                "business": {
+                    "name": "الأعمال",
+                    "description": "صفحة مصممة خصيصًا لسرد قصتك وتحفيز الإجراءات."
+                },
+                "pro": {
+                    "name": "الاحترافية للتحويل",
+                    "description": "صفحة هبوط مبنية على البيانات ومحسّنة لتحقيق أقصى قدر من التحويلات."
+                }
+            },
+            "businessWebsite": {
+                "starter": {
+                    "name": "المبتدئ",
+                    "description": "حضور احترافي عبر الإنترنت لتأسيس مصداقية علامتك التجارية."
+                },
+                "growth": {
+                    "name": "النمو",
+                    "description": "موقع ويب شامل بميزات لإشراك جمهورك وتنميته."
+                },
+                "enterprise": {
+                    "name": "المؤسسات",
+                    "description": "حل ويب قوي وقابل للتطوير بوظائف متقدمة."
+                }
+            },
+            "onlineShop": {
+                "starter": {
+                    "name": "متجر مبتدئ",
+                    "description": "أطلق متجرك للتجارة الإلكترونية وابدأ في بيع منتجاتك الأولى."
+                },
+                "pro": {
+                    "name": "تجارة احترافية",
+                    "description": "متجر إلكتروني غني بالميزات مصمم لزيادة المبيعات وولاء العملاء."
+                },
+                "enterprise": {
+                    "name": "تجارة المؤسسات",
+                    "description": "حل تجارة إلكترونية كامل للمبيعات ذات الحجم الكبير والاحتياجات المعقدة."
+                }
+            },
+            "abTestingSetup": "إعداد اختبار A/B",
+            "abandonedCartRecovery": "استعادة سلة التسوق المتروكة",
+            "accessibilityCompliance": "التوافق مع إمكانية الوصول (WCAG)",
+            "advancedFiltering": "تصفية متقدمة للمنتجات",
+            "advancedSearch": "بحث متقدم عن المنتجات",
+            "analyticsIntegration": "تكامل أدوات التحليل",
+            "blogSection": "قسم المدونة",
+            "bookingSystem": "نظام الحجز / المواعيد",
+            "careersPage": "صفحة الوظائف / فرص العمل",
+            "contentManagementSystem": "نظام إدارة المحتوى (CMS)",
+            "crmIntegration": "تكامل CRM",
+            "customization": "مستوى التخصيص",
+            "customerOrderHistory": "سجل طلبات العميل",
+            "discountCodes": "أكواد الخصم والعروض الترويجية",
+            "emailContact": "نموذج الاتصال عبر البريد الإلكتروني",
+            "eventCalendar": "تقويم الفعاليات",
+            "faqSection": "قسم الأسئلة الشائعة",
+            "giftCardSales": "بيع بطاقات الهدايا",
+            "googleMaps": "تكامل خرائط جوجل",
+            "googleReviewsIndividual": "تقييمات جوجل (فردية)",
+            "googleReviewsStars": "تقييمات جوجل (تقييم بالنجوم)",
+            "guestCheckout": "خيار الدفع كزائر",
+            "heatmapIntegration": "تكامل الخرائط الحرارية",
+            "inventoryManagement": "إدارة المخزون",
+            "languages": "اللغات",
+            "leadMagnet": "أداة جذب العملاء (مثل تنزيل مجاني)",
+            "legalPages": "الصفحات القانونية (الخصوصية، الشروط)",
+            "liveChat": "تكامل الدردشة المباشرة",
+            "liveOpeningHours": "ساعات العمل المباشرة",
+            "loyaltyProgram": "برنامج الولاء",
+            "multicurrencySupport": "دعم متعدد العملات",
+            "newsletterSignup": "الاشتراك في النشرة الإخبارية",
+            "onlineOrderingPickupDelivery": "الطلب عبر الإنترنت (استلام/توصيل)",
+            "onlineStore": "وظائف المتجر الإلكتروني",
+            "orderManagement": "لوحة تحكم إدارة الطلبات",
+            "paymentGateways": "بوابات الدفع",
+            "portfolioGallery": "معرض الأعمال / المشاريع",
+            "pricingPage": "صفحة الأسعار / الرسوم",
+            "productCapacity": "سعة المنتجات",
+            "productImageGalleryVideo": "معرض صور وفيديو للمنتجات",
+            "productReviews": "مراجعات وتقييمات المنتجات",
+            "productVariations": "تنوعات المنتج (مثل الحجم، اللون)",
+            "promotionalBannersAndPopups": "لافتات إعلانية ونوافذ منبثقة",
+            "relatedProducts": "منتجات ذات صلة وبيع إضافي",
+            "responsiveDesign": "تصميم متجاوب",
+            "returnsAndExchangesPortal": "بوابة المرتجعات والاستبدال",
+            "salesAnalytics": "تحليلات المبيعات والعملاء",
+            "savedAddressesAndPayments": "العناوين وطرق الدفع المحفوظة",
+            "secureClientPortal": "بوابة عملاء آمنة",
+            "seoOptimized": "محسن لمحركات البحث (SEO)",
+            "serviceArea": "منطقة الخدمة (خريطة / قائمة)",
+            "shippingOptions": "خيارات وأسعار الشحن",
+            "socialMediaIntegration": "تكامل وسائل التواصل الاجتماعي",
+            "structure": "الهيكل",
+            "subscriptionModel": "نموذج الاشتراك",
+            "taxCalculation": "حساب الضرائب التلقائي",
+            "teamPage": "صفحة الفريق",
+            "testimonialsSection": "قسم شهادات العملاء",
+            "userAccounts": "حسابات العملاء",
+            "videoGallery": "معرض الفيديو",
+            "whatsappContact": "التواصل عبر واتساب",
+            "wishlists": "قوائم الرغبات"
         },
-        "pro": {
-          "name": "الاحترافية للتحويل",
-          "description": "صفحة هبوط مبنية على البيانات ومحسّنة لتحقيق أقصى قدر من التحويلات."
+        "addOns": {
+            "multilingualSupport": "دعم متعدد اللغات",
+            "liveChat": "تكامل الدردشة المباشرة",
+            "advancedBooking": "نظام حجز متقدم",
+            "secureClientPortal": "بوابة عملاء آمنة",
+            "multiCurrency": "دعم متعدد العملات",
+            "crmIntegration": "تكامل CRM"
+        },
+        "additionalServices": "خدمات إضافية",
+        "hosting": {
+            "title": "جميع الباقات تتطلب استضافة",
+            "price": "(7.95 يورو / شهر أو 89 يورو / سنة)"
+        },
+        "maintenance": {
+            "landingPage": {
+                "title": "صيانة صفحات الهبوط",
+                "description": "نحن نعتني بكل شيء - صيانة المحتوى، التحديثات، الأمان، والنسخ الاحتياطي لصفحة الهبوط الخاصة بك.",
+                "price": "25 يورو / شهر أو 273 يورو / سنة (خصم 9%)"
+            },
+            "website": {
+                "title": "صيانة مواقع الويب",
+                "description": "خدمة كاملة لموقعك متعدد الصفحات. نحن ندير تحديثات المحتوى، عمليات فحص الأمان، والنسخ الاحتياطي المنتظم.",
+                "price": "35 يورو / شهر أو 357 يورو / سنة (خصم 15%)"
+            },
+            "onlineShop": {
+                "title": "صيانة المتاجر الإلكترونية",
+                "description": "دعم متميز لمنصتك للتجارة الإلكترونية. يشمل الأمان، جميع التحديثات، النسخ الاحتياطي، والفحوصات الوظيفية.",
+                "price": "60 يورو / شهر أو 576 يورو / سنة (خصم 20%)"
+            },
+            "seoKickstart": {
+                "title": "باقة الانطلاق في تحسين محركات البحث",
+                "description": "إعداد لمرة واحدة لتحسين موقعك، بما في ذلك البحث عن الكلمات الرئيسية، وتحسين محركات البحث على الصفحة، وإعداد ملف جوجل للأعمال.",
+                "price": "ابتداءً من 350 يورو (رسوم لمرة واحدة)"
+            },
+            "copywriting": {
+                "title": "محتوى احترافي وكتابة إعلانية",
+                "description": "نصوص جذابة وصديقة لمحركات البحث لصفحات موقعك الأساسية، مصممة للتواصل مع جمهورك.",
+                "price": "ابتداءً من 80 يورو / صفحة"
+            }
+        },
+        "emailAndDomain": {
+            "title": "البريد الإلكتروني والنطاق",
+            "description": "النطاق وعنوان البريد الإلكتروني الذي تريده - بسيط واحترافي.",
+            "price": "3 يورو / شهر أو 30 يورو / سنة"
         }
-      },
-      "businessWebsite": {
-        "starter": {
-          "name": "المبتدئ",
-          "description": "حضور احترافي عبر الإنترنت لتأسيس مصداقية علامتك التجارية."
-        },
-        "growth": {
-          "name": "النمو",
-          "description": "موقع ويب شامل بميزات لإشراك جمهورك وتنميته."
-        },
-        "enterprise": {
-          "name": "المؤسسات",
-          "description": "حل ويب قوي وقابل للتطوير بوظائف متقدمة."
-        }
-      },
-      "onlineShop": {
-        "starter": {
-          "name": "متجر مبتدئ",
-          "description": "أطلق متجرك للتجارة الإلكترونية وابدأ في بيع منتجاتك الأولى."
-        },
-        "pro": {
-          "name": "تجارة احترافية",
-          "description": "متجر إلكتروني غني بالميزات مصمم لزيادة المبيعات وولاء العملاء."
-        },
-        "enterprise": {
-          "name": "تجارة المؤسسات",
-          "description": "حل تجارة إلكترونية كامل للمبيعات ذات الحجم الكبير والاحتياجات المعقدة."
-        }
-      },
-      "abTestingSetup": "إعداد اختبار A/B",
-      "abandonedCartRecovery": "استعادة سلة التسوق المتروكة",
-      "accessibilityCompliance": "التوافق مع إمكانية الوصول (WCAG)",
-      "advancedFiltering": "تصفية متقدمة للمنتجات",
-      "advancedSearch": "بحث متقدم عن المنتجات",
-      "analyticsIntegration": "تكامل أدوات التحليل",
-      "blogSection": "قسم المدونة",
-      "bookingSystem": "نظام الحجز / المواعيد",
-      "careersPage": "صفحة الوظائف / فرص العمل",
-      "contentManagementSystem": "نظام إدارة المحتوى (CMS)",
-      "crmIntegration": "تكامل CRM",
-      "customization": "مستوى التخصيص",
-      "customerOrderHistory": "سجل طلبات العميل",
-      "discountCodes": "أكواد الخصم والعروض الترويجية",
-      "emailContact": "نموذج الاتصال عبر البريد الإلكتروني",
-      "eventCalendar": "تقويم الفعاليات",
-      "faqSection": "قسم الأسئلة الشائعة",
-      "giftCardSales": "بيع بطاقات الهدايا",
-      "googleMaps": "تكامل خرائط جوجل",
-      "googleReviewsIndividual": "تقييمات جوجل (فردية)",
-      "googleReviewsStars": "تقييمات جوجل (تقييم بالنجوم)",
-      "guestCheckout": "خيار الدفع كزائر",
-      "heatmapIntegration": "تكامل الخرائط الحرارية",
-      "inventoryManagement": "إدارة المخزون",
-      "languages": "اللغات",
-      "leadMagnet": "أداة جذب العملاء (مثل تنزيل مجاني)",
-      "legalPages": "الصفحات القانونية (الخصوصية، الشروط)",
-      "liveChat": "تكامل الدردشة المباشرة",
-      "liveOpeningHours": "ساعات العمل المباشرة",
-      "loyaltyProgram": "برنامج الولاء",
-      "multicurrencySupport": "دعم متعدد العملات",
-      "newsletterSignup": "الاشتراك في النشرة الإخبارية",
-      "onlineOrderingPickupDelivery": "الطلب عبر الإنترنت (استلام/توصيل)",
-      "onlineStore": "وظائف المتجر الإلكتروني",
-      "orderManagement": "لوحة تحكم إدارة الطلبات",
-      "paymentGateways": "بوابات الدفع",
-      "portfolioGallery": "معرض الأعمال / المشاريع",
-      "pricingPage": "صفحة الأسعار / الرسوم",
-      "productCapacity": "سعة المنتجات",
-      "productImageGalleryVideo": "معرض صور وفيديو للمنتجات",
-      "productReviews": "مراجعات وتقييمات المنتجات",
-      "productVariations": "تنوعات المنتج (مثل الحجم، اللون)",
-      "promotionalBannersAndPopups": "لافتات إعلانية ونوافذ منبثقة",
-      "relatedProducts": "منتجات ذات صلة وبيع إضافي",
-      "responsiveDesign": "تصميم متجاوب",
-      "returnsAndExchangesPortal": "بوابة المرتجعات والاستبدال",
-      "salesAnalytics": "تحليلات المبيعات والعملاء",
-      "savedAddressesAndPayments": "العناوين وطرق الدفع المحفوظة",
-      "secureClientPortal": "بوابة عملاء آمنة",
-      "seoOptimized": "محسن لمحركات البحث (SEO)",
-      "serviceArea": "منطقة الخدمة (خريطة / قائمة)",
-      "shippingOptions": "خيارات وأسعار الشحن",
-      "socialMediaIntegration": "تكامل وسائل التواصل الاجتماعي",
-      "structure": "الهيكل",
-      "subscriptionModel": "نموذج الاشتراك",
-      "taxCalculation": "حساب الضرائب التلقائي",
-      "teamPage": "صفحة الفريق",
-      "testimonialsSection": "قسم شهادات العملاء",
-      "userAccounts": "حسابات العملاء",
-      "videoGallery": "معرض الفيديو",
-      "whatsappContact": "التواصل عبر واتساب",
-      "wishlists": "قوائم الرغبات"
-    },
-    "addOns": {
-      "multilingualSupport": "دعم متعدد اللغات",
-      "liveChat": "تكامل الدردشة المباشرة",
-      "advancedBooking": "نظام حجز متقدم",
-      "secureClientPortal": "بوابة عملاء آمنة",
-      "multiCurrency": "دعم متعدد العملات",
-      "crmIntegration": "تكامل CRM"
-    },
-    "additionalServices": "خدمات إضافية",
-    "hosting": {
-      "title": "جميع الباقات تتطلب استضافة",
-      "price": "(7.95 يورو / شهر أو 89 يورو / سنة)"
-    },
-    "maintenance": {
-      "landingPage": {
-        "title": "صيانة صفحات الهبوط",
-        "description": "نحن نعتني بكل شيء - صيانة المحتوى، التحديثات، الأمان، والنسخ الاحتياطي لصفحة الهبوط الخاصة بك.",
-        "price": "25 يورو / شهر أو 273 يورو / سنة (خصم 9%)"
-      },
-      "website": {
-        "title": "صيانة مواقع الويب",
-        "description": "خدمة كاملة لموقعك متعدد الصفحات. نحن ندير تحديثات المحتوى، عمليات فحص الأمان، والنسخ الاحتياطي المنتظم.",
-        "price": "35 يورو / شهر أو 357 يورو / سنة (خصم 15%)"
-      },
-      "onlineShop": {
-        "title": "صيانة المتاجر الإلكترونية",
-        "description": "دعم متميز لمنصتك للتجارة الإلكترونية. يشمل الأمان، جميع التحديثات، النسخ الاحتياطي، والفحوصات الوظيفية.",
-        "price": "60 يورو / شهر أو 576 يورو / سنة (خصم 20%)"
-      },
-      "seoKickstart": {
-        "title": "باقة الانطلاق في تحسين محركات البحث",
-        "description": "إعداد لمرة واحدة لتحسين موقعك، بما في ذلك البحث عن الكلمات الرئيسية، وتحسين محركات البحث على الصفحة، وإعداد ملف جوجل للأعمال.",
-        "price": "ابتداءً من 350 يورو (رسوم لمرة واحدة)"
-      },
-      "copywriting": {
-        "title": "محتوى احترافي وكتابة إعلانية",
-        "description": "نصوص جذابة وصديقة لمحركات البحث لصفحات موقعك الأساسية، مصممة للتواصل مع جمهورك.",
-        "price": "ابتداءً من 80 يورو / صفحة"
-      }
-    },
-    "emailAndDomain": {
-      "title": "البريد الإلكتروني والنطاق",
-      "description": "النطاق وعنوان البريد الإلكتروني الذي تريده - بسيط واحترافي.",
-      "price": "3 يورو / شهر أو 30 يورو / سنة"
     }
-  }
 }

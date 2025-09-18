@@ -1,6 +1,8 @@
 <template>
     <Head :title="head">
         <link rel="preconnect" :href="customProps.app.url + link" />
+        <link rel="canonical" :href="customProps.app.url + link" />
+        <meta name="description" :content="description" />
     </Head>
     <!-- <SleekLineCursor /> -->
     <Header data-aos="fade-down" data-aos-delay="500" />
@@ -30,6 +32,7 @@ const customProps = page.props as AppPageProps;
 const Footer = defineAsyncComponent(() => import('@/pages/Footer.vue'));
 defineProps<{
     head?: string;
+    description?: string;
     link: string;
 }>();
 </script>
