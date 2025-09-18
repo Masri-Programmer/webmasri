@@ -40,16 +40,28 @@ export interface User {
     updated_at: string;
 }
 export interface ServicePackage {
-    // --- Core Properties (likely always present) ---
+    // --- Core Properties ---
     structure: string;
     flexibility: string;
     languages: string;
     responsiveDesign: boolean;
 
     // --- Optional Feature Properties ---
+
+    // Technical & Foundational
     seoOptimized?: boolean;
     contentManagementSystem?: boolean;
-    onlineStore?: boolean;
+    analyticsIntegration?: boolean;
+    accessibilityCompliance?: boolean;
+    salesAnalytics?: boolean;
+    crmIntegration?: boolean; // New
+
+    // Business & Informational Pages
+    legalPages?: boolean;
+    teamPage?: boolean;
+    careersPage?: boolean;
+    pricingPage?: boolean;
+    serviceArea?: boolean;
 
     // Contact & Location
     googleMaps?: boolean;
@@ -60,24 +72,57 @@ export interface ServicePackage {
     // Content & Engagement
     blogSection?: boolean;
     testimonialsSection?: boolean;
-    googleReviewsStars?: boolean;
-    googleReviewsIndividual?: boolean;
-    userAccounts?: boolean;
-    bookingSystem?: boolean;
+    portfolioGallery?: boolean;
+    videoGallery?: boolean;
+    faqSection?: boolean;
+    eventCalendar?: boolean;
+
+    // Marketing & Lead Generation
+    newsletterSignup?: boolean;
+    socialMediaIntegration?: boolean;
+    leadMagnet?: boolean;
     liveChat?: boolean;
+    promotionalBannersAndPopups?: boolean; // New
+
+    // User & Client Features
+    userAccounts?: boolean;
+    secureClientPortal?: boolean;
+    bookingSystem?: boolean;
+    orderManagement?: boolean;
+    customerOrderHistory?: boolean;
+    savedAddressesAndPayments?: boolean; // New
+    returnsAndExchangesPortal?: boolean; // New
 
     // E-commerce
+    onlineStore?: boolean;
+    onlineOrderingPickupDelivery?: boolean;
+    guestCheckout?: boolean; // New
+    inventoryManagement?: boolean;
+    productVariations?: boolean;
     productReviews?: boolean;
+    productImageGalleryVideo?: boolean; // New
     advancedFiltering?: boolean;
+    advancedSearch?: boolean;
+
+    // E-commerce: Payments & Shipping
+    paymentGateways?: boolean;
+    shippingOptions?: boolean;
+    taxCalculation?: boolean;
+    multicurrencySupport?: boolean;
+
+    // E-commerce: Marketing & Sales
     discountCodes?: boolean;
     abandonedCartRecovery?: boolean;
     wishlists?: boolean;
+    relatedProducts?: boolean;
     subscriptionModel?: boolean;
+    giftCardSales?: boolean;
+    loyaltyProgram?: boolean;
 
-    // Technical
-    analyticsIntegration?: boolean;
+    // Review Integration
+    googleReviewsStars?: boolean;
+    googleReviewsIndividual?: boolean;
 }
-
 export interface ServiceCategory {
     title: string;
     priceRange: string;

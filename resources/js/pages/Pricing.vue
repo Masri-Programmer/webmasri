@@ -2,7 +2,6 @@
 import Layout from '@/layouts/Layout.vue';
 import { pricing } from '@/routes';
 import { useI18n } from 'vue-i18n';
-// Shadcn-vue & Lucide Icons
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -11,7 +10,14 @@ import { CheckCircle2, Clock, Globe, Mail, MapPin, MessageCircle, ShoppingCart, 
 import { ref } from 'vue';
 
 const { t } = useI18n();
-
+const coreWebsiteFeatures = {
+    responsiveDesign: true,
+    seoOptimized: true,
+    legalPages: true,
+    analyticsIntegration: true,
+    emailContact: true,
+    contentManagementSystem: true,
+};
 // --- DATA STRUCTURE ---
 const pricingData: Record<string, ServiceCategory> = {
     landingPage: {
@@ -32,6 +38,12 @@ const pricingData: Record<string, ServiceCategory> = {
                 testimonialsSection: false,
                 analyticsIntegration: false,
                 liveChat: false,
+                // --- New Features ---
+                legalPages: true,
+                faqSection: false,
+                socialMediaIntegration: false,
+                newsletterSignup: false,
+                accessibilityCompliance: false,
             },
             {
                 structure: 'onePage',
@@ -47,6 +59,12 @@ const pricingData: Record<string, ServiceCategory> = {
                 testimonialsSection: true,
                 analyticsIntegration: true,
                 liveChat: true,
+                // --- New Features ---
+                legalPages: true,
+                faqSection: true,
+                socialMediaIntegration: true,
+                newsletterSignup: true,
+                accessibilityCompliance: true,
             },
             {
                 structure: 'fullyCustomizable',
@@ -62,12 +80,18 @@ const pricingData: Record<string, ServiceCategory> = {
                 testimonialsSection: true,
                 analyticsIntegration: true,
                 liveChat: true,
+                // --- New Features ---
+                legalPages: true,
+                faqSection: true,
+                socialMediaIntegration: true,
+                newsletterSignup: true,
+                accessibilityCompliance: true,
             },
         ],
     },
     website: {
         title: 'Website',
-        priceRange: '600 Euro to 5,000 Euro',
+        priceRange: '€600 - €5,000+',
         packages: [
             {
                 structure: 'multiplePages',
@@ -82,6 +106,12 @@ const pricingData: Record<string, ServiceCategory> = {
                 whatsappContact: false,
                 userAccounts: false,
                 bookingSystem: false,
+                // --- New Features ---
+                legalPages: true,
+                faqSection: false,
+                portfolioGallery: false,
+                teamPage: false,
+                secureClientPortal: false,
             },
             {
                 structure: 'multiplePages',
@@ -96,6 +126,12 @@ const pricingData: Record<string, ServiceCategory> = {
                 whatsappContact: true,
                 userAccounts: true,
                 bookingSystem: false,
+                // --- New Features ---
+                legalPages: true,
+                faqSection: true,
+                portfolioGallery: true,
+                teamPage: false,
+                secureClientPortal: true,
             },
             {
                 structure: 'fullyCustomizable',
@@ -110,6 +146,12 @@ const pricingData: Record<string, ServiceCategory> = {
                 whatsappContact: true,
                 userAccounts: true,
                 bookingSystem: true,
+                // --- New Features ---
+                legalPages: true,
+                faqSection: true,
+                portfolioGallery: true,
+                teamPage: true,
+                secureClientPortal: true,
             },
         ],
     },
@@ -124,12 +166,25 @@ const pricingData: Record<string, ServiceCategory> = {
                 languages: '1',
                 responsiveDesign: true,
                 seoOptimized: true,
+                // --- Core E-commerce Features ---
+                userAccounts: true,
+                guestCheckout: true,
+                inventoryManagement: true,
+                paymentGateways: true,
+                shippingOptions: true,
+                taxCalculation: true,
+                orderManagement: true,
+                // --- Standard E-commerce Features ---
                 productReviews: false,
                 advancedFiltering: false,
-                discountCodes: false,
+                discountCodes: true, // Often included in basic setups
                 wishlists: false,
+                // --- Advanced E-commerce Features ---
                 abandonedCartRecovery: false,
                 subscriptionModel: false,
+                relatedProducts: false,
+                returnsAndExchangesPortal: false,
+                salesAnalytics: false,
             },
             {
                 onlineStore: true,
@@ -138,12 +193,29 @@ const pricingData: Record<string, ServiceCategory> = {
                 languages: '1+',
                 responsiveDesign: true,
                 seoOptimized: true,
+                // --- Core E-commerce Features ---
+                userAccounts: true,
+                guestCheckout: true,
+                inventoryManagement: true,
+                paymentGateways: true,
+                shippingOptions: true,
+                taxCalculation: true,
+                orderManagement: true,
+                customerOrderHistory: true,
+                savedAddressesAndPayments: true,
+                // --- Standard E-commerce Features ---
                 productReviews: true,
                 advancedFiltering: true,
                 discountCodes: true,
                 wishlists: true,
+                productVariations: true,
+                productImageGalleryVideo: true,
+                // --- Advanced E-commerce Features ---
                 abandonedCartRecovery: true,
                 subscriptionModel: false,
+                relatedProducts: true,
+                returnsAndExchangesPortal: false,
+                salesAnalytics: true,
             },
             {
                 onlineStore: true,
@@ -152,12 +224,32 @@ const pricingData: Record<string, ServiceCategory> = {
                 languages: '1+',
                 responsiveDesign: true,
                 seoOptimized: true,
+                // --- Core E-commerce Features ---
+                userAccounts: true,
+                guestCheckout: true,
+                inventoryManagement: true,
+                paymentGateways: true,
+                shippingOptions: true,
+                taxCalculation: true,
+                orderManagement: true,
+                customerOrderHistory: true,
+                savedAddressesAndPayments: true,
+                // --- Standard E-commerce Features ---
                 productReviews: true,
                 advancedFiltering: true,
                 discountCodes: true,
                 wishlists: true,
+                productVariations: true,
+                productImageGalleryVideo: true,
+                // --- Advanced E-commerce Features ---
                 abandonedCartRecovery: true,
                 subscriptionModel: true,
+                relatedProducts: true,
+                returnsAndExchangesPortal: true,
+                salesAnalytics: true,
+                loyaltyProgram: true,
+                multicurrencySupport: true,
+                crmIntegration: true,
             },
         ],
     },
@@ -169,45 +261,70 @@ const pricingData: Record<string, ServiceCategory> = {
                 structure: 'onePage',
                 flexibility: 'infoAndBranding',
                 languages: '1',
+                responsiveDesign: true, 
+                onlineStore: true,
                 googleMaps: true,
                 emailContact: true,
                 whatsappContact: true,
                 googleReviewsStars: true,
                 googleReviewsIndividual: false,
                 liveOpeningHours: false,
-                onlineStore: true,
-                responsiveDesign: false,
+                inventoryManagement: true,
+                paymentGateways: true,
+                shippingOptions: true,
+                taxCalculation: true,
+                orderManagement: true,
+                userAccounts: true,
+                discountCodes: false,
             },
             {
                 structure: 'multiplePages',
                 flexibility: 'fullyCustomizable',
                 languages: '1+',
+                responsiveDesign: true,
+                onlineStore: true,
                 googleMaps: true,
                 emailContact: true,
                 whatsappContact: true,
                 googleReviewsStars: true,
                 googleReviewsIndividual: true,
                 liveOpeningHours: true,
-                onlineStore: true,
-                responsiveDesign: false,
+                inventoryManagement: true,
+                paymentGateways: true,
+                shippingOptions: true,
+                taxCalculation: true,
+                orderManagement: true,
+                userAccounts: true,
+                discountCodes: true,
+                productReviews: true,
+                wishlists: true,
             },
             {
                 structure: 'fullyCustomizable',
                 flexibility: 'fullyCustomizable',
                 languages: '1+',
+                responsiveDesign: true,
+                onlineStore: true,
                 googleMaps: true,
                 emailContact: true,
                 whatsappContact: true,
                 googleReviewsStars: true,
                 googleReviewsIndividual: true,
                 liveOpeningHours: true,
-                onlineStore: true,
-                responsiveDesign: false,
+                inventoryManagement: true,
+                paymentGateways: true,
+                shippingOptions: true,
+                taxCalculation: true,
+                orderManagement: true,
+                userAccounts: true,
+                discountCodes: true,
+                productReviews: true,
+                wishlists: true,
+                abandonedCartRecovery: true,
             },
         ],
     },
 };
-
 const additionalServices = {
     hosting: {
         title: 'hosting.title',
@@ -215,14 +332,40 @@ const additionalServices = {
     },
     maintenance: [
         {
-            title: 'maintenance.selfService.title',
-            description: 'maintenance.selfService.description',
-            price: 'maintenance.selfService.price',
+            key: 'landingPage',
+            title: 'pricing.maintenance.landingPage.title',
+            description: 'pricing.maintenance.landingPage.description',
+            price: 'pricing.maintenance.landingPage.price',
         },
         {
-            title: 'maintenance.fullService.title',
-            description: 'maintenance.fullService.description',
-            price: 'maintenance.fullService.price',
+            key: 'website',
+            title: 'pricing.maintenance.website.title',
+            description: 'pricing.maintenance.website.description',
+            price: 'pricing.maintenance.website.price',
+        },
+        {
+            key: 'onlineShop',
+            title: 'pricing.maintenance.onlineShop.title',
+            description: 'pricing.maintenance.onlineShop.description',
+            price: 'pricing.maintenance.onlineShop.price',
+        },
+        {
+            key: 'onlineShopCms',
+            title: 'pricing.maintenance.onlineShopCms.title',
+            description: 'pricing.maintenance.onlineShopCms.description',
+            price: 'pricing.maintenance.onlineShopCms.price',
+        },
+        {
+            key: 'seoKickstart',
+            title: 'pricing.maintenance.seoKickstart.title',
+            description: 'pricing.maintenance.seoKickstart.description',
+            price: 'pricing.maintenance.seoKickstart.price',
+        },
+        {
+            key: 'copywriting',
+            title: 'pricing.maintenance.copywriting.title',
+            description: 'pricing.maintenance.copywriting.description',
+            price: 'pricing.maintenance.copywriting.price',
         },
     ],
     emailAndDomain: {
@@ -231,7 +374,6 @@ const additionalServices = {
         price: 'emailAndDomain.price',
     },
 };
-
 // --- COMPONENT LOGIC ---
 const selectedCategory = ref('website');
 
@@ -433,13 +575,13 @@ const isFeaturedCategory = (categoryKey: string) => {
                     </Card>
 
                     <!-- Maintenance Options -->
-                    <Card v-for="(maintenance, index) in additionalServices.maintenance" :key="index" class="text-center">
+                    <Card v-for="service in additionalServices.maintenance" :key="service.key" class="text-center">
                         <CardHeader>
-                            <CardTitle class="text-lg">{{ t(`pricing.${maintenance.title}`) }}</CardTitle>
+                            <CardTitle class="text-lg">{{ t(service.title) }}</CardTitle>
                         </CardHeader>
                         <CardContent>
-                            <p class="mb-2 text-xs text-muted-foreground">{{ t(`pricing.${maintenance.description}`) }}</p>
-                            <p class="text-sm font-semibold">{{ t(`pricing.${maintenance.price}`) }}</p>
+                            <p class="mb-2 text-xs text-muted-foreground">{{ t(service.description) }}</p>
+                            <p class="text-sm font-semibold">{{ t(service.price) }}</p>
                         </CardContent>
                     </Card>
                 </div>

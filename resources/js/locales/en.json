@@ -62,7 +62,7 @@
         "globeTitle": "Globe"
     },
     "projects": {
-        "title": "Projects",
+        "title": "Highlighted Projects",
         "description": ""
     },
     "statistics": {
@@ -809,56 +809,108 @@
         "onlineShopExamples": "Designed for businesses selling products online, from small boutiques to larger retailers.",
         "onlineShopCMS": "Online Shop with CMS",
         "onlineShopCMSExamples": "For stores that use content marketing, a blog, and informational pages to drive sales.",
-
-        "packages": {
-            "structure": "Structure",
-            "onePage": "One page, simple structure",
-            "multiplePages": "Multiple pages, flexible",
-            "fullyCustomizable": "Fully customizable",
-            "flexibility": "Flexibility",
-            "infoAndBranding": "Information, logo, images, colors",
-            "languages": "Languages",
-            "googleMaps": "Google Maps",
-            "emailContact": "Email Contact Form",
-            "whatsappContact": "WhatsApp Contact Form",
-            "googleReviewsStars": "Google Reviews (Star Rating)",
-            "googleReviewsIndividual": "Google Reviews (Show individual reviews)",
-            "liveOpeningHours": "Live Opening Hours",
-            "onlineStore": "Online Shop",
-            "responsiveDesign": "Responsive Design",
-            "seoOptimized": "SEO Optimized",
-            "contentManagementSystem": "Content Management System (CMS)",
-            "blogSection": "Blog Section",
-            "testimonialsSection": "Testimonials Section",
-            "analyticsIntegration": "Analytics Integration",
-            "liveChat": "Live Chat Integration",
-            "userAccounts": "Customer Accounts",
-            "bookingSystem": "Booking / Appointment System",
-            "productReviews": "Product Reviews & Ratings",
-            "advancedFiltering": "Advanced Product Filtering",
-            "discountCodes": "Discount Codes & Promotions",
-            "abandonedCartRecovery": "Abandoned Cart Recovery",
-            "wishlists": "Wishlists",
-            "subscriptionModel": "Subscription Model"
-        },
-
+            "packages": {
+                "structure": "Structure",
+                "onePage": "One page, simple structure",
+                "multiplePages": "Multiple pages, flexible",
+                "fullyCustomizable": "Fully customizable",
+                "flexibility": "Flexibility",
+                "infoAndBranding": "Information, logo, images, colors",
+                "abandonedCartRecovery": "Abandoned Cart Recovery",
+                "accessibilityCompliance": "Accessibility Compliance (WCAG)",
+                "advancedFiltering": "Advanced Product Filtering",
+                "advancedSearch": "Advanced Product Search",
+                "analyticsIntegration": "Analytics Integration",
+                "blogSection": "Blog Section",
+                "bookingSystem": "Booking / Appointment System",
+                "careersPage": "Careers / Job Postings",
+                "contentManagementSystem": "Content Management System (CMS)",
+                "crmIntegration": "CRM Integration",
+                "customerOrderHistory": "Customer Order History",
+                "discountCodes": "Discount Codes & Promotions",
+                "emailContact": "Email Contact Form",
+                "eventCalendar": "Event Calendar",
+                "faqSection": "FAQ Section",
+                "giftCardSales": "Gift Card Sales",
+                "googleMaps": "Google Maps",
+                "googleReviewsIndividual": "Google Reviews (Show individual reviews)",
+                "googleReviewsStars": "Google Reviews (Star Rating)",
+                "guestCheckout": "Guest Checkout Option",
+                "inventoryManagement": "Inventory Management",
+                "languages": "Languages",
+                "leadMagnet": "Lead Magnet (e.g., Free Download)",
+                "legalPages": "Legal Pages (Privacy, Terms)",
+                "liveChat": "Live Chat Integration",
+                "liveOpeningHours": "Live Opening Hours",
+                "loyaltyProgram": "Loyalty Program Information",
+                "multicurrencySupport": "Multi-Currency Support",
+                "newsletterSignup": "Newsletter Signup",
+                "onlineOrderingPickupDelivery": "Online Ordering (Pickup/Delivery)",
+                "onlineStore": "Online Shop",
+                "orderManagement": "Order Management Dashboard",
+                "paymentGateways": "Multiple Payment Gateways (Stripe, PayPal, etc.)",
+                "portfolioGallery": "Portfolio / Project Gallery",
+                "pricingPage": "Pricing / Rates Page",
+                "productImageGalleryVideo": "Product Image Gallery & Video Support",
+                "productReviews": "Product Reviews & Ratings",
+                "productVariations": "Product Variations (e.g., Size, Color)",
+                "promotionalBannersAndPopups": "Promotional Banners & Pop-ups",
+                "relatedProducts": "Related Products & Upsells",
+                "responsiveDesign": "Responsive Design",
+                "returnsAndExchangesPortal": "Returns & Exchanges Portal",
+                "salesAnalytics": "Sales & Customer Analytics",
+                "savedAddressesAndPayments": "Saved Addresses & Payment Details",
+                "secureClientPortal": "Secure Client Portal (History, Files)",
+                "seoOptimized": "SEO Optimized",
+                "serviceArea": "Service Area Map / List",
+                "shippingOptions": "Shipping Options & Rate Calculation",
+                "socialMediaIntegration": "Social Media Feed Integration",
+                "subscriptionModel": "Subscription Model",
+                "taxCalculation": "Automatic Tax Calculation",
+                "teamPage": "Team Page",
+                "testimonialsSection": "Testimonials Section",
+                "userAccounts": "Customer Accounts",
+                "videoGallery": "Video Gallery / Testimonials",
+                "whatsappContact": "WhatsApp Contact Form",
+                "wishlists": "Wishlists"
+            },
         "additionalServices": "Additional Services",
         "hosting": {
             "title": "All packages require hosting",
             "price": "(€7.95 / month or €89 / year)"
         },
-        "maintenance": {
-            "selfService": {
-                "title": "Maintenance by you",
-                "description": "You maintain content yourself - we show you how.",
-                "price": "€20 / month or €200 / year for landing pages"
+            "maintenance": {
+                "landingPage": {
+                    "title": "All-round carefree maintenance for Landing Pages",
+                    "description": "We take care of everything - content maintenance, updates, security, and backups for your landing page.",
+                    "price": "€25 / month or €273 / year (save 9%)"
+                },
+                "website": {
+                    "title": "All-round carefree maintenance for Websites",
+                    "description": "Complete service for your multi-page website. We handle content updates, plugin management, security scans, and regular backups.",
+                    "price": "€35 / month or €357 / year (save 15%)"
+                },
+                "onlineShop": {
+                    "title": "All-round carefree maintenance for Online Shops",
+                    "description": "Premium support for your e-commerce platform. Includes security, all updates (core, plugins), backups, and functional checks of the ordering process.",
+                    "price": "€60 / month or €576 / year (save 20%)"
+                },
+                "onlineShopCms": {
+                    "title": "All-round carefree maintenance for Online Shops with CMS",
+                    "description": "Premium support for your shop and CMS. Includes security, all updates, backups, and functional checks for products and orders.",
+                    "price": "€80 / month or €720 / year (save 25%)"
+                },
+                "seoKickstart": {
+                    "title": "SEO Kickstart Package",
+                    "description": "A one-time setup to optimize your site for search engines, including keyword research, on-page SEO, and Google Business Profile setup.",
+                    "price": "Starting from €350 (one-time fee)"
+                },
+                "copywriting": {
+                    "title": "Professional Content & Copywriting",
+                    "description": "Engaging, SEO-friendly text for your core website pages, crafted to connect with your audience and improve your professional image.",
+                    "price": "Starting from €80 / page"
+                }
             },
-            "fullService": {
-                "title": "All-round carefree maintenance",
-                "description": "We take care of everything - content maintenance, updates, security.",
-                "price": "€25 / month or €250 / year for landing pages"
-            }
-        },
         "emailAndDomain": {
             "title": "Email & Domain",
             "description": "Your desired domain & email address - simple and professional.",

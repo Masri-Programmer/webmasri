@@ -837,41 +837,108 @@
         "website": "Website",
         "onlineShop": "Online-Shop",
         "onlineShopCMS": "Online-Shop mit CMS",
-
         "packages": {
             "structure": "Struktur",
-            "onePage": "Eine Seite, einfache Struktur",
+            "onePage": "One-Page, einfache Struktur",
             "multiplePages": "Mehrere Seiten, flexibel",
             "fullyCustomizable": "Vollständig anpassbar",
             "flexibility": "Flexibilität",
             "infoAndBranding": "Informationen, Logo, Bilder, Farben",
-            "languages": "Sprachen",
-            "googleMaps": "Google Maps",
+            "abandonedCartRecovery": "Warenkorb-Wiederherstellung",
+            "accessibilityCompliance": "Barrierefreiheit (WCAG)",
+            "advancedFiltering": "Erweiterte Produktfilterung",
+            "advancedSearch": "Erweiterte Produktsuche",
+            "analyticsIntegration": "Analyse-Integration",
+            "blogSection": "Blog-Bereich",
+            "bookingSystem": "Buchungs- / Terminsystem",
+            "careersPage": "Karriere / Stellenangebote",
+            "contentManagementSystem": "Content-Management-System (CMS)",
+            "crmIntegration": "CRM-Integration",
+            "customerOrderHistory": "Bestellhistorie des Kunden",
+            "discountCodes": "Rabattcodes & Aktionen",
             "emailContact": "E-Mail-Kontaktformular",
-            "whatsappContact": "WhatsApp-Kontaktformular",
-            "googleReviewsStars": "Google-Bewertungen (Sterne-Rating)",
-            "googleReviewsIndividual": "Google-Bewertungen (Einzelbewertungen anzeigen)",
+            "eventCalendar": "Veranstaltungskalender",
+            "faqSection": "FAQ-Bereich",
+            "giftCardSales": "Verkauf von Geschenkgutscheinen",
+            "googleMaps": "Google Maps",
+            "googleReviewsIndividual": "Google-Bewertungen (Einzelne Bewertungen)",
+            "googleReviewsStars": "Google-Bewertungen (Sternebewertung)",
+            "guestCheckout": "Gastbestellung",
+            "inventoryManagement": "Bestandsverwaltung",
+            "languages": "Sprachen",
+            "leadMagnet": "Lead-Magnet (z.B. kostenloser Download)",
+            "legalPages": "Rechtliche Seiten (Datenschutz, AGB)",
+            "liveChat": "Live-Chat-Integration",
             "liveOpeningHours": "Live-Öffnungszeiten",
-            "onlineStore": "Online-Shop"
+            "loyaltyProgram": "Informationen zum Treueprogramm",
+            "multicurrencySupport": "Unterstützung für mehrere Währungen",
+            "newsletterSignup": "Newsletter-Anmeldung",
+            "onlineOrderingPickupDelivery": "Online-Bestellung (Abholung/Lieferung)",
+            "onlineStore": "Online-Shop",
+            "orderManagement": "Bestellverwaltungs-Dashboard",
+            "paymentGateways": "Mehrere Zahlungs-Gateways (Stripe, PayPal, etc.)",
+            "portfolioGallery": "Portfolio / Projektgalerie",
+            "pricingPage": "Preise / Tarife Seite",
+            "productImageGalleryVideo": "Produkt-Bildergalerie & Video-Unterstützung",
+            "productReviews": "Produktbewertungen & -rezensionen",
+            "productVariations": "Produktvarianten (z.B. Größe, Farbe)",
+            "promotionalBannersAndPopups": "Werbebanner & Pop-ups",
+            "relatedProducts": "Ähnliche Produkte & Upsells",
+            "responsiveDesign": "Responsive Design",
+            "returnsAndExchangesPortal": "Retouren- & Umtauschportal",
+            "salesAnalytics": "Verkaufs- & Kundenanalysen",
+            "savedAddressesAndPayments": "Gespeicherte Adressen & Zahlungsdetails",
+            "secureClientPortal": "Sicheres Kundenportal (Verlauf, Dateien)",
+            "seoOptimized": "SEO-optimiert",
+            "serviceArea": "Servicebereich (Karte / Liste)",
+            "shippingOptions": "Versandoptionen & Tarifberechnung",
+            "socialMediaIntegration": "Social-Media-Feed-Integration",
+            "subscriptionModel": "Abonnement-Modell",
+            "taxCalculation": "Automatische Steuerberechnung",
+            "teamPage": "Team-Seite",
+            "testimonialsSection": "Kundenstimmen",
+            "userAccounts": "Kundenkonten",
+            "videoGallery": "Videogalerie / Testimonials",
+            "whatsappContact": "WhatsApp-Kontaktformular",
+            "wishlists": "Wunschlisten"
         },
-
         "additionalServices": "Zusätzliche Services",
         "hosting": {
             "title": "Alle Pakete benötigen Hosting",
             "price": "(7,95 € / Monat oder 89 € / Jahr)"
         },
-        "maintenance": {
-            "selfService": {
-                "title": "Wartung durch Sie",
-                "description": "Sie pflegen Inhalte selbst - wir zeigen Ihnen wie.",
-                "price": "20 € / Monat oder 200 € / Jahr für Landing Pages"
+            "maintenance": {
+                "landingPage": {
+                    "title": "Rundum-sorglos-Wartung für Landingpages",
+                    "description": "Wir kümmern uns um alles – Inhaltspflege, Updates, Sicherheit und Backups für Ihre Landingpage.",
+                    "price": "25 € / Monat oder 273 € / Jahr (9 % sparen)"
+                },
+                "website": {
+                    "title": "Rundum-sorglos-Wartung für Websites",
+                    "description": "Komplettservice für Ihre mehrseitige Website. Wir übernehmen Inhaltspflege, Plugin-Management, Sicherheitsscans und regelmäßige Backups.",
+                    "price": "35 € / Monat oder 357 € / Jahr (15 % sparen)"
+                },
+                "onlineShop": {
+                    "title": "Rundum-sorglos-Wartung für Onlineshops",
+                    "description": "Premium-Support für Ihre E-Commerce-Plattform. Umfasst Sicherheit, alle Updates (Core, Plugins), Backups und Funktionsprüfungen des Bestellprozesses.",
+                    "price": "60 € / Monat oder 576 € / Jahr (20 % sparen)"
+                },
+                "onlineShopCms": {
+                    "title": "Rundum-sorglos-Wartung für Onlineshops mit CMS",
+                    "description": "Premium-Support für Ihren Shop und Ihr CMS. Umfasst Sicherheit, alle Updates, Backups und Funktionsprüfungen für Produkte und Bestellungen.",
+                    "price": "80 € / Monat oder 720 € / Jahr (25 % sparen)"
+                },
+                "seoKickstart": {
+                    "title": "SEO Kickstart-Paket",
+                    "description": "Einmalige Einrichtung zur Optimierung Ihrer Website für Suchmaschinen, einschließlich Keyword-Recherche, On-Page-SEO und Einrichtung des Google Unternehmensprofils.",
+                    "price": "Ab 350 € (einmalig)"
+                },
+                "copywriting": {
+                    "title": "Professionelle Inhalte & Werbetexte",
+                    "description": "Ansprechende, SEO-freundliche Texte für Ihre wichtigsten Webseiten, erstellt, um Ihre Zielgruppe zu erreichen und Ihr professionelles Image zu stärfen.",
+                    "price": "Ab 80 € / Seite"
+                }
             },
-            "fullService": {
-                "title": "Rundum-Sorglos-Wartung",
-                "description": "Wir kümmern uns um alles - Inhaltspflege, Updates, Sicherheit.",
-                "price": "25 € / Monat oder 250 € / Jahr für Landing Pages"
-            }
-        },
         "emailAndDomain": {
             "title": "E-Mail & Domain",
             "description": "Ihre Wunsch-Domain & E-Mail-Adresse - einfach und professionell.",
