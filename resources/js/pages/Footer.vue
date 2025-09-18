@@ -138,8 +138,8 @@ const socialLinks = computed(() => [
                         :aria-label="social.ariaLabel"
                         class="inline-flex h-10 w-10 items-center justify-center rounded-md text-muted-foreground ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                     >
-                          <component v-if="!social.isSvg" :is="(social.icon as any)" class="h-5 w-5" />
-                        <img v-else :src="social.icon as any" class="h-5 w-5" :alt="social.name" />
+                          <component v-if="!social.isSvg" :is="(social.icon as any)" class="h-4 w-4" />
+                        <img v-else :src="social.icon as any" class="h-4 w-4" :alt="social.name" />
                     </a>
                     <AppearanceIcon />
                     <LanguageSwitch />

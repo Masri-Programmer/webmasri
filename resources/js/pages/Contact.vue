@@ -16,6 +16,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
+import Layout from '@/layouts/Layout.vue'
 
 const { t } = useI18n()
 const toast = useToast()
@@ -29,7 +30,6 @@ const plans = [
     { id: 'shop_cms', titleKey: 'plans.shop_cms.title', descriptionKey: 'plans.shop_cms.description' },
 ]
 
-// 3. Set up the form using Inertia's helper for state management, validation, and submission
 const form = useForm({
     plan: null as Plan | null,
     name: '',
@@ -54,7 +54,7 @@ const isPlanSelected = computed(() => !!form.plan)
 
 <template>
   <Layout :head="t('contact.title')" :link="contact.url()" :description="t('contact.description')">
- <div class="container mx-auto max-w-4xl py-12 md:py-16">
+ <!-- <div class="container mx-auto max-w-4xl py-12 md:py-16">
         <Card class="w-full">
             <CardHeader class="text-center">
                 <CardTitle class="text-3xl font-bold">{{ t('title') }}</CardTitle>
@@ -126,6 +126,6 @@ const isPlanSelected = computed(() => !!form.plan)
                 </form>
             </CardContent>
         </Card>
-    </div>
+    </div> -->
   </Layout>
 </template>
