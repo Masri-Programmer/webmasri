@@ -876,23 +876,23 @@
         "websiteExamples": "Ideal für Dienstleister, Unternehmensseiten, Ärzte oder Restaurants, die mehrere Seiten und einen Blog benötigen.",
         "onlineShop": "Onlineshop",
         "onlineShopExamples": "Konzipiert für Unternehmen, die Produkte online verkaufen, von kleinen Boutiquen bis hin zu größeren Einzelhändlern.",
-        "featureValues": {
-            "templateBased": "Auf Vorlage basierend",
-            "customDesign": "Individuelles Design",
-            "strategyAndCustom": "Strategie & Individuelles Design",
-            "upTo5Pages": "Bis zu 5 Seiten",
-            "upTo15Pages": "Bis zu 15 Seiten",
-            "unlimitedPages": "Unbegrenzte Seitenanzahl",
-            "brandingAndContent": "Branding & Inhalte",
-            "fullyCustomizable": "Vollständig anpassbar",
-            "upTo50Products": "Bis zu 50 Produkte",
-            "upTo500Products": "Bis zu 500 Produkte",
-            "unlimitedProducts": "Unbegrenzte Produktanzahl",
-            "standardPayments": "Standard (Stripe, PayPal)",
-            "standardPaymentsKlarna": "Standard + Klarna",
-            "customIntegrations": "Individuelle Integrationen"
-        },
         "packages": {
+            "featureValues": {
+                "templateBased": "Auf Vorlage basierend",
+                "customDesign": "Individuelles Design",
+                "strategyAndCustom": "Strategie & Individuelles Design",
+                "upTo5Pages": "Bis zu 5 Seiten",
+                "upTo15Pages": "Bis zu 15 Seiten",
+                "unlimitedPages": "Unbegrenzte Seitenanzahl",
+                "brandingAndContent": "Branding & Inhalte",
+                "fullyCustomizable": "Vollständig anpassbar",
+                "upTo50Products": "Bis zu 50 Produkte",
+                "upTo500Products": "Bis zu 500 Produkte",
+                "unlimitedProducts": "Unbegrenzte Produktanzahl",
+                "standardPayments": "Standard (Stripe, PayPal)",
+                "standardPaymentsKlarna": "Standard + Klarna",
+                "customIntegrations": "Individuelle Integrationen"
+            },
             "landingPage": {
                 "starter": {
                     "name": "Starter",
@@ -1043,6 +1043,39 @@
             "description": "Ihre Wunschdomain & E-Mail-Adresse – einfach und professionell.",
             "price": "3 € / Monat oder 30 € / Jahr"
         }
+    },
+     "pricingSummary": {
+    "tagline": "Transparente Preise",
+    "title": "Ein Plan für jeden Bedarf",
+    "description": "Wählen Sie den perfekten Ausgangspunkt für Ihr Projekt. Unsere Pläne sind flexibel, leistungsstark und auf Ihre Ziele zugeschnitten.",
+    "mostPopular": "Am beliebtesten",
+    "from": "Ab",
+    "ctaButton": "Mehr erfahren",
+    "landingPage": {
+      "title": "Landingpage",
+      "description": "Perfekt für einzelne Produkte, Veranstaltungen oder Marketingkampagnen, die eine gezielte Botschaft benötigen."
+    },
+    "businessWebsite": {
+      "title": "Unternehmenswebsite",
+      "description": "Eine ideale Lösung für kleine Unternehmen und Fachleute, die eine vollständige Online-Präsenz benötigen."
+    },
+    "onlineShop": {
+      "title": "Onlineshop",
+      "description": "Alles, was Sie brauchen, um Ihr E-Commerce-Geschäft zu starten und online Produkte zu verkaufen."
+    },
+    "features": {
+      "singlePage": "Fokussiertes Ein-Seiten-Layout",
+      "contactForm": "Integriertes Kontaktformular",
+      "seoOptimized": "SEO-optimierte Struktur",
+      "fastLoading": "Für Geschwindigkeit optimiert",
+      "multiPage": "Bis zu 5 Seiten inklusive",
+      "cms": "Einfache Inhaltsverwaltung (CMS)",
+      "blogSetup": "Integrierter Blog-Bereich",
+      "customDesign": "Professionelles individuelles Design",
+      "productManagement": "Vollständige Produktverwaltung",
+      "securePayments": "Sichere Zahlungsgateways",
+      "inventorySystem": "Bestandsverwaltung",
+      "customerAccounts": "Kundenkonten & Bestellungen"
     },
     "faqSummary": {
         "title": "Häufig gestellte Fragen",
