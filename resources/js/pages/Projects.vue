@@ -14,9 +14,9 @@
         >
             <CarouselContent class="-ml-2 md:-ml-4">
                 <CarouselItem v-for="project in cardData" :key="project.title" class="pl-2 md:basis-1/2 md:pl-4 lg:basis-1/3 xl:basis-1/4">
-                    <div class="p-1">
-                        <Card class="h-full">
-                            <CardContent class="flex flex-col p-4">
+                    <div class="p-1 h-full">
+                        <Card class="h-full flex flex-col">
+                            <CardContent class="flex flex-1 flex-col p-4">
                                 <a :href="project.link" target="_blank" rel="noopener noreferrer">
                                     <img
                                         :src="project.image"
@@ -62,9 +62,30 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import hk from '@/images/hk-energieberatung.de.png';
+import masriBlog from '@/images/masriblog.png';
+import tracker from '@/images/tracker.png';
+import piepjack from '@/images/piepjack.png';
 import flyerheaven from '@/images/www.flyerheaven.de_deine-bueroartikel.html.png';
 
 const cardData = [
+    {
+        title: 'Masri Blog',
+        badge: 'Blog',
+        image: masriBlog,
+        description: 'Level up your tech skills with my professional profile, developer resources, and tutorials.',
+        tags: ['Blog', 'Resources', 'Computer Science'],
+        date: '2025',
+        link: 'https://masri.blog/',
+    },
+    {
+        title: 'Piepjack Clothing',
+        badge: 'Onlineshop',
+        image: piepjack,
+        description: 'German Clothing Brand.',
+        tags: ['Online', 'Clothing', 'E-commerce'],
+        date: '2025',
+        link: 'https://testing.piepjack-clothing.de/',
+    },
     {
         title: 'HK Energieberatung',
         badge: 'Consulting',
@@ -72,7 +93,16 @@ const cardData = [
         description: 'Professional website for an energy consulting business.',
         tags: ['Energy', 'Consulting', 'Business'],
         date: '2025',
-        link: 'Projects/Hk-Energieberatung',
+        link: 'https://hk-energieberatung.de/',
+    },
+      {
+        title: 'Tracker',
+        badge: 'Time Tracking',
+        image: tracker,
+        description: ' This site is a tracking tool for work.',
+        tags: ['Productivity', 'Work', 'Time Tracking'],
+        date: '2025',
+        link: 'https://tracker.masri.blog/',
     },
     {
         title: 'Meo Media',
@@ -82,15 +112,6 @@ const cardData = [
         tags: ['Digital', 'Media', 'Services'],
         date: '2024',
         link: 'https://meo-media.de/',
-    },
-    {
-        title: 'Flyerheaven',
-        badge: 'Live',
-        image: 'https://masri.blog/Assets/Img/www.flyerheaven.de_.png',
-        description: 'Hub for digital services and professional flyer designs.',
-        tags: ['Design', 'Digital', 'Marketing'],
-        date: '2024',
-        link: 'https://Flyerheaven.de',
     },
     {
         title: 'Amazon Pages',
@@ -127,6 +148,15 @@ const cardData = [
         tags: ['Retail', 'Online Store', 'Sales'],
         date: '2023',
         link: 'ultrastore.me',
+    },
+    {
+        title: 'Flyerheaven',
+        badge: 'Live',
+        image: 'https://masri.blog/Assets/Img/www.flyerheaven.de_.png',
+        description: 'Hub for digital services and professional flyer designs.',
+        tags: ['Design', 'Digital', 'Marketing'],
+        date: '2024',
+        link: 'https://Flyerheaven.de',
     },
     {
         title: 'Medeva',

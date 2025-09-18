@@ -1,413 +1,132 @@
 <script setup lang="ts">
 import Layout from '@/layouts/Layout.vue';
-import { pricing } from '@/routes';
+import { contact, pricing } from '@/routes';
 import { useI18n } from 'vue-i18n';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { ServiceCategory } from '@/types';
-import { CheckCircle2, Clock, Globe, Mail, MapPin, MessageCircle, ShoppingCart, Star, XCircle } from 'lucide-vue-next';
-import { ref } from 'vue';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { CheckCircle2, XCircle } from 'lucide-vue-next';
+import { computed } from 'vue';
+import { Link } from '@inertiajs/vue3';
+
+const props = defineProps({
+    initialCategory: {
+        type: String,
+        default: 'businessWebsite',
+    },
+});
 
 const { t } = useI18n();
+
+// --- DATA ---
 const coreWebsiteFeatures = {
     responsiveDesign: true,
     seoOptimized: true,
     legalPages: true,
     analyticsIntegration: true,
     emailContact: true,
-    contentManagementSystem: true,
+    socialMediaIntegration: true,
 };
-// --- DATA STRUCTURE ---
-const pricingData: Record<string, ServiceCategory> = {
+
+const pricingData: Record<string, any> = {
     landingPage: {
         title: 'Landing Page',
-        priceRange: '200 Euro - 2,800 Euro',
+        priceFrom: 200,
+        priceTo: 2800,
+        priceSuffix: '+',
+        descriptionKey: 'pricing.landingPageExamples',
         packages: [
-            {
-                structure: 'onePage',
-                flexibility: 'infoAndBranding',
-                languages: '1',
-                responsiveDesign: true,
-                seoOptimized: true,
-                googleMaps: true,
-                emailContact: true,
-                whatsappContact: false,
-                googleReviewsStars: true,
-                googleReviewsIndividual: false,
-                testimonialsSection: false,
-                analyticsIntegration: false,
-                liveChat: false,
-                // --- New Features ---
-                legalPages: true,
-                faqSection: false,
-                socialMediaIntegration: false,
-                newsletterSignup: false,
-                accessibilityCompliance: false,
-            },
-            {
-                structure: 'onePage',
-                flexibility: 'fullyCustomizable',
-                languages: '1+',
-                responsiveDesign: true,
-                seoOptimized: true,
-                googleMaps: true,
-                emailContact: true,
-                whatsappContact: true,
-                googleReviewsStars: true,
-                googleReviewsIndividual: true,
-                testimonialsSection: true,
-                analyticsIntegration: true,
-                liveChat: true,
-                // --- New Features ---
-                legalPages: true,
-                faqSection: true,
-                socialMediaIntegration: true,
-                newsletterSignup: true,
-                accessibilityCompliance: true,
-            },
-            {
-                structure: 'fullyCustomizable',
-                flexibility: 'fullyCustomizable',
-                languages: '1+',
-                responsiveDesign: true,
-                seoOptimized: true,
-                googleMaps: true,
-                emailContact: true,
-                whatsappContact: true,
-                googleReviewsStars: true,
-                googleReviewsIndividual: true,
-                testimonialsSection: true,
-                analyticsIntegration: true,
-                liveChat: true,
-                // --- New Features ---
-                legalPages: true,
-                faqSection: true,
-                socialMediaIntegration: true,
-                newsletterSignup: true,
-                accessibilityCompliance: true,
-            },
+            { level: 'starter', ...coreWebsiteFeatures, structure: 'pricing.packages.featureValues.templateBased', customization: 'pricing.packages.featureValues.brandingAndContent', googleMaps: true, whatsappContact: true, testimonialsSection: false, faqSection: false, abTestingSetup: false, heatmapIntegration: false },
+            { level: 'business', ...coreWebsiteFeatures, structure: 'pricing.packages.featureValues.customDesign', customization: 'pricing.packages.featureValues.fullyCustomizable', googleMaps: true, whatsappContact: true, testimonialsSection: true, faqSection: true, abTestingSetup: false, heatmapIntegration: false },
+            { level: 'pro', ...coreWebsiteFeatures, structure: 'pricing.packages.featureValues.strategyAndCustom', customization: 'pricing.packages.featureValues.fullyCustomizable', googleMaps: true, whatsappContact: true, testimonialsSection: true, faqSection: true, abTestingSetup: true, heatmapIntegration: true },
         ],
+        addOns: [ { id: 'multilang', nameKey: 'pricing.addOns.multilingualSupport', price: { value: 300 } }, { id: 'liveChat', nameKey: 'pricing.addOns.liveChat', price: { value: 150 } } ],
     },
-    website: {
-        title: 'Website',
-        priceRange: '€600 - €5,000+',
+    businessWebsite: {
+        title: 'Business Website',
+        priceFrom: 600,
+        priceTo: 5000,
+        priceSuffix: '+',
+        descriptionKey: 'pricing.websiteExamples',
         packages: [
-            {
-                structure: 'multiplePages',
-                flexibility: 'infoAndBranding',
-                languages: '1',
-                responsiveDesign: true,
-                seoOptimized: true,
-                contentManagementSystem: true,
-                blogSection: false,
-                googleMaps: true,
-                emailContact: true,
-                whatsappContact: false,
-                userAccounts: false,
-                bookingSystem: false,
-                // --- New Features ---
-                legalPages: true,
-                faqSection: false,
-                portfolioGallery: false,
-                teamPage: false,
-                secureClientPortal: false,
-            },
-            {
-                structure: 'multiplePages',
-                flexibility: 'fullyCustomizable',
-                languages: '1+',
-                responsiveDesign: true,
-                seoOptimized: true,
-                contentManagementSystem: true,
-                blogSection: true,
-                googleMaps: true,
-                emailContact: true,
-                whatsappContact: true,
-                userAccounts: true,
-                bookingSystem: false,
-                // --- New Features ---
-                legalPages: true,
-                faqSection: true,
-                portfolioGallery: true,
-                teamPage: false,
-                secureClientPortal: true,
-            },
-            {
-                structure: 'fullyCustomizable',
-                flexibility: 'fullyCustomizable',
-                languages: '1+',
-                responsiveDesign: true,
-                seoOptimized: true,
-                contentManagementSystem: true,
-                blogSection: true,
-                googleMaps: true,
-                emailContact: true,
-                whatsappContact: true,
-                userAccounts: true,
-                bookingSystem: true,
-                // --- New Features ---
-                legalPages: true,
-                faqSection: true,
-                portfolioGallery: true,
-                teamPage: true,
-                secureClientPortal: true,
-            },
+            { level: 'starter', ...coreWebsiteFeatures, structure: 'pricing.packages.featureValues.upTo5Pages', contentManagementSystem: true, blogSection: false, portfolioGallery: true, userAccounts: false, bookingSystem: false },
+            { level: 'growth', ...coreWebsiteFeatures, structure: 'pricing.packages.featureValues.upTo15Pages', contentManagementSystem: true, blogSection: true, portfolioGallery: true, userAccounts: true, bookingSystem: false },
+            { level: 'enterprise', ...coreWebsiteFeatures, structure: 'pricing.packages.featureValues.unlimitedPages', contentManagementSystem: true, blogSection: true, portfolioGallery: true, userAccounts: true, bookingSystem: true },
         ],
+        addOns: [ { id: 'bookingSystem', nameKey: 'pricing.addOns.advancedBooking', price: { value: 500 } }, { id: 'clientPortal', nameKey: 'pricing.addOns.secureClientPortal', price: { value: 750 } } ],
     },
     onlineShop: {
         title: 'Onlineshop',
-        priceRange: '2,200 Euro to 10,000 Euro+', // Adjusted range for new features
+        priceFrom: 2200,
+        priceTo: 10000,
+        priceSuffix: '+',
+        descriptionKey: 'pricing.onlineShopExamples',
         packages: [
-            {
-                onlineStore: true,
-                structure: 'multiplePages',
-                flexibility: 'infoAndBranding',
-                languages: '1',
-                responsiveDesign: true,
-                seoOptimized: true,
-                // --- Core E-commerce Features ---
-                userAccounts: true,
-                guestCheckout: true,
-                inventoryManagement: true,
-                paymentGateways: true,
-                shippingOptions: true,
-                taxCalculation: true,
-                orderManagement: true,
-                // --- Standard E-commerce Features ---
-                productReviews: false,
-                advancedFiltering: false,
-                discountCodes: true, // Often included in basic setups
-                wishlists: false,
-                // --- Advanced E-commerce Features ---
-                abandonedCartRecovery: false,
-                subscriptionModel: false,
-                relatedProducts: false,
-                returnsAndExchangesPortal: false,
-                salesAnalytics: false,
-            },
-            {
-                onlineStore: true,
-                structure: 'multiplePages',
-                flexibility: 'fullyCustomizable',
-                languages: '1+',
-                responsiveDesign: true,
-                seoOptimized: true,
-                // --- Core E-commerce Features ---
-                userAccounts: true,
-                guestCheckout: true,
-                inventoryManagement: true,
-                paymentGateways: true,
-                shippingOptions: true,
-                taxCalculation: true,
-                orderManagement: true,
-                customerOrderHistory: true,
-                savedAddressesAndPayments: true,
-                // --- Standard E-commerce Features ---
-                productReviews: true,
-                advancedFiltering: true,
-                discountCodes: true,
-                wishlists: true,
-                productVariations: true,
-                productImageGalleryVideo: true,
-                // --- Advanced E-commerce Features ---
-                abandonedCartRecovery: true,
-                subscriptionModel: false,
-                relatedProducts: true,
-                returnsAndExchangesPortal: false,
-                salesAnalytics: true,
-            },
-            {
-                onlineStore: true,
-                structure: 'fullyCustomizable',
-                flexibility: 'fullyCustomizable',
-                languages: '1+',
-                responsiveDesign: true,
-                seoOptimized: true,
-                // --- Core E-commerce Features ---
-                userAccounts: true,
-                guestCheckout: true,
-                inventoryManagement: true,
-                paymentGateways: true,
-                shippingOptions: true,
-                taxCalculation: true,
-                orderManagement: true,
-                customerOrderHistory: true,
-                savedAddressesAndPayments: true,
-                // --- Standard E-commerce Features ---
-                productReviews: true,
-                advancedFiltering: true,
-                discountCodes: true,
-                wishlists: true,
-                productVariations: true,
-                productImageGalleryVideo: true,
-                // --- Advanced E-commerce Features ---
-                abandonedCartRecovery: true,
-                subscriptionModel: true,
-                relatedProducts: true,
-                returnsAndExchangesPortal: true,
-                salesAnalytics: true,
-                loyaltyProgram: true,
-                multicurrencySupport: true,
-                crmIntegration: true,
-            },
+            { level: 'starter', ...coreWebsiteFeatures, productCapacity: 'pricing.packages.featureValues.upTo50Products', paymentGateways: 'pricing.packages.featureValues.standardPayments', inventoryManagement: true, discountCodes: true, userAccounts: true, productReviews: false, advancedFiltering: false, abandonedCartRecovery: false },
+            { level: 'pro', ...coreWebsiteFeatures, productCapacity: 'pricing.packages.featureValues.upTo500Products', paymentGateways: 'pricing.packages.featureValues.standardPaymentsKlarna', inventoryManagement: true, discountCodes: true, userAccounts: true, productReviews: true, advancedFiltering: true, abandonedCartRecovery: true },
+            { level: 'enterprise', ...coreWebsiteFeatures, productCapacity: 'pricing.packages.featureValues.unlimitedProducts', paymentGateways: 'pricing.packages.featureValues.customIntegrations', inventoryManagement: true, discountCodes: true, userAccounts: true, productReviews: true, advancedFiltering: true, abandonedCartRecovery: true, subscriptionModel: true, loyaltyProgram: true },
         ],
-    },
-    onlineShopCMS: {
-        title: 'Onlineshop CMS',
-        priceRange: '2,200 Euro to 4,000 Euro (incl. website and blog)',
-        packages: [
-            {
-                structure: 'onePage',
-                flexibility: 'infoAndBranding',
-                languages: '1',
-                responsiveDesign: true, 
-                onlineStore: true,
-                googleMaps: true,
-                emailContact: true,
-                whatsappContact: true,
-                googleReviewsStars: true,
-                googleReviewsIndividual: false,
-                liveOpeningHours: false,
-                inventoryManagement: true,
-                paymentGateways: true,
-                shippingOptions: true,
-                taxCalculation: true,
-                orderManagement: true,
-                userAccounts: true,
-                discountCodes: false,
-            },
-            {
-                structure: 'multiplePages',
-                flexibility: 'fullyCustomizable',
-                languages: '1+',
-                responsiveDesign: true,
-                onlineStore: true,
-                googleMaps: true,
-                emailContact: true,
-                whatsappContact: true,
-                googleReviewsStars: true,
-                googleReviewsIndividual: true,
-                liveOpeningHours: true,
-                inventoryManagement: true,
-                paymentGateways: true,
-                shippingOptions: true,
-                taxCalculation: true,
-                orderManagement: true,
-                userAccounts: true,
-                discountCodes: true,
-                productReviews: true,
-                wishlists: true,
-            },
-            {
-                structure: 'fullyCustomizable',
-                flexibility: 'fullyCustomizable',
-                languages: '1+',
-                responsiveDesign: true,
-                onlineStore: true,
-                googleMaps: true,
-                emailContact: true,
-                whatsappContact: true,
-                googleReviewsStars: true,
-                googleReviewsIndividual: true,
-                liveOpeningHours: true,
-                inventoryManagement: true,
-                paymentGateways: true,
-                shippingOptions: true,
-                taxCalculation: true,
-                orderManagement: true,
-                userAccounts: true,
-                discountCodes: true,
-                productReviews: true,
-                wishlists: true,
-                abandonedCartRecovery: true,
-            },
-        ],
+        addOns: [ { id: 'multicurrency', nameKey: 'pricing.addOns.multiCurrency', price: { value: 600 } }, { id: 'crm', nameKey: 'pricing.addOns.crmIntegration', price: { value: 900 } } ],
     },
 };
+
 const additionalServices = {
     hosting: {
-        title: 'hosting.title',
-        price: 'hosting.price',
+        title: 'pricing.hosting.title',
+        price: { value: 'pricing.hosting.price' },
     },
     maintenance: [
-        {
-            key: 'landingPage',
-            title: 'pricing.maintenance.landingPage.title',
-            description: 'pricing.maintenance.landingPage.description',
-            price: 'pricing.maintenance.landingPage.price',
-        },
-        {
-            key: 'website',
-            title: 'pricing.maintenance.website.title',
-            description: 'pricing.maintenance.website.description',
-            price: 'pricing.maintenance.website.price',
-        },
-        {
-            key: 'onlineShop',
-            title: 'pricing.maintenance.onlineShop.title',
-            description: 'pricing.maintenance.onlineShop.description',
-            price: 'pricing.maintenance.onlineShop.price',
-        },
-        {
-            key: 'onlineShopCms',
-            title: 'pricing.maintenance.onlineShopCms.title',
-            description: 'pricing.maintenance.onlineShopCms.description',
-            price: 'pricing.maintenance.onlineShopCms.price',
-        },
-        {
-            key: 'seoKickstart',
-            title: 'pricing.maintenance.seoKickstart.title',
-            description: 'pricing.maintenance.seoKickstart.description',
-            price: 'pricing.maintenance.seoKickstart.price',
-        },
-        {
-            key: 'copywriting',
-            title: 'pricing.maintenance.copywriting.title',
-            description: 'pricing.maintenance.copywriting.description',
-            price: 'pricing.maintenance.copywriting.price',
-        },
+        { key: 'landingPage', title: 'pricing.maintenance.landingPage.title', description: 'pricing.maintenance.landingPage.description', price: { value: 'pricing.maintenance.landingPage.price' } },
+        { key: 'website', title: 'pricing.maintenance.website.title', description: 'pricing.maintenance.website.description', price: { value: 'pricing.maintenance.website.price' } },
+        { key: 'onlineShop', title: 'pricing.maintenance.onlineShop.title', description: 'pricing.maintenance.onlineShop.description', price: { value: 'pricing.maintenance.onlineShop.price' } },
+        { key: 'seoKickstart', title: 'pricing.maintenance.seoKickstart.title', description: 'pricing.maintenance.seoKickstart.description', price: { value: 'pricing.maintenance.seoKickstart.price' } },
+        { key: 'copywriting', title: 'pricing.maintenance.copywriting.title', description: 'pricing.maintenance.copywriting.description', price: { value: 'pricing.maintenance.copywriting.price' } },
     ],
     emailAndDomain: {
-        title: 'emailAndDomain.title',
-        description: 'emailAndDomain.description',
-        price: 'emailAndDomain.price',
+        title: 'pricing.emailAndDomain.title',
+        description: 'pricing.emailAndDomain.description',
+        price: { value: 'pricing.emailAndDomain.price' },
     },
 };
+
 // --- COMPONENT LOGIC ---
-const selectedCategory = ref('website');
 
-// Get feature icon
-const getFeatureIcon = (featureName: string) => {
-    const icons = {
-        googleMaps: MapPin,
-        emailContact: Mail,
-        whatsappContact: MessageCircle,
-        googleReviewsStars: Star,
-        googleReviewsIndividual: Star,
-        liveOpeningHours: Clock,
-        onlineStore: ShoppingCart,
-        languages: Globe,
-    };
-    return icons[featureName as keyof typeof icons] || CheckCircle2;
+// Map internal keys to URL slugs for link generation
+const urlSlugMap: Record<string, string> = {
+    landingPage: 'landingPage',
+    businessWebsite: 'website',
+    onlineShop: 'onlineshop',
 };
 
-// Get package level name (Basic, Pro, Premium)
-const getPackageLevel = (index: number) => {
-    const levels = ['Basic', 'Pro', 'Premium'];
-    return levels[index] || `Package ${index + 1}`;
+// This computed property will now react to prop changes automatically
+const formattedPriceRange = computed(() => {
+    const category = pricingData[props.initialCategory];
+    if (!category || typeof category.priceFrom !== 'number') return '';
+    const formatter = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR', minimumFractionDigits: 0, maximumFractionDigits: 0 });
+    const from = formatter.format(category.priceFrom);
+    if (typeof category.priceTo === 'number') {
+        const to = formatter.format(category.priceTo);
+        return `${from} - ${to}${category.priceSuffix || ''}`;
+    }
+    return `${t('pricing.priceFrom')} ${from}${category.priceSuffix || ''}`;
+});
+
+const isFeature = (key: string) => {
+    return !['level'].includes(key);
 };
 
-// Check if category is featured (website is most popular)
-const isFeaturedCategory = (categoryKey: string) => {
-    return categoryKey === 'website';
+const isFeaturedCategory = (categoryKey: string) => categoryKey === 'businessWebsite';
+
+const categoryKeyMap: Record<string, string> = {
+    landingPage: 'landingPage',
+    businessWebsite: 'website',
+    onlineShop: 'onlineShop',
 };
 </script>
 
 <template>
     <Layout :head="t('pricing.title')" :link="pricing.url()">
         <section class="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-            <!-- Header -->
             <div class="mx-auto max-w-4xl text-center">
                 <h1 class="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
                     {{ t('pricing.title') }}
@@ -417,48 +136,50 @@ const isFeaturedCategory = (categoryKey: string) => {
                 </p>
             </div>
 
-            <!-- Service Category Selector -->
             <div class="mt-12 flex flex-wrap justify-center gap-3">
-                <Button
+                <Link
                     v-for="(category, key) in pricingData"
                     :key="key"
-                    :variant="selectedCategory === key ? 'default' : 'outline'"
-                    @click="selectedCategory = key"
-                    class="relative"
+                    :href="`/pricing/${urlSlugMap[key]}`"
+                    preserve-state
+                    preserve-scroll
                 >
-                    {{ t(`pricing.${key}`) }}
-                    <Badge v-if="isFeaturedCategory(key)" variant="secondary" class="ml-2 text-xs">
-                        {{ t('pricing.featured') }}
-                    </Badge>
-                </Button>
+                    <Button
+                        :variant="props.initialCategory === key ? 'default' : 'outline'"
+                        class="relative"
+                        as="div"
+                    >
+                        {{ t(`pricing.${categoryKeyMap[key]}`) }}
+                        <Badge v-if="isFeaturedCategory(String(key))" variant="secondary" class="ml-2 text-xs">
+                            {{ t('pricing.featured') }}
+                        </Badge>
+                    </Button>
+                </Link>
             </div>
 
-            <!-- Selected Category Display -->
             <div class="mt-12">
                 <div class="mb-8 text-center">
                     <h2 class="text-2xl font-bold text-foreground">
-                        {{ t(pricingData[selectedCategory].title) }}
+                        {{ pricingData[props.initialCategory].title }}
                     </h2>
                     <p class="mt-2 text-lg font-semibold text-primary">
-                        {{ pricingData[selectedCategory].priceRange }}
+                        {{ formattedPriceRange }}
                     </p>
                     <p class="text-slate-600 dark:text-slate-400">
-                        {{ t(`pricing.${selectedCategory}Examples`) }}
+                        {{ t(pricingData[props.initialCategory].descriptionKey) }}
                     </p>
                 </div>
 
-                <!-- Package Cards -->
                 <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                     <Card
-                        v-for="(pkg, index) in pricingData[selectedCategory].packages"
-                        :key="index"
-                        class="relative transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+                        v-for="(pkg, index) in pricingData[props.initialCategory].packages"
+                        :key="`${props.initialCategory}-${pkg.level}`"
+                        class="flex flex-col transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
                         :class="{
                             'scale-105 border-2 border-primary shadow-lg': index === 1,
                             'border-border': index !== 1,
                         }"
                     >
-                        <!-- Popular Badge for middle package -->
                         <div v-if="index === 1" class="absolute -top-3 left-1/2 z-10 -translate-x-1/2">
                             <Badge class="bg-primary px-4 py-1 text-primary-foreground">
                                 {{ t('pricing.featured') }}
@@ -466,68 +187,34 @@ const isFeaturedCategory = (categoryKey: string) => {
                         </div>
 
                         <CardHeader class="pb-4 text-center">
-                            <CardTitle class="text-xl">{{ getPackageLevel(index) }}</CardTitle>
-                            <div class="mt-2">
-                                <Badge variant="outline" class="text-sm">
-                                    {{ t(`pricing.packages.${pkg.structure}`) }}
-                                </Badge>
-                            </div>
+                            <CardTitle class="text-xl">{{ t(`pricing.packages.${props.initialCategory}.${pkg.level}.name`) }}</CardTitle>
+                            <CardDescription class="mt-2 min-h-[40px] text-sm">
+                                {{ t(`pricing.packages.${props.initialCategory}.${pkg.level}.description`) }}
+                            </CardDescription>
                         </CardHeader>
 
-                        <CardContent class="space-y-6">
-                            <!-- Structure & Flexibility -->
-                            <div class="space-y-3">
-                                <div class="flex items-center justify-between text-sm">
-                                    <span class="font-medium">{{ t('pricing.packages.structure') }}:</span>
-                                    <span class="text-muted-foreground">{{ t(`pricing.packages.${pkg.structure}`) }}</span>
-                                </div>
-                                <div class="flex items-center justify-between text-sm">
-                                    <span class="font-medium">{{ t('pricing.packages.flexibility') }}:</span>
-                                    <span class="text-muted-foreground">{{ t(`pricing.packages.${pkg.flexibility}`) }}</span>
-                                </div>
-                                <div class="flex items-center justify-between text-sm">
-                                    <span class="font-medium">{{ t('pricing.packages.languages') }}:</span>
-                                    <span class="text-muted-foreground">{{ pkg.languages }}</span>
-                                </div>
-                            </div>
-
+                        <CardContent class="flex-grow space-y-4">
                             <hr class="border-border" />
-
-                            <!-- Features List -->
                             <div class="space-y-3">
-                                <h4 class="mb-3 text-sm font-semibold text-foreground">Included Features:</h4>
-
                                 <div
                                     v-for="(value, feature) in pkg"
                                     :key="feature"
-                                    class="flex items-center space-x-3 text-sm"
-                                    v-show="!['structure', 'flexibility', 'languages'].includes(feature)"
+                                    class="flex items-center justify-between text-sm"
                                 >
-                                    <component
-                                        :is="getFeatureIcon(feature)"
-                                        class="h-4 w-4 flex-shrink-0"
-                                        :class="{
-                                            'text-green-500': value === true,
-                                            'text-muted-foreground opacity-50': value === false,
-                                            'text-blue-500': typeof value === 'string',
-                                        }"
-                                    />
-
                                     <span
-                                        class="flex-1"
+                                        v-if="isFeature(feature)"
                                         :class="{
-                                            'text-foreground': value === true || typeof value === 'string',
+                                            'text-foreground': value !== false,
                                             'text-muted-foreground line-through': value === false,
                                         }"
                                     >
                                         {{ t(`pricing.packages.${feature}`) }}
                                     </span>
-
-                                    <div class="flex-shrink-0">
+                                    <div v-if="isFeature(feature)" class="flex-shrink-0">
                                         <CheckCircle2 v-if="value === true" class="h-4 w-4 text-green-500" />
                                         <XCircle v-else-if="value === false" class="h-4 w-4 text-muted-foreground opacity-50" />
-                                        <Badge v-else-if="typeof value === 'string'" variant="secondary" class="text-xs">
-                                            {{ value }}
+                                        <Badge v-else variant="secondary" class="text-right text-xs">
+                                            {{ t(String(value)) }}
                                         </Badge>
                                     </div>
                                 </div>
@@ -535,55 +222,78 @@ const isFeaturedCategory = (categoryKey: string) => {
                         </CardContent>
 
                         <CardFooter>
-                            <Button class="w-full" :variant="index === 1 ? 'default' : 'outline'" size="lg">
-                                {{ t('pricing.contactUs') }}
-                            </Button>
+                            <Link :href="contact.url()" class="w-full">
+                                <Button class="w-full" :variant="index === 1 ? 'default' : 'outline'" size="lg">
+                                    {{ t('pricing.contactUs') }}
+                                </Button>
+                            </Link>
                         </CardFooter>
                     </Card>
                 </div>
-            </div>
 
-            <!-- Additional Services -->
-            <div class="mt-20">
-                <div class="mb-12 text-center">
-                    <h2 class="text-3xl font-bold text-foreground">
-                        {{ t('pricing.additionalServices') }}
-                    </h2>
-                    <p class="mt-4 text-muted-foreground">Essential services to complete your web presence</p>
+                 <div v-if="pricingData[props.initialCategory].addOns?.length" class="mt-20">
+                    <div class="mb-10 text-center">
+                        <h3 class="text-3xl font-bold text-foreground">
+                            {{ t('pricing.availableAddOns') }}
+                        </h3>
+                        <p class="mt-3 text-muted-foreground">
+                            {{ t('pricing.customizeYourPackage') }}
+                        </p>
+                    </div>
+                    <div class="mx-auto grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                        <Card v-for="addOn in pricingData[props.initialCategory].addOns" :key="addOn.id" class="text-center">
+                            <CardHeader>
+                                <CardTitle class="text-base font-medium">
+                                    {{ t(addOn.nameKey) }}
+                                </CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <div class="text-lg font-bold text-primary">
+                                    + {{ new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(addOn.price.value) }}
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </div>
                 </div>
 
-                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-                    <!-- Hosting -->
-                    <Card class="text-center">
-                        <CardHeader>
-                            <CardTitle class="text-lg">{{ t('pricing.hosting.title') }}</CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                            <p class="text-sm text-muted-foreground">{{ t('pricing.hosting.price') }}</p>
-                        </CardContent>
-                    </Card>
+                <div class="mt-20">
+                    <div class="mb-12 text-center">
+                        <h2 class="text-3xl font-bold text-foreground">
+                            {{ t('pricing.additionalServices') }}
+                        </h2>
+                        <p class="mt-4 text-muted-foreground">Essential services to complete your web presence</p>
+                    </div>
 
-                    <!-- Email & Domain -->
-                    <Card class="text-center">
-                        <CardHeader>
-                            <CardTitle class="text-lg">{{ t('pricing.emailAndDomain.title') }}</CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                            <p class="mb-2 text-xs text-muted-foreground">{{ t('pricing.emailAndDomain.description') }}</p>
-                            <p class="text-sm font-semibold">{{ t('pricing.emailAndDomain.price') }}</p>
-                        </CardContent>
-                    </Card>
+                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+                        <Card class="text-center">
+                            <CardHeader>
+                                <CardTitle class="text-lg">{{ t(additionalServices.hosting.title) }}</CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <p class="text-sm text-muted-foreground">{{ t(additionalServices.hosting.price.value) }}</p>
+                            </CardContent>
+                        </Card>
 
-                    <!-- Maintenance Options -->
-                    <Card v-for="service in additionalServices.maintenance" :key="service.key" class="text-center">
-                        <CardHeader>
-                            <CardTitle class="text-lg">{{ t(service.title) }}</CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                            <p class="mb-2 text-xs text-muted-foreground">{{ t(service.description) }}</p>
-                            <p class="text-sm font-semibold">{{ t(service.price) }}</p>
-                        </CardContent>
-                    </Card>
+                        <Card class="text-center">
+                            <CardHeader>
+                                <CardTitle class="text-lg">{{ t(additionalServices.emailAndDomain.title) }}</CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <p class="mb-2 text-xs text-muted-foreground">{{ t(additionalServices.emailAndDomain.description) }}</p>
+                                <p class="text-sm font-semibold">{{ t(additionalServices.emailAndDomain.price.value) }}</p>
+                            </CardContent>
+                        </Card>
+
+                        <Card v-for="service in additionalServices.maintenance" :key="service.key" class="text-center">
+                            <CardHeader>
+                                <CardTitle class="text-lg">{{ t(service.title) }}</CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <p class="mb-2 text-xs text-muted-foreground">{{ t(service.description) }}</p>
+                                <p class="text-sm font-semibold">{{ t(service.price.value) }}</p>
+                            </CardContent>
+                        </Card>
+                    </div>
                 </div>
             </div>
         </section>

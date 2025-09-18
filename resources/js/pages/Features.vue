@@ -1,13 +1,36 @@
 <script setup lang="ts">
+import Marquee from '@/components/ui/marquee/Marquee.vue';
 import {
-    DollarSign, Github, EyeOff, Server, Languages, BrainCircuit, Mail, ShieldCheck, LayoutTemplate,
-    Palette, LayoutGrid, PlusSquare, NotebookText, Lock, Type, Globe, SunMoon, Rocket,
-    MonitorSmartphone, RefreshCw, Figma, Cog, BarChart, Search, Link, FileDown, Move,
+    BarChart,
+    BrainCircuit,
+    Cog,
+    DollarSign,
+    EyeOff,
+    Figma,
+    FileDown,
+    Github,
+    Globe,
+    Languages,
+    LayoutGrid,
+    LayoutTemplate,
+    Link,
+    Lock,
+    Mail,
+    MonitorSmartphone,
+    Move,
+    NotebookText,
+    Palette,
+    PlusSquare,
+    RefreshCw,
+    Rocket,
+    Search,
+    Server,
+    ShieldCheck,
+    SunMoon,
+    Type,
 } from 'lucide-vue-next';
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
-import Marquee from '@/components/ui/marquee/Marquee.vue';
-import Focus from '@/components/ui/focus/Focus.vue';
 
 const { t } = useI18n();
 
@@ -50,11 +73,11 @@ const featureDefinitions = [
 ];
 
 // Dynamically build the features array based on the current language
-const features = computed(() => 
-    featureDefinitions.map(feature => ({
+const features = computed(() =>
+    featureDefinitions.map((feature) => ({
         text: t(feature.key),
         icon: feature.icon,
-    }))
+    })),
 );
 
 const third = computed(() => Math.ceil(features.value.length / 3));
@@ -64,49 +87,50 @@ const thirdThird = computed(() => features.value.slice(third.value * 2));
 </script>
 
 <template>
-    <section id="features" class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
-            <div class="space-y-4 text-left">
-                <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-foreground">
-                    <!-- <Focus :sentence="$t('features.title')" :animationDuration="0.1" :manualMode="false" :blurAmount="2"/> -->
-                    {{$t('features.title')}}
-                </h2>
-                <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    {{ $t('features.description') }}
-                </p>
-            </div>
-
-            <div class="space-y-4">
-                <Marquee pause-on-hover class="[--duration:60s]">
-                    <div
-                        v-for="(feature, index) in firstThird"
-                        :key="`first-${index}`"
-                        class="flex items-center gap-2 rounded-lg bg-muted p-3 text-sm font-medium text-muted-foreground"
-                    >
-                        <component :is="feature.icon" class="h-4 w-4 flex-shrink-0" />
-                        <span>{{ feature.text }}</span>
-                    </div>
-                </Marquee>
-                <Marquee reverse pause-on-hover class="[--duration:60s]">
-                    <div
-                        v-for="(feature, index) in secondThird"
-                        :key="`second-${index}`"
-                        class="flex items-center gap-2 rounded-lg bg-muted p-3 text-sm font-medium text-muted-foreground"
-                    >
-                        <component :is="feature.icon" class="h-4 w-4 flex-shrink-0" />
-                        <span>{{ feature.text }}</span>
-                    </div>
-                </Marquee>
-                <Marquee pause-on-hover class="[--duration:60s]">
-                    <div
-                        v-for="(feature, index) in thirdThird"
-                        :key="`third-${index}`"
-                        class="flex items-center gap-2 rounded-lg bg-muted p-3 text-sm font-medium text-muted-foreground"
-                    >
-                        <component :is="feature.icon" class="h-4 w-4 flex-shrink-0" />
-                        <span>{{ feature.text }}</span>
-                    </div>
-                </Marquee>
+    <section id="features" class="parallax-section bg-parallax-1">
+        <div class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
+                <div class="space-y-4 text-left">
+                    <h2 class="text-3xl font-bold tracking-tighter text-foreground sm:text-5xl">
+                        <!-- <Focus :sentence="$t('features.title')" :animationDuration="0.1" :manualMode="false" :blurAmount="2"/> -->
+                        {{ $t('features.title') }}
+                    </h2>
+                    <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                        {{ $t('features.description') }}
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <Marquee pause-on-hover class="[--duration:60s]">
+                        <div
+                            v-for="(feature, index) in firstThird"
+                            :key="`first-${index}`"
+                            class="flex items-center gap-2 rounded-lg bg-muted p-3 text-sm font-medium text-muted-foreground"
+                        >
+                            <component :is="feature.icon" class="h-4 w-4 flex-shrink-0" />
+                            <span>{{ feature.text }}</span>
+                        </div>
+                    </Marquee>
+                    <Marquee reverse pause-on-hover class="[--duration:60s]">
+                        <div
+                            v-for="(feature, index) in secondThird"
+                            :key="`second-${index}`"
+                            class="flex items-center gap-2 rounded-lg bg-muted p-3 text-sm font-medium text-muted-foreground"
+                        >
+                            <component :is="feature.icon" class="h-4 w-4 flex-shrink-0" />
+                            <span>{{ feature.text }}</span>
+                        </div>
+                    </Marquee>
+                    <Marquee pause-on-hover class="[--duration:60s]">
+                        <div
+                            v-for="(feature, index) in thirdThird"
+                            :key="`third-${index}`"
+                            class="flex items-center gap-2 rounded-lg bg-muted p-3 text-sm font-medium text-muted-foreground"
+                        >
+                            <component :is="feature.icon" class="h-4 w-4 flex-shrink-0" />
+                            <span>{{ feature.text }}</span>
+                        </div>
+                    </Marquee>
+                </div>
             </div>
         </div>
     </section>

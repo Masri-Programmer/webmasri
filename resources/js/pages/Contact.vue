@@ -20,10 +20,10 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
 const { t } = useI18n()
 const toast = useToast()
 
-type Plan = 'landingpage' | 'website' | 'shop' | 'shop_cms'
+type Plan = 'landingPage' | 'website' | 'shop' | 'shop_cms'
 
 const plans = [
-    { id: 'landingpage', titleKey: 'plans.landingpage.title', descriptionKey: 'plans.landingpage.description' },
+    { id: 'landingPage', titleKey: 'plans.landingPage.title', descriptionKey: 'plans.landingPage.description' },
     { id: 'website', titleKey: 'plans.website.title', descriptionKey: 'plans.website.description' },
     { id: 'shop', titleKey: 'plans.shop.title', descriptionKey: 'plans.shop.description' },
     { id: 'shop_cms', titleKey: 'plans.shop_cms.title', descriptionKey: 'plans.shop_cms.description' },
@@ -49,7 +49,6 @@ const handleSubmit = () => {
     })
 }
 
-// A computed property to conditionally show the contact details section
 const isPlanSelected = computed(() => !!form.plan)
 </script>
 

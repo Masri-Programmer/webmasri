@@ -8,6 +8,7 @@ import { useI18n } from 'vue-i18n';
 import { Link } from '@inertiajs/vue3';
 import { privacyPolicy, termsConditions, imprint } from '@/routes';
 import googleIcon from '@/images/googleIcon.svg'
+// import CurrencySwitch from '@/components/CurrencySwitch.vue';
 
 const { t } = useI18n();
 
@@ -116,6 +117,7 @@ const year = new Date().getFullYear();
                     </Button>
                     <AppearanceIcon />
                     <LanguageSwitch />
+                    <!-- <CurrencySwitch /> -->
                 </div>
             </div>
         </div>
