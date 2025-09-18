@@ -1,7 +1,7 @@
 {
     "private": true,
     "type": "module",
-    "description": "Masri Programmer",
+    "description": "Web Services, web design and craft, rich in features, not in pricing.",
     "version": "4.4.6",
     "license": "MIT",
     "author": {
@@ -51,6 +51,7 @@
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
         "cobe": "^0.6.4",
+        "embla-carousel-autoplay": "^8.6.0",
         "embla-carousel-vue": "^8.6.0",
         "gsap": "^3.13.0",
         "laravel-vite-plugin": "^2.0.0",
