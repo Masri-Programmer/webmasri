@@ -71,6 +71,36 @@
         "clients": "Zufriedene Kunden",
         "technologies": "Technologien"
     },
+    "services": {
+        "mainTitle": "Unsere Umfassenden Weblösungen",
+        "mainSubtitle": "Vom Konzept bis zum Launch bieten wir End-to-End-Dienstleistungen, um Ihre leistungsstarke Online-Präsenz aufzubauen und Ihre digitalen Ziele zu erreichen.",
+        "additionalTitle": "Mehr als nur die Entwicklung",
+        "additionalSubtitle": "Wir bieten eine Reihe von unterstützenden Dienstleistungen, um den anhaltenden Erfolg, die Sicherheit und das Wachstum Ihrer Website zu gewährleisten.",
+        "landingPage": {
+            "title": "landingPages & Onepager",
+            "description": "Gewinnen Sie Leads und steigern Sie Conversions mit einer einzigen, hochfokussierten Seite. Perfekt für Marketingkampagnen, Produkteinführungen oder digitale Visitenkarten."
+        },
+        "businessWebsite": {
+            "title": "Unternehmens- & Geschäftswebsites",
+            "description": "Stärken Sie die Glaubwürdigkeit Ihrer Marke mit einer professionellen, mehrseitigen Website. Ideal für Dienstleister, Firmen und Organisationen, die einen umfassenden digitalen Hub benötigen."
+        },
+        "onlineShop": {
+            "title": "E-Commerce & Onlineshops",
+            "description": "Starten Sie Ihren digitalen Shop und verkaufen Sie Produkte online. Wir erstellen skalierbare E-Commerce-Lösungen für kleine Boutiquen bis hin zu großen Einzelhändlern, komplett mit allen notwendigen Funktionen."
+        },
+        "maintenance": {
+            "title": "Website-Wartung",
+            "description": "Sorgen Sie mit unseren umfassenden Wartungspaketen dafür, dass Ihre Website sicher, aktuell und reibungslos läuft – für absolute Sorgenfreiheit."
+        },
+        "seo": {
+            "title": "SEO-Kickstart",
+            "description": "Optimieren Sie Ihre Seite vom ersten Tag an mit Keyword-Recherche, On-Page-SEO und der Einrichtung des Google Unternehmensprofils für bessere Sichtbarkeit."
+        },
+        "copywriting": {
+            "title": "Content & Texterstellung",
+            "description": "Begeistern Sie Ihr Publikum mit professionellen, SEO-freundlichen Inhalten, die speziell für Ihre Kernseiten erstellt wurden."
+        }
+    },
     "testimonials": {
         "title": "Was unsere Kunden sagen",
         "subtitle": "Entdecken Sie die Erfahrungen von Unternehmen, mit denen wir zusammengearbeitet haben.",
@@ -102,7 +132,7 @@
             },
             "costs": {
                 "question": "Was kostet eine Website oder ein Onlineshop",
-                "answer": "<p>Die Kosten für eine Website oder einen Onlineshop richten sich natürlich nach dem Umfang des Projektes. Um Ihnen dennoch eine sinnvolle Übersicht zu geben, können Sie sich an den folgenden Erfahrungswerten orientieren:</p><ul><li>Landingpage (Onepager) mit Weblication: 200 Euro - 2.800 Euro</li><li>Website : 600 Euro bis 5.000 Euro</li><li>Onlineshop : 2.200 Euro bis 4.000 Euro</li><li>Onlineshop mit CMS: 2.200 Euro bis 4.000 Euro (inkl. Website und Blog)</li></ul>"
+                "answer": "<p>Die Kosten für eine Website oder einen Onlineshop richten sich natürlich nach dem Umfang des Projektes. Um Ihnen dennoch eine sinnvolle Übersicht zu geben, können Sie sich an den folgenden Erfahrungswerten orientieren:</p><ul><li>landingPage (Onepager) mit Weblication: 200 Euro - 2.800 Euro</li><li>Website : 600 Euro bis 5.000 Euro</li><li>Onlineshop : 2.200 Euro bis 4.000 Euro</li><li>Onlineshop mit CMS: 2.200 Euro bis 4.000 Euro (inkl. Website und Blog)</li></ul>"
             },
             "newWebsiteNeeded": {
                 "question": "Benötigen Sie eine neue Website oder einen neuen Onlineshop?",
@@ -824,26 +854,82 @@
         "github": "Sponsor us on Github"
     },
     "pricing": {
-        "title": "Professionelle Web-Service Preise",
-        "description": "Die Kosten für eine Website oder einen Online-Shop hängen natürlich vom Umfang des Projekts ab. Um Ihnen einen aussagekräftigen Überblick zu geben, können Sie sich an folgenden Erfahrungswerten orientieren:",
+        "title": "Preise für professionelle Web-Dienstleistungen",
+        "description": "Die Kosten für eine Webseite oder einen Onlineshop hängen natürlich vom Umfang des Projekts ab. Um Ihnen einen aussagekräftigen Überblick zu geben, können Sie sich an den folgenden Erfahrungswerten orientieren:",
         "monthly": "Monatlich",
         "yearly": "Jährlich",
         "getStarted": "Jetzt starten",
-        "contactUs": "Kontakt aufnehmen",
-        "featured": "Beliebtester",
+        "contactUs": "Kontakt",
+        "featured": "Am beliebtesten",
         "priceFrom": "Ab",
-
-        "landingPage": "Landing Page (Onepager)",
-        "website": "Website",
-        "onlineShop": "Online-Shop",
-        "onlineShopCMS": "Online-Shop mit CMS",
-        "packages": {
-            "structure": "Struktur",
-            "onePage": "One-Page, einfache Struktur",
-            "multiplePages": "Mehrere Seiten, flexibel",
+        "availableAddOns": "Verfügbare Add-Ons",
+        "customizeYourPackage": "Passen Sie Ihr Paket mit diesen leistungsstarken Erweiterungen an.",
+        "landingPage": "landingPage (Onepager)",
+        "landingPageExamples": "Perfekt für Marketingkampagnen, ein einzelnes Produkt/eine Dienstleistung oder eine digitale Visitenkarte.",
+        "website": "Business-Webseite",
+        "websiteExamples": "Ideal für Dienstleister, Unternehmensseiten, Ärzte oder Restaurants, die mehrere Seiten und einen Blog benötigen.",
+        "onlineShop": "Onlineshop",
+        "onlineShopExamples": "Konzipiert für Unternehmen, die Produkte online verkaufen, von kleinen Boutiquen bis hin zu größeren Einzelhändlern.",
+        "featureValues": {
+            "templateBased": "Auf Vorlage basierend",
+            "customDesign": "Individuelles Design",
+            "strategyAndCustom": "Strategie & Individuelles Design",
+            "upTo5Pages": "Bis zu 5 Seiten",
+            "upTo15Pages": "Bis zu 15 Seiten",
+            "unlimitedPages": "Unbegrenzte Seitenanzahl",
+            "brandingAndContent": "Branding & Inhalte",
             "fullyCustomizable": "Vollständig anpassbar",
-            "flexibility": "Flexibilität",
-            "infoAndBranding": "Informationen, Logo, Bilder, Farben",
+            "upTo50Products": "Bis zu 50 Produkte",
+            "upTo500Products": "Bis zu 500 Produkte",
+            "unlimitedProducts": "Unbegrenzte Produktanzahl",
+            "standardPayments": "Standard (Stripe, PayPal)",
+            "standardPaymentsKlarna": "Standard + Klarna",
+            "customIntegrations": "Individuelle Integrationen"
+        },
+        "packages": {
+            "landingPage": {
+                "starter": {
+                    "name": "Starter",
+                    "description": "Eine einzelne, fokussierte Seite, um Leads zu erfassen oder ein Projekt anzukündigen."
+                },
+                "business": {
+                    "name": "Business",
+                    "description": "Eine individuell gestaltete Seite, um Ihre Geschichte zu erzählen und Handlungen anzustoßen."
+                },
+                "pro": {
+                    "name": "Conversion Pro",
+                    "description": "Eine datengesteuerte landingPage, die für maximale Konversionen optimiert ist."
+                }
+            },
+            "businessWebsite": {
+                "starter": {
+                    "name": "Starter",
+                    "description": "Ein professioneller Online-Auftritt, um die Glaubwürdigkeit Ihrer Marke zu etablieren."
+                },
+                "growth": {
+                    "name": "Wachstum",
+                    "description": "Eine umfassende Webseite mit Funktionen, um Ihr Publikum zu binden und zu erweitern."
+                },
+                "enterprise": {
+                    "name": "Enterprise",
+                    "description": "Eine leistungsstarke, skalierbare Web-Lösung mit erweiterten Funktionalitäten."
+                }
+            },
+            "onlineShop": {
+                "starter": {
+                    "name": "Starter Shop",
+                    "description": "Starten Sie Ihren E-Commerce-Shop und beginnen Sie mit dem Verkauf Ihrer ersten Produkte."
+                },
+                "pro": {
+                    "name": "Pro Commerce",
+                    "description": "Ein funktionsreicher Onlineshop, der darauf ausgelegt ist, den Umsatz und die Kundenbindung zu steigern."
+                },
+                "enterprise": {
+                    "name": "Enterprise Commerce",
+                    "description": "Eine komplette E-Commerce-Lösung für umsatzstarke Verkäufe und komplexe Anforderungen."
+                }
+            },
+            "abTestingSetup": "A/B-Testing-Einrichtung",
             "abandonedCartRecovery": "Warenkorb-Wiederherstellung",
             "accessibilityCompliance": "Barrierefreiheit (WCAG)",
             "advancedFiltering": "Erweiterte Produktfilterung",
@@ -854,95 +940,177 @@
             "careersPage": "Karriere / Stellenangebote",
             "contentManagementSystem": "Content-Management-System (CMS)",
             "crmIntegration": "CRM-Integration",
-            "customerOrderHistory": "Bestellhistorie des Kunden",
+            "customization": "Anpassungsgrad",
+            "customerOrderHistory": "Bestellhistorie für Kunden",
             "discountCodes": "Rabattcodes & Aktionen",
             "emailContact": "E-Mail-Kontaktformular",
             "eventCalendar": "Veranstaltungskalender",
             "faqSection": "FAQ-Bereich",
-            "giftCardSales": "Verkauf von Geschenkgutscheinen",
-            "googleMaps": "Google Maps",
-            "googleReviewsIndividual": "Google-Bewertungen (Einzelne Bewertungen)",
+            "giftCardSales": "Verkauf von Geschenkkarten",
+            "googleMaps": "Google Maps Integration",
+            "googleReviewsIndividual": "Google-Bewertungen (Einzeln)",
             "googleReviewsStars": "Google-Bewertungen (Sternebewertung)",
             "guestCheckout": "Gastbestellung",
+            "heatmapIntegration": "Heatmap-Integration",
             "inventoryManagement": "Bestandsverwaltung",
             "languages": "Sprachen",
-            "leadMagnet": "Lead-Magnet (z.B. kostenloser Download)",
+            "leadMagnet": "Lead-Magnet (z. B. kostenloser Download)",
             "legalPages": "Rechtliche Seiten (Datenschutz, AGB)",
             "liveChat": "Live-Chat-Integration",
             "liveOpeningHours": "Live-Öffnungszeiten",
-            "loyaltyProgram": "Informationen zum Treueprogramm",
+            "loyaltyProgram": "Treueprogramm",
             "multicurrencySupport": "Unterstützung für mehrere Währungen",
             "newsletterSignup": "Newsletter-Anmeldung",
             "onlineOrderingPickupDelivery": "Online-Bestellung (Abholung/Lieferung)",
-            "onlineStore": "Online-Shop",
+            "onlineStore": "Onlineshop-Funktionalität",
             "orderManagement": "Bestellverwaltungs-Dashboard",
-            "paymentGateways": "Mehrere Zahlungs-Gateways (Stripe, PayPal, etc.)",
+            "paymentGateways": "Zahlungs-Gateways",
             "portfolioGallery": "Portfolio / Projektgalerie",
-            "pricingPage": "Preise / Tarife Seite",
-            "productImageGalleryVideo": "Produkt-Bildergalerie & Video-Unterstützung",
-            "productReviews": "Produktbewertungen & -rezensionen",
-            "productVariations": "Produktvarianten (z.B. Größe, Farbe)",
+            "pricingPage": "Preis- / Tarifseite",
+            "productCapacity": "Produktkapazität",
+            "productImageGalleryVideo": "Produktbildgalerie & Video",
+            "productReviews": "Produktbewertungen",
+            "productVariations": "Produktvarianten (z. B. Größe, Farbe)",
             "promotionalBannersAndPopups": "Werbebanner & Pop-ups",
             "relatedProducts": "Ähnliche Produkte & Upsells",
-            "responsiveDesign": "Responsive Design",
+            "responsiveDesign": "Responsives Design",
             "returnsAndExchangesPortal": "Retouren- & Umtauschportal",
-            "salesAnalytics": "Verkaufs- & Kundenanalysen",
-            "savedAddressesAndPayments": "Gespeicherte Adressen & Zahlungsdetails",
-            "secureClientPortal": "Sicheres Kundenportal (Verlauf, Dateien)",
+            "salesAnalytics": "Verkaufs- & Kundenanalyse",
+            "savedAddressesAndPayments": "Gespeicherte Adressen & Zahlungsarten",
+            "secureClientPortal": "Sicheres Kundenportal",
             "seoOptimized": "SEO-optimiert",
-            "serviceArea": "Servicebereich (Karte / Liste)",
-            "shippingOptions": "Versandoptionen & Tarifberechnung",
-            "socialMediaIntegration": "Social-Media-Feed-Integration",
-            "subscriptionModel": "Abonnement-Modell",
+            "serviceArea": "Einzugsgebiet (Karte / Liste)",
+            "shippingOptions": "Versandoptionen & -tarife",
+            "socialMediaIntegration": "Social-Media-Integration",
+            "structure": "Struktur",
+            "subscriptionModel": "Abonnementmodell",
             "taxCalculation": "Automatische Steuerberechnung",
-            "teamPage": "Team-Seite",
-            "testimonialsSection": "Kundenstimmen",
+            "teamPage": "Teamseite",
+            "testimonialsSection": "Kundenstimmen-Bereich",
             "userAccounts": "Kundenkonten",
-            "videoGallery": "Videogalerie / Testimonials",
-            "whatsappContact": "WhatsApp-Kontaktformular",
+            "videoGallery": "Videogalerie",
+            "whatsappContact": "WhatsApp-Kontakt",
             "wishlists": "Wunschlisten"
         },
-        "additionalServices": "Zusätzliche Services",
+        "addOns": {
+            "multilingualSupport": "Mehrsprachige Unterstützung",
+            "liveChat": "Live-Chat-Integration",
+            "advancedBooking": "Erweitertes Buchungssystem",
+            "secureClientPortal": "Sicheres Kundenportal",
+            "multiCurrency": "Unterstützung mehrerer Währungen",
+            "crmIntegration": "CRM-Integration"
+        },
+        "additionalServices": "Zusätzliche Dienstleistungen",
         "hosting": {
-            "title": "Alle Pakete benötigen Hosting",
+            "title": "Alle Pakete erfordern Hosting",
             "price": "(7,95 € / Monat oder 89 € / Jahr)"
         },
-            "maintenance": {
-                "landingPage": {
-                    "title": "Rundum-sorglos-Wartung für Landingpages",
-                    "description": "Wir kümmern uns um alles – Inhaltspflege, Updates, Sicherheit und Backups für Ihre Landingpage.",
-                    "price": "25 € / Monat oder 273 € / Jahr (9 % sparen)"
-                },
-                "website": {
-                    "title": "Rundum-sorglos-Wartung für Websites",
-                    "description": "Komplettservice für Ihre mehrseitige Website. Wir übernehmen Inhaltspflege, Plugin-Management, Sicherheitsscans und regelmäßige Backups.",
-                    "price": "35 € / Monat oder 357 € / Jahr (15 % sparen)"
-                },
-                "onlineShop": {
-                    "title": "Rundum-sorglos-Wartung für Onlineshops",
-                    "description": "Premium-Support für Ihre E-Commerce-Plattform. Umfasst Sicherheit, alle Updates (Core, Plugins), Backups und Funktionsprüfungen des Bestellprozesses.",
-                    "price": "60 € / Monat oder 576 € / Jahr (20 % sparen)"
-                },
-                "onlineShopCms": {
-                    "title": "Rundum-sorglos-Wartung für Onlineshops mit CMS",
-                    "description": "Premium-Support für Ihren Shop und Ihr CMS. Umfasst Sicherheit, alle Updates, Backups und Funktionsprüfungen für Produkte und Bestellungen.",
-                    "price": "80 € / Monat oder 720 € / Jahr (25 % sparen)"
-                },
-                "seoKickstart": {
-                    "title": "SEO Kickstart-Paket",
-                    "description": "Einmalige Einrichtung zur Optimierung Ihrer Website für Suchmaschinen, einschließlich Keyword-Recherche, On-Page-SEO und Einrichtung des Google Unternehmensprofils.",
-                    "price": "Ab 350 € (einmalig)"
-                },
-                "copywriting": {
-                    "title": "Professionelle Inhalte & Werbetexte",
-                    "description": "Ansprechende, SEO-freundliche Texte für Ihre wichtigsten Webseiten, erstellt, um Ihre Zielgruppe zu erreichen und Ihr professionelles Image zu stärfen.",
-                    "price": "Ab 80 € / Seite"
-                }
+        "maintenance": {
+            "landingPage": {
+                "title": "Wartung für landingPages",
+                "description": "Wir kümmern uns um alles – Inhaltspflege, Updates, Sicherheit und Backups für Ihre landingPage.",
+                "price": "25 € / Monat oder 273 € / Jahr (9 % sparen)"
             },
+            "website": {
+                "title": "Wartung für Webseiten",
+                "description": "Komplettservice für Ihre mehrseitige Webseite. Wir kümmern uns um Inhaltsaktualisierungen, Sicherheitsscans und regelmäßige Backups.",
+                "price": "35 € / Monat oder 357 € / Jahr (15 % sparen)"
+            },
+            "onlineShop": {
+                "title": "Wartung für Onlineshops",
+                "description": "Premium-Support für Ihre E-Commerce-Plattform. Beinhaltet Sicherheit, alle Updates, Backups und Funktionsprüfungen.",
+                "price": "60 € / Monat oder 576 € / Jahr (20 % sparen)"
+            },
+            "seoKickstart": {
+                "title": "SEO Kickstart-Paket",
+                "description": "Eine einmalige Einrichtung zur Optimierung Ihrer Seite, einschließlich Keyword-Recherche, On-Page-SEO und Einrichtung des Google Unternehmensprofils.",
+                "price": "Ab 350 € (einmalig)"
+            },
+            "copywriting": {
+                "title": "Professionelle Inhalte & Texterstellung",
+                "description": "Ansprechende, SEO-freundliche Texte für Ihre Kern-Webseiten, die darauf ausgelegt sind, Ihre Zielgruppe zu erreichen.",
+                "price": "Ab 80 € / Seite"
+            }
+        },
         "emailAndDomain": {
             "title": "E-Mail & Domain",
-            "description": "Ihre Wunsch-Domain & E-Mail-Adresse - einfach und professionell.",
+            "description": "Ihre Wunschdomain & E-Mail-Adresse – einfach und professionell.",
             "price": "3 € / Monat oder 30 € / Jahr"
         }
+    },
+  "faqSummary": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Haben Sie Fragen? Wir haben die Antworten. Hier sind einige der häufigsten, oder sehen Sie sich alle an.",
+    "viewAllButton": "Alle FAQs ansehen",
+    "list": {
+      "projectFlow": {
+        "question": "Wie sieht der typische Projektablauf aus?",
+        "answer": "<p>Jedes Projekt folgt einem strukturierten Ablauf: <br>1. <strong>Analyse & Strategie:</strong> Wir besprechen Ihre Ziele und Anforderungen. <br>2. <strong>Design:</strong> Wir erstellen Wireframes und Entwürfe zur Freigabe. <br>3. <strong>Entwicklung:</strong> Wir erwecken das Design mit sauberem, effizientem Code zum Leben. <br>4. <strong>Launch:</strong> Nach ausgiebigen Tests stellen wir Ihr Projekt online. <br>5. <strong>Support:</strong> Wir bieten laufende Wartung und Unterstützung an.</p>"
+      },
+      "selfMaintenance": {
+        "question": "Kann ich die Website nach der Erstellung selbst pflegen?",
+        "answer": "<p>Absolut. Die meisten Websites basieren auf einem Content-Management-System (CMS), mit dem Sie Inhalte, Bilder und andere Elemente einfach und ohne Programmierkenntnisse aktualisieren können. Ich biete eine Schulung an, damit Sie sich bei der Verwaltung Ihrer neuen Seite sicher fühlen.</p>"
+      },
+      "costs": {
+        "question": "Wie viel kostet eine neue Website oder ein Designprojekt?",
+        "answer": "<p>Die Kosten variieren je nach Umfang, Komplexität und den benötigten Funktionen. Nach einem Erstgespräch, in dem wir Ihre spezifischen Bedürfnisse ermitteln, erstelle ich ein detailliertes, individuelles Angebot. So zahlen Sie nur für das, was Sie wirklich brauchen.</p>"
+      },
+      "newWebsiteNeeded": {
+        "question": "Woher weiß ich, ob ich eine neue Website benötige?",
+        "answer": "<p>Ziehen Sie eine neue Website in Betracht, wenn Ihre aktuelle Seite nicht mobilfreundlich ist, veraltet aussieht, langsam lädt, nicht mehr Ihre Marke widerspiegelt oder keine Anfragen generiert. Eine neue Seite kann die Benutzererfahrung und die Geschäftsergebnisse erheblich verbessern.</p>"
+      },
+      "ownershipWebsite": {
+        "question": "Wem gehört die Website nach ihrer Fertigstellung?",
+        "answer": "<p>Ihnen. Nach der vollständigen Bezahlung erhalten Sie das uneingeschränkte Eigentum an den Website-Dateien und -Assets. Sie haben die volle Kontrolle und den Zugriff auf Ihr digitales Eigentum.</p>"
+      },
+      "ownershipPrint": {
+        "question": "Was ist mit den Rechten an Druckmaterialien wie Logos oder Broschüren?",
+        "answer": "<p>Ähnlich wie bei Websites erhalten Sie nach Projektabschluss und vollständiger Bezahlung das volle Eigentum an den finalen Designdateien (z. B. PDF, JPG, PNG). Quelldateien (z. B. Adobe Illustrator) können auf Anfrage, manchmal gegen eine zusätzliche Gebühr, zur Verfügung gestellt werden.</p>"
+      },
+      "duration": {
+        "question": "Wie lange wird es dauern, mein Projekt abzuschließen?",
+        "answer": "<p>Ein typisches Website-Projekt dauert zwischen 6 und 12 Wochen von Anfang bis Ende. Der genaue Zeitplan hängt von der Komplexität des Projekts und der Pünktlichkeit von Feedback und Inhaltslieferung Ihrerseits ab.</p>"
+      },
+      "brandWorkshop": {
+        "question": "Was ist ein Marken-Workshop und ist er notwendig?",
+        "answer": "<p>Ein Marken-Workshop ist eine gemeinsame Sitzung, in der wir die Kernwerte, die Mission, die Zielgruppe und die visuelle Identität Ihrer Marke definieren. Er ist sehr empfehlenswert für neue Unternehmen oder solche, die sich neu positionieren, um eine konsistente und effektive Markenstrategie zu gewährleisten.</p>"
+      },
+      "whatSetsMeApart": {
+        "question": "Was unterscheidet Sie von anderen Entwicklern und Designern?",
+        "answer": "<p>Ich verbinde strategisches Denken mit modernem Design und sauberem Code. Mein Fokus liegt darauf, Lösungen zu schaffen, die nicht nur schön, sondern auch funktional, benutzerfreundlich und auf Ihre Geschäftsziele ausgerichtet sind. Ich lege Wert auf klare Kommunikation und eine partnerschaftliche Zusammenarbeit.</p>"
+      },
+      "clientContribution": {
+        "question": "Was muss ich bereitstellen, um loszulegen?",
+        "answer": "<p>Zu Beginn müssen Sie alle Inhalte für die Website bereitstellen – dazu gehören Texte, Fotos und eventuell vorhandene Markenrichtlinien. Je besser Sie vorbereitet sind, desto reibungsloser wird der Prozess verlaufen.</p>"
+      },
+      "imageFormats": {
+        "question": "Welche Bildformate sind am besten für das Web?",
+        "answer": "<p>Für optimale Leistung und Qualität verwenden wir hauptsächlich moderne Formate wie <strong>WebP</strong> oder <strong>AVIF</strong> für Fotos. Für Logos, Symbole und Grafiken ist <strong>SVG</strong> die beste Wahl, da es auf allen Geräten skalierbar und gestochen scharf ist.</p>"
+      },
+      "hostingProvider": {
+        "question": "Benötige ich einen bestimmten Hosting-Anbieter?",
+        "answer": "<p>Obwohl ich mit den meisten Hosting-Anbietern arbeiten kann, kann ich bestimmte Anbieter empfehlen, die für ihre Leistung, Sicherheit und ihren Kundensupport bekannt sind. Bei Bedarf kann ich auch bei der Einrichtung von Hosting und Domainregistrierung behilflich sein.</p>"
+      },
+      "seoToDo": {
+        "question": "Ist Suchmaschinenoptimierung (SEO) inbegriffen?",
+        "answer": "<p>Grundlegende On-Page-SEO ist in allen Website-Projekten enthalten. Das bedeutet die Verwendung von Best Practices wie semantischem HTML, korrekten Meta-Tags, Bild-Alt-Texten und die Gewährleistung schneller Ladezeiten. Umfassende, fortlaufende SEO-Strategien sind als separate Dienstleistung erhältlich.</p>"
+      },
+      "metaKeywords": {
+        "question": "Brauche ich noch Meta-Keywords für SEO?",
+        "answer": "<p>Nein, der Meta-Keywords-Tag wird von großen Suchmaschinen wie Google seit vielen Jahren weitgehend ignoriert. Wir konzentrieren uns auf das, was zählt: hochwertige Inhalte, aussagekräftige Meta-Titel und -Beschreibungen sowie eine starke Seitenstruktur.</p>"
+      },
+      "accessibility": {
+        "question": "Warum ist die Barrierefreiheit (Accessibility, a11y) von Websites wichtig?",
+        "answer": "<p>Barrierefreiheit stellt sicher, dass Ihre Website von allen Menschen, einschließlich Menschen mit Behinderungen, genutzt werden kann. Es ist nicht nur das Richtige, sondern erweitert auch Ihr Publikum, verbessert die SEO und kann in einigen Regionen eine gesetzliche Anforderung sein.</p>"
+      },
+      "responsiveDesign": {
+        "question": "Wird meine Website auf mobilen Geräten funktionieren?",
+        "answer": "<p>Ja, absolut. Jede von mir erstellte Website verwendet responsives Design, was bedeutet, dass sie sich automatisch anpasst, um auf allen Geräten – von Desktops und Laptops bis hin zu Tablets und Smartphones – großartig auszusehen und perfekt zu funktionieren.</p>"
+      }
+    }
+  },
+    "currencySwitcher": {
+        "eur": "EUR",
+        "usd": "USD"
     }
 }

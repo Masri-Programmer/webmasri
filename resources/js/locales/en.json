@@ -71,6 +71,36 @@
         "clients": "Satisfied Clients",
         "technologies": "Technologies"
     },
+    "services": {
+        "mainTitle": "Our Comprehensive Web Solutions",
+        "mainSubtitle": "From concept to launch, we provide end-to-end services to build your powerful online presence and achieve your digital goals.",
+        "additionalTitle": "Beyond the Build",
+        "additionalSubtitle": "We offer a range of supporting services to ensure your website's continued success, security, and growth.",
+        "landingPage": {
+            "title": "Landing Pages & Onepagers",
+            "description": "Capture leads and drive conversions with a single, highly-focused page. Perfect for marketing campaigns, product launches, or digital business cards."
+        },
+        "businessWebsite": {
+            "title": "Corporate & Business Websites",
+            "description": "Establish your brand's credibility with a professional, multi-page website. Ideal for service providers, corporate firms, and organizations needing a comprehensive digital hub."
+        },
+        "onlineShop": {
+            "title": "E-Commerce & Online Shops",
+            "description": "Launch your digital storefront and sell products online. We build scalable e-commerce solutions from small boutiques to large retailers, complete with all necessary features."
+        },
+        "maintenance": {
+            "title": "Website Maintenance",
+            "description": "Keep your site secure, updated, and running smoothly with our comprehensive maintenance packages for peace of mind."
+        },
+        "seo": {
+            "title": "SEO Kickstart",
+            "description": "Optimize your site from day one with keyword research, on-page SEO, and Google Business Profile setup for better visibility."
+        },
+        "copywriting": {
+            "title": "Content & Copywriting",
+            "description": "Engage your audience with professional, SEO-friendly content crafted specifically for your core website pages."
+        }
+    },
     "testimonials": {
         "title": "What Our Clients Say",
         "subtitle": "Discover the experiences of businesses we've partnered with.",
@@ -193,6 +223,8 @@
             "title": "Home",
             "hero": "Home",
             "hero_desc": "The main introduction section.",
+            "services": "Services",
+            "services_desc": "Discover the powerful services we offer.",
             "features": "Features",
             "features_desc": "Discover the powerful features we offer.",
             "about": "About",
@@ -800,121 +832,289 @@
         "contactUs": "Contact Us",
         "featured": "Most Popular",
         "priceFrom": "From",
-
+        "availableAddOns": "Available Add-Ons",
+        "customizeYourPackage": "Customize your package with these powerful additions.",
         "landingPage": "Landing Page (Onepager)",
         "landingPageExamples": "Perfect for marketing campaigns, a single product/service, or a digital business card.",
-        "website": "Website",
+        "website": "Business Website",
         "websiteExamples": "Ideal for service providers, corporate sites, doctors, or restaurants needing multiple pages and a blog.",
         "onlineShop": "Online Shop",
         "onlineShopExamples": "Designed for businesses selling products online, from small boutiques to larger retailers.",
-        "onlineShopCMS": "Online Shop with CMS",
-        "onlineShopCMSExamples": "For stores that use content marketing, a blog, and informational pages to drive sales.",
-            "packages": {
-                "structure": "Structure",
-                "onePage": "One page, simple structure",
-                "multiplePages": "Multiple pages, flexible",
-                "fullyCustomizable": "Fully customizable",
-                "flexibility": "Flexibility",
-                "infoAndBranding": "Information, logo, images, colors",
-                "abandonedCartRecovery": "Abandoned Cart Recovery",
-                "accessibilityCompliance": "Accessibility Compliance (WCAG)",
-                "advancedFiltering": "Advanced Product Filtering",
-                "advancedSearch": "Advanced Product Search",
-                "analyticsIntegration": "Analytics Integration",
-                "blogSection": "Blog Section",
-                "bookingSystem": "Booking / Appointment System",
-                "careersPage": "Careers / Job Postings",
-                "contentManagementSystem": "Content Management System (CMS)",
-                "crmIntegration": "CRM Integration",
-                "customerOrderHistory": "Customer Order History",
-                "discountCodes": "Discount Codes & Promotions",
-                "emailContact": "Email Contact Form",
-                "eventCalendar": "Event Calendar",
-                "faqSection": "FAQ Section",
-                "giftCardSales": "Gift Card Sales",
-                "googleMaps": "Google Maps",
-                "googleReviewsIndividual": "Google Reviews (Show individual reviews)",
-                "googleReviewsStars": "Google Reviews (Star Rating)",
-                "guestCheckout": "Guest Checkout Option",
-                "inventoryManagement": "Inventory Management",
-                "languages": "Languages",
-                "leadMagnet": "Lead Magnet (e.g., Free Download)",
-                "legalPages": "Legal Pages (Privacy, Terms)",
-                "liveChat": "Live Chat Integration",
-                "liveOpeningHours": "Live Opening Hours",
-                "loyaltyProgram": "Loyalty Program Information",
-                "multicurrencySupport": "Multi-Currency Support",
-                "newsletterSignup": "Newsletter Signup",
-                "onlineOrderingPickupDelivery": "Online Ordering (Pickup/Delivery)",
-                "onlineStore": "Online Shop",
-                "orderManagement": "Order Management Dashboard",
-                "paymentGateways": "Multiple Payment Gateways (Stripe, PayPal, etc.)",
-                "portfolioGallery": "Portfolio / Project Gallery",
-                "pricingPage": "Pricing / Rates Page",
-                "productImageGalleryVideo": "Product Image Gallery & Video Support",
-                "productReviews": "Product Reviews & Ratings",
-                "productVariations": "Product Variations (e.g., Size, Color)",
-                "promotionalBannersAndPopups": "Promotional Banners & Pop-ups",
-                "relatedProducts": "Related Products & Upsells",
-                "responsiveDesign": "Responsive Design",
-                "returnsAndExchangesPortal": "Returns & Exchanges Portal",
-                "salesAnalytics": "Sales & Customer Analytics",
-                "savedAddressesAndPayments": "Saved Addresses & Payment Details",
-                "secureClientPortal": "Secure Client Portal (History, Files)",
-                "seoOptimized": "SEO Optimized",
-                "serviceArea": "Service Area Map / List",
-                "shippingOptions": "Shipping Options & Rate Calculation",
-                "socialMediaIntegration": "Social Media Feed Integration",
-                "subscriptionModel": "Subscription Model",
-                "taxCalculation": "Automatic Tax Calculation",
-                "teamPage": "Team Page",
-                "testimonialsSection": "Testimonials Section",
-                "userAccounts": "Customer Accounts",
-                "videoGallery": "Video Gallery / Testimonials",
-                "whatsappContact": "WhatsApp Contact Form",
-                "wishlists": "Wishlists"
+        "packages": {
+            "featureValues": {
+                "templateBased": "Template-Based",
+                "customDesign": "Custom Design",
+                "strategyAndCustom": "Strategy & Custom Design",
+                "upTo5Pages": "Up to 5 Pages",
+                "upTo15Pages": "Up to 15 Pages",
+                "unlimitedPages": "Unlimited Pages",
+                "brandingAndContent": "Branding & Content",
+                "fullyCustomizable": "Fully Customizable",
+                "upTo50Products": "Up to 50 Products",
+                "upTo500Products": "Up to 500 Products",
+                "unlimitedProducts": "Unlimited Products",
+                "standardPayments": "Standard (Stripe, PayPal)",
+                "standardPaymentsKlarna": "Standard + Klarna",
+                "customIntegrations": "Custom Integrations"
             },
+            "landingPage": {
+                "starter": {
+                    "name": "Starter",
+                    "description": "A single, focused page to capture leads or announce a project."
+                },
+                "business": {
+                    "name": "Business",
+                    "description": "A custom-designed page built to tell your story and drive action."
+                },
+                "pro": {
+                    "name": "Conversion Pro",
+                    "description": "A data-driven landing page optimized for maximum conversions."
+                }
+            },
+            "businessWebsite": {
+                "starter": {
+                    "name": "Starter",
+                    "description": "A professional online presence to establish your brand credibility."
+                },
+                "growth": {
+                    "name": "Growth",
+                    "description": "A comprehensive website with features to engage and grow your audience."
+                },
+                "enterprise": {
+                    "name": "Enterprise",
+                    "description": "A powerful, scalable web solution with advanced functionalities."
+                }
+            },
+            "onlineShop": {
+                "starter": {
+                    "name": "Starter Shop",
+                    "description": "Launch your e-commerce store and start selling your first products."
+                },
+                "pro": {
+                    "name": "Pro Commerce",
+                    "description": "A feature-rich online store designed to grow sales and customer loyalty."
+                },
+                "enterprise": {
+                    "name": "Enterprise Commerce",
+                    "description": "A complete e-commerce solution for high-volume sales and complex needs."
+                }
+            },
+            "abTestingSetup": "A/B Testing Setup",
+            "abandonedCartRecovery": "Abandoned Cart Recovery",
+            "accessibilityCompliance": "Accessibility Compliance (WCAG)",
+            "advancedFiltering": "Advanced Product Filtering",
+            "advancedSearch": "Advanced Product Search",
+            "analyticsIntegration": "Analytics Integration",
+            "blogSection": "Blog Section",
+            "bookingSystem": "Booking / Appointment System",
+            "careersPage": "Careers / Job Postings",
+            "contentManagementSystem": "Content Management System (CMS)",
+            "crmIntegration": "CRM Integration",
+            "customization": "Customization Level",
+            "customerOrderHistory": "Customer Order History",
+            "discountCodes": "Discount Codes & Promotions",
+            "emailContact": "Email Contact Form",
+            "eventCalendar": "Event Calendar",
+            "faqSection": "FAQ Section",
+            "giftCardSales": "Gift Card Sales",
+            "googleMaps": "Google Maps Integration",
+            "googleReviewsIndividual": "Google Reviews (Individual)",
+            "googleReviewsStars": "Google Reviews (Star Rating)",
+            "guestCheckout": "Guest Checkout Option",
+            "heatmapIntegration": "Heatmap Integration",
+            "inventoryManagement": "Inventory Management",
+            "languages": "Languages",
+            "leadMagnet": "Lead Magnet (e.g., Free Download)",
+            "legalPages": "Legal Pages (Privacy, Terms)",
+            "liveChat": "Live Chat Integration",
+            "liveOpeningHours": "Live Opening Hours",
+            "loyaltyProgram": "Loyalty Program",
+            "multicurrencySupport": "Multi-Currency Support",
+            "newsletterSignup": "Newsletter Signup",
+            "onlineOrderingPickupDelivery": "Online Ordering (Pickup/Delivery)",
+            "onlineStore": "Online Shop Functionality",
+            "orderManagement": "Order Management Dashboard",
+            "paymentGateways": "Payment Gateways",
+            "portfolioGallery": "Portfolio / Project Gallery",
+            "pricingPage": "Pricing / Rates Page",
+            "productCapacity": "Product Capacity",
+            "productImageGalleryVideo": "Product Image Gallery & Video",
+            "productReviews": "Product Reviews & Ratings",
+            "productVariations": "Product Variations (e.g., Size, Color)",
+            "promotionalBannersAndPopups": "Promotional Banners & Pop-ups",
+            "relatedProducts": "Related Products & Upsells",
+            "responsiveDesign": "Responsive Design",
+            "returnsAndExchangesPortal": "Returns & Exchanges Portal",
+            "salesAnalytics": "Sales & Customer Analytics",
+            "savedAddressesAndPayments": "Saved Addresses & Payments",
+            "secureClientPortal": "Secure Client Portal",
+            "seoOptimized": "SEO Optimized",
+            "serviceArea": "Service Area Map / List",
+            "shippingOptions": "Shipping Options & Rates",
+            "socialMediaIntegration": "Social Media Integration",
+            "structure": "Structure",
+            "subscriptionModel": "Subscription Model",
+            "taxCalculation": "Automatic Tax Calculation",
+            "teamPage": "Team Page",
+            "testimonialsSection": "Testimonials Section",
+            "userAccounts": "Customer Accounts",
+            "videoGallery": "Video Gallery",
+            "whatsappContact": "WhatsApp Contact",
+            "wishlists": "Wishlists"
+        },
+        "addOns": {
+            "multilingualSupport": "Multilingual Support",
+            "liveChat": "Live Chat Integration",
+            "advancedBooking": "Advanced Booking System",
+            "secureClientPortal": "Secure Client Portal",
+            "multiCurrency": "Multi-Currency Support",
+            "crmIntegration": "CRM Integration"
+        },
         "additionalServices": "Additional Services",
         "hosting": {
             "title": "All packages require hosting",
             "price": "(€7.95 / month or €89 / year)"
         },
-            "maintenance": {
-                "landingPage": {
-                    "title": "All-round carefree maintenance for Landing Pages",
-                    "description": "We take care of everything - content maintenance, updates, security, and backups for your landing page.",
-                    "price": "€25 / month or €273 / year (save 9%)"
-                },
-                "website": {
-                    "title": "All-round carefree maintenance for Websites",
-                    "description": "Complete service for your multi-page website. We handle content updates, plugin management, security scans, and regular backups.",
-                    "price": "€35 / month or €357 / year (save 15%)"
-                },
-                "onlineShop": {
-                    "title": "All-round carefree maintenance for Online Shops",
-                    "description": "Premium support for your e-commerce platform. Includes security, all updates (core, plugins), backups, and functional checks of the ordering process.",
-                    "price": "€60 / month or €576 / year (save 20%)"
-                },
-                "onlineShopCms": {
-                    "title": "All-round carefree maintenance for Online Shops with CMS",
-                    "description": "Premium support for your shop and CMS. Includes security, all updates, backups, and functional checks for products and orders.",
-                    "price": "€80 / month or €720 / year (save 25%)"
-                },
-                "seoKickstart": {
-                    "title": "SEO Kickstart Package",
-                    "description": "A one-time setup to optimize your site for search engines, including keyword research, on-page SEO, and Google Business Profile setup.",
-                    "price": "Starting from €350 (one-time fee)"
-                },
-                "copywriting": {
-                    "title": "Professional Content & Copywriting",
-                    "description": "Engaging, SEO-friendly text for your core website pages, crafted to connect with your audience and improve your professional image.",
-                    "price": "Starting from €80 / page"
-                }
+        "maintenance": {
+            "landingPage": {
+                "title": "Maintenance for Landing Pages",
+                "description": "We take care of everything - content maintenance, updates, security, and backups for your landing page.",
+                "price": "€25 / month or €273 / year (save 9%)"
             },
+            "website": {
+                "title": "Maintenance for Websites",
+                "description": "Complete service for your multi-page website. We handle content updates, security scans, and regular backups.",
+                "price": "€35 / month or €357 / year (save 15%)"
+            },
+            "onlineShop": {
+                "title": "Maintenance for Online Shops",
+                "description": "Premium support for your e-commerce platform. Includes security, all updates, backups, and functional checks.",
+                "price": "€60 / month or €576 / year (save 20%)"
+            },
+            "seoKickstart": {
+                "title": "SEO Kickstart Package",
+                "description": "A one-time setup to optimize your site, including keyword research, on-page SEO, and Google Business Profile setup.",
+                "price": "Starting from €350 (one-time fee)"
+            },
+            "copywriting": {
+                "title": "Professional Content & Copywriting",
+                "description": "Engaging, SEO-friendly text for your core website pages, crafted to connect with your audience.",
+                "price": "Starting from €80 / page"
+            }
+        },
         "emailAndDomain": {
             "title": "Email & Domain",
             "description": "Your desired domain & email address - simple and professional.",
             "price": "€3 / month or €30 / year"
         }
+    },
+    "pricingSummary": {
+        "tagline": "Transparent Pricing",
+        "title": "A Plan for Every Need",
+        "description": "Choose the perfect starting point for your project. Our plans are designed to be flexible, powerful, and tailored to your goals.",
+        "mostPopular": "Most Popular",
+        "from": "From",
+        "ctaButton": "Learn More",
+        "landingPage": {
+            "title": "Landing Page",
+            "description": "Perfect for single products, events, or marketing campaigns that need a focused message."
+        },
+        "businessWebsite": {
+            "title": "Business Website",
+            "description": "An ideal solution for small businesses and professionals who need a complete online presence."
+        },
+        "onlineShop": {
+            "title": "Online Shop",
+            "description": "Everything you need to launch your e-commerce business and start selling products online."
+        },
+        "features": {
+            "singlePage": "Focused Single-Page Layout",
+            "contactForm": "Integrated Contact Form",
+            "seoOptimized": "SEO Optimized Structure",
+            "fastLoading": "Optimized for Speed",
+            "multiPage": "Up to 5 Pages Included",
+            "cms": "Easy Content Management (CMS)",
+            "blogSetup": "Integrated Blog Section",
+            "customDesign": "Professional Custom Design",
+            "productManagement": "Full Product Management",
+            "securePayments": "Secure Payment Gateways",
+            "inventorySystem": "Inventory Management",
+            "customerAccounts": "Customer Accounts & Orders"
+        }
+    },
+  "faqSummary": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Have questions? We have answers. Here are a few common ones, or view them all.",
+    "viewAllButton": "View All FAQs",
+    "list": {
+      "projectFlow": {
+        "question": "What does the typical project flow look like?",
+        "answer": "<p>Every project follows a structured path: <br>1. <strong>Discovery & Strategy:</strong> We discuss your goals and requirements. <br>2. <strong>Design:</strong> We create wireframes and mockups for your approval. <br>3. <strong>Development:</strong> We bring the design to life with clean, efficient code. <br>4. <strong>Launch:</strong> After thorough testing, we deploy your project. <br>5. <strong>Support:</strong> We offer ongoing maintenance and support.</p>"
+      },
+      "selfMaintenance": {
+        "question": "Can I maintain the website myself after it's built?",
+        "answer": "<p>Absolutely. Most websites are built on a Content Management System (CMS) that allows you to easily update content, images, and other elements without any coding knowledge. I provide training to ensure you're comfortable managing your new site.</p>"
+      },
+      "costs": {
+        "question": "How much does a new website or design project cost?",
+        "answer": "<p>Costs vary depending on the scope, complexity, and features required. I provide a detailed, custom quote after an initial consultation to understand your specific needs. This ensures you only pay for what you need.</p>"
+      },
+      "newWebsiteNeeded": {
+        "question": "How do I know if I need a new website?",
+        "answer": "<p>Consider a new website if your current site is not mobile-friendly, looks outdated, is slow to load, doesn't reflect your current brand, or isn't generating leads. A fresh site can significantly improve user experience and business results.</p>"
+      },
+      "ownershipWebsite": {
+        "question": "Who owns the website once it is completed?",
+        "answer": "<p>You do. Upon final payment, you receive full ownership of the website files and assets. You will have complete control and access to your digital property.</p>"
+      },
+      "ownershipPrint": {
+        "question": "What about the rights to print materials like logos or brochures?",
+        "answer": "<p>Similar to websites, you receive full ownership of the final design files (e.g., PDF, JPG, PNG) for any print materials upon project completion and final payment. Source files (e.g., Adobe Illustrator) can be provided upon request, sometimes for an additional fee.</p>"
+      },
+      "duration": {
+        "question": "How long will it take to complete my project?",
+        "answer": "<p>A typical website project takes between 6 to 12 weeks from start to finish. The exact timeline depends on the project's complexity and the timeliness of feedback and content delivery from your side.</p>"
+      },
+      "brandWorkshop": {
+        "question": "What is a brand workshop and is it necessary?",
+        "answer": "<p>A brand workshop is a collaborative session where we define your brand's core values, mission, target audience, and visual identity. It's highly recommended for new businesses or those undergoing a rebrand to ensure a consistent and effective brand strategy.</p>"
+      },
+      "whatSetsMeApart": {
+        "question": "What sets you apart from other developers and designers?",
+        "answer": "<p>I combine strategic thinking with modern design and clean code. My focus is on creating solutions that are not only beautiful but also functional, user-friendly, and aligned with your business goals. I prioritize clear communication and a collaborative partnership.</p>"
+      },
+      "clientContribution": {
+        "question": "What do I need to provide to get started?",
+        "answer": "<p>To start, you'll need to provide all the content for the website—this includes text, photos, and any specific branding guidelines you may have. The more prepared you are, the smoother the process will be.</p>"
+      },
+      "imageFormats": {
+        "question": "What image formats are best for the web?",
+        "answer": "<p>For optimal performance and quality, we primarily use modern formats like <strong>WebP</strong> or <strong>AVIF</strong> for photos. For logos, icons, and graphics, <strong>SVG</strong> is the best choice as it's scalable and crisp on all devices.</p>"
+      },
+      "hostingProvider": {
+        "question": "Do I need a specific hosting provider?",
+        "answer": "<p>While I can work with most hosting providers, I can recommend specific ones known for their performance, security, and customer support. I can also assist with setting up hosting and domain registration if needed.</p>"
+      },
+      "seoToDo": {
+        "question": "Is Search Engine Optimization (SEO) included?",
+        "answer": "<p>Basic on-page SEO is included in all website projects. This means using best practices like semantic HTML, proper meta tags, image alt-text, and ensuring fast load times. Comprehensive, ongoing SEO strategies are available as a separate service.</p>"
+      },
+      "metaKeywords": {
+        "question": "Do I still need meta keywords for SEO?",
+        "answer": "<p>No, the meta keywords tag is largely ignored by major search engines like Google and has been for many years. We focus on what matters: high-quality content, descriptive meta titles and descriptions, and a strong site structure.</p>"
+      },
+      "accessibility": {
+        "question": "Why is website accessibility (a11y) important?",
+        "answer": "<p>Accessibility ensures that your website can be used by everyone, including people with disabilities. It's not only the right thing to do but also expands your audience, improves SEO, and can be a legal requirement in some regions.</p>"
+      },
+      "responsiveDesign": {
+        "question": "Will my website work on mobile devices?",
+        "answer": "<p>Yes, absolutely. Every website I build uses responsive design, meaning it will automatically adapt to look great and function perfectly on all devices, from desktops and laptops to tablets and smartphones.</p>"
+      }
+    }
+  },
+    "currencySwitcher": {
+        "eur": "EUR",
+        "usd": "USD"
     }
 }
