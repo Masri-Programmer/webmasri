@@ -1072,5 +1072,29 @@
     "currencySwitcher": {
         "eur": "EUR",
         "usd": "USD"
-    }
+    },
+  "contactForm": {
+    "title": "Contact Us",
+    "description": "Have a question or a project in mind? Fill out the form below.",
+    "name": {
+      "label": "Full Name",
+      "placeholder": "Enter your full name"
+    },
+    "email": {
+      "label": "Email Address",
+      "placeholder": "your.email@example.com"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Let us know how we can help you."
+    },
+    "submit": "Send Message",
+    "submitting": "Sending...",
+    "success": "Message sent! We'll get back to you shortly.",
+    "error": "Failed to send message. Please try again later."
+  },
+  "consultation": {
+    "text": "Need to discuss your project in detail?",
+    "button": "Book a Meeting"
+  }
 }

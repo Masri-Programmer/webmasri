@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Title from '@/components/Title.vue';
 import { CardBody, CardContainer, CardItem } from '@/components/ui/card-3d';
 import { pricing } from '@/routes';
 import { Link } from '@inertiajs/vue3';
@@ -11,19 +12,19 @@ const { t } = useI18n();
 const coreServices = shallowRef([
     {
         icon: Layers,
-        key:"landingPage",
+        key: 'landingPage',
         titleKey: 'services.landingPage.title',
         descriptionKey: 'services.landingPage.description',
     },
     {
         icon: Briefcase,
-        key:"businessWebsite",
+        key: 'businessWebsite',
         titleKey: 'services.businessWebsite.title',
         descriptionKey: 'services.businessWebsite.description',
     },
     {
         icon: ShoppingCart,
-        key:"onlineShop",
+        key: 'onlineShop',
         titleKey: 'services.onlineShop.title',
         descriptionKey: 'services.onlineShop.description',
     },
@@ -51,21 +52,13 @@ const additionalServices = shallowRef([
 <template>
     <section id="services" class="bg-muted/40 dark:bg-background">
         <div class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-            <div class="mx-auto max-w-3xl text-center">
-                <h2 class="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                    {{ t('services.mainTitle') }}
-                </h2>
-                <p class="mt-4 text-lg text-muted-foreground">
-                    {{ t('services.mainSubtitle') }}
-                </p>
-            </div>
-
+            <Title :title="'services.mainTitle'" :subtitleKey="'services.mainSubtitle'" />
             <div class="mx-auto mt-12 grid max-w-lg gap-8 lg:max-w-none lg:grid-cols-3">
-                <CardContainer v-for="service in coreServices" :key="service.titleKey"  class="group h-full w-full">
+                <CardContainer v-for="service in coreServices" :key="service.titleKey" class="group h-full w-full">
                     <CardBody
-                    class="group/card relative flex h-full w-full flex-col rounded-xl border border-black/[0.1] bg-card p-6 dark:border-white/[0.2] dark:bg-background dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]"
+                        class="group/card relative flex h-full w-full flex-col rounded-xl border border-black/[0.1] bg-card p-6 dark:border-white/[0.2] dark:bg-background dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]"
                     >
-                    <Link :href="pricing.url([service.key])">
+                        <Link :href="pricing.url([service.key])">
                             <CardItem :translate-z="60">
                                 <div class="flex items-center gap-4">
                                     <component :is="service.icon" class="h-8 w-8 text-primary" />
@@ -78,7 +71,7 @@ const additionalServices = shallowRef([
                                 {{ t(service.descriptionKey) }}
                             </CardItem>
                         </Link>
-                        </CardBody>
+                    </CardBody>
                 </CardContainer>
             </div>
 

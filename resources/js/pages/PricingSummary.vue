@@ -68,6 +68,7 @@ const pricingPlans = [
                     </p>
                 </div>
             </div>
+              <Title :title="'pricingSummary.title'" :subtitleKey="'pricingSummary.subtitle'" tagline="pricingSummary.tagline" />
             <div class="mx-auto mt-12 grid max-w-5xl items-start gap-8 sm:grid-cols-2 md:gap-12 lg:grid-cols-3">
                 <Card
                     v-for="plan in pricingPlans"
