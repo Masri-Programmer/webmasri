@@ -1049,73 +1049,73 @@
         }
     },
     "faqSummary": {
-        "title": "Frequently Asked Questions",
-        "subtitle": "Have questions? We have answers. Here are a few common ones, or view them all.",
-        "viewAllButton": "View All FAQs",
+        "title": "Foire Aux Questions",
+        "subtitle": "Vous avez des questions ? Nous avons des réponses. Voici quelques-unes des plus courantes, ou consultez-les toutes.",
+        "viewAllButton": "Voir toutes les FAQ",
         "list": {
             "projectFlow": {
-                "question": "What does the typical project flow look like?",
-                "answer": "<p>Every project follows a structured path: <br>1. <strong>Discovery & Strategy:</strong> We discuss your goals and requirements. <br>2. <strong>Design:</strong> We create wireframes and mockups for your approval. <br>3. <strong>Development:</strong> We bring the design to life with clean, efficient code. <br>4. <strong>Launch:</strong> After thorough testing, we deploy your project. <br>5. <strong>Support:</strong> We offer ongoing maintenance and support.</p>"
+                "question": "À quoi ressemble le déroulement typique d'un projet ?",
+                "answer": "<p>Chaque projet suit un parcours structuré : <br>1. <strong>Découverte & Stratégie :</strong> Nous discutons de vos objectifs et de vos exigences. <br>2. <strong>Conception :</strong> Nous créons des wireframes et des maquettes pour votre approbation. <br>3. <strong>Développement :</strong> Nous donnons vie au design avec un code propre et efficace. <br>4. <strong>Lancement :</strong> Après des tests approfondis, nous déployons votre projet. <br>5. <strong>Support :</strong> Nous offrons une maintenance et un support continus.</p>"
             },
             "selfMaintenance": {
-                "question": "Can I maintain the website myself after it's built?",
-                "answer": "<p>Absolutely. Most websites are built on a Content Management System (CMS) that allows you to easily update content, images, and other elements without any coding knowledge. I provide training to ensure you're comfortable managing your new site.</p>"
+                "question": "Puis-je maintenir le site web moi-même après sa création ?",
+                "answer": "<p>Absolument. La plupart des sites web sont construits sur un système de gestion de contenu (CMS) qui vous permet de mettre à jour facilement le contenu, les images et d'autres éléments sans aucune connaissance en codage. Je fournis une formation pour m'assurer que vous êtes à l'aise pour gérer votre nouveau site.</p>"
             },
             "costs": {
-                "question": "How much does a new website or design project cost?",
-                "answer": "<p>Costs vary depending on the scope, complexity, and features required. I provide a detailed, custom quote after an initial consultation to understand your specific needs. This ensures you only pay for what you need.</p>"
+                "question": "Combien coûte un nouveau site web ou un projet de design ?",
+                "answer": "<p>Les coûts varient en fonction de la portée, de la complexité et des fonctionnalités requises. Je fournis un devis détaillé et personnalisé après une première consultation pour comprendre vos besoins spécifiques. Cela garantit que vous ne payez que pour ce dont vous avez besoin.</p>"
             },
             "newWebsiteNeeded": {
-                "question": "How do I know if I need a new website?",
-                "answer": "<p>Consider a new website if your current site is not mobile-friendly, looks outdated, is slow to load, doesn't reflect your current brand, or isn't generating leads. A fresh site can significantly improve user experience and business results.</p>"
+                "question": "Comment savoir si j'ai besoin d'un nouveau site web ?",
+                "answer": "<p>Envisagez un nouveau site web si votre site actuel n'est pas adapté aux mobiles, a l'air démodé, est lent à charger, ne reflète pas votre marque actuelle ou ne génère pas de prospects. Un site rafraîchi peut améliorer considérablement l'expérience utilisateur et les résultats commerciaux.</p>"
             },
             "ownershipWebsite": {
-                "question": "Who owns the website once it is completed?",
-                "answer": "<p>You do. Upon final payment, you receive full ownership of the website files and assets. You will have complete control and access to your digital property.</p>"
+                "question": "À qui appartient le site web une fois terminé ?",
+                "answer": "<p>À vous. Lors du paiement final, vous recevez la pleine propriété des fichiers et des actifs du site web. Vous aurez un contrôle et un accès complets à votre propriété numérique.</p>"
             },
             "ownershipPrint": {
-                "question": "What about the rights to print materials like logos or brochures?",
-                "answer": "<p>Similar to websites, you receive full ownership of the final design files (e.g., PDF, JPG, PNG) for any print materials upon project completion and final payment. Source files (e.g., Adobe Illustrator) can be provided upon request, sometimes for an additional fee.</p>"
+                "question": "Qu'en est-il des droits sur les supports imprimés comme les logos ou les brochures ?",
+                "answer": "<p>Comme pour les sites web, vous recevez la pleine propriété des fichiers de conception finaux (par exemple, PDF, JPG, PNG) pour tous les supports imprimés à l'achèvement du projet et au paiement final. Les fichiers sources (par exemple, Adobe Illustrator) peuvent être fournis sur demande, parfois moyennant des frais supplémentaires.</p>"
             },
             "duration": {
-                "question": "How long will it take to complete my project?",
-                "answer": "<p>A typical website project takes between 6 to 12 weeks from start to finish. The exact timeline depends on the project's complexity and the timeliness of feedback and content delivery from your side.</p>"
+                "question": "Combien de temps faudra-t-il pour terminer mon projet ?",
+                "answer": "<p>Un projet de site web typique prend entre 6 et 12 semaines du début à la fin. Le calendrier exact dépend de la complexité du projet et de la ponctualité des retours et de la livraison du contenu de votre part.</p>"
             },
             "brandWorkshop": {
-                "question": "What is a brand workshop and is it necessary?",
-                "answer": "<p>A brand workshop is a collaborative session where we define your brand's core values, mission, target audience, and visual identity. It's highly recommended for new businesses or those undergoing a rebrand to ensure a consistent and effective brand strategy.</p>"
+                "question": "Qu'est-ce qu'un atelier de marque et est-ce nécessaire ?",
+                "answer": "<p>Un atelier de marque est une session collaborative où nous définissons les valeurs fondamentales, la mission, le public cible et l'identité visuelle de votre marque. Il est fortement recommandé pour les nouvelles entreprises ou celles qui procèdent à un rebranding afin d'assurer une stratégie de marque cohérente et efficace.</p>"
             },
             "whatSetsMeApart": {
-                "question": "What sets you apart from other developers and designers?",
-                "answer": "<p>I combine strategic thinking with modern design and clean code. My focus is on creating solutions that are not only beautiful but also functional, user-friendly, and aligned with your business goals. I prioritize clear communication and a collaborative partnership.</p>"
+                "question": "Qu'est-ce qui vous distingue des autres développeurs et designers ?",
+                "answer": "<p>Je combine la pensée stratégique avec un design moderne et un code propre. Mon objectif est de créer des solutions qui ne sont pas seulement belles, mais aussi fonctionnelles, conviviales et alignées sur vos objectifs commerciaux. Je privilégie une communication claire et un partenariat collaboratif.</p>"
             },
             "clientContribution": {
-                "question": "What do I need to provide to get started?",
-                "answer": "<p>To start, you'll need to provide all the content for the website—this includes text, photos, and any specific branding guidelines you may have. The more prepared you are, the smoother the process will be.</p>"
+                "question": "Que dois-je fournir pour commencer ?",
+                "answer": "<p>Pour commencer, vous devrez fournir tout le contenu du site web — cela inclut les textes, les photos et toutes les directives de marque spécifiques que vous pourriez avoir. Mieux vous serez préparé, plus le processus se déroulera sans heurts.</p>"
             },
             "imageFormats": {
-                "question": "What image formats are best for the web?",
-                "answer": "<p>For optimal performance and quality, we primarily use modern formats like <strong>WebP</strong> or <strong>AVIF</strong> for photos. For logos, icons, and graphics, <strong>SVG</strong> is the best choice as it's scalable and crisp on all devices.</p>"
+                "question": "Quels formats d'image sont les meilleurs pour le web ?",
+                "answer": "<p>Pour des performances et une qualité optimales, nous utilisons principalement des formats modernes comme <strong>WebP</strong> ou <strong>AVIF</strong> pour les photos. Pour les logos, les icônes et les graphiques, le <strong>SVG</strong> est le meilleur choix car il est adaptable et net sur tous les appareils.</p>"
             },
             "hostingProvider": {
-                "question": "Do I need a specific hosting provider?",
-                "answer": "<p>While I can work with most hosting providers, I can recommend specific ones known for their performance, security, and customer support. I can also assist with setting up hosting and domain registration if needed.</p>"
+                "question": "Ai-je besoin d'un hébergeur spécifique ?",
+                "answer": "<p>Bien que je puisse travailler avec la plupart des hébergeurs, je peux en recommander certains connus pour leurs performances, leur sécurité et leur support client. Je peux également vous aider à configurer l'hébergement et l'enregistrement du nom de domaine si nécessaire.</p>"
             },
             "seoToDo": {
-                "question": "Is Search Engine Optimization (SEO) included?",
-                "answer": "<p>Basic on-page SEO is included in all website projects. This means using best practices like semantic HTML, proper meta tags, image alt-text, and ensuring fast load times. Comprehensive, ongoing SEO strategies are available as a separate service.</p>"
+                "question": "L'optimisation pour les moteurs de recherche (SEO) est-elle incluse ?",
+                "answer": "<p>Le SEO de base sur la page est inclus dans tous les projets de site web. Cela signifie utiliser les meilleures pratiques comme le HTML sémantique, les balises méta appropriées, le texte alternatif des images et garantir des temps de chargement rapides. Des stratégies de SEO complètes et continues sont disponibles en tant que service distinct.</p>"
             },
             "metaKeywords": {
-                "question": "Do I still need meta keywords for SEO?",
-                "answer": "<p>No, the meta keywords tag is largely ignored by major search engines like Google and has been for many years. We focus on what matters: high-quality content, descriptive meta titles and descriptions, and a strong site structure.</p>"
+                "question": "Ai-je encore besoin de méta-mots-clés pour le SEO ?",
+                "answer": "<p>Non, la balise méta-mots-clés est largement ignorée par les principaux moteurs de recherche comme Google et ce, depuis de nombreuses années. Nous nous concentrons sur ce qui compte : un contenu de haute qualité, des titres et des descriptions méta descriptifs, et une structure de site solide.</p>"
             },
             "accessibility": {
-                "question": "Why is website accessibility (a11y) important?",
-                "answer": "<p>Accessibility ensures that your website can be used by everyone, including people with disabilities. It's not only the right thing to do but also expands your audience, improves SEO, and can be a legal requirement in some regions.</p>"
+                "question": "Pourquoi l'accessibilité des sites web (a11y) est-elle importante ?",
+                "answer": "<p>L'accessibilité garantit que votre site web peut être utilisé par tout le monde, y compris les personnes handicapées. Ce n'est pas seulement la bonne chose à faire, mais cela élargit également votre public, améliore le SEO et peut être une exigence légale dans certaines régions.</p>"
             },
             "responsiveDesign": {
-                "question": "Will my website work on mobile devices?",
-                "answer": "<p>Yes, absolutely. Every website I build uses responsive design, meaning it will automatically adapt to look great and function perfectly on all devices, from desktops and laptops to tablets and smartphones.</p>"
+                "question": "Mon site web fonctionnera-t-il sur les appareils mobiles ?",
+                "answer": "<p>Oui, absolument. Chaque site web que je construis utilise un design réactif, ce qui signifie qu'il s'adaptera automatiquement pour avoir une belle apparence et fonctionner parfaitement sur tous les appareils, des ordinateurs de bureau et portables aux tablettes et smartphones.</p>"
             }
         }
     },

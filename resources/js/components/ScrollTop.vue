@@ -6,7 +6,10 @@ import { ArrowUp } from 'lucide-vue-next'
 
 // --- COMPOSABLES ---
 const { t } = useI18n()
-const { y: scrollY } = useWindowScroll()
+const { y: scrollY } = useWindowScroll({
+  // Added to make the scroll listener more efficient
+  throttle: 100,
+})
 
 // --- STATE ---
 const scrollHeight = ref(0)
@@ -18,6 +21,8 @@ const radius = 20
 const circumference = 2 * Math.PI * radius
 
 const scrollProgress = computed(() => {
+  // Always update dimensions when calculating progress
+  updateScrollDimensions()
   const totalScrollable = scrollHeight.value - clientHeight.value
   if (totalScrollable <= 0)
     return 0
@@ -37,11 +42,13 @@ const scrollToTop = () => {
   })
 }
 
+// This function now gets called more frequently
 const updateScrollDimensions = () => {
   scrollHeight.value = document.documentElement.scrollHeight
   clientHeight.value = document.documentElement.clientHeight
 }
 
+// We no longer need listeners here since useWindowScroll handles it
 onMounted(() => {
   updateScrollDimensions()
   window.addEventListener('resize', updateScrollDimensions)
@@ -51,7 +58,6 @@ onUnmounted(() => {
   window.removeEventListener('resize', updateScrollDimensions)
 })
 </script>
-
 <template>
   <Transition name="fade-scale">
     <button

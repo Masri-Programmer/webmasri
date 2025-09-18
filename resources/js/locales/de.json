@@ -1045,112 +1045,112 @@
         }
     },
      "pricingSummary": {
-    "tagline": "Transparente Preise",
-    "title": "Ein Plan für jeden Bedarf",
-    "description": "Wählen Sie den perfekten Ausgangspunkt für Ihr Projekt. Unsere Pläne sind flexibel, leistungsstark und auf Ihre Ziele zugeschnitten.",
-    "mostPopular": "Am beliebtesten",
-    "from": "Ab",
-    "ctaButton": "Mehr erfahren",
-    "landingPage": {
-      "title": "Landingpage",
-      "description": "Perfekt für einzelne Produkte, Veranstaltungen oder Marketingkampagnen, die eine gezielte Botschaft benötigen."
-    },
-    "businessWebsite": {
-      "title": "Unternehmenswebsite",
-      "description": "Eine ideale Lösung für kleine Unternehmen und Fachleute, die eine vollständige Online-Präsenz benötigen."
-    },
-    "onlineShop": {
-      "title": "Onlineshop",
-      "description": "Alles, was Sie brauchen, um Ihr E-Commerce-Geschäft zu starten und online Produkte zu verkaufen."
-    },
-    "features": {
-      "singlePage": "Fokussiertes Ein-Seiten-Layout",
-      "contactForm": "Integriertes Kontaktformular",
-      "seoOptimized": "SEO-optimierte Struktur",
-      "fastLoading": "Für Geschwindigkeit optimiert",
-      "multiPage": "Bis zu 5 Seiten inklusive",
-      "cms": "Einfache Inhaltsverwaltung (CMS)",
-      "blogSetup": "Integrierter Blog-Bereich",
-      "customDesign": "Professionelles individuelles Design",
-      "productManagement": "Vollständige Produktverwaltung",
-      "securePayments": "Sichere Zahlungsgateways",
-      "inventorySystem": "Bestandsverwaltung",
-      "customerAccounts": "Kundenkonten & Bestellungen"
-    },
-    "faqSummary": {
-        "title": "Häufig gestellte Fragen",
-        "subtitle": "Haben Sie Fragen? Wir haben die Antworten. Hier sind einige der häufigsten, oder sehen Sie sich alle an.",
-        "viewAllButton": "Alle FAQs ansehen",
-        "list": {
-            "projectFlow": {
-                "question": "Wie sieht der typische Projektablauf aus?",
-                "answer": "<p>Jedes Projekt folgt einem strukturierten Ablauf: <br>1. <strong>Analyse & Strategie:</strong> Wir besprechen Ihre Ziele und Anforderungen. <br>2. <strong>Design:</strong> Wir erstellen Wireframes und Entwürfe zur Freigabe. <br>3. <strong>Entwicklung:</strong> Wir erwecken das Design mit sauberem, effizientem Code zum Leben. <br>4. <strong>Launch:</strong> Nach ausgiebigen Tests stellen wir Ihr Projekt online. <br>5. <strong>Support:</strong> Wir bieten laufende Wartung und Unterstützung an.</p>"
-            },
-            "selfMaintenance": {
-                "question": "Kann ich die Website nach der Erstellung selbst pflegen?",
-                "answer": "<p>Absolut. Die meisten Websites basieren auf einem Content-Management-System (CMS), mit dem Sie Inhalte, Bilder und andere Elemente einfach und ohne Programmierkenntnisse aktualisieren können. Ich biete eine Schulung an, damit Sie sich bei der Verwaltung Ihrer neuen Seite sicher fühlen.</p>"
-            },
-            "costs": {
-                "question": "Wie viel kostet eine neue Website oder ein Designprojekt?",
-                "answer": "<p>Die Kosten variieren je nach Umfang, Komplexität und den benötigten Funktionen. Nach einem Erstgespräch, in dem wir Ihre spezifischen Bedürfnisse ermitteln, erstelle ich ein detailliertes, individuelles Angebot. So zahlen Sie nur für das, was Sie wirklich brauchen.</p>"
-            },
-            "newWebsiteNeeded": {
-                "question": "Woher weiß ich, ob ich eine neue Website benötige?",
-                "answer": "<p>Ziehen Sie eine neue Website in Betracht, wenn Ihre aktuelle Seite nicht mobilfreundlich ist, veraltet aussieht, langsam lädt, nicht mehr Ihre Marke widerspiegelt oder keine Anfragen generiert. Eine neue Seite kann die Benutzererfahrung und die Geschäftsergebnisse erheblich verbessern.</p>"
-            },
-            "ownershipWebsite": {
-                "question": "Wem gehört die Website nach ihrer Fertigstellung?",
-                "answer": "<p>Ihnen. Nach der vollständigen Bezahlung erhalten Sie das uneingeschränkte Eigentum an den Website-Dateien und -Assets. Sie haben die volle Kontrolle und den Zugriff auf Ihr digitales Eigentum.</p>"
-            },
-            "ownershipPrint": {
-                "question": "Was ist mit den Rechten an Druckmaterialien wie Logos oder Broschüren?",
-                "answer": "<p>Ähnlich wie bei Websites erhalten Sie nach Projektabschluss und vollständiger Bezahlung das volle Eigentum an den finalen Designdateien (z. B. PDF, JPG, PNG). Quelldateien (z. B. Adobe Illustrator) können auf Anfrage, manchmal gegen eine zusätzliche Gebühr, zur Verfügung gestellt werden.</p>"
-            },
-            "duration": {
-                "question": "Wie lange wird es dauern, mein Projekt abzuschließen?",
-                "answer": "<p>Ein typisches Website-Projekt dauert zwischen 6 und 12 Wochen von Anfang bis Ende. Der genaue Zeitplan hängt von der Komplexität des Projekts und der Pünktlichkeit von Feedback und Inhaltslieferung Ihrerseits ab.</p>"
-            },
-            "brandWorkshop": {
-                "question": "Was ist ein Marken-Workshop und ist er notwendig?",
-                "answer": "<p>Ein Marken-Workshop ist eine gemeinsame Sitzung, in der wir die Kernwerte, die Mission, die Zielgruppe und die visuelle Identität Ihrer Marke definieren. Er ist sehr empfehlenswert für neue Unternehmen oder solche, die sich neu positionieren, um eine konsistente und effektive Markenstrategie zu gewährleisten.</p>"
-            },
-            "whatSetsMeApart": {
-                "question": "Was unterscheidet Sie von anderen Entwicklern und Designern?",
-                "answer": "<p>Ich verbinde strategisches Denken mit modernem Design und sauberem Code. Mein Fokus liegt darauf, Lösungen zu schaffen, die nicht nur schön, sondern auch funktional, benutzerfreundlich und auf Ihre Geschäftsziele ausgerichtet sind. Ich lege Wert auf klare Kommunikation und eine partnerschaftliche Zusammenarbeit.</p>"
-            },
-            "clientContribution": {
-                "question": "Was muss ich bereitstellen, um loszulegen?",
-                "answer": "<p>Zu Beginn müssen Sie alle Inhalte für die Website bereitstellen – dazu gehören Texte, Fotos und eventuell vorhandene Markenrichtlinien. Je besser Sie vorbereitet sind, desto reibungsloser wird der Prozess verlaufen.</p>"
-            },
-            "imageFormats": {
-                "question": "Welche Bildformate sind am besten für das Web?",
-                "answer": "<p>Für optimale Leistung und Qualität verwenden wir hauptsächlich moderne Formate wie <strong>WebP</strong> oder <strong>AVIF</strong> für Fotos. Für Logos, Symbole und Grafiken ist <strong>SVG</strong> die beste Wahl, da es auf allen Geräten skalierbar und gestochen scharf ist.</p>"
-            },
-            "hostingProvider": {
-                "question": "Benötige ich einen bestimmten Hosting-Anbieter?",
-                "answer": "<p>Obwohl ich mit den meisten Hosting-Anbietern arbeiten kann, kann ich bestimmte Anbieter empfehlen, die für ihre Leistung, Sicherheit und ihren Kundensupport bekannt sind. Bei Bedarf kann ich auch bei der Einrichtung von Hosting und Domainregistrierung behilflich sein.</p>"
-            },
-            "seoToDo": {
-                "question": "Ist Suchmaschinenoptimierung (SEO) inbegriffen?",
-                "answer": "<p>Grundlegende On-Page-SEO ist in allen Website-Projekten enthalten. Das bedeutet die Verwendung von Best Practices wie semantischem HTML, korrekten Meta-Tags, Bild-Alt-Texten und die Gewährleistung schneller Ladezeiten. Umfassende, fortlaufende SEO-Strategien sind als separate Dienstleistung erhältlich.</p>"
-            },
-            "metaKeywords": {
-                "question": "Brauche ich noch Meta-Keywords für SEO?",
-                "answer": "<p>Nein, der Meta-Keywords-Tag wird von großen Suchmaschinen wie Google seit vielen Jahren weitgehend ignoriert. Wir konzentrieren uns auf das, was zählt: hochwertige Inhalte, aussagekräftige Meta-Titel und -Beschreibungen sowie eine starke Seitenstruktur.</p>"
-            },
-            "accessibility": {
-                "question": "Warum ist die Barrierefreiheit (Accessibility, a11y) von Websites wichtig?",
-                "answer": "<p>Barrierefreiheit stellt sicher, dass Ihre Website von allen Menschen, einschließlich Menschen mit Behinderungen, genutzt werden kann. Es ist nicht nur das Richtige, sondern erweitert auch Ihr Publikum, verbessert die SEO und kann in einigen Regionen eine gesetzliche Anforderung sein.</p>"
-            },
-            "responsiveDesign": {
-                "question": "Wird meine Website auf mobilen Geräten funktionieren?",
-                "answer": "<p>Ja, absolut. Jede von mir erstellte Website verwendet responsives Design, was bedeutet, dass sie sich automatisch anpasst, um auf allen Geräten – von Desktops und Laptops bis hin zu Tablets und Smartphones – großartig auszusehen und perfekt zu funktionieren.</p>"
-            }
-        }
-    },
-    "currencySwitcher": {
-        "eur": "EUR",
-        "usd": "USD"
-    }
-}
+         "tagline": "Transparente Preise",
+         "title": "Ein Plan für jeden Bedarf",
+         "description": "Wählen Sie den perfekten Ausgangspunkt für Ihr Projekt. Unsere Pläne sind flexibel, leistungsstark und auf Ihre Ziele zugeschnitten.",
+         "mostPopular": "Am beliebtesten",
+         "from": "Ab",
+         "ctaButton": "Mehr erfahren",
+         "landingPage": {
+             "title": "Landingpage",
+             "description": "Perfekt für einzelne Produkte, Veranstaltungen oder Marketingkampagnen, die eine gezielte Botschaft benötigen."
+         },
+         "businessWebsite": {
+             "title": "Unternehmenswebsite",
+             "description": "Eine ideale Lösung für kleine Unternehmen und Fachleute, die eine vollständige Online-Präsenz benötigen."
+         },
+         "onlineShop": {
+             "title": "Onlineshop",
+             "description": "Alles, was Sie brauchen, um Ihr E-Commerce-Geschäft zu starten und online Produkte zu verkaufen."
+         },
+         "features": {
+             "singlePage": "Fokussiertes Ein-Seiten-Layout",
+             "contactForm": "Integriertes Kontaktformular",
+             "seoOptimized": "SEO-optimierte Struktur",
+             "fastLoading": "Für Geschwindigkeit optimiert",
+             "multiPage": "Bis zu 5 Seiten inklusive",
+             "cms": "Einfache Inhaltsverwaltung (CMS)",
+             "blogSetup": "Integrierter Blog-Bereich",
+             "customDesign": "Professionelles individuelles Design",
+             "productManagement": "Vollständige Produktverwaltung",
+             "securePayments": "Sichere Zahlungsgateways",
+             "inventorySystem": "Bestandsverwaltung",
+             "customerAccounts": "Kundenkonten & Bestellungen"
+         },
+         "faqSummary": {
+             "title": "Häufig gestellte Fragen",
+             "subtitle": "Haben Sie Fragen? Wir haben die Antworten. Hier sind einige häufige, oder sehen Sie sich alle an.",
+             "viewAllButton": "Alle FAQs ansehen",
+             "list": {
+                 "projectFlow": {
+                     "question": "Wie sieht der typische Projektablauf aus?",
+                     "answer": "<p>Jedes Projekt folgt einem strukturierten Ablauf: <br>1. <strong>Entdeckung & Strategie:</strong> Wir besprechen Ihre Ziele und Anforderungen. <br>2. <strong>Design:</strong> Wir erstellen Wireframes und Mockups zu Ihrer Genehmigung. <br>3. <strong>Entwicklung:</strong> Wir erwecken das Design mit sauberem, effizientem Code zum Leben. <br>4. <strong>Veröffentlichung:</strong> Nach gründlichen Tests stellen wir Ihr Projekt bereit. <br>5. <strong>Support:</strong> Wir bieten laufende Wartung und Unterstützung.</p>"
+                 },
+                 "selfMaintenance": {
+                     "question": "Kann ich die Website nach der Erstellung selbst pflegen?",
+                     "answer": "<p>Absolut. Die meisten Websites basieren auf einem Content-Management-System (CMS), mit dem Sie Inhalte, Bilder und andere Elemente ohne Programmierkenntnisse einfach aktualisieren können. Ich biete eine Schulung an, um sicherzustellen, dass Sie sich bei der Verwaltung Ihrer neuen Website wohlfühlen.</p>"
+                 },
+                 "costs": {
+                     "question": "Wie viel kostet eine neue Website oder ein neues Designprojekt?",
+                     "answer": "<p>Die Kosten variieren je nach Umfang, Komplexität und den erforderlichen Funktionen. Nach einer Erstberatung, um Ihre spezifischen Bedürfnisse zu verstehen, erstelle ich ein detailliertes, individuelles Angebot. So stellen wir sicher, dass Sie nur für das bezahlen, was Sie benötigen.</p>"
+                 },
+                 "newWebsiteNeeded": {
+                     "question": "Woher weiß ich, ob ich eine neue Website brauche?",
+                     "answer": "<p>Erwägen Sie eine neue Website, wenn Ihre aktuelle Seite nicht mobilfreundlich ist, veraltet aussieht, langsam lädt, Ihre aktuelle Marke nicht widerspiegelt oder keine Leads generiert. Eine frische Seite kann das Benutzererlebnis und die Geschäftsergebnisse erheblich verbessern.</p>"
+                 },
+                 "ownershipWebsite": {
+                     "question": "Wem gehört die Website nach ihrer Fertigstellung?",
+                     "answer": "<p>Ihnen. Nach der Abschlusszahlung erhalten Sie das volle Eigentum an den Website-Dateien und -Assets. Sie haben die vollständige Kontrolle und den vollen Zugriff auf Ihr digitales Eigentum.</p>"
+                 },
+                 "ownershipPrint": {
+                     "question": "Wie sieht es mit den Rechten an Druckmaterialien wie Logos oder Broschüren aus?",
+                     "answer": "<p>Ähnlich wie bei Websites erhalten Sie nach Projektabschluss und Abschlusszahlung das volle Eigentum an den endgültigen Designdateien (z. B. PDF, JPG, PNG) für alle Druckmaterialien. Quelldateien (z. B. Adobe Illustrator) können auf Anfrage, manchmal gegen eine zusätzliche Gebühr, bereitgestellt werden.</p>"
+                 },
+                 "duration": {
+                     "question": "Wie lange wird es dauern, mein Projekt abzuschließen?",
+                     "answer": "<p>Ein typisches Website-Projekt dauert zwischen 6 und 12 Wochen von Anfang bis Ende. Der genaue Zeitplan hängt von der Komplexität des Projekts und der Pünktlichkeit von Feedback und Inhaltslieferung Ihrerseits ab.</p>"
+                 },
+                 "brandWorkshop": {
+                     "question": "Was ist ein Marken-Workshop und ist er notwendig?",
+                     "answer": "<p>Ein Marken-Workshop ist eine kollaborative Sitzung, in der wir die Kernwerte, die Mission, die Zielgruppe und die visuelle Identität Ihrer Marke definieren. Er ist sehr zu empfehlen für neue Unternehmen oder solche, die ein Rebranding durchführen, um eine konsistente und effektive Markenstrategie zu gewährleisten.</p>"
+                 },
+                 "whatSetsMeApart": {
+                     "question": "Was unterscheidet Sie von anderen Entwicklern und Designern?",
+                     "answer": "<p>Ich kombiniere strategisches Denken mit modernem Design und sauberem Code. Mein Fokus liegt darauf, Lösungen zu schaffen, die nicht nur schön, sondern auch funktional, benutzerfreundlich und auf Ihre Geschäftsziele ausgerichtet sind. Ich lege Wert auf klare Kommunikation und eine partnerschaftliche Zusammenarbeit.</p>"
+                 },
+                 "clientContribution": {
+                     "question": "Was muss ich bereitstellen, um loszulegen?",
+                     "answer": "<p>Um zu beginnen, müssen Sie alle Inhalte für die Website bereitstellen – dazu gehören Texte, Fotos und eventuelle spezifische Markenrichtlinien. Je besser Sie vorbereitet sind, desto reibungsloser wird der Prozess verlaufen.</p>"
+                 },
+                 "imageFormats": {
+                     "question": "Welche Bildformate sind für das Web am besten geeignet?",
+                     "answer": "<p>Für optimale Leistung und Qualität verwenden wir hauptsächlich moderne Formate wie <strong>WebP</strong> oder <strong>AVIF</strong> für Fotos. Für Logos, Symbole und Grafiken ist <strong>SVG</strong> die beste Wahl, da es skalierbar und auf allen Geräten scharf ist.</p>"
+                 },
+                 "hostingProvider": {
+                     "question": "Benötige ich einen bestimmten Hosting-Anbieter?",
+                     "answer": "<p>Obwohl ich mit den meisten Hosting-Anbietern arbeiten kann, kann ich bestimmte empfehlen, die für ihre Leistung, Sicherheit und ihren Kundensupport bekannt sind. Bei Bedarf kann ich auch bei der Einrichtung des Hostings und der Domainregistrierung helfen.</p>"
+                 },
+                 "seoToDo": {
+                     "question": "Ist Suchmaschinenoptimierung (SEO) inbegriffen?",
+                     "answer": "<p>Grundlegendes On-Page-SEO ist in allen Website-Projekten enthalten. Dies bedeutet die Verwendung von Best Practices wie semantischem HTML, korrekten Meta-Tags, Bild-Alt-Texten und die Sicherstellung schneller Ladezeiten. Umfassende, fortlaufende SEO-Strategien sind als separater Service erhältlich.</p>"
+                 },
+                 "metaKeywords": {
+                     "question": "Benötige ich noch Meta-Keywords für SEO?",
+                     "answer": "<p>Nein, das Meta-Keywords-Tag wird von großen Suchmaschinen wie Google weitgehend ignoriert und das schon seit vielen Jahren. Wir konzentrieren uns auf das, was zählt: hochwertige Inhalte, aussagekräftige Meta-Titel und -Beschreibungen sowie eine starke Seitenstruktur.</p>"
+                 },
+                 "accessibility": {
+                     "question": "Warum ist die Barrierefreiheit von Websites (a11y) wichtig?",
+                     "answer": "<p>Barrierefreiheit stellt sicher, dass Ihre Website von jedem genutzt werden kann, einschließlich Menschen mit Behinderungen. Es ist nicht nur das Richtige, sondern erweitert auch Ihr Publikum, verbessert das SEO und kann in einigen Regionen eine gesetzliche Anforderung sein.</p>"
+                 },
+                 "responsiveDesign": {
+                     "question": "Wird meine Website auf mobilen Geräten funktionieren?",
+                     "answer": "<p>Ja, absolut. Jede von mir erstellte Website verwendet responsives Design, was bedeutet, dass sie sich automatisch anpasst, um auf allen Geräten, von Desktops und Laptops bis hin zu Tablets und Smartphones, großartig auszusehen und perfekt zu funktionieren.</p>"
+                 }
+             }
+         },
+         "currencySwitcher": {
+             "eur": "EUR",
+             "usd": "USD"
+         }
+     }
 }
