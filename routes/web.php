@@ -11,11 +11,6 @@ Route::get('/privacy-policy', function () {
     return Inertia::render('PrivacyPolicy');
 })->name('privacy-policy');
 
-Route::get('/pricing', function () {
-    return Inertia::render('Pricing');
-})->name('pricing');
-
-
 Route::get('/terms-and-conditions', function () {
     return Inertia::render('TermsConditions');
 })->name('terms-conditions');
@@ -28,6 +23,10 @@ Route::get('/contact', function () {
     return Inertia::render('Contact');
 })->name('contact');
 
+Route::get('/faq', function () {
+    return Inertia::render('Faq');
+})->name('faq');
+
 Route::get('dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -37,7 +36,20 @@ Route::get('/language/{locale}', function ($locale) {
         session()->put('locale', $locale);
     }
     return redirect()->back();
-})->whereIn('locale', ['en', 'de', 'fr'])->name('language.switch');
+})->whereIn('locale', ['en', 'de', 'fr','ar'])->name('language.switch');
 
+Route::get('/pricing/{category?}', function ($category = null) {
+    $categoryMap = [
+        'landingPage' => 'landingPage',
+        'website' => 'businessWebsite',
+        'onlineshop' => 'onlineShop',
+    ];
+
+    $initialCategory = $categoryMap[$category] ?? 'businessWebsite';
+
+    return Inertia::render('Pricing', [
+        'initialCategory' => $initialCategory,
+    ]);
+})->name('pricing');
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';

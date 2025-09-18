@@ -13,7 +13,37 @@ const i18n = createI18n({
         en,
         de,
         fr,
-        ar
+        ar,
+    },
+    numberFormats: {
+        'en-US': {
+            eur: {
+                style: 'currency',
+                currency: 'EUR',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0,
+            },
+            usd: {
+                style: 'currency',
+                currency: 'USD',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0,
+            },
+        },
+        'de-DE': {
+            eur: {
+                style: 'currency',
+                currency: 'EUR',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0,
+            },
+            usd: {
+                style: 'currency',
+                currency: 'USD',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0,
+            },
+        },
     },
 });
 
