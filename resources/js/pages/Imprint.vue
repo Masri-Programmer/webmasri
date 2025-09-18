@@ -7,7 +7,7 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <Layout :head="t('imprint.title')" :link="imprint.url()">
+  <Layout :head="t('imprint.title')" :link="imprint.url()" :description="t('imprint.subTitle')">
     <div class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
       <header class="border-b pb-4">
         <h1 class="text-3xl md:text-4xl font-bold text-primary">

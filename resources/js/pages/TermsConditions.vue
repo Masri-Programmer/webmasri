@@ -10,9 +10,9 @@ const sections = tm('termsConditions.sections');
 </script>
 
 <template>
-  <Layout :head="t('termsConditions.title')" :link="termsConditions.url()">
+  <Layout :head="t('termsConditions.title')" :link="termsConditions.url()" :description="t('termsConditions.description')">
     <div class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-      <header class="border-b pb-4">
+      <header class="border-b pb-4">b
         <h1 class="text-3xl md:text-4xl font-bold text-primary">
           {{ t('termsConditions.title') }}
         </h1>

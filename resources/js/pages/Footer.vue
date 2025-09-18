@@ -1,46 +1,76 @@
 <script setup lang="ts">
-import AppearanceIcon from '@/components/AppearanceIcon.vue';
-import LanguageSwitch from '@/components/LanguageSwitch.vue';
-import Button from '@/components/ui/button/Button.vue';
-import { Book, Heart, Linkedin } from 'lucide-vue-next';
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { Link } from '@inertiajs/vue3';
-import { privacyPolicy, termsConditions, imprint } from '@/routes';
-import googleIcon from '@/images/googleIcon.svg'
+
+// UI Components
+import AppearanceIcon from '@/components/AppearanceIcon.vue';
+import LanguageSwitch from '@/components/LanguageSwitch.vue';
 // import CurrencySwitch from '@/components/CurrencySwitch.vue';
 
+// Icons and Images
+import { Book, Heart, Linkedin, Github } from 'lucide-vue-next';
+import googleIcon from '@/images/googleIcon.svg';
+
+// App Data & Routes - Assuming your routes are exported from a central file
+import { navigationLinks } from '@/lib/navigation';
+import { privacyPolicy, termsConditions, imprint, contact, faq } from '@/routes';
+
 const { t } = useI18n();
+const year = new Date().getFullYear();
 
-const linkDefinitions = {
-    product: [
-        { key: 'footer.links.features', href: '#features' },
-        { key: 'footer.links.about', href: '#about' },
-        { key: 'footer.links.projects', href: '#projects' },
-        { key: 'footer.links.statistics', href: '#statistics' },
-        { key: 'footer.links.testimonials', href: '#testimonials' },
-        { key: 'footer.links.faq', href: '#faq' },
-    ],
+// Define all footer link data in a structured and maintainable way
+const footerSections = computed(() => ({
+    // These are links to sections on the homepage.
+    // They are dynamically generated from the main navigation config for consistency.
+    product: navigationLinks
+        .filter(link => ['features', 'about', 'projects', 'statistics', 'pricing', 'testimonials'].includes(link.id))
+        .map(link => ({
+            text: t(link.i18nKey),
+            href: link.href, // Use the href directly from navigation.ts (e.g., '/#features')
+        })),
+
+    // These are links to other resources, both internal and external.
     community: [
-        { key: 'footer.links.github', href: 'https://github.com/Masri-Programmer' },
-        { key: 'footer.links.blogPortfolio', href: 'https://masri.blog' },
-        { key: 'footer.links.whatsapp', href: 'https://api.whatsapp.com/send/?phone=4917631579669&text&type=phone_number&app_absent=0' },
-        { key: 'footer.links.contact', href: 'https://masri.blog/Book-a-Meeting' },
+        { text: t('footer.links.github'), href: 'https://github.com/Masri-Programmer', isExternal: true },
+        { text: t('footer.links.blogPortfolio'), href: 'https://masri.blog', isExternal: true },
+        { text: t('footer.links.bookMeeting'), href: 'https://masri.blog/Book-a-Meeting', isExternal: true },
+        { text: t('footer.links.contact'), href: contact.url(), isExternal: false },
+        { text: t('footer.links.faq'), href: faq.url(), isExternal: false }, // Link to the dedicated FAQ page
     ],
-    legal: [
-        { key: 'footer.links.privacyPolicy', href: privacyPolicy.url() },
-        { key: 'footer.links.termsOfService', href: termsConditions.url() },
-        { key: 'footer.links.imprint', href: imprint.url() },
-    ],
-};
 
-const links = computed(() => ({
-    product: linkDefinitions.product.map(link => ({ ...link, text: t(link.key) })),
-    community: linkDefinitions.community.map(link => ({ ...link, text: t(link.key) })),
-    legal: linkDefinitions.legal.map(link => ({ ...link, text: t(link.key) })),
+    // These are internal links to legal pages.
+    legal: [
+        { text: t('footer.links.privacyPolicy'), href: privacyPolicy.url(), isExternal: false },
+        { text: t('footer.links.termsOfService'), href: termsConditions.url(), isExternal: false },
+        { text: t('footer.links.imprint'), href: imprint.url(), isExternal: false },
+    ],
 }));
 
-const year = new Date().getFullYear();
+// Consolidate social media icons for a cleaner, iterable template
+const socialLinks = computed(() => [
+    {
+        name: 'GitHub',
+        href: 'https://github.com/Masri-Programmer',
+        ariaLabel: t('footer.githubAriaLabel'), // NOTE: Add this translation key
+        icon: Github,
+        isSvg: false,
+    },
+    {
+        name: 'LinkedIn',
+        href: 'https://www.linkedin.com/in/mohamad-masri-89778915a/',
+        ariaLabel: t('footer.linkedinAriaLabel'),
+        icon: Linkedin,
+        isSvg: false,
+    },
+    {
+        name: 'Google Maps',
+        href: 'https://share.google/6xMW6IuA4AZ6yzrNu',
+        ariaLabel: t('footer.googleAriaLabel'),
+        icon: googleIcon,
+        isSvg: true,
+    },
+]);
 </script>
 
 <template>
@@ -52,73 +82,68 @@ const year = new Date().getFullYear();
                         <Book class="h-6 w-6" />
                         <Link href="/" class="text-lg font-semibold">Masri Programmer</Link>
                     </div>
-                    <p class="text-sm">{{ $t('footer.tagline') }}</p>
+                    <p class="text-sm text-muted-foreground">{{ $t('footer.tagline') }}</p>
                 </div>
 
                 <div class="space-y-4">
                     <h4 class="font-semibold">{{ $t('footer.headings.product') }}</h4>
                     <ul class="space-y-2">
-                        <li v-for="link in links.product" :key="link.text">
-                            <a :href="link.href" class="text-sm hover:text-foreground">{{ link.text }}</a>
+                        <li v-for="link in footerSections.product" :key="link.text">
+                            <a :href="link.href" class="text-sm text-muted-foreground transition-colors hover:text-foreground">{{ link.text }}</a>
                         </li>
                     </ul>
                 </div>
+
                 <div class="space-y-4">
                     <h4 class="font-semibold">{{ $t('footer.headings.community') }}</h4>
                     <ul class="space-y-2">
-                        <li v-for="link in links.community" :key="link.text">
-                            <a :href="link.href" class="text-sm hover:text-foreground" target="_blank" rel="noopener noreferrer">{{ link.text }}</a>
+                        <li v-for="link in footerSections.community" :key="link.text">
+                            <a v-if="link.isExternal" :href="link.href" class="text-sm text-muted-foreground transition-colors hover:text-foreground" target="_blank" rel="noopener noreferrer">{{ link.text }}</a>
+                            <Link v-else :href="link.href" class="text-sm text-muted-foreground transition-colors hover:text-foreground">{{ link.text }}</Link>
                         </li>
                     </ul>
                 </div>
+
                 <div class="space-y-4">
                     <h4 class="font-semibold">{{ $t('footer.headings.legal') }}</h4>
                     <ul class="space-y-2">
-                        <li v-for="link in links.legal" :key="link.text">
-                            <Link :href="link.href" class="text-sm hover:text-foreground">{{ link.text }}</Link>
+                        <li v-for="link in footerSections.legal" :key="link.text">
+                            <Link :href="link.href" class="text-sm text-muted-foreground transition-colors hover:text-foreground">{{ link.text }}</Link>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="border-t border-border py-4">
-            <div class="container mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 sm:flex-row sm:px-6 lg:px-8">
-                <p class="text-sm text-muted-foreground">{{ $t('footer.copyright', { year }) }}</p>
 
-                <i18n-t keypath="footer.madeWith" tag="p" class="flex items-center gap-1.5 text-center text-sm">
+        <div class="border-t border-border py-6">
+            <div class="container mx-auto flex max-w-7xl flex-col-reverse items-center justify-between gap-6 px-4 sm:flex-row sm:px-6 lg:px-8">
+                <p class="text-center text-sm text-muted-foreground sm:text-left">{{ $t('footer.copyright', { year }) }}</p>
+
+                <i18n-t keypath="footer.madeWith" tag="p" class="hidden items-center gap-1.5 text-center text-sm text-muted-foreground md:flex">
                     <template #heartIcon>
                         <Heart class="h-4 w-4 fill-red-500 text-red-500" />
                     </template>
                     <template #authorLink>
-                        <a href="https://masri.blog" target="_blank" rel="noopener noreferrer" class="font-medium hover:underline">Masri Programmer</a>
+                        <a href="https://masri.blog" target="_blank" rel="noopener noreferrer" class="font-medium text-foreground hover:underline">Masri Programmer</a>
                     </template>
                 </i18n-t>
 
-                <div class="flex items-center gap-4">
-                    <Button variant="ghost" size="icon">
-                        <a
-                            href="https://share.google/6xMW6IuA4AZ6yzrNu"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            :aria-label="$t('footer.googleAriaLabel')"
-                        >
-                            <img :src="googleIcon" class="h-4 w-4 hover:text-foreground" />
-                        </a>
-                    </Button>
-                    <Button variant="ghost" size="icon">
-                         <a
-                            href="https://www.linkedin.com/in/mohamad-masri-89778915a/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            :aria-label="$t('footer.linkedinAriaLabel')"
-                        >
-                            <Linkedin class="h-5 w-5 hover:text-foreground" />
-                        </a>
-                    </Button>
+                <div class="flex items-center gap-1">
+                    <a
+                        v-for="social in socialLinks"
+                        :key="social.name"
+                        :href="social.href"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        :aria-label="social.ariaLabel"
+                        class="inline-flex h-10 w-10 items-center justify-center rounded-md text-muted-foreground ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                    >
+                          <component v-if="!social.isSvg" :is="(social.icon as any)" class="h-5 w-5" />
+                        <img v-else :src="social.icon as any" class="h-5 w-5" :alt="social.name" />
+                    </a>
                     <AppearanceIcon />
                     <LanguageSwitch />
-                    <!-- <CurrencySwitch /> -->
-                </div>
+                    </div>
             </div>
         </div>
     </footer>

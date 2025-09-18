@@ -7,6 +7,9 @@
         </h2>
         <Carousel
             class="relative mx-auto w-full"
+             :plugins="[Autoplay({
+      delay: 2000,
+    })]"
             :opts="{
                 align: 'start',
                 loop: true,
@@ -66,6 +69,7 @@ import masriBlog from '@/images/masriblog.png';
 import tracker from '@/images/tracker.png';
 import piepjack from '@/images/piepjack.png';
 import flyerheaven from '@/images/www.flyerheaven.de_deine-bueroartikel.html.png';
+import Autoplay from 'embla-carousel-autoplay';
 
 const cardData = [
     {

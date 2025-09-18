@@ -53,7 +53,7 @@ const isPlanSelected = computed(() => !!form.plan)
 </script>
 
 <template>
-  <Layout :head="t('contact.title')" :link="contact.url()">
+  <Layout :head="t('contact.title')" :link="contact.url()" :description="t('contact.description')">
  <div class="container mx-auto max-w-4xl py-12 md:py-16">
         <Card class="w-full">
             <CardHeader class="text-center">

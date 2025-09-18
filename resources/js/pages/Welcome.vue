@@ -5,17 +5,16 @@ import 'aos/dist/aos.css';
 import { defineAsyncComponent, onMounted } from 'vue';
 
 import Layout from '@/layouts/Layout.vue';
-import About from './About.vue';
-import Features from './Features.vue';
 import Hero from './Hero.vue';
-import Projects from './Projects.vue';
-import Services from './Services.vue';
-import Statistics from './Statistics.vue';
-import PricingSummary from './PricingSummary.vue';
-import FaqSummary from './FaqSummary.vue';
 
+const Features = defineAsyncComponent(() => import('./Features.vue'));
+const Projects = defineAsyncComponent(() => import('./Projects.vue'));
+const About = defineAsyncComponent(() => import('./About.vue'));
+const Services = defineAsyncComponent(() => import('./Services.vue'));
+const Statistics = defineAsyncComponent(() => import('./Statistics.vue'));
 const Testimonials = defineAsyncComponent(() => import('./Testimonials.vue'));
-const Faq = defineAsyncComponent(() => import('./Faq.vue'));
+const PricingSummary = defineAsyncComponent(() => import('./PricingSummary.vue'));
+const FaqSummary = defineAsyncComponent(() => import('./FaqSummary.vue'));
 const Technologies = defineAsyncComponent(() => import('./Technologies.vue'));
 
 onMounted(() => {
@@ -33,7 +32,7 @@ router.on('success', () => {
 </script>
 
 <template>
-    <Layout head="Welcome" link="/">
+    <Layout head="Welcome" link="/" :description="$t('welcome.description')">
         <Hero />
         <Services  data-aos="fade-up"/>
         <Features />

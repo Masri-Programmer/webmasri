@@ -125,7 +125,7 @@ const categoryKeyMap: Record<string, string> = {
 </script>
 
 <template>
-    <Layout :head="t('pricing.title')" :link="pricing.url()">
+    <Layout :head="t('pricing.title')" :link="pricing.url()" :description="t('pricing.description')">
         <section class="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
             <div class="mx-auto max-w-4xl text-center">
                 <h1 class="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
