@@ -2,7 +2,7 @@
     <Head :title="head">
         <link rel="preconnect" :href="customProps.app.url + link" />
     </Head>
-    <SleekLineCursor />
+    <!-- <SleekLineCursor /> -->
     <Header data-aos="fade-down" data-aos-delay="500" />
     <RightSideNav />
     <main class="grid gap-4 overflow-hidden bg-background text-foreground sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12">
@@ -19,7 +19,7 @@
 import CookieConsentBanner from '@/components/CookieConsentBanner.vue';
 import RightSideNav from '@/components/RightSideNav.vue';
 import ScrollTop from '@/components/ScrollTop.vue';
-import SleekLineCursor from '@/components/ui/sleek-line-cursor/SleekLineCursor.vue';
+// import SleekLineCursor from '@/components/ui/sleek-line-cursor/SleekLineCursor.vue';
 import Header from '@/pages/Header.vue';
 import { AppPageProps } from '@/types';
 import { Head, usePage } from '@inertiajs/vue3';
