@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Title from '@/components/Title.vue';
 import { Button } from '@/components/ui/button'; // Assumes shadcn-vue path
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'; // Assumes shadcn-vue path
 import googleIcon from '@/images/googleIcon.svg';
@@ -36,24 +37,17 @@ const testimonials = computed(() =>
 </script>
 
 <template>
-    <section id="testimonials" class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-        <div class="mb-12 text-center">
-            <h2 class="text-3xl font-bold tracking-tighter text-foreground sm:text-4xl md:text-5xl">
-                <span class="relative">{{ $t('testimonials.title') }}</span>
-                <img
-                    :src="googleIcon"
-                    alt="Google"
-                    class="pointer-events-none absolute right-0 left-0 -z-10 m-auto h-20 w-20 opacity-20 mix-blend-multiply dark:mix-blend-screen"
-                    loading="lazy"
-                    decoding="async"
-                />
-            </h2>
-            <p class="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-                {{ $t('testimonials.subtitle') }}
-            </p>
-        </div>
+<section id="testimonials" class="relative container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+    <Title :title="'testimonials.title'" :subtitleKey="'testimonials.subtitle'" />
+           <img
+            :src="googleIcon"
+            alt="Google"
+      class="pointer-events-none absolute right-0 left-0 m-auto h-20 w-20 opacity-20 mix-blend-multiply dark:mix-blend-screen"
+            loading="lazy"
+            decoding="async"
+        />
 
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mt-12">
             <Card
                 v-for="(testimonial, index) in testimonials"
                 :key="index"

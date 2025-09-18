@@ -1,7 +1,7 @@
 <template>
     <section id="about" class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
-            <div class="space-y-4 text-left">
+            <div class="space-y-4 text-left mt-12">
                 <h2
                     class="pointer-events-none bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent whitespace-pre-wrap max-lg:-mt-12 dark:from-white dark:to-slate-900/10 sm:text-6xl md:text-7xl lg:text-8xl"
                 >

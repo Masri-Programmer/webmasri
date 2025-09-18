@@ -13,14 +13,14 @@ const props = defineProps({
     type: String,
     required: true,
   },
-  taglineKey: {
+  tagline: {
     type: String,
     required: false,
     default: null,
   },
   align: {
-    type: String as () => 'left' | 'center',
-    default: 'left',
+    type: String as () => '' | 'center',
+    default: 'center',
   },
 })
 
@@ -31,7 +31,7 @@ const containerClasses = computed(() => {
   if (props.align === 'center') {
     return 'flex flex-col items-center justify-center space-y-4 text-center'
   }
-  return 'space-y-4 text-left'
+  return 'space-y-4 text-'
 })
 </script>
 
@@ -39,10 +39,10 @@ const containerClasses = computed(() => {
   <div :class="containerClasses">
     <div class="space-y-2">
       <div
-        v-if="taglineKey"
+        v-if="tagline"
         class="inline-block rounded-lg bg-muted px-3 py-1 text-sm"
       >
-        {{ t(taglineKey) }}
+        {{ t(tagline) }}
       </div>
 
       <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">

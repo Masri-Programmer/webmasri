@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Check } from 'lucide-vue-next'
 import { Link } from '@inertiajs/vue3'
 import { pricing } from '@/routes'
+import Title from '@/components/Title.vue'
 const { t, n } = useI18n()
 
 const pricingPlans = [
@@ -55,20 +56,7 @@ const pricingPlans = [
 <template>
     <section id="pricing" class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div class="container mx-auto max-w-7xl px-4 md:px-6">
-            <div class="flex flex-col items-center justify-center space-y-4 text-center">
-                <div class="space-y-2">
-                    <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
-                        {{ t('pricingSummary.tagline') }}
-                    </div>
-                    <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
-                        {{ t('pricingSummary.title') }}
-                    </h2>
-                    <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                        {{ t('pricingSummary.description') }}
-                    </p>
-                </div>
-            </div>
-              <Title :title="'pricingSummary.title'" :subtitleKey="'pricingSummary.subtitle'" tagline="pricingSummary.tagline" />
+            <Title :title="'pricingSummary.title'" :subtitleKey="'pricingSummary.description'" tagline="pricingSummary.tagline" />
             <div class="mx-auto mt-12 grid max-w-5xl items-start gap-8 sm:grid-cols-2 md:gap-12 lg:grid-cols-3">
                 <Card
                     v-for="plan in pricingPlans"
