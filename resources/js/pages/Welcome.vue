@@ -17,31 +17,31 @@ const PricingSummary = defineAsyncComponent(() => import('./PricingSummary.vue')
 const FaqSummary = defineAsyncComponent(() => import('./FaqSummary.vue'));
 const Technologies = defineAsyncComponent(() => import('./Technologies.vue'));
 
-onMounted(() => {
-    AOS.init({
-        duration: 600,
-        easing: 'ease-in-out',
-        once: true,
-        mirror: false,
-    });
-});
+// onMounted(() => {
+//     AOS.init({
+//         duration: 600,
+//         easing: 'ease-in-out',
+//         once: true,
+//         mirror: false,
+//     });
+// });
 
-router.on('success', () => {
-    AOS.refresh();
-});
+// router.on('success', () => {
+//     AOS.refresh();
+// });
 </script>
 
 <template>
     <Layout head="Welcome" link="/" :description="$t('welcome.description')">
         <Hero />
-        <Services  data-aos="fade-up"/>
+        <Services />
         <Features />
         <About />
         <Projects />
-        <Statistics  data-aos="fade-up" />
+        <Statistics  />
         <PricingSummary />
         <Testimonials />
         <FaqSummary />
-        <Technologies data-aos="fade-up" data-aos-delay="500" />
+        <Technologies />
     </Layout>
 </template>
