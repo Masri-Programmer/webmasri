@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useAppearance } from '@/composables/useAppearance';
+import FooterToolbarButton from '@/components/FooterToolbarButton.vue';
 import { Monitor, Moon, Sun } from 'lucide-vue-next';
-import { Button } from '@/components/ui/button';
 
 const { appearance, updateAppearance } = useAppearance();
 
@@ -13,13 +13,12 @@ const themes = [
 ] as const;
 
 const currentIcon = computed(() => {
-    const current = themes.find((theme) => theme.value === appearance.value);
-    return current ? current.Icon : Monitor; // Default to the 'System' icon
+    return themes.find((theme) => theme.value === appearance.value)?.Icon ?? Monitor;
 });
 
 const ariaLabel = computed(() => {
-    const current = themes.find((theme) => theme.value === appearance.value);
-    return `Toggle theme, current is ${current ? current.label : 'System'}`;
+    const currentLabel = themes.find((theme) => theme.value === appearance.value)?.label ?? 'System';
+    return `Toggle theme, current is ${currentLabel}`;
 });
 
 const toggleAppearance = () => {
@@ -30,7 +29,11 @@ const toggleAppearance = () => {
 </script>
 
 <template>
-    <Button @click="toggleAppearance" variant="ghost" size="icon" :aria-label="ariaLabel">
+    <FooterToolbarButton
+        tooltip-text="Toggle theme"
+        :aria-label="ariaLabel"
+        @click="toggleAppearance"
+    >
         <component :is="currentIcon" class="h-5 w-5" />
-    </Button>
+    </FooterToolbarButton>
 </template>

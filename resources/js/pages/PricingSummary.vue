@@ -7,8 +7,10 @@ import { Check } from 'lucide-vue-next'
 import { Link } from '@inertiajs/vue3'
 import { pricing } from '@/routes'
 import Title from '@/components/Title.vue'
+import { useCurrency } from '@/composables/useCurrency'
 const { t, n } = useI18n()
 
+const { currency, formatCurrency } = useCurrency();
 const pricingPlans = [
     {
         key: 'landingPage',
@@ -77,7 +79,7 @@ const pricingPlans = [
                         </CardDescription>
                         <div class="flex items-baseline gap-1">
                             <span class="text-sm text-muted-foreground">{{ t('pricingSummary.from') }}</span>
-                            <span class="text-4xl font-bold">{{ n(plan.price, 'currency') }}</span>
+                            <span class="text-4xl font-bold">  {{formatCurrency(plan.price)}}</span>
                         </div>
                     </CardHeader>
                     <CardContent class="flex-grow">
@@ -89,7 +91,7 @@ const pricingPlans = [
                         </ul>
                     </CardContent>
                     <Link :href="pricing.url([plan.key])" >
-                    <CardFooter> 
+                    <CardFooter>
                         <Button class="w-full" :variant="plan.isFeatured ? 'default' : 'outline'" size="lg">
                            {{ t('pricingSummary.ctaButton') }}
                         </Button>

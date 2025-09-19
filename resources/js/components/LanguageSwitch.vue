@@ -1,22 +1,7 @@
-<template>
-    <DropdownMenu>
-        <DropdownMenuTrigger as-child>
-            <Button variant="ghost" size="icon">
-                <Languages class="h-5 w-5" />
-                <span class="sr-only">{{ t('changeLanguage') }}</span>
-            </Button>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent >
-            <DropdownMenuItem v-for="lang in availableLanguages" :key="lang.code" class="w-full justify-between" @click="setLocale(lang.code)">
-                {{ t(lang.nameKey) }} <Check v-if="locale === lang.code" class="h-4 w-4" />
-            </DropdownMenuItem>
-        </DropdownMenuContent>
-    </DropdownMenu>
-</template>
-
 <script setup lang="ts">
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { useStorage } from '@vueuse/core';
 import { Check, Languages } from 'lucide-vue-next';
 import { watchEffect } from 'vue';
@@ -36,14 +21,37 @@ const setLocale = (langCode: string) => {
     storedLocale.value = langCode;
 };
 
+// This logic remains the same
 watchEffect(() => {
     const newLocale = storedLocale.value;
     locale.value = newLocale;
-
-    if (newLocale === 'ar') {
-        document.documentElement.dir = 'rtl';
-    } else {
-        document.documentElement.dir = 'ltr';
-    }
+    document.documentElement.dir = newLocale === 'ar' ? 'rtl' : 'ltr';
 });
 </script>
+
+<template>
+    <TooltipProvider>
+        <Tooltip :delay-duration="0">
+            <DropdownMenu>
+                <TooltipTrigger as-child>
+                    <DropdownMenuTrigger as-child>
+                        <Button variant="ghost" size="icon" :aria-label="t('changeLanguage')">
+                            <Languages class="h-5 w-5" />
+                        </Button>
+                    </DropdownMenuTrigger>
+                </TooltipTrigger>
+                
+                <TooltipContent>
+                    <p>{{ t('changeLanguage') }}</p>
+                </TooltipContent>
+
+                <DropdownMenuContent>
+                    <DropdownMenuItem v-for="lang in availableLanguages" :key="lang.code" class="w-full justify-between" @click="setLocale(lang.code)">
+                        {{ t(lang.nameKey) }}
+                        <Check v-if="locale === lang.code" class="h-4 w-4" />
+                    </DropdownMenuItem>
+                </DropdownMenuContent>
+            </DropdownMenu>
+        </Tooltip>
+    </TooltipProvider>
+</template>

@@ -6,7 +6,7 @@ import { Link } from '@inertiajs/vue3';
 // UI Components
 import AppearanceIcon from '@/components/AppearanceIcon.vue';
 import LanguageSwitch from '@/components/LanguageSwitch.vue';
-// import CurrencySwitch from '@/components/CurrencySwitch.vue';
+import CurrencySwitch from '@/components/CurrencySwitch.vue';
 
 // Icons and Images
 import { Book, Heart, Linkedin, Github } from 'lucide-vue-next';
@@ -141,8 +141,7 @@ const socialLinks = computed(() => [
                           <component v-if="!social.isSvg" :is="(social.icon as any)" class="h-4 w-4" />
                         <img v-else :src="social.icon as any" class="h-4 w-4" :alt="social.name" />
                     </a>
-                    <AppearanceIcon />
-                    <LanguageSwitch />
+                   
                     </div>
             </div>
         </div>

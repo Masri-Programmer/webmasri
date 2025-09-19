@@ -21,12 +21,17 @@
 import CookieConsentBanner from '@/components/CookieConsentBanner.vue';
 import RightSideNav from '@/components/RightSideNav.vue';
 import ScrollTop from '@/components/ScrollTop.vue';
+import { useCurrency } from '@/composables/useCurrency';
 // import SleekLineCursor from '@/components/ui/sleek-line-cursor/SleekLineCursor.vue';
 import Header from '@/pages/Header.vue';
 import { AppPageProps } from '@/types';
 import { Head, usePage } from '@inertiajs/vue3';
-import { defineAsyncComponent } from 'vue';
+import { defineAsyncComponent, onMounted } from 'vue';
+const { fetchRates } = useCurrency();
 
+onMounted(() => {
+    fetchRates();
+});
 const page = usePage();
 const customProps = page.props as AppPageProps;
 const Footer = defineAsyncComponent(() => import('@/pages/Footer.vue'));

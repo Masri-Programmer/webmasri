@@ -255,6 +255,7 @@
             "imprint_desc": "Legal disclosure information."
         },
         "contact": "Contact",
+        "pages": "Pages",
         "references": "References"
     },
     "privacyPolicy": {
@@ -838,6 +839,15 @@
         "contactUs": "Contact Us",
         "featured": "Most Popular",
         "priceFrom": "From",
+        "readMore": "Read More",
+        "readLess": "Read Less",
+        "perMonth": "month",
+        "perYear": "year",
+        "or": "or",
+        "save": "save",
+        "startingFrom": "Starting from",
+        "oneTimeFee": "one-time fee",
+        "perPage": "page",
         "availableAddOns": "Available Add-Ons",
         "customizeYourPackage": "Customize your package with these powerful additions.",
         "landingPage": "Landing Page (Onepager)",
@@ -905,6 +915,7 @@
                     "description": "A complete e-commerce solution for high-volume sales and complex needs."
                 }
             },
+            "animations": "Website Animations",
             "abTestingSetup": "A/B Testing Setup",
             "abandonedCartRecovery": "Abandoned Cart Recovery",
             "accessibilityCompliance": "Accessibility Compliance (WCAG)",
@@ -912,6 +923,7 @@
             "advancedSearch": "Advanced Product Search",
             "analyticsIntegration": "Analytics Integration",
             "blogSection": "Blog Section",
+            "themes": "Dark/Light Theme",
             "bookingSystem": "Booking / Appointment System",
             "careersPage": "Careers / Job Postings",
             "contentManagementSystem": "Content Management System (CMS)",
@@ -969,6 +981,14 @@
             "wishlists": "Wishlists"
         },
         "addOns": {
+            "careersPage": "Careers / Job Postings",
+            "eventCalendar": "Event Calendar",
+            "serviceArea": "Service Area Map / List",
+            "teamPage": "Team Page",
+            "aiIntegration": "AI Integration",
+            "onlineOrderingPickupDelivery": "Online Ordering (Pickup/Delivery)",
+            "returnsAndExchangesPortal": "Returns & Exchanges Portal",
+            "giftCardSales": "Gift Card Sales",
             "multilingualSupport": "Multilingual Support",
             "liveChat": "Live Chat Integration",
             "advancedBooking": "Advanced Booking System",
@@ -978,40 +998,41 @@
         },
         "additionalServices": "Additional Services",
         "hosting": {
-            "title": "All packages require hosting",
-            "price": "(€7.95 / month or €89 / year)"
+            "title": "All packages require hosting"
         },
         "maintenance": {
             "landingPage": {
                 "title": "Maintenance for Landing Pages",
-                "description": "We take care of everything - content maintenance, updates, security, and backups for your landing page.",
-                "price": "€25 / month or €273 / year (save 9%)"
+                "description": "We take care of everything - content maintenance, updates, security, and backups for your landing page."
             },
             "website": {
                 "title": "Maintenance for Websites",
-                "description": "Complete service for your multi-page website. We handle content updates, security scans, and regular backups.",
-                "price": "€35 / month or €357 / year (save 15%)"
+                "description": "Complete service for your multi-page website. We handle content updates, security scans, and regular backups."
             },
             "onlineShop": {
                 "title": "Maintenance for Online Shops",
-                "description": "Premium support for your e-commerce platform. Includes security, all updates, backups, and functional checks.",
-                "price": "€60 / month or €576 / year (save 20%)"
+                "description": "Premium support for your e-commerce platform. Includes security, all updates, backups, and functional checks."
             },
             "seoKickstart": {
                 "title": "SEO Kickstart Package",
-                "description": "A one-time setup to optimize your site, including keyword research, on-page SEO, and Google Business Profile setup.",
-                "price": "Starting from €350 (one-time fee)"
+                "description": "A one-time setup to optimize your site, including keyword research, on-page SEO, and Google Business Profile setup."
             },
             "copywriting": {
                 "title": "Professional Content & Copywriting",
-                "description": "Engaging, SEO-friendly text for your core website pages, crafted to connect with your audience.",
-                "price": "Starting from €80 / page"
+                "description": "Engaging, SEO-friendly text for your core website pages, crafted to connect with your audience."
+            },
+            "performanceOptimization": {
+                "title": "Website Performance Optimization",
+                "description": "Boost your site's speed and user experience. We optimize images, code, and caching for faster load times and better SEO rankings."
+            },
+            "supportRetainer": {
+                "title": "Developer Support Retainer",
+                "description": "For ongoing improvements and custom tasks. Pre-purchase a block of developer hours for new features, design tweaks, or technical support at a discounted rate."
             }
         },
         "emailAndDomain": {
             "title": "Email & Domain",
-            "description": "Your desired domain & email address - simple and professional.",
-            "price": "€3 / month or €30 / year"
+            "description": "Your desired domain & email address - simple and professional."
         }
     },
     "pricingSummary": {
@@ -1142,7 +1163,7 @@
         "submitting": "Sending...",
         "success": "Message sent! We'll get back to you shortly.",
         "error": "Failed to send message. Please try again later.",
-              "missingFields":"Please fill in all fields."
+        "missingFields": "Please fill in all fields."
     },
     "consultation": {
         "text": "Need to discuss your project in detail?",
