@@ -41,19 +41,13 @@ const { isFetching, execute } = useFetch(contact.url(), {
 }).post(form)
 
 async function handleSubmit() {
-  return console.log(1);
   if (!form.name || !form.email || !form.message) {
     toast.warning(t('contactForm.missingFields'))
     return
   }
   
-  const emailData = {
-      ...form,
-      subject: `New Contact Form Submission from ${form.name}`,
-      to: 'hallo@masri-programmer.de',
-  };
 
-  await execute(emailData as any)
+  await execute(form as any )
 }
 
 // Schedule a Consultation
