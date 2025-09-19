@@ -41,6 +41,7 @@ const { isFetching, execute } = useFetch(contact.url(), {
 }).post(form)
 
 async function handleSubmit() {
+  return console.log(1);
   if (!form.name || !form.email || !form.message) {
     toast.warning(t('contactForm.missingFields'))
     return
@@ -59,7 +60,7 @@ async function handleSubmit() {
 </script>
 
 <template>
-  <Layout :head="t('contact.title')" :link="contact.url()" :description="t('contact.description')">
+  <Layout :head="t('contact')" :link="contact.url()" :description="t('contact')">
   <div class="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
     <Card>
       <CardHeader>
