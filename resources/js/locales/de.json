@@ -135,7 +135,7 @@
             },
             "costs": {
                 "question": "Was kostet eine Website oder ein Onlineshop",
-                "answer": "<p>Die Kosten für eine Website oder einen Onlineshop richten sich natürlich nach dem Umfang des Projektes. Um Ihnen dennoch eine sinnvolle Übersicht zu geben, können Sie sich an den folgenden Erfahrungswerten orientieren:</p><ul><li>landingPage (Onepager) mit Weblication: 200 Euro - 2.800 Euro</li><li>Website : 600 Euro bis 5.000 Euro</li><li>Onlineshop : 2.200 Euro bis 4.000 Euro</li><li>Onlineshop mit CMS: 2.200 Euro bis 4.000 Euro (inkl. Website und Blog)</li></ul>"
+                "answer": "<p>Die Kosten für eine Website oder einen Onlineshop richten sich natürlich nach dem Umfang des Projektes. Um Ihnen dennoch eine sinnvolle Übersicht zu geben, können Sie sich an den folgenden Erfahrungswerten orientieren:</p><ul><li>landingPage (Onepager) mit Weblication: 200 Euro - 2.800 Euro</li><li>Website : 600 Euro bis 5.000 Euro</li><li>Onlineshop : 2.200 Euro bis 4.000 Euro</li><li>Onlineshop mit CMS: 2.200 Euro bis 10.000 Euro (inkl. Website und Blog)</li></ul>"
             },
             "newWebsiteNeeded": {
                 "question": "Benötigen Sie eine neue Website oder einen neuen Onlineshop?",
@@ -1171,7 +1171,8 @@
         "submit": "Nachricht senden",
         "submitting": "Wird gesendet...",
         "success": "Nachricht gesendet! Wir werden uns in Kürze bei Ihnen melden.",
-        "error": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es später erneut."
+        "error": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es später erneut.",
+        "missingFields": "Bitte füllen Sie alle Felder aus."
     },
     "consultation": {
         "text": "Müssen Sie Ihr Projekt im Detail besprechen?",

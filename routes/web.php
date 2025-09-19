@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\ContactController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -37,6 +38,9 @@ Route::get('/language/{locale}', function ($locale) {
     }
     return redirect()->back();
 })->whereIn('locale', ['en', 'de', 'fr','ar'])->name('language.switch');
+
+
+Route::post('/contact', ContactController::class);
 
 Route::get('/pricing/{category?}', function ($category = null) {
     $categoryMap = [

@@ -42,11 +42,9 @@ const faqs = computed(() =>
       </Accordion>
 
       <div class="mt-8 flex justify-center">
-        <Link :href="faq.url()">
-          <Button size="lg">
+          <Button as="a" :href="faq.url()" size="lg">
             {{ $t('faqSummary.viewAllButton') }}
           </Button>
-        </Link>
       </div>
     </div>
   </section>

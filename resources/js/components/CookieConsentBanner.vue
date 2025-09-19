@@ -103,7 +103,7 @@ function declineCookies() {
                 </CardContent>
                 <CardFooter class="flex flex-col items-stretch gap-3 sm:flex-row sm:justify-between">
                     <Button variant="link" as-child class="h-auto p-0">
-                        <a :href="imprint.url()">{{ t('cookieBanner.imprint') }}</a>
+                        <a :href="imprint.url()" target="_blank" rel="noopener noreferrer">{{ t('cookieBanner.imprint') }}</a>
                     </Button>
                     <div class="flex justify-end gap-x-3">
                         <Button variant="outline" @click="declineCookies">

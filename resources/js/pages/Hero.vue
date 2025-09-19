@@ -7,6 +7,7 @@ import SafariMockup from '@/components/ui/safari-mockup/SafariMockup.vue';
 import ShimmerButton from '@/components/ui/shimmer-button/ShimmerButton.vue';
 import TextGenerateEffect from '@/components/ui/text-generate-effect/TextGenerateEffect.vue';
 import { Book } from 'lucide-vue-next';
+import { pricing } from '@/routes';
 import webmockup from '@/images/mockup.png';
 // import resume from '../../images/resume.webp';
 </script>
@@ -38,7 +39,7 @@ import webmockup from '@/images/mockup.png';
                                 </span>
                             </ShimmerButton>
                         </a>
-                        <Button as="a" href="#faq" rel="noopener noreferrer" size="lg" class="rounded-full" variant="secondary">
+                        <Button as="a" :href="pricing.url()" rel="noopener noreferrer" size="lg" class="rounded-full" variant="secondary">
                             <Book class="mr-2 h-4 w-4" />
                             {{ $t('hero.cta.learnMore') }}
                         </Button>

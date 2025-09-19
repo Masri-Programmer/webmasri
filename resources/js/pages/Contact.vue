@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { useToast } from 'vue-toastification'
+import { useToast } from 'vue-toastification' 
 import { contact } from '@/routes'
 import { useFetch } from '@vueuse/core'
 
-// Assuming you have shadcn-vue or similar components set up.
-// If not, these can be standard HTML elements styled with Tailwind CSS.
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
@@ -13,7 +11,6 @@ import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { reactive } from 'vue'
 import Layout from '@/layouts/Layout.vue'
-
 // --- SETUP ---
 const { t } = useI18n()
 const toast = useToast()
@@ -26,38 +23,33 @@ const form = reactive({
 })
 
 // --- FORM SUBMISSION ---
-// Note: Replace '/api/contact' with your actual backend endpoint.
-const { isFetching, execute } = useFetch('/api/contact', {
-  immediate: false, // Don't execute immediately
-  // The 'afterFetch' hook is called when the request is finished.
+const { isFetching, execute } = useFetch(contact.url(), {
+  immediate: false,
   afterFetch: (ctx) => {
     if (ctx.data && !ctx.response?.ok) {
       toast.success(t('contactForm.success'))
-      // Reset form on success
       form.name = ''
       form.email = ''
       form.message = ''
     }
     return ctx
   },
-  // The 'onFetchError' hook is called when a network error occurs.
   onFetchError: (ctx) => {
     toast.error(t('contactForm.error'))
     return ctx
   },
 }).post(form)
 
-// --- HANDLERS ---
 async function handleSubmit() {
   if (!form.name || !form.email || !form.message) {
-    toast.warning('Please fill out all fields.')
+    toast.warning(t('contactForm.missingFields'))
     return
   }
   
   const emailData = {
       ...form,
       subject: `New Contact Form Submission from ${form.name}`,
-      to: 'hallo@masri-programmer.de', // The target email address
+      to: 'hallo@masri-programmer.de',
   };
 
   await execute(emailData as any)
@@ -121,7 +113,7 @@ async function handleSubmit() {
           {{ t('consultation.text') }}
         </p>
         <a href="https://masri.blog/Book-a-Meeting" target="_blank" rel="noopener noreferrer" class="w-full">
-          <Button variant="outline" class="w-full">
+          <Button variant="outline" class="w-full" size="lg" :disabled="isFetching">
             {{ t('consultation.button') }}
           </Button>
         </a>

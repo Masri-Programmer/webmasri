@@ -14,7 +14,7 @@
                         </a>
                     </template>
                     <template #contactLink>
-                        <a href="mailto:info@masri.blog" class="underline">
+                        <a href="mailto:hallo@masri-programmer.de" class="underline">
                             {{ $t('about.contactLinkText') }}
                         </a>
                     </template>

@@ -105,7 +105,7 @@
             },
             "costs": {
                 "question": "كم تكلفة موقع ويب أو متجر إلكتروني؟",
-                "answer": "<p>تعتمد تكلفة موقع الويب أو المتجر الإلكتروني بشكل طبيعي على نطاق المشروع. لكي أقدم لك نظرة عامة مفيدة، يمكنك استخدام القيم التجريبية التالية كدليل:</p><ul><li>صفحة هبوط (صفحة واحدة) مع Weblication: 200 يورو - 2,800 يورو</li><li>موقع ويب: 600 يورو إلى 5,000 يورو</li><li>متجر إلكتروني: 2,200 يورو إلى 4,000 يورو</li><li>متجر إلكتروني مع نظام إدارة محتوى: 2,200 يورو إلى 4,000 يورو (يشمل موقع الويب والمدونة)</li></ul>"
+                "answer": "<p>تعتمد تكلفة موقع الويب أو المتجر الإلكتروني بشكل طبيعي على نطاق المشروع. لكي أقدم لك نظرة عامة مفيدة، يمكنك استخدام القيم التجريبية التالية كدليل:</p><ul><li>صفحة هبوط (صفحة واحدة) مع Weblication: 200 يورو - 2,800 يورو</li><li>موقع ويب: 600 يورو إلى 5,000 يورو</li><li>متجر إلكتروني: 2,200 يورو إلى 4,000 يورو</li><li>متجر إلكتروني مع نظام إدارة محتوى: 2,200 يورو إلى 10,000 يورو (يشمل موقع الويب والمدونة)</li></ul>"
             },
             "newWebsiteNeeded": {
                 "question": "هل تحتاج إلى موقع ويب جديد أو متجر إلكتروني جديد؟",
@@ -1074,24 +1074,25 @@
         "usd": "USD"
     },
   "contactForm": {
-    "title": "Contact Us",
-    "description": "Have a question or a project in mind? Fill out the form below.",
-    "name": {
-      "label": "Full Name",
-      "placeholder": "Enter your full name"
-    },
-    "email": {
-      "label": "Email Address",
-      "placeholder": "your.email@example.com"
-    },
-    "message": {
-      "label": "Message",
-      "placeholder": "Let us know how we can help you."
-    },
-    "submit": "Send Message",
-    "submitting": "Sending...",
-    "success": "Message sent! We'll get back to you shortly.",
-    "error": "Failed to send message. Please try again later."
+      "title": "Contact Us",
+      "description": "Have a question or a project in mind? Fill out the form below.",
+      "name": {
+          "label": "Full Name",
+          "placeholder": "Enter your full name"
+      },
+      "email": {
+          "label": "Email Address",
+          "placeholder": "your.email@example.com"
+      },
+      "message": {
+          "label": "Message",
+          "placeholder": "Let us know how we can help you."
+      },
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "success": "Message sent! We'll get back to you shortly.",
+      "error": "Failed to send message. Please try again later.",
+      "missingFields": "يرجى ملء جميع الحقول."
   },
   "consultation": {
     "text": "Need to discuss your project in detail?",

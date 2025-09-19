@@ -1,5 +1,5 @@
 <template>
-    <section id="projects" class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 overflow-hidden">
+    <section id="projects" class="container mx-auto max-w-7xl px-8 sm:px-14 lg:px-20 py-12 overflow-hidden">
         <h2
             class="pointer-events-none bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent whitespace-pre-wrap max-lg:-mt-12 sm:text-6xl md:text-7xl lg:text-8xl dark:from-white dark:to-slate-900/10"
         >
