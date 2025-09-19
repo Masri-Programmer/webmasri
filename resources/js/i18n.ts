@@ -1,9 +1,9 @@
 // resources/js/i18n.ts
-
 import { createI18n } from 'vue-i18n';
-// Assuming you have these translation files
+import ar from './locales/ar.json';
 import de from './locales/de.json';
 import en from './locales/en.json';
+import fr from './locales/fr.json';
 
 const i18n = createI18n({
     legacy: false,
@@ -12,6 +12,8 @@ const i18n = createI18n({
     messages: {
         en,
         de,
+        ar,
+        fr,
     },
     numberFormats: {
         'en-US': {

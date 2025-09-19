@@ -167,7 +167,7 @@
             },
             "imageFormats": {
                 "question": "In welchen Formaten sollten Bilder für Website und Onlineshop geliefert werden?",
-                "answer": "<p>Fotomotive (Landschaften, Menschen etc.) bitte als .jpg, freigestellte Motive bitte als .png und Motive mit viel Schrift oder Linien bitte als .gif oder .png. Logos wenn möglich bitte als .svg oder .eps. Alle Bildmotive möglichst Breitformat mit einer Breite von ca. 1800px.</p>"
+                "answer": "<p>Fotomotive (Landschaften, Menschen etc.) bitte als .jpg, freigestellte Motive bitte als .webp und Motive mit viel Schrift oder Linien bitte als .gif oder .webp. Logos wenn möglich bitte als .svg oder .eps. Alle Bildmotive möglichst Breitformat mit einer Breite von ca. 1800px.</p>"
             },
             "hostingProvider": {
                 "question": "Wie finden Sie geigneten einen Hosting-Provider?",
@@ -269,7 +269,7 @@
                     },
                     {
                         "type": "p",
-                        "text": "Verantwortlicher für die Datenverarbeitung auf dieser Website im Sinne der Datenschutz-Grundverordnung (DSGVO) ist Mohamad Masri, Nettelbeckstraße 10, 26131 Oldenburg, Deutschland, Tel.: +49 – (0) 1763 -1579669, E-Mail: info@masri-programmer.de. Der für die Verarbeitung von personenbezogenen Daten Verantwortliche ist diejenige natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet."
+                        "text": "Verantwortlicher für die Datenverarbeitung auf dieser Website im Sinne der Datenschutz-Grundverordnung (DSGVO) ist Mohamad Masri, Nettelbeckstraße 10, 26131 Oldenburg, Deutschland, Tel.: +49 – (0) 1763 -1579669, E-Mail: hallo@masri-programmer.de. Der für die Verarbeitung von personenbezogenen Daten Verantwortliche ist diejenige natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet."
                     }
                 ]
             },
@@ -821,8 +821,7 @@
             "nameAndAddress": "Mohamad Masri\n26131 Oldenburg\nDeutschland",
             "phoneLabel": "Tel.:",
             "phoneNumber": "+49 – (0) 1763 - 1579669",
-            "emailLabel": "E-Mail:",
-            "emailAddress": "info@masri-programmer.de"
+            "emailLabel": "E-Mail:"
         },
         "vat": {
             "title": "Umsatzsteuer-Identifikationsnummer",
@@ -840,8 +839,8 @@
             "p2": "Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen."
         }
     },
-    "changeLanguage": "Sprache ändern",
     "languages": {
+        "changeLanguage": "Sprache ändern",
         "english": "Englisch",
         "german": "Deutsch",
         "french": "Französisch",
@@ -1069,7 +1068,8 @@
         "tagline": "Transparente Preise",
         "title": "Ein Plan für jeden Bedarf",
         "description": "Wählen Sie den perfekten Ausgangspunkt für Ihr Projekt. Unsere Pläne sind flexibel, leistungsstark und auf Ihre Ziele zugeschnitten.",
-        "mostPopular": "Am beliebtesten",
+        "installmentsInfo": "Flexible Zahlungen möglich! Zahlen Sie nach Meilenstein oder in Raten, um noch heute zu starten.",
+        "mostPopular": "Beliebtester",
         "from": "Ab",
         "ctaButton": "Mehr erfahren",
         "landingPage": {
@@ -1085,7 +1085,7 @@
             "description": "Alles, was Sie brauchen, um Ihr E-Commerce-Geschäft zu starten und online Produkte zu verkaufen."
         },
         "features": {
-            "singlePage": "Fokussiertes Ein-Seiten-Layout",
+            "singlePage": "Fokussiertes Einseiten-Layout",
             "contactForm": "Integriertes Kontaktformular",
             "seoOptimized": "SEO-optimierte Struktur",
             "fastLoading": "Für Geschwindigkeit optimiert",
@@ -1182,8 +1182,7 @@
             "placeholder": "Geben Sie Ihren vollständigen Namen ein"
         },
         "email": {
-            "label": "E-Mail-Adresse",
-            "placeholder": "ihre.email@beispiel.de"
+            "label": "E-Mail-Adresse"
         },
         "message": {
             "label": "Nachricht",

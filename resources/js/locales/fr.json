@@ -137,7 +137,7 @@
             },
             "imageFormats": {
                 "question": "Dans quels formats les images pour le site web et la boutique en ligne doivent-elles être livrées ?",
-                "answer": "<p>Les motifs photo (paysages, personnes, etc.) en .jpg, les motifs détourés en .png, et les motifs avec beaucoup de texte ou de lignes en .gif ou .png. Les logos si possible en .svg ou .eps. Tous les motifs d'image de préférence en format large avec une largeur d'environ 1800px.</p>"
+                "answer": "<p>Les motifs photo (paysages, personnes, etc.) en .jpg, les motifs détourés en .webp, et les motifs avec beaucoup de texte ou de lignes en .gif ou .webp. Les logos si possible en .svg ou .eps. Tous les motifs d'image de préférence en format large avec une largeur d'environ 1800px.</p>"
             },
             "hostingProvider": {
                 "question": "Comment trouver un hébergeur approprié ?",
@@ -205,6 +205,8 @@
             "projects_desc": "Vérifiez mes projets",
             "statistics": "Les statistiques",
             "statistics_desc": "View key metrics and data.",
+            "services": "services",
+            "services_desc": "Découvrez les services puissants que nous offrons.",
             "testimonials": "Expérimenter des rapports",
             "testimonials_desc": "See what our clients are saying.",
             "faq": "faq",
@@ -239,7 +241,7 @@
                     },
                     {
                         "type": "p",
-                        "text": "Le responsable du traitement des données sur ce site web, au sens du Règlement Général sur la Protection des Données (RGPD), est Mohamad Masri, Nettelbeckstraße 10, 26131 Oldenburg, Allemagne, Tél. : +49 – (0) 1763 -1579669, E-Mail : info@masri-programmer.de. Le responsable du traitement est la personne physique ou morale qui, seule ou conjointement avec d'autres, détermine les finalités et les moyens du traitement des données à caractère personnel."
+                        "text": "Le responsable du traitement des données sur ce site web, au sens du Règlement Général sur la Protection des Données (RGPD), est Mohamad Masri, Nettelbeckstraße 10, 26131 Oldenburg, Allemagne, Tél. : +49 – (0) 1763 -1579669, E-Mail : hallo@masri-programmer.de. Le responsable du traitement est la personne physique ou morale qui, seule ou conjointement avec d'autres, détermine les finalités et les moyens du traitement des données à caractère personnel."
                     }
                 ]
             },
@@ -791,8 +793,7 @@
             "nameAndAddress": "Mohamad Masri\n26131 Oldenburg\nAllemagne",
             "phoneLabel": "Tél. :",
             "phoneNumber": "+49 – (0) 1763 - 1579669",
-            "emailLabel": "E-mail :",
-            "emailAddress": "info@masri-programmer.de"
+            "emailLabel": "E-mail :"
         },
         "vat": {
             "title": "Numéro d'identification TVA",
@@ -810,8 +811,8 @@
             "p2": "Les droits d'auteur de tiers sont respectés. En particulier, les contenus de tiers sont identifiés comme tels. Si vous deviez néanmoins constater une violation du droit d'auteur, nous vous prions de nous en informer. Dès la notification de violations, nous supprimerons immédiatement ces contenus."
         }
     },
-    "changeLanguage": "Changer la langue",
     "languages": {
+        "changeLanguage": "Changer la langue",
         "english": "Anglaise",
         "german": "Allemande",
         "french": "Français",
@@ -839,6 +840,15 @@
         "contactUs": "Contactez-nous",
         "featured": "Le plus populaire",
         "priceFrom": "À partir de",
+        "readMore": "Lire la suite",
+        "readLess": "Moins",
+        "perMonth": "mois",
+        "perYear": "an",
+        "or": "ou",
+        "save": "économisez",
+        "startingFrom": "À partir de",
+        "oneTimeFee": "frais uniques",
+        "perPage": "par page",
         "availableAddOns": "Modules complémentaires disponibles",
         "customizeYourPackage": "Personnalisez votre forfait avec ces ajouts puissants.",
         "landingPage": "Page de destination (Onepager)",
@@ -906,6 +916,7 @@
                     "description": "Une solution e-commerce complète pour des ventes à grand volume et des besoins complexes."
                 }
             },
+            "animations": "Animations de site web",
             "abTestingSetup": "Configuration de tests A/B",
             "abandonedCartRecovery": "Récupération de panier abandonné",
             "accessibilityCompliance": "Conformité d'accessibilité (WCAG)",
@@ -913,6 +924,7 @@
             "advancedSearch": "Recherche de produits avancée",
             "analyticsIntegration": "Intégration d'outils d'analyse",
             "blogSection": "Section blog",
+            "themes": "Thème Clair/Sombre",
             "bookingSystem": "Système de réservation / prise de rendez-vous",
             "careersPage": "Page Carrières / Offres d'emploi",
             "contentManagementSystem": "Système de gestion de contenu (CMS)",
@@ -970,6 +982,14 @@
             "wishlists": "Listes de souhaits"
         },
         "addOns": {
+            "careersPage": "Page Carrières / Offres d'emploi",
+            "eventCalendar": "Calendrier des événements",
+            "serviceArea": "Zone de service (Carte / Liste)",
+            "teamPage": "Page d'équipe",
+            "aiIntegration": "Intégration d'IA",
+            "onlineOrderingPickupDelivery": "Commande en ligne (Retrait/Livraison)",
+            "returnsAndExchangesPortal": "Portail de retours & échanges",
+            "giftCardSales": "Vente de cartes-cadeaux",
             "multilingualSupport": "Support multilingue",
             "liveChat": "Intégration de chat en direct",
             "advancedBooking": "Système de réservation avancé",
@@ -979,46 +999,48 @@
         },
         "additionalServices": "Services supplémentaires",
         "hosting": {
-            "title": "Tous les forfaits nécessitent un hébergement",
-            "price": "(7,95 € / mois ou 89 € / an)"
+            "title": "Tous les forfaits nécessitent un hébergement"
         },
         "maintenance": {
             "landingPage": {
                 "title": "Maintenance pour pages de destination",
-                "description": "Nous nous occupons de tout - maintenance du contenu, mises à jour, sécurité et sauvegardes pour votre page de destination.",
-                "price": "25 € / mois ou 273 € / an (économisez 9%)"
+                "description": "Nous nous occupons de tout - maintenance du contenu, mises à jour, sécurité et sauvegardes pour votre page de destination."
             },
             "website": {
                 "title": "Maintenance pour sites web",
-                "description": "Service complet pour votre site web multi-pages. Nous gérons les mises à jour de contenu, les analyses de sécurité et les sauvegardes régulières.",
-                "price": "35 € / mois ou 357 € / an (économisez 15%)"
+                "description": "Service complet pour votre site web multi-pages. Nous gérons les mises à jour de contenu, les analyses de sécurité et les sauvegardes régulières."
             },
             "onlineShop": {
                 "title": "Maintenance pour boutiques en ligne",
-                "description": "Support premium pour votre plateforme e-commerce. Inclut la sécurité, toutes les mises à jour, les sauvegardes et les vérifications fonctionnelles.",
-                "price": "60 € / mois ou 576 € / an (économisez 20%)"
+                "description": "Support premium pour votre plateforme e-commerce. Inclut la sécurité, toutes les mises à jour, les sauvegardes et les vérifications fonctionnelles."
             },
             "seoKickstart": {
                 "title": "Forfait SEO Kickstart",
-                "description": "Une configuration unique pour optimiser votre site, incluant la recherche de mots-clés, le SEO sur page et la configuration du profil Google Business.",
-                "price": "À partir de 350 € (frais uniques)"
+                "description": "Une configuration unique pour optimiser votre site, incluant la recherche de mots-clés, le SEO sur page et la configuration du profil Google Business."
             },
             "copywriting": {
                 "title": "Contenu professionnel & Rédaction",
-                "description": "Texte engageant et optimisé pour le SEO pour les pages principales de votre site web, conçu pour connecter avec votre audience.",
-                "price": "À partir de 80 € / page"
+                "description": "Texte engageant et optimisé pour le SEO pour les pages principales de votre site web, conçu pour connecter avec votre audience."
+            },
+            "performanceOptimization": {
+                "title": "Optimisation des performances du site web",
+                "description": "Améliorez la vitesse et l'expérience utilisateur de votre site. Nous optimisons les images, le code et la mise en cache pour des temps de chargement plus rapides et un meilleur classement SEO."
+            },
+            "supportRetainer": {
+                "title": "Forfait de support développeur",
+                "description": "Pour des améliorations continues et des tâches personnalisées. Pré-achetez un bloc d'heures de développeur pour de nouvelles fonctionnalités, des ajustements de conception ou un support technique à un tarif réduit."
             }
         },
         "emailAndDomain": {
             "title": "E-mail & Domaine",
-            "description": "Le domaine et l'adresse e-mail de votre choix - simple et professionnel.",
-            "price": "3 € / mois ou 30 € / an"
+            "description": "Le domaine et l'adresse e-mail de votre choix - simple et professionnel."
         }
     },
     "pricingSummary": {
         "tagline": "Tarification transparente",
         "title": "Un plan pour chaque besoin",
         "description": "Choisissez le point de départ idéal pour votre projet. Nos plans sont conçus pour être flexibles, puissants et adaptés à vos objectifs.",
+        "installmentsInfo": "Paiements flexibles disponibles!Payer par un jalon ou en versements pour commencer aujourd'hui.",
         "mostPopular": "Le plus populaire",
         "from": "À partir de",
         "ctaButton": "En savoir plus",
@@ -1132,8 +1154,7 @@
           "placeholder": "Enter your full name"
       },
       "email": {
-          "label": "Email Address",
-          "placeholder": "your.email@example.com"
+          "label": "Email Address"
       },
       "message": {
           "label": "Message",

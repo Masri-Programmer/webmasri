@@ -36,7 +36,7 @@ const faqs = computed(() =>
 
 <template>
    <Layout :head="t('faq.title')" :link="faq.url()" :description="t('faq.subtitle')">
-    <section class="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <section class="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 mt-8">
       <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10">
         <div class="space-y-4 text-left">
           <h4 class="text-3xl font-bold tracking-tighter sm:text-5xl text-foreground">{{ $t('faq.title') }}</h4>

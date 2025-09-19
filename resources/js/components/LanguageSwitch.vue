@@ -21,7 +21,6 @@ const setLocale = (langCode: string) => {
     storedLocale.value = langCode;
 };
 
-// This logic remains the same
 watchEffect(() => {
     const newLocale = storedLocale.value;
     locale.value = newLocale;
@@ -35,18 +34,23 @@ watchEffect(() => {
             <DropdownMenu>
                 <TooltipTrigger as-child>
                     <DropdownMenuTrigger as-child>
-                        <Button variant="ghost" size="icon" :aria-label="t('changeLanguage')">
+                        <Button variant="ghost" size="icon" :aria-label="t('languages.changeLanguage')">
                             <Languages class="h-5 w-5" />
                         </Button>
                     </DropdownMenuTrigger>
                 </TooltipTrigger>
-                
+
                 <TooltipContent>
-                    <p>{{ t('changeLanguage') }}</p>
+                    <p>{{ t('languages.changeLanguage') }}</p>
                 </TooltipContent>
 
                 <DropdownMenuContent>
-                    <DropdownMenuItem v-for="lang in availableLanguages" :key="lang.code" class="w-full justify-between" @click="setLocale(lang.code)">
+                    <DropdownMenuItem
+                        v-for="lang in availableLanguages"
+                        :key="lang.code"
+                        class="w-full justify-between"
+                        @click="setLocale(lang.code)"
+                    >
                         {{ t(lang.nameKey) }}
                         <Check v-if="locale === lang.code" class="h-4 w-4" />
                     </DropdownMenuItem>

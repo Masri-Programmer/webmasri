@@ -1,23 +1,34 @@
 <script setup lang="ts">
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
-import { useIntersectionObserver,  } from '@vueuse/core';
-import { onMounted, ref } from 'vue';
+import { useIntersectionObserver } from '@vueuse/core';
+import { onMounted, onUnmounted, ref } from 'vue';
 import { navigationLinks } from '@/lib/navigation';
 import { useI18n } from 'vue-i18n';
 import { usePage } from '@inertiajs/vue3';
-import { AppPageProps } from '@/types'; 
-
+import { AppPageProps } from '@/types';
 
 const page = usePage();
 const customProps = page.props as AppPageProps;
 const { t } = useI18n();
 
 const activeSection = ref('hero');
+const isNavVisible = ref(false);
 
 const isScrollingProgrammatically = ref(false);
 const targetSectionId = ref<string | null>(null);
 
+// Handles mouse movement to show/hide the navigation
+const handleMouseMove = (event: MouseEvent) => {
+    const threshold = 250; 
+    const { clientX } = event;
+    const windowWidth = window.innerWidth;
+
+    isNavVisible.value = clientX <= threshold || clientX >= windowWidth - threshold;
+};
+
 onMounted(() => {
+    window.addEventListener('mousemove', handleMouseMove);
+
     const elements = navigationLinks.map(({ id }) => document.getElementById(id)).filter((el): el is HTMLElement => el !== null);
 
     elements.forEach((el) => {
@@ -34,8 +45,12 @@ onMounted(() => {
             },
         );
     });
-
 });
+
+onUnmounted(() => {
+    window.removeEventListener('mousemove', handleMouseMove);
+});
+
 const handleScroll = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -49,7 +64,7 @@ const handleScroll = (id: string) => {
 
 <template>
     <Transition name="nav-fade">
-        <nav v-if="activeSection !== 'hero'" class="hidden md:block fixed top-1/2 right-8 z-50 -translate-y-1/2 transform">
+        <nav v-if="isNavVisible" class="md:block fixed top-1/2 right-8 z-50 -translate-y-1/2 transform">
             <TooltipProvider :delay-duration="100">
                 <ul class="flex flex-col items-center gap-3">
                     <li v-for="item in navigationLinks" :key="item.id">

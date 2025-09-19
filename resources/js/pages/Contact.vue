@@ -54,8 +54,8 @@ async function handleSubmit() {
 </script>
 
 <template>
-  <Layout :head="t('contact')" :link="contact.url()" :description="t('contact')">
-  <div class="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+  <Layout :head="t('Contact')" :link="contact.url()" :description="t('Contact')">
+  <div class="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 mt-8">
     <Card>
       <CardHeader>
         <CardTitle class="text-3xl">
@@ -83,7 +83,7 @@ async function handleSubmit() {
               id="email"
               v-model="form.email"
               type="email"
-              :placeholder="t('contactForm.email.placeholder')"
+              placeholder="name@example.com"
               required
             />
           </div>

@@ -2,17 +2,9 @@
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { Link } from '@inertiajs/vue3';
-
-// UI Components
-import AppearanceIcon from '@/components/AppearanceIcon.vue';
-import LanguageSwitch from '@/components/LanguageSwitch.vue';
-import CurrencySwitch from '@/components/CurrencySwitch.vue';
-
-// Icons and Images
 import { Book, Heart, Linkedin, Github } from 'lucide-vue-next';
-import googleIcon from '@/images/googleIcon.svg';
+import googleIcon from '@/images/googleIcon.webp';
 
-// App Data & Routes - Assuming your routes are exported from a central file
 import { navigationLinks } from '@/lib/navigation';
 import { privacyPolicy, termsConditions, imprint, contact, faq } from '@/routes';
 

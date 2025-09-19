@@ -22,7 +22,7 @@
             </div>
 
             <div
-                class="relative flex size-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background px-40 pt-24 md:pt-8 pb-40 md:pb-60 md:shadow-xl"
+                class="relative flex size-full flex-col items-center justify-center overflow-hidden rounded-lg bg-accent px-40 pt-24 md:pt-8 pb-40 md:pb-60 md:shadow-xl"
             >
                 <Globe class="top-28" />
                 <div

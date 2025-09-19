@@ -10,7 +10,7 @@ const sections = tm('privacyPolicy.sections');
 
 <template>
   <Layout :head="t('privacyPolicy.title')" :link="privacyPolicy.url()" :description="t('privacyPolicy.description')">
-    <div class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <div class="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 mt-12">
       <header class="border-b pb-4">
         <h1 class="text-3xl md:text-4xl font-bold text-primary">
           {{ t('privacyPolicy.title') }}

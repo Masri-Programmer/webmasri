@@ -167,7 +167,7 @@
             },
             "imageFormats": {
                 "question": "In what formats should images for the website and online shop be delivered?",
-                "answer": "<p>Photo motifs (landscapes, people, etc.) please as .jpg, isolated motifs please as .png, and motifs with a lot of text or lines please as .gif or .png. Logos if possible please as .svg or .eps. All image motifs preferably in wide format with a width of approx. 1800px.</p>"
+                "answer": "<p>Photo motifs (landscapes, people, etc.) please as .jpg, isolated motifs please as .webp, and motifs with a lot of text or lines please as .gif or .webp. Logos if possible please as .svg or .eps. All image motifs preferably in wide format with a width of approx. 1800px.</p>"
             },
             "hostingProvider": {
                 "question": "How do you find a suitable hosting provider?",
@@ -271,7 +271,7 @@
                     },
                     {
                         "type": "p",
-                        "text": "The controller for data processing on this website within the meaning of the General Data Protection Regulation (GDPR) is Mohamad Masri, Nettelbeckstraße 10, 26131 Oldenburg, Germany, Tel.: +49 – (0) 1763 -1579669, E-Mail: info@masri-programmer.de . The controller responsible for the processing of personal data is the natural or legal person who alone or jointly with others determines the purposes and means of the processing of personal data."
+                        "text": "The controller for data processing on this website within the meaning of the General Data Protection Regulation (GDPR) is Mohamad Masri, Nettelbeckstraße 10, 26131 Oldenburg, Germany, Tel.: +49 – (0) 1763 -1579669, E-Mail: hallo@masri-programmer.de . The controller responsible for the processing of personal data is the natural or legal person who alone or jointly with others determines the purposes and means of the processing of personal data."
                     }
                 ]
             },
@@ -791,8 +791,7 @@
             "nameAndAddress": "Mohamad Masri\n26131 Oldenburg\nGermany",
             "phoneLabel": "Tel.:",
             "phoneNumber": "+49 – (0) 1763 - 1579669",
-            "emailLabel": "Email:",
-            "emailAddress": "info@masri-programmer.de"
+            "emailLabel": "Email:"
         },
         "vat": {
             "title": "VAT identification number",
@@ -810,8 +809,8 @@
             "p2": "The copyrights of third parties are respected. In particular, third-party content is marked as such. Should you nevertheless become aware of a copyright infringement, we ask you to notify us accordingly. Upon notification of any violations, we will remove such content immediately."
         }
     },
-    "changeLanguage": "Change language",
     "languages": {
+        "changeLanguage": "Change language",
         "english": "English",
         "german": "German",
         "french": "French",
@@ -1039,6 +1038,7 @@
         "tagline": "Transparent Pricing",
         "title": "A Plan for Every Need",
         "description": "Choose the perfect starting point for your project. Our plans are designed to be flexible, powerful, and tailored to your goals.",
+        "installmentsInfo": "Flexible payments available! Pay by milestone or in installments to get started today.",
         "mostPopular": "Most Popular",
         "from": "From",
         "ctaButton": "Learn More",
@@ -1153,7 +1153,7 @@
         },
         "email": {
             "label": "Email Address",
-            "placeholder": "your.email@example.com"
+            "placeholder": "'your.email@example.com'"
         },
         "message": {
             "label": "Message",

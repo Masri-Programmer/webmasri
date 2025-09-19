@@ -25,7 +25,7 @@
               capture every thought.
             </p>
             <img
-              src="https://assets.aceternity.com/macbook.png"
+              src="https://assets.aceternity.com/macbook.webp"
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"

@@ -2,7 +2,7 @@
 import Title from '@/components/Title.vue';
 import { Button } from '@/components/ui/button'; // Assumes shadcn-vue path
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'; // Assumes shadcn-vue path
-import googleIcon from '@/images/googleIcon.svg';
+import googleIcon from '@/images/googleIcon.webp';
 import { Star } from 'lucide-vue-next';
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';

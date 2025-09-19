@@ -3,14 +3,16 @@ import { useI18n } from 'vue-i18n'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
-import { Check } from 'lucide-vue-next'
-import { Link } from '@inertiajs/vue3'
-import { pricing } from '@/routes'
 import Title from '@/components/Title.vue'
 import { useCurrency } from '@/composables/useCurrency'
-const { t, n } = useI18n()
+import { Check, Info } from 'lucide-vue-next'
+import { Link } from '@inertiajs/vue3'
+// Assuming you have a route helper. If not, you can replace this with a static path.
+import { pricing } from '@/routes'
 
-const { currency, formatCurrency } = useCurrency();
+const { t } = useI18n()
+const { formatCurrency } = useCurrency()
+
 const pricingPlans = [
     {
         key: 'landingPage',
@@ -52,13 +54,13 @@ const pricingPlans = [
         isFeatured: false,
     },
 ]
-
 </script>
 
 <template>
     <section id="pricing" class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div class="container mx-auto max-w-7xl px-4 md:px-6">
             <Title :title="'pricingSummary.title'" :subtitleKey="'pricingSummary.description'" tagline="pricingSummary.tagline" />
+
             <div class="mx-auto mt-12 grid max-w-5xl items-start gap-8 sm:grid-cols-2 md:gap-12 lg:grid-cols-3">
                 <Card
                     v-for="plan in pricingPlans"
@@ -79,7 +81,7 @@ const pricingPlans = [
                         </CardDescription>
                         <div class="flex items-baseline gap-1">
                             <span class="text-sm text-muted-foreground">{{ t('pricingSummary.from') }}</span>
-                            <span class="text-4xl font-bold">  {{formatCurrency(plan.price)}}</span>
+                            <span class="text-4xl font-bold"> {{ formatCurrency(plan.price) }}</span>
                         </div>
                     </CardHeader>
                     <CardContent class="flex-grow">
@@ -90,14 +92,19 @@ const pricingPlans = [
                             </li>
                         </ul>
                     </CardContent>
-                    <Link :href="pricing.url([plan.key])" >
-                    <CardFooter>
-                        <Button class="w-full" :variant="plan.isFeatured ? 'default' : 'outline'" size="lg">
-                           {{ t('pricingSummary.ctaButton') }}
-                        </Button>
-                    </CardFooter>
-                </Link>
+                    <Link :href="pricing.url([plan.key])">
+                        <CardFooter>
+                            <Button class="w-full" :variant="plan.isFeatured ? 'default' : 'outline'" size="lg">
+                                {{ t('pricingSummary.ctaButton') }}
+                            </Button>
+                        </CardFooter>
+                    </Link>
                 </Card>
+            </div>
+
+            <div class="mt-6  max-w-5xl mx-auto flex items-center justify-center gap-2 rounded-lg border bg-accent/50 p-4 text-center text-sm text-muted-foreground">
+                <Info class="h-5 w-5 flex-shrink-0" />
+                <p>{{ t('pricingSummary.installmentsInfo') }}</p>
             </div>
         </div>
     </section>

@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import Layout from '@/layouts/Layout.vue';
-import { contact, pricing } from '@/routes';
-import { useI18n } from 'vue-i18n';
-import { useCurrency } from '@/composables/useCurrency'; // 1. Import useCurrency
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { CheckCircle2, XCircle, ChevronDown } from 'lucide-vue-next';
-import { computed, ref, watch } from 'vue';
+import { useCurrency } from '@/composables/useCurrency';
+import Layout from '@/layouts/Layout.vue';
+import { contact, pricing } from '@/routes';
 import { Link } from '@inertiajs/vue3';
+import { CheckCircle2, ChevronDown, Info, XCircle } from 'lucide-vue-next';
+import { computed, ref, watch } from 'vue';
+import { useI18n } from 'vue-i18n';
 
 const props = defineProps({
     initialCategory: {
@@ -18,7 +18,7 @@ const props = defineProps({
 });
 
 const { t } = useI18n();
-const { formatCurrency } = useCurrency(); // 2. Get the reactive formatter
+const { formatCurrency } = useCurrency();
 
 // --- State for packages with their own expansion state ---
 const reactivePackages = ref<any[]>([]);
@@ -35,11 +35,9 @@ const proPackageFeatures = {
     analyticsIntegration: true,
     emailContact: true,
     socialMediaIntegration: true,
-    themes:true,
+    themes: true,
 };
-const starterPackageFeatures = Object.fromEntries(
-    Object.keys(proPackageFeatures).map(key => [key, false])
-);
+const starterPackageFeatures = Object.fromEntries(Object.keys(proPackageFeatures).map((key) => [key, false]));
 const pricingData: Record<string, any> = {
     landingPage: {
         title: 'Landing Page',
@@ -48,14 +46,50 @@ const pricingData: Record<string, any> = {
         priceSuffix: '+',
         descriptionKey: 'pricing.landingPageExamples',
         packages: [
-            { level: 'starter', structure: 'pricing.packages.featureValues.templateBased', customization: 'pricing.packages.featureValues.brandingAndContent', ...coreWebsiteFeatures, ...starterPackageFeatures, testimonialsSection: false, animations: false, newsletterSignup: false, leadMagnet: false, abTestingSetup: false, heatmapIntegration: false },
-            { level: 'business', structure: 'pricing.packages.featureValues.customDesign', customization: 'pricing.packages.featureValues.fullyCustomizable', ...coreWebsiteFeatures, ...proPackageFeatures, testimonialsSection: true, animations: true, newsletterSignup: false, leadMagnet: true, abTestingSetup: false, heatmapIntegration: false },
-            { level: 'pro', structure: 'pricing.packages.featureValues.strategyAndCustom', customization: 'pricing.packages.featureValues.fullyCustomizable', ...coreWebsiteFeatures, ...proPackageFeatures, testimonialsSection: true, animations: true, newsletterSignup: true, leadMagnet: true, abTestingSetup: true, heatmapIntegration: true },
+            {
+                level: 'starter',
+                structure: 'pricing.packages.featureValues.templateBased',
+                customization: 'pricing.packages.featureValues.brandingAndContent',
+                ...coreWebsiteFeatures,
+                ...starterPackageFeatures,
+                testimonialsSection: false,
+                animations: false,
+                newsletterSignup: false,
+                leadMagnet: false,
+                abTestingSetup: false,
+                heatmapIntegration: false,
+            },
+            {
+                level: 'business',
+                structure: 'pricing.packages.featureValues.customDesign',
+                customization: 'pricing.packages.featureValues.fullyCustomizable',
+                ...coreWebsiteFeatures,
+                ...proPackageFeatures,
+                testimonialsSection: true,
+                animations: true,
+                newsletterSignup: false,
+                leadMagnet: true,
+                abTestingSetup: false,
+                heatmapIntegration: false,
+            },
+            {
+                level: 'pro',
+                structure: 'pricing.packages.featureValues.strategyAndCustom',
+                customization: 'pricing.packages.featureValues.fullyCustomizable',
+                ...coreWebsiteFeatures,
+                ...proPackageFeatures,
+                testimonialsSection: true,
+                animations: true,
+                newsletterSignup: true,
+                leadMagnet: true,
+                abTestingSetup: true,
+                heatmapIntegration: true,
+            },
         ],
         addOns: [
-            { id: 'multilang', nameKey: 'pricing.addOns.multilingualSupport', price: { value: 300 } },
-            { id: 'liveChat', nameKey: 'pricing.addOns.liveChat', price: { value: 450 } },
-            { id: 'aiIntegration', nameKey: 'pricing.addOns.aiIntegration', price: { value: 600 } },
+            { id: 'multilang', nameKey: 'pricing.addOns.multilingualSupport', price: { value: 0 } },
+            { id: 'liveChat', nameKey: 'pricing.addOns.liveChat', price: { value: 0 } },
+            { id: 'aiIntegration', nameKey: 'pricing.addOns.aiIntegration', price: { value: 0 } },
         ],
     },
     businessWebsite: {
@@ -65,14 +99,65 @@ const pricingData: Record<string, any> = {
         priceSuffix: '+',
         descriptionKey: 'pricing.websiteExamples',
         packages: [
-            { level: 'starter', structure: 'pricing.packages.featureValues.upTo5Pages', ...coreWebsiteFeatures, ...starterPackageFeatures, contentManagementSystem: false, blogSection: false, portfolioGallery: true, userAccounts: true, bookingSystem: false, animations: false, newsletterSignup: false, leadMagnet: false, accessibilityCompliance: false, googleReviewsStars: false, pricingPage: false, videoGallery: false },
-            { level: 'growth', structure: 'pricing.packages.featureValues.upTo15Pages', ...coreWebsiteFeatures, ...proPackageFeatures, contentManagementSystem: false, blogSection: false, portfolioGallery: true, userAccounts: true, bookingSystem: false, animations: true, newsletterSignup: true, leadMagnet: true, accessibilityCompliance: true, googleReviewsStars: true, pricingPage: true, videoGallery: true },
-            { level: 'enterprise', structure: 'pricing.packages.featureValues.unlimitedPages', ...coreWebsiteFeatures, ...proPackageFeatures, contentManagementSystem: true, blogSection: true, portfolioGallery: true, userAccounts: true, bookingSystem: true, animations: true, newsletterSignup: true, leadMagnet: true, accessibilityCompliance: true, googleReviewsStars: true, pricingPage: true, videoGallery: true },
+            {
+                level: 'starter',
+                structure: 'pricing.packages.featureValues.upTo5Pages',
+                ...coreWebsiteFeatures,
+                ...starterPackageFeatures,
+                contentManagementSystem: false,
+                blogSection: false,
+                portfolioGallery: true,
+                userAccounts: true,
+                bookingSystem: false,
+                animations: false,
+                newsletterSignup: false,
+                leadMagnet: false,
+                accessibilityCompliance: false,
+                googleReviewsStars: false,
+                pricingPage: false,
+                videoGallery: false,
+            },
+            {
+                level: 'growth',
+                structure: 'pricing.packages.featureValues.upTo15Pages',
+                ...coreWebsiteFeatures,
+                ...proPackageFeatures,
+                contentManagementSystem: false,
+                blogSection: false,
+                portfolioGallery: true,
+                userAccounts: true,
+                bookingSystem: false,
+                animations: true,
+                newsletterSignup: true,
+                leadMagnet: true,
+                accessibilityCompliance: true,
+                googleReviewsStars: true,
+                pricingPage: true,
+                videoGallery: true,
+            },
+            {
+                level: 'enterprise',
+                structure: 'pricing.packages.featureValues.unlimitedPages',
+                ...coreWebsiteFeatures,
+                ...proPackageFeatures,
+                contentManagementSystem: true,
+                blogSection: true,
+                portfolioGallery: true,
+                userAccounts: true,
+                bookingSystem: true,
+                animations: true,
+                newsletterSignup: true,
+                leadMagnet: true,
+                accessibilityCompliance: true,
+                googleReviewsStars: true,
+                pricingPage: true,
+                videoGallery: true,
+            },
         ],
         addOns: [
-            { id: 'multilang', nameKey: 'pricing.addOns.multilingualSupport', price: { value: 300 } },
-            { id: 'bookingSystem', nameKey: 'pricing.addOns.advancedBooking', price: { value: 500 } },
-            { id: 'clientPortal', nameKey: 'pricing.addOns.secureClientPortal', price: { value: 750 } },
+            { id: 'multilang', nameKey: 'pricing.addOns.multilingualSupport', price: { value: 0 } },
+            { id: 'bookingSystem', nameKey: 'pricing.addOns.advancedBooking', price: { value: 0 } },
+            { id: 'clientPortal', nameKey: 'pricing.addOns.secureClientPortal', price: { value: 0 } },
             { id: 'careersPage', nameKey: 'pricing.addOns.careersPage', price: { value: 0 } },
             { id: 'eventCalendar', nameKey: 'pricing.addOns.eventCalendar', price: { value: 0 } },
             { id: 'serviceArea', nameKey: 'pricing.addOns.serviceArea', price: { value: 0 } },
@@ -87,14 +172,91 @@ const pricingData: Record<string, any> = {
         priceSuffix: '+',
         descriptionKey: 'pricing.onlineShopExamples',
         packages: [
-            { level: 'starter', productCapacity: 'pricing.packages.featureValues.upTo50Products', paymentGateways: 'pricing.packages.featureValues.standardPayments', ...coreWebsiteFeatures, ...starterPackageFeatures, inventoryManagement: true, discountCodes: true, userAccounts: true, productReviews: false, advancedFiltering: false, abandonedCartRecovery: false, orderManagement: true, productVariations: true, shippingOptions: true, taxCalculation: true, advancedSearch: false, customerOrderHistory: false, guestCheckout: false, productImageGalleryVideo: false, promotionalBannersAndPopups: false, relatedProducts: false, salesAnalytics: false, savedAddressesAndPayments: false, wishlists: false },
-            { level: 'pro', productCapacity: 'pricing.packages.featureValues.upTo500Products', paymentGateways: 'pricing.packages.featureValues.standardPaymentsKlarna', ...coreWebsiteFeatures, ...proPackageFeatures, inventoryManagement: true, discountCodes: true, userAccounts: true, productReviews: true, advancedFiltering: true, abandonedCartRecovery: true, orderManagement: true, productVariations: true, shippingOptions: true, taxCalculation: true, advancedSearch: true, customerOrderHistory: true, guestCheckout: true, productImageGalleryVideo: true, promotionalBannersAndPopups: true, relatedProducts: true, salesAnalytics: true, savedAddressesAndPayments: true, wishlists: true },
-            { level: 'enterprise', productCapacity: 'pricing.packages.featureValues.unlimitedProducts', paymentGateways: 'pricing.packages.featureValues.customIntegrations', ...coreWebsiteFeatures, ...proPackageFeatures, inventoryManagement: true, discountCodes: true, userAccounts: true, productReviews: true, advancedFiltering: true, abandonedCartRecovery: true, subscriptionModel: true, loyaltyProgram: true, orderManagement: true, productVariations: true, shippingOptions: true, taxCalculation: true, advancedSearch: true, customerOrderHistory: true, guestCheckout: true, productImageGalleryVideo: true, promotionalBannersAndPopups: true, relatedProducts: true, salesAnalytics: true, savedAddressesAndPayments: true, wishlists: true },
+            {
+                level: 'starter',
+                productCapacity: 'pricing.packages.featureValues.upTo50Products',
+                paymentGateways: 'pricing.packages.featureValues.standardPayments',
+                ...coreWebsiteFeatures,
+                ...starterPackageFeatures,
+                inventoryManagement: true,
+                discountCodes: true,
+                userAccounts: true,
+                productReviews: false,
+                advancedFiltering: false,
+                abandonedCartRecovery: false,
+                orderManagement: true,
+                productVariations: true,
+                shippingOptions: true,
+                taxCalculation: true,
+                advancedSearch: false,
+                customerOrderHistory: false,
+                guestCheckout: false,
+                productImageGalleryVideo: false,
+                promotionalBannersAndPopups: false,
+                relatedProducts: false,
+                salesAnalytics: false,
+                savedAddressesAndPayments: false,
+                wishlists: false,
+            },
+            {
+                level: 'pro',
+                productCapacity: 'pricing.packages.featureValues.upTo500Products',
+                paymentGateways: 'pricing.packages.featureValues.standardPaymentsKlarna',
+                ...coreWebsiteFeatures,
+                ...proPackageFeatures,
+                inventoryManagement: true,
+                discountCodes: true,
+                userAccounts: true,
+                productReviews: true,
+                advancedFiltering: true,
+                abandonedCartRecovery: true,
+                orderManagement: true,
+                productVariations: true,
+                shippingOptions: true,
+                taxCalculation: true,
+                advancedSearch: true,
+                customerOrderHistory: true,
+                guestCheckout: true,
+                productImageGalleryVideo: true,
+                promotionalBannersAndPopups: true,
+                relatedProducts: true,
+                salesAnalytics: true,
+                savedAddressesAndPayments: true,
+                wishlists: true,
+            },
+            {
+                level: 'enterprise',
+                productCapacity: 'pricing.packages.featureValues.unlimitedProducts',
+                paymentGateways: 'pricing.packages.featureValues.customIntegrations',
+                ...coreWebsiteFeatures,
+                ...proPackageFeatures,
+                inventoryManagement: true,
+                discountCodes: true,
+                userAccounts: true,
+                productReviews: true,
+                advancedFiltering: true,
+                abandonedCartRecovery: true,
+                subscriptionModel: true,
+                loyaltyProgram: true,
+                orderManagement: true,
+                productVariations: true,
+                shippingOptions: true,
+                taxCalculation: true,
+                advancedSearch: true,
+                customerOrderHistory: true,
+                guestCheckout: true,
+                productImageGalleryVideo: true,
+                promotionalBannersAndPopups: true,
+                relatedProducts: true,
+                salesAnalytics: true,
+                savedAddressesAndPayments: true,
+                wishlists: true,
+            },
         ],
         addOns: [
-            { id: 'multilang', nameKey: 'pricing.addOns.multilingualSupport', price: { value: 300 } },
-            { id: 'multicurrency', nameKey: 'pricing.addOns.multiCurrency', price: { value: 600 } },
-            { id: 'crm', nameKey: 'pricing.addOns.crmIntegration', price: { value: 900 } },
+            { id: 'multilang', nameKey: 'pricing.addOns.multilingualSupport', price: { value: 0 } },
+            { id: 'multicurrency', nameKey: 'pricing.addOns.multiCurrency', price: { value: 0 } },
+            { id: 'crm', nameKey: 'pricing.addOns.crmIntegration', price: { value: 0 } },
             { id: 'giftCardSales', nameKey: 'pricing.addOns.giftCardSales', price: { value: 0 } },
             { id: 'onlineOrderingPickupDelivery', nameKey: 'pricing.addOns.onlineOrderingPickupDelivery', price: { value: 0 } },
             { id: 'returnsAndExchangesPortal', nameKey: 'pricing.addOns.returnsAndExchangesPortal', price: { value: 0 } },
@@ -103,14 +265,14 @@ const pricingData: Record<string, any> = {
     },
 };
 const additionalServices = {
- hosting: {
+    hosting: {
         title: 'pricing.hosting.title',
         price: {
             type: 'subscription',
             monthly: 7.95,
             annually: 84,
             parentheses: true,
-             savings: '12%'
+            savings: '12%',
         },
     },
     emailAndDomain: {
@@ -120,7 +282,7 @@ const additionalServices = {
             type: 'subscription',
             monthly: 3,
             annually: 30,
-             savings: '17%'
+            savings: '17%',
         },
     },
     maintenance: [
@@ -132,8 +294,8 @@ const additionalServices = {
                 type: 'subscription',
                 monthly: 25,
                 annually: 273,
-                savings: '9%'
-            }
+                savings: '9%',
+            },
         },
         {
             key: 'website',
@@ -143,8 +305,8 @@ const additionalServices = {
                 type: 'subscription',
                 monthly: 35,
                 annually: 357,
-                savings: '15%'
-            }
+                savings: '15%',
+            },
         },
         {
             key: 'onlineShop',
@@ -154,8 +316,8 @@ const additionalServices = {
                 type: 'subscription',
                 monthly: 60,
                 annually: 576,
-                savings: '20%'
-            }
+                savings: '20%',
+            },
         },
 
         {
@@ -166,8 +328,8 @@ const additionalServices = {
                 type: 'one-time',
                 prefixKey: 'pricing.startingFrom',
                 value: 350,
-                suffixKey: 'pricing.oneTimeFee'
-            }
+                suffixKey: 'pricing.oneTimeFee',
+            },
         },
         {
             key: 'performanceOptimization',
@@ -177,10 +339,10 @@ const additionalServices = {
                 type: 'one-time',
                 prefixKey: 'pricing.startingFrom',
                 value: 299,
-                suffixKey: 'pricing.oneTimeFee'
-            }
+                suffixKey: 'pricing.oneTimeFee',
+            },
         },
-        
+
         {
             key: 'copywriting',
             title: 'pricing.maintenance.copywriting.title',
@@ -189,34 +351,37 @@ const additionalServices = {
                 type: 'per-unit',
                 prefixKey: 'pricing.startingFrom',
                 value: 80,
-                unitKey: 'pricing.perPage'
-            }
+                unitKey: 'pricing.perPage',
+            },
         },
         {
             key: 'supportRetainer',
             title: 'pricing.maintenance.supportRetainer.title',
             description: 'pricing.maintenance.supportRetainer.description',
             price: {
-                 type: 'subscription',
+                type: 'subscription',
                 monthly: 140,
                 annually: 1344,
-                savings: '8%'
-            }
+                savings: '8%',
+            },
         },
     ],
-   
 };
 
 const isFeature = (key: string) => !['level', 'isExpanded', 'featureCount'].includes(key);
-watch(() => props.initialCategory, (newCategory) => {
-    const packages = pricingData[newCategory]?.packages;
-    if (packages) {
-        reactivePackages.value = packages.map((pkg: any) => {
-            const featureCount = Object.keys(pkg).filter(key => isFeature(key)).length;
-            return { ...pkg, isExpanded: false, featureCount };
-        });
-    }
-}, { immediate: true });
+watch(
+    () => props.initialCategory,
+    (newCategory) => {
+        const packages = pricingData[newCategory]?.packages;
+        if (packages) {
+            reactivePackages.value = packages.map((pkg: any) => {
+                const featureCount = Object.keys(pkg).filter((key) => isFeature(key)).length;
+                return { ...pkg, isExpanded: false, featureCount };
+            });
+        }
+    },
+    { immediate: true },
+);
 const toggleCard = (pkg: any) => {
     pkg.isExpanded = !pkg.isExpanded;
 };
@@ -248,7 +413,7 @@ const categoryKeyMap: Record<string, string> = {
 
 <template>
     <Layout :head="t('pricing.title')" :link="pricing.url()" :description="t('pricing.description')">
-        <section class="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <section class="container mx-auto mt-8 max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
             <div class="mx-auto max-w-4xl text-center">
                 <h1 class="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
                     {{ t('pricing.title') }}
@@ -258,18 +423,8 @@ const categoryKeyMap: Record<string, string> = {
                 </p>
             </div>
             <div class="mt-12 flex flex-wrap justify-center gap-3">
-                <Link
-                    v-for="(category, key) in pricingData"
-                    :key="key"
-                    :href="`/pricing/${urlSlugMap[key]}`"
-                    preserve-state
-                    preserve-scroll
-                >
-                    <Button
-                        :variant="props.initialCategory === key ? 'default' : 'outline'"
-                        class="relative"
-                        as="div"
-                    >
+                <Link v-for="(category, key) in pricingData" :key="key" :href="`/pricing/${urlSlugMap[key]}`" preserve-state preserve-scroll>
+                    <Button :variant="props.initialCategory === key ? 'default' : 'outline'" class="relative" as="div">
                         {{ t(`pricing.${categoryKeyMap[key]}`) }}
                         <Badge v-if="isFeaturedCategory(String(key))" variant="secondary" class="ml-2 text-xs">
                             {{ t('pricing.featured') }}
@@ -295,7 +450,7 @@ const categoryKeyMap: Record<string, string> = {
                     <Card
                         v-for="(pkg, index) in reactivePackages"
                         :key="`${props.initialCategory}-${pkg.level}`"
-                        class="flex flex-col transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+                        class="flex transform flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
                         :class="{
                             'scale-105 border-2 border-primary shadow-lg': index === 1,
                             'border-border': index !== 1,
@@ -318,11 +473,7 @@ const categoryKeyMap: Record<string, string> = {
                                 class="space-y-3 overflow-hidden transition-all duration-500 ease-in-out"
                                 :style="{ maxHeight: pkg.featureCount > 18 ? (pkg.isExpanded ? '1000px' : '550px') : '1000px' }"
                             >
-                                <div
-                                    v-for="(value, feature) in pkg"
-                                    :key="feature"
-                                    class="flex items-center justify-between text-sm"
-                                >
+                                <div v-for="(value, feature) in pkg" :key="feature" class="flex items-center justify-between text-sm">
                                     <span
                                         v-if="isFeature(feature)"
                                         :class="{
@@ -343,11 +494,11 @@ const categoryKeyMap: Record<string, string> = {
                             </div>
                             <Button v-if="pkg.featureCount > 18" @click="toggleCard(pkg)" variant="link">
                                 <span>{{ pkg.isExpanded ? t('pricing.readLess') : t('pricing.readMore') }}</span>
-                                <ChevronDown class="h-4 w-4 transition-transform" :class="{'rotate-180': pkg.isExpanded}" />
+                                <ChevronDown class="h-4 w-4 transition-transform" :class="{ 'rotate-180': pkg.isExpanded }" />
                             </Button>
                         </CardContent>
                         <CardFooter class="flex-col items-stretch pt-0">
-                            <Link :href="contact.url()" class="w-full mt-4">
+                            <Link :href="contact.url()" class="mt-4 w-full">
                                 <Button class="w-full" :variant="index === 1 ? 'default' : 'outline'" size="lg">
                                     {{ t('pricing.contactUs') }}
                                 </Button>
@@ -373,9 +524,7 @@ const categoryKeyMap: Record<string, string> = {
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <div class="text-lg font-bold text-primary" v-if="addOn.price.value">
-                                    + {{ formatCurrency(addOn.price.value) }}
-                                </div>
+                                <div class="text-lg font-bold text-primary" v-if="addOn.price.value">+ {{ formatCurrency(addOn.price.value) }}</div>
                             </CardContent>
                         </Card>
                     </div>
@@ -389,69 +538,71 @@ const categoryKeyMap: Record<string, string> = {
                         <p class="mt-4 text-muted-foreground">Essential services to complete your web presence</p>
                     </div>
                     <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-                 <Card class="text-center">
-    <CardHeader>
-        <CardTitle class="text-lg">{{ t(additionalServices.hosting.title) }}</CardTitle>
-    </CardHeader>
-    <CardContent>
-        <div class="text-sm text-muted-foreground">
-            <span v-if="additionalServices.hosting.price.parentheses">(</span>
-            <span>{{ formatCurrency(additionalServices.hosting.price.monthly) }} {{ t('pricing.perMonth') }}</span>
-            <span class="mx-1">{{ t('pricing.or') }}</span>
-            <span>{{ formatCurrency(additionalServices.hosting.price.annually) }} {{ t('pricing.perYear') }}</span>
-            <span v-if="additionalServices.hosting.price.parentheses">)</span>
-              <Badge variant="secondary" class="ml-2 text-xs">
-                {{ t('pricing.save') }} {{ additionalServices.hosting.price.savings }}
-            </Badge>
-        </div>
-    </CardContent>
-</Card>
+                        <Card class="text-center">
+                            <CardHeader>
+                                <CardTitle class="text-lg">{{ t(additionalServices.hosting.title) }}</CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <div class="text-sm text-muted-foreground">
+                                    <span v-if="additionalServices.hosting.price.parentheses">(</span>
+                                    <span>{{ formatCurrency(additionalServices.hosting.price.monthly) }} {{ t('pricing.perMonth') }}</span>
+                                    <span class="mx-1">{{ t('pricing.or') }}</span>
+                                    <span>{{ formatCurrency(additionalServices.hosting.price.annually) }} {{ t('pricing.perYear') }}</span>
+                                    <span v-if="additionalServices.hosting.price.parentheses">)</span>
+                                    <Badge variant="secondary" class="ml-2 text-xs">
+                                        {{ t('pricing.save') }} {{ additionalServices.hosting.price.savings }}
+                                    </Badge>
+                                </div>
+                            </CardContent>
+                        </Card>
 
-<Card class="text-center">
-    <CardHeader>
-        <CardTitle class="text-lg">{{ t(additionalServices.emailAndDomain.title) }}</CardTitle>
-    </CardHeader>
-    <CardContent>
-        <p class="mb-2 text-xs text-muted-foreground">{{ t(additionalServices.emailAndDomain.description) }}</p>
-        <div class="text-sm font-semibold">
-            <span>{{ formatCurrency(additionalServices.emailAndDomain.price.monthly) }} {{ t('pricing.perMonth') }}</span>
-            <span class="mx-1 text-muted-foreground">{{ t('pricing.or') }}</span>
-            <span>{{ formatCurrency(additionalServices.emailAndDomain.price.annually) }} {{ t('pricing.perYear') }}</span>
-                <Badge variant="secondary" class="ml-2 text-xs">
-                {{ t('pricing.save') }} {{ additionalServices.emailAndDomain.price.savings }}
-            </Badge>
-        </div>
-    </CardContent>
-</Card>
+                        <Card class="text-center">
+                            <CardHeader>
+                                <CardTitle class="text-lg">{{ t(additionalServices.emailAndDomain.title) }}</CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <p class="mb-2 text-xs text-muted-foreground">{{ t(additionalServices.emailAndDomain.description) }}</p>
+                                <div class="text-sm font-semibold">
+                                    <span>{{ formatCurrency(additionalServices.emailAndDomain.price.monthly) }} {{ t('pricing.perMonth') }}</span>
+                                    <span class="mx-1 text-muted-foreground">{{ t('pricing.or') }}</span>
+                                    <span>{{ formatCurrency(additionalServices.emailAndDomain.price.annually) }} {{ t('pricing.perYear') }}</span>
+                                    <Badge variant="secondary" class="ml-2 text-xs">
+                                        {{ t('pricing.save') }} {{ additionalServices.emailAndDomain.price.savings }}
+                                    </Badge>
+                                </div>
+                            </CardContent>
+                        </Card>
                         <Card v-for="service in additionalServices.maintenance" :key="service.key" class="text-center">
                             <CardHeader>
                                 <CardTitle class="text-lg">{{ t(service.title) }}</CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <p class="mb-2 text-xs text-muted-foreground">{{ t(service.description) }}</p>
-                               <div class="text-sm font-semibold">
-        <div v-if="service.price.type === 'subscription'">
-            <span>{{ formatCurrency(service.price.monthly as number) }} {{ t('pricing.perMonth') }}</span>
-            <span class="mx-1 text-muted-foreground">{{ t('pricing.or') }}</span>
-            <span>{{ formatCurrency(service.price.annually as number) }} {{ t('pricing.perYear') }}</span>
-            <Badge variant="secondary" class="ml-2 text-xs">
-                {{ t('pricing.save') }} {{ service.price.savings }}
-            </Badge>
-        </div>
+                                <div class="text-sm font-semibold">
+                                    <div v-if="service.price.type === 'subscription'">
+                                        <span>{{ formatCurrency(service.price.monthly as number) }} {{ t('pricing.perMonth') }}</span>
+                                        <span class="mx-1 text-muted-foreground">{{ t('pricing.or') }}</span>
+                                        <span>{{ formatCurrency(service.price.annually as number) }} {{ t('pricing.perYear') }}</span>
+                                        <Badge variant="secondary" class="ml-2 text-xs"> {{ t('pricing.save') }} {{ service.price.savings }} </Badge>
+                                    </div>
 
-        <div v-else-if="service.price.type === 'one-time'">
-            <span>{{ t(service.price.prefixKey) }} {{ formatCurrency(service.price.value as number) }}</span>
-            <span class="ml-1 text-muted-foreground">({{ t(service.price.suffixKey) }})</span>
-        </div>
+                                    <div v-else-if="service.price.type === 'one-time'">
+                                        <span>{{ t(service.price.prefixKey) }} {{ formatCurrency(service.price.value as number) }}</span>
+                                        <span class="ml-1 text-muted-foreground">({{ t(service.price.suffixKey) }})</span>
+                                    </div>
 
-        <div v-else-if="service.price.type === 'per-unit'">
-            <span>{{ t(service.price.prefixKey) }} {{ formatCurrency(service.price.value as number) }}</span>
-            <span class="ml-1">/ {{ t(service.price.unitKey) }}</span>
-        </div>
-    </div>
+                                    <div v-else-if="service.price.type === 'per-unit'">
+                                        <span>{{ t(service.price.prefixKey) }} {{ formatCurrency(service.price.value as number) }}</span>
+                                        <span class="ml-1">/ {{ t(service.price.unitKey) }}</span>
+                                    </div>
+                                </div>
                             </CardContent>
                         </Card>
                     </div>
+                    <div class="mt-12  max-w-5xl mx-auto flex items-center justify-center gap-2 rounded-lg border bg-accent/50 p-4 text-center text-sm text-muted-foreground">
+                      <Info class="h-5 w-5 flex-shrink-0" />
+                      <p>{{ t('pricingSummary.installmentsInfo') }}</p>
+                  </div>
                 </div>
             </div>
         </section>

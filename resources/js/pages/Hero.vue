@@ -8,7 +8,7 @@ import ShimmerButton from '@/components/ui/shimmer-button/ShimmerButton.vue';
 import TextGenerateEffect from '@/components/ui/text-generate-effect/TextGenerateEffect.vue';
 import { Book } from 'lucide-vue-next';
 import { pricing } from '@/routes';
-import webmockup from '@/images/mockup.png';
+import webmockup from '@/images/mockup.webp';
 // import resume from '../../images/resume.webp';
 </script>
 
