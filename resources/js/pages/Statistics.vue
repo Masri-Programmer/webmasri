@@ -27,7 +27,7 @@ const stats = computed(() =>
             <div class="container mx-auto grid max-w-4xl grid-cols-2 gap-8 md:grid-cols-4">
                 <Card v-for="stat in stats" :key="stat.label" class="text-center">
                     <CardContent class="flex flex-col items-center justify-center p-6">
-                        <div class="text-4xl font-bold tracking-tighter text-primary md:text-5xl"><NumberTicker :value="stat.value" />+</div>
+                        <div class="text-4xl font-bold  text-primary md:text-5xl"><NumberTicker :value="stat.value" />+</div>
                         <p class="mt-2 text-sm text-muted-foreground">
                             {{ stat.label }}
                         </p>

@@ -1,10 +1,10 @@
 <template>
     <div class="fixed top-0 right-0 left-0 z-50">
-        <div class="bg-secondary text-xs text-secondary-foreground shadow-sm">
+        <div class="bg-secondary text-secondary-foreground shadow-sm">
             <div
                 class="container mx-auto flex h-12 max-w-7xl cursor-pointer items-center justify-center gap-6 px-4 py-0 text-primary transition-all duration-100 ease-in-out hover:font-bold sm:px-6 lg:px-8"
             >
-                <div class="flex grow items-center justify-start gap-x-3 text-xs sm:text-sm">
+                <div class="flex grow items-center justify-start gap-x-3">
                     <Link href="/" class="text-lg font-semibold">Masri Programmer</Link>
                 </div>
                 <div>

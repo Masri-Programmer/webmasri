@@ -45,7 +45,7 @@ const containerClasses = computed(() => {
         {{ t(tagline) }}
       </div>
 
-      <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+      <h2 class="text-3xl font-bold  sm:text-5xl">
         <Motion
           v-for="(char, idx) in titleCharacters"
           :key="`${char}-${idx}`"

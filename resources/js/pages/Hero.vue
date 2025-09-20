@@ -17,7 +17,7 @@ import webmockup from '@/images/mockup.webp';
         <div class="z-10 container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
             <div class="z-10 grid w-full max-w-7xl grid-cols-1 items-center gap-8 lg:grid-cols-2 align-top">
                 <div class="flex flex-col items-start justify-center space-y-6">
-                        <h1 class="text-5xl font-bold tracking-tighter text-foreground sm:text-6xl xl:text-7xl/none">
+                        <h1 class="text-5xl font-bold  text-foreground sm:text-6xl xl:text-7xl/none">
                             {{ $t('hero.title') }}
                             <FlipWords :words="[$t('hero.flipWords.craft'), $t('hero.flipWords.design'), $t('hero.flipWords.create')]" :duration="2000" class="!text-sidebar-ring" />.
                         </h1>
