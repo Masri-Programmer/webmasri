@@ -59,6 +59,7 @@ const { t } = useI18n();
                     <div class="mt-4 space-y-4">
                         <p>{{ t('imprint.copyright.p1') }}</p>
                         <p>{{ t('imprint.copyright.p2') }}</p>
+                        <div>Icons made from <a href="https://www.onlinewebfonts.com/icon">svg icons</a>is licensed by CC BY 4.0</div>
                     </div>
                 </section>
             </main>

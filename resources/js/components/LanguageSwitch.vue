@@ -24,6 +24,7 @@ const setLocale = (langCode: string) => {
 watchEffect(() => {
     const newLocale = storedLocale.value;
     locale.value = newLocale;
+    document.documentElement.lang = newLocale; 
     document.documentElement.dir = newLocale === 'ar' ? 'rtl' : 'ltr';
 });
 </script>

@@ -5,12 +5,10 @@
         <meta name="description" :content="description" />
     </Head>
     <!-- <SleekLineCursor /> -->
-    <Header data-aos="fade-down" data-aos-delay="500" />
+    <Header />
     <RightSideNav />
     <main class="grid gap-4 overflow-hidden bg-background text-foreground sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12">
-        <!-- <div class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8"> -->
         <slot />
-        <!-- </div> -->
     </main>
     <Footer />
     <ScrollTop />

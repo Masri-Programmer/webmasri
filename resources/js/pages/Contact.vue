@@ -3,7 +3,6 @@ import { useI18n } from 'vue-i18n'
 import { useToast } from 'vue-toastification' 
 import { contact } from '@/routes'
 import { useFetch } from '@vueuse/core'
-
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
@@ -11,18 +10,16 @@ import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { reactive } from 'vue'
 import Layout from '@/layouts/Layout.vue'
-// --- SETUP ---
+
 const { t } = useI18n()
 const toast = useToast()
 
-// --- STATE ---
 const form = reactive({
   name: '',
   email: '',
   message: '',
 })
 
-// --- FORM SUBMISSION ---
 const { isFetching, execute } = useFetch(contact.url(), {
   immediate: false,
   afterFetch: (ctx) => {
@@ -45,12 +42,9 @@ async function handleSubmit() {
     toast.warning(t('contactForm.missingFields'))
     return
   }
-  
 
   await execute(form as any )
 }
-
-// Schedule a Consultation
 </script>
 
 <template>
@@ -72,6 +66,7 @@ async function handleSubmit() {
             <Input
               id="name"
               v-model="form.name"
+              autocomplete="true"
               type="text"
               :placeholder="t('contactForm.name.placeholder')"
               required
@@ -81,6 +76,7 @@ async function handleSubmit() {
             <Label for="email">{{ t('contactForm.email.label') }}</Label>
             <Input
               id="email"
+              autocomplete="true"
               v-model="form.email"
               type="email"
               placeholder="name@example.com"

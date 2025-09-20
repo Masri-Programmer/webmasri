@@ -16,6 +16,7 @@
                 align: 'start',
                 loop: true,
             }"
+            role="region" aria-roledescription="carousel" tabindex="0"
         >
             <CarouselContent class="mt-12 -ml-2 md:-ml-4">
                 <CarouselItem v-for="project in cardData" :key="project.title" class="pl-2 md:basis-1/2 md:pl-4 lg:basis-1/3 xl:basis-1/4">
