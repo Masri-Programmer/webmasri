@@ -9,10 +9,8 @@ import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n();
 
-// Link to leave a Google Review
 const googleReviewLink = 'https://g.page/r/CQl3_s6R1DkiEAE/review';
 
-// Base definitions for testimonials
 const testimonialDefinitions = [
     {
         name: 'Marvin Piepjack',
@@ -37,17 +35,17 @@ const testimonials = computed(() =>
 </script>
 
 <template>
-<section id="testimonials" class="relative container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-    <Title :title="'testimonials.title'" :subtitleKey="'testimonials.subtitle'" />
-           <img
+    <section id="testimonials" class="relative container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <Title :title="'testimonials.title'" :subtitleKey="'testimonials.subtitle'" />
+        <img
             :src="googleIcon"
             alt="Google"
-      class="pointer-events-none absolute right-0 left-0 m-auto h-20 w-20 opacity-20 mix-blend-multiply dark:mix-blend-screen"
+            class="pointer-events-none absolute right-0 left-0 m-auto h-20 w-20 opacity-20 mix-blend-multiply dark:mix-blend-screen"
             loading="lazy"
             decoding="async"
         />
 
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mt-12">
+        <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             <Card
                 v-for="(testimonial, index) in testimonials"
                 :key="index"

@@ -5,7 +5,8 @@
                 class="container mx-auto flex h-12 max-w-7xl cursor-pointer items-center justify-center gap-6 px-4 py-0 text-primary transition-all duration-100 ease-in-out hover:font-bold sm:px-6 lg:px-8"
             >
                 <div class="flex grow items-center justify-start gap-x-3">
-                    <Link href="/" class="text-lg font-semibold">Masri Programmer</Link>
+                    <AppLogoIcon class-name="h-15 w-15" />
+                                        <Link href="/" class="text-lg">Masri Programmer</Link>
                 </div>
                 <div>
                     <Sheet v-model:open="isSheetOpen">
@@ -17,7 +18,7 @@
                         </SheetTrigger>
                         <SheetContent side="right" class="flex flex-col w-[300px] bg-sidebar text-sidebar-foreground sm:w-[400px]">
                             <SheetHeader class="text-left">
-                                <SheetTitle>Masri Programmer</SheetTitle>
+                                <SheetTitle class="tracking-tighter">Masri Programmer</SheetTitle>
                             </SheetHeader>
 
                             <div class="flex flex-col gap-1.5 space-y-3 p-4 text-left grow">
@@ -30,7 +31,7 @@
                                                     <button
                                                         v-if="item.type === 'scroll'"
                                                         :aria-label="t(item.i18nKey)"
-                                                        @click="handleScroll(item.target)"
+                                                        @click="handleScroll(item.target as any)"
                                                         class="text-left hover:underline"
                                                     >
                                                         {{ t(item.i18nKey) }}
@@ -47,7 +48,7 @@
 
                                                     <a
                                                         v-else-if="item.type === 'external'"
-                                                        :href="item.target"
+                                                        :href="item.target as any"
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         @click="isSheetOpen = false"
@@ -67,7 +68,7 @@
                                 </span>
                                 <HeaderBtns />
                             </div>
-
+                            <AppLogoIcon class-name="pointer-events-none right-0 left-0 m-auto h-70 w-75 scale-150" />
                             <div class="flex justify-center gap-6 py-4">
                                <AppearanceIcon />
                                <LanguageSwitch />
@@ -96,6 +97,7 @@ import HeaderBtns from './HeaderBtns.vue';
 import AppearanceIcon from '@/components/AppearanceIcon.vue';
 import LanguageSwitch from '@/components/LanguageSwitch.vue';
 import CurrencySwitch from '@/components/CurrencySwitch.vue';
+import AppLogoIcon from '@/components/AppLogoIcon.vue';
 
 const page = usePage();
 const customProps = page.props as AppPageProps;

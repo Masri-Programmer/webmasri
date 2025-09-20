@@ -64,10 +64,13 @@ const handleScroll = (id: string) => {
 
 <template>
     <Transition name="nav-fade">
-        <nav v-if="isNavVisible" class="md:block fixed top-1/2 right-8 z-50 -translate-y-1/2 transform">
+        <nav v-if="isNavVisible"  class="
+            fixed bottom-0 left-0 right-0 z-50 flex h-16 items-center justify-around  backdrop-blur-sm shadow-t-lg
+            md:flex-col md:w-auto md:h-auto md:justify-center md:top-1/2 md:right-4 md:left-auto md:bottom-auto md:-translate-y-1/2 md:transform md:rounded-full md:p-2 md:shadow-lg
+        ">
             <TooltipProvider :delay-duration="100">
-                <ul class="flex flex-col items-center gap-3">
-                    <li v-for="item in navigationLinks" :key="item.id">
+                <ul class="flex sm:flex-col items-center gap-3">
+                    <li v-for="item in navigationLinks" :key="item.id" class=" sm:hover:-translate-x-2.5 ease-in-out duration-200">
                         <Tooltip>
                             <TooltipTrigger as-child>
                                 <a

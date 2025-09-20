@@ -10,7 +10,7 @@ const { t } = useI18n();
     <Layout :head="t('imprint.title')" :link="imprint.url()" :description="t('imprint.subTitle')">
         <div class="container mx-auto mt-12 max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
             <header class="border-b pb-4">
-                <h1 class="text-3xl font-bold text-primary md:text-4xl">
+                <h1 class="text-3xl font-bold tracking-tighter text-primary md:text-4xl">
                     {{ t('imprint.title') }}
                 </h1>
             </header>

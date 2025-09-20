@@ -7,6 +7,7 @@ import googleIcon from '@/images/googleIcon.webp';
 
 import { navigationLinks } from '@/lib/navigation';
 import { privacyPolicy, termsConditions, imprint, contact, faq } from '@/routes';
+import AppLogoIcon from '@/components/AppLogoIcon.vue';
 
 const { t } = useI18n();
 const year = new Date().getFullYear();
@@ -67,18 +68,21 @@ const socialLinks = computed(() => [
 
 <template>
     <footer class="w-full border-t border-border bg-background">
-        <div class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 relative">
             <div class="grid grid-cols-2 gap-8 md:grid-cols-4">
                 <div class="col-span-2 flex flex-col items-start gap-4 md:col-span-1">
-                    <div class="flex items-center gap-2">
-                        <Book class="h-6 w-6" />
-                        <Link href="/" class="text-lg font-semibold">Masri Programmer</Link>
+                    <div class="flex flex-col items-center gap-2">
+                        <Link href="/">
+                            <AppLogoIcon class-name="cursor-pointer m-auto h-60 w-65 relative -top-3 left-0 hidden sm:block" />
+                        </Link>
                     </div>
-                    <p class="text-sm text-muted-foreground">{{ $t('footer.tagline') }}</p>
+                    <!-- <p class="text-sm text-muted-foreground">{{ $t('footer.tagline') }}</p> -->
                 </div>
 
+                
                 <div class="space-y-4">
-                    <h4 class="font-semibold">{{ $t('footer.headings.product') }}</h4>
+                    <h4 class="font-semibold  tracking-tighter 
+                    ">{{ $t('footer.headings.product') }}</h4>
                     <ul class="space-y-2">
                         <li v-for="link in footerSections.product" :key="link.text">
                             <a :href="link.href" class="text-sm text-muted-foreground transition-colors hover:text-foreground">{{ link.text }}</a>
@@ -87,7 +91,8 @@ const socialLinks = computed(() => [
                 </div>
 
                 <div class="space-y-4">
-                    <h4 class="font-semibold">{{ $t('footer.headings.community') }}</h4>
+                    <h4 class="font-semibold  tracking-tighter 
+                    ">{{ $t('footer.headings.community') }}</h4>
                     <ul class="space-y-2">
                         <li v-for="link in footerSections.community" :key="link.text">
                             <a v-if="link.isExternal" :href="link.href" class="text-sm text-muted-foreground transition-colors hover:text-foreground" target="_blank" rel="noopener noreferrer">{{ link.text }}</a>
@@ -97,13 +102,21 @@ const socialLinks = computed(() => [
                 </div>
 
                 <div class="space-y-4">
-                    <h4 class="font-semibold">{{ $t('footer.headings.legal') }}</h4>
+                    <h4 class="font-semibold  tracking-tighter 
+                    ">{{ $t('footer.headings.legal') }}</h4>
                     <ul class="space-y-2">
                         <li v-for="link in footerSections.legal" :key="link.text">
                             <Link :href="link.href" class="text-sm text-muted-foreground transition-colors hover:text-foreground">{{ link.text }}</Link>
                         </li>
                     </ul>
                 </div>
+
+                <div class="space-y-4">
+                    <Link href="/">
+                            <AppLogoIcon class-name="cursor-pointer m-auto h-60 w-65 relative -top-3 left-0 sm:hidden " />
+                        </Link>
+                </div>
+
             </div>
         </div>
 
@@ -116,7 +129,7 @@ const socialLinks = computed(() => [
                         <Heart class="h-4 w-4 fill-red-500 text-red-500" />
                     </template>
                     <template #authorLink>
-                        <a href="https://masri.blog" target="_blank" rel="noopener noreferrer" class="font-medium text-foreground hover:underline">Masri Programmer</a>
+                        <a href="https://masri.blog" target="_blank" rel="noopener noreferrer" class="font-medium text-foreground hover:underline tracking-tighter">Masri Programmer</a>
                     </template>
                 </i18n-t>
 
@@ -133,7 +146,6 @@ const socialLinks = computed(() => [
                           <component v-if="!social.isSvg" :is="(social.icon as any)" class="h-4 w-4" />
                         <img v-else :src="social.icon as any" class="h-4 w-4" :alt="social.name" />
                     </a>
-                   
                     </div>
             </div>
         </div>
