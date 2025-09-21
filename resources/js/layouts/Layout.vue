@@ -2,7 +2,18 @@
     <Head :title="head">
         <link rel="preconnect" :href="customProps.app.url + link" />
         <link rel="canonical" :href="customProps.app.url + link" />
-        <meta name="description" :content="description" />
+        <meta name="description" :content="description" head-key="description" />
+
+        <meta property="og:type" content="article" />
+        <meta property="og:title" :content="head" />
+        <meta property="og:description" :content="description" />
+        <meta property="og:image" :content="logo" />
+
+        <meta property="twitter:card" content="Masri Programmer, Web Services, web design and applications. Rich in features, not in pricing." />
+        <meta property="twitter:title" :content="head" />
+        <meta property="twitter:description" :content="description" />
+        <meta property="twitter:image" :content="logo" />
+        <script type="application/ld+json" v-html="JSON.stringify(schema)"></script>
     </Head>
     <!-- <SleekLineCursor /> -->
     <Header />
@@ -25,6 +36,8 @@ import Header from '@/pages/Header.vue';
 import { AppPageProps } from '@/types';
 import { Head, usePage } from '@inertiajs/vue3';
 import { defineAsyncComponent, onMounted } from 'vue';
+import logo from '@/images/MasriProgrammer/logoBlack.svg';
+
 const { fetchRates } = useCurrency();
 
 onMounted(() => {
@@ -33,9 +46,20 @@ onMounted(() => {
 const page = usePage();
 const customProps = page.props as AppPageProps;
 const Footer = defineAsyncComponent(() => import('@/pages/Footer.vue'));
-defineProps<{
+const props = defineProps<{
     head?: string;
     description?: string;
     link: string;
 }>();
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": props.head,
+  "author": {
+    "@type": "Person",
+    "name": "Mohamad Masri"
+  },
+//   "datePublished": props.article.published_at
+};
 </script>

@@ -18,6 +18,7 @@ return [
     'ssr' => [
         'enabled' => true,
         'url' => 'http://127.0.0.1:13714',
+        'bundle' => public_path('build/ssr/ssr.js'),
         // 'bundle' => base_path('bootstrap/ssr/ssr.mjs'),
     ],
 
