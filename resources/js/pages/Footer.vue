@@ -143,7 +143,8 @@ const socialLinks = computed(() => [
                         class="inline-flex h-10 w-10 items-center justify-center rounded-md text-muted-foreground ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                     >
                           <component v-if="!social.isSvg" :is="(social.icon as any)" class="h-4 w-4" />
-                        <img v-else :src="social.icon as any" class="h-4 w-4" :alt="social.name" />
+                        <img v-else :src="social.icon as any" class="h-4 w-4" :alt="social.name"  loading="lazy"
+                                        decoding="async"/>
                     </a>
                     </div>
             </div>
