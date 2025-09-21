@@ -1,16 +1,13 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import { ServerCrashIcon } from 'lucide-vue-next'
-import { onMounted } from 'vue'
+import { Head } from '@inertiajs/vue3'
 
 const { t } = useI18n()
-
-onMounted(() => {
-  document.title = t('serverError.title')
-})
 </script>
 
 <template>
+  <Head :title="t('serverError.title')"/>
   <div class="flex min-h-screen flex-col items-center justify-center bg-background p-6">
     <div class="mx-auto flex max-w-lg flex-col items-center text-center">
       <ServerCrashIcon

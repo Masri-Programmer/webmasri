@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Illuminate\Foundation\Inspiring;
+use Illuminate\Foundation\Vite;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
 
@@ -44,7 +45,7 @@ class HandleInertiaRequests extends Middleware
             'locale' => function () {
                 return app()->getLocale();
             },
-            'quote' => ['message' => trim($message), 'author' => trim($author)],
+            // 'quote' => ['message' => trim($message), 'author' => trim($author)],
             'auth' => [
                 'user' => $request->user(),
             ],

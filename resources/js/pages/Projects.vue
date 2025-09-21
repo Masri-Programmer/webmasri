@@ -3,7 +3,7 @@
         <h2
             class="pointer-events-none bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl leading-none font-semibold whitespace-pre-wrap text-transparent max-lg:-mt-12 sm:text-6xl md:text-7xl lg:text-8xl dark:from-white dark:to-slate-900/10"
         >
-            {{ $t('projects.title') }}
+            {{ t('projects.title') }}
         </h2>
         <Carousel
             class="relative mx-auto w-full"
@@ -90,6 +90,8 @@ import finedining from '@/images/finedining.webp';
 import tasty from '@/images/tasty.webp';
 import eshoppers from '@/images/eshoppers.webp';
 import Autoplay from 'embla-carousel-autoplay';
+import { useI18n } from 'vue-i18n';
+const {t} = useI18n();
 
 const cardData = [
     {

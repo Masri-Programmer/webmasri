@@ -84,13 +84,13 @@ const testimonials = computed(() =>
                 class="group flex flex-col items-center justify-center rounded-lg border-2 border-dashed border-border bg-transparent p-8 text-center transition-colors hover:border-primary hover:bg-accent"
             >
                 <h3 class="text-lg font-semibold text-foreground">
-                    {{ $t('testimonials.leaveReview.title') }}
+                    {{ t('testimonials.leaveReview.title') }}
                 </h3>
                 <p class="mt-2 text-sm text-muted-foreground">
-                    {{ $t('testimonials.leaveReview.description') }}
+                    {{ t('testimonials.leaveReview.description') }}
                 </p>
                 <Button variant="outline" class="mt-4">
-                    {{ $t('testimonials.leaveReview.button') }}
+                    {{ t('testimonials.leaveReview.button') }}
                 </Button>
             </a>
         </div>

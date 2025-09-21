@@ -33,7 +33,7 @@ const faqs = computed(() =>
 
             <div class="mt-8 flex justify-center">
                 <Button as="a" :href="faq.url()" size="lg">
-                    {{ $t('faqSummary.viewAllButton') }}
+                    {{ t('faqSummary.viewAllButton') }}
                 </Button>
             </div>
         </div>

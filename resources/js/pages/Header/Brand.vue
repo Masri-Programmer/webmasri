@@ -1,10 +1,10 @@
 <template>
-    <div class="flex grow items-center justify-start gap-x-3">
+    <Link v href="/" class="flex grow items-center justify-start gap-x-3">
         <AppLogoIcon class-name="h-15 w-15" />
-        <Link href="/" class="text-lg cursor-pointer transition-all duration-100 ease-in-out hover:font-bold">
+        <div class="hidden sm:block text-lg cursor-pointer transition-all duration-100 ease-in-out hover:font-bold">
             Masri Programmer
-        </Link>
-    </div>
+        </div>
+    </Link>
 </template>
 
 <script setup lang="ts">

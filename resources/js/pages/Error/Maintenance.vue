@@ -1,16 +1,13 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import { WrenchIcon } from 'lucide-vue-next'
-import { onMounted } from 'vue'
+import { Head } from '@inertiajs/vue3'
 
 const { t } = useI18n()
-
-onMounted(() => {
-  document.title = t('maintenance.title')
-})
 </script>
 
 <template>
+  <Head :title="t('maintenance.title')"/>
   <div class="flex min-h-screen flex-col items-center justify-center bg-background p-6 text-center">
     <div class="mx-auto flex max-w-xl flex-col items-center">
       <WrenchIcon

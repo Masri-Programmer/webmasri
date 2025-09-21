@@ -5,17 +5,8 @@
         <link rel="canonical" :href="customProps.app.url + link" />
         <meta name="description" :content="description" head-key="description" />
 
-        <meta property="og:type" content="article" />
-        <meta property="og:title" :content="head" />
-        <meta property="og:description" :content="description" />
-        <meta property="og:image" :content="logo" />
-
-        <meta property="twitter:card" content="Masri Programmer, Web Services, web design and applications. Rich in features, not in pricing." />
-        <meta property="twitter:title" :content="head" />
-        <meta property="twitter:description" :content="description" />
-        <meta property="twitter:image" :content="logo" />
+        <component :is="'script'" type="application/ld+json" v-html="jsonLdSchema" />
     </Head>
-    <!-- <SleekLineCursor /> -->
     <Header />
     <RightSideNav />
     <main class="grid gap-4 overflow-hidden bg-background text-foreground sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12">
@@ -24,6 +15,7 @@
     <Footer />
     <ScrollTop />
     <CookieConsentBanner />
+    <div class="elfsight-app-c9302cfb-520b-47be-bc6d-de82f36fc60d" data-elfsight-app-lazy></div>
 </template>
 
 <script setup lang="ts">
@@ -31,12 +23,11 @@ import CookieConsentBanner from '@/components/CookieConsentBanner.vue';
 import RightSideNav from '@/components/RightSideNav.vue';
 import ScrollTop from '@/components/ScrollTop.vue';
 import { useCurrency } from '@/composables/useCurrency';
-// import SleekLineCursor from '@/components/ui/sleek-line-cursor/SleekLineCursor.vue';
+import logo from '@/images/MasriProgrammer/logoBlack.svg';
 import Header from '@/pages/Header/Header.vue';
 import { AppPageProps } from '@/types';
 import { Head, usePage } from '@inertiajs/vue3';
-import { defineAsyncComponent, onMounted } from 'vue';
-import logo from '@/images/MasriProgrammer/logoBlack.svg';
+import { defineAsyncComponent, onMounted, computed, watchEffect } from 'vue'; // watchEffect can be removed
 
 const { fetchRates } = useCurrency();
 
@@ -52,14 +43,27 @@ const props = defineProps<{
     link: string;
 }>();
 
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": props.head,
-  "author": {
-    "@type": "Person",
-    "name": "Mohamad Masri"
-  },
-//   "datePublished": props.article.published_at
-};
+const jsonLdSchema = computed(() => {
+    const schema = {
+        '@context': 'https://schema.org',
+        '@type': 'WebPage',
+        'name': props.head,
+        'description': props.description,
+        'url': customProps.app.url + props.link,
+        'author': {
+            '@type': 'Person',
+            'name': 'Mohamad Masri',
+            'url': customProps.app.url
+        },
+        'publisher': {
+             '@type': 'Organization',
+             'name': 'Masri Programmer',
+             'logo': {
+                '@type': 'ImageObject',
+                'url': customProps.app.url + logo
+             }
+        },
+    };
+    return JSON.stringify(schema, null, 2);
+});
 </script>

@@ -76,12 +76,12 @@ const socialLinks = computed(() => [
                             <AppLogoIcon class-name="cursor-pointer m-auto h-60 w-65 relative -top-3 left-0 hidden sm:block" />
                         </Link>
                     </div>
-                    <!-- <p class="text-sm text-muted-foreground">{{ $t('footer.tagline') }}</p> -->
+                    <!-- <p class="text-sm text-muted-foreground">{{ t('footer.tagline') }}</p> -->
                 </div>
 
                 <div class="space-y-4">
                     <h4 class="font-semibold  tracking-tighter 
-                    ">{{ $t('footer.headings.product') }}</h4>
+                    ">{{ t('footer.headings.product') }}</h4>
                     <ul class="space-y-2">
                         <li v-for="link in footerSections.product" :key="link.text">
                             <a :href="link.href" class="text-sm text-muted-foreground transition-colors hover:text-foreground">{{ link.text }}</a>
@@ -91,7 +91,7 @@ const socialLinks = computed(() => [
 
                 <div class="space-y-4">
                     <h4 class="font-semibold  tracking-tighter 
-                    ">{{ $t('footer.headings.community') }}</h4>
+                    ">{{ t('footer.headings.community') }}</h4>
                     <ul class="space-y-2">
                         <li v-for="link in footerSections.community" :key="link.text">
                             <a v-if="link.isExternal" :href="link.href" class="text-sm text-muted-foreground transition-colors hover:text-foreground" target="_blank" rel="noopener noreferrer">{{ link.text }}</a>
@@ -102,7 +102,7 @@ const socialLinks = computed(() => [
 
                 <div class="space-y-4">
                     <h4 class="font-semibold  tracking-tighter 
-                    ">{{ $t('footer.headings.legal') }}</h4>
+                    ">{{ t('footer.headings.legal') }}</h4>
                     <ul class="space-y-2">
                         <li v-for="link in footerSections.legal" :key="link.text">
                             <Link :href="link.href" class="text-sm text-muted-foreground transition-colors hover:text-foreground">{{ link.text }}</Link>
@@ -121,7 +121,7 @@ const socialLinks = computed(() => [
 
         <div class="border-t border-border py-6">
             <div class="container mx-auto flex max-w-7xl flex-col-reverse items-center justify-between gap-6 px-4 sm:flex-row sm:px-6 lg:px-8">
-                <p class="text-center text-sm text-muted-foreground sm:text-left">{{ $t('footer.copyright', { year }) }}</p>
+                <p class="text-center text-sm text-muted-foreground sm:text-left">{{ t('footer.copyright', { year }) }}</p>
 
                 <i18n-t keypath="footer.madeWith" tag="p" class="hidden items-center gap-1.5 text-center text-sm text-muted-foreground md:flex">
                     <template #heartIcon>

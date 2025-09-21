@@ -5,17 +5,17 @@
                 <h2
                     class="pointer-events-none bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent whitespace-pre-wrap max-lg:-mt-12 dark:from-white dark:to-slate-900/10 sm:text-6xl md:text-7xl lg:text-8xl"
                 >
-                    {{ $t('about.title') }}
+                    {{ t('about.title') }}
                 </h2>
                 <i18n-t keypath="about.description" tag="p" class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                     <template #blogLink>
                         <a href="https://masri.blog" target="_blank" class="underline">
-                            {{ $t('about.blogLinkText') }}
+                            {{ t('about.blogLinkText') }}
                         </a>
                     </template>
                     <template #contactLink>
                         <a href="mailto:hallo@masri-programmer.de" class="underline">
-                            {{ $t('about.contactLinkText') }}
+                            {{ t('about.contactLinkText') }}
                         </a>
                     </template>
                 </i18n-t>
@@ -35,4 +35,6 @@
 
 <script setup lang="ts">
 import Globe from '@/components/ui/globe/Globe.vue';
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 </script>
