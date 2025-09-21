@@ -1210,5 +1210,18 @@
         "heading": "Wir sind gleich wieder da!",
         "message": "Entschuldigen Sie die Unannehmlichkeiten, aber wir führen gerade Wartungsarbeiten durch. Wir werden in Kürze wieder online sein!",
         "status_code": "503 Dienst nicht verfügbar"
+    },
+    "forbidden": {
+        "title": "Zugriff verweigert",
+        "heading": "403",
+        "message": "Entschuldigung, Sie sind nicht berechtigt, auf diese Seite zuzugreifen.",
+        "button": "Zur Startseite"
+    },
+    "serverError": {
+        "title": "Serverfehler",
+        "heading": "500",
+        "message": "Hoppla! Bei uns ist etwas schiefgegangen.",
+        "description": "Wir arbeiten daran, das Problem zu beheben. Bitte versuchen Sie es später erneut.",
+        "button": "Zur Startseite"
     }
 }

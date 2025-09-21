@@ -79,7 +79,6 @@ const socialLinks = computed(() => [
                     <!-- <p class="text-sm text-muted-foreground">{{ $t('footer.tagline') }}</p> -->
                 </div>
 
-                
                 <div class="space-y-4">
                     <h4 class="font-semibold  tracking-tighter 
                     ">{{ $t('footer.headings.product') }}</h4>

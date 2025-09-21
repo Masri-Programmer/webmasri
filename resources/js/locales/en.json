@@ -1181,5 +1181,18 @@
         "heading": "We'll be right back!",
         "message": "Sorry for the inconvenience, but we're performing some maintenance at the moment. We’ll be back online shortly!",
         "status_code": "503 Service Unavailable"
+    },
+    "forbidden": {
+        "title": "Access Denied",
+        "heading": "403",
+        "message": "Sorry, you are not authorized to access this page.",
+        "button": "Go to Homepage"
+    },
+    "serverError": {
+        "title": "Server Error",
+        "heading": "500",
+        "message": "Oops! Something went wrong on our end.",
+        "description": "We are working to fix the problem. Please try again later.",
+        "button": "Go to Homepage"
     }
 }

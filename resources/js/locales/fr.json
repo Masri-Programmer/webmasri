@@ -1182,5 +1182,18 @@
         "heading": "Nous revenons tout de suite !",
         "message": "Désolé pour le dérangement, mais nous effectuons actuellement une maintenance. Nous serons de retour en ligne sous peu !",
         "status_code": "503 Service indisponible"
+    },
+    "forbidden": {
+        "title": "Accès refusé",
+        "heading": "403",
+        "message": "Désolé, vous n'êtes pas autorisé à accéder à cette page.",
+        "button": "Aller à la page d'accueil"
+    },
+    "serverError": {
+        "title": "Erreur du serveur",
+        "heading": "500",
+        "message": "Oups ! Une erreur s'est produite de notre côté.",
+        "description": "Nous travaillons à sa résolution. Veuillez réessayer plus tard.",
+        "button": "Aller à la page d'accueil"
     }
 }
