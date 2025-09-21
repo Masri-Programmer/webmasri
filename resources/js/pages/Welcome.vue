@@ -6,6 +6,7 @@ import { defineAsyncComponent } from 'vue';
 
 import Layout from '@/layouts/Layout.vue';
 import Hero from './Hero.vue';
+import { useI18n } from 'vue-i18n';
 
 const Features = defineAsyncComponent(() => import('./Features.vue'));
 const Projects = defineAsyncComponent(() => import('./Projects.vue'));
@@ -29,10 +30,11 @@ const Technologies = defineAsyncComponent(() => import('./Technologies.vue'));
 // router.on('success', () => {
 //     AOS.refresh();
 // });
+const { t } = useI18n();
 </script>
 
 <template>
-    <Layout head="Welcome" link="/" :description="$t('welcome.description')">
+    <Layout head="Welcome" link="/" :description="t('welcome.description')">
         <Hero />
         <Services />
         <Features />
