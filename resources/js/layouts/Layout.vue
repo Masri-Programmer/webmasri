@@ -1,5 +1,6 @@
 <template>
     <Head :title="head">
+        <title>{{ head }}</title>
         <link rel="preconnect" :href="customProps.app.url + link" />
         <link rel="canonical" :href="customProps.app.url + link" />
         <meta name="description" :content="description" head-key="description" />
@@ -13,7 +14,6 @@
         <meta property="twitter:title" :content="head" />
         <meta property="twitter:description" :content="description" />
         <meta property="twitter:image" :content="logo" />
-        <script type="application/ld+json" v-html="JSON.stringify(schema)"></script>
     </Head>
     <!-- <SleekLineCursor /> -->
     <Header />
@@ -32,7 +32,7 @@ import RightSideNav from '@/components/RightSideNav.vue';
 import ScrollTop from '@/components/ScrollTop.vue';
 import { useCurrency } from '@/composables/useCurrency';
 // import SleekLineCursor from '@/components/ui/sleek-line-cursor/SleekLineCursor.vue';
-import Header from '@/pages/Header.vue';
+import Header from '@/pages/Header/Header.vue';
 import { AppPageProps } from '@/types';
 import { Head, usePage } from '@inertiajs/vue3';
 import { defineAsyncComponent, onMounted } from 'vue';
