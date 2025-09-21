@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { router } from '@inertiajs/vue3';
-import AOS from 'aos';
+// import { router } from '@inertiajs/vue3';
+// import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { defineAsyncComponent, onMounted } from 'vue';
+import { defineAsyncComponent } from 'vue';
 
 import Layout from '@/layouts/Layout.vue';
 import Hero from './Hero.vue';
