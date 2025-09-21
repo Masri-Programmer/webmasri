@@ -32,13 +32,12 @@
     </style>
 
     <title inertia>{{ config('app.name', 'Masri Programmer') }}</title>
-
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="{{ Vite::asset('resources/js/images/favicon/favicon.svg') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ Vite::asset('resources/js/images/favicon/favicon-16x16.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ Vite::asset('resources/js/images/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="48x48" href="{{ Vite::asset('resources/js/images/favicon/favicon-48x48.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ Vite::asset('resources/js/images/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ Vite::asset('resources/js/images/favicon/favicon.ico') }}">
 
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
