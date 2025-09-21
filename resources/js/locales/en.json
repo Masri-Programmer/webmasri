@@ -1168,5 +1168,18 @@
     "consultation": {
         "text": "Need to discuss your project in detail?",
         "button": "Book a Free Consultation"
+    },
+    "notFound": {
+        "title": "Page Not Found",
+        "heading": "404",
+        "message": "Oops! The page you're looking for doesn't exist.",
+        "description": "You may have mistyped the address or the page may have moved.",
+        "button": "Go to Homepage"
+    },
+    "maintenance": {
+        "title": "Under Maintenance",
+        "heading": "We'll be right back!",
+        "message": "Sorry for the inconvenience, but we're performing some maintenance at the moment. We’ll be back online shortly!",
+        "status_code": "503 Service Unavailable"
     }
 }

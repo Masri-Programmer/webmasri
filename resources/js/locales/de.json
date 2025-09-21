@@ -1197,5 +1197,18 @@
     "consultation": {
         "text": "Müssen Sie Ihr Projekt im Detail besprechen?",
         "button": "0€ Hilfe"
+    },
+    "notFound": {
+        "title": "Seite nicht gefunden",
+        "heading": "404",
+        "message": "Hoppla! Die von Ihnen gesuchte Seite existiert nicht.",
+        "description": "Möglicherweise haben Sie die Adresse falsch eingegeben oder die Seite wurde verschoben.",
+        "button": "Zur Startseite"
+    },
+    "maintenance": {
+        "title": "Wartungsarbeiten",
+        "heading": "Wir sind gleich wieder da!",
+        "message": "Entschuldigen Sie die Unannehmlichkeiten, aber wir führen gerade Wartungsarbeiten durch. Wir werden in Kürze wieder online sein!",
+        "status_code": "503 Dienst nicht verfügbar"
     }
 }

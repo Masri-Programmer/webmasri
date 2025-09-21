@@ -1146,28 +1146,41 @@
         "eur": "EUR",
         "usd": "USD"
     },
-  "contactForm": {
-      "title": "Contact Us",
-      "description": "Have a question or a project in mind? Fill out the form below.",
-      "name": {
-          "label": "Full Name",
-          "placeholder": "Enter your full name"
-      },
-      "email": {
-          "label": "Email Address"
-      },
-      "message": {
-          "label": "Message",
-          "placeholder": "Let us know how we can help you."
-      },
-      "submit": "Send Message",
-      "submitting": "Sending...",
-      "success": "Message sent! We'll get back to you shortly.",
-      "error": "Failed to send message. Please try again later.",
-      "missingFields": "Please fill in all fields."
-  },
-  "consultation": {
-    "text": "Need to discuss your project in detail?",
-    "button": "Book a Meeting"
-  }
+    "contactForm": {
+        "title": "Contact Us",
+        "description": "Have a question or a project in mind? Fill out the form below.",
+        "name": {
+            "label": "Full Name",
+            "placeholder": "Enter your full name"
+        },
+        "email": {
+            "label": "Email Address"
+        },
+        "message": {
+            "label": "Message",
+            "placeholder": "Let us know how we can help you."
+        },
+        "submit": "Send Message",
+        "submitting": "Sending...",
+        "success": "Message sent! We'll get back to you shortly.",
+        "error": "Failed to send message. Please try again later.",
+        "missingFields": "Please fill in all fields."
+    },
+    "consultation": {
+        "text": "Need to discuss your project in detail?",
+        "button": "Book a Meeting"
+    },
+    "notFound": {
+        "title": "Page non trouvée",
+        "heading": "404",
+        "message": "Oups ! La page que vous recherchez n'existe pas.",
+        "description": "Il se peut que vous ayez mal tapé l'adresse ou que la page ait été déplacée.",
+        "button": "Aller à la page d'accueil"
+    },
+    "maintenance": {
+        "title": "En maintenance",
+        "heading": "Nous revenons tout de suite !",
+        "message": "Désolé pour le dérangement, mais nous effectuons actuellement une maintenance. Nous serons de retour en ligne sous peu !",
+        "status_code": "503 Service indisponible"
+    }
 }
