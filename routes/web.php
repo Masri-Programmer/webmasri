@@ -24,6 +24,8 @@ Route::get('/contact', function () {
     return Inertia::render('Contact');
 })->name('contact');
 
+Route::post('/contact', ContactController::class);
+
 Route::get('/faq', function () {
     return Inertia::render('Faq');
 })->name('faq');
@@ -39,8 +41,6 @@ Route::get('/language/{locale}', function ($locale) {
     return redirect()->back();
 })->whereIn('locale', ['en', 'de', 'fr','ar'])->name('language.switch');
 
-
-Route::post('/contact', ContactController::class);
 
 Route::get('/pricing/{category?}', function ($category = null) {
     $categoryMap = [

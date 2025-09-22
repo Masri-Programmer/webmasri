@@ -7,7 +7,7 @@ import { Textarea } from '@/components/ui/textarea';
 import Layout from '@/layouts/Layout.vue';
 import { contact } from '@/routes';
 import { useFetch } from '@vueuse/core';
-import { reactive } from 'vue';
+import { reactive, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useToast } from 'vue-toastification';
 
@@ -20,8 +20,13 @@ const form = reactive({
     message: '',
 });
 
+const csrfToken = computed(() => document.querySelector('meta[name="csrf-token"]')?.getAttribute('content'));
 const { isFetching, execute } = useFetch(contact.url(), {
     immediate: false,
+    headers: {
+        'X-CSRF-TOKEN': csrfToken.value,
+        'Content-Type': 'application/json',
+    },
     afterFetch: (ctx) => {
         if (ctx.data && !ctx.response?.ok) {
             toast.success(t('contactForm.success'));
