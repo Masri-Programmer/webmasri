@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Title from '@/components/Title.vue';
-import { Button } from '@/components/ui/button'; // Assumes shadcn-vue path
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'; // Assumes shadcn-vue path
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import googleIcon from '@/images/googleIcon.webp';
 import { Star } from 'lucide-vue-next';
 import { computed } from 'vue';

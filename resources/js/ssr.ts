@@ -1,9 +1,10 @@
-import createServer from '@inertiajs/vue3/server';
 import { createInertiaApp } from '@inertiajs/vue3';
+import createServer from '@inertiajs/vue3/server';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { createSSRApp, DefineComponent, h } from 'vue';
 import { renderToString } from 'vue/server-renderer';
 
+import { MotionPlugin } from '@vueuse/motion';
 import i18n from './i18n';
 
 const appName = import.meta.env.VITE_APP_NAME || 'Masri Programmer';
@@ -19,6 +20,7 @@ createServer(
                 const ssrApp = createSSRApp({ render: () => h(App, props) });
 
                 ssrApp.use(plugin);
+                ssrApp.use(MotionPlugin);
                 ssrApp.use(i18n);
 
                 return ssrApp;

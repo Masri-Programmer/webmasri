@@ -27,7 +27,7 @@ import logo from '@/images/MasriProgrammer/logoBlack.svg';
 import Header from '@/pages/Header/Header.vue';
 import { AppPageProps } from '@/types';
 import { Head, usePage } from '@inertiajs/vue3';
-import { defineAsyncComponent, onMounted, computed, watchEffect } from 'vue'; // watchEffect can be removed
+import { defineAsyncComponent, onMounted, computed,  } from 'vue'; // watchEffect can be removed
 
 const { fetchRates } = useCurrency();
 

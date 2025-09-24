@@ -2,13 +2,17 @@
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
-import { useStorage } from '@vueuse/core';
+import language from '@/routes/language';
+import { router, usePage } from '@inertiajs/vue3';
 import { Check, Languages } from 'lucide-vue-next';
-import { watchEffect } from 'vue';
+import { computed, watchEffect } from 'vue';
 import { useI18n } from 'vue-i18n';
+// 1. Get the global i18n instance
+const i18n = useI18n();
+const { t } = i18n;
 
-const { t, locale } = useI18n();
-const storedLocale = useStorage('locale', 'de');
+const page = usePage();
+const locale = computed(() => page.props.locale as string);
 
 const availableLanguages = [
     { code: 'en', nameKey: 'languages.english' },
@@ -17,15 +21,26 @@ const availableLanguages = [
     { code: 'ar', nameKey: 'languages.arabic' },
 ];
 
+// 3. This function now makes an Inertia visit to the backend route
 const setLocale = (langCode: string) => {
-    storedLocale.value = langCode;
+    router.get(
+        language.switch.url(langCode),
+        {},
+        {
+            preserveState: true,
+        },
+    );
 };
 
 watchEffect(() => {
-    const newLocale = storedLocale.value;
-    locale.value = newLocale;
-    document.documentElement.lang = newLocale; 
-    document.documentElement.dir = newLocale === 'ar' ? 'rtl' : 'ltr';
+    const newLocale = locale.value;
+
+    i18n.locale.value = newLocale;
+
+    if (typeof document !== 'undefined') {
+        document.documentElement.lang = newLocale;
+        document.documentElement.dir = newLocale === 'ar' ? 'rtl' : 'ltr';
+    }
 });
 </script>
 

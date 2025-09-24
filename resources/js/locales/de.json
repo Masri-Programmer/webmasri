@@ -122,72 +122,250 @@
         }
     },
     "faq": {
-        "title": "Häufig gestellte Fragen",
-        "subtitle": "Haben Sie Fragen? Wir haben die Antworten. Hier sind einige der häufigsten Dinge, die gefragt werden.",
+        "title": "Frequently Asked Questions",
+        "subtitle": "Have questions? We've got answers. Here are some of the most common things people ask.",
         "list": {
             "projectFlow": {
-                "question": "Wie ist der klassische Projektablauf bei einer Website oder einem Onlineshop?",
-                "answer": "<ul><li>Erstes Kennenlernen und Beschreibung Ihres Vorhabens via Telefon oder Zoom, Bestimmung des Leistungsumfangs</li><li>Sie erhalten ein schriftliches Angebot von mir</li><li>Wenn nötig, Marken-Workshop</li><li>Wenn nötig Brand / Logo Design</li><li>Konzeption als Grundlage und Festlegung alles notwendigen Parameter</li><li>Detailplanung von Design, Inhalten, Technik und zeitlichem Ablauf</li><li>Technische Anpassung und Einrichtung des Content-Management-Systems (CMS) oder Onlineshops</li><li>Gestaltung Screendesign u.a. nach Corporate Design, Vorgaben und Beispielen</li><li>Abstimmung des Screendesigns</li><li>Responsive Optimierung, damit die Ansicht auf allen Geräten optimal ist</li><li>Anlegen / Datenmigration der Inhalte im CMS oder Onlineshop wie vereinbart</li><li>Abnahme des Projekts</li><li>Launch — Ihr Projekt geht online</li><li>Support und Betreuung wie Pflege, Anpassungen, Updates und <a href='https://www.michael-hoemke.de/webdesign/angebote/lokales_marketing.php' target='_blank' rel='noopener noreferrer'>werbliche Maßnahmen</a></li></ul><p>Welche Leistungen für Sie relevant sind skizzieren wir gemeinsam in unserem ersten Gespräch, das auch als Grundlage für ein ordentliches Angebot dient.</p>"
+                "question": "What is the typical project workflow for a website or an online shop?",
+                "answer": [
+                    {
+                        "type": "list",
+                        "items": [
+                            "Initial meeting and description of your project via phone or Zoom, determination of the scope of services",
+                            "You will receive a written offer from me",
+                            "If necessary, brand workshop",
+                            "If necessary, brand / logo design",
+                            "Conceptualization as a basis and definition of all necessary parameters",
+                            "Detailed planning of design, content, technology, and timeline",
+                            "Technical adaptation and setup of the Content Management System (CMS) or online shop",
+                            "Creation of screen design based on corporate design, specifications, and examples",
+                            "Review and approval of the screen design",
+                            "Responsive optimization to ensure optimal display on all devices",
+                            "Creation / data migration of content in the CMS or online shop as agreed",
+                            "Project acceptance",
+                            "Launch — Your project goes online",
+                            "Support and maintenance such as updates, adjustments, and promotional activities"
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "We will outline which services are relevant for you in our first conversation, which also serves as the basis for a proper offer."
+                    }
+                ]
             },
             "selfMaintenance": {
-                "question": "Können Sie Ihre Website oder Ihren Onlienshop selbstständig pflegen und erweitern?",
-                "answer": "<p>Sie können alle Inhalte selbstständig pflegen und erweitern. Im Vorwege erhalten Sie eine gründliche Einweisung von mir. Für Websites nutze ich je nach Aufgabenstellung Weblication © WordPress als CMS oder für Onlineshops Shopware, WooCoomerce oder Gambio als Shopsystem. Sollten Sie die Pflege nicht selbst durchführen wollen, kann ich dieses optional teilweise oder vollständig für Sie übernehmen.</p><p>Für Backups und Updates kommt ein zusätzlicher technischer Aufwand dazu. Dieser benötigt bei den meisten Systemen ein gewisses Fachwissen und sollte daher möglichst nicht eigenständig durchgeführt werden. Auch diese Aufgabe übernehme ich gerne regelmäßig und zeitnah optional für Sie.</p>"
+                "question": "Can you maintain and expand your website or online shop yourself?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "You can maintain and expand all content yourself. You will receive a thorough introduction from me beforehand. For websites, I use Weblication © WordPress as a CMS, and for online shops, Shopware, WooCommerce, or Gambio as the shop system, depending on the task. If you do not want to handle the maintenance yourself, I can optionally take over this partially or completely for you."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "Backups and updates require additional technical effort. This requires a certain level of expertise for most systems and should therefore preferably not be carried out independently. I am also happy to take on this task for you regularly and promptly as an option."
+                    }
+                ]
             },
             "costs": {
-                "question": "Was kostet eine Website oder ein Onlineshop",
-                "answer": "<p>Die Kosten für eine Website oder einen Onlineshop richten sich natürlich nach dem Umfang des Projektes. Um Ihnen dennoch eine sinnvolle Übersicht zu geben, können Sie sich an den folgenden Erfahrungswerten orientieren:</p><ul><li>landingPage (Onepager) mit Weblication: 200 Euro - 2.800 Euro</li><li>Website : 600 Euro bis 5.000 Euro</li><li>Onlineshop : 2.200 Euro bis 4.000 Euro</li><li>Onlineshop mit CMS: 2.200 Euro bis 10.000 Euro (inkl. Website und Blog)</li></ul>"
+                "question": "What does a website or an online shop cost?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "The cost of a website or an online shop naturally depends on the scope of the project. To give you a meaningful overview, you can use the following empirical values as a guide:"
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Landing page (Onepager) with Weblication: 200 Euro - 2,800 Euro",
+                            "Website: 600 Euro to 5,000 Euro",
+                            "Online shop: 2,200 Euro to 4,000 Euro",
+                            "Online shop with CMS: 2,200 Euro to 10,000 Euro (incl. website and blog)"
+                        ]
+                    }
+                ]
             },
             "newWebsiteNeeded": {
-                "question": "Benötigen Sie eine neue Website oder einen neuen Onlineshop?",
-                "answer": "<p>Wenn Ihre Website oder Ihr Onlineshop technisch und/oder optisch nicht mehr dem aktuellen Stand entspricht, ist diese Frage meistens leicht zu beantworten. Aber auch eine neue Website oder Onlineshop kann an der »Aufgabe vorbei« realisiert worden sein. Die klassischen Schwachstellen sind veraltetes Design, eine Codierung, die auf unterschiedlichen Geräten nicht mehr funktioniert, fehlende Funktionalität oder Kompatibilität und überholte, unsichere Software. Wenn Ihr Business von Ihrem Onlineauftritt abhängig ist und Sie Ihren Lebensunterhalt damit bestreiten, steht es außer Frage, wirklich alles dafür zu tun, dass dieser wichtige Part optimal für Sie arbeitet!</p>"
+                "question": "Do you need a new website or a new online shop?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "If your website or online shop is no longer technically and/or visually up to date, this question is usually easy to answer. But even a new website or online shop can be realized 'missing the point'. The classic weaknesses are outdated design, coding that no longer works on different devices, missing functionality or compatibility, and outdated, insecure software. If your business depends on your online presence and you make a living from it, there is no question that you should do everything possible to ensure that this important part works optimally for you!"
+                    }
+                ]
             },
             "ownershipWebsite": {
-                "question": "Ist die Website oder der Onlineshop Ihr Eigentum?",
-                "answer": "<p>Von mir entwickelte Websites und Onlineshops gehören Ihnen. Wenn, warum auch immer nötig, können Sie problemlos zu einem anderen Anbieter umziehen. Bei anderen Anbietern oder unflexiblen Baukastensystemen sind Sie oft abhängig vom jeweiligen Anbieter und müssten im Falle eines Wechsels möglicherweise eine komplett neue Website oder Onlineshop erstellen lassen. Alle Grafiken werden Ihnen auf Wunsch zur Verfügung gestellt, sofern es die Rechte zulassen und eventuell notwendige Domains und Software werden in Ihrem Namen erworben.</p>"
+                "question": "Is the website or online shop your property?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Websites and online shops developed by me belong to you. If, for whatever reason, necessary, you can easily move to another provider. With other providers or inflexible modular systems, you are often dependent on the respective provider and may have to have a completely new website or online shop created in the event of a change. All graphics will be made available to you upon request, provided the rights allow it, and any necessary domains and software will be acquired in your name."
+                    }
+                ]
             },
             "ownershipPrint": {
-                "question": "Ist die erstellte Printwerbung Ihr Eigentum?",
-                "answer": "<p>Für alle von mir erstellen Reinzeichnungen / Druckvorlagen erhalten Sie von mir ein räumlich und zeitlich unbegrenztes Nutzungsrecht für Ihr Unternehmen.</p>"
+                "question": "Is the created print advertising your property?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "For all final artwork / print templates created by me, you will receive a spatially and temporally unlimited right of use for your company from me."
+                    }
+                ]
             },
             "duration": {
-                "question": "Wie lange dauert es bis alles fertig ist?",
-                "answer": "<p>Sie können sich die Antwort vermutlich schon fast denken: Es hängt vom Umfang und meiner Auslastung ab. Um Ihnen trotzdem ein paar Meilensteine anzubieten, hier eine grobe Einschätzung:</p><ul><li>Kleine Website: ca. 1 Monat</li><li>Klassische Website für ein Unternehmen: ca. 2 Monate</li><li>Kleiner Onlineshop: ca. 2 Monate</li><li>Umfangreicher Onlineshop: ca. 6 Monate</li><li>Ein Branddesign / Logo: ca. 1 Monat</li></ul><p>Aus langjähriger Erfahrung kann ich sagen, dass fast immer Verzögerungen auftreten werden, und sehr oft liegt das an der verspäteten Lieferung von Inhalten oder späten Feedbacks. Als Ihr Projektleiter versuche ich, dieses zu vermeiden, und diene gerne als »Reminder«. Bei großen Projekten kann es helfen, weitere Dienstleister ins Boot zu holen wie zum Beispiel einen Texter.</p>"
+                "question": "How long does it take until everything is finished?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "You can probably already guess the answer: It depends on the scope and my workload. To still offer you a few milestones, here is a rough estimate:"
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Small website: approx. 1 month",
+                            "Classic website for a company: approx. 2 months",
+                            "Small online shop: approx. 2 months",
+                            "Extensive online shop: approx. 6 months",
+                            "A brand design / logo: approx. 1 month"
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "From many years of experience, I can say that delays will almost always occur, and very often this is due to the delayed delivery of content or late feedback. As your project manager, I try to avoid this and am happy to serve as a 'reminder'. For large projects, it can help to bring in other service providers, such as a copywriter."
+                    }
+                ]
             },
             "brandWorkshop": {
-                "question": "Warum ist ein Marken-Workshop sinnvoll?",
-                "answer": "<p>Der Marken-Workshop ist für Kunden, die noch keine konkrete Auszeichnung ihrer Marke und oder Produkte haben oder ein bestehendes Brand Design optimieren möchten. Ihr Erfolg liegt in der Kommunikation Ihrer Vorteile, deswegen erarbeiten wir gemeinsam Ihr Markenkonzept als Basis für alle weiteren Lösungen.</p>"
+                "question": "Why is a brand workshop useful?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "The brand workshop is for customers who do not yet have a concrete distinction for their brand and/or products or who want to optimize an existing brand design. Your success lies in the communication of your advantages, which is why we work together to develop your brand concept as the basis for all further solutions."
+                    }
+                ]
             },
             "whatSetsMeApart": {
-                "question": "Was zeichnet meine Arbeit aus?",
-                "answer": "<p>Es gibt viele Angebote am Markt — warum könnten Sie sich für mich entscheiden? Ich verfüge über mehr als 25 Jahren Erfahrung aus vielen unterschiedlichsten Projekten und biete meinen Kunden eine Auswahl von 2 CMS und 3 Onlineshops. Der Nutzen für Sie daraus ist ein umfassendes Wissen und eine hohe Problemlösungsfähigkeit. Ich habe alle erdenklichen Situationen in Projekten erlebt, habe viele Trends kommen und gehen gesehen und weiß was funktioniert und was nicht. Dadurch wird man sehr anpassungsfähig, auch für zukünftige Anforderungen.</p><p>Um herauszufinden, ob wir zusammenpassen, können Sie sich über mein Angebot, meine Referenzen und meinen Blog ein erstes Bild machen, das wir gerne anschließend in einem persönlichen Gespräch verfeinern können – Ich würde mich freuen.</p>"
+                "question": "What distinguishes my work?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "There are many offers on the market — why might you choose me? I have over 25 years of experience from many different projects and offer my customers a choice of 2 CMS and 3 online shops. The benefit for you is comprehensive knowledge and a high problem-solving ability. I have experienced every conceivable situation in projects, have seen many trends come and go, and know what works and what doesn't. This makes one very adaptable, also for future requirements."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "To find out if we are a good match, you can get a first impression through my offer, my references, and my blog, which we can then refine in a personal conversation – I would be pleased."
+                    }
+                ]
             },
             "clientContribution": {
-                "question": "Was sollten Sie als Kunde leisten?",
-                "answer": "<p>Es ist in erster Linie Ihr Projekt, das einen großen Einfluss auf die Zukunft Ihres Unternehmens hat. Planen Sie also genügend Zeit dafür ein. Ihre Mitarbeit wird für Feedbacks, Inhalte und weitere Zusammenarbeit benötig und oft unterschätzt. Zum Beispiel kann bei Onlineshops mit Wawi/ERP ein erheblicher Zeitaufwand durch Abstimmung und Datenerhebung entstehen.</p>"
+                "question": "What should you as a client provide?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "It is primarily your project, which has a major impact on the future of your company. So plan enough time for it. Your cooperation is needed for feedback, content, and further collaboration and is often underestimated. For example, with online shops with Wawi/ERP, a considerable amount of time can arise from coordination and data collection."
+                    }
+                ]
             },
             "imageFormats": {
-                "question": "In welchen Formaten sollten Bilder für Website und Onlineshop geliefert werden?",
-                "answer": "<p>Fotomotive (Landschaften, Menschen etc.) bitte als .jpg, freigestellte Motive bitte als .webp und Motive mit viel Schrift oder Linien bitte als .gif oder .webp. Logos wenn möglich bitte als .svg oder .eps. Alle Bildmotive möglichst Breitformat mit einer Breite von ca. 1800px.</p>"
+                "question": "In what formats should images for the website and online shop be delivered?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Photo motifs (landscapes, people, etc.) please as .jpg, isolated motifs please as .webp, and motifs with a lot of text or lines please as .gif or .webp. Logos if possible please as .svg or .eps. All image motifs preferably in wide format with a width of approx. 1800px."
+                    }
+                ]
             },
             "hostingProvider": {
-                "question": "Wie finden Sie geigneten einen Hosting-Provider?",
-                "answer": "<p><a href='https://www.michael-hoemke.de/webdesign/aktuelles/meldungen/suche_hostingprovider.php' target='_blank' rel='noopener noreferrer'>Hosting-Leistungen</a> biete ich für meine Kunden nicht an, das machen spezialisierte Anbieter besser und für Sie als Kunden ist es auch vorteilhafter, Hosting und Olinedienstleistung zu trennen. Aber ich berate Sie natürlich sehr gerne und wähle ein passendes Hosting-Angebot für Sie aus und unterstütze Sie, wenn nötig bei der Buchung.</p>"
+                "question": "How do you find a suitable hosting provider?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "value": "I do not offer "
+                            },
+                            {
+                                "type": "link",
+                                "href": "https://www.michael-hoemke.de/webdesign/aktuelles/meldungen/suche_hostingprovider.php",
+                                "value": "hosting services"
+                            },
+                            {
+                                "type": "text",
+                                "value": " for my clients; specialized providers do that better, and for you as a customer, it is also more advantageous to separate hosting and online services. But of course, I am very happy to advise you and select a suitable hosting offer for you and support you, if necessary, with the booking."
+                            }
+                        ]
+                    }
+                ]
             },
             "seoToDo": {
-                "question": "Was sollten Sie für SEO tun?",
-                "answer": "<p>Websites und Onlineshops für meine Kunden sind grundsätzlich SEO optimiert. Mit ausreichend gut geschriebenen und strukturierten Inhalten können Sie Ihr SEO ständig weiter optimieren. Zu jeder Zeit erhalten Sie bei Bedarf von mir Hilfestellung und wertvolle Tipps oder können weitere Leistungen in Anspruch nehmen.</p>"
+                "question": "What should you do for SEO?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Websites and online shops for my clients are fundamentally SEO optimized. With sufficiently well-written and structured content, you can continuously optimize your SEO. At any time, you can receive help and valuable tips from me if needed or take advantage of further services."
+                    }
+                ]
             },
             "metaKeywords": {
-                "question": "Muss ich <meta keywords> pflegen?",
-                "answer": "<p>Weil immer mal wieder gefragt wird: Nein! das Meta-Tag 'kewords' ist seit 2009 für das Raking in der Google Suche nicht mehr relevat.</p>"
+                "question": "Do I need to maintain <meta keywords>?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Because it is asked from time to time: No! The meta tag 'keywords' has not been relevant for ranking in Google search since 2009."
+                    }
+                ]
             },
             "accessibility": {
-                "question": "Was sollten Sie zu Thema Barrierefreiheit beachten?",
-                "answer": "<p>Der <a href='https://www.barrierefreiheit-dienstekonsolidierung.bund.de/Webs/PB/DE/gesetze-und-richtlinien/barrierefreiheitsstaerkungsgesetz/barrierefreiheitsstaerkungsgesetz-node.html' target='_blank' rel='noopener noreferrer'>European Accessibility Act (EAA)</a> verlangt von vielen Unternehmen, dass sie bis 2025 digital zugänglich sind. Aber trifft das auch speziell für Ihr Unternehmen zu?</p><p>*Die Gesetzgebung sagt, dass Unternehmen die Waren oder Dienstleistungen an Verbraucher und Endnutzer anbieten, einen Gesamtmsatz von mehr als 2 Mio. / Jahr und mind. 10 Mitarbeiter haben, ihre Websites definitiv auf Barrierefreiheit ab dem 28.06.2025 ausrichten müssen.</p><p>*Der Umkehrschluss besagt also: Unternehmen, die Ihre Waren oder Dienstleistungen ausschließlich B2B anbieten oder einen maximalen Gesamtumsatz von 2 Mio. / Jahr und weniger als 10 Mitarbeiter haben, sind von den neuen Regelungen ausgenommen.</p><p>Grundsätzlich sollten Websites und Onlineshops allerdings so barrierefrei bzw. barrierearm wie möglich gestaltet werden. Schon allein aufgrund des wirtschaftlichen Faktors macht dies Sinn. Denn eine barrierefreie Website geht mit einer besseren Nutzererfahrung einher und kann damit die Konversionsrate erhöhen. Gerne berate ich Sie zu diesem Thema ausführlicher.</p><p><small>*Alle Aussagen ohne gesetzliche Gewähr.</small></p>"
+                "question": "What should you consider regarding accessibility?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "value": "The "
+                            },
+                            {
+                                "type": "link",
+                                "href": "https://www.barrierefreiheit-dienstekonsolidierung.bund.de/Webs/PB/DE/gesetze-und-richtlinien/barrierefreiheitsstaerkungsgesetz/barrierefreiheitsstaerkungsgesetz-node.html",
+                                "value": "European Accessibility Act (EAA)"
+                            },
+                            {
+                                "type": "text",
+                                "value": " requires many companies to be digitally accessible by 2025. But does this specifically apply to your company?"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "*The legislation states that companies that offer goods or services to consumers and end-users, have a total turnover of more than 2 million / year and at least 10 employees, must definitely align their websites for accessibility from June 28, 2025."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "*The reverse conclusion is: Companies that offer their goods or services exclusively B2B or have a maximum total turnover of 2 million / year and fewer than 10 employees are exempt from the new regulations."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "In principle, however, websites and online shops should be designed to be as accessible or low-barrier as possible. This makes sense for economic reasons alone. An accessible website goes hand in hand with a better user experience and can thus increase the conversion rate. I would be happy to advise you on this topic in more detail."
+                    },
+                    {
+                        "type": "small",
+                        "content": "*All statements without legal guarantee."
+                    }
+                ]
             },
             "responsiveDesign": {
-                "question": "Funktionieren meine Websites und Onlineshops auch auf mobilen Geräten (responsive)?",
-                "answer": "<p>Eigentlich ist es schon sehr lange selbstverständlich, dass Websites und Onlineshops auf mobilen Geräten genauso funktionieren wie auf stationären Geräten (Desktops) oder Laptops mit größeren Bildschirmen und natürlich ist diese auch bei den von mir betreuten Projekten der Fall.</p><p>Auch her gibt es in der Qualität Unterschiede: Eine automatische Anpassung an das genutzte Gerät kann anhand von 'Breakpoints' gestaltet werden, dann wird exakt ab diesem Punkt und für diese Geräteklasse auf eine andere Ansicht geschaltet oder sie kann 'fließend' gestaltet werden. 'Fließend' bedeutet hier, dass auch geräteunabhängige Anpassungen beachtet werden, etwas für unterschiedliche Fenstergrößen auf einem Desktop. Dies sorgt für weniger unschöne Darstellungsfehler auch auf größeren Screens, denn niemand weiß, wie groß oder wie klein das Browserfenster dort genutzt wird.</p>"
+                "question": "Do my websites and online shops also work on mobile devices (responsive)?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Actually, it has long been self-evident that websites and online shops function just as well on mobile devices as on stationary devices (desktops) or laptops with larger screens, and of course, this is also the case with the projects I manage."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "Here too, there are differences in quality: An automatic adjustment to the device used can be designed using 'breakpoints', then it switches to a different view exactly from this point and for this device class, or it can be designed to be 'fluid'. 'Fluid' here means that device-independent adjustments are also taken into account, for example for different window sizes on a desktop. This results in fewer unsightly display errors even on larger screens, because no one knows how large or how small the browser window is used there."
+                    }
+                ]
             }
         }
     },
@@ -214,11 +392,11 @@
             "termsOfService": "Nutzungsbedingungen",
             "imprint": "Imprint",
             "contact": "Contact",
-            "githubAriaLabel": "GitHub Repository",
-            "googleAriaLabel": "Google -Seite",
-            "linkedinAriaLabel": "LinkedIn Profil",
             "bookMeeting": "Meeting Buchen"
         },
+        "githubAriaLabel": "GitHub Repository",
+        "googleAriaLabel": "Google -Seite",
+        "linkedinAriaLabel": "LinkedIn Profil",
         "copyright": "© {year} . Alle Rechte vorbehalten.",
         "madeWith": "Erstellt mit {heartIcon} von {authorLink}."
     },
@@ -1102,73 +1280,171 @@
         }
     },
     "faqSummary": {
-        "title": "Häufig gestellte Fragen",
-        "subtitle": "Haben Sie Fragen? Wir haben die Antworten. Hier sind einige häufige, oder sehen Sie sich alle an.",
-        "viewAllButton": "Alle FAQs ansehen",
+        "title": "Frequently Asked Questions",
+        "subtitle": "Have questions? We have answers. Here are a few common ones, or view them all.",
+        "viewAllButton": "View All FAQs",
         "list": {
             "projectFlow": {
-                "question": "Wie sieht der typische Projektablauf aus?",
-                "answer": "<p>Jedes Projekt folgt einem strukturierten Ablauf: <br>1. <strong>Entdeckung & Strategie:</strong> Wir besprechen Ihre Ziele und Anforderungen. <br>2. <strong>Design:</strong> Wir erstellen Wireframes und Mockups zu Ihrer Genehmigung. <br>3. <strong>Entwicklung:</strong> Wir erwecken das Design mit sauberem, effizientem Code zum Leben. <br>4. <strong>Veröffentlichung:</strong> Nach gründlichen Tests stellen wir Ihr Projekt bereit. <br>5. <strong>Support:</strong> Wir bieten laufende Wartung und Unterstützung.</p>"
+                "question": "What does the typical project flow look like?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Every project follows a structured path:"
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Discovery & Strategy: We discuss your goals and requirements.",
+                            "Design: We create wireframes and mockups for your approval.",
+                            "Development: We bring the design to life with clean, efficient code.",
+                            "Launch: After thorough testing, we deploy your project.",
+                            "Support: We offer ongoing maintenance and support."
+                        ]
+                    }
+                ]
             },
             "selfMaintenance": {
-                "question": "Kann ich die Website nach der Erstellung selbst pflegen?",
-                "answer": "<p>Absolut. Die meisten Websites basieren auf einem Content-Management-System (CMS), mit dem Sie Inhalte, Bilder und andere Elemente ohne Programmierkenntnisse einfach aktualisieren können. Ich biete eine Schulung an, um sicherzustellen, dass Sie sich bei der Verwaltung Ihrer neuen Website wohlfühlen.</p>"
+                "question": "Can I maintain the website myself after it's built?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Absolutely. Most websites are built on a Content Management System (CMS) that allows you to easily update content, images, and other elements without any coding knowledge. I provide training to ensure you're comfortable managing your new site."
+                    }
+                ]
             },
             "costs": {
-                "question": "Wie viel kostet eine neue Website oder ein neues Designprojekt?",
-                "answer": "<p>Die Kosten variieren je nach Umfang, Komplexität und den erforderlichen Funktionen. Nach einer Erstberatung, um Ihre spezifischen Bedürfnisse zu verstehen, erstelle ich ein detailliertes, individuelles Angebot. So stellen wir sicher, dass Sie nur für das bezahlen, was Sie benötigen.</p>"
+                "question": "How much does a new website or design project cost?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Costs vary depending on the scope, complexity, and features required. I provide a detailed, custom quote after an initial consultation to understand your specific needs. This ensures you only pay for what you need."
+                    }
+                ]
             },
             "newWebsiteNeeded": {
-                "question": "Woher weiß ich, ob ich eine neue Website brauche?",
-                "answer": "<p>Erwägen Sie eine neue Website, wenn Ihre aktuelle Seite nicht mobilfreundlich ist, veraltet aussieht, langsam lädt, Ihre aktuelle Marke nicht widerspiegelt oder keine Leads generiert. Eine frische Seite kann das Benutzererlebnis und die Geschäftsergebnisse erheblich verbessern.</p>"
+                "question": "How do I know if I need a new website?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Consider a new website if your current site is not mobile-friendly, looks outdated, is slow to load, doesn't reflect your current brand, or isn't generating leads. A fresh site can significantly improve user experience and business results."
+                    }
+                ]
             },
             "ownershipWebsite": {
-                "question": "Wem gehört die Website nach ihrer Fertigstellung?",
-                "answer": "<p>Ihnen. Nach der Abschlusszahlung erhalten Sie das volle Eigentum an den Website-Dateien und -Assets. Sie haben die vollständige Kontrolle und den vollen Zugriff auf Ihr digitales Eigentum.</p>"
+                "question": "Who owns the website once it is completed?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "You do. Upon final payment, you receive full ownership of the website files and assets. You will have complete control and access to your digital property."
+                    }
+                ]
             },
             "ownershipPrint": {
-                "question": "Wie sieht es mit den Rechten an Druckmaterialien wie Logos oder Broschüren aus?",
-                "answer": "<p>Ähnlich wie bei Websites erhalten Sie nach Projektabschluss und Abschlusszahlung das volle Eigentum an den endgültigen Designdateien (z. B. PDF, JPG, PNG) für alle Druckmaterialien. Quelldateien (z. B. Adobe Illustrator) können auf Anfrage, manchmal gegen eine zusätzliche Gebühr, bereitgestellt werden.</p>"
+                "question": "What about the rights to print materials like logos or brochures?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Similar to websites, you receive full ownership of the final design files (e.g., PDF, JPG, PNG) for any print materials upon project completion and final payment. Source files (e.g., Adobe Illustrator) can be provided upon request, sometimes for an additional fee."
+                    }
+                ]
             },
             "duration": {
-                "question": "Wie lange wird es dauern, mein Projekt abzuschließen?",
-                "answer": "<p>Ein typisches Website-Projekt dauert zwischen 6 und 12 Wochen von Anfang bis Ende. Der genaue Zeitplan hängt von der Komplexität des Projekts und der Pünktlichkeit von Feedback und Inhaltslieferung Ihrerseits ab.</p>"
+                "question": "How long will it take to complete my project?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "A typical website project takes between 6 to 12 weeks from start to finish. The exact timeline depends on the project's complexity and the timeliness of feedback and content delivery from your side."
+                    }
+                ]
             },
             "brandWorkshop": {
-                "question": "Was ist ein Marken-Workshop und ist er notwendig?",
-                "answer": "<p>Ein Marken-Workshop ist eine kollaborative Sitzung, in der wir die Kernwerte, die Mission, die Zielgruppe und die visuelle Identität Ihrer Marke definieren. Er ist sehr zu empfehlen für neue Unternehmen oder solche, die ein Rebranding durchführen, um eine konsistente und effektive Markenstrategie zu gewährleisten.</p>"
+                "question": "What is a brand workshop and is it necessary?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "A brand workshop is a collaborative session where we define your brand's core values, mission, target audience, and visual identity. It's highly recommended for new businesses or those undergoing a rebrand to ensure a consistent and effective brand strategy."
+                    }
+                ]
             },
             "whatSetsMeApart": {
-                "question": "Was unterscheidet Sie von anderen Entwicklern und Designern?",
-                "answer": "<p>Ich kombiniere strategisches Denken mit modernem Design und sauberem Code. Mein Fokus liegt darauf, Lösungen zu schaffen, die nicht nur schön, sondern auch funktional, benutzerfreundlich und auf Ihre Geschäftsziele ausgerichtet sind. Ich lege Wert auf klare Kommunikation und eine partnerschaftliche Zusammenarbeit.</p>"
+                "question": "What sets you apart from other developers and designers?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "I combine strategic thinking with modern design and clean code. My focus is on creating solutions that are not only beautiful but also functional, user-friendly, and aligned with your business goals. I prioritize clear communication and a collaborative partnership."
+                    }
+                ]
             },
             "clientContribution": {
-                "question": "Was muss ich bereitstellen, um loszulegen?",
-                "answer": "<p>Um zu beginnen, müssen Sie alle Inhalte für die Website bereitstellen – dazu gehören Texte, Fotos und eventuelle spezifische Markenrichtlinien. Je besser Sie vorbereitet sind, desto reibungsloser wird der Prozess verlaufen.</p>"
+                "question": "What do I need to provide to get started?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "To start, you'll need to provide all the content for the website—this includes text, photos, and any specific branding guidelines you may have. The more prepared you are, the smoother the process will be."
+                    }
+                ]
             },
             "imageFormats": {
-                "question": "Welche Bildformate sind für das Web am besten geeignet?",
-                "answer": "<p>Für optimale Leistung und Qualität verwenden wir hauptsächlich moderne Formate wie <strong>WebP</strong> oder <strong>AVIF</strong> für Fotos. Für Logos, Symbole und Grafiken ist <strong>SVG</strong> die beste Wahl, da es skalierbar und auf allen Geräten scharf ist.</p>"
+                "question": "What image formats are best for the web?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            { "type": "text", "value": "For optimal performance and quality, we primarily use modern formats like " },
+                            { "type": "strong", "value": "WebP" },
+                            { "type": "text", "value": " or " },
+                            { "type": "strong", "value": "AVIF" },
+                            { "type": "text", "value": " for photos. For logos, icons, and graphics, " },
+                            { "type": "strong", "value": "SVG" },
+                            { "type": "text", "value": " is the best choice as it's scalable and crisp on all devices." }
+                        ]
+                    }
+                ]
             },
             "hostingProvider": {
-                "question": "Benötige ich einen bestimmten Hosting-Anbieter?",
-                "answer": "<p>Obwohl ich mit den meisten Hosting-Anbietern arbeiten kann, kann ich bestimmte empfehlen, die für ihre Leistung, Sicherheit und ihren Kundensupport bekannt sind. Bei Bedarf kann ich auch bei der Einrichtung des Hostings und der Domainregistrierung helfen.</p>"
+                "question": "Do I need a specific hosting provider?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "While I can work with most hosting providers, I can recommend specific ones known for their performance, security, and customer support. I can also assist with setting up hosting and domain registration if needed."
+                    }
+                ]
             },
             "seoToDo": {
-                "question": "Ist Suchmaschinenoptimierung (SEO) inbegriffen?",
-                "answer": "<p>Grundlegendes On-Page-SEO ist in allen Website-Projekten enthalten. Dies bedeutet die Verwendung von Best Practices wie semantischem HTML, korrekten Meta-Tags, Bild-Alt-Texten und die Sicherstellung schneller Ladezeiten. Umfassende, fortlaufende SEO-Strategien sind als separater Service erhältlich.</p>"
+                "question": "Is Search Engine Optimization (SEO) included?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Basic on-page SEO is included in all website projects. This means using best practices like semantic HTML, proper meta tags, image alt-text, and ensuring fast load times. Comprehensive, ongoing SEO strategies are available as a separate service."
+                    }
+                ]
             },
             "metaKeywords": {
-                "question": "Benötige ich noch Meta-Keywords für SEO?",
-                "answer": "<p>Nein, das Meta-Keywords-Tag wird von großen Suchmaschinen wie Google weitgehend ignoriert und das schon seit vielen Jahren. Wir konzentrieren uns auf das, was zählt: hochwertige Inhalte, aussagekräftige Meta-Titel und -Beschreibungen sowie eine starke Seitenstruktur.</p>"
+                "question": "Do I still need meta keywords for SEO?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "No, the meta keywords tag is largely ignored by major search engines like Google and has been for many years. We focus on what matters: high-quality content, descriptive meta titles and descriptions, and a strong site structure."
+                    }
+                ]
             },
             "accessibility": {
-                "question": "Warum ist die Barrierefreiheit von Websites (a11y) wichtig?",
-                "answer": "<p>Barrierefreiheit stellt sicher, dass Ihre Website von jedem genutzt werden kann, einschließlich Menschen mit Behinderungen. Es ist nicht nur das Richtige, sondern erweitert auch Ihr Publikum, verbessert das SEO und kann in einigen Regionen eine gesetzliche Anforderung sein.</p>"
+                "question": "Why is website accessibility (a11y) important?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Accessibility ensures that your website can be used by everyone, including people with disabilities. It's not only the right thing to do but also expands your audience, improves SEO, and can be a legal requirement in some regions."
+                    }
+                ]
             },
             "responsiveDesign": {
-                "question": "Wird meine Website auf mobilen Geräten funktionieren?",
-                "answer": "<p>Ja, absolut. Jede von mir erstellte Website verwendet responsives Design, was bedeutet, dass sie sich automatisch anpasst, um auf allen Geräten, von Desktops und Laptops bis hin zu Tablets und Smartphones, großartig auszusehen und perfekt zu funktionieren.</p>"
+                "question": "Will my website work on mobile devices?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Yes, absolutely. Every website I build uses responsive design, meaning it will automatically adapt to look great and function perfectly on all devices, from desktops and laptops to tablets and smartphones."
+                    }
+                ]
             }
         }
     },

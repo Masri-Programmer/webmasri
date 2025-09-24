@@ -45,7 +45,7 @@ const socialLinks = computed(() => [
     {
         name: 'GitHub',
         href: 'https://github.com/Masri-Programmer',
-        ariaLabel: t('footer.githubAriaLabel'), // NOTE: Add this translation key
+        ariaLabel: t('footer.githubAriaLabel'), 
         icon: Github,
         isSvg: false,
     },

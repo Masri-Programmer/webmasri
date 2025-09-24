@@ -1,12 +1,12 @@
 import '../css/app.css';
 
 import { createInertiaApp } from '@inertiajs/vue3';
+import { MotionPlugin } from '@vueuse/motion';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import type { DefineComponent } from 'vue';
 import { createApp, h } from 'vue';
 import { initializeTheme } from './composables/useAppearance';
 import i18n from './i18n';
-
 const appName = import.meta.env.VITE_APP_NAME || 'Masri Programmer';
 
 createInertiaApp({
@@ -16,6 +16,7 @@ createInertiaApp({
         createApp({ render: () => h(App, props) })
             .use(plugin)
             .use(i18n)
+            .use(MotionPlugin)
             .mount(el);
     },
     progress: {

@@ -5,15 +5,15 @@ import { Button } from '@/components/ui/button';
 import { faq } from '@/routes';
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
-const { t } = useI18n();
+const { t , tm} = useI18n();
 
 const summaryFaqKeys = ['projectFlow', 'costs', 'duration'];
 
 const faqs = computed(() =>
-    summaryFaqKeys.map((key) => ({
-        question: t(`faq.list.${key}.question`),
-        answer: t(`faq.list.${key}.answer`),
-    })),
+  summaryFaqKeys.map(key => ({
+    question: t(`faqSummary.list.${key}.question`),
+    answer: tm(`faqSummary.list.${key}.answer`),
+  }))
 );
 </script>
 

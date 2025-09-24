@@ -29,7 +29,16 @@
         }
         gtag('js', new Date());
         gtag('config', 'AW-17533527004');
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17533527004/yDPoCKWg0pQbENzH0ahB'
+        });
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17533527004/yDPoCKWg0pQbENzH0ahB'
+        });
     </script>
+
+    </script>
+
 
     {{-- Inline style to set the HTML background color based on our theme in app.css --}}
     <style>
