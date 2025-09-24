@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Title from '@/components/Title.vue';
 import Layout from '@/layouts/Layout.vue';
 import { privacyPolicy } from '@/routes';
 import { useI18n } from 'vue-i18n';
@@ -10,13 +11,9 @@ const sections = tm('privacyPolicy.sections');
 
 <template>
     <Layout :head="t('privacyPolicy.title')" :link="privacyPolicy.url()" :description="t('privacyPolicy.description')">
-        <div class="container mx-auto mt-12 max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-            <header class="border-b pb-4">
-                <h1 class="text-3xl font-bold tracking-tighter text-primary md:text-4xl">
-                    {{ t('privacyPolicy.title') }}
-                </h1>
-            </header>
-
+        <div class="read container mx-auto mt-12 max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+            <Title title="privacyPolicy.title" subtitle-key="privacyPolicy.description" tag="h1" align="left" />
+            <hr />
             <main class="prose dark:prose-invert mt-8 max-w-none space-y-8">
                 <section v-for="(section, key) in sections" :key="key">
                     <h2

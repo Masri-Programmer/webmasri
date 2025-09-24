@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Title from '@/components/Title.vue';
 import Layout from '@/layouts/Layout.vue';
 import { imprint } from '@/routes';
 import { useI18n } from 'vue-i18n';
@@ -8,11 +9,9 @@ const { t } = useI18n();
 
 <template>
     <Layout :head="t('imprint.title')" :link="imprint.url()" :description="t('imprint.subTitle')">
-        <div class="container mx-auto mt-12 max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="read container mx-auto mt-12 max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
             <header class="border-b pb-4">
-                <h1 class="text-3xl font-bold tracking-tighter text-primary md:text-4xl">
-                    {{ t('imprint.title') }}
-                </h1>
+                <Title title="imprint.title" tag="h1" align="left" />
             </header>
 
             <main class="mt-8 max-w-none">

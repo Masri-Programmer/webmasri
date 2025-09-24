@@ -17,6 +17,9 @@ const radius = 20;
 const circumference = 2 * Math.PI * radius;
 
 const scrollProgress = computed(() => {
+    // This line is the fix. It re-calculates dimensions on every scroll check.
+    updateScrollDimensions();
+
     const totalScrollable = scrollHeight.value - clientHeight.value;
     if (totalScrollable <= 0) return 0;
     const progress = (scrollY.value / totalScrollable) * 100;
@@ -37,6 +40,7 @@ const scrollToTop = () => {
 };
 
 const updateScrollDimensions = () => {
+    if (typeof document === 'undefined') return;
     scrollHeight.value = document.documentElement.scrollHeight;
     clientHeight.value = document.documentElement.clientHeight;
 };

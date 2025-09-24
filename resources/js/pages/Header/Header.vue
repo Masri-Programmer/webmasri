@@ -9,7 +9,7 @@
 
                 <!-- Center Section: Desktop Navigation -->
                 <div class="hidden lg:block">
-                    <DesktopNav :menu-sections="menuSections" :handle-scroll="handleScroll" />
+                    <DesktopNav :menu-sections="menuSections" />
                 </div>
 
                 <!-- Right Section: Actions & Mobile Menu -->
@@ -23,7 +23,7 @@
                         </div>
 
                         <!-- Mobile-only menu trigger -->
-                        <MobileNav v-model:is-sheet-open="isSheetOpen" :menu-sections="menuSections" :handle-scroll="handleScroll" />
+                        <MobileNav v-model:is-sheet-open="isSheetOpen" :menu-sections="menuSections" />
                     </div>
                 </div>
             </div>
@@ -32,12 +32,6 @@
 </template>
 
 <script setup lang="ts">
-import { navigationLinks } from '@/lib/navigation';
-import { contact, faq, imprint, pricing, privacyPolicy, termsConditions } from '@/routes';
-import type { AppPageProps } from '@/types';
-import { router, usePage } from '@inertiajs/vue3';
-import { nextTick, ref } from 'vue';
-
 import AppearanceIcon from '@/components/AppearanceIcon.vue';
 import CurrencySwitch from '@/components/CurrencySwitch.vue';
 import LanguageSwitch from '@/components/LanguageSwitch.vue';
@@ -45,55 +39,11 @@ import Brand from '@/pages/Header/Brand.vue';
 import DesktopNav from '@/pages/Header/DesktopNav.vue';
 import HeaderBtns from '@/pages/Header/HeaderBtns.vue';
 import MobileNav from '@/pages/Header/MobileNav.vue';
-
-const page = usePage();
-const customProps = page.props as AppPageProps;
+import { ref } from 'vue';
 
 const isSheetOpen = ref(false);
 
-const menuSections = [
-    {
-        value: 'item-1',
-        titleKey: 'navigation.home.title',
-        items: navigationLinks.map((link) => ({ ...link, type: 'scroll', target: link.id })),
-    },
-    {
-        value: 'item-2',
-        titleKey: 'navigation.legal.title',
-        items: [
-            { type: 'link', target: privacyPolicy, i18nKey: 'navigation.legal.privacy' },
-            { type: 'link', target: termsConditions, i18nKey: 'navigation.legal.terms' },
-            { type: 'link', target: imprint, i18nKey: 'navigation.legal.imprint' },
-        ],
-    },
-    {
-        value: 'item-3',
-        titleKey: 'navigation.pages',
-        items: [
-            { type: 'link', target: contact, i18nKey: 'navigation.contact' },
-            { type: 'external', target: 'https://masri.blog/Projects/Main', i18nKey: 'navigation.home.projects' },
-            { type: 'link', target: pricing, i18nKey: 'navigation.home.pricing' },
-            { type: 'link', target: faq, i18nKey: 'navigation.home.faq' },
-        ],
-    },
-];
-
-const handleScroll = (id: string) => {
-    if (typeof window === 'undefined') {
-        return;
-    }
-
-    isSheetOpen.value = false;
-
-    nextTick(() => {
-        if (page.url === '/') {
-            const element = document.getElementById(id);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        } else {
-            router.visit(`${customProps.app.url}/#${id}`);
-        }
-    });
-};
+defineProps<{
+    menuSections: Array<any>;
+}>();
 </script>

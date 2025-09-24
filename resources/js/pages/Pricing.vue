@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Title from '@/components/Title.vue';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -414,14 +415,7 @@ const categoryKeyMap: Record<string, string> = {
 <template>
     <Layout :head="t('pricing.title')" :link="pricing.url()" :description="t('pricing.description')">
         <section class="container mx-auto mt-8 max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-            <div class="mx-auto max-w-4xl text-center">
-                <h1 class="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-                    {{ t('pricing.title') }}
-                </h1>
-                <p class="mt-6 text-lg leading-relaxed text-muted-foreground">
-                    {{ t('pricing.description') }}
-                </p>
-            </div>
+            <Title title="pricing.title" subtitle-key="pricing.description" tag="h1" />
             <div class="mt-12 flex flex-wrap justify-center gap-3">
                 <Link v-for="(category, key) in pricingData" :key="key" :href="`/pricing/${urlSlugMap[key]}`" preserve-state preserve-scroll>
                     <Button :variant="props.initialCategory === key ? 'default' : 'outline'" class="relative" as="div">
@@ -599,10 +593,12 @@ const categoryKeyMap: Record<string, string> = {
                             </CardContent>
                         </Card>
                     </div>
-                    <div class="mt-12  max-w-5xl mx-auto flex items-center justify-center gap-2 rounded-lg border bg-accent/50 p-4 text-center text-sm text-muted-foreground">
-                      <Info class="h-5 w-5 flex-shrink-0" />
-                      <p>{{ t('pricingSummary.installmentsInfo') }}</p>
-                  </div>
+                    <div
+                        class="mx-auto mt-12 flex max-w-5xl items-center justify-center gap-2 rounded-lg border bg-accent/50 p-4 text-center text-sm text-muted-foreground"
+                    >
+                        <Info class="h-5 w-5 flex-shrink-0" />
+                        <p>{{ t('pricingSummary.installmentsInfo') }}</p>
+                    </div>
                 </div>
             </div>
         </section>

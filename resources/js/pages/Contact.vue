@@ -1,6 +1,7 @@
 <script setup lang="ts">
+import Title from '@/components/Title.vue';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
@@ -52,12 +53,7 @@ async function handleSubmit() {
         <div class="container mx-auto mt-8 max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
             <Card>
                 <CardHeader>
-                    <CardTitle class="text-3xl tracking-tighter">
-                        {{ t('contactForm.title') }}
-                    </CardTitle>
-                    <CardDescription>
-                        {{ t('contactForm.description') }}
-                    </CardDescription>
+                    <Title title="contactForm.title" subtitle-key="contactForm.description" tag="h1" />
                 </CardHeader>
                 <CardContent>
                     <form class="space-y-6" @submit.prevent="handleSubmit">

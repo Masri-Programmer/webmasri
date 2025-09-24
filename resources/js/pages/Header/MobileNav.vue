@@ -22,7 +22,6 @@
                                         v-for="item in section.items"
                                         :key="item.i18nKey"
                                         :item="item"
-                                        :handle-scroll="handleScroll"
                                         :on-navigate="closeSheet"
                                         context="mobile"
                                     />
@@ -30,7 +29,7 @@
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
-                    
+
                     <span class="flex items-center pt-4 text-muted-foreground">
                         {{ t('header.donationMessage') }}
                         <HandHeart class="mr-1.5 h-4 w-4 text-pink-500" />
@@ -49,21 +48,20 @@
 </template>
 
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n';
+import AppearanceIcon from '@/components/AppearanceIcon.vue';
+import AppLogoIcon from '@/components/AppLogoIcon.vue';
+import CurrencySwitch from '@/components/CurrencySwitch.vue';
+import LanguageSwitch from '@/components/LanguageSwitch.vue';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
-import { HandHeart, Menu } from 'lucide-vue-next';
-import AppearanceIcon from '@/components/AppearanceIcon.vue';
-import LanguageSwitch from '@/components/LanguageSwitch.vue';
-import CurrencySwitch from '@/components/CurrencySwitch.vue';
-import AppLogoIcon from '@/components/AppLogoIcon.vue';
 import NavItem from '@/pages/Header/NavItem.vue';
+import { HandHeart, Menu } from 'lucide-vue-next';
+import { useI18n } from 'vue-i18n';
 import DonationBtns from './DonationBtns.vue';
 
 defineProps<{
     menuSections: Array<any>;
-    handleScroll: (id: string) => void;
     isSheetOpen: boolean;
 }>();
 

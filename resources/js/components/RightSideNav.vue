@@ -1,18 +1,15 @@
 <script setup lang="ts">
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import { useScrollSpy } from '@/composables/useScrollSpy';
 import { navigationLinks } from '@/lib/navigation';
-import { AppPageProps } from '@/types';
-import { usePage } from '@inertiajs/vue3';
 import { onMounted, onUnmounted, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 
-const page = usePage();
-const customProps = page.props as AppPageProps;
 const { t } = useI18n();
 
-const activeSection = ref('hero');
-const isNavVisible = ref(false); // Initial state is `false` for SSR
-const isScrollingProgrammatically = ref(false);
+const isNavVisible = ref(false);
+
+const { activeSection, handleScroll } = useScrollSpy();
 
 const handleMouseMove = (event: MouseEvent) => {
     const threshold = 250;
@@ -21,48 +18,12 @@ const handleMouseMove = (event: MouseEvent) => {
     isNavVisible.value = clientX <= threshold || clientX >= windowWidth - threshold;
 };
 
-const handleScroll = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-        isScrollingProgrammatically.value = true;
-        activeSection.value = id;
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-        setTimeout(() => {
-            isScrollingProgrammatically.value = false;
-        }, 1000);
-    }
-};
-
-const observer = ref<IntersectionObserver | null>(null);
-
 onMounted(() => {
     window.addEventListener('mousemove', handleMouseMove);
-
-    const elements = navigationLinks.map(({ id }) => document.getElementById(id)).filter((el): el is HTMLElement => el !== null);
-
-    observer.value = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting && !isScrollingProgrammatically.value) {
-                    activeSection.value = entry.target.id;
-                }
-            });
-        },
-        {
-            rootMargin: '-50% 0px -50% 0px',
-            threshold: 0,
-        },
-    );
-
-    elements.forEach((el) => observer.value?.observe(el));
 });
 
 onUnmounted(() => {
     window.removeEventListener('mousemove', handleMouseMove);
-    if (observer.value) {
-        observer.value.disconnect();
-    }
 });
 </script>
 
@@ -103,6 +64,7 @@ onUnmounted(() => {
 </template>
 
 <style scoped>
+/* Styles remain the same */
 .nav-fade-enter-active,
 .nav-fade-leave-active {
     transition:
@@ -110,7 +72,6 @@ onUnmounted(() => {
         transform 0.4s ease;
 }
 
-/* Adjust transition for desktop (right side) */
 @media (min-width: 768px) {
     .nav-fade-enter-from,
     .nav-fade-leave-to {
@@ -119,7 +80,6 @@ onUnmounted(() => {
     }
 }
 
-/* Adjust transition for mobile (bottom) */
 @media (max-width: 767px) {
     .nav-fade-enter-from,
     .nav-fade-leave-to {

@@ -256,6 +256,34 @@
                     }
                 ]
             },
+            "technologiesUser": {
+                "question": "What technologies do I use?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "My work can include most of these technologies or tools"
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Frontend:",
+                            "React.js (inkl. Redux, Next.js), Vue.js (Vite)",
+                            "JavaScript & TypeScript (ES6+), JSX, HTMX",
+                            "HTML5, CSS3 (Tailwind, SASS, Bootstrap, LESS)",
+                            "Backend & Tools:",
+                            "Laravel, PHP (Yii2), Node.js / Express",
+                            "SQL-MYSQL, NoSQL-MongoDB, Postman",
+                            "NPM, Git/GitHub/Gitlab (inkl. Gitlab CI)",
+                            "Testing: Jest, Cypress (TDD-oriented testing)",
+                            "Linux-Dev-Stack: LAMP (Linux, Apache, MySQL, PHP) Einrichtung und Wartung"
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "From many years of experience, I can say that delays will almost always occur, and very often this is due to the delayed delivery of content or late feedback. As your project manager, I try to avoid this and am happy to serve as a 'reminder'. For large projects, it can help to bring in other service providers, such as a copywriter."
+                    }
+                ]
+            },
             "clientContribution": {
                 "question": "What should you as a client provide?",
                 "answer": [
@@ -282,16 +310,16 @@
                         "content": [
                             {
                                 "type": "text",
-                                "value": "I do not offer "
+                                "value": "I do offer "
                             },
                             {
                                 "type": "link",
-                                "href": "https://www.michael-hoemke.de/webdesign/aktuelles/meldungen/suche_hostingprovider.php",
+                                "href": "",
                                 "value": "hosting services"
                             },
                             {
                                 "type": "text",
-                                "value": " for my clients; specialized providers do that better, and for you as a customer, it is also more advantageous to separate hosting and online services. But of course, I am very happy to advise you and select a suitable hosting offer for you and support you, if necessary, with the booking."
+                                "value": " for my clients; and for you as a customer, it is also more advantageous to not separate hosting and online services. But of course, I am very happy to advise you and select a suitable hosting offer for you and support you, if necessary, with the booking."
                             }
                         ]
                     }
@@ -957,7 +985,7 @@
             },
             "hourlyRate": {
                 "title": "18. Current hourly rate",
-                "content": [{ "type": "p", "text": "The current hourly rate is 95.00 EUR / hour" }]
+                "content": [{ "type": "p", "text": "The current hourly rate is45.00 EUR / hour" }]
             }
         }
     },
@@ -1245,175 +1273,6 @@
             "securePayments": "Secure Payment Gateways",
             "inventorySystem": "Inventory Management",
             "customerAccounts": "Customer Accounts & Orders"
-        }
-    },
-    "faqSummary": {
-        "title": "Frequently Asked Questions",
-        "subtitle": "Have questions? We have answers. Here are a few common ones, or view them all.",
-        "viewAllButton": "View All FAQs",
-        "list": {
-            "projectFlow": {
-                "question": "What does the typical project flow look like?",
-                "answer": [
-                    {
-                        "type": "paragraph",
-                        "content": "Every project follows a structured path:"
-                    },
-                    {
-                        "type": "list",
-                        "items": [
-                            "Discovery & Strategy: We discuss your goals and requirements.",
-                            "Design: We create wireframes and mockups for your approval.",
-                            "Development: We bring the design to life with clean, efficient code.",
-                            "Launch: After thorough testing, we deploy your project.",
-                            "Support: We offer ongoing maintenance and support."
-                        ]
-                    }
-                ]
-            },
-            "selfMaintenance": {
-                "question": "Can I maintain the website myself after it's built?",
-                "answer": [
-                    {
-                        "type": "paragraph",
-                        "content": "Absolutely. Most websites are built on a Content Management System (CMS) that allows you to easily update content, images, and other elements without any coding knowledge. I provide training to ensure you're comfortable managing your new site."
-                    }
-                ]
-            },
-            "costs": {
-                "question": "How much does a new website or design project cost?",
-                "answer": [
-                    {
-                        "type": "paragraph",
-                        "content": "Costs vary depending on the scope, complexity, and features required. I provide a detailed, custom quote after an initial consultation to understand your specific needs. This ensures you only pay for what you need."
-                    }
-                ]
-            },
-            "newWebsiteNeeded": {
-                "question": "How do I know if I need a new website?",
-                "answer": [
-                    {
-                        "type": "paragraph",
-                        "content": "Consider a new website if your current site is not mobile-friendly, looks outdated, is slow to load, doesn't reflect your current brand, or isn't generating leads. A fresh site can significantly improve user experience and business results."
-                    }
-                ]
-            },
-            "ownershipWebsite": {
-                "question": "Who owns the website once it is completed?",
-                "answer": [
-                    {
-                        "type": "paragraph",
-                        "content": "You do. Upon final payment, you receive full ownership of the website files and assets. You will have complete control and access to your digital property."
-                    }
-                ]
-            },
-            "ownershipPrint": {
-                "question": "What about the rights to print materials like logos or brochures?",
-                "answer": [
-                    {
-                        "type": "paragraph",
-                        "content": "Similar to websites, you receive full ownership of the final design files (e.g., PDF, JPG, PNG) for any print materials upon project completion and final payment. Source files (e.g., Adobe Illustrator) can be provided upon request, sometimes for an additional fee."
-                    }
-                ]
-            },
-            "duration": {
-                "question": "How long will it take to complete my project?",
-                "answer": [
-                    {
-                        "type": "paragraph",
-                        "content": "A typical website project takes between 6 to 12 weeks from start to finish. The exact timeline depends on the project's complexity and the timeliness of feedback and content delivery from your side."
-                    }
-                ]
-            },
-            "brandWorkshop": {
-                "question": "What is a brand workshop and is it necessary?",
-                "answer": [
-                    {
-                        "type": "paragraph",
-                        "content": "A brand workshop is a collaborative session where we define your brand's core values, mission, target audience, and visual identity. It's highly recommended for new businesses or those undergoing a rebrand to ensure a consistent and effective brand strategy."
-                    }
-                ]
-            },
-            "whatSetsMeApart": {
-                "question": "What sets you apart from other developers and designers?",
-                "answer": [
-                    {
-                        "type": "paragraph",
-                        "content": "I combine strategic thinking with modern design and clean code. My focus is on creating solutions that are not only beautiful but also functional, user-friendly, and aligned with your business goals. I prioritize clear communication and a collaborative partnership."
-                    }
-                ]
-            },
-            "clientContribution": {
-                "question": "What do I need to provide to get started?",
-                "answer": [
-                    {
-                        "type": "paragraph",
-                        "content": "To start, you'll need to provide all the content for the website—this includes text, photos, and any specific branding guidelines you may have. The more prepared you are, the smoother the process will be."
-                    }
-                ]
-            },
-            "imageFormats": {
-                "question": "What image formats are best for the web?",
-                "answer": [
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            { "type": "text", "value": "For optimal performance and quality, we primarily use modern formats like " },
-                            { "type": "strong", "value": "WebP" },
-                            { "type": "text", "value": " or " },
-                            { "type": "strong", "value": "AVIF" },
-                            { "type": "text", "value": " for photos. For logos, icons, and graphics, " },
-                            { "type": "strong", "value": "SVG" },
-                            { "type": "text", "value": " is the best choice as it's scalable and crisp on all devices." }
-                        ]
-                    }
-                ]
-            },
-            "hostingProvider": {
-                "question": "Do I need a specific hosting provider?",
-                "answer": [
-                    {
-                        "type": "paragraph",
-                        "content": "While I can work with most hosting providers, I can recommend specific ones known for their performance, security, and customer support. I can also assist with setting up hosting and domain registration if needed."
-                    }
-                ]
-            },
-            "seoToDo": {
-                "question": "Is Search Engine Optimization (SEO) included?",
-                "answer": [
-                    {
-                        "type": "paragraph",
-                        "content": "Basic on-page SEO is included in all website projects. This means using best practices like semantic HTML, proper meta tags, image alt-text, and ensuring fast load times. Comprehensive, ongoing SEO strategies are available as a separate service."
-                    }
-                ]
-            },
-            "metaKeywords": {
-                "question": "Do I still need meta keywords for SEO?",
-                "answer": [
-                    {
-                        "type": "paragraph",
-                        "content": "No, the meta keywords tag is largely ignored by major search engines like Google and has been for many years. We focus on what matters: high-quality content, descriptive meta titles and descriptions, and a strong site structure."
-                    }
-                ]
-            },
-            "accessibility": {
-                "question": "Why is website accessibility (a11y) important?",
-                "answer": [
-                    {
-                        "type": "paragraph",
-                        "content": "Accessibility ensures that your website can be used by everyone, including people with disabilities. It's not only the right thing to do but also expands your audience, improves SEO, and can be a legal requirement in some regions."
-                    }
-                ]
-            },
-            "responsiveDesign": {
-                "question": "Will my website work on mobile devices?",
-                "answer": [
-                    {
-                        "type": "paragraph",
-                        "content": "Yes, absolutely. Every website I build uses responsive design, meaning it will automatically adapt to look great and function perfectly on all devices, from desktops and laptops to tablets and smartphones."
-                    }
-                ]
-            }
         }
     },
     "currencySwitcher": {

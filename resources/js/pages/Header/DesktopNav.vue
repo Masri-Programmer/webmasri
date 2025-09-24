@@ -3,17 +3,13 @@
         <NavigationMenu>
             <NavigationMenuList>
                 <NavigationMenuItem v-for="section in menuSections" :key="section.value">
-                    <NavigationMenuTrigger class="text-sm font-medium bg-transparent">
+                    <NavigationMenuTrigger class="bg-transparent text-sm font-medium">
                         {{ t(section.titleKey) }}
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
                         <ul class="grid w-[300px] gap-3 p-4 md:w-[400px] lg:w-[500px]">
                             <li v-for="item in section.items" :key="item.i18nKey" class="row-span-3">
-                                <NavItem
-                                    :item="item"
-                                    :handle-scroll="handleScroll"
-                                    context="desktop"
-                                />
+                                <NavItem :item="item" context="desktop" />
                             </li>
                         </ul>
                     </NavigationMenuContent>
@@ -24,7 +20,6 @@
 </template>
 
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n';
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -33,10 +28,10 @@ import {
     NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu';
 import NavItem from '@/pages/Header/NavItem.vue';
+import { useI18n } from 'vue-i18n';
 
 defineProps<{
     menuSections: Array<any>;
-    handleScroll: (id: string) => void;
 }>();
 
 const { t } = useI18n();

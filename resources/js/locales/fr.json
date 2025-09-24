@@ -93,71 +93,277 @@
     },
     "faq": {
         "title": "Foire Aux Questions",
-        "subtitle": "Vous avez des questions ? Nous avons les réponses. Voici quelques-unes des questions les plus fréquentes.",
+        "subtitle": "Vous avez des questions ? Nous avons les réponses. Voici quelques-unes des questions les plus fréquemment posées.",
         "list": {
             "projectFlow": {
-                "question": "Quel est le déroulement classique d'un projet pour un site web ou une boutique en ligne ?",
-                "answer": "<ul><li>Première prise de contact et description de votre projet par téléphone ou Zoom, détermination du périmètre des prestations</li><li>Vous recevrez une offre écrite de ma part</li><li>Si nécessaire, atelier de marque</li><li>Si nécessaire, conception de marque / logo</li><li>Conceptualisation comme base et définition de tous les paramètres nécessaires</li><li>Planification détaillée du design, du contenu, de la technologie et du calendrier</li><li>Adaptation technique et configuration du système de gestion de contenu (CMS) ou de la boutique en ligne</li><li>Création du design d'écran selon la charte graphique, les spécifications et les exemples</li><li>Validation du design d'écran</li><li>Optimisation responsive pour garantir un affichage optimal sur tous les appareils</li><li>Création / migration des données du contenu dans le CMS ou la boutique en ligne comme convenu</li><li>Acceptation du projet</li><li>Lancement — Votre projet est mis en ligne</li><li>Support et maintenance tels que les mises à jour, les ajustements et les <a href='https://www.michael-hoemke.de/webdesign/angebote/lokales_marketing.php' target='_blank' rel='noopener noreferrer'>mesures promotionnelles</a></li></ul><p>Nous définirons ensemble les prestations pertinentes pour vous lors de notre premier entretien, qui servira également de base à une offre en bonne et due forme.</p>"
+                "question": "Quel est le déroulement typique d'un projet pour un site web ou une boutique en ligne ?",
+                "answer": [
+                    {
+                        "type": "list",
+                        "items": [
+                            "Premier entretien et description de votre projet par téléphone ou Zoom, détermination de l'étendue des services",
+                            "Vous recevrez une offre écrite de ma part",
+                            "Si nécessaire, atelier sur la marque",
+                            "Si nécessaire, conception de la marque / du logo",
+                            "Conceptualisation comme base et définition de tous les paramètres nécessaires",
+                            "Planification détaillée du design, du contenu, de la technologie et du calendrier",
+                            "Adaptation technique et configuration du système de gestion de contenu (CMS) ou de la boutique en ligne",
+                            "Création du design d'écran basé sur l'identité visuelle, les spécifications et les exemples",
+                            "Examen et validation du design d'écran",
+                            "Optimisation responsive pour garantir un affichage optimal sur tous les appareils",
+                            "Création / migration des données du contenu dans le CMS ou la boutique en ligne comme convenu",
+                            "Réception du projet",
+                            "Lancement — Votre projet est mis en ligne",
+                            "Support et maintenance tels que les mises à jour, les ajustements et les activités promotionnelles"
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "Nous définirons ensemble lors de notre premier entretien les services pertinents pour vous, ce qui servira également de base à une offre en bonne et due forme."
+                    }
+                ]
             },
             "selfMaintenance": {
                 "question": "Pouvez-vous maintenir et développer vous-même votre site web ou votre boutique en ligne ?",
-                "answer": "<p>Vous pouvez maintenir et développer vous-même tout le contenu. Vous recevrez au préalable une formation approfondie de ma part. Pour les sites web, j'utilise Weblication © WordPress comme CMS, et pour les boutiques en ligne, Shopware, WooCommerce ou Gambio comme système de boutique, en fonction de la tâche. Si vous ne souhaitez pas vous occuper vous-même de la maintenance, je peux m'en charger en option, partiellement ou totalement.</p><p>Les sauvegardes et les mises à jour nécessitent un effort technique supplémentaire. Cela requiert une certaine expertise pour la plupart des systèmes et ne devrait donc de préférence pas être effectué de manière autonome. Je suis également heureux de prendre en charge cette tâche pour vous de manière régulière et rapide en option.</p>"
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Vous pouvez maintenir et développer vous-même tous les contenus. Vous recevrez au préalable une introduction complète de ma part. Pour les sites web, j'utilise Vue.js avec Laravel comme framework backend. Si vous ne souhaitez pas vous occuper vous-même de la maintenance, je peux éventuellement m'en charger partiellement ou entièrement pour vous."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "Les sauvegardes et les mises à jour nécessitent un effort technique supplémentaire. Cela requiert un certain niveau d'expertise pour la plupart des systèmes et ne devrait donc de préférence pas être effectué de manière autonome. Je suis également heureux de prendre en charge cette tâche pour vous régulièrement et rapidement en option."
+                    }
+                ]
             },
             "costs": {
                 "question": "Combien coûte un site web ou une boutique en ligne ?",
-                "answer": "<p>Le coût d'un site web ou d'une boutique en ligne dépend naturellement de l'ampleur du projet. Pour vous donner un aperçu pertinent, vous pouvez vous baser sur les valeurs empiriques suivantes :</p><ul><li>Page de destination (Onepager) avec Weblication : 200 euros - 2 800 euros</li><li>Site web : 600 euros à 5 000 euros</li><li>Boutique en ligne : 2 200 euros à 4 000 euros</li><li>Boutique en ligne avec CMS : 2 200 euros à 4 000 euros (incl. site web et blog)</li></ul>"
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Le coût d'un site web ou d'une boutique en ligne dépend naturellement de l'ampleur du projet. Pour vous donner un aperçu significatif, vous pouvez vous baser sur les valeurs empiriques suivantes :"
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Page de destination (Onepager) avec Weblication : 200 euros - 2 800 euros",
+                            "Site web : 600 euros à 5 000 euros",
+                            "Boutique en ligne : 2 200 euros à 4 000 euros",
+                            "Boutique en ligne avec CMS : 2 200 euros à 10 000 euros (incl. site web et blog)"
+                        ]
+                    }
+                ]
             },
             "newWebsiteNeeded": {
                 "question": "Avez-vous besoin d'un nouveau site web ou d'une nouvelle boutique en ligne ?",
-                "answer": "<p>Si votre site web ou votre boutique en ligne n'est plus à jour sur le plan technique et/ou visuel, la réponse à cette question est généralement simple. Mais même un nouveau site web ou une nouvelle boutique en ligne peut être réalisé en 'manquant le coche'. Les faiblesses classiques sont un design obsolète, un codage qui ne fonctionne plus sur différents appareils, des fonctionnalités ou une compatibilité manquantes, et des logiciels dépassés et non sécurisés. Si votre entreprise dépend de votre présence en ligne et que vous en vivez, il est hors de question de ne pas tout faire pour que cette partie importante fonctionne de manière optimale pour vous !</p>"
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Si votre site web ou votre boutique en ligne n'est plus à jour techniquement et/ou visuellement, la réponse à cette question est généralement simple. Mais même un nouveau site web ou une nouvelle boutique en ligne peut être réalisé 'à côté de la plaque'. Les faiblesses classiques sont un design dépassé, un codage qui ne fonctionne plus sur différents appareils, des fonctionnalités ou une compatibilité manquantes, et des logiciels obsolètes et non sécurisés. Si votre activité dépend de votre présence en ligne et que vous en vivez, il ne fait aucun doute que vous devez faire tout votre possible pour que cette partie importante fonctionne de manière optimale pour vous !"
+                    }
+                ]
             },
             "ownershipWebsite": {
                 "question": "Le site web ou la boutique en ligne est-il votre propriété ?",
-                "answer": "<p>Les sites web et les boutiques en ligne que je développe vous appartiennent. Si, pour une raison quelconque, cela s'avère nécessaire, vous pouvez facilement passer à un autre fournisseur. Avec d'autres fournisseurs ou des systèmes modulaires rigides, vous êtes souvent dépendant du fournisseur respectif et pourriez devoir faire créer un site web ou une boutique en ligne entièrement nouveau en cas de changement. Tous les graphiques vous seront fournis sur demande, sous réserve des droits, et les domaines et logiciels éventuellement nécessaires seront acquis en votre nom.</p>"
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Les sites web et boutiques en ligne que je développe vous appartiennent. Si, pour une raison quelconque, cela s'avérait nécessaire, vous pouvez facilement migrer vers un autre prestataire. Avec d'autres fournisseurs ou des systèmes modulaires rigides, vous êtes souvent dépendant du prestataire respectif et pourriez devoir faire créer un site web ou une boutique en ligne entièrement nouveau en cas de changement. Tous les graphiques seront mis à votre disposition sur demande, sous réserve que les droits le permettent, et tous les domaines et logiciels nécessaires seront acquis à votre nom."
+                    }
+                ]
             },
             "ownershipPrint": {
                 "question": "La publicité imprimée créée est-elle votre propriété ?",
-                "answer": "<p>Pour toutes les maquettes finales / modèles d'impression que je crée, vous recevrez de ma part un droit d'utilisation illimité dans l'espace et le temps pour votre entreprise.</p>"
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Pour toutes les maquettes finales / modèles d'impression que je crée, vous recevrez de ma part un droit d'utilisation illimité dans l'espace et dans le temps pour votre entreprise."
+                    }
+                ]
             },
             "duration": {
                 "question": "Combien de temps faut-il pour que tout soit terminé ?",
-                "answer": "<p>Vous pouvez probablement déjà deviner la réponse : cela dépend de l'ampleur et de ma charge de travail. Pour vous donner néanmoins quelques jalons, voici une estimation approximative :</p><ul><li>Petit site web : env. 1 mois</li><li>Site web classique pour une entreprise : env. 2 mois</li><li>Petite boutique en ligne : env. 2 mois</li><li>Boutique en ligne complète : env. 6 mois</li><li>Une conception de marque / logo : env. 1 mois</li></ul><p>Fort de nombreuses années d'expérience, je peux dire que des retards surviendront presque toujours, et très souvent, cela est dû à la livraison tardive de contenu ou à des retours tardifs. En tant que votre chef de projet, j'essaie d'éviter cela et je sers volontiers de 'rappel'. Pour les grands projets, il peut être utile de faire appel à d'autres prestataires, comme un rédacteur.</p>"
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Vous pouvez probablement déjà deviner la réponse : cela dépend de l'ampleur du projet et de ma charge de travail. Pour vous donner néanmoins quelques points de repère, voici une estimation approximative :"
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Petit site web : env. 1 mois",
+                            "Site web classique pour une entreprise : env. 2 mois",
+                            "Petite boutique en ligne : env. 2 mois",
+                            "Boutique en ligne complète : env. 6 mois",
+                            "Un design de marque / logo : env. 1 mois"
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "D'après de nombreuses années d'expérience, je peux dire que des retards se produiront presque toujours, et très souvent, cela est dû à la livraison tardive de contenu ou à des retours tardifs. En tant que votre chef de projet, j'essaie d'éviter cela et je suis heureux de servir de 'rappel'. Pour les grands projets, il peut être utile de faire appel à d'autres prestataires de services, comme un rédacteur."
+                    }
+                ]
             },
             "brandWorkshop": {
-                "question": "Pourquoi un atelier de marque est-il utile ?",
-                "answer": "<p>L'atelier de marque s'adresse aux clients qui n'ont pas encore de distinction concrète pour leur marque et/ou leurs produits ou qui souhaitent optimiser un design de marque existant. Votre succès réside dans la communication de vos avantages, c'est pourquoi nous élaborons ensemble votre concept de marque comme base pour toutes les solutions ultérieures.</p>"
+                "question": "Pourquoi un atelier sur la marque est-il utile ?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "L'atelier sur la marque s'adresse aux clients qui n'ont pas encore de distinction concrète pour leur marque et/ou leurs produits ou qui souhaitent optimiser un design de marque existant. Votre succès réside dans la communication de vos avantages, c'est pourquoi nous développons ensemble votre concept de marque comme base pour toutes les solutions futures."
+                    }
+                ]
             },
             "whatSetsMeApart": {
                 "question": "Qu'est-ce qui distingue mon travail ?",
-                "answer": "<p>Il existe de nombreuses offres sur le marché — pourquoi pourriez-vous me choisir ? J'ai plus de 25 ans d'expérience dans de nombreux projets très variés et j'offre à mes clients un choix de 2 CMS et 3 boutiques en ligne. L'avantage pour vous est une connaissance approfondie et une grande capacité à résoudre les problèmes. J'ai vécu toutes les situations imaginables dans des projets, j'ai vu de nombreuses tendances apparaître et disparaître, et je sais ce qui fonctionne et ce qui ne fonctionne pas. Cela rend très adaptable, également pour les exigences futures.</p><p>Pour savoir si nous sommes compatibles, vous pouvez vous faire une première idée grâce à mon offre, mes références et mon blog, que nous pourrons ensuite affiner lors d'un entretien personnel – je serais ravi.</p>"
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Il existe de nombreuses offres sur le marché — pourquoi pourriez-vous me choisir ? J'ai plus de 5 ans d'expérience dans de nombreux projets différents et j'offre à mes clients un choix de 2 CMS et 3 boutiques en ligne. L'avantage pour vous est une connaissance approfondie et une grande capacité à résoudre les problèmes. J'ai vécu toutes les situations imaginables dans des projets, j'ai vu de nombreuses tendances apparaître et disparaître, et je sais ce qui fonctionne et ce qui ne fonctionne pas. Cela rend très adaptable, également pour les exigences futures."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "Pour savoir si nous sommes compatibles, vous pouvez vous faire une première impression grâce à mon offre, mes références et mon blog, que nous pourrons ensuite affiner lors d'un entretien personnel – j'en serais ravi."
+                    }
+                ]
+            },
+            "technologiesUser": {
+                "question": "Quelles technologies j'utilise ?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Mon travail peut inclure la plupart de ces technologies ou outils"
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Frontend :",
+                            "React.js (incl. Redux, Next.js), Vue.js (Vite)",
+                            "JavaScript & TypeScript (ES6+), JSX, HTMX",
+                            "HTML5, CSS3 (Tailwind, SASS, Bootstrap, LESS)",
+                            "Backend & Outils :",
+                            "Laravel, PHP (Yii2), Node.js / Express",
+                            "SQL-MYSQL, NoSQL-MongoDB, Postman",
+                            "NPM, Git/GitHub/Gitlab (incl. Gitlab CI)",
+                            "Tests : Jest, Cypress (tests orientés TDD)",
+                            "Stack de développement Linux : LAMP (Linux, Apache, MySQL, PHP) installation et maintenance"
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "D'après de nombreuses années d'expérience, je peux dire que des retards se produiront presque toujours, et très souvent, cela est dû à la livraison tardive de contenu ou à des retours tardifs. En tant que votre chef de projet, j'essaie d'éviter cela et je suis heureux de servir de 'rappel'. Pour les grands projets, il peut être utile de faire appel à d'autres prestataires de services, comme un rédacteur."
+                    }
+                ]
             },
             "clientContribution": {
                 "question": "Que devez-vous fournir en tant que client ?",
-                "answer": "<p>C'est avant tout votre projet, qui a un impact majeur sur l'avenir de votre entreprise. Prévoyez donc suffisamment de temps pour cela. Votre collaboration est nécessaire pour les retours, le contenu et la coopération future, et est souvent sous-estimée. Par exemple, avec les boutiques en ligne avec Wawi/ERP, un temps considérable peut être nécessaire pour la coordination et la collecte de données.</p>"
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "C'est avant tout votre projet, qui a un impact majeur sur l'avenir de votre entreprise. Prévoyez donc suffisamment de temps pour cela. Votre coopération est nécessaire pour les retours, le contenu et la collaboration future, et elle est souvent sous-estimée. Par exemple, avec des boutiques en ligne avec Wawi/ERP, un temps considérable peut être nécessaire pour la coordination et la collecte de données."
+                    }
+                ]
             },
             "imageFormats": {
                 "question": "Dans quels formats les images pour le site web et la boutique en ligne doivent-elles être livrées ?",
-                "answer": "<p>Les motifs photo (paysages, personnes, etc.) en .jpg, les motifs détourés en .webp, et les motifs avec beaucoup de texte ou de lignes en .gif ou .webp. Les logos si possible en .svg ou .eps. Tous les motifs d'image de préférence en format large avec une largeur d'environ 1800px.</p>"
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Les motifs photo (paysages, personnes, etc.) s'il vous plaît en .jpg, les motifs détourés en .webp, et les motifs avec beaucoup de texte ou de lignes en .gif ou .webp. Les logos si possible en .svg ou .eps. Tous les motifs d'image de préférence en format large avec une largeur d'environ 1800px."
+                    }
+                ]
             },
             "hostingProvider": {
                 "question": "Comment trouver un hébergeur approprié ?",
-                "answer": "<p>Je ne propose pas de <a href='https://www.michael-hoemke.de/webdesign/aktuelles/meldungen/suche_hostingprovider.php' target='_blank' rel='noopener noreferrer'>services d'hébergement</a> à mes clients ; les fournisseurs spécialisés le font mieux, et pour vous en tant que client, il est également plus avantageux de séparer l'hébergement et les services en ligne. Mais bien sûr, je suis très heureux de vous conseiller et de sélectionner une offre d'hébergement adaptée pour vous et de vous aider, si nécessaire, lors de la réservation.</p>"
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "value": "Je propose des "
+                            },
+                            {
+                                "type": "link",
+                                "href": "",
+                                "value": "services d'hébergement"
+                            },
+                            {
+                                "type": "text",
+                                "value": " pour mes clients ; et pour vous en tant que client, il est également plus avantageux de ne pas séparer l'hébergement et les services en ligne. Mais bien sûr, je suis très heureux de vous conseiller, de sélectionner une offre d'hébergement adaptée pour vous et de vous assister, si nécessaire, lors de la réservation."
+                            }
+                        ]
+                    }
+                ]
             },
             "seoToDo": {
                 "question": "Que devez-vous faire pour le SEO ?",
-                "answer": "<p>Les sites web et les boutiques en ligne pour mes clients sont fondamentalement optimisés pour le SEO. Avec un contenu suffisamment bien rédigé et structuré, vous pouvez continuellement optimiser votre SEO. À tout moment, vous pouvez recevoir de l'aide et des conseils précieux de ma part si nécessaire ou bénéficier de services supplémentaires.</p>"
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Les sites web et les boutiques en ligne pour mes clients sont fondamentalement optimisés pour le SEO. Avec un contenu suffisamment bien rédigé et structuré, vous pouvez optimiser continuellement votre SEO. À tout moment, vous pouvez recevoir de l'aide et des conseils précieux de ma part si nécessaire ou profiter de services supplémentaires."
+                    }
+                ]
             },
             "metaKeywords": {
                 "question": "Dois-je maintenir les <meta keywords> ?",
-                "answer": "<p>Parce qu'on me le demande de temps en temps : Non ! La balise méta 'keywords' n'est plus pertinente pour le classement dans la recherche Google depuis 2009.</p>"
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "Parce qu'on me le demande de temps en temps : Non ! La balise méta 'keywords' n'est plus pertinente pour le classement dans la recherche Google depuis 2009."
+                    }
+                ]
             },
             "accessibility": {
-                "question": "Que devez-vous prendre en compte concernant l'accessibilité ?",
-                "answer": "<p>L'<a href='https://www.barrierefreiheit-dienstekonsolidierung.bund.de/Webs/PB/DE/gesetze-und-richtlinien/barrierefreiheitsstaerkungsgesetz/barrierefreiheitsstaerkungsgesetz-node.html' target='_blank' rel='noopener noreferrer'>Acte Européen sur l'Accessibilité (EAA)</a> exige que de nombreuses entreprises soient numériquement accessibles d'ici 2025. Mais cela s'applique-t-il spécifiquement à votre entreprise ?</p><p>*La législation stipule que les entreprises qui proposent des biens ou des services aux consommateurs et aux utilisateurs finaux, qui ont un chiffre d'affaires total de plus de 2 millions / an et au moins 10 employés, doivent absolument rendre leurs sites web accessibles à partir du 28 juin 2025.</p><p>*La conclusion inverse est donc la suivante : les entreprises qui proposent leurs biens ou services exclusivement en B2B ou qui ont un chiffre d'affaires total maximum de 2 millions / an et moins de 10 employés sont exemptées des nouvelles réglementations.</p><p>En principe, cependant, les sites web et les boutiques en ligne devraient être conçus pour être aussi accessibles ou à faible barrière que possible. Cela a du sens ne serait-ce que pour des raisons économiques. Un site web accessible va de pair avec une meilleure expérience utilisateur et peut donc augmenter le taux de conversion. Je serais heureux de vous conseiller plus en détail sur ce sujet.</p><p><small>*Toutes les déclarations sans garantie légale.</small></p>"
+                "question": "Que faut-il prendre en compte concernant l'accessibilité ?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "value": "La "
+                            },
+                            {
+                                "type": "link",
+                                "href": "https://www.barrierefreiheit-dienstekonsolidierung.bund.de/Webs/PB/DE/gesetze-und-richtlinien/barrierefreiheitsstaerkungsgesetz/barrierefreiheitsstaerkungsgesetz-node.html",
+                                "value": "loi européenne sur l'accessibilité (EAA)"
+                            },
+                            {
+                                "type": "text",
+                                "value": " exige que de nombreuses entreprises soient numériquement accessibles d'ici 2025. Mais cela s'applique-t-il spécifiquement à votre entreprise ?"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "*La législation stipule que les entreprises qui proposent des biens ou des services aux consommateurs et utilisateurs finaux, réalisent un chiffre d'affaires total de plus de 2 millions par an et emploient au moins 10 personnes, doivent impérativement rendre leurs sites web accessibles à partir du 28 juin 2025."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "*La conclusion inverse est : les entreprises qui proposent leurs biens ou services exclusivement en B2B ou qui ont un chiffre d'affaires total maximum de 2 millions par an et moins de 10 employés sont exemptées des nouvelles réglementations."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "En principe, cependant, les sites web et les boutiques en ligne devraient être conçus pour être aussi accessibles ou sans obstacles que possible. Cela est judicieux ne serait-ce que pour des raisons économiques. Un site web accessible va de pair avec une meilleure expérience utilisateur et peut ainsi augmenter le taux de conversion. Je serais heureux de vous conseiller plus en détail sur ce sujet."
+                    },
+                    {
+                        "type": "small",
+                        "content": "*Toutes les déclarations sont sans garantie légale."
+                    }
+                ]
             },
             "responsiveDesign": {
-                "question": "Mes sites web et boutiques en ligne fonctionnent-ils également sur les appareils mobiles (responsive) ?",
-                "answer": "<p>En fait, il est depuis longtemps évident que les sites web et les boutiques en ligne fonctionnent aussi bien sur les appareils mobiles que sur les appareils fixes (ordinateurs de bureau) ou les ordinatefusibles avec des écrans plus grands, et bien sûr, c'est également le cas pour les projets que je gère.</p><p>Ici aussi, il y a des différences de qualité : une adaptation automatique à l'appareil utilisé peut être conçue à l'aide de 'points de rupture', puis elle passe à une autre vue exactement à partir de ce point et pour cette classe d'appareils, ou elle peut être conçue de manière 'fluide'. 'Fluide' signifie ici que les adaptations indépendantes de l'appareil sont également prises en compte, par exemple pour différentes tailles de fenêtre sur un ordinateur de bureau. Cela réduit les erreurs d'affichage disgracieuses même sur les grands écrans, car personne ne sait à quelle taille la fenêtre du navigateur y est utilisée.</p>"
+                "question": "Mes sites web et boutiques en ligne fonctionnent-ils aussi sur les appareils mobiles (responsive) ?",
+                "answer": [
+                    {
+                        "type": "paragraph",
+                        "content": "En réalité, il va de soi depuis longtemps que les sites web et les boutiques en ligne fonctionnent aussi bien sur les appareils mobiles que sur les appareils fixes (ordinateurs de bureau) ou les ordinateuls portables avec de plus grands écrans, et bien sûr, c'est également le cas pour les projets que je gère."
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": "Ici aussi, il existe des différences de qualité : une adaptation automatique à l'appareil utilisé peut être conçue à l'aide de 'points de rupture' (breakpoints), elle bascule alors vers une vue différente exactement à partir de ce point et pour cette classe d'appareils, ou elle peut être conçue pour être 'fluide'. 'Fluide' signifie ici que les ajustements indépendants de l'appareil sont également pris en compte, par exemple pour différentes tailles de fenêtre sur un ordinateur de bureau. Cela entraîne moins d'erreurs d'affichage disgracieuses même sur de plus grands écrans, car personne ne sait à quelle taille la fenêtre du navigateur est utilisée."
+                    }
+                ]
             }
         }
     },
@@ -779,7 +985,7 @@
                 "content": [
                     {
                         "type": "p",
-                        "text": "Le taux horaire actuel est de 95,00 EUR / heure"
+                        "text": "Le taux horaire actuel est de45,00 EUR / heure"
                     }
                 ]
             }
@@ -1069,77 +1275,6 @@
             "securePayments": "Passerelles de paiement sécurisées",
             "inventorySystem": "Gestion des stocks",
             "customerAccounts": "Comptes clients et commandes"
-        }
-    },
-    "faqSummary": {
-        "title": "Foire Aux Questions",
-        "subtitle": "Vous avez des questions ? Nous avons des réponses. Voici quelques-unes des plus courantes, ou consultez-les toutes.",
-        "viewAllButton": "Voir toutes les FAQ",
-        "list": {
-            "projectFlow": {
-                "question": "À quoi ressemble le déroulement typique d'un projet ?",
-                "answer": "<p>Chaque projet suit un parcours structuré : <br>1. <strong>Découverte & Stratégie :</strong> Nous discutons de vos objectifs et de vos exigences. <br>2. <strong>Conception :</strong> Nous créons des wireframes et des maquettes pour votre approbation. <br>3. <strong>Développement :</strong> Nous donnons vie au design avec un code propre et efficace. <br>4. <strong>Lancement :</strong> Après des tests approfondis, nous déployons votre projet. <br>5. <strong>Support :</strong> Nous offrons une maintenance et un support continus.</p>"
-            },
-            "selfMaintenance": {
-                "question": "Puis-je maintenir le site web moi-même après sa création ?",
-                "answer": "<p>Absolument. La plupart des sites web sont construits sur un système de gestion de contenu (CMS) qui vous permet de mettre à jour facilement le contenu, les images et d'autres éléments sans aucune connaissance en codage. Je fournis une formation pour m'assurer que vous êtes à l'aise pour gérer votre nouveau site.</p>"
-            },
-            "costs": {
-                "question": "Combien coûte un nouveau site web ou un projet de design ?",
-                "answer": "<p>Les coûts varient en fonction de la portée, de la complexité et des fonctionnalités requises. Je fournis un devis détaillé et personnalisé après une première consultation pour comprendre vos besoins spécifiques. Cela garantit que vous ne payez que pour ce dont vous avez besoin.</p>"
-            },
-            "newWebsiteNeeded": {
-                "question": "Comment savoir si j'ai besoin d'un nouveau site web ?",
-                "answer": "<p>Envisagez un nouveau site web si votre site actuel n'est pas adapté aux mobiles, a l'air démodé, est lent à charger, ne reflète pas votre marque actuelle ou ne génère pas de prospects. Un site rafraîchi peut améliorer considérablement l'expérience utilisateur et les résultats commerciaux.</p>"
-            },
-            "ownershipWebsite": {
-                "question": "À qui appartient le site web une fois terminé ?",
-                "answer": "<p>À vous. Lors du paiement final, vous recevez la pleine propriété des fichiers et des actifs du site web. Vous aurez un contrôle et un accès complets à votre propriété numérique.</p>"
-            },
-            "ownershipPrint": {
-                "question": "Qu'en est-il des droits sur les supports imprimés comme les logos ou les brochures ?",
-                "answer": "<p>Comme pour les sites web, vous recevez la pleine propriété des fichiers de conception finaux (par exemple, PDF, JPG, PNG) pour tous les supports imprimés à l'achèvement du projet et au paiement final. Les fichiers sources (par exemple, Adobe Illustrator) peuvent être fournis sur demande, parfois moyennant des frais supplémentaires.</p>"
-            },
-            "duration": {
-                "question": "Combien de temps faudra-t-il pour terminer mon projet ?",
-                "answer": "<p>Un projet de site web typique prend entre 6 et 12 semaines du début à la fin. Le calendrier exact dépend de la complexité du projet et de la ponctualité des retours et de la livraison du contenu de votre part.</p>"
-            },
-            "brandWorkshop": {
-                "question": "Qu'est-ce qu'un atelier de marque et est-ce nécessaire ?",
-                "answer": "<p>Un atelier de marque est une session collaborative où nous définissons les valeurs fondamentales, la mission, le public cible et l'identité visuelle de votre marque. Il est fortement recommandé pour les nouvelles entreprises ou celles qui procèdent à un rebranding afin d'assurer une stratégie de marque cohérente et efficace.</p>"
-            },
-            "whatSetsMeApart": {
-                "question": "Qu'est-ce qui vous distingue des autres développeurs et designers ?",
-                "answer": "<p>Je combine la pensée stratégique avec un design moderne et un code propre. Mon objectif est de créer des solutions qui ne sont pas seulement belles, mais aussi fonctionnelles, conviviales et alignées sur vos objectifs commerciaux. Je privilégie une communication claire et un partenariat collaboratif.</p>"
-            },
-            "clientContribution": {
-                "question": "Que dois-je fournir pour commencer ?",
-                "answer": "<p>Pour commencer, vous devrez fournir tout le contenu du site web — cela inclut les textes, les photos et toutes les directives de marque spécifiques que vous pourriez avoir. Mieux vous serez préparé, plus le processus se déroulera sans heurts.</p>"
-            },
-            "imageFormats": {
-                "question": "Quels formats d'image sont les meilleurs pour le web ?",
-                "answer": "<p>Pour des performances et une qualité optimales, nous utilisons principalement des formats modernes comme <strong>WebP</strong> ou <strong>AVIF</strong> pour les photos. Pour les logos, les icônes et les graphiques, le <strong>SVG</strong> est le meilleur choix car il est adaptable et net sur tous les appareils.</p>"
-            },
-            "hostingProvider": {
-                "question": "Ai-je besoin d'un hébergeur spécifique ?",
-                "answer": "<p>Bien que je puisse travailler avec la plupart des hébergeurs, je peux en recommander certains connus pour leurs performances, leur sécurité et leur support client. Je peux également vous aider à configurer l'hébergement et l'enregistrement du nom de domaine si nécessaire.</p>"
-            },
-            "seoToDo": {
-                "question": "L'optimisation pour les moteurs de recherche (SEO) est-elle incluse ?",
-                "answer": "<p>Le SEO de base sur la page est inclus dans tous les projets de site web. Cela signifie utiliser les meilleures pratiques comme le HTML sémantique, les balises méta appropriées, le texte alternatif des images et garantir des temps de chargement rapides. Des stratégies de SEO complètes et continues sont disponibles en tant que service distinct.</p>"
-            },
-            "metaKeywords": {
-                "question": "Ai-je encore besoin de méta-mots-clés pour le SEO ?",
-                "answer": "<p>Non, la balise méta-mots-clés est largement ignorée par les principaux moteurs de recherche comme Google et ce, depuis de nombreuses années. Nous nous concentrons sur ce qui compte : un contenu de haute qualité, des titres et des descriptions méta descriptifs, et une structure de site solide.</p>"
-            },
-            "accessibility": {
-                "question": "Pourquoi l'accessibilité des sites web (a11y) est-elle importante ?",
-                "answer": "<p>L'accessibilité garantit que votre site web peut être utilisé par tout le monde, y compris les personnes handicapées. Ce n'est pas seulement la bonne chose à faire, mais cela élargit également votre public, améliore le SEO et peut être une exigence légale dans certaines régions.</p>"
-            },
-            "responsiveDesign": {
-                "question": "Mon site web fonctionnera-t-il sur les appareils mobiles ?",
-                "answer": "<p>Oui, absolument. Chaque site web que je construis utilise un design réactif, ce qui signifie qu'il s'adaptera automatiquement pour avoir une belle apparence et fonctionner parfaitement sur tous les appareils, des ordinateurs de bureau et portables aux tablettes et smartphones.</p>"
-            }
         }
     },
     "currencySwitcher": {
