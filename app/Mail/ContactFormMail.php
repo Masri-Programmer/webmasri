@@ -40,8 +40,15 @@ class ContactFormMail extends Mailable
     {
         return new Envelope(
             // from: new Address($this->formData['email'], $this->formData['name']),
+            from: 'hallo@masri-programmer.de',
+            to: [
+                new Address('hallo@masri-programmer.de', $this->formData['name']),
+            ],
+            // replyTo: [
+            //     new Address($this->formData['email'], $this->formData['name']),
+            // ],
             replyTo: [
-                new Address($this->formData['email'], $this->formData['name']),
+                new Address('hallo@masri-programmer.de', $this->formData['name']),
             ],
             subject: 'New Contact Form Submission from' . $this->formData['name'],
         );
