@@ -20,15 +20,16 @@ const form = reactive({
     email: '',
     message: '',
 });
-
 const { isFetching, execute } = useFetch(contact.url(), {
     immediate: false,
     afterFetch: (ctx) => {
-        if (ctx.data && ctx.response?.ok) {
+        if (ctx.response && ctx.response.ok) {
             toast.success(t('contactForm.success'));
             form.name = '';
             form.email = '';
             form.message = '';
+        } else if (ctx.response) {
+            toast.error(t('contactForm.error'));
         }
         return ctx;
     },
@@ -44,7 +45,7 @@ async function handleSubmit() {
         return;
     }
 
-    await execute(form as any);
+    await execute();
 }
 </script>
 
