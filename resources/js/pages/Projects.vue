@@ -16,7 +16,9 @@
                 align: 'start',
                 loop: true,
             }"
-            role="region" aria-roledescription="carousel" tabindex="0"
+            role="region"
+            aria-roledescription="carousel"
+            tabindex="0"
         >
             <CarouselContent class="mt-12 -ml-2 md:-ml-4">
                 <CarouselItem v-for="project in cardData" :key="project.title" class="pl-2 md:basis-1/2 md:pl-4 lg:basis-1/3 xl:basis-1/4">
@@ -67,31 +69,31 @@
 <script setup lang="ts">
 import { Card, CardContent } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import hk from '@/images/hk-energieberatung.de.webp';
-import masriBlog from '@/images/masriblog.webp';
-import piepjack from '@/images/piepjack.webp';
-import tracker from '@/images/tracker.webp';
-import flyerheaven from '@/images/www.flyerheaven.de_deine-bueroartikel.html.webp';
-import gameacademy from '@/images/new.gameacademy.ngo_home.webp';
-import meomedia from '@/images/meomedia.webp';
-import propackstore from '@/images/propackstore.org_home.webp';
-import ultradyJ1wGAp from '@/images/ultra-dyJ1wGAp.webp';
-import flyerheavenShop from '@/images/flyerheaven.webp';
-import schooltube from '@/images/schooltube.webp';
-import modernBank from '@/images/modernBank.webp';
-import slim from '@/images/slim.webp';
-import medeva from '@/images/medeva.webp';
 import agt from '@/images/agt.webp';
 import beeflex from '@/images/beeflex.webp';
 import carrental from '@/images/carrental.webp';
-import portfolio from '@/images/portfolio.webp';
-import openai from '@/images/openai.webp';
-import finedining from '@/images/finedining.webp';
-import tasty from '@/images/tasty.webp';
 import eshoppers from '@/images/eshoppers.webp';
+import finedining from '@/images/finedining.webp';
+import flyerheavenShop from '@/images/flyerheaven.webp';
+import hk from '@/images/hk-energieberatung.de.webp';
+import masriBlog from '@/images/masriblog.webp';
+import medeva from '@/images/medeva.webp';
+import meomedia from '@/images/meomedia.webp';
+import modernBank from '@/images/modernBank.webp';
+import gameacademy from '@/images/new.gameacademy.ngo_home.webp';
+import openai from '@/images/openai.webp';
+import piepjack from '@/images/piepjack.webp';
+import portfolio from '@/images/portfolio.webp';
+import propackstore from '@/images/propackstore.org_home.webp';
+import schooltube from '@/images/schooltube.webp';
+import slim from '@/images/slim.webp';
+import tasty from '@/images/tasty.webp';
+import tracker from '@/images/tracker.webp';
+import ultradyJ1wGAp from '@/images/ultra-dyJ1wGAp.webp';
+import flyerheaven from '@/images/www.flyerheaven.de_deine-bueroartikel.html.webp';
 import Autoplay from 'embla-carousel-autoplay';
 import { useI18n } from 'vue-i18n';
-const {t} = useI18n();
+const { t } = useI18n();
 
 const cardData = [
     {
@@ -142,7 +144,7 @@ const cardData = [
     {
         title: 'Amazon Pages',
         badge: 'Advertising',
-        image: flyerheaven, 
+        image: flyerheaven,
         description: 'Custom landing pages and advertisements for the Amazon platform.',
         tags: ['Amazon', 'Ads', 'E-commerce'],
         date: '2024',
@@ -151,7 +153,7 @@ const cardData = [
     {
         title: 'Gameacademy',
         badge: 'NGO',
-        image:gameacademy,
+        image: gameacademy,
         description: 'An NGO platform for training and blogging in the gaming sector.',
         tags: ['Gaming', 'Training', 'Blog'],
         date: '2023',
@@ -173,7 +175,7 @@ const cardData = [
         description: 'A fully-featured e-commerce site for various products.',
         tags: ['Retail', 'Online Store', 'Sales'],
         date: '2023',
-        link: 'ultrastore.me',
+        link: 'http://ultrastore.me',
     },
     {
         title: 'Flyerheaven',
@@ -232,7 +234,7 @@ const cardData = [
     {
         title: 'Petite Restaurant',
         badge: 'Restaurant',
-        image:finedining,
+        image: finedining,
         description: 'An elegant website for a fine dining restaurant, showcasing its food and menu.',
         tags: ['Food', 'Restaurant', 'Menu'],
         date: '2022',
@@ -241,7 +243,7 @@ const cardData = [
     {
         title: 'Tasty Restaurant',
         badge: 'Restaurant',
-        image:tasty,
+        image: tasty,
         description: 'A vibrant and appealing website for a modern restaurant.',
         tags: ['Food', 'Menu', 'Hospitality'],
         date: '2022',
@@ -250,7 +252,7 @@ const cardData = [
     {
         title: 'BeeFlex',
         badge: 'Business',
-        image:beeflex,
+        image: beeflex,
         description: 'A landing page for business management solutions.',
         tags: ['Management', 'SaaS', 'Solutions'],
         date: '2023',
@@ -259,7 +261,7 @@ const cardData = [
     {
         title: 'Royal Cars',
         badge: 'Rental',
-        image:carrental,
+        image: carrental,
         description: 'A sophisticated website for car rentals and sales.',
         tags: ['Automotive', 'Rentals', 'Luxury'],
         date: '2022',

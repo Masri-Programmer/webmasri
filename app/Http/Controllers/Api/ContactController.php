@@ -30,7 +30,7 @@ class ContactController extends Controller
         }
 
         $validatedData = $validator->validated();
-        $recipient = env('MAIL_FROM_ADDRESS');
+        $recipient = config('mail.from.address');
 
         try {
             Mail::to($recipient)->send(new ContactFormMail($validatedData));
