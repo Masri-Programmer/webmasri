@@ -24,7 +24,7 @@ const form = reactive({
 const { isFetching, execute } = useFetch(contact.url(), {
     immediate: false,
     afterFetch: (ctx) => {
-        if (ctx.data && !ctx.response?.ok) {
+        if (ctx.data && ctx.response?.ok) {
             toast.success(t('contactForm.success'));
             form.name = '';
             form.email = '';
