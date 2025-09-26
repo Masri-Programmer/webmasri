@@ -217,7 +217,7 @@
     background-image: url('@/images/iphonemockup2.webp');
 }
 
-@media (max-width: 639px) {
+@media (max-width: 1024px) {
     .parallax-section {
         background-attachment: scroll;
     }
