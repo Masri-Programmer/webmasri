@@ -64,7 +64,7 @@ onUnmounted(() => {
             type="button"
             :title="t('scrollToTop.label')"
             :aria-label="t('scrollToTop.label')"
-            class="fixed right-6 bottom-12 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-card p-0 shadow-lg ring-1 ring-border/50 transition-all duration-300 hover:scale-110 hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:bottom-18 md:right-12"
+            class="fixed right-6 bottom-18 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-card p-0 shadow-lg ring-1 ring-border/50 transition-all duration-300 hover:scale-110 hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background md:right-12"
             @click="scrollToTop"
         >
             <ArrowUp class="h-6 w-6 text-primary" />

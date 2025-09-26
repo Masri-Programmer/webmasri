@@ -78,9 +78,12 @@ const socialLinks = computed(() => [
                             <AppLogoIcon class-name="cursor-pointer m-auto h-60 w-65 relative -top-3 left-0 hidden sm:block" />
                         </Link>
                     </div>
-                    <!-- <p class="text-sm text-muted-foreground">{{ t('footer.tagline') }}</p> -->
                 </div>
-
+                <div class="space-y-4">
+                    <Link href="/">
+                        <AppLogoIcon class-name="cursor-pointer m-auto h-60 w-65 relative -top-3 left-0 sm:hidden " />
+                    </Link>
+                </div>
                 <div class="space-y-4">
                     <h4 class="font-semibold tracking-tighter">{{ t('footer.headings.product') }}</h4>
                     <ul class="space-y-2">
@@ -120,12 +123,6 @@ const socialLinks = computed(() => [
                             }}</Link>
                         </li>
                     </ul>
-                </div>
-
-                <div class="space-y-4">
-                    <Link href="/">
-                        <AppLogoIcon class-name="cursor-pointer m-auto h-60 w-65 relative -top-3 left-0 sm:hidden " />
-                    </Link>
                 </div>
             </div>
         </div>

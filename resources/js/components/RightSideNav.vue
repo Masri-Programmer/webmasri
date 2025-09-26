@@ -2,12 +2,12 @@
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { useScrollSpy } from '@/composables/useScrollSpy';
 import { navigationLinks } from '@/lib/navigation';
-import { onMounted, onUnmounted, ref } from 'vue';
+import { onMounted, onUnmounted } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n();
 
-const isNavVisible = ref(false);
+const isNavVisible = true;
 
 const { activeSection, handleScroll } = useScrollSpy();
 
@@ -31,7 +31,7 @@ onUnmounted(() => {
     <Transition name="nav-fade">
         <nav
             v-if="isNavVisible"
-            class="shadow-t-lg fixed right-0 bottom-0 left-0 z-50 flex h-16 items-center justify-around backdrop-blur-sm md:top-1/2 md:right-4 md:bottom-auto md:left-auto md:h-auto md:w-auto md:-translate-y-1/2 md:transform md:flex-col md:justify-center md:rounded-full md:p-2 md:shadow-lg"
+            class="shadow-t-lg fixed right-0 bottom-0 left-0 z-50 flex h-16 scale-75 items-center justify-around backdrop-blur-sm sm:scale-100 md:top-1/2 md:right-4 md:bottom-auto md:left-auto md:h-auto md:w-auto md:-translate-y-1/2 md:transform md:flex-col md:justify-center md:rounded-full md:p-2 md:shadow-lg"
         >
             <TooltipProvider :delay-duration="100">
                 <ul class="flex items-center gap-3 md:flex-col">
