@@ -4,7 +4,7 @@ import RightSideNav from '@/components/RightSideNav.vue';
 import ScrollTop from '@/components/ScrollTop.vue';
 import { useCurrency } from '@/composables/useCurrency';
 import { initializeScrollSpy, useScrollSpy } from '@/composables/useScrollSpy';
-import logo from '@/images/MasriProgrammer/logoBlack.svg';
+import logo from '@/images/newLogo/192x192/192x192_logo_dark_no_bg.svg';
 import { navigationLinks } from '@/lib/navigation';
 import Header from '@/pages/Header/Header.vue';
 import { contact, faq, imprint, pricing, privacyPolicy, termsConditions } from '@/routes';

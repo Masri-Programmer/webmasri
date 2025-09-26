@@ -53,7 +53,7 @@ const additionalServices = shallowRef([
     <section id="services" class="bg-muted/40 dark:bg-background">
         <div class="container mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
             <Title :title="'services.mainTitle'" :subtitleKey="'services.mainSubtitle'" />
-            <div class="mx-auto mt-12 grid max-w-lg gap-8 lg:max-w-none lg:grid-cols-3">
+            <div class="mt-12 grid md:grid-cols-2 md:gap-4 lg:max-w-none lg:grid-cols-3 lg:gap-8">
                 <CardContainer v-for="service in coreServices" :key="service.titleKey" class="group h-full w-full">
                     <CardBody
                         class="group/card relative flex h-full w-full flex-col rounded-xl border border-black/[0.1] bg-card p-6 dark:border-white/[0.2] dark:bg-background dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]"

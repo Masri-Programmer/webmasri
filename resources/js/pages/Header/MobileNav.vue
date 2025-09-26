@@ -36,7 +36,9 @@
                     </span>
                     <DonationBtns />
                 </div>
-                <AppLogoIcon class-name="pointer-events-none right-0 left-0 m-auto h-70 w-75 scale-150" />
+                <div class="flex justify-center">
+                    <AppLogoIcon />
+                </div>
                 <div class="flex justify-center gap-6 py-4">
                     <AppearanceIcon />
                     <LanguageSwitch />
