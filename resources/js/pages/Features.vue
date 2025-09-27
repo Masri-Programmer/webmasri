@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Marquee from '@/components/ui/marquee/Marquee.vue';
+import Title from '@/components/Title.vue';
 import {
     BarChart,
     BrainCircuit,
@@ -90,16 +90,8 @@ const thirdThird = computed(() => features.value.slice(third.value * 2));
     <section id="features" class="parallax-section bg-parallax-1">
         <div class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
-                <div class="space-y-4 text-left">
-                    <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl" style="color: var(--sidebar-primary-foreground);">
-                        <!-- <Focus :sentence="t('features.title')" :animationDuration="0.1" :manualMode="false" :blurAmount="2"/> -->
-                        {{ t('features.title') }}
-                    </h2>
-                    <p class="max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed" style="color: var(--sidebar-primary-foreground);">
-                        {{ t('features.description') }}
-                    </p>
-                </div>
-                <div class="space-y-4">
+                <Title :title="'features.title'" :subtitleKey="'features.description'" align="left" />
+                <!-- <div class="space-y-4">
                     <Marquee pause-on-hover class="[--duration:60s]">
                         <div
                             v-for="(feature, index) in firstThird"
@@ -130,7 +122,7 @@ const thirdThird = computed(() => features.value.slice(third.value * 2));
                             <span>{{ feature.text }}</span>
                         </div>
                     </Marquee>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
