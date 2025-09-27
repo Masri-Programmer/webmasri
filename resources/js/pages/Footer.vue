@@ -73,15 +73,15 @@ const socialLinks = computed(() => [
         <div class="relative container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 gap-8 md:grid-cols-4">
                 <div class="col-span-2 flex flex-col items-start gap-4 md:col-span-1">
-                    <div class="flex flex-col items-center gap-2">
+                    <div class="flex hidden flex-col items-center gap-2 sm:block">
                         <Link href="/">
-                            <AppLogoIcon class-name="cursor-pointer m-auto h-60 w-65 relative -top-3 left-0 hidden sm:block" />
+                            <AppLogoIcon class-name="cursor-pointer m-auto h-60 w-65 relative -top-3 left-0" />
                         </Link>
                     </div>
                 </div>
-                <div class="space-y-4">
+                <div class="space-y-4 sm:hidden">
                     <Link href="/">
-                        <AppLogoIcon class-name="cursor-pointer m-auto h-60 w-65 relative -top-3 left-0 sm:hidden " />
+                        <AppLogoIcon class-name="cursor-pointer m-auto h-60 w-65 relative -top-3 left-0  " />
                     </Link>
                 </div>
                 <div class="space-y-4">

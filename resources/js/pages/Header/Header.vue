@@ -3,7 +3,7 @@
         <div class="bg-secondary text-secondary-foreground shadow-sm">
             <div class="container mx-auto flex h-14 max-w-7xl items-center px-4 sm:px-6 lg:px-8">
                 <!-- Left Section: Brand -->
-                <div class="flex flex-1 justify-start">
+                <div class="flex flex-1 items-center justify-start">
                     <Brand />
                 </div>
 

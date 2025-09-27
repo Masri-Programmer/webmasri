@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Title from '@/components/Title.vue';
+import Marquee from '@/components/ui/marquee/Marquee.vue';
 import {
     BarChart,
     BrainCircuit,
@@ -91,7 +92,7 @@ const thirdThird = computed(() => features.value.slice(third.value * 2));
         <div class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
                 <Title :title="'features.title'" :subtitleKey="'features.description'" align="left" />
-                <!-- <div class="space-y-4">
+                <div class="space-y-4">
                     <Marquee pause-on-hover class="[--duration:60s]">
                         <div
                             v-for="(feature, index) in firstThird"
@@ -122,7 +123,7 @@ const thirdThird = computed(() => features.value.slice(third.value * 2));
                             <span>{{ feature.text }}</span>
                         </div>
                     </Marquee>
-                </div> -->
+                </div>
             </div>
         </div>
     </section>

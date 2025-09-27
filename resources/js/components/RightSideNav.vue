@@ -2,12 +2,12 @@
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { useScrollSpy } from '@/composables/useScrollSpy';
 import { navigationLinks } from '@/lib/navigation';
-import { onMounted, onUnmounted } from 'vue';
+import { onMounted, onUnmounted, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n();
 
-const isNavVisible = true;
+const isNavVisible = ref(false);
 
 const { activeSection, handleScroll } = useScrollSpy();
 

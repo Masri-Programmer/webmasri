@@ -36,30 +36,53 @@ const props = defineProps<{
     head?: string;
     description?: string;
     link: string;
+    image?: string;
 }>();
-
+const fullUrl = computed(() => customProps.app.url + props.link);
+const imageUrl = computed(() => (props.image ? customProps.app.url + props.image : null));
 const jsonLdSchema = computed(() => {
-    const schema = {
-        '@context': 'https://schema.org',
-        '@type': 'WebPage',
-        name: props.head,
-        description: props.description,
-        url: customProps.app.url + props.link,
-        author: {
-            '@type': 'Person',
-            name: 'Mohamad Masri',
-            url: customProps.app.url,
-        },
-        publisher: {
-            '@type': 'Organization',
+    const graph = [
+        {
+            '@type': 'imprint',
+            '@id': `${customProps.app.url}/#imprint`,
             name: 'Masri Programmer',
+            url: customProps.app.url,
             logo: {
                 '@type': 'ImageObject',
-                url: customProps.app.url + logo,
+                url: `${customProps.app.url}${logo}`,
             },
         },
-    };
-    return JSON.stringify(schema, null, 2);
+        {
+            '@type': 'WebSite',
+            '@id': `${customProps.app.url}/#website`,
+            url: customProps.app.url,
+            name: 'Masri Programmer',
+            publisher: {
+                '@id': `${customProps.app.url}/#imprint`,
+            },
+        },
+        {
+            '@type': 'WebPage',
+            '@id': fullUrl.value,
+            url: fullUrl.value,
+            name: props.head,
+            description: props.description,
+            isPartOf: {
+                '@id': `${customProps.app.url}/#website`,
+            },
+            ...(imageUrl.value && {
+                primaryImageOfPage: {
+                    '@type': 'ImageObject',
+                    url: imageUrl.value,
+                },
+            }),
+        },
+    ];
+
+    return JSON.stringify({
+        '@context': 'https://schema.org',
+        '@graph': graph,
+    });
 });
 
 const menuSections = [
@@ -96,7 +119,6 @@ const menuSections = [
         <link rel="preconnect" :href="customProps.app.url + link" />
         <link rel="canonical" :href="customProps.app.url + link" />
         <meta name="description" :content="description" head-key="description" />
-
         <component :is="'script'" type="application/ld+json" v-html="jsonLdSchema" />
     </Head>
     <Header :menuSections="menuSections" />
