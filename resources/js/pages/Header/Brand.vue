@@ -1,5 +1,5 @@
 <template>
-    <Link v href="/" class="inline-flex items-center">
+    <Link href="/" class="inline-flex items-center">
         <AppLogoIcon class-name="h-12 w-12" />
         <div class="hidden cursor-pointer text-lg transition-all duration-100 ease-in-out hover:font-bold sm:block">Masri Programmer</div>
     </Link>
