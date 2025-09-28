@@ -333,21 +333,10 @@
 }
 
 #hero {
-    /* This sets the background color for the right side (and behind the pattern) */
     background-color: var(--background);
-
-    /* This is your dot pattern */
     background-image: repeating-radial-gradient(circle at 0 0, transparent 0, var(--border) 10px);
-
-    /* Position the pattern to start on the left */
     background-position: left center;
-
-    /* This is the key: makes the pattern's container 50% wide and 100% tall */
-    background-size: 50% 100%;
-
-    /* Ensures the pattern container itself doesn't tile across the screen */
+    background-size: 100%;
     background-repeat: no-repeat;
-
-    /* --- UPDATED MASK FOR TOP AND BOTTOM FADE --- */
     mask-image: linear-gradient(to bottom, transparent 0%, black 40%, black 80%, transparent 100%);
 }

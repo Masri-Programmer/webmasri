@@ -30,7 +30,6 @@ const props = defineProps({
 
 const { t } = useI18n();
 
-// Optimized and corrected class computation
 const containerClasses = computed(() => [
     'space-y-4',
     {
