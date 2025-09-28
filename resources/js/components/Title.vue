@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Motion } from 'motion-v';
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 
@@ -30,7 +29,6 @@ const props = defineProps({
 });
 
 const { t } = useI18n();
-const titleCharacters = computed(() => t(props.title).split(''));
 
 // Optimized and corrected class computation
 const containerClasses = computed(() => [
@@ -49,18 +47,24 @@ const containerClasses = computed(() => [
                 {{ t(tagline) }}
             </div>
 
-            <component :is="tag" class="mb-6 text-3xl font-bold tracking-tighter sm:text-5xl">
-                <Motion
-                    v-for="(char, idx) in titleCharacters"
-                    :key="`${char}-${idx}`"
-                    as="span"
-                    class="inline-block"
-                    :initial="{ x: -10, opacity: 0 }"
-                    :animate="{ x: 0, opacity: 1 }"
-                    :transition="{ duration: 0.5, delay: idx * 0.04 }"
-                    v-html="char === ' ' ? '&nbsp;' : char"
-                />
-            </component>
+            <h1 v-if="tag === 'h1'" class="mb-6 text-3xl font-bold tracking-tighter sm:text-5xl">
+                {{ t(title) }}
+            </h1>
+            <h2 v-else-if="tag === 'h2'" class="mb-6 text-3xl font-bold tracking-tighter sm:text-5xl">
+                {{ t(title) }}
+            </h2>
+            <h3 v-else-if="tag === 'h3'" class="mb-6 text-3xl font-bold tracking-tighter sm:text-5xl">
+                {{ t(title) }}
+            </h3>
+            <h4 v-else-if="tag === 'h4'" class="mb-6 text-3xl font-bold tracking-tighter sm:text-5xl">
+                {{ t(title) }}
+            </h4>
+            <h5 v-else-if="tag === 'h5'" class="mb-6 text-3xl font-bold tracking-tighter sm:text-5xl">
+                {{ t(title) }}
+            </h5>
+            <h6 v-else-if="tag === 'h6'" class="mb-6 text-3xl font-bold tracking-tighter sm:text-5xl">
+                {{ t(title) }}
+            </h6>
 
             <p v-if="subtitleKey" class="max-w-[900px] text-base text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 {{ t(subtitleKey) }}

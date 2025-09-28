@@ -5,8 +5,8 @@ import 'aos/dist/aos.css';
 import { defineAsyncComponent } from 'vue';
 
 import Layout from '@/layouts/Layout.vue';
-import Hero from './Hero.vue';
 import { useI18n } from 'vue-i18n';
+import Hero from './Hero.vue';
 
 const Features = defineAsyncComponent(() => import('./Features.vue'));
 const Projects = defineAsyncComponent(() => import('./Projects.vue'));
@@ -40,7 +40,7 @@ const { t } = useI18n();
         <Features />
         <About />
         <Projects />
-        <Statistics  />
+        <Statistics />
         <PricingSummary />
         <Testimonials />
         <FaqSummary />

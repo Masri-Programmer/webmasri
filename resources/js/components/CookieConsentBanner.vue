@@ -5,10 +5,16 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { imprint, privacyPolicy } from '@/routes';
 import { StorageSerializers, useStorage } from '@vueuse/core';
 import { Cookie } from 'lucide-vue-next';
-import { computed, watch } from 'vue';
+import { computed, onMounted, ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n();
+
+const isMounted = ref(false);
+
+onMounted(() => {
+    isMounted.value = true;
+});
 
 interface ConsentState {
     status: 'accepted' | 'declined';
@@ -70,7 +76,7 @@ function declineCookies() {
 <template>
     <transition enter-active-class="animate-duration-500 animate-fade-in-up" leave-active-class="animate-duration-300 animate-fade-out-down">
         <div
-            v-if="showBanner"
+            v-if="isMounted && showBanner"
             class="fixed right-0 bottom-0 left-0 z-50 p-4 sm:right-8 sm:bottom-4 sm:left-auto"
             role="dialog"
             aria-live="polite"

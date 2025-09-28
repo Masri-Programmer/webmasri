@@ -9,8 +9,14 @@ import TextGenerateEffect from '@/components/ui/text-generate-effect/TextGenerat
 import webmockup from '@/images/mockup.webp';
 import { pricing } from '@/routes';
 import { Book } from 'lucide-vue-next';
+import { onMounted, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 
+const isMounted = ref(false);
+
+onMounted(() => {
+    isMounted.value = true;
+});
 const { t } = useI18n();
 </script>
 
@@ -25,11 +31,12 @@ const { t } = useI18n();
                             :words="[t('hero.flipWords.craft'), t('hero.flipWords.design'), t('hero.flipWords.create')]"
                             :duration="2000"
                             class="!text-sidebar-ring"
+                            v-if="isMounted"
                         />.
                     </h1>
 
                     <p class="max-w-prose text-muted-foreground md:text-xl">
-                        <TextGenerateEffect class="" :words="t('hero.description')" />
+                        <TextGenerateEffect v-if="isMounted" class="" :words="t('hero.description')" />
                     </p>
 
                     <div class="flex flex-wrap gap-4">
@@ -49,7 +56,7 @@ const { t } = useI18n();
                     </div>
                 </div>
 
-                <div class="flex items-center justify-center">
+                <div class="flex items-center justify-center" v-if="isMounted">
                     <CardContainer>
                         <SafariMockup url="" :src="webmockup" class="size-full" />
                     </CardContainer>
@@ -57,6 +64,7 @@ const { t } = useI18n();
             </div>
         </div>
         <InteractiveGridPattern
+            v-if="isMounted"
             class="absolute inset-0 h-full w-full skew-y-12 [mask-image:radial-gradient(1000px_circle_at_left_center,white,transparent)]"
         />
     </section>
