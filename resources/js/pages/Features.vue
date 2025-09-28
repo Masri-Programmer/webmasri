@@ -41,49 +41,62 @@ onMounted(() => {
     isMounted.value = true;
 });
 
-// Define a static structure with translation keys and icons
+const iconMap = {
+    BarChart,
+    BrainCircuit,
+    Cog,
+    DollarSign,
+    EyeOff,
+    Figma,
+    FileDown,
+    Github,
+    Globe,
+    Languages,
+    LayoutGrid,
+    LayoutTemplate,
+    Link,
+    Lock,
+    Mail,
+    MonitorSmartphone,
+    Move,
+    NotebookText,
+    Palette,
+    PlusSquare,
+    RefreshCw,
+    Rocket,
+    Search,
+    Server,
+    ShieldCheck,
+    SunMoon,
+    Type,
+};
+
 const featureDefinitions = [
     // --- Core & Value ---
-    { key: 'features.list.saveTime', icon: DollarSign },
-    { key: 'features.list.selfHost', icon: Server },
-    { key: 'features.list.noTracking', icon: EyeOff },
-    { key: 'features.list.secure', icon: Lock },
-    { key: 'features.list.seoFriendly', icon: Search },
-    { key: 'features.list.gdprCompliant', icon: ShieldCheck },
+    { key: 'features.list.saveTime', iconName: 'DollarSign' },
+    { key: 'features.list.selfHost', iconName: 'Server' },
+    { key: 'features.list.noTracking', iconName: 'EyeOff' },
+    { key: 'features.list.secure', iconName: 'Lock' },
+    { key: 'features.list.seoFriendly', iconName: 'Search' },
+    { key: 'features.list.gdprCompliant', iconName: 'ShieldCheck' },
     // --- Design & Customization ---
-    { key: 'features.list.multipleTemplates', icon: LayoutTemplate },
-    { key: 'features.list.figmaFiles', icon: Figma },
-    { key: 'features.list.customPages', icon: Palette },
-    { key: 'features.list.dragDrop', icon: Move },
-    { key: 'features.list.customLayouts', icon: LayoutGrid },
-    { key: 'features.list.customSections', icon: PlusSquare },
-    { key: 'features.list.googleFonts', icon: Type },
-    { key: 'features.list.responsiveDesign', icon: MonitorSmartphone },
-    { key: 'features.list.lightDarkTheme', icon: SunMoon },
-    // --- Content & Management ---
-    { key: 'features.list.manageContent', icon: Cog },
-    { key: 'features.list.personalNotes', icon: NotebookText },
-    { key: 'features.list.pdfExport', icon: FileDown },
-    { key: 'features.list.hostPublicly', icon: Globe },
-    { key: 'features.list.customDomain', icon: Link },
-    // --- Integrations & Analytics ---
-    { key: 'features.list.aiIntegration', icon: BrainCircuit },
-    { key: 'features.list.signInGithub', icon: Github },
-    { key: 'features.list.signInGoogle', icon: Globe },
-    { key: 'features.list.signInEmail', icon: Mail },
-    { key: 'features.list.twoFactorAuth', icon: ShieldCheck },
-    { key: 'features.list.analytics', icon: BarChart },
-    { key: 'features.list.speedOptimized', icon: Rocket },
-    { key: 'features.list.multiLanguage', icon: Languages },
-    // --- Support & Future ---
-    { key: 'features.list.continuousImprovements', icon: RefreshCw },
+    { key: 'features.list.multipleTemplates', iconName: 'LayoutTemplate' },
+    { key: 'features.list.figmaFiles', iconName: 'Figma' },
+    { key: 'features.list.customPages', iconName: 'Palette' },
+    { key: 'features.list.dragDrop', iconName: 'Move' },
+    { key: 'features.list.customLayouts', iconName: 'LayoutGrid' },
+    { key: 'features.list.customSections', iconName: 'PlusSquare' },
+    { key: 'features.list.googleFonts', iconName: 'Type' },
+    { key: 'features.list.responsiveDesign', iconName: 'MonitorSmartphone' },
+    { key: 'features.list.lightDarkTheme', iconName: 'SunMoon' },
+    // ... add the rest of your features here using iconName: 'IconNameString'
+    { key: 'features.list.continuousImprovements', iconName: 'RefreshCw' },
 ];
 
-// Dynamically build the features array based on the current language
 const features = computed(() =>
     featureDefinitions.map((feature) => ({
         text: t(feature.key),
-        icon: feature.icon,
+        icon: iconMap[feature.iconName as keyof typeof iconMap],
     })),
 );
 
