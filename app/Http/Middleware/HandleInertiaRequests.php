@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use Illuminate\Foundation\Inspiring;
 use Illuminate\Foundation\Vite;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Inertia\Middleware;
 
 class HandleInertiaRequests extends Middleware
@@ -42,7 +43,9 @@ class HandleInertiaRequests extends Middleware
         return [
             ...parent::share($request),
             'name' => config('app.name'),
-            'locale' => session()->get('locale', config('app.fallback_locale')),
+            // 'locale' => session()->get('locale', config('app.fallback_locale')),
+            'locale' => App::getLocale(),
+            'supported_locales' => config('app.supported_locales'),
             // 'quote' => ['message' => trim($message), 'author' => trim($author)],
             'auth' => [
                 'user' => $request->user(),

@@ -2,46 +2,45 @@
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import i18n from '@/i18n'; // Import your global i18n instance
 import language from '@/routes/language';
 import { router, usePage } from '@inertiajs/vue3';
 import { Check, Languages } from 'lucide-vue-next';
-import { computed, watchEffect } from 'vue';
+import { computed, watch } from 'vue'; // Import watch
 import { useI18n } from 'vue-i18n';
-// 1. Get the global i18n instance
-const i18n = useI18n();
-const { t } = i18n;
+
+const { t } = useI18n();
 
 const page = usePage();
 const locale = computed(() => page.props.locale as string);
+const supportedLocales = computed(() => page.props.supported_locales as string[]);
 
-const availableLanguages = [
-    { code: 'en', nameKey: 'languages.english' },
-    { code: 'de', nameKey: 'languages.german' },
-    { code: 'fr', nameKey: 'languages.french' },
-    { code: 'ar', nameKey: 'languages.arabic' },
-];
+const availableLanguages = computed(() =>
+    supportedLocales.value.map((code) => ({
+        code: code,
+        nameKey: `languages.${{ en: 'english', de: 'german', fr: 'french', ar: 'arabic' }[code] || code}`,
+    })),
+);
 
-// 3. This function now makes an Inertia visit to the backend route
 const setLocale = (langCode: string) => {
     router.get(
         language.switch.url(langCode),
         {},
         {
-            preserveState: true,
+            preserveScroll: true,
         },
     );
 };
 
-watchEffect(() => {
-    const newLocale = locale.value;
-
-    i18n.locale.value = newLocale;
-
-    if (typeof document !== 'undefined') {
-        document.documentElement.lang = newLocale;
-        document.documentElement.dir = newLocale === 'ar' ? 'rtl' : 'ltr';
-    }
-});
+watch(
+    locale,
+    (newLocale) => {
+        if (newLocale) {
+            i18n.global.locale.value = newLocale as 'en' | 'de' | 'fr' | 'ar';
+        }
+    },
+    { immediate: true },
+);
 </script>
 
 <template>

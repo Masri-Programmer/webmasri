@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\ContactController;
+use App\Http\Controllers\LanguageController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -34,13 +35,9 @@ Route::get('dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/language/{locale}', function ($locale) {
-    if (in_array($locale, ['en', 'de', 'fr' ])) {
-        session()->put('locale', $locale);
-    }
-    return redirect()->back();
-})->whereIn('locale', ['en', 'de', 'fr','ar'])->name('language.switch');
-
+Route::get('/language/{locale}', [LanguageController::class, 'switch'])
+    ->whereIn('locale', config('app.supported_locales'))
+    ->name('language.switch');
 
 Route::get('/pricing/{category?}', function ($category = null) {
     $categoryMap = [
@@ -55,5 +52,5 @@ Route::get('/pricing/{category?}', function ($category = null) {
         'initialCategory' => $initialCategory,
     ]);
 })->name('pricing');
-require __DIR__.'/settings.php';
-require __DIR__.'/auth.php';
+require __DIR__ . '/settings.php';
+require __DIR__ . '/auth.php';
