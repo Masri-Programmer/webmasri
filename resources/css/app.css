@@ -187,6 +187,28 @@
     }
 }
 
+html,
+body {
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+    scroll-behavior: cubic-bezier(0.42, 0, 0.58, 1);
+
+    ::-webkit-scrollbar {
+        width: 0.6em;
+        height: auto;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: var(----background);
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: var(--primary);
+        border-radius: 10px;
+    }
+}
 .parallax-section {
     background-attachment: fixed;
     background-position: center;
