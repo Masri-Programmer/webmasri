@@ -32,7 +32,7 @@
             />
           </div>
           <h3
-            class="hidden text-xl font-bold text-neutral-500 md:block md:pl-20 md:text-5xl dark:text-neutral-500"
+            class="hidden text-xl font-semibold text-neutral-500 md:block md:pl-20 md:text-5xl dark:text-neutral-500"
           >
             {{ item.label }}
           </h3>

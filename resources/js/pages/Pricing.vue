@@ -429,7 +429,7 @@ const categoryKeyMap: Record<string, string> = {
 
             <div class="mt-12">
                 <div class="mb-8 text-center">
-                    <h2 class="text-2xl font-bold text-foreground">
+                    <h2 class="text-2xl font-semibold text-foreground">
                         {{ pricingData[props.initialCategory].title }}
                     </h2>
                     <p class="mt-2 text-lg font-semibold text-primary">
@@ -503,7 +503,7 @@ const categoryKeyMap: Record<string, string> = {
 
                 <div v-if="pricingData[props.initialCategory].addOns?.length" class="mt-20">
                     <div class="mb-10 text-center">
-                        <h3 class="text-3xl font-bold text-foreground">
+                        <h3 class="text-3xl font-semibold text-foreground">
                             {{ t('pricing.availableAddOns') }}
                         </h3>
                         <p class="mt-3 text-muted-foreground">
@@ -518,7 +518,9 @@ const categoryKeyMap: Record<string, string> = {
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <div class="text-lg font-bold text-primary" v-if="addOn.price.value">+ {{ formatCurrency(addOn.price.value) }}</div>
+                                <div class="text-lg font-semibold text-primary" v-if="addOn.price.value">
+                                    + {{ formatCurrency(addOn.price.value) }}
+                                </div>
                             </CardContent>
                         </Card>
                     </div>
@@ -526,7 +528,7 @@ const categoryKeyMap: Record<string, string> = {
 
                 <div class="mt-20">
                     <div class="mb-12 text-center">
-                        <h2 class="text-3xl font-bold text-foreground">
+                        <h2 class="text-3xl font-semibold text-foreground">
                             {{ t('pricing.additionalServices') }}
                         </h2>
                         <p class="mt-4 text-muted-foreground">Essential services to complete your web presence</p>

@@ -10,7 +10,7 @@
                 <i18n-t
                     keypath="about.description"
                     tag="p"
-                    class="text-center text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+                    class="text-start text-muted-foreground md:text-xl/loose lg:text-base/loose xl:text-xl/loose"
                 >
                     <template #blogLink>
                         <a href="https://masri.blog" target="_blank" class="underline">

@@ -4,7 +4,7 @@
             <AppleCard :card="card" :index="index" :layout="true">
                 <div :key="`dummy-content${index}`" class="mb-4 rounded-3xl bg-[#F5F5F7] p-8 md:p-14 dark:bg-neutral-800">
                     <p class="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400">
-                        <span class="font-bold text-neutral-700 dark:text-neutral-200">
+                        <span class="font-semibold text-neutral-700 dark:text-neutral-200">
                             The first rule of Apple club is that you boast about Apple club.
                         </span>
                         Keep a journal, quickly jot down a grocery list, and take amazing class notes. Want to convert those notes to text? No

@@ -76,7 +76,7 @@ const additionalServices = shallowRef([
             </div>
 
             <div class="mt-20 text-center">
-                <h3 class="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+                <h3 class="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
                     {{ t('services.additionalTitle') }}
                 </h3>
                 <p class="text-md mx-auto mt-3 max-w-2xl text-muted-foreground">

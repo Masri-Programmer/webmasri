@@ -46,22 +46,22 @@ const containerClasses = computed(() => [
                 {{ t(tagline) }}
             </div>
 
-            <h1 v-if="tag === 'h1'" class="mb-6 text-3xl font-bold tracking-tighter sm:text-5xl">
+            <h1 v-if="tag === 'h1'" class="mb-6 text-3xl font-semibold tracking-tighter sm:text-5xl">
                 {{ t(title) }}
             </h1>
-            <h2 v-else-if="tag === 'h2'" class="mb-6 text-3xl font-bold tracking-tighter sm:text-5xl">
+            <h2 v-else-if="tag === 'h2'" class="mb-6 text-3xl font-semibold tracking-tighter sm:text-5xl">
                 {{ t(title) }}
             </h2>
-            <h3 v-else-if="tag === 'h3'" class="mb-6 text-3xl font-bold tracking-tighter sm:text-5xl">
+            <h3 v-else-if="tag === 'h3'" class="mb-6 text-3xl font-semibold tracking-tighter sm:text-5xl">
                 {{ t(title) }}
             </h3>
-            <h4 v-else-if="tag === 'h4'" class="mb-6 text-3xl font-bold tracking-tighter sm:text-5xl">
+            <h4 v-else-if="tag === 'h4'" class="mb-6 text-3xl font-semibold tracking-tighter sm:text-5xl">
                 {{ t(title) }}
             </h4>
-            <h5 v-else-if="tag === 'h5'" class="mb-6 text-3xl font-bold tracking-tighter sm:text-5xl">
+            <h5 v-else-if="tag === 'h5'" class="mb-6 text-3xl font-semibold tracking-tighter sm:text-5xl">
                 {{ t(title) }}
             </h5>
-            <h6 v-else-if="tag === 'h6'" class="mb-6 text-3xl font-bold tracking-tighter sm:text-5xl">
+            <h6 v-else-if="tag === 'h6'" class="mb-6 text-3xl font-semibold tracking-tighter sm:text-5xl">
                 {{ t(title) }}
             </h6>
 

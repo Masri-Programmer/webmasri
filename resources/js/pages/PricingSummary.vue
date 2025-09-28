@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n'
-import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
-import Title from '@/components/Title.vue'
-import { useCurrency } from '@/composables/useCurrency'
-import { Check, Info } from 'lucide-vue-next'
-import { Link } from '@inertiajs/vue3'
+import Title from '@/components/Title.vue';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { useCurrency } from '@/composables/useCurrency';
+import { Link } from '@inertiajs/vue3';
+import { Check, Info } from 'lucide-vue-next';
+import { useI18n } from 'vue-i18n';
 // Assuming you have a route helper. If not, you can replace this with a static path.
-import { pricing } from '@/routes'
+import { pricing } from '@/routes';
 
-const { t } = useI18n()
-const { formatCurrency } = useCurrency()
+const { t } = useI18n();
+const { formatCurrency } = useCurrency();
 
 const pricingPlans = [
     {
@@ -53,7 +53,7 @@ const pricingPlans = [
         ],
         isFeatured: false,
     },
-]
+];
 </script>
 
 <template>
@@ -81,7 +81,7 @@ const pricingPlans = [
                         </CardDescription>
                         <div class="flex items-baseline gap-1">
                             <span class="text-sm text-muted-foreground">{{ t('pricingSummary.from') }}</span>
-                            <span class="text-4xl font-bold"> {{ formatCurrency(plan.price) }}</span>
+                            <span class="text-4xl font-semibold"> {{ formatCurrency(plan.price) }}</span>
                         </div>
                     </CardHeader>
                     <CardContent class="flex-grow">
@@ -102,7 +102,9 @@ const pricingPlans = [
                 </Card>
             </div>
 
-            <div class="mt-6  max-w-5xl mx-auto flex items-center justify-center gap-2 rounded-lg border bg-accent/50 p-4 text-center text-sm text-muted-foreground">
+            <div
+                class="mx-auto mt-6 flex max-w-5xl items-center justify-center gap-2 rounded-lg border bg-accent/50 p-4 text-center text-sm text-muted-foreground"
+            >
                 <Info class="h-5 w-5 flex-shrink-0" />
                 <p>{{ t('pricingSummary.installmentsInfo') }}</p>
             </div>

@@ -28,7 +28,7 @@ const sections = tm('privacyPolicy.sections');
 
                     <div class="mt-4 space-y-4">
                         <template v-for="(item, index) in section.content" :key="index">
-                            <p v-if="item.type === 'p'" :class="{ 'font-bold': item.style === 'bold' }">
+                            <p v-if="item.type === 'p'" :class="{ 'font-semibold': item.style === 'bold' }">
                                 {{ item.text }}
                             </p>
 
