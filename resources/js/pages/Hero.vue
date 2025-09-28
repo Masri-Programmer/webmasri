@@ -1,11 +1,6 @@
 <script setup lang="ts">
 import { Button } from '@/components/ui/button';
-import { CardContainer } from '@/components/ui/card-3d';
-import FlipWords from '@/components/ui/flip-words/FlipWords.vue';
-import InteractiveGridPattern from '@/components/ui/interactive-grid-pattern/InteractiveGridPattern.vue';
-import SafariMockup from '@/components/ui/safari-mockup/SafariMockup.vue';
 import ShimmerButton from '@/components/ui/shimmer-button/ShimmerButton.vue';
-import TextGenerateEffect from '@/components/ui/text-generate-effect/TextGenerateEffect.vue';
 import webmockup from '@/images/mockup.webp';
 import { pricing } from '@/routes';
 import { Book } from 'lucide-vue-next';
@@ -23,20 +18,21 @@ const { t } = useI18n();
 <template>
     <section id="hero" class="relative flex min-h-screen w-full items-center justify-center overflow-hidden">
         <div class="z-10 container mx-auto mt-6 max-w-7xl px-4 py-12 sm:px-6 md:mt-0 lg:px-8">
-            <div class="z-10 grid w-full max-w-7xl grid-cols-1 items-center gap-8 align-top lg:grid-cols-2">
+            <div class="z-10 grid w-full max-w-7xl grid-cols-1 items-start gap-8 align-top lg:grid-cols-2">
                 <div class="flex flex-col items-start justify-center space-y-6">
-                    <h1 class="text-5xl font-bold tracking-tighter text-foreground sm:text-6xl xl:text-7xl/none">
+                    <h1 class="text-focus-in text-5xl font-bold tracking-tighter text-foreground sm:text-6xl xl:text-7xl/none">
                         {{ t('hero.title') }}
-                        <FlipWords
+                        <!-- <FlipWords
                             :words="[t('hero.flipWords.craft'), t('hero.flipWords.design'), t('hero.flipWords.create')]"
                             :duration="2000"
                             class="!text-sidebar-ring"
                             v-if="isMounted"
-                        />.
+                        />. -->
                     </h1>
 
-                    <p class="max-w-prose text-muted-foreground md:text-xl">
-                        <TextGenerateEffect v-if="isMounted" class="" :words="t('hero.description')" />
+                    <p class="text-focus-in max-w-prose text-muted-foreground md:text-xl">
+                        {{ t('hero.description') }}
+                        <!-- <TextGenerateEffect v-if="isMounted" class="" :words="t('hero.description')" /> -->
                     </p>
 
                     <div class="flex flex-wrap gap-4">
@@ -55,17 +51,17 @@ const { t } = useI18n();
                         </Button>
                     </div>
                 </div>
-
-                <div class="flex items-center justify-center" v-if="isMounted">
+                <img :src="webmockup" alt="web mockup safari" class="swing-in-top-fwd rounded" loading="lazy" decoding="async" />
+                <!-- <div class="flex items-center justify-center" v-if="isMounted">
                     <CardContainer>
                         <SafariMockup url="" :src="webmockup" class="size-full" />
                     </CardContainer>
-                </div>
+                </div> -->
             </div>
         </div>
-        <InteractiveGridPattern
+        <!-- <InteractiveGridPattern
             v-if="isMounted"
             class="absolute inset-0 h-full w-full skew-y-12 [mask-image:radial-gradient(1000px_circle_at_left_center,white,transparent)]"
-        />
+        /> -->
     </section>
 </template>
