@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import FAQ from '@/components/FAQ.vue';
+import swr from '@/components/layout/SectionWrapper .vue';
 import Layout from '@/layouts/Layout.vue';
 import { faq } from '@/routes';
 import { useI18n } from 'vue-i18n';
-
 const { t } = useI18n();
 
 const faqKeys = [
@@ -29,8 +29,10 @@ const faqKeys = [
 
 <template>
     <Layout :head="t('faq.title')" :link="faq.url()" :description="t('faq.subtitle')">
-        <div class="mt-8">
-            <FAQ :faqKeys="faqKeys" />
-        </div>
+        <swr id="faq">
+            <div class="mt-8">
+                <FAQ :faqKeys="faqKeys" />
+            </div>
+        </swr>
     </Layout>
 </template>

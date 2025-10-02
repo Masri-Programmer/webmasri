@@ -1,6 +1,6 @@
 <template>
-    <Link href="/" class="inline-flex items-center">
-        <AppLogoIcon class-name="h-12 w-12" />
+    <Link href="/" class="inline-flex items-center gap-2">
+        <AppLogoIcon class-name="h-8 w-8" />
         <div class="hidden cursor-pointer text-lg transition-all duration-100 ease-in-out hover:font-semibold sm:block">Masri Programmer</div>
     </Link>
 </template>

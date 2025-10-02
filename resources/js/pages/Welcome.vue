@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import swr from '@/components/layout/SectionWrapper .vue';
 import Layout from '@/layouts/Layout.vue';
-import 'aos/dist/aos.css';
 import { defineAsyncComponent } from 'vue';
 import { useI18n } from 'vue-i18n';
 
@@ -20,7 +19,7 @@ const { t } = useI18n();
 </script>
 
 <template>
-    <Layout head="Welcome" link="/" :description="t('welcome.description')">
+    <Layout :head="t('welcome.title')" link="/" :description="t('welcome.description')">
         <Hero />
         <swr id="services" background="muted">
             <Services />
@@ -36,7 +35,7 @@ const { t } = useI18n();
 
         <Projects />
 
-        <swr id="statistics" fullWidth class="parallax-section bg-parallax-2">
+        <swr id="statistics" class="parallax-section bg-parallax-2">
             <Statistics />
         </swr>
 

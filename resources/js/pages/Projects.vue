@@ -1,5 +1,5 @@
 <template>
-    <section id="projects" class="container mx-auto max-w-7xl overflow-hidden px-8 sm:px-14 lg:px-20">
+    <section id="projects" class="container-custom">
         <h2
             class="pointer-events-none bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl leading-none font-semibold whitespace-pre-wrap text-transparent max-lg:-mt-12 sm:text-6xl md:text-7xl lg:text-8xl dark:from-white dark:to-slate-900/10"
         >
@@ -22,7 +22,7 @@
         >
             <CarouselContent class="mt-12 -ml-2 md:-ml-4">
                 <CarouselItem v-for="project in cardData" :key="project.title" class="pl-2 md:basis-1/2 md:pl-4 lg:basis-1/3 xl:basis-1/4">
-                    <div class="h-full p-1">
+                    <div class="h-full">
                         <Card class="flex h-full flex-col">
                             <CardContent class="flex flex-1 flex-col p-4">
                                 <a :href="project.link" target="_blank" rel="noopener noreferrer">

@@ -2,11 +2,11 @@
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
-import i18n from '@/i18n'; // Import your global i18n instance
+import i18n from '@/i18n';
 import language from '@/routes/language';
-import { router, usePage } from '@inertiajs/vue3';
+import { Head, router, usePage } from '@inertiajs/vue3'; // [!code ++]
 import { Check, Languages } from 'lucide-vue-next';
-import { computed, watch } from 'vue'; // Import watch
+import { computed, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n();
@@ -14,6 +14,10 @@ const { t } = useI18n();
 const page = usePage();
 const locale = computed(() => page.props.locale as string);
 const supportedLocales = computed(() => page.props.supported_locales as string[]);
+
+const direction = computed(() => {
+    return locale.value === 'ar' ? 'rtl' : 'ltr';
+});
 
 const availableLanguages = computed(() =>
     supportedLocales.value.map((code) => ({
@@ -32,6 +36,7 @@ const setLocale = (langCode: string) => {
     );
 };
 
+// This watch effect is fine as it only handles client-side i18n state
 watch(
     locale,
     (newLocale) => {
@@ -44,6 +49,8 @@ watch(
 </script>
 
 <template>
+    <Head :html-attrs="{ lang: locale, dir: direction }" />
+
     <TooltipProvider>
         <Tooltip :delay-duration="0">
             <DropdownMenu>

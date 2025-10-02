@@ -18,6 +18,6 @@ defineProps<Props>();
 
 <template>
     <Link href="/" :class="className" v-bind="$attrs">
-        <img :src="logo" alt="Masri Programmer" class="p-3 dark:invert" loading="lazy" decoding="async" />
+        <img :src="logo" alt="Masri Programmer" class="dark:invert" loading="lazy" decoding="async" />
     </Link>
 </template>

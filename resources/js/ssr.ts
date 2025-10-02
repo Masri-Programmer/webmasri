@@ -1,14 +1,28 @@
 import { createInertiaApp } from '@inertiajs/vue3';
 import createServer from '@inertiajs/vue3/server';
+import { MotionPlugin } from '@vueuse/motion';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { createSSRApp, DefineComponent, h } from 'vue';
+import Toast, { type PluginOptions } from 'vue-toastification';
+import 'vue-toastification/dist/index.css';
 import { renderToString } from 'vue/server-renderer';
-
-import { MotionPlugin } from '@vueuse/motion';
 import i18n from './i18n';
 
 const appName = import.meta.env.VITE_APP_NAME || 'Masri Programmer';
 
+const options: PluginOptions = {
+    timeout: 5000,
+    closeOnClick: true,
+    pauseOnFocusLoss: true,
+    pauseOnHover: true,
+    draggable: true,
+    draggablePercent: 0.6,
+    showCloseButtonOnHover: false,
+    hideProgressBar: false,
+    closeButton: 'button',
+    icon: true,
+    rtl: false,
+};
 createServer(
     (page: any) =>
         createInertiaApp({
@@ -21,6 +35,7 @@ createServer(
 
                 ssrApp.use(plugin);
                 ssrApp.use(MotionPlugin);
+                ssrApp.use(Toast, options);
                 ssrApp.use(i18n);
 
                 return ssrApp;

@@ -69,8 +69,8 @@ const socialLinks = computed(() => [
 </script>
 
 <template>
-    <footer class="w-full border-t border-border bg-background">
-        <div class="relative container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <footer id="footer" class="w-full border-t border-border bg-background">
+        <div class="container-custom container-custom-y relative">
             <div class="grid grid-cols-2 gap-8 md:grid-cols-4">
                 <div class="col-span-2 flex flex-col items-start gap-4 md:col-span-1">
                     <div class="flex hidden flex-col items-center gap-2 sm:block">
@@ -127,8 +127,8 @@ const socialLinks = computed(() => [
             </div>
         </div>
 
-        <div class="border-t border-border py-6">
-            <div class="container mx-auto flex max-w-7xl flex-col-reverse items-center justify-between gap-6 px-4 sm:flex-row sm:px-6 lg:px-8">
+        <div class="container-custom-y border-t border-border">
+            <div class="container-custom flex flex-col-reverse items-center justify-between gap-6 sm:flex-row">
                 <p class="text-center text-sm text-muted-foreground sm:text-left">{{ t('footer.copyright', { year }) }}</p>
 
                 <i18n-t keypath="footer.madeWith" tag="p" class="hidden items-center gap-1.5 text-center text-sm text-muted-foreground md:flex">

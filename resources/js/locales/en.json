@@ -1,5 +1,6 @@
 {
     "welcome": {
+        "title": "Web design, Onlineshops und Branding",
         "description": "Grow your business with a custom-designed website or online shop. We offer professional development, SEO optimization, and reliable maintenance. Get your quote today!"
     },
     "scrollToTop": {
@@ -16,7 +17,7 @@
             "create": "Create",
             "design": "Design"
         },
-        "description": "",
+        "description": "»For you, I start moving everything: From comprehensive advice to the development of tailor -made websites and online shops with the latest technology to unique branding, which makes your advertising measures and campaigns at most effective. In order for your success to remain sustainable, I offer continuous support, maintenance, ongoing optimization and sensible marketing. And all of this with minimal effort for you - for your maximum benefit! «",
         "cta": {
             "bookMeeting": "Book a Meeting",
             "learnMore": "Learn More"

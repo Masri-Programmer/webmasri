@@ -19,7 +19,7 @@ const isStandardSectionPage = computed(() => ['privacyPolicy', 'termsConditions'
 
 <template>
     <Layout :head="title" :link="route">
-        <div class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div class="container-custom">
             <header class="border-b pb-4">
                 <h1 class="text-3xl font-semibold text-primary md:text-4xl">
                     {{ title }}

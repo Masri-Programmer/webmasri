@@ -25,14 +25,14 @@ const sectionClasses = computed(() => {
     // else if (props.background === 'dark') { ... }
 
     if (!props.fullWidth) {
-        classes.push('py-16 sm:py-20 lg:py-24');
+        classes.push('container-custom-y');
     }
     return classes;
 });
 </script>
 <template>
     <section :id="id" :class="sectionClasses">
-        <div class="container mx-auto max-w-7xl overflow-hidden px-8 sm:px-14 lg:px-20" :class="{ 'py-16 sm:py-20 lg:py-24': fullWidth }">
+        <div class="container-custom">
             <slot />
         </div>
     </section>
