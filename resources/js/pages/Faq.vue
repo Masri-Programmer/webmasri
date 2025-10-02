@@ -30,7 +30,7 @@ const faqKeys = [
 <template>
     <Layout :head="t('faq.title')" :link="faq.url()" :description="t('faq.subtitle')">
         <div class="mt-8">
-            <FAQ :faqKeys="faqKeys" id="faq_page" />
+            <FAQ :faqKeys="faqKeys" />
         </div>
     </Layout>
 </template>

@@ -28,14 +28,13 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <!-- backdrop-blur-sm -->
     <Transition name="nav-fade">
         <nav
-            v-if="true"
-            class="shadow-t-lg fixed right-0 bottom-0 left-0 z-50 flex h-16 w-auto scale-75 content-center items-center justify-around bg-red-300 sm:scale-100 md:top-1/2 md:right-4 md:bottom-auto md:left-auto md:h-auto md:w-auto md:-translate-y-1/2 md:transform md:flex-col md:justify-center md:rounded-full md:p-2 md:shadow-lg"
+            v-if="isNavVisible"
+            class="shadow-t-lg bg-red- fixed right-0 bottom-0 left-0 z-50 m-3 flex h-16 w-auto content-center items-center justify-around rounded-full md:top-1/2 md:right-6 md:bottom-auto md:left-auto md:h-auto md:w-auto md:-translate-y-1/2 md:transform md:flex-col md:justify-center md:p-2 md:shadow-lg"
         >
             <TooltipProvider :delay-duration="100">
-                <ul class="flex content-center items-center gap-3 md:flex-col">
+                <ul class="flex w-full content-center items-center justify-between gap-0 rounded-full p-1 backdrop-blur-sm sm:gap-3 md:flex-col">
                     <li v-for="item in navigationLinks" :key="item.id" class="duration-200 ease-in-out md:hover:-translate-x-2.5">
                         <Tooltip>
                             <TooltipTrigger as-child>

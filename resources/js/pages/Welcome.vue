@@ -1,13 +1,11 @@
 <script setup lang="ts">
-// import { router } from '@inertiajs/vue3';
-// import AOS from 'aos';
+import swr from '@/components/layout/SectionWrapper .vue';
+import Layout from '@/layouts/Layout.vue';
 import 'aos/dist/aos.css';
 import { defineAsyncComponent } from 'vue';
-
-import Layout from '@/layouts/Layout.vue';
 import { useI18n } from 'vue-i18n';
-import Hero from './Hero.vue';
 
+const Hero = defineAsyncComponent(() => import('./Hero.vue'));
 const Features = defineAsyncComponent(() => import('./Features.vue'));
 const Projects = defineAsyncComponent(() => import('./Projects.vue'));
 const About = defineAsyncComponent(() => import('./About.vue'));
@@ -18,32 +16,41 @@ const PricingSummary = defineAsyncComponent(() => import('./PricingSummary.vue')
 const FaqSummary = defineAsyncComponent(() => import('./FaqSummary.vue'));
 const Technologies = defineAsyncComponent(() => import('./Technologies.vue'));
 
-// onMounted(() => {
-//     AOS.init({
-//         duration: 600,
-//         easing: 'ease-in-out',
-//         once: true,
-//         mirror: false,
-//     });
-// });
-
-// router.on('success', () => {
-//     AOS.refresh();
-// });
 const { t } = useI18n();
 </script>
 
 <template>
     <Layout head="Welcome" link="/" :description="t('welcome.description')">
         <Hero />
-        <Services />
-        <Features />
-        <About />
-        <Projects />
-        <Statistics />
-        <PricingSummary />
-        <Testimonials />
-        <FaqSummary />
+        <swr id="services" background="muted">
+            <Services />
+        </swr>
+
+        <swr id="features" class="parallax-section bg-parallax-1">
+            <Features />
+        </swr>
+
+        <swr id="about">
+            <About />
+        </swr>
+
+        <swr id="projects">
+            <Projects />
+        </swr>
+
+        <swr id="statistics" fullWidth class="parallax-section bg-parallax-2">
+            <Statistics />
+        </swr>
+
+        <swr id="pricing">
+            <PricingSummary />
+        </swr>
+        <swr id="testimonials">
+            <Testimonials />
+        </swr>
+        <swr id="faq">
+            <FaqSummary />
+        </swr>
         <Technologies />
     </Layout>
 </template>

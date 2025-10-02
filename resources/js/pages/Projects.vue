@@ -1,69 +1,67 @@
 <template>
-    <section id="projects" class="container mx-auto max-w-7xl overflow-hidden px-8 py-12 sm:px-14 lg:px-20">
-        <h2
-            class="pointer-events-none bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl leading-none font-semibold whitespace-pre-wrap text-transparent max-lg:-mt-12 sm:text-6xl md:text-7xl lg:text-8xl dark:from-white dark:to-slate-900/10"
-        >
-            {{ t('projects.title') }}
-        </h2>
-        <Carousel
-            class="relative mx-auto w-full"
-            :plugins="[
-                Autoplay({
-                    delay: 6000,
-                }),
-            ]"
-            :opts="{
-                align: 'start',
-                loop: true,
-            }"
-            role="region"
-            aria-roledescription="carousel"
-            tabindex="0"
-        >
-            <CarouselContent class="mt-12 -ml-2 md:-ml-4">
-                <CarouselItem v-for="project in cardData" :key="project.title" class="pl-2 md:basis-1/2 md:pl-4 lg:basis-1/3 xl:basis-1/4">
-                    <div class="h-full p-1">
-                        <Card class="flex h-full flex-col">
-                            <CardContent class="flex flex-1 flex-col p-4">
-                                <a :href="project.link" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        :src="project.image"
-                                        :alt="project.title"
-                                        class="aspect-video w-full rounded-md bg-secondary object-cover object-top"
-                                        loading="lazy"
-                                        decoding="async"
-                                        width="1920"
-                                        height="1080"
-                                    />
-                                </a>
+    <h2
+        class="pointer-events-none bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl leading-none font-semibold whitespace-pre-wrap text-transparent max-lg:-mt-12 sm:text-6xl md:text-7xl lg:text-8xl dark:from-white dark:to-slate-900/10"
+    >
+        {{ t('projects.title') }}
+    </h2>
+    <Carousel
+        class="relative mx-auto w-full"
+        :plugins="[
+            Autoplay({
+                delay: 6000,
+            }),
+        ]"
+        :opts="{
+            align: 'start',
+            loop: true,
+        }"
+        role="region"
+        aria-roledescription="carousel"
+        tabindex="0"
+    >
+        <CarouselContent class="mt-12 -ml-2 md:-ml-4">
+            <CarouselItem v-for="project in cardData" :key="project.title" class="pl-2 md:basis-1/2 md:pl-4 lg:basis-1/3 xl:basis-1/4">
+                <div class="h-full p-1">
+                    <Card class="flex h-full flex-col">
+                        <CardContent class="flex flex-1 flex-col p-4">
+                            <a :href="project.link" target="_blank" rel="noopener noreferrer">
+                                <img
+                                    :src="project.image"
+                                    :alt="project.title"
+                                    class="aspect-video w-full rounded-md bg-secondary object-cover object-top"
+                                    loading="lazy"
+                                    decoding="async"
+                                    width="1920"
+                                    height="1080"
+                                />
+                            </a>
 
-                                <div class="mt-4 flex-grow">
-                                    <h3 class="text-lg font-semibold text-foreground">
-                                        {{ project.title }}
-                                    </h3>
-                                    <p class="mt-1 text-sm text-muted-foreground">
-                                        {{ project.description }}
-                                    </p>
-                                </div>
+                            <div class="mt-4 flex-grow">
+                                <h3 class="text-lg font-semibold text-foreground">
+                                    {{ project.title }}
+                                </h3>
+                                <p class="mt-1 text-sm text-muted-foreground">
+                                    {{ project.description }}
+                                </p>
+                            </div>
 
-                                <div class="mt-4 flex flex-wrap gap-2">
-                                    <span
-                                        v-for="tag in project.tags"
-                                        :key="tag"
-                                        class="rounded-full bg-secondary px-2.5 py-0.5 text-xs font-semibold text-secondary-foreground"
-                                    >
-                                        {{ tag }}
-                                    </span>
-                                </div>
-                            </CardContent>
-                        </Card>
-                    </div>
-                </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-        </Carousel>
-    </section>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span
+                                    v-for="tag in project.tags"
+                                    :key="tag"
+                                    class="rounded-full bg-secondary px-2.5 py-0.5 text-xs font-semibold text-secondary-foreground"
+                                >
+                                    {{ tag }}
+                                </span>
+                            </div>
+                        </CardContent>
+                    </Card>
+                </div>
+            </CarouselItem>
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+    </Carousel>
 </template>
 
 <script setup lang="ts">

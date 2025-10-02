@@ -57,57 +57,53 @@ const pricingPlans = [
 </script>
 
 <template>
-    <section id="pricing" class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div class="container mx-auto max-w-7xl px-4 md:px-6">
-            <Title :title="'pricingSummary.title'" :subtitleKey="'pricingSummary.description'" tagline="pricingSummary.tagline" />
+    <Title :title="'pricingSummary.title'" :subtitleKey="'pricingSummary.description'" tagline="pricingSummary.tagline" />
 
-            <div class="mx-auto mt-12 grid max-w-5xl items-start gap-8 sm:grid-cols-2 md:gap-12 lg:grid-cols-3">
-                <Card
-                    v-for="plan in pricingPlans"
-                    :key="plan.key"
-                    class="relative flex h-full flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
-                    :class="{ 'border-2 border-primary shadow-lg': plan.isFeatured }"
-                >
-                    <div v-if="plan.isFeatured" class="absolute -top-3 left-1/2 z-10 -translate-x-1/2">
-                        <Badge class="bg-primary px-4 py-1 text-primary-foreground">
-                            {{ t('pricingSummary.mostPopular') }}
-                        </Badge>
-                    </div>
-
-                    <CardHeader class="items-center pb-4">
-                        <CardTitle class="text-xl">{{ t(plan.titleKey) }}</CardTitle>
-                        <CardDescription class="min-h-[60px] text-center">
-                            {{ t(plan.descriptionKey) }}
-                        </CardDescription>
-                        <div class="flex items-baseline gap-1">
-                            <span class="text-sm text-muted-foreground">{{ t('pricingSummary.from') }}</span>
-                            <span class="text-4xl font-semibold"> {{ formatCurrency(plan.price) }}</span>
-                        </div>
-                    </CardHeader>
-                    <CardContent class="flex-grow">
-                        <ul class="space-y-3">
-                            <li v-for="feature in plan.features" :key="feature" class="flex items-center gap-2">
-                                <Check class="h-5 w-5 text-primary" />
-                                <span class="text-muted-foreground">{{ t(feature) }}</span>
-                            </li>
-                        </ul>
-                    </CardContent>
-                    <Link :href="pricing.url([plan.key])">
-                        <CardFooter>
-                            <Button class="w-full" :variant="plan.isFeatured ? 'default' : 'outline'" size="lg">
-                                {{ t('pricingSummary.ctaButton') }}
-                            </Button>
-                        </CardFooter>
-                    </Link>
-                </Card>
+    <div class="mx-auto mt-12 grid max-w-5xl items-start gap-8 sm:grid-cols-2 md:gap-12 lg:grid-cols-3">
+        <Card
+            v-for="plan in pricingPlans"
+            :key="plan.key"
+            class="relative flex h-full flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+            :class="{ 'border-2 border-primary shadow-lg': plan.isFeatured }"
+        >
+            <div v-if="plan.isFeatured" class="absolute -top-3 left-1/2 z-10 -translate-x-1/2">
+                <Badge class="bg-primary px-4 py-1 text-primary-foreground">
+                    {{ t('pricingSummary.mostPopular') }}
+                </Badge>
             </div>
 
-            <div
-                class="mx-auto mt-6 flex max-w-5xl items-center justify-center gap-2 rounded-lg border bg-accent/50 p-4 text-center text-sm text-muted-foreground"
-            >
-                <Info class="h-5 w-5 flex-shrink-0" />
-                <p>{{ t('pricingSummary.installmentsInfo') }}</p>
-            </div>
-        </div>
-    </section>
+            <CardHeader class="items-center pb-4">
+                <CardTitle class="text-xl">{{ t(plan.titleKey) }}</CardTitle>
+                <CardDescription class="min-h-[60px] text-center">
+                    {{ t(plan.descriptionKey) }}
+                </CardDescription>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-sm text-muted-foreground">{{ t('pricingSummary.from') }}</span>
+                    <span class="text-4xl font-semibold"> {{ formatCurrency(plan.price) }}</span>
+                </div>
+            </CardHeader>
+            <CardContent class="flex-grow">
+                <ul class="space-y-3">
+                    <li v-for="feature in plan.features" :key="feature" class="flex items-center gap-2">
+                        <Check class="h-5 w-5 text-primary" />
+                        <span class="text-muted-foreground">{{ t(feature) }}</span>
+                    </li>
+                </ul>
+            </CardContent>
+            <Link :href="pricing.url([plan.key])">
+                <CardFooter>
+                    <Button class="w-full" :variant="plan.isFeatured ? 'default' : 'outline'" size="lg">
+                        {{ t('pricingSummary.ctaButton') }}
+                    </Button>
+                </CardFooter>
+            </Link>
+        </Card>
+    </div>
+
+    <div
+        class="mx-auto mt-6 flex max-w-5xl items-center justify-center gap-2 rounded-lg border bg-accent/50 p-4 text-center text-sm text-muted-foreground"
+    >
+        <Info class="h-5 w-5 flex-shrink-0" />
+        <p>{{ t('pricingSummary.installmentsInfo') }}</p>
+    </div>
 </template>

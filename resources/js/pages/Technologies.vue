@@ -1,5 +1,5 @@
 <template>
-    <div v-if="isMounted" class="relative hidden lg:block">
+    <div id="technologies" v-if="isMounted" class="relative hidden lg:block">
         <div class="absolute right-0 bottom-0 grid place-content-center p-6">
             <IconCloud :images="imageUrls" />
         </div>

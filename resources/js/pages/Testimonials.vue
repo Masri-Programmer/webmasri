@@ -35,64 +35,62 @@ const testimonials = computed(() =>
 </script>
 
 <template>
-    <section id="testimonials" class="relative container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <Title :title="'testimonials.title'" :subtitleKey="'testimonials.subtitle'" />
-        <img
-            :src="googleIcon"
-            alt="Google"
-            class="pointer-events-none absolute right-0 left-0 m-auto h-20 w-20 opacity-20 mix-blend-multiply dark:mix-blend-screen"
-            loading="lazy"
-            decoding="async"
-        />
+    <Title :title="'testimonials.title'" :subtitleKey="'testimonials.subtitle'" />
+    <img
+        :src="googleIcon"
+        alt="Google"
+        class="pointer-events-none absolute right-0 left-0 m-auto h-20 w-20 opacity-20 mix-blend-multiply dark:mix-blend-screen"
+        loading="lazy"
+        decoding="async"
+    />
 
-        <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <Card
-                v-for="(testimonial, index) in testimonials"
-                :key="index"
-                v-motion
-                :initial="{ opacity: 0, y: 50 }"
-                :visibleOnce="{ opacity: 1, y: 0, transition: { delay: index * 100, duration: 500 } }"
-                class="flex flex-col"
-            >
-                <CardHeader>
-                    <div class="flex items-center justify-between">
-                        <CardTitle class="text-lg">
-                            {{ testimonial.name }}
-                        </CardTitle>
-                        <div class="flex items-center gap-0.5">
-                            <Star v-for="i in testimonial.rating" :key="i" class="size-5 fill-yellow-400 text-yellow-400" />
-                        </div>
+    <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <Card
+            v-for="(testimonial, index) in testimonials"
+            :key="index"
+            v-motion
+            :initial="{ opacity: 0, y: 50 }"
+            :visibleOnce="{ opacity: 1, y: 0, transition: { delay: index * 100, duration: 500 } }"
+            class="flex flex-col"
+        >
+            <CardHeader>
+                <div class="flex items-center justify-between">
+                    <CardTitle class="text-lg">
+                        {{ testimonial.name }}
+                    </CardTitle>
+                    <div class="flex items-center gap-0.5">
+                        <Star v-for="i in testimonial.rating" :key="i" class="size-5 fill-yellow-400 text-yellow-400" />
                     </div>
-                    <p class="text-xs text-muted-foreground">
-                        {{ testimonial.handle }}
-                    </p>
-                </CardHeader>
-                <CardContent class="flex-grow">
-                    <blockquote class="border-l-2 pl-4 text-foreground italic">
-                        {{ testimonial.text }}
-                    </blockquote>
-                </CardContent>
-            </Card>
-
-            <a
-                :href="googleReviewLink"
-                target="_blank"
-                rel="noopener noreferrer"
-                v-motion
-                :initial="{ opacity: 0, y: 50 }"
-                :visibleOnce="{ opacity: 1, y: 0, transition: { delay: testimonials.length * 100, duration: 500 } }"
-                class="group flex flex-col items-center justify-center rounded-lg border-2 border-dashed border-border bg-transparent p-8 text-center transition-colors hover:border-primary hover:bg-accent"
-            >
-                <h3 class="text-lg font-semibold text-foreground">
-                    {{ t('testimonials.leaveReview.title') }}
-                </h3>
-                <p class="mt-2 text-sm text-muted-foreground">
-                    {{ t('testimonials.leaveReview.description') }}
+                </div>
+                <p class="text-xs text-muted-foreground">
+                    {{ testimonial.handle }}
                 </p>
-                <Button variant="outline" class="mt-4">
-                    {{ t('testimonials.leaveReview.button') }}
-                </Button>
-            </a>
-        </div>
-    </section>
+            </CardHeader>
+            <CardContent class="flex-grow">
+                <blockquote class="border-l-2 pl-4 text-foreground italic">
+                    {{ testimonial.text }}
+                </blockquote>
+            </CardContent>
+        </Card>
+
+        <a
+            :href="googleReviewLink"
+            target="_blank"
+            rel="noopener noreferrer"
+            v-motion
+            :initial="{ opacity: 0, y: 50 }"
+            :visibleOnce="{ opacity: 1, y: 0, transition: { delay: testimonials.length * 100, duration: 500 } }"
+            class="group flex flex-col items-center justify-center rounded-lg border-2 border-dashed border-border bg-transparent p-8 text-center transition-colors hover:border-primary hover:bg-accent"
+        >
+            <h3 class="text-lg font-semibold text-foreground">
+                {{ t('testimonials.leaveReview.title') }}
+            </h3>
+            <p class="mt-2 text-sm text-muted-foreground">
+                {{ t('testimonials.leaveReview.description') }}
+            </p>
+            <Button variant="outline" class="mt-4">
+                {{ t('testimonials.leaveReview.button') }}
+            </Button>
+        </a>
+    </div>
 </template>

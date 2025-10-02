@@ -43,10 +43,8 @@ class HandleInertiaRequests extends Middleware
         return [
             ...parent::share($request),
             'name' => config('app.name'),
-            // 'locale' => session()->get('locale', config('app.fallback_locale')),
             'locale' => App::getLocale(),
             'supported_locales' => config('app.supported_locales'),
-            // 'quote' => ['message' => trim($message), 'author' => trim($author)],
             'auth' => [
                 'user' => $request->user(),
             ],
@@ -54,6 +52,7 @@ class HandleInertiaRequests extends Middleware
                 'url' => config('app.url'),
             ],
             'sidebarOpen' => ! $request->hasCookie('sidebar_state') || $request->cookie('sidebar_state') === 'true',
+            // 'quote' => ['message' => trim($message), 'author' => trim($author)],
         ];
     }
 }
