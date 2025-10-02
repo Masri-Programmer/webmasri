@@ -28,13 +28,14 @@ onUnmounted(() => {
 </script>
 
 <template>
+    <!-- backdrop-blur-sm -->
     <Transition name="nav-fade">
         <nav
-            v-if="isNavVisible"
-            class="shadow-t-lg fixed right-0 bottom-0 left-0 z-50 flex h-16 scale-75 items-center justify-around backdrop-blur-sm sm:scale-100 md:top-1/2 md:right-4 md:bottom-auto md:left-auto md:h-auto md:w-auto md:-translate-y-1/2 md:transform md:flex-col md:justify-center md:rounded-full md:p-2 md:shadow-lg"
+            v-if="true"
+            class="shadow-t-lg fixed right-0 bottom-0 left-0 z-50 flex h-16 w-auto scale-75 content-center items-center justify-around bg-red-300 sm:scale-100 md:top-1/2 md:right-4 md:bottom-auto md:left-auto md:h-auto md:w-auto md:-translate-y-1/2 md:transform md:flex-col md:justify-center md:rounded-full md:p-2 md:shadow-lg"
         >
             <TooltipProvider :delay-duration="100">
-                <ul class="flex items-center gap-3 md:flex-col">
+                <ul class="flex content-center items-center gap-3 md:flex-col">
                     <li v-for="item in navigationLinks" :key="item.id" class="duration-200 ease-in-out md:hover:-translate-x-2.5">
                         <Tooltip>
                             <TooltipTrigger as-child>
@@ -64,7 +65,6 @@ onUnmounted(() => {
 </template>
 
 <style scoped>
-/* Styles remain the same */
 .nav-fade-enter-active,
 .nav-fade-leave-active {
     transition:
