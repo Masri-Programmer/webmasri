@@ -69,6 +69,36 @@
         "title": "Projects",
         "description": ""
     },
+    "services": {
+        "mainTitle": "Nos Solutions Web Complètes",
+        "mainSubtitle": "Du concept au lancement, nous fournissons des services de bout en bout pour bâtir votre puissante présence en ligne et atteindre vos objectifs numériques.",
+        "additionalTitle": "Au-delà de la Construction",
+        "additionalSubtitle": "Nous offrons une gamme de services complémentaires pour assurer le succès continu, la sécurité et la croissance de votre site web.",
+        "landingPage": {
+            "title": "Pages d'Atterrissage & Onepagers",
+            "description": "Capturez des prospects et générez des conversions avec une seule page très ciblée. Parfait pour les campagnes marketing, les lancements de produits ou les cartes de visite numériques."
+        },
+        "businessWebsite": {
+            "title": "Sites Web Corporatifs & d'Entreprise",
+            "description": "Établissez la crédibilité de votre marque avec un site web professionnel et multi-pages. Idéal pour les prestataires de services, les sociétés et les organisations nécessitant un hub numérique complet."
+        },
+        "onlineShop": {
+            "title": "E-Commerce & Boutiques en Ligne",
+            "description": "Lancez votre vitrine numérique et vendez des produits en ligne. Nous construisons des solutions e-commerce évolutives, des petites boutiques aux grands détaillants, avec toutes les fonctionnalités nécessaires."
+        },
+        "maintenance": {
+            "title": "Maintenance de Site Web",
+            "description": "Gardez votre site sécurisé, mis à jour et fonctionnant sans accroc grâce à nos forfaits de maintenance complets pour une tranquillité d'esprit."
+        },
+        "seo": {
+            "title": "Démarrage SEO",
+            "description": "Optimisez votre site dès le premier jour avec la recherche de mots-clés, le SEO on-page et la configuration du profil Google Business pour une meilleure visibilité."
+        },
+        "copywriting": {
+            "title": "Contenu & Rédaction (Copywriting)",
+            "description": "Engagez votre audience avec un contenu professionnel, adapté au SEO, rédigé spécifiquement pour les pages principales de votre site web."
+        }
+    },
     "statistics": {
         "experience": "Années d'expérience",
         "projects": "Projets réalisés",
