@@ -80,7 +80,7 @@ const testimonials = computed(() =>
             v-motion
             :initial="{ opacity: 0, y: 50 }"
             :visibleOnce="{ opacity: 1, y: 0, transition: { delay: testimonials.length * 100, duration: 500 } }"
-            class="group flex flex-col items-center justify-center rounded-lg border-2 border-dashed border-border bg-transparent p-8 text-center transition-colors hover:border-primary hover:bg-accent"
+            class="group flex flex-col items-center justify-center rounded-md border-2 border-dashed border-border bg-transparent p-8 text-center transition-colors hover:border-primary hover:bg-accent"
         >
             <h3 class="text-lg font-semibold text-foreground">
                 {{ t('testimonials.leaveReview.title') }}

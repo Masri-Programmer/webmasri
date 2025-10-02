@@ -51,7 +51,7 @@ const isStandardSectionPage = computed(() => ['privacyPolicy', 'termsConditions'
                 </template>
 
                 <template v-else-if="pageKey === 'imprint'">
-                    <div class="not-prose rounded-lg border bg-card p-6 text-card-foreground">
+                    <div class="not-prose rounded-md border bg-card p-6 text-card-foreground">
                         <h2 class="mb-4 text-2xl font-semibold tracking-tight">
                             {{ t('imprint.subTitle') }}
                         </h2>

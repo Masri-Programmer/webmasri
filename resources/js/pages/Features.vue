@@ -116,7 +116,7 @@ const thirdThird = computed(() => features.value.slice(third.value * 2));
                     <div
                         v-for="(feature, index) in firstThird"
                         :key="`first-${index}`"
-                        class="flex items-center gap-2 rounded-lg bg-muted p-3 text-sm font-medium text-muted-foreground"
+                        class="flex items-center gap-2 rounded-md bg-muted p-3 text-sm font-medium text-muted-foreground"
                     >
                         <component :is="feature.icon" class="h-4 w-4 flex-shrink-0" />
                         <span>{{ feature.text }}</span>
@@ -126,7 +126,7 @@ const thirdThird = computed(() => features.value.slice(third.value * 2));
                     <div
                         v-for="(feature, index) in secondThird"
                         :key="`second-${index}`"
-                        class="flex items-center gap-2 rounded-lg bg-muted p-3 text-sm font-medium text-muted-foreground"
+                        class="flex items-center gap-2 rounded-md bg-muted p-3 text-sm font-medium text-muted-foreground"
                     >
                         <component :is="feature.icon" class="h-4 w-4 flex-shrink-0" />
                         <span>{{ feature.text }}</span>
@@ -136,7 +136,7 @@ const thirdThird = computed(() => features.value.slice(third.value * 2));
                     <div
                         v-for="(feature, index) in thirdThird"
                         :key="`third-${index}`"
-                        class="flex items-center gap-2 rounded-lg bg-muted p-3 text-sm font-medium text-muted-foreground"
+                        class="flex items-center gap-2 rounded-md bg-muted p-3 text-sm font-medium text-muted-foreground"
                     >
                         <component :is="feature.icon" class="h-4 w-4 flex-shrink-0" />
                         <span>{{ feature.text }}</span>
@@ -149,7 +149,7 @@ const thirdThird = computed(() => features.value.slice(third.value * 2));
                     <li
                         v-for="feature in features"
                         :key="feature.text"
-                        class="flex items-center gap-2 rounded-lg bg-muted p-3 text-sm font-medium text-muted-foreground"
+                        class="flex items-center gap-2 rounded-md bg-muted p-3 text-sm font-medium text-muted-foreground"
                     >
                          <span>{{ feature.text }}</span>
                     </li>

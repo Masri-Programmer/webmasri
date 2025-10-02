@@ -10,7 +10,7 @@
   >
     <div class="flex items-center gap-2">
       <div
-        class="size-2 scale-100 rounded-lg bg-primary transition-all duration-300 group-hover:scale-[100.8]"
+        class="size-2 scale-100 rounded-md bg-primary transition-all duration-300 group-hover:scale-[100.8]"
       ></div>
       <span
         class="inline-block whitespace-nowrap transition-all duration-300 group-hover:translate-x-12 group-hover:opacity-0"

@@ -87,7 +87,7 @@ const additionalServices = shallowRef([
             :href="pricing.url()"
             v-for="service in additionalServices"
             :key="service.titleKey"
-            class="flex items-start space-x-4 rounded-lg p-4 transition-colors hover:bg-accent"
+            class="flex items-start space-x-4 rounded-md p-4 transition-colors hover:bg-accent"
         >
             <div class="flex-shrink-0 rounded-md bg-primary/10 p-3">
                 <component :is="service.icon" class="h-6 w-6 text-primary" />

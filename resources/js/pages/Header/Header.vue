@@ -1,7 +1,7 @@
 <template>
     <div class="fixed top-0 right-0 left-0 z-50">
         <div class="bg-secondary text-secondary-foreground shadow-sm">
-            <div class="container-custom flex h-14 items-center">
+            <div class="container-custom flex h-14 items-center !overflow-visible">
                 <!-- Left Section: Brand -->
                 <div class="flex flex-1 items-center justify-start">
                     <Brand />

@@ -3,7 +3,7 @@
     ref="canvasRef"
     width="300"
     height="300"
-    :class="cn('rounded-lg', $props.class)"
+    :class="cn('rounded-md', $props.class)"
     role="img"
     aria-label="Interactive 3D Image Cloud"
     @mousedown="handleMouseDown"

@@ -42,7 +42,7 @@ const containerClasses = computed(() => [
 <template>
     <div :class="containerClasses">
         <div class="text-focus-in space-y-2">
-            <div v-if="tagline" class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
+            <div v-if="tagline" class="inline-block rounded-md bg-muted px-3 py-1 text-sm">
                 {{ t(tagline) }}
             </div>
 

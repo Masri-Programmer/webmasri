@@ -11,7 +11,7 @@ const sections = tm('privacyPolicy.sections');
 
 <template>
     <Layout :head="t('privacyPolicy.title')" :link="privacyPolicy.url()" :description="t('privacyPolicy.description')">
-        <div class="read container mx-auto mt-12 max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="read page-custom">
             <Title title="privacyPolicy.title" subtitle-key="privacyPolicy.description" tag="h1" align="left" />
             <hr />
             <main class="prose dark:prose-invert mt-8 max-w-none space-y-8">

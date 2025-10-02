@@ -101,7 +101,7 @@ const pricingPlans = [
     </div>
 
     <div
-        class="mx-auto mt-6 flex max-w-5xl items-center justify-center gap-2 rounded-lg border bg-accent/50 p-4 text-center text-sm text-muted-foreground"
+        class="mx-auto mt-6 flex max-w-5xl items-center justify-center gap-2 rounded-md border bg-accent/50 p-4 text-center text-sm text-muted-foreground"
     >
         <Info class="h-5 w-5 flex-shrink-0" />
         <p>{{ t('pricingSummary.installmentsInfo') }}</p>

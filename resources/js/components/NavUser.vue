@@ -22,7 +22,7 @@ const { isMobile, state } = useSidebar();
                     </SidebarMenuButton>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent
-                    class="w-(--reka-dropdown-menu-trigger-width) min-w-56 rounded-lg"
+                    class="w-(--reka-dropdown-menu-trigger-width) min-w-56 rounded-md"
                     :side="isMobile ? 'bottom' : state === 'collapsed' ? 'left' : 'bottom'"
                     align="end"
                     :side-offset="4"

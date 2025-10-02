@@ -80,7 +80,7 @@ const rightNavItems: NavItem[] = [
                                         v-for="item in mainNavItems"
                                         :key="item.title"
                                         :href="item.href"
-                                        class="flex items-center gap-x-3 rounded-lg px-3 py-2 text-sm font-medium hover:bg-accent"
+                                        class="flex items-center gap-x-3 rounded-md px-3 py-2 text-sm font-medium hover:bg-accent"
                                         :class="activeItemStyles(item.href)"
                                     >
                                         <component v-if="item.icon" :is="item.icon" class="h-5 w-5" />
@@ -166,7 +166,7 @@ const rightNavItems: NavItem[] = [
                             >
                                 <Avatar class="size-8 overflow-hidden rounded-full">
                                     <AvatarImage v-if="auth.user.avatar" :src="auth.user.avatar" :alt="auth.user.name" />
-                                    <AvatarFallback class="rounded-lg bg-neutral-200 font-semibold text-black dark:bg-neutral-700 dark:text-white">
+                                    <AvatarFallback class="rounded-md bg-neutral-200 font-semibold text-black dark:bg-neutral-700 dark:text-white">
                                         {{ getInitials(auth.user?.name) }}
                                     </AvatarFallback>
                                 </Avatar>
