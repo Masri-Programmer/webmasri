@@ -34,9 +34,7 @@ const { t } = useI18n();
             <About />
         </swr>
 
-        <swr id="projects">
-            <Projects />
-        </swr>
+        <Projects />
 
         <swr id="statistics" fullWidth class="parallax-section bg-parallax-2">
             <Statistics />

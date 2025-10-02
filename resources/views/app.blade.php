@@ -7,7 +7,7 @@
 
     {{-- SEO Meta Tags (Defaults) --}}
     <title inertia>{{ config('app.name', 'Masri Programmer') }}</title>
-    <meta name="description" content="Seit über 5 Jahren entwickle und realisiere ich erfolgreiche Konzepte für Websites, Onlineshops und Marketing für KMU">
+    <meta name="description" content="{{ __('meta.description') }}">
     <meta name="robots" content="index, follow">
     <meta name="Robots" content="noarchive, index, noodp" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
@@ -17,7 +17,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="{{ config('app.name', 'Masri Programmer') }}">
     <meta property="og:title" content="{{ config('app.name', 'Masri Programmer') }}">
-    <meta property="og:description" content="Seit über 5 Jahren entwickle und realisiere ich erfolgreiche Konzepte für Websites, Onlineshops und Marketing für KMU">
+    <meta property="og:description" content="{{ __('meta.description') }}">
     <meta property="og:url" content="{{ config('app.url') }}">
     <meta property="og:image" content="{{ asset('512x512_logo_dark_bg.png') }}">
     <meta property="og:image:width" content="1200">
@@ -26,10 +26,10 @@
     {{-- Twitter Card (Defaults) --}}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ config('app.name', 'Masri Programmer') }}">
-    <meta name="twitter:description" content="Seit über 5 Jahren entwickle und realisiere ich erfolgreiche Konzepte für Websites, Onlineshops und Marketing für KMU">
+    <meta name="twitter:description" content="{{ __('meta.description') }}">
     <meta name="twitter:url" content="{{ config('app.url') }}">
     <meta name="twitter:image" content="{{ asset('512x512_logo_dark_bg.png') }}">
-    <meta name="Keywords" content="Website, Webdesign, Onlineshop, Grafikdesign, Brand Design, Software, Olenburg, Bremen" />
+    <meta name="Keywords" content="{{ __('meta.keywords') }}" />
     {{-- <meta name="google-site-verification" content="iCcrPrMgr_qMdFV9t4YMYvsKuAC-eTXqJdCCl9xv8uM" />  --}}
 
     <meta name="geo.region" content="DE-BR" />
