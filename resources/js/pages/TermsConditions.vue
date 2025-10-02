@@ -13,10 +13,9 @@ const sections = tm('termsConditions.sections') as any[];
     <Layout :head="t('termsConditions.title')" :link="termsConditions.url()" :description="t('termsConditions.description')">
         <div class="read page-custom">
             <Title class="border-b pb-8" title="termsConditions.title" subtitle-key="termsConditions.description" tag="h1" align="left" />
-            <hr />
             <main class="prose dark:prose-invert mt-8 max-w-none space-y-8">
                 <section v-for="(section, key) in sections" :key="key" :aria-labelledby="`section-title-${key}`">
-                    <h2 :id="`section-title-${key}`" class="not-prose bg-primary text-primary-foreground rounded-md p-2 text-xl font-semibold">
+                    <h2 :id="`section-title-${key}`" class="not-prose rounded-md bg-primary p-2 text-xl font-semibold text-primary-foreground">
                         {{ section.title }}
                     </h2>
                     <div class="mt-4 space-y-4">

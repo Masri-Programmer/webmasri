@@ -10,12 +10,10 @@ const { t } = useI18n();
 <template>
     <Layout :head="t('imprint.title')" :link="imprint.url()" :description="t('imprint.subTitle')">
         <div class="read page-custom">
-            <header class="border-b pb-4">
-                <Title title="imprint.title" tag="h1" align="left" />
-            </header>
+            <Title title="imprint.title" tag="h1" align="left" />
 
             <main class="mt-8 max-w-none">
-                <div class="bg-card text-card-foreground rounded-md border p-6">
+                <div class="rounded-md border bg-card p-6 text-card-foreground">
                     <h2 class="mb-4 text-2xl font-semibold tracking-tight">
                         {{ t('imprint.subTitle') }}
                     </h2>
@@ -24,13 +22,13 @@ const { t } = useI18n();
                         <p v-html="t('imprint.contact.nameAndAddress').replace(/\n/g, '<br />')"></p>
                         <p>
                             <span class="font-medium">{{ t('imprint.contact.phoneLabel') }}</span>
-                            <a :href="'tel:' + t('imprint.contact.phoneNumber')" class="text-primary ml-2 hover:underline">
+                            <a :href="'tel:' + t('imprint.contact.phoneNumber')" class="ml-2 text-primary hover:underline">
                                 {{ t('imprint.contact.phoneNumber') }}
                             </a>
                         </p>
                         <p>
                             <span class="font-medium">{{ t('imprint.contact.emailLabel') }}</span>
-                            <a :href="'mailto:hallo@masri-programmer.de'" class="text-primary ml-2 hover:underline"> hallo@masri-programmer.de </a>
+                            <a :href="'mailto:hallo@masri-programmer.de'" class="ml-2 text-primary hover:underline"> hallo@masri-programmer.de </a>
                         </p>
                     </div>
                 </div>
@@ -50,7 +48,7 @@ const { t } = useI18n();
         </div> -->
 
                 <section class="mt-8">
-                    <h2 class="not-prose bg-primary text-primary-foreground rounded-md p-2 text-xl font-semibold">
+                    <h2 class="not-prose rounded-md bg-primary p-2 text-xl font-semibold text-primary-foreground">
                         {{ t('imprint.copyright.title') }}
                     </h2>
                     <div class="mt-4 space-y-4">

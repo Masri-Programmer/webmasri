@@ -29,10 +29,8 @@ const faqKeys = [
 
 <template>
     <Layout :head="t('faq.title')" :link="faq.url()" :description="t('faq.subtitle')">
-        <swr id="faq">
-            <div class="mt-8">
-                <FAQ :faqKeys="faqKeys" />
-            </div>
+        <swr id="faq" class="mt-14">
+            <FAQ :faqKeys="faqKeys" />
         </swr>
     </Layout>
 </template>

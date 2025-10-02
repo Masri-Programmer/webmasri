@@ -12,8 +12,7 @@ const sections = tm('privacyPolicy.sections');
 <template>
     <Layout :head="t('privacyPolicy.title')" :link="privacyPolicy.url()" :description="t('privacyPolicy.description')">
         <div class="read page-custom">
-            <Title title="privacyPolicy.title" subtitle-key="privacyPolicy.description" tag="h1" align="left" />
-            <hr />
+            <Title class="border-b pb-8" title="privacyPolicy.title" subtitle-key="privacyPolicy.description" tag="h1" align="left" />
             <main class="prose dark:prose-invert mt-8 max-w-none space-y-8">
                 <section v-for="(section, key) in sections" :key="key">
                     <h2

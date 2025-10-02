@@ -51,7 +51,7 @@ async function handleSubmit() {
 
 <template>
     <Layout :head="t('Contact')" :link="contact.url()" :description="t('Contact')">
-        <div class="container mx-auto mt-8 max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="container-custom container-custom-y mt-14">
             <Card>
                 <CardHeader>
                     <Title title="contactForm.title" subtitle-key="contactForm.description" tag="h1" />

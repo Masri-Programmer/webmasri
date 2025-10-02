@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import swr from '@/components/layout/SectionWrapper .vue';
 import Title from '@/components/Title.vue';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -414,7 +415,7 @@ const categoryKeyMap: Record<string, string> = {
 
 <template>
     <Layout :head="t('pricing.title')" :link="pricing.url()" :description="t('pricing.description')">
-        <section class="container mx-auto mt-8 max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <swr id="pricing-list" class="mt-14">
             <Title title="pricing.title" subtitle-key="pricing.description" tag="h1" />
             <div class="mt-12 flex flex-wrap justify-center gap-3">
                 <Link v-for="(category, key) in pricingData" :key="key" :href="`/pricing/${urlSlugMap[key]}`" preserve-state preserve-scroll>
@@ -510,7 +511,7 @@ const categoryKeyMap: Record<string, string> = {
                             {{ t('pricing.customizeYourPackage') }}
                         </p>
                     </div>
-                    <div class="mx-auto grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="mx-auto grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                         <Card v-for="addOn in pricingData[props.initialCategory].addOns" :key="addOn.id" class="text-center">
                             <CardHeader>
                                 <CardTitle class="text-base font-medium">
@@ -596,13 +597,13 @@ const categoryKeyMap: Record<string, string> = {
                         </Card>
                     </div>
                     <div
-                        class="mx-auto mt-12 flex max-w-5xl items-center justify-center gap-2 rounded-md border bg-accent/50 p-4 text-center text-sm text-muted-foreground"
+                        class="mx-auto mt-12 flex items-center justify-center gap-2 rounded-md border bg-accent/50 p-4 text-center text-sm text-muted-foreground"
                     >
                         <Info class="h-5 w-5 flex-shrink-0" />
                         <p>{{ t('pricingSummary.installmentsInfo') }}</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </swr>
     </Layout>
 </template>
