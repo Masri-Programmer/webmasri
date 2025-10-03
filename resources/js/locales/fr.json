@@ -1059,7 +1059,7 @@
         "title": "Paramètres de confidentialité",
         "description": "Cette page utilise des cookies et des technologies des entreprises de tiers qui ont besoin de consentement. Si vous cliquez sur le bouton  Acceptez tout , ces fonctions sont activées (consentement). Après le consentement, nous et les entreprises de troisième partie concernées traitent vos données à divers fins. Vous pouvez voir plus d'informations dans mon {PrivacyLink}.",
         "privacyPolicy": "Déclaration de protection des données",
-        "save": "Rappelez-vous cette sélection pendant 30 jours",
+        "save": "Rappelez-vous cette sélection pendant 1 année",
         "decline": "Refuser",
         "imprint": "Imprimer",
         "accept": "Acceptez tout"

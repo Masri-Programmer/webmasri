@@ -3,21 +3,28 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Checkbox } from '@/components/ui/checkbox';
 import { imprint, privacyPolicy } from '@/routes';
-import { StorageSerializers, useStorage } from '@vueuse/core';
+import { StorageSerializers, useScroll, useStorage } from '@vueuse/core';
 import { Cookie } from 'lucide-vue-next';
 import { computed, onMounted, ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 
+declare function gtag(command: 'consent', action: 'update', params: Record<string, 'granted' | 'denied'>): void;
+
 const { t } = useI18n();
 
 const isMounted = ref(false);
-const showDelayedBanner = ref(false);
+const userHasScrolled = ref(false);
 
 onMounted(() => {
     isMounted.value = true;
-    setTimeout(() => {
-        showDelayedBanner.value = true;
-    }, 1500);
+});
+
+const { y } = useScroll(window);
+const stopWatch = watch(y, (newY) => {
+    if (newY > 100) {
+        userHasScrolled.value = true;
+        stopWatch();
+    }
 });
 
 interface ConsentState {
@@ -28,28 +35,41 @@ interface ConsentState {
 const cookieConsent = useStorage<ConsentState | null>('cookie-consent', null, undefined, { serializer: StorageSerializers.object });
 const savePreference = useStorage<boolean>('cookie-consent-save-preference', false);
 
-watch(cookieConsent, (val) => {
-    if (val && val.expires && val.expires < Date.now()) {
-        cookieConsent.value = null;
-    }
-});
+watch(
+    cookieConsent,
+    (val) => {
+        if (val) {
+            if (val.expires && val.expires < Date.now()) {
+                cookieConsent.value = null;
+                return;
+            }
+
+            const consentState = val.status === 'accepted' ? 'granted' : 'denied';
+            gtag('consent', 'update', {
+                ad_storage: consentState,
+                ad_user_data: consentState,
+                ad_personalization: consentState,
+                analytics_storage: consentState,
+            });
+        }
+    },
+    { immediate: true },
+);
 
 const showBanner = computed(() => {
     if (!cookieConsent.value) {
         return true;
     }
-
     if (cookieConsent.value.expires && cookieConsent.value.expires < Date.now()) {
         return true;
     }
-
     return false;
 });
 
 function acceptCookies() {
     if (savePreference.value) {
         const expiry = new Date();
-        expiry.setDate(expiry.getDate() + 30);
+        expiry.setDate(expiry.getDate() + 365);
         cookieConsent.value = {
             status: 'accepted',
             expires: expiry.getTime(),
@@ -64,7 +84,7 @@ function acceptCookies() {
 function declineCookies() {
     if (savePreference.value) {
         const expiry = new Date();
-        expiry.setDate(expiry.getDate() + 30);
+        expiry.setDate(expiry.getDate() + 365);
         cookieConsent.value = {
             status: 'declined',
             expires: expiry.getTime(),
@@ -80,7 +100,7 @@ function declineCookies() {
 <template>
     <transition enter-active-class="animate-duration-500 animate-fade-in-up" leave-active-class="animate-duration-300 animate-fade-out-down">
         <div
-            v-if="isMounted && showBanner && showDelayedBanner"
+            v-if="isMounted && showBanner && userHasScrolled"
             class="fixed right-0 bottom-0 left-0 z-50 p-4 sm:right-8 sm:bottom-4 sm:left-auto"
             role="dialog"
             aria-live="polite"
@@ -112,10 +132,10 @@ function declineCookies() {
                     </div>
                 </CardContent>
                 <CardFooter class="flex flex-col items-stretch gap-3 sm:flex-row sm:justify-between">
-                    <Button variant="link" as-child class="h-auto p-0">
-                        <a :href="imprint.url()" target="_blank" rel="noopener noreferrer">{{ t('cookieBanner.imprint') }}</a>
-                    </Button>
                     <div class="flex justify-end gap-x-3">
+                        <Button variant="link" as-child class="h-auto grow p-0 text-start underline">
+                            <a :href="imprint.url()" target="_blank" rel="noopener noreferrer">{{ t('cookieBanner.imprint') }}</a>
+                        </Button>
                         <Button variant="outline" @click="declineCookies">
                             {{ t('cookieBanner.decline') }}
                         </Button>

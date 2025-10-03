@@ -1027,7 +1027,7 @@
         "title": "Privacy Settings",
         "description": "This site uses cookies and technologies from third-party companies that require consent. If you click on the \"Accept all\" button, these functions will be activated (consent). After giving your consent, we and the third-party companies concerned will process your data for various purposes. You can view further information in my {privacyLink}. You can revoke your consent at any time.",
         "privacyPolicy": "Privacy Policy",
-        "save": "Remember this choice for 30 days",
+        "save": "Remember this choice for 1 year",
         "decline": "Decline",
         "imprint": "Imprint",
         "accept": "Accept All"
