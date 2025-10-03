@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, useAttrs } from 'vue';
 
 const props = defineProps({
     id: {
@@ -7,31 +7,42 @@ const props = defineProps({
         required: true,
     },
     background: {
-        type: String,
-        default: 'default', // 'default', 'muted'
+        type: String as () => 'default' | 'muted',
+        default: 'default',
     },
     fullWidth: {
         type: Boolean,
         default: false,
     },
+    parallaxImage: {
+        type: String,
+        default: null,
+    },
 });
 
-const sectionClasses = computed(() => {
-    const classes = [];
-    if (props.background === 'muted') {
-        classes.push('bg-muted/40 dark:bg-background');
-    }
-    // Add more background variations here if needed
-    // else if (props.background === 'dark') { ... }
+const attrs = useAttrs();
 
-    if (!props.fullWidth) {
-        classes.push('container-custom-y');
+const sectionClasses = computed(() => [
+    {
+        'bg-muted/40 dark:bg-background': props.background === 'muted',
+        'container-custom-y': !props.fullWidth,
+        'parallax-section': !!props.parallaxImage,
+    },
+    attrs.class,
+]);
+
+const sectionStyle = computed(() => {
+    if (!props.parallaxImage) {
+        return {};
     }
-    return classes;
+    return {
+        backgroundImage: `url(${props.parallaxImage})`,
+    };
 });
 </script>
+
 <template>
-    <section :id="id" :class="sectionClasses">
+    <section :id="id" :class="sectionClasses" :style="sectionStyle">
         <div class="container-custom">
             <slot />
         </div>

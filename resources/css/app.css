@@ -190,6 +190,7 @@ body {
     }
 }
 .parallax-section {
+    background-color: #2d3748;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -211,20 +212,9 @@ body {
     z-index: 2;
 }
 
-.bg-parallax-1 {
-    background-image: url('@/images/iphonemockup.webp');
-}
-
-.bg-parallax-2 {
-    background-image: url('@/images/iphonemockup2.webp');
-}
-
 @media (max-width: 1024px) {
     .parallax-section {
         background-attachment: scroll;
-    }
-    .bg-parallax-1 {
-        background-image: url('');
     }
 }
 
