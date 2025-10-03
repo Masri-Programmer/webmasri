@@ -4,14 +4,13 @@ import ShimmerButton from '@/components/ui/shimmer-button/ShimmerButton.vue';
 import webmockup from '@/images/mockup.webp';
 import { pricing } from '@/routes';
 import { Book } from 'lucide-vue-next';
-import { onMounted, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 
-const isMounted = ref(false);
+// const isMounted = ref(false);
 
-onMounted(() => {
-    isMounted.value = true;
-});
+// onMounted(() => {
+//     isMounted.value = true;
+// });
 const { t } = useI18n();
 </script>
 
@@ -20,7 +19,7 @@ const { t } = useI18n();
         <div class="container-custom z-10 mt-6 md:mt-0">
             <div class="z-10 grid w-full grid-cols-1 items-start gap-8 align-top lg:grid-cols-2">
                 <div class="flex flex-col items-start justify-center space-y-6">
-                    <h1 class="text-focus-in text-5xl font-semibold tracking-tighter text-foreground sm:text-6xl xl:text-7xl/none">
+                    <h1 class="text-focus-in min-h-2/4 text-5xl font-semibold tracking-tighter text-foreground sm:text-6xl xl:text-7xl/none">
                         {{ t('hero.title') }}
                         <!-- <FlipWords
                             :words="[t('hero.flipWords.craft'), t('hero.flipWords.design'), t('hero.flipWords.create')]"

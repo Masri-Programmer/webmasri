@@ -58,11 +58,13 @@ const pricingPlans = [
 
 <template>
     <Title :title="'pricingSummary.title'" :subtitleKey="'pricingSummary.description'" tagline="pricingSummary.tagline" />
-
     <div class="mx-auto mt-12 grid max-w-5xl items-start gap-8 sm:grid-cols-2 md:gap-12 lg:grid-cols-3">
         <Card
-            v-for="plan in pricingPlans"
+            v-for="(plan, index) in pricingPlans"
             :key="plan.key"
+            v-motion
+            :initial="{ opacity: 0, y: 50 }"
+            :visibleOnce="{ opacity: 1, y: 0, transition: { delay: index * 100, duration: 500 } }"
             class="relative flex h-full flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
             :class="{ 'border-2 border-primary shadow-lg': plan.isFeatured }"
         >

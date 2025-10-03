@@ -37,7 +37,14 @@ const stats = computed(() =>
 
 <template>
     <div class="mx-auto grid max-w-5xl grid-cols-2 gap-8 md:grid-cols-4" ref="sectionRef">
-        <Card v-for="stat in stats" :key="stat.label" class="text-center">
+        <Card
+            v-for="(stat, index) in stats"
+            :key="stat.label"
+            class="text-center"
+            v-motion
+            :initial="{ opacity: 0, y: 50 }"
+            :visibleOnce="{ opacity: 1, y: 0, transition: { delay: index * 100, duration: 500 } }"
+        >
             <CardContent class="flex flex-col items-center justify-center p-6">
                 <div class="text-4xl font-semibold text-primary md:text-5xl"><NumberTicker :value="startTicking ? stat.value : 0" />+</div>
                 <p class="mt-2 text-sm text-muted-foreground">

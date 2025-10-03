@@ -78,11 +78,11 @@
     <link rel="manifest" href="{{ asset('site.webmanifest') }}">
     <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
     <link rel="alternate" hreflang="de" href="https://www.masriprogrammer.de" />
-
-    <!-- {{-- Fonts --}}
-    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link rel="preload" as="image" href="{{ Vite::asset('resources/images/mockup.webp') }}">
+    {{-- Fonts    <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
-     -->
+     --}}
+
 
     @vite(['resources/js/app.ts', "resources/js/pages/{$page['component']}.vue"])
     @inertiaHead

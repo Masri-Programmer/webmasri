@@ -52,7 +52,14 @@ const additionalServices = shallowRef([
 <template>
     <Title :title="'services.mainTitle'" :subtitleKey="'services.mainSubtitle'" />
     <div class="mt-12 grid md:grid-cols-2 md:gap-4 lg:max-w-none lg:grid-cols-3 lg:gap-8">
-        <CardContainer v-for="service in coreServices" :key="service.titleKey" class="group h-full w-full">
+        <CardContainer
+            v-for="(service, index) in coreServices"
+            :key="service.titleKey"
+            class="group h-full w-full"
+            v-motion
+            :initial="{ opacity: 0, y: 50 }"
+            :visibleOnce="{ opacity: 1, y: 0, transition: { delay: index * 100, duration: 500 } }"
+        >
             <CardBody
                 class="group/card relative flex h-full w-full flex-col rounded-xl border border-black/[0.1] bg-card p-6 dark:border-white/[0.2] dark:bg-background dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]"
             >
@@ -85,7 +92,10 @@ const additionalServices = shallowRef([
     <div class="mx-auto mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         <Link
             :href="pricing.url()"
-            v-for="service in additionalServices"
+            v-for="(service, index) in additionalServices"
+            v-motion
+            :initial="{ opacity: 0, y: 50 }"
+            :visibleOnce="{ opacity: 1, y: 0, transition: { delay: index * 100, duration: 500 } }"
             :key="service.titleKey"
             class="flex items-start space-x-4 rounded-md p-4 transition-colors hover:bg-accent"
         >

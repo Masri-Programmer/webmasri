@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import swr from '@/components/layout/SectionWrapper .vue';
+import iphoneMockup from '@/images/iphonemockup.webp';
+import iphoneMockup2 from '@/images/iphonemockup2.webp';
 import Layout from '@/layouts/Layout.vue';
 import { defineAsyncComponent } from 'vue';
 import { useI18n } from 'vue-i18n';
+import Hero from './Hero.vue';
 
-const Hero = defineAsyncComponent(() => import('./Hero.vue'));
 const Features = defineAsyncComponent(() => import('./Features.vue'));
 const Projects = defineAsyncComponent(() => import('./Projects.vue'));
 const About = defineAsyncComponent(() => import('./About.vue'));
@@ -25,7 +27,7 @@ const { t } = useI18n();
             <Services />
         </swr>
 
-        <swr id="features" class="parallax-section bg-parallax-1">
+        <swr id="features" :parallax-image="iphoneMockup">
             <Features />
         </swr>
 
@@ -35,7 +37,7 @@ const { t } = useI18n();
 
         <Projects />
 
-        <swr id="statistics" class="parallax-section bg-parallax-2">
+        <swr id="statistics" :parallax-image="iphoneMockup2">
             <Statistics />
         </swr>
 
