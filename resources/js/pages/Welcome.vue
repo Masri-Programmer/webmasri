@@ -13,7 +13,7 @@ const About = defineAsyncComponent(() => import('./About.vue'));
 const Services = defineAsyncComponent(() => import('./Services.vue'));
 const Statistics = defineAsyncComponent(() => import('./Statistics.vue'));
 const Testimonials = defineAsyncComponent(() => import('./Testimonials.vue'));
-const PricingSummary = defineAsyncComponent(() => import('./PricingSummary.vue'));
+const PricingSummary = defineAsyncComponent(() => import('./pricing/PricingSummary.vue'));
 const FaqSummary = defineAsyncComponent(() => import('./FaqSummary.vue'));
 const Technologies = defineAsyncComponent(() => import('./Technologies.vue'));
 

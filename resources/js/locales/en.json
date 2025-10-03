@@ -1039,6 +1039,11 @@
     "pricing": {
         "title": "Professional Web Services Pricing",
         "description": "The cost of a website or an online shop naturally depends on the scope of the project. To give you a meaningful overview, you can use the following empirical values as a guide:",
+        "categories": {
+            "landingPage": "Landing Page (Onepager)",
+            "businessWebsite": "Business Website",
+            "onlineShop": "Online Shop"
+        },
         "monthly": "Monthly",
         "yearly": "Yearly",
         "getStarted": "Get Started",

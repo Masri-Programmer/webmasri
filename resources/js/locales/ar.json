@@ -1043,6 +1043,11 @@
         "websiteExamples": "مثالي لمقدمي الخدمات، مواقع الشركات، الأطباء، أو المطاعم التي تحتاج إلى صفحات متعددة ومدونة.",
         "onlineShop": "متجر إلكتروني",
         "onlineShopExamples": "مصمم للشركات التي تبيع المنتجات عبر الإنترنت، من المتاجر الصغيرة إلى تجار التجزئة الكبار.",
+        "categories": {
+            "landingPage": "الصفحة المقصودة (OnePager)",
+            "businessWebsite": "موقع الأعمال",
+            "onlineShop": "متجر على الإنترنت"
+        },
         "packages": {
             "featureValues": {
                 "templateBased": "مبني على قالب",

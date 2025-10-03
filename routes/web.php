@@ -48,7 +48,7 @@ Route::get('/pricing/{category?}', function ($category = null) {
 
     $initialCategory = $categoryMap[$category] ?? 'businessWebsite';
 
-    return Inertia::render('Pricing', [
+    return Inertia::render('pricing/Pricing', [
         'initialCategory' => $initialCategory,
     ]);
 })->name('pricing');

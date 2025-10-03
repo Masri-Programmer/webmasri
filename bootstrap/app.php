@@ -31,10 +31,10 @@ return Application::configure(basePath: dirname(__DIR__))
             $status = $e->getStatusCode();
 
             $componentMap = [
-                404 => 'Error/NotFound',
-                503 => 'Error/Maintenance',
-                403 => 'Error/Forbidden',
-                500 => 'Error/ServerError',
+                404 => 'error/NotFound',
+                503 => 'error/Maintenance',
+                403 => 'error/Forbidden',
+                500 => 'error/ServerError',
             ];
 
             if (array_key_exists($status, $componentMap)) {

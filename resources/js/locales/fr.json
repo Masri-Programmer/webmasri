@@ -1094,6 +1094,11 @@
         "websiteExamples": "Idéal pour les prestataires de services, les sites d'entreprise, les médecins ou les restaurants nécessitant plusieurs pages et un blog.",
         "onlineShop": "Boutique en ligne",
         "onlineShopExamples": "Conçu pour les entreprises vendant des produits en ligne, des petites boutiques aux grands détaillants.",
+        "categories": {
+            "landingPage": "Landing Page (Onepager)",
+            "businessWebsite": "Business Website",
+            "onlineShop": "Online Shop"
+        },
         "packages": {
             "featureValues": {
                 "templateBased": "Basé sur un modèle",
