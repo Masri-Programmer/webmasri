@@ -11,9 +11,13 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 
 const isMounted = ref(false);
+const showDelayedBanner = ref(false);
 
 onMounted(() => {
     isMounted.value = true;
+    setTimeout(() => {
+        showDelayedBanner.value = true;
+    }, 1500);
 });
 
 interface ConsentState {
@@ -76,7 +80,7 @@ function declineCookies() {
 <template>
     <transition enter-active-class="animate-duration-500 animate-fade-in-up" leave-active-class="animate-duration-300 animate-fade-out-down">
         <div
-            v-if="isMounted && showBanner"
+            v-if="isMounted && showBanner && showDelayedBanner"
             class="fixed right-0 bottom-0 left-0 z-50 p-4 sm:right-8 sm:bottom-4 sm:left-auto"
             role="dialog"
             aria-live="polite"
